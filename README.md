@@ -1,4 +1,4 @@
-# 15618fp
+# ParaViz - A Parallel Solution to Meaningful Visualization of Large Datasets
 
 ## Summary
 
