@@ -64,3 +64,11 @@ We plan to use Apache Spark for this part of the project as it provides a conven
 We plan to use WebGL JavaScript Library for this part of the project as it provides API for rendering **interactive** 3D and 2D graphics that fit our needs. 
 
 ## Schedule
+
+We divide our work into three phases.
+
+1. **Phase I: 11.1 - 11.8** Preparations on datasets, paper reading and API studying.
+
+2. **Phase II: 11.9 - 11.20** Core Implementation of Spark, including data pre-computation, kernel density estimation and tile aggregation.
+
+3. **Phase III: 11.21 - 12.10** Application development and Algorithm Optimization, when we plan to optimize our algorithm and put it into use to visualize datasets on the web.
