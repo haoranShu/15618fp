@@ -27,27 +27,27 @@ It is necessary to provide an interactive interface for users so that they can s
 
 ## Resources
 
-* We are planning to start this project from scratch as this will allow us to explore different options and choose our platform and technologies more freely. However, since we are planning to implement visualization on web browsers, there might be some existing web frameworks that we will need to look into to expedite the development process and focus on the potential parallelism of our implementation.
+*<span style="color:red"> We are planning to start this project by extending the serial heatmap generation library (https://github.com/lucasb-eyer/heatmap). This is a simple heatmap library written in C that allows various customizations. We believe that parallelization on this library is both interesting and feasible because as the data gets larger and larger, generating the heatmap and allowing user interactions becomes impossible. We are also planning to implement visualization on web browsers, there might be some existing web frameworks that we will need to look into to expedite the development process and focus on the potential parallelism of our implementation.</span>
 
 * Reference: Research on Heatmap for Big Data Based on Spark, Zhang Fan, Yuan Zhaokang, Xiao Fanping, You Kun, Wang Zhangye, Journal of Computer-Aided Design & Computer Graphics. Vol. 28, No. 11, November 2016.
 
-* One of the most important resource that we need is the dataset for the heatmap. We have yet to figure out the type of data to visualize and also where we can find them. As mentioned before, we plan to find a dataset that is hard to fit in any single commodity machine, and therefore, requires parallel processing in a distributed fashion.
+* <span style="color:red">One of the most important resource that we need is the dataset for the heatmap. The heatmap generation library used DOTA2 replay files as its sample dataset, which we belive is also a good candidate dataset to consider. First of all, the amount of DOTA2 replay files is very large, and we can obtain as much data as we need during different stages of the project development. The replay files can also be categorized easily according to game version number, role of the characters in the game, regions etc. This will be useful in the later stages where we develop an interactive interface.</span>
 
-* The processing of the big dataset will mostly be based on Apache Spark and the actual visualization will be implemented in the web browser. Therefore, we do not need any special machines in our implementation.
+* <span style="color:red">As opposed to the previously proposed plan of building an infrastructure using Spark from scratch, we plan to do most of the processing using MPI. We might need to run our code on latedays to provide better support for parallelism.</span>
 
 ## Goals and Deliverables
 
 ### Plan to achieve
 
-1. Come up with a way to separate the dataset into different tiles of different resolutions to allow parallel processing and interactive manipulation of the heatmap.
+1. <span style="color:red">Come up with a way to separate the dataset into different tiles of different resolutions to allow parallel processing and interactive manipulation of the heatmap. Collect dataset of DOTA2 replays.</span>
 
-1. Parallel process of the data on Apache Spark of the tiles, and store the results on HDFS.
+1. Parallel process of the data and parallelize the serial version of the heatmap generator library.
 
-1. Use the processed data from HDFS, generate a heatmap visualization using WebGL JavaScript Library.
+1. Use the processed data, generate a heatmap visualization using WebGL JavaScript Library and add various interactive features, such as zoom in/out, change time frame of interest.
 
 ### Hope to achieve
 
-1. Instead of using a single dataset and HDFS as an intermediate storage, use Spark Streaming to process the incoming data stream and display the heatmap in real time to the users.
+1. Instead of using a single dataset, allow users to add new replay files that are incorporated into the dataset.
 
 ### Demo
 
@@ -57,7 +57,7 @@ We plan to demo our web application that displays a heatmap representation of ou
 
 ### Data Processing
 
-We plan to use Apache Spark for this part of the project as it provides a convenient and fast way of processing large scale data. We need Apache Spark as the size of the data set is too large to fit in any single machine and demands too much computational resource to generate the heatmap.
+<span style="color:red">We plan to use MPI for this part of the project as it provides a convenient and fast way of processing large scale data. We need MPI as the size of the data set is too large to fit in any single machine and demands too much computational resource to generate the heatmap.</span>
 
 ### Data Visualization
 
@@ -69,6 +69,6 @@ We divide our work into three phases.
 
 1. **Phase I: 11.1 - 11.8** Preparations on datasets, paper reading and API studying.
 
-2. **Phase II: 11.9 - 11.20** Core Implementation of Spark, including data pre-computation, kernel density estimation and tile aggregation.
+2. **Phase II: 11.9 - 11.20** Core Implementation, including data pre-computation, kernel density estimation and tile aggregation.
 
 3. **Phase III: 11.21 - 12.10** Application development and Algorithm Optimization, when we plan to optimize our algorithm and put it into use to visualize datasets on the web.
