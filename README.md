@@ -27,19 +27,19 @@ It is necessary to provide an interactive interface for users so that they can s
 
 ## Resources
 
-*<span style="color:red"> We are planning to start this project by extending the serial heatmap generation library (https://github.com/lucasb-eyer/heatmap). This is a simple heatmap library written in C that allows various customizations. We believe that parallelization on this library is both interesting and feasible because as the data gets larger and larger, generating the heatmap and allowing user interactions becomes impossible. We are also planning to implement visualization on web browsers, there might be some existing web frameworks that we will need to look into to expedite the development process and focus on the potential parallelism of our implementation.</span>
+* We are planning to start this project by extending the serial heatmap generation library (https://github.com/lucasb-eyer/heatmap). This is a simple heatmap library written in C that allows various customizations. We believe that parallelization on this library is both interesting and feasible because as the data gets larger and larger, generating the heatmap and allowing user interactions becomes impossible. We are also planning to implement visualization on web browsers, there might be some existing web frameworks that we will need to look into to expedite the development process and focus on the potential parallelism of our implementation.
 
 * Reference: Research on Heatmap for Big Data Based on Spark, Zhang Fan, Yuan Zhaokang, Xiao Fanping, You Kun, Wang Zhangye, Journal of Computer-Aided Design & Computer Graphics. Vol. 28, No. 11, November 2016.
 
-* <span style="color:red">One of the most important resource that we need is the dataset for the heatmap. The heatmap generation library used DOTA2 replay files as its sample dataset, which we belive is also a good candidate dataset to consider. First of all, the amount of DOTA2 replay files is very large, and we can obtain as much data as we need during different stages of the project development. The replay files can also be categorized easily according to game version number, role of the characters in the game, regions etc. This will be useful in the later stages where we develop an interactive interface.</span>
+* One of the most important resource that we need is the dataset for the heatmap. The heatmap generation library used DOTA2 replay files as its sample dataset, which we belive is also a good candidate dataset to consider. First of all, the amount of DOTA2 replay files is very large, and we can obtain as much data as we need during different stages of the project development. The replay files can also be categorized easily according to game version number, role of the characters in the game, regions etc. This will be useful in the later stages where we develop an interactive interface.
 
-* <span style="color:red">As opposed to the previously proposed plan of building an infrastructure using Spark from scratch, we plan to do most of the processing using MPI. We might need to run our code on latedays to provide better support for parallelism.</span>
+* As opposed to the previously proposed plan of building an infrastructure using Spark from scratch, we plan to do most of the processing using MPI. We might need to run our code on latedays to provide better support for parallelism.
 
 ## Goals and Deliverables
 
 ### Plan to achieve
 
-1. <span style="color:red">Come up with a way to separate the dataset into different tiles of different resolutions to allow parallel processing and interactive manipulation of the heatmap. Collect dataset of DOTA2 replays.</span>
+1. Come up with a way to separate the dataset into different tiles of different resolutions to allow parallel processing and interactive manipulation of the heatmap. Collect dataset of DOTA2 replays.
 
 1. Parallel process of the data and parallelize the serial version of the heatmap generator library.
 
@@ -56,8 +56,7 @@ We plan to demo our web application that displays a heatmap representation of ou
 ## Platform of Choice
 
 ### Data Processing
-
-<span style="color:red">We plan to use MPI for this part of the project as it provides a convenient and fast way of processing large scale data. We need MPI as the size of the data set is too large to fit in any single machine and demands too much computational resource to generate the heatmap.</span>
+We plan to use MPI for this part of the project as it provides a convenient and fast way of processing large scale data. We need MPI as the size of the data set is too large to fit in any single machine and demands too much computational resource to generate the heatmap.
 
 ### Data Visualization
 
