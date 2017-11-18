@@ -93,16 +93,17 @@ void heatmap_add_point_with_stamp(heatmap_t* h, unsigned x, unsigned y, const he
 
         unsigned iy, ix;
 
-        omp_set_num_threads(64);
+        omp_set_num_threads(9);
         omp_set_dynamic(1);
-        #pragma omp parallel for collapse(2)
+        #pragma omp parallel for
         for(iy = y0 ; iy < y1 ; ++iy) {
-            for(ix = x0 ; ix < x1 ; ++ix) {
+
+            float* line = h->buf + ((y + iy) - stamp->h/2)*h->w + (x + ix) - stamp->w/2;
+            const float* stampline = stamp->buf + iy*stamp->w + ix;
+            for(ix = x0 ; ix < x1 ; ++ix, ++line, ++stampline) {
                 /* TODO: Let's actually accept negatives and try out funky stamps. */
                 /* Note that that might mess with the max though. */
                 /* And that we'll have to clamp the bottom to 0 when rendering. */
-                float* line = h->buf + ((y + iy) - stamp->h/2)*h->w + (x + ix) - stamp->w/2;
-                const float* stampline = stamp->buf + iy*stamp->w + ix;
                 assert(*stampline >= 0.0f);
 
                 *line += *stampline;
@@ -200,14 +201,15 @@ unsigned char* heatmap_render_saturated_to(const heatmap_t* h, const heatmap_col
 
     omp_set_num_threads(64);
     omp_set_dynamic(1);
-    #pragma omp parallel for collapse(2)
+    #pragma omp parallel for
     for(y = 0 ; y < h->h ; ++y) {
-        for(x = 0 ; x < h->w ; ++x) {
+
+        float* bufline = h->buf + y*h->w;
+        unsigned char* colorline = colorbuf + 4*y*h->w;
+        for(x = 0 ; x < h->w ; ++x, ++bufline) {
             /* Saturate the heat value to the given saturation, and then
              * normalize by that.
              */
-            float* bufline = h->buf + y*h->w;
-            unsigned char* colorline = colorbuf + 4*y*h->w;
             const float val = (*bufline > saturation ? saturation : *bufline)/saturation;
 
             /* We add 0.5 in order to do real rounding, not just dropping the
