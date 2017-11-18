@@ -31,8 +31,8 @@
 
 int main()
 {
-    static const size_t w = 256, h = 512, npoints = 1000;
-    unsigned char image[256*512*4];
+    static const size_t w = 1024, h = 2048, npoints = 1000000;
+    unsigned char image[1024 * 2048 * 4];
     unsigned i;
     clock_t begin = clock();
 

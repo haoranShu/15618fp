@@ -93,6 +93,7 @@ void heatmap_add_point_with_stamp(heatmap_t* h, unsigned x, unsigned y, const he
 
         unsigned iy, ix;
 
+        omp_set_num_threads(64);
         omp_set_dynamic(1);
         #pragma omp parallel for collapse(2)
         for(iy = y0 ; iy < y1 ; ++iy) {
@@ -197,6 +198,7 @@ unsigned char* heatmap_render_saturated_to(const heatmap_t* h, const heatmap_col
     /* TODO: could actually even flatten this loop before parallelizing it. */
     /* I.e., to go i = 0 ; i < h*w since I don't have any padding! (yet?) */
 
+    omp_set_num_threads(64);
     omp_set_dynamic(1);
     #pragma omp parallel for collapse(2)
     for(y = 0 ; y < h->h ; ++y) {
