@@ -92,6 +92,7 @@ void heatmap_add_point_with_stamp(heatmap_t* h, unsigned x, unsigned y, const he
         const unsigned y1 = (y + stamp->h/2) < h->h ? stamp->h : stamp->h/2 + (h->h - y);
 
         unsigned iy, ix;
+
         omp_set_dynamic(1);
         #pragma omp parallel for collapse(2)
         for(iy = y0 ; iy < y1 ; ++iy) {
@@ -182,7 +183,7 @@ unsigned char* heatmap_render_to(const heatmap_t* h, const heatmap_colorscheme_t
 
 unsigned char* heatmap_render_saturated_to(const heatmap_t* h, const heatmap_colorscheme_t* colorscheme, float saturation, unsigned char* colorbuf)
 {
-    unsigned y;
+    unsigned x, y;
     assert(saturation > 0.0f);
 
     /* For convenience, if no buffer is given, malloc a new one. */
@@ -195,15 +196,16 @@ unsigned char* heatmap_render_saturated_to(const heatmap_t* h, const heatmap_col
 
     /* TODO: could actually even flatten this loop before parallelizing it. */
     /* I.e., to go i = 0 ; i < h*w since I don't have any padding! (yet?) */
-    for(y = 0 ; y < h->h ; ++y) {
-        float* bufline = h->buf + y*h->w;
-        unsigned char* colorline = colorbuf + 4*y*h->w;
 
-        unsigned x;
-        for(x = 0 ; x < h->w ; ++x, ++bufline) {
+    omp_set_dynamic(1);
+    #pragma omp parallel for collapse(2)
+    for(y = 0 ; y < h->h ; ++y) {
+        for(x = 0 ; x < h->w ; ++x) {
             /* Saturate the heat value to the given saturation, and then
              * normalize by that.
              */
+            float* bufline = h->buf + y*h->w;
+            unsigned char* colorline = colorbuf + 4*y*h->w;
             const float val = (*bufline > saturation ? saturation : *bufline)/saturation;
 
             /* We add 0.5 in order to do real rounding, not just dropping the

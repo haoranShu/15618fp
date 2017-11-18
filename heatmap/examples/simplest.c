@@ -34,6 +34,7 @@ int main()
     static const size_t w = 256, h = 512, npoints = 1000;
     unsigned char image[256*512*4];
     unsigned i;
+    clock_t begin = clock();
 
     /* Create the heatmap object with the given dimensions (in pixel). */
     heatmap_t* hm = heatmap_new(w, h);
@@ -57,6 +58,9 @@ int main()
      * we don't need the map anymore.
      */
     heatmap_free(hm);
+
+    clock_t end = clock();
+    printf("Total time: %f seconds\n", (double)(end - begin) / CLOCKS_PER_SEC);
 
     /* Finally, we use the fantastic lodepng library to save it as an image. */
     {
