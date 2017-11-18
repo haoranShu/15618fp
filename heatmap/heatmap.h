@@ -71,6 +71,11 @@ heatmap_t* heatmap_new(unsigned w, unsigned h);
 void heatmap_free(heatmap_t* h);
 
 /* Adds a single point to the heatmap using the default stamp. */
+void heatmap_add_points_omp(heatmap_t* h, unsigned* x, unsigned* y, unsigned num_points);
+/* Adds a single point to the heatmap using a given stamp. */
+void heatmap_add_points_omp_with_stamp(heatmap_t* h, unsigned* x, unsigned* y, unsigned num_points, const heatmap_stamp_t* stamp);
+
+/* Adds a single point to the heatmap using the default stamp. */
 void heatmap_add_point(heatmap_t* h, unsigned x, unsigned y);
 /* Adds a single point to the heatmap using a given stamp. */
 void heatmap_add_point_with_stamp(heatmap_t* h, unsigned x, unsigned y, const heatmap_stamp_t* stamp);
