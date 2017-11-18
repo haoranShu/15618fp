@@ -91,11 +91,11 @@ void heatmap_add_point_with_stamp(heatmap_t* h, unsigned x, unsigned y, const he
         const unsigned x1 = (x + stamp->w/2) < h->w ? stamp->w : stamp->w/2 + (h->w - x);
         const unsigned y1 = (y + stamp->h/2) < h->h ? stamp->h : stamp->h/2 + (h->h - y);
 
+        unsigned iy, ix;
         omp_set_dynamic(1);
-
         #pragma omp parallel for collapse(2)
-        for(unsigned iy = y0 ; iy < y1 ; ++iy) {
-            for(unsigned ix = x0 ; ix < x1 ; ++ix) {
+        for(iy = y0 ; iy < y1 ; ++iy) {
+            for(ix = x0 ; ix < x1 ; ++ix) {
                 /* TODO: Let's actually accept negatives and try out funky stamps. */
                 /* Note that that might mess with the max though. */
                 /* And that we'll have to clamp the bottom to 0 when rendering. */
