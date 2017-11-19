@@ -84,8 +84,6 @@ void heatmap_add_points_omp_with_stamp(heatmap_t* h, unsigned* xs, unsigned* ys,
     const unsigned block_length = (num_points + NUM_OF_BLOCKS - 1) / NUM_OF_BLOCKS;
     heatmap_t local_heatmap[NUM_OF_BLOCKS];
 
-    double time1 = omp_get_wtime();
-
     omp_set_num_threads(NUM_OF_BLOCKS);
     #pragma omp parallel
     {
@@ -98,28 +96,35 @@ void heatmap_add_points_omp_with_stamp(heatmap_t* h, unsigned* xs, unsigned* ys,
         unsigned i;
         for (i = start; i < end; i++)
         {
-            heatmap_add_point_with_stamp(&local_heatmap[idx], xs[i], ys[i], stamp);
+            local_heatmap[idx].buf[ys[i] * h->w + xs[i]] += 1.0;
         }
     }
-
-    double time2 = omp_get_wtime();
-    printf("Time spent step 1: %f\n", time2 - time1);
 
     unsigned x, y, k;
     #pragma omp parallel for
     for (y = 0; y < h->h; y++)
     {
-        for (k = 0; k < NUM_OF_BLOCKS; k++)
+        for (k = 1; k < NUM_OF_BLOCKS; k++)
         {
             for (x = 0; x < h->w; x++)
             {
-                h->buf[y * h->w + x] += local_heatmap[k].buf[y * h->w + x];
+                local_heatmap[0].buf[y * h->w + x] += local_heatmap[k].buf[y * h->w + x];
             }
         }
     }
 
-    double time3 = omp_get_wtime();
-    printf("Time spent step 2: %f\n", time3 - time2);
+    float w;
+    for (y = 0; i < h->h; y++)
+    {
+        for (x = 0; x < h->w; x++)
+        {
+            w = local_heatmap[0].buf[y * h->w + x];
+            if (w > 0)
+            {
+                heatmap_add_weighted_point_with_stamp(h, x, y, w, stamp);
+            }
+        }
+    }
 }
 /* End added functions */
 
