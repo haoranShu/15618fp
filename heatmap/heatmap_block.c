@@ -30,6 +30,8 @@
 #include <assert.h> /* assert, #define NDEBUG to ignore. */
 #include <omp.h>
 
+#define NUM_OF_BLOCKS 128
+
 /* Having a default stamp ready makes it easier for simple usage of the library
  * since there is no need to create a new stamp.
  */
@@ -73,49 +75,40 @@ void heatmap_free(heatmap_t* h)
 /* Jay: Added functions to support better OpenMP parallelism */
 void heatmap_add_points_omp(heatmap_t* h, unsigned* xs, unsigned* ys, unsigned num_points)
 {
-    heatmap_add_points_omp_with_stamp(h, xs, ys, size, &stamp_default_4);
+    heatmap_add_points_omp_with_stamp(h, xs, ys, num_points, &stamp_default_4);
 }
 
 void heatmap_add_points_omp_with_stamp(heatmap_t* h, unsigned* xs, unsigned* ys, unsigned num_points, const heatmap_stamp_t* stamp)
 {
-    const unsigned block_width = stamp->w * 3;
-    const unsigned block_height = stamp->h * 3;
-    const unsigned num_rows = (h->h + block_height - 1) / block_height;
-    const unsigned num_cols = (h->w + block_width - 1) / block_width;
-    const unsigned num_of_blocks = num_rows * num_cols;
 
-    int b;
+    const unsigned block_length = (num_points + NUM_OF_BLOCKS - 1) / NUM_OF_BLOCKS;
+    heatmap_t local_heatmap[NUM_OF_BLOCKS];
 
-    omp_set_num_threads(num_of_blocks);
-    omp_set_dynamic(1);
-    #pragma omp parallel for
-    for (b = 0; b < num_of_blocks; b++)
+    omp_set_num_threads(NUM_OF_BLOCKS);
+    #pragma omp parallel
     {
+        int idx = omp_get_thread_num();
+        unsigned start = idx * block_length;
+        unsigned end = start + block_length <= num_points ? start + block_length : num_points;
 
-        const unsigned large_start_x = block_width * (b % num_cols);
-        const unsigned large_end_x = large_start_x + block_width <= h->w ? large_start_x + block_width : h->w;
-        const unsigned large_start_y = block_height * (b / num_cols);
-        const unsigned large_end_y = large_start_y + block_height <= h->h ? large_start_y + block_height : h->h;
+        heatmap_init(&local_heatmap[idx], h->w, h->h);
 
-        int i, j, k;
-        for (i = 0; i < 3; i++)
+        unsigned i;
+        for (i = start; i < end; i++)
         {
-            const unsigned start_x = large_start_x + i * stamp->w;
-            const unsigned end_x = start_x + stamp->w <= large_end_x ? start_x + stamp->w : large_end_x;
-            for (j = 0; j < 3; j++)
+            heatmap_add_point_with_stamp(&local_heatmap[idx], xs[i], ys[i], stamp);
+        }
+    }
+
+    unsigned x, y, k;
+    #pragma omp parallel for
+    for (y = 0; y < h->h; y++)
+    {
+        for (k = 0; k < NUM_OF_BLOCKS; k++)
+        {
+            for (x = 0; x < h->w; x++)
             {
-                const unsigned start_y = large_start_y + j * stamp->h;
-                const unsigned end_y = start_y + stamp->h <= large_end_y ? start_y + stamp->h : large_end_y;
-
-                for (k = 0; k < num_points; k++)
-                {
-                    if (xs[k] >= start_x && xs[k] < end_x && ys[k] >= start_y && ys[k] < end_y)
-                    {
-                        heatmap_add_point_with_stamp(h, xs[k], ys[k], stamp);
-                    }
-                }
-
-                #pragma omp barrier
+                h->buf[y * h->w + x] += local_heatmap[k].buf[y * h->w + x];
             }
         }
     }
