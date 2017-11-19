@@ -25,29 +25,35 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+#include <omp.h>
 
 #include "lodepng.h"
 #include "heatmap.h"
 
 int main()
 {
-    static const size_t w = 1024, h = 2048, npoints = 1000000;
-    unsigned char image[1024 * 2048 * 4];
+    static const size_t w = 4096, h = 4096, npoints = 100000000;
+    unsigned char image[4096 * 4096 * 4];
     unsigned i;
-    clock_t begin = clock();
+    double begin = omp_get_wtime();
 
     /* Create the heatmap object with the given dimensions (in pixel). */
     heatmap_t* hm = heatmap_new(w, h);
 
     srand(time(NULL));
 
+    unsigned *xs = (unsigned *) malloc(sizeof(unsigned) * num_points);
+    unsigned *ys = (unsigned *) malloc(sizeof(unsigned) * num_points);
     /* Add a bunch of random points to the heatmap now. */
     for(i = 0 ; i < npoints ; ++i) {
         /* Fake a normal distribution. */
         unsigned x = rand() % w/3 + rand() % w/3 + rand() % w/3;
         unsigned y = rand() % h/3 + rand() % h/3 + rand() % h/3;
-        heatmap_add_point(hm, x, y);
+        xs[i] = x;
+        ys[i] = y;
     }
+
+    heatmap_add_points_omp(hm, x, y, npoints);
 
     /* This creates an image out of the heatmap.
      * `image` now contains the image data in 32-bit RGBA.
@@ -59,8 +65,8 @@ int main()
      */
     heatmap_free(hm);
 
-    clock_t end = clock();
-    printf("Total time: %f seconds\n", (double)(end - begin) / CLOCKS_PER_SEC);
+    double end = omp_get_wtime();
+    printf("Total time: %f seconds\n", end - begin);
 
     /* Finally, we use the fantastic lodepng library to save it as an image. */
     {
