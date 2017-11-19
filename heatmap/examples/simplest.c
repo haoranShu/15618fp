@@ -35,15 +35,11 @@ int main()
     static const size_t w = 4096, h = 4096, npoints = 100000000;
     unsigned char image[4096 * 4096 * 4];
     unsigned i;
-    double begin = omp_get_wtime();
-
-    /* Create the heatmap object with the given dimensions (in pixel). */
-    heatmap_t* hm = heatmap_new(w, h);
 
     srand(time(NULL));
 
-    unsigned *xs = (unsigned *) malloc(sizeof(unsigned) * num_points);
-    unsigned *ys = (unsigned *) malloc(sizeof(unsigned) * num_points);
+    unsigned *xs = (unsigned *) malloc(sizeof(unsigned) * npoints);
+    unsigned *ys = (unsigned *) malloc(sizeof(unsigned) * npoints);
     /* Add a bunch of random points to the heatmap now. */
     for(i = 0 ; i < npoints ; ++i) {
         /* Fake a normal distribution. */
@@ -52,8 +48,17 @@ int main()
         xs[i] = x;
         ys[i] = y;
     }
+    double begin = omp_get_wtime();
 
-    heatmap_add_points_omp(hm, x, y, npoints);
+    /* Create the heatmap object with the given dimensions (in pixel). */
+    heatmap_t* hm = heatmap_new(w, h);
+
+    heatmap_add_points_omp(hm, xs, ys, npoints);
+
+    /*for (i = 0; i < npoints; i++)*/
+    /*{*/
+        /*heatmap_add_point(hm, xs[i], ys[i]);*/
+    /*}*/
 
     /* This creates an image out of the heatmap.
      * `image` now contains the image data in 32-bit RGBA.
