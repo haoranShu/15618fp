@@ -100,21 +100,29 @@ void heatmap_add_points_omp_with_stamp(heatmap_t* h, unsigned* xs, unsigned* ys,
         }
     }
 
-    unsigned x, y, k, i;
-    float w;
-    for (i = 0; i < h->h * h->w; i++)
+    unsigned x, y, k;
+    #pragma omp parallel for
+    for (y = 0; y < h->h; y++)
     {
-        w = local_heatmap[0].buf[i];
         for (k = 1; k < NUM_OF_BLOCKS; k++)
         {
-            w += local_heatmap[k].buf[i];
+            for (x = 0; x < h->w; x++)
+            {
+                local_heatmap[0].buf[y * h->w + x] += local_heatmap[k].buf[y * h->w + x];
+            }
         }
+    }
 
-        if (w > 0)
+    float w;
+    for (y = 0; y < h->h; y++)
+    {
+        for (x = 0; x < h->w; x++)
         {
-            x = i % h->w;
-            y = i / h->w;
-            heatmap_add_weighted_point_with_stamp(h, x, y, w, stamp);
+            w = local_heatmap[0].buf[y * h->w + x];
+            if (w > 0)
+            {
+                heatmap_add_weighted_point_with_stamp(h, x, y, w, stamp);
+            }
         }
     }
 }
