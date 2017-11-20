@@ -54,7 +54,7 @@ clean:
 test: tests
 	tests/test
 
-heatmap.o: heatmap.c heatmap.h
+heatmap.o: heatmap_block.c heatmap.h
 	$(CC) -c $< $(CFLAGS) -o $@
 
 colorschemes/%.o: colorschemes/%.c colorschemes/%.h

@@ -62,7 +62,25 @@ We plan to use MPI for this part of the project as it provides a convenient and 
 
 We plan to use WebGL JavaScript Library for this part of the project as it provides API for rendering **interactive** 3D and 2D graphics that fit our needs. 
 
-## Schedule
+## Checkpoint Report
+
+### Progress So Far
+
+In the past three weeks, we mainly spent our time 
+
+1. Pipeline Design
+
+2. Datasets
+
+### Preliminary Results
+
+1. Renderer
+
+### Updated Project Goals
+
+### Main Concerns
+
+## Updated Schedule
 
 We divide our work into three phases.
 

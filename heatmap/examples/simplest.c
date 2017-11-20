@@ -32,7 +32,7 @@
 
 int main()
 {
-    static const size_t w = 4096, h = 4096, npoints = 100000000;
+    static const size_t w = 4096, h = 4096, npoints = 10000;
     unsigned char image[4096 * 4096 * 4];
     unsigned i;
 
