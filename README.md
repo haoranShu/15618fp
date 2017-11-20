@@ -68,19 +68,27 @@ We plan to use WebGL JavaScript Library for this part of the project as it provi
 
 In the past three weeks, we mainly spent our time reading related literature on our project, designing our own pipeline, looking for appropriate datasets and playing around the starter codes we found. Up to this point, we have decided on our main pipeline design and the main data structures that we are going to use. We also have finished several attempts to parallize the starter code (heatmap rendering) part using OpenMP. Following is a more detailed description of our pipeline design and targeted datasets.
 
-1. Pipeline Design
-	We mainly devided our pipeline into three parts: Binning, Level of Detail Building and Kernel Density Estimation Rendering. When the gap between output plot size and dataset size is large, we perform binning to cluster points that would be rendered to the same pixel. For use of hierarchincal interaction, we build several levels of details in a Pyramid-like construct. Finally, we render the datapoints using KDE to handle the problem of overplotting and cluttering.
+#### Pipeline Design
 
-	For both Binning and LoD Building we plan to use a QuadTree data structure so that the computational complexity could be reduced to O(logn) even without parallelism. Using GPU, we can further reduce the complexity to constant time.
+We mainly devided our pipeline into three parts: Binning, Level of Detail Building and Kernel Density Estimation Rendering. When the gap between output plot size and dataset size is large, we perform binning to cluster points that would be rendered to the same pixel. For use of hierarchincal interaction, we build several levels of details in a Pyramid-like construct. Finally, we render the datapoints using KDE to handle the problem of overplotting and cluttering.
 
-	For KDE Rendering we plan to try out both OpenMP and CUDA. We have already implemented it with OpenMP and a detailed performance report is in the next section.
+For both Binning and LoD Building we plan to use a QuadTree data structure so that the computational complexity could be reduced to O(logn) even without parallelism. Using GPU, we can further reduce the complexity to constant time.
 
-2. Datasets
-	We will be using two datasets: DOTA2 replays and SNAP (Stanford Network Analysis Project) datasets (using nodes only). The first dataset is used in the starter code we found and can serve as a benchmark dataset for us to test our speedup with respect to the original serial implementation. The latter is larger in size and provides temporal data, which make it ideal for both ends of interaction and time-dependent streaming in our goals.
+For KDE Rendering we plan to try out both OpenMP and CUDA. We have already implemented it with OpenMP and a detailed performance report is in the next section.
+
+#### Datasets
+
+We will be using two datasets: DOTA2 replays and SNAP (Stanford Network Analysis Project) datasets (using nodes only). The first dataset is used in the starter code we found and can serve as a benchmark dataset for us to test our speedup with respect to the original serial implementation. The latter is larger in size and provides temporal data, which make it ideal for both ends of interaction and time-dependent streaming in our goals.
 
 ### Preliminary Results
 
-We first tried to parallelize the starting codes (the KDE rendering part) with OpenMP. We tried two methods and found out they each performs better with different sizes of data input.
+We first tried to parallelize the starting codes (the KDE rendering part) with OpenMP. We tried a couple of approaches and found out they each performs better with different sizes of data input.
+
+First, we tried to parallelize the update function for each data point. This resulted in a much slower runtime due to the fact that the update requires very little computation for each data point, thus making parallelization ineffective. 
+
+Since we are mostly limited by the overlapping datapoints that update the same pixels, our second intuition was to reduce this contention and improve our speed up. We tried to parallelize the program by separating the heatmap into distinct blocks so that updates to the heatmap can be carried out concurrently with minimal contention between the blocks. However, when the number of data points are large, each thread will need to traverse the entire list of points a couple of times, resulting in unsatisfactory speedup.
+
+Next, we tried to preprocess the input data points and group similar points together before performing the actual reduction. This resulted in a much better speed up (100 million points only takes about 0.5 second, compared to the sequential version which takes about 15 seconds). Grouping the data points is also a nice segue to the next phase of the project as we will need to support zoom in and zoom out and therefore heatmaps of differnet resolutions. Grouping will be helpful for rendering different heatmaps quickly for the demo.
 
 ### Updated Project Goals and Methods
 
@@ -90,6 +98,7 @@ We still aim to accomplish other goals in our original proposal, including zoomi
 
 ### Main Concerns
 
+Currently the rendering step of heatmap generation requires very little computation for each data point as only a 9 by 9 region would need to be updated. As a result, our parallel implementation using OpenMP did not show a significant reduction in terms of the run time due to the overhead of parallel implementation. We have a number of choices in the next phase. First, we could use more data points. This would increase the computation required to generate the heatmap, but at the same time, using too many data point may saturate the image, therefore, reducing the quality of the heatmap. We could also use a larger stamp. This larger stamp can be applied to an image of greater resolution to increase the computational complexity of generating the heatmap, therefore, improving the observed speedup. This approach may be preferred. We shall also explore the implementation using Cuda as updating the heatmap fits naturally with the SIMD design of a Cuda program. 
 
 
 ## Updated Schedule
