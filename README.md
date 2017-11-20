@@ -66,19 +66,31 @@ We plan to use WebGL JavaScript Library for this part of the project as it provi
 
 ### Progress So Far
 
-In the past three weeks, we mainly spent our time 
+In the past three weeks, we mainly spent our time reading related literature on our project, designing our own pipeline, looking for appropriate datasets and playing around the starter codes we found. Up to this point, we have decided on our main pipeline design and the main data structures that we are going to use. We also have finished several attempts to parallize the starter code (heatmap rendering) part using OpenMP. Following is a more detailed description of our pipeline design and targeted datasets.
 
 1. Pipeline Design
+	We mainly devided our pipeline into three parts: Binning, Level of Detail Building and Kernel Density Estimation Rendering. When the gap between output plot size and dataset size is large, we perform binning to cluster points that would be rendered to the same pixel. For use of hierarchincal interaction, we build several levels of details in a Pyramid-like construct. Finally, we render the datapoints using KDE to handle the problem of overplotting and cluttering.
+
+	For both Binning and LoD Building we plan to use a QuadTree data structure so that the computational complexity could be reduced to O(logn) even without parallelism. Using GPU, we can further reduce the complexity to constant time.
+
+	For KDE Rendering we plan to try out both OpenMP and CUDA. We have already implemented it with OpenMP and a detailed performance report is in the next section.
 
 2. Datasets
+	We will be using two datasets: DOTA2 replays and SNAP (Stanford Network Analysis Project). The first dataset is used in the starter code we found and can serve as a benchmark dataset for us to test our speedup with respect to the original serial implementation. The latter is larger in size and provides temporal data, which make it ideal for both ends of interaction and time-dependent streaming in our goals.
 
 ### Preliminary Results
 
-1. Renderer
+We first tried to parallelize the starting codes (the KDE rendering part) with OpenMP. We tried two methods and found out they each performs better with different sizes of data input.
 
-### Updated Project Goals
+### Updated Project Goals and Methods
+
+We were planning to use MPI at first, but downsizing the datasets makes Shared Address Space models interesting as well. Thus we plan to use OpenMP and CUDA first for the two datasets stated above. If time permits, we will implement an MPI version to SIMULATE the scenario where dataset is too large.
+
+We still aim to accomplish other goals in our original proposal, including zooming interactions and time-frame selection.
 
 ### Main Concerns
+
+
 
 ## Updated Schedule
 
