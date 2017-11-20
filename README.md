@@ -76,7 +76,7 @@ In the past three weeks, we mainly spent our time reading related literature on 
 	For KDE Rendering we plan to try out both OpenMP and CUDA. We have already implemented it with OpenMP and a detailed performance report is in the next section.
 
 2. Datasets
-	We will be using two datasets: DOTA2 replays and SNAP (Stanford Network Analysis Project). The first dataset is used in the starter code we found and can serve as a benchmark dataset for us to test our speedup with respect to the original serial implementation. The latter is larger in size and provides temporal data, which make it ideal for both ends of interaction and time-dependent streaming in our goals.
+	We will be using two datasets: DOTA2 replays and SNAP (Stanford Network Analysis Project) datasets (using nodes only). The first dataset is used in the starter code we found and can serve as a benchmark dataset for us to test our speedup with respect to the original serial implementation. The latter is larger in size and provides temporal data, which make it ideal for both ends of interaction and time-dependent streaming in our goals.
 
 ### Preliminary Results
 
@@ -94,10 +94,17 @@ We still aim to accomplish other goals in our original proposal, including zoomi
 
 ## Updated Schedule
 
-We divide our work into three phases.
+**Week 4 (11.20 - 11.26)**
 
-1. **Phase I: 11.1 - 11.8** Preparations on datasets, paper reading and API studying.
+	Task: QuadTree Implementation
+	Task: CUDA KDE Renderer Implementation
+	Task: Hierarchical Level of Details Implementation
 
-2. **Phase II: 11.9 - 11.20** Core Implementation, including data pre-computation, kernel density estimation and tile aggregation.
+**Week 5 (11.27 - 12.3)**
 
-3. **Phase III: 11.21 - 12.10** Application development and Algorithm Optimization, when we plan to optimize our algorithm and put it into use to visualize datasets on the web.
+	Task: Interaction GUI Implementation
+	Task: Parallelize QuadTree
+
+**Week 6 (12.4 - 12.10)**
+	Task: Further Optimizations
+	Task: Experiments
