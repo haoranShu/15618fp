@@ -106,5 +106,7 @@ We still aim to accomplish other goals in our original proposal, including zoomi
 	Task: Parallelize QuadTree
 
 **Week 6 (12.4 - 12.10)**
+
 	Task: Further Optimizations
 	Task: Experiments
+
