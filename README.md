@@ -96,17 +96,17 @@ We still aim to accomplish other goals in our original proposal, including zoomi
 
 **Week 4 (11.20 - 11.26)**
 
-	Task: QuadTree Implementation
-	Task: CUDA KDE Renderer Implementation
-	Task: Hierarchical Level of Details Implementation
+	Task: QuadTree Implementation (Jay)
+	Task: CUDA KDE Renderer Implementation (Haoran)
+	Task: Hierarchical Level of Details Implementation (Haoran)
 
 **Week 5 (11.27 - 12.3)**
 
-	Task: Interaction GUI Implementation
-	Task: Parallelize QuadTree
+	Task: Interaction GUI Implementation (Jay)
+	Task: Parallelize QuadTree (Jay and Haoran)
 
 **Week 6 (12.4 - 12.10)**
 
-	Task: Further Optimizations
-	Task: Experiments
+	Task: Further Optimizations (Jay and Haoran)
+	Task: Experiments (Jay and Haoran)
 

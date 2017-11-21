@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccYl4XIm.s 			page 1
+GAS LISTING /tmp/cc2e4YKH.s 			page 1
 
 
    1              		.file	"simplest.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
   15:examples/simplest.c ****  *
   16:examples/simplest.c ****  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   17:examples/simplest.c ****  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-GAS LISTING /tmp/ccYl4XIm.s 			page 2
+GAS LISTING /tmp/cc2e4YKH.s 			page 2
 
 
   18:examples/simplest.c ****  * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
   48 000d 49BCABAA 		movabsq	$-6148914691236517205, %r12
   48      AAAAAAAA 
   48      AAAA
-GAS LISTING /tmp/ccYl4XIm.s 			page 3
+GAS LISTING /tmp/cc2e4YKH.s 			page 3
 
 
   49              	.LBE2:
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
   85 0062 E8000000 		call	rand@PLT
   85      00
   86 0067 89442408 		movl	%eax, 8(%rsp)
-GAS LISTING /tmp/ccYl4XIm.s 			page 4
+GAS LISTING /tmp/cc2e4YKH.s 			page 4
 
 
   47:examples/simplest.c ****         unsigned y = rand() % h/3 + rand() % h/3 + rand() % h/3;
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  125              		.loc 1 49 0
  126 00db 49F7E4   		mulq	%r12
  127 00de 4C89F0   		movq	%r14, %rax
-GAS LISTING /tmp/ccYl4XIm.s 			page 5
+GAS LISTING /tmp/cc2e4YKH.s 			page 5
 
 
   48:examples/simplest.c ****         ys[i] = y;
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
   61:examples/simplest.c **** 
   62:examples/simplest.c ****     /* This creates an image out of the heatmap.
   63:examples/simplest.c ****      * `image` now contains the image data in 32-bit RGBA.
-GAS LISTING /tmp/ccYl4XIm.s 			page 6
+GAS LISTING /tmp/cc2e4YKH.s 			page 6
 
 
   64:examples/simplest.c ****      */
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
   75:examples/simplest.c ****     /* Finally, we use the fantastic lodepng library to save it as an image. */
   76:examples/simplest.c ****     {
   77:examples/simplest.c ****         unsigned error = lodepng_encode32_file("heatmap.png", image, w, h);
-GAS LISTING /tmp/ccYl4XIm.s 			page 7
+GAS LISTING /tmp/cc2e4YKH.s 			page 7
 
 
  189              		.loc 1 78 0
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  226              		.cfi_def_cfa_offset 32
  227              	.LVL14:
  228 01c8 415D     		popq	%r13
-GAS LISTING /tmp/ccYl4XIm.s 			page 8
+GAS LISTING /tmp/cc2e4YKH.s 			page 8
 
 
  229              		.cfi_def_cfa_offset 24
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  268      00000000 
  269 0087 CF010000 		.quad	.LFE30-.Ltext0
  269      00000000 
-GAS LISTING /tmp/ccYl4XIm.s 			page 9
+GAS LISTING /tmp/cc2e4YKH.s 			page 9
 
 
  270 008f 0500     		.value	0x5
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  306              		.file 4 "/usr/include/libio.h"
  307              		.file 5 "./heatmap.h"
  308              		.file 6 "/usr/include/stdio.h"
-GAS LISTING /tmp/ccYl4XIm.s 			page 10
+GAS LISTING /tmp/cc2e4YKH.s 			page 10
 
 
  309              		.section	.debug_info
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  361 0072 05       		.byte	0x5
  362 0073 00000000 		.long	.LASF7
  363 0077 02       		.uleb128 0x2
-GAS LISTING /tmp/ccYl4XIm.s 			page 11
+GAS LISTING /tmp/cc2e4YKH.s 			page 11
 
 
  364 0078 00000000 		.long	.LASF9
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  418 00e9 04       		.byte	0x4
  419 00ea 1801     		.value	0x118
  420 00ec 8F000000 		.long	0x8f
-GAS LISTING /tmp/ccYl4XIm.s 			page 12
+GAS LISTING /tmp/cc2e4YKH.s 			page 12
 
 
  421 00f0 20       		.sleb128 32
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  475 016a E800     		.sleb128 104
  476 016c 08       		.uleb128 0x8
  477 016d 00000000 		.long	.LASF27
-GAS LISTING /tmp/ccYl4XIm.s 			page 13
+GAS LISTING /tmp/cc2e4YKH.s 			page 13
 
 
  478 0171 04       		.byte	0x4
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  532 01ef 04       		.byte	0x4
  533 01f0 4901     		.value	0x149
  534 01f2 8D000000 		.long	0x8d
-GAS LISTING /tmp/ccYl4XIm.s 			page 14
+GAS LISTING /tmp/cc2e4YKH.s 			page 14
 
 
  535 01f6 A001     		.sleb128 160
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  589 026a 0B       		.uleb128 0xb
  590 026b 00000000 		.long	.LASF46
  591 026f 04       		.byte	0x4
-GAS LISTING /tmp/ccYl4XIm.s 			page 15
+GAS LISTING /tmp/cc2e4YKH.s 			page 15
 
 
  592 0270 C0       		.byte	0xc0
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  646 02d8 46000000 		.long	0x46
  647 02dc 10       		.sleb128 16
  648 02dd 00       		.byte	0x0
-GAS LISTING /tmp/ccYl4XIm.s 			page 16
+GAS LISTING /tmp/cc2e4YKH.s 			page 16
 
 
  649 02de 06       		.uleb128 0x6
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  701 0350 25       		.byte	0x25
  702 0351 46000000 		.long	0x46
  703 0355 15       		.uleb128 0x15
-GAS LISTING /tmp/ccYl4XIm.s 			page 17
+GAS LISTING /tmp/cc2e4YKH.s 			page 17
 
 
  704 0356 787300   		.string	"xs"
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  756 03d9 00       		.byte	0x0
  757 03da 00       		.byte	0x0
  758 03db 19       		.uleb128 0x19
-GAS LISTING /tmp/ccYl4XIm.s 			page 18
+GAS LISTING /tmp/cc2e4YKH.s 			page 18
 
 
  759 03dc 2D000000 		.long	0x2d
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  813 0448 00000000 		.long	.LASF56
  814 044c 06       		.byte	0x6
  815 044d A7       		.byte	0xa7
-GAS LISTING /tmp/ccYl4XIm.s 			page 19
+GAS LISTING /tmp/cc2e4YKH.s 			page 19
 
 
  816 044e 7D020000 		.long	0x27d
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  870 0031 0B       		.uleb128 0xb
  871 0032 03       		.uleb128 0x3
  872 0033 08       		.uleb128 0x8
-GAS LISTING /tmp/ccYl4XIm.s 			page 20
+GAS LISTING /tmp/cc2e4YKH.s 			page 20
 
 
  873 0034 00       		.byte	0x0
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  927 006a 0B       		.uleb128 0xb
  928 006b 3B       		.uleb128 0x3b
  929 006c 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccYl4XIm.s 			page 21
+GAS LISTING /tmp/cc2e4YKH.s 			page 21
 
 
  930 006d 00       		.byte	0x0
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  984 00a3 0B       		.uleb128 0xb
  985 00a4 3A       		.uleb128 0x3a
  986 00a5 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccYl4XIm.s 			page 22
+GAS LISTING /tmp/cc2e4YKH.s 			page 22
 
 
  987 00a6 3B       		.uleb128 0x3b
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  1041 00dc 13       		.uleb128 0x13
  1042 00dd 1C       		.uleb128 0x1c
  1043 00de 05       		.uleb128 0x5
-GAS LISTING /tmp/ccYl4XIm.s 			page 23
+GAS LISTING /tmp/cc2e4YKH.s 			page 23
 
 
  1044 00df 00       		.byte	0x0
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  1098 0115 49       		.uleb128 0x49
  1099 0116 13       		.uleb128 0x13
  1100 0117 02       		.uleb128 0x2
-GAS LISTING /tmp/ccYl4XIm.s 			page 24
+GAS LISTING /tmp/cc2e4YKH.s 			page 24
 
 
  1101 0118 06       		.uleb128 0x6
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  1155 014e 00       		.byte	0x0
  1156 014f 03       		.uleb128 0x3
  1157 0150 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccYl4XIm.s 			page 25
+GAS LISTING /tmp/cc2e4YKH.s 			page 25
 
 
  1158 0151 3A       		.uleb128 0x3a
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  1199              		.section	.debug_aranges,"",@progbits
  1200 0000 2C000000 		.long	0x2c
  1201 0004 0200     		.value	0x2
-GAS LISTING /tmp/ccYl4XIm.s 			page 26
+GAS LISTING /tmp/cc2e4YKH.s 			page 26
 
 
  1202 0006 00000000 		.long	.Ldebug_info0
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  1233 0042 5F6F6666 		.string	"_offset"
  1233      73657400 
  1234              	.LASF48:
-GAS LISTING /tmp/ccYl4XIm.s 			page 27
+GAS LISTING /tmp/cc2e4YKH.s 			page 27
 
 
  1235 004a 68656174 		.string	"heatmap_t"
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  1261      5F636F6C 
  1261      756D6E00 
  1262              	.LASF46:
-GAS LISTING /tmp/ccYl4XIm.s 			page 28
+GAS LISTING /tmp/cc2e4YKH.s 			page 28
 
 
  1263 00f2 5F706F73 		.string	"_pos"
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  1287      00
  1288              	.LASF61:
  1289 018c 6D61696E 		.string	"main"
-GAS LISTING /tmp/ccYl4XIm.s 			page 29
+GAS LISTING /tmp/cc2e4YKH.s 			page 29
 
 
  1289      00
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/ccYl4XIm.s 			page 1
  1317      656E6F00 
  1318              	.LASF26:
  1319 0234 5F636861 		.string	"_chain"
-GAS LISTING /tmp/ccYl4XIm.s 			page 30
+GAS LISTING /tmp/cc2e4YKH.s 			page 30
 
 
  1319      696E00

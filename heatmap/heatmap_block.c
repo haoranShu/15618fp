@@ -30,7 +30,7 @@
 #include <assert.h> /* assert, #define NDEBUG to ignore. */
 #include <omp.h>
 
-#define NUM_OF_BLOCKS 32
+#define NUM_OF_BLOCKS 8
 
 /* Having a default stamp ready makes it easier for simple usage of the library
  * since there is no need to create a new stamp.
@@ -96,8 +96,8 @@ void heatmap_add_points_omp_with_stamp(heatmap_t* h, unsigned* xs, unsigned* ys,
         unsigned i;
         for (i = start; i < end; i++)
         {
-            heatmap_add_weighted_point_with_stamp(local_heatmap + idx, xs[i], ys[i], 1.0, stamp);
-            // local_heatmap[idx].buf[ys[i] * h->w + xs[i]] += 1.0;
+            // heatmap_add_weighted_point_with_stamp(local_heatmap + idx, xs[i], ys[i], 1.0, stamp);
+            local_heatmap[idx].buf[ys[i] * h->w + xs[i]] += 1.0;
         }
     }
 
@@ -113,12 +113,12 @@ void heatmap_add_points_omp_with_stamp(heatmap_t* h, unsigned* xs, unsigned* ys,
             {
                 w += local_heatmap[k].buf[i];
             }
-/*
+
             if (w > 0)
             {
                 heatmap_add_weighted_point_with_stamp(h, x, y, w, stamp);
             }
-*/
+
         }
     }
 }
