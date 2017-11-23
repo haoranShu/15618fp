@@ -32,29 +32,33 @@
 
 int main()
 {
-    static const size_t w = 4096, h = 4096, npoints = 10000;
+    static const size_t w = 4096, h = 4096, npoints = 10000000;
     unsigned char image[4096 * 4096 * 4];
     unsigned i;
 
     srand(time(NULL));
 
-    unsigned *xs = (unsigned *) malloc(sizeof(unsigned) * npoints);
-    unsigned *ys = (unsigned *) malloc(sizeof(unsigned) * npoints);
+    float *xs = (float *) malloc(sizeof(float) * npoints);
+    float *ys = (float *) malloc(sizeof(float) * npoints);
+    float *ws = (float *) malloc(sizeof(float) * npoints);
     /* Add a bunch of random points to the heatmap now. */
     for(i = 0 ; i < npoints ; ++i) {
         /* Fake a normal distribution. */
         unsigned x = rand() % w/3 + rand() % w/3 + rand() % w/3;
         unsigned y = rand() % h/3 + rand() % h/3 + rand() % h/3;
-        xs[i] = x;
-        ys[i] = y;
+        xs[i] = (float)x;
+        ys[i] = (float)y;
+        ws[i] = 1.0;
     }
     double begin = omp_get_wtime();
 
     /* Create the heatmap object with the given dimensions (in pixel). */
     heatmap_t* hm = heatmap_new(w, h);
 
-    heatmap_add_points_omp(hm, xs, ys, npoints);
+    // heatmap_add_points_omp(hm, xs, ys, npoints);
 
+    cudaKDE_renderer(hm, xs, ys, ws, npoints,
+                     0, 8192, 0, 8192, 3);
     /*for (i = 0; i < npoints; i++)*/
     /*{*/
         /*heatmap_add_point(hm, xs[i], ys[i]);*/

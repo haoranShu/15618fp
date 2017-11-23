@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccb24Nf7.s 			page 1
+GAS LISTING /tmp/ccVfeQK4.s 			page 1
 
 
    1              		.file	"simplest.cpp"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   37:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 
   38:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** #include <ext/atomicity.h>
   39:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** #include <debug/debug.h>
-GAS LISTING /tmp/ccb24Nf7.s 			page 2
+GAS LISTING /tmp/ccVfeQK4.s 			page 2
 
 
   40:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** #if __cplusplus >= 201103L
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   94:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****    *  The reason you want _M_data pointing to the character %array and
   95:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****    *  not the _Rep is so that the debugger can see the string
   96:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****    *  contents. (Probably we should add a non-inline member to get
-GAS LISTING /tmp/ccb24Nf7.s 			page 3
+GAS LISTING /tmp/ccVfeQK4.s 			page 3
 
 
   97:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****    *  the _Rep for the debugger to use, so users can check the actual
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  151:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 	_Atomic_word		_M_refcount;
  152:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****       };
  153:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 4
+GAS LISTING /tmp/ccVfeQK4.s 			page 4
 
 
  154:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****       struct _Rep : _Rep_base
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  208:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** #if _GLIBCXX_FULLY_DYNAMIC_STRING == 0
  209:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 	  if (__builtin_expect(this != &_S_empty_rep(), false))
  210:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** #endif
-GAS LISTING /tmp/ccb24Nf7.s 			page 5
+GAS LISTING /tmp/ccVfeQK4.s 			page 5
 
 
  211:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 	    {
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   22:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** // <http://www.gnu.org/licenses/>.
   23:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** 
   24:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** /** @file ext/atomicity.h
-GAS LISTING /tmp/ccb24Nf7.s 			page 6
+GAS LISTING /tmp/ccVfeQK4.s 			page 6
 
 
   25:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h ****  *  This file is a GNU extension to the Standard C++ Library.
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   79:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** #ifdef __GTHREADS
   80:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h ****     if (__gthread_active_p())
   24              		.loc 2 81 0
-GAS LISTING /tmp/ccb24Nf7.s 			page 7
+GAS LISTING /tmp/ccVfeQK4.s 			page 7
 
 
   25 0000 48833D00 		cmpq	$0, _ZL28__gthrw___pthread_key_createPjPFvPvE@GOTPCREL(%rip)
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  248:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 		  _M_destroy(__a);
   62              		.loc 1 249 0
   63 0025 E9000000 		jmp	_ZNSs4_Rep10_M_destroyERKSaIcE@PLT
-GAS LISTING /tmp/ccb24Nf7.s 			page 8
+GAS LISTING /tmp/ccVfeQK4.s 			page 8
 
 
   63      00
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   35:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** {
   36:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   /*
   37:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****    * (Further) implementation-space details.
-GAS LISTING /tmp/ccb24Nf7.s 			page 9
+GAS LISTING /tmp/ccVfeQK4.s 			page 9
 
 
   38:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****    */
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   92:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   } // namespace __detail
   93:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
   94:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** _GLIBCXX_BEGIN_NAMESPACE_VERSION
-GAS LISTING /tmp/ccb24Nf7.s 			page 10
+GAS LISTING /tmp/ccVfeQK4.s 			page 10
 
 
   95:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  149:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	seed(__sum);
  150:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       }
  151:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 11
+GAS LISTING /tmp/ccVfeQK4.s 			page 11
 
 
  152:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _UIntType, _UIntType __a, _UIntType __c, _UIntType __m,
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  206:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   _UIntType __f>
  207:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     constexpr size_t
  208:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d,
-GAS LISTING /tmp/ccb24Nf7.s 			page 12
+GAS LISTING /tmp/ccVfeQK4.s 			page 12
 
 
  209:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 			    __s, __b, __t, __c, __l, __f>::state_size;
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  263:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 			    __s, __b, __t, __c, __l, __f>::tempering_s;
  264:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
  265:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _UIntType,
-GAS LISTING /tmp/ccb24Nf7.s 			page 13
+GAS LISTING /tmp/ccVfeQK4.s 			page 13
 
 
  266:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   size_t __w, size_t __n, size_t __m, size_t __r,
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  320:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _UIntType,
  321:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   size_t __w, size_t __n, size_t __m, size_t __r,
  322:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   _UIntType __a, size_t __u, _UIntType __d, size_t __s,
-GAS LISTING /tmp/ccb24Nf7.s 			page 14
+GAS LISTING /tmp/ccVfeQK4.s 			page 14
 
 
  323:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   _UIntType __b, size_t __t, _UIntType __c, size_t __l,
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  377:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		  {
  378:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		    if ((_M_x[0] & __upper_mask) != 0u)
  379:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      __zero = false;
-GAS LISTING /tmp/ccb24Nf7.s 			page 15
+GAS LISTING /tmp/ccVfeQK4.s 			page 15
 
 
  380:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		  }
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  434:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     discard(unsigned long long __z)
  435:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
  436:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       while (__z > state_size - _M_p)
-GAS LISTING /tmp/ccb24Nf7.s 			page 16
+GAS LISTING /tmp/ccVfeQK4.s 			page 16
 
 
  437:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	{
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  491:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os << __x._M_p;
  492:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
  493:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.flags(__flags);
-GAS LISTING /tmp/ccb24Nf7.s 			page 17
+GAS LISTING /tmp/ccVfeQK4.s 			page 17
 
 
  494:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.fill(__fill);
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  548:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
  549:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       for (size_t __i = 0; __i < long_lag; ++__i)
  550:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	{
-GAS LISTING /tmp/ccb24Nf7.s 			page 18
+GAS LISTING /tmp/ccVfeQK4.s 			page 18
 
 
  551:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  _UIntType __sum = 0u;
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  605:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       // NB: Thanks to the requirements for _UIntType, _M_x[_M_p] + _M_carry
  606:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       // cannot overflow.
  607:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       _UIntType __xi;
-GAS LISTING /tmp/ccb24Nf7.s 			page 19
+GAS LISTING /tmp/ccVfeQK4.s 			page 19
 
 
  608:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       if (_M_x[__ps] >= _M_x[_M_p] + _M_carry)
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  662:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const typename __ios_base::fmtflags __flags = __is.flags();
  663:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __is.flags(__ios_base::dec | __ios_base::skipws);
  664:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 20
+GAS LISTING /tmp/ccVfeQK4.s 			page 20
 
 
  665:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       for (size_t __i = 0; __i < __r; ++__i)
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  719:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
  720:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
  721:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RandomNumberEngine, size_t __p, size_t __r,
-GAS LISTING /tmp/ccb24Nf7.s 			page 21
+GAS LISTING /tmp/ccVfeQK4.s 			page 21
 
 
  722:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   typename _CharT, typename _Traits>
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  776:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  if (__r)
  777:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    {
  778:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      __y0 = __s0 * (__r / __s0);
-GAS LISTING /tmp/ccb24Nf7.s 			page 22
+GAS LISTING /tmp/ccVfeQK4.s 			page 22
 
 
  779:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      if (__s1)
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  833:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef std::basic_ostream<_CharT, _Traits>  __ostream_type;
  834:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef typename __ostream_type::ios_base    __ios_base;
  835:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 23
+GAS LISTING /tmp/ccVfeQK4.s 			page 23
 
 
  836:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const typename __ios_base::fmtflags __flags = __os.flags();
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  890:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	const __uctype __urange
  891:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  = __uctype(__param.b()) - __uctype(__param.a());
  892:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 24
+GAS LISTING /tmp/ccVfeQK4.s 			page 24
 
 
  893:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__uctype __ret;
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  947:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      const param_type& __param)
  948:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       {
  949:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__glibcxx_function_requires(_ForwardIteratorConcept<_ForwardIterator>)
-GAS LISTING /tmp/ccb24Nf7.s 			page 25
+GAS LISTING /tmp/ccVfeQK4.s 			page 25
 
 
  950:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	typedef typename _UniformRandomNumberGenerator::result_type
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1004:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1005:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      low in [0, urngrange].
 1006:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    */
-GAS LISTING /tmp/ccb24Nf7.s 			page 26
+GAS LISTING /tmp/ccVfeQK4.s 			page 26
 
 
 1007:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    __uctype __tmp; // wraparound control
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1061:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		param_type(__a, __b));
 1062:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1063:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __is.flags(__flags);
-GAS LISTING /tmp/ccb24Nf7.s 			page 27
+GAS LISTING /tmp/ccVfeQK4.s 			page 27
 
 
 1064:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       return __is;
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1118:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __is.flags(__ios_base::skipws);
 1119:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1120:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       _RealType __a, __b;
-GAS LISTING /tmp/ccb24Nf7.s 			page 28
+GAS LISTING /tmp/ccVfeQK4.s 			page 28
 
 
 1121:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __is >> __a >> __b;
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1175:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       operator()(_UniformRandomNumberGenerator& __urng,
 1176:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		 const param_type& __param)
 1177:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       {
-GAS LISTING /tmp/ccb24Nf7.s 			page 29
+GAS LISTING /tmp/ccVfeQK4.s 			page 29
 
 
 1178:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	// About the epsilon thing see this thread:
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1232:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       const geometric_distribution<_IntType>& __x)
 1233:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
 1234:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef std::basic_ostream<_CharT, _Traits>  __ostream_type;
-GAS LISTING /tmp/ccb24Nf7.s 			page 30
+GAS LISTING /tmp/ccVfeQK4.s 			page 30
 
 
 1235:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef typename __ostream_type::ios_base    __ios_base;
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1289:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       negative_binomial_distribution<_IntType>::
 1290:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       operator()(_UniformRandomNumberGenerator& __urng,
 1291:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		 const param_type& __p)
-GAS LISTING /tmp/ccb24Nf7.s 			page 31
+GAS LISTING /tmp/ccVfeQK4.s 			page 31
 
 
 1292:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       {
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1346:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
 1347:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       const negative_binomial_distribution<_IntType>& __x)
 1348:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
-GAS LISTING /tmp/ccb24Nf7.s 			page 32
+GAS LISTING /tmp/ccVfeQK4.s 			page 32
 
 
 1349:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef std::basic_ostream<_CharT, _Traits>  __ostream_type;
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1403:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1404:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  const double __pi_4 = 0.7853981633974483096156608458198757L;
 1405:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  const double __dx = std::sqrt(2 * __m * std::log(32 * __m
-GAS LISTING /tmp/ccb24Nf7.s 			page 33
+GAS LISTING /tmp/ccVfeQK4.s 			page 33
 
 
 1406:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 							      / __pi_4));
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1460:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    const double __c5 = __c4 + __e178;
 1461:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    const double __c = __param._M_cb + __c5;
 1462:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    const double __2cx = 2 * (2 * __m + __param._M_d);
-GAS LISTING /tmp/ccb24Nf7.s 			page 34
+GAS LISTING /tmp/ccVfeQK4.s 			page 34
 
 
 1463:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1517:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** #endif
 1518:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  {
 1519:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    _IntType     __x = 0;
-GAS LISTING /tmp/ccb24Nf7.s 			page 35
+GAS LISTING /tmp/ccVfeQK4.s 			page 35
 
 
 1520:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    double __prod = 1.0;
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1574:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   typename _CharT, typename _Traits>
 1575:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     std::basic_istream<_CharT, _Traits>&
 1576:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator>>(std::basic_istream<_CharT, _Traits>& __is,
-GAS LISTING /tmp/ccb24Nf7.s 			page 36
+GAS LISTING /tmp/ccVfeQK4.s 			page 36
 
 
 1577:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       poisson_distribution<_IntType>& __x)
@@ -2158,7 +2158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1631:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 			     * std::exp(-_M_d1 * _M_d1 / (2 * __s1s)));
 1632:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  const double __s2s = _M_s2 * _M_s2;
 1633:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  _M_s = (_M_a123 + 2 * __s2s / _M_d2
-GAS LISTING /tmp/ccb24Nf7.s 			page 37
+GAS LISTING /tmp/ccVfeQK4.s 			page 37
 
 
 1634:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		  * std::exp(-_M_d2 * _M_d2 / (2 * __s2s)));
@@ -2218,7 +2218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1688:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	result_type __ret;
 1689:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	const _IntType __t = __param.t();
 1690:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	const double __p = __param.p();
-GAS LISTING /tmp/ccb24Nf7.s 			page 38
+GAS LISTING /tmp/ccVfeQK4.s 			page 38
 
 
 1691:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	const double __p12 = __p <= 0.5 ? __p : 1.0 - __p;
@@ -2278,7 +2278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1745:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      }
 1746:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		  }
 1747:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		else if (__u <= __a123)
-GAS LISTING /tmp/ccb24Nf7.s 			page 39
+GAS LISTING /tmp/ccVfeQK4.s 			page 39
 
 
 1748:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		  {
@@ -2338,7 +2338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1802:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	     typename _UniformRandomNumberGenerator>
 1803:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       void
 1804:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       binomial_distribution<_IntType>::
-GAS LISTING /tmp/ccb24Nf7.s 			page 40
+GAS LISTING /tmp/ccVfeQK4.s 			page 40
 
 
 1805:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __generate_impl(_ForwardIterator __f, _ForwardIterator __t,
@@ -2398,7 +2398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1859:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __is.flags(__flags);
 1860:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       return __is;
 1861:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
-GAS LISTING /tmp/ccb24Nf7.s 			page 41
+GAS LISTING /tmp/ccVfeQK4.s 			page 41
 
 
 1862:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
@@ -2458,7 +2458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1916:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __x.param(typename exponential_distribution<_RealType>::
 1917:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		param_type(__lambda));
 1918:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 42
+GAS LISTING /tmp/ccVfeQK4.s 			page 42
 
 
 1919:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __is.flags(__flags);
@@ -2518,7 +2518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1973:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      _UniformRandomNumberGenerator& __urng,
 1974:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      const param_type& __param)
 1975:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       {
-GAS LISTING /tmp/ccb24Nf7.s 			page 43
+GAS LISTING /tmp/ccVfeQK4.s 			page 43
 
 
 1976:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__glibcxx_function_requires(_ForwardIteratorConcept<_ForwardIterator>)
@@ -2578,7 +2578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2030:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       const std::normal_distribution<_RealType>& __d2)
 2031:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
 2032:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       if (__d1._M_param == __d2._M_param
-GAS LISTING /tmp/ccb24Nf7.s 			page 44
+GAS LISTING /tmp/ccVfeQK4.s 			page 44
 
 
 2033:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  && __d1._M_saved_available == __d2._M_saved_available)
@@ -2638,7 +2638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2087:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   >> __x._M_saved_available;
 2088:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       if (__x._M_saved_available)
 2089:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__is >> __x._M_saved;
-GAS LISTING /tmp/ccb24Nf7.s 			page 45
+GAS LISTING /tmp/ccVfeQK4.s 			page 45
 
 
 2090:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __x.param(typename normal_distribution<_RealType>::
@@ -2698,7 +2698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2144:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2145:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const typename __ios_base::fmtflags __flags = __is.flags();
 2146:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __is.flags(__ios_base::dec | __ios_base::skipws);
-GAS LISTING /tmp/ccb24Nf7.s 			page 46
+GAS LISTING /tmp/ccVfeQK4.s 			page 46
 
 
 2147:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
@@ -2758,7 +2758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2201:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os << __x.n() << __space << __x._M_gd;
 2202:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2203:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.flags(__flags);
-GAS LISTING /tmp/ccb24Nf7.s 			page 47
+GAS LISTING /tmp/ccVfeQK4.s 			page 47
 
 
 2204:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.fill(__fill);
@@ -2818,7 +2818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2258:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	const _RealType __pi = 3.1415926535897932384626433832795029L;
 2259:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__detail::_Adaptor<_UniformRandomNumberGenerator, result_type>
 2260:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __aurng(__urng);
-GAS LISTING /tmp/ccb24Nf7.s 			page 48
+GAS LISTING /tmp/ccVfeQK4.s 			page 48
 
 
 2261:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	while (__f != __t)
@@ -2878,7 +2878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2315:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2316:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2317:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType>
-GAS LISTING /tmp/ccb24Nf7.s 			page 49
+GAS LISTING /tmp/ccVfeQK4.s 			page 49
 
 
 2318:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     template<typename _ForwardIterator,
@@ -2938,7 +2938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2372:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
 2373:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2374:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType, typename _CharT, typename _Traits>
-GAS LISTING /tmp/ccb24Nf7.s 			page 50
+GAS LISTING /tmp/ccVfeQK4.s 			page 50
 
 
 2375:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     std::basic_istream<_CharT, _Traits>&
@@ -2998,7 +2998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2429:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef std::basic_ostream<_CharT, _Traits>  __ostream_type;
 2430:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef typename __ostream_type::ios_base    __ios_base;
 2431:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 51
+GAS LISTING /tmp/ccVfeQK4.s 			page 51
 
 
 2432:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const typename __ios_base::fmtflags __flags = __os.flags();
@@ -3058,7 +3058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2486:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typename gamma_distribution<_RealType>::result_type
 2487:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       gamma_distribution<_RealType>::
 2488:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       operator()(_UniformRandomNumberGenerator& __urng,
-GAS LISTING /tmp/ccb24Nf7.s 			page 52
+GAS LISTING /tmp/ccVfeQK4.s 			page 52
 
 
 2489:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		 const param_type& __param)
@@ -3118,7 +3118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2543:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2544:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	if (__param.alpha() == __param._M_malpha)
 2545:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  while (__f != __t)
-GAS LISTING /tmp/ccb24Nf7.s 			page 53
+GAS LISTING /tmp/ccVfeQK4.s 			page 53
 
 
 2546:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    {
@@ -3178,7 +3178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2600:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2601:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const typename __ios_base::fmtflags __flags = __os.flags();
 2602:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const _CharT __fill = __os.fill();
-GAS LISTING /tmp/ccb24Nf7.s 			page 54
+GAS LISTING /tmp/ccVfeQK4.s 			page 54
 
 
 2603:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const std::streamsize __precision = __os.precision();
@@ -3238,7 +3238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2657:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __generate_impl(_ForwardIterator __f, _ForwardIterator __t,
 2658:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      _UniformRandomNumberGenerator& __urng,
 2659:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      const param_type& __p)
-GAS LISTING /tmp/ccb24Nf7.s 			page 55
+GAS LISTING /tmp/ccVfeQK4.s 			page 55
 
 
 2660:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       {
@@ -3298,7 +3298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2714:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2715:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2716:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType>
-GAS LISTING /tmp/ccb24Nf7.s 			page 56
+GAS LISTING /tmp/ccVfeQK4.s 			page 56
 
 
 2717:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     template<typename _UniformRandomNumberGenerator>
@@ -3358,7 +3358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2771:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType, typename _CharT, typename _Traits>
 2772:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     std::basic_istream<_CharT, _Traits>&
 2773:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator>>(std::basic_istream<_CharT, _Traits>& __is,
-GAS LISTING /tmp/ccb24Nf7.s 			page 57
+GAS LISTING /tmp/ccVfeQK4.s 			page 57
 
 
 2774:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       extreme_value_distribution<_RealType>& __x)
@@ -3418,7 +3418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2828:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2829:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	_M_initialize();
 2830:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       }
-GAS LISTING /tmp/ccb24Nf7.s 			page 58
+GAS LISTING /tmp/ccVfeQK4.s 			page 58
 
 
 2831:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
@@ -3478,7 +3478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2885:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
 2886:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       const discrete_distribution<_IntType>& __x)
 2887:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
-GAS LISTING /tmp/ccb24Nf7.s 			page 59
+GAS LISTING /tmp/ccVfeQK4.s 			page 59
 
 
 2888:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef std::basic_ostream<_CharT, _Traits>  __ostream_type;
@@ -3538,7 +3538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2942:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     void
 2943:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     piecewise_constant_distribution<_RealType>::param_type::
 2944:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     _M_initialize()
-GAS LISTING /tmp/ccb24Nf7.s 			page 60
+GAS LISTING /tmp/ccVfeQK4.s 			page 60
 
 
 2945:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
@@ -3598,7 +3598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2999:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     template<typename _Func>
 3000:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       piecewise_constant_distribution<_RealType>::param_type::
 3001:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       param_type(initializer_list<_RealType> __bl, _Func __fw)
-GAS LISTING /tmp/ccb24Nf7.s 			page 61
+GAS LISTING /tmp/ccVfeQK4.s 			page 61
 
 
 3002:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       : _M_int(), _M_den(), _M_cp()
@@ -3658,7 +3658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 3056:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       }
 3057:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 3058:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType>
-GAS LISTING /tmp/ccb24Nf7.s 			page 62
+GAS LISTING /tmp/ccVfeQK4.s 			page 62
 
 
 3059:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     template<typename _ForwardIterator,
@@ -3718,7 +3718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 3113:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__os << __space << *__xit;
 3114:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 3115:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       std::vector<double> __den = __x.densities();
-GAS LISTING /tmp/ccb24Nf7.s 			page 63
+GAS LISTING /tmp/ccVfeQK4.s 			page 63
 
 
 3116:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       for (auto __dit = __den.begin(); __dit != __den.end(); ++__dit)
@@ -3778,7 +3778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 3170:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       if (_M_int.size() < 2
 3171:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  || (_M_int.size() == 2
 3172:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      && _M_int[0] == _RealType(0)
-GAS LISTING /tmp/ccb24Nf7.s 			page 64
+GAS LISTING /tmp/ccVfeQK4.s 			page 64
 
 
 3173:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      && _M_int[1] == _RealType(1)
@@ -3838,7 +3838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 3227:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	_M_int.reserve(__bl.size());
 3228:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	_M_den.reserve(__bl.size());
 3229:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	for (auto __biter = __bl.begin(); __biter != __bl.end(); ++__biter)
-GAS LISTING /tmp/ccb24Nf7.s 			page 65
+GAS LISTING /tmp/ccVfeQK4.s 			page 65
 
 
 3230:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  {
@@ -3898,7 +3898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 3284:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __x += __cm / __b;
 3285:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	else
 3286:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  {
-GAS LISTING /tmp/ccb24Nf7.s 			page 66
+GAS LISTING /tmp/ccVfeQK4.s 			page 66
 
 
 3287:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    const double __d = __b * __b + 4.0 * __a * __cm;
@@ -3958,7 +3958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 3341:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType, typename _CharT, typename _Traits>
 3342:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     std::basic_istream<_CharT, _Traits>&
 3343:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator>>(std::basic_istream<_CharT, _Traits>& __is,
-GAS LISTING /tmp/ccb24Nf7.s 			page 67
+GAS LISTING /tmp/ccVfeQK4.s 			page 67
 
 
 3344:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       piecewise_linear_distribution<_RealType>& __x)
@@ -4018,7 +4018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 3398:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     void
 3399:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     seed_seq::generate(_RandomAccessIterator __begin,
 3400:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		       _RandomAccessIterator __end)
-GAS LISTING /tmp/ccb24Nf7.s 			page 68
+GAS LISTING /tmp/ccVfeQK4.s 			page 68
 
 
 3401:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
@@ -4078,7 +4078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 3455:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __begin[(__k + __q) % __n] ^= __r4;
 3456:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __begin[__k % __n] = __r4;
 3457:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	}
-GAS LISTING /tmp/ccb24Nf7.s 			page 69
+GAS LISTING /tmp/ccVfeQK4.s 			page 69
 
 
 3458:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
@@ -4138,7 +4138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  118              	.LVL12:
  466:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __z ^= (__z >> __l);
  119              		.loc 3 466 0
-GAS LISTING /tmp/ccb24Nf7.s 			page 70
+GAS LISTING /tmp/ccVfeQK4.s 			page 70
 
 
  120 0051 4889C2   		movq	%rax, %rdx
@@ -4198,7 +4198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  149      C2
  150 008c F30F58C0 		addss	%xmm0, %xmm0
  151 0090 EBD4     		jmp	.L14
-GAS LISTING /tmp/ccb24Nf7.s 			page 71
+GAS LISTING /tmp/ccVfeQK4.s 			page 71
 
 
  152              	.LVL18:
@@ -4258,7 +4258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  194 0102 660F1F44 		.p2align 3
  194      0000
  195              	.L11:
-GAS LISTING /tmp/ccb24Nf7.s 			page 72
+GAS LISTING /tmp/ccVfeQK4.s 			page 72
 
 
  196              	.LBE800:
@@ -4318,7 +4318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  235      0C0000
  236 0172 83E201   		andl	$1, %edx
  237              	.LVL22:
-GAS LISTING /tmp/ccb24Nf7.s 			page 73
+GAS LISTING /tmp/ccVfeQK4.s 			page 73
 
 
  238 0175 480F45D6 		cmovne	%rsi, %rdx
@@ -4378,7 +4378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
    8:examples/simplest.cpp ****  * the Software without restriction, including without limitation the rights to
    9:examples/simplest.cpp ****  * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
   10:examples/simplest.cpp ****  * the Software, and to permit persons to whom the Software is furnished to do so,
-GAS LISTING /tmp/ccb24Nf7.s 			page 74
+GAS LISTING /tmp/ccVfeQK4.s 			page 74
 
 
   11:examples/simplest.cpp ****  * subject to the following conditions:
@@ -4438,7 +4438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   33:examples/simplest.cpp ****     static const size_t w = 256, h = 512, npoints = 1000;
  300              		.loc 4 33 0
  301 0012 55       		pushq	%rbp
-GAS LISTING /tmp/ccb24Nf7.s 			page 75
+GAS LISTING /tmp/ccVfeQK4.s 			page 75
 
 
  302              		.cfi_def_cfa_offset 48
@@ -4498,7 +4498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   13:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** // GNU General Public License for more details.
   14:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
   15:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** // Under Section 7 of GPL version 3, you are granted additional
-GAS LISTING /tmp/ccb24Nf7.s 			page 76
+GAS LISTING /tmp/ccVfeQK4.s 			page 76
 
 
   16:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** // permissions described in the GCC Runtime Library Exception, version
@@ -4558,7 +4558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   70:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 			  (std::numeric_limits<_UIntType>::digits)>
   71:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       struct _Shift
   72:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       { static const _UIntType __value = 0; };
-GAS LISTING /tmp/ccb24Nf7.s 			page 77
+GAS LISTING /tmp/ccVfeQK4.s 			page 77
 
 
   73:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
@@ -4618,7 +4618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  127:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	__calc(_Tp __x);
  128:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       };
  129:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 78
+GAS LISTING /tmp/ccVfeQK4.s 			page 78
 
 
  130:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     // Special cases:
@@ -4678,7 +4678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  184:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	 * distribution.
  185:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	 */
  186:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	_DInputType
-GAS LISTING /tmp/ccb24Nf7.s 			page 79
+GAS LISTING /tmp/ccVfeQK4.s 			page 79
 
 
  187:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	operator()()
@@ -4738,7 +4738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  241:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****   template<typename _UIntType, _UIntType __a, _UIntType __c, _UIntType __m>
  242:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     class linear_congruential_engine
  243:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     {
-GAS LISTING /tmp/ccb24Nf7.s 			page 80
+GAS LISTING /tmp/ccVfeQK4.s 			page 80
 
 
  244:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static_assert(std::is_unsigned<_UIntType>::value, "template argument "
@@ -4798,7 +4798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  298:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
  299:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @param __q the seed sequence.
  300:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
-GAS LISTING /tmp/ccb24Nf7.s 			page 81
+GAS LISTING /tmp/ccVfeQK4.s 			page 81
 
 
  301:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       template<typename _Sseq>
@@ -4858,7 +4858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  355:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		 const linear_congruential_engine& __rhs)
  356:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       { return __lhs._M_x == __rhs._M_x; }
  357:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 82
+GAS LISTING /tmp/ccVfeQK4.s 			page 82
 
 
  358:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
@@ -4918,7 +4918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  412:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       const std::linear_congruential_engine<_UIntType, __a,
  413:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       __c, __m>& __rhs)
  414:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     { return !(__lhs == __rhs); }
-GAS LISTING /tmp/ccb24Nf7.s 			page 83
+GAS LISTING /tmp/ccVfeQK4.s 			page 83
 
 
  415:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
@@ -4978,7 +4978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  469:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		    "template argument substituting __a out of bound");
  470:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static_assert(__b <= (__detail::_Shift<_UIntType, __w>::__value - 1),
  471:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		    "template argument substituting __b out of bound");
-GAS LISTING /tmp/ccb24Nf7.s 			page 84
+GAS LISTING /tmp/ccVfeQK4.s 			page 84
 
 
  472:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static_assert(__c <= (__detail::_Shift<_UIntType, __w>::__value - 1),
@@ -5038,7 +5038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  526:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
  527:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static constexpr result_type
  528:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       min()
-GAS LISTING /tmp/ccb24Nf7.s 			page 85
+GAS LISTING /tmp/ccVfeQK4.s 			page 85
 
 
  529:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       { return 0; };
@@ -5098,7 +5098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  583:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       _UIntType1 __c1, size_t __l1, _UIntType1 __f1,
  584:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       typename _CharT, typename _Traits>
  585:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	friend std::basic_ostream<_CharT, _Traits>&
-GAS LISTING /tmp/ccb24Nf7.s 			page 86
+GAS LISTING /tmp/ccVfeQK4.s 			page 86
 
 
  586:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	operator<<(std::basic_ostream<_CharT, _Traits>& __os,
@@ -5158,7 +5158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  640:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	   _UIntType __c, size_t __l, _UIntType __f>
  641:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     inline bool
  642:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     operator!=(const std::mersenne_twister_engine<_UIntType, __w, __n, __m,
-GAS LISTING /tmp/ccb24Nf7.s 			page 87
+GAS LISTING /tmp/ccVfeQK4.s 			page 87
 
 
  643:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>& __lhs,
@@ -5218,7 +5218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  697:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Constructs a %subtract_with_carry_engine random number engine
  698:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *        seeded from the seed sequence @p __q.
  699:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
-GAS LISTING /tmp/ccb24Nf7.s 			page 88
+GAS LISTING /tmp/ccVfeQK4.s 			page 88
 
 
  700:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @param __q the seed sequence.
@@ -5278,7 +5278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  754:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	for (; __z != 0ULL; --__z)
  755:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	  (*this)();
  756:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       }
-GAS LISTING /tmp/ccb24Nf7.s 			page 89
+GAS LISTING /tmp/ccVfeQK4.s 			page 89
 
 
  757:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
@@ -5338,7 +5338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  811:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @returns The input stream with the state of @p __x extracted or in
  812:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * an error state.
  813:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
-GAS LISTING /tmp/ccb24Nf7.s 			page 90
+GAS LISTING /tmp/ccVfeQK4.s 			page 90
 
 
  814:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       template<typename _UIntType1, size_t __w1, size_t __s1, size_t __r1,
@@ -5398,7 +5398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  868:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
  869:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Constructs a default %discard_block_engine engine.
  870:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
-GAS LISTING /tmp/ccb24Nf7.s 			page 91
+GAS LISTING /tmp/ccVfeQK4.s 			page 91
 
 
  871:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * The underlying engine is default constructed as well.
@@ -5458,7 +5458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  925:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       seed()
  926:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       {
  927:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	_M_b.seed();
-GAS LISTING /tmp/ccb24Nf7.s 			page 92
+GAS LISTING /tmp/ccVfeQK4.s 			page 92
 
 
  928:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	_M_n = 0;
@@ -5518,7 +5518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  982:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       {
  983:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	for (; __z != 0ULL; --__z)
  984:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	  (*this)();
-GAS LISTING /tmp/ccb24Nf7.s 			page 93
+GAS LISTING /tmp/ccVfeQK4.s 			page 93
 
 
  985:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       }
@@ -5578,7 +5578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1039:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       typename _CharT, typename _Traits>
 1040:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	friend std::basic_istream<_CharT, _Traits>&
 1041:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	operator>>(std::basic_istream<_CharT, _Traits>& __is,
-GAS LISTING /tmp/ccb24Nf7.s 			page 94
+GAS LISTING /tmp/ccVfeQK4.s 			page 94
 
 
 1042:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		   std::discard_block_engine<_RandomNumberEngine1,
@@ -5638,7 +5638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1096:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
 1097:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * Copies an existing base class random number generator.
 1098:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @param __rng An existing (base class) engine object.
-GAS LISTING /tmp/ccb24Nf7.s 			page 95
+GAS LISTING /tmp/ccVfeQK4.s 			page 95
 
 
 1099:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
@@ -5698,7 +5698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1153:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 1154:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
 1155:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Reseeds the %independent_bits_engine object with the given
-GAS LISTING /tmp/ccb24Nf7.s 			page 96
+GAS LISTING /tmp/ccVfeQK4.s 			page 96
 
 
 1156:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *        seed sequence.
@@ -5758,7 +5758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1210:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
 1211:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @returns true if the infinite sequences of generated values
 1212:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *          would be equal, false otherwise.
-GAS LISTING /tmp/ccb24Nf7.s 			page 97
+GAS LISTING /tmp/ccVfeQK4.s 			page 97
 
 
 1213:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
@@ -5818,7 +5818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1267:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *        number generator engine @p __x into the output stream @p __os.
 1268:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *
 1269:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @param __os An output stream.
-GAS LISTING /tmp/ccb24Nf7.s 			page 98
+GAS LISTING /tmp/ccVfeQK4.s 			page 98
 
 
 1270:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @param __x  A %independent_bits_engine random number generator engine.
@@ -5878,7 +5878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1324:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
 1325:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Move constructs a %shuffle_order_engine engine.
 1326:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
-GAS LISTING /tmp/ccb24Nf7.s 			page 99
+GAS LISTING /tmp/ccVfeQK4.s 			page 99
 
 
 1327:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * Copies an existing base class random number generator.
@@ -5938,7 +5938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1381:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 1382:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
 1383:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Reseeds the %shuffle_order_engine object with the given seed
-GAS LISTING /tmp/ccb24Nf7.s 			page 100
+GAS LISTING /tmp/ccVfeQK4.s 			page 100
 
 
 1384:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *        sequence.
@@ -5998,7 +5998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1438:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *              object.
 1439:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
 1440:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @returns true if the infinite sequences of generated values
-GAS LISTING /tmp/ccb24Nf7.s 			page 101
+GAS LISTING /tmp/ccVfeQK4.s 			page 101
 
 
 1441:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *          would be equal, false otherwise.
@@ -6058,7 +6058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1495:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       result_type _M_y;
 1496:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     };
 1497:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 102
+GAS LISTING /tmp/ccVfeQK4.s 			page 102
 
 
 1498:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****   /**
@@ -6118,7 +6118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1552:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     0xb5026f5aa96619e9ULL, 29,
 1553:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     0x5555555555555555ULL, 17,
 1554:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     0x71d67fffeda60000ULL, 37,
-GAS LISTING /tmp/ccb24Nf7.s 			page 103
+GAS LISTING /tmp/ccVfeQK4.s 			page 103
 
 
 1555:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     0xfff7eee000000000ULL, 43,
@@ -6178,7 +6178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  249:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 		}
  250:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 	    }
  251:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 	}  // XXX MT
-GAS LISTING /tmp/ccb24Nf7.s 			page 104
+GAS LISTING /tmp/ccVfeQK4.s 			page 104
 
 
  252:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 
@@ -6238,7 +6238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  352              	.LBE813:
  353              	.LBE812:
  354              	.LBB814:
-GAS LISTING /tmp/ccb24Nf7.s 			page 105
+GAS LISTING /tmp/ccVfeQK4.s 			page 105
 
 
  355              	.LBB815:
@@ -6298,7 +6298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  372              	.LBE820:
  373              	.LBE819:
  374              	.LBB821:
-GAS LISTING /tmp/ccb24Nf7.s 			page 106
+GAS LISTING /tmp/ccVfeQK4.s 			page 106
 
 
  375              	.LBB822:
@@ -6358,7 +6358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  419 00a3 4889F2   		movq	%rsi, %rdx
  420              	.LBE834:
  421              	.LBE837:
-GAS LISTING /tmp/ccb24Nf7.s 			page 107
+GAS LISTING /tmp/ccVfeQK4.s 			page 107
 
 
  422              	.LBE840:
@@ -6418,7 +6418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  466 00d9 4881FE70 		cmpq	$624, %rsi
  466      020000
  467 00e0 75BE     		jne	.L20
-GAS LISTING /tmp/ccb24Nf7.s 			page 108
+GAS LISTING /tmp/ccVfeQK4.s 			page 108
 
 
  468              	.LBE847:
@@ -6478,7 +6478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1662:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @brief Uniform discrete distribution for random numbers.
 1663:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * A discrete random distribution on the range @f$[min, max]@f$ with equal
 1664:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * probability throughout the range.
-GAS LISTING /tmp/ccb24Nf7.s 			page 109
+GAS LISTING /tmp/ccVfeQK4.s 			page 109
 
 
 1665:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    */
@@ -6538,7 +6538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1719:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 1720:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
 1721:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Resets the distribution state.
-GAS LISTING /tmp/ccb24Nf7.s 			page 110
+GAS LISTING /tmp/ccVfeQK4.s 			page 110
 
 
 1722:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
@@ -6598,7 +6598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1776:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		   const param_type& __p);
 1777:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 1778:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       template<typename _ForwardIterator,
-GAS LISTING /tmp/ccb24Nf7.s 			page 111
+GAS LISTING /tmp/ccVfeQK4.s 			page 111
 
 
 1779:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       typename _UniformRandomNumberGenerator>
@@ -6658,7 +6658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1833:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *
 1834:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @param __os An output stream.
 1835:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @param __x  A %uniform_int_distribution random number distribution.
-GAS LISTING /tmp/ccb24Nf7.s 			page 112
+GAS LISTING /tmp/ccVfeQK4.s 			page 112
 
 
 1836:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *
@@ -6718,7 +6718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1890:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	a() const
 1891:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	{ return _M_a; }
 1892:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 113
+GAS LISTING /tmp/ccVfeQK4.s 			page 113
 
 
 1893:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	result_type
@@ -6778,7 +6778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1947:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
 1948:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Sets the parameter set of the distribution.
 1949:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @param __param The new parameter set of the distribution.
-GAS LISTING /tmp/ccb24Nf7.s 			page 114
+GAS LISTING /tmp/ccVfeQK4.s 			page 114
 
 
 1950:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
@@ -6838,7 +6838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2004:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	__generate(result_type* __f, result_type* __t,
 2005:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		   _UniformRandomNumberGenerator& __urng,
 2006:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		   const param_type& __p)
-GAS LISTING /tmp/ccb24Nf7.s 			page 115
+GAS LISTING /tmp/ccVfeQK4.s 			page 115
 
 
 2007:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	{ this->__generate_impl(__f, __t, __urng, __p); }
@@ -6898,7 +6898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2061:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @returns The input stream with @p __x extracted or in an error state.
 2062:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    */
 2063:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****   template<typename _RealType, typename _CharT, typename _Traits>
-GAS LISTING /tmp/ccb24Nf7.s 			page 116
+GAS LISTING /tmp/ccVfeQK4.s 			page 116
 
 
 2064:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     std::basic_istream<_CharT, _Traits>&
@@ -6958,7 +6958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 2118:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		  && __p1._M_stddev == __p2._M_stddev); }
 2119:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 2120:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       private:
-GAS LISTING /tmp/ccb24Nf7.s 			page 117
+GAS LISTING /tmp/ccVfeQK4.s 			page 117
 
 
 2121:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	_RealType _M_mean;
@@ -7018,7 +7018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  512              		.loc 3 1952 0
  513 0118 F30F58C0 		addss	%xmm0, %xmm0
  514              	.LBB860:
-GAS LISTING /tmp/ccb24Nf7.s 			page 118
+GAS LISTING /tmp/ccVfeQK4.s 			page 118
 
 
  515              	.LBB861:
@@ -7078,7 +7078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  555              	.LBB864:
  556              	.LBB865:
  557              		.file 6 "/opt/gcc/4.9.2/include/c++/4.9.2/cmath"
-GAS LISTING /tmp/ccb24Nf7.s 			page 119
+GAS LISTING /tmp/ccVfeQK4.s 			page 119
 
 
    0:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** // -*- C++ -*- C forwarding header.
@@ -7138,7 +7138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   54:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #undef atan2
   55:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #undef ceil
   56:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #undef cos
-GAS LISTING /tmp/ccb24Nf7.s 			page 120
+GAS LISTING /tmp/ccVfeQK4.s 			page 120
 
 
   57:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #undef cosh
@@ -7198,7 +7198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  111:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #endif
  112:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
  113:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   template<typename _Tp>
-GAS LISTING /tmp/ccb24Nf7.s 			page 121
+GAS LISTING /tmp/ccVfeQK4.s 			page 121
 
 
  114:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     inline _GLIBCXX_CONSTEXPR
@@ -7258,7 +7258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  168:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #endif
  169:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
  170:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   template<typename _Tp, typename _Up>
-GAS LISTING /tmp/ccb24Nf7.s 			page 122
+GAS LISTING /tmp/ccVfeQK4.s 			page 122
 
 
  171:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     inline _GLIBCXX_CONSTEXPR
@@ -7318,7 +7318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  225:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   cosh(long double __x)
  226:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   { return __builtin_coshl(__x); }
  227:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #endif
-GAS LISTING /tmp/ccb24Nf7.s 			page 123
+GAS LISTING /tmp/ccVfeQK4.s 			page 123
 
 
  228:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
@@ -7378,7 +7378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  282:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   floor(long double __x)
  283:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   { return __builtin_floorl(__x); }
  284:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #endif
-GAS LISTING /tmp/ccb24Nf7.s 			page 124
+GAS LISTING /tmp/ccVfeQK4.s 			page 124
 
 
  285:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
@@ -7438,7 +7438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  339:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
  340:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   inline _GLIBCXX_CONSTEXPR long double
  341:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   ldexp(long double __x, int __exp)
-GAS LISTING /tmp/ccb24Nf7.s 			page 125
+GAS LISTING /tmp/ccVfeQK4.s 			page 125
 
 
  342:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   { return __builtin_ldexpl(__x, __exp); }
@@ -7498,7 +7498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  372:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
  373:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
  374:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   inline _GLIBCXX_CONSTEXPR float
-GAS LISTING /tmp/ccb24Nf7.s 			page 126
+GAS LISTING /tmp/ccVfeQK4.s 			page 126
 
 
  375:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   log10(float __x)
@@ -7558,7 +7558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  429:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
  430:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   template<typename _Tp, typename _Up>
  431:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     inline _GLIBCXX_CONSTEXPR
-GAS LISTING /tmp/ccb24Nf7.s 			page 127
+GAS LISTING /tmp/ccVfeQK4.s 			page 127
 
 
  432:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
@@ -7618,7 +7618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  577 019e F30F104C 		movss	20(%rsp), %xmm1
  577      2414
  578              	.LBE867:
-GAS LISTING /tmp/ccb24Nf7.s 			page 128
+GAS LISTING /tmp/ccVfeQK4.s 			page 128
 
 
  579              	.LBE866:
@@ -7678,7 +7678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  622              	.LBE882:
  623              	.LBE881:
  624              	.LBB912:
-GAS LISTING /tmp/ccb24Nf7.s 			page 129
+GAS LISTING /tmp/ccVfeQK4.s 			page 129
 
 
  625              	.LBB878:
@@ -7738,7 +7738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1952:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		__x = result_type(2.0) * __aurng() - 1.0;
  663              		.loc 3 1952 0
  664 01ff 0F28D0   		movaps	%xmm0, %xmm2
-GAS LISTING /tmp/ccb24Nf7.s 			page 130
+GAS LISTING /tmp/ccVfeQK4.s 			page 130
 
 
  665 0202 F30F5C15 		subss	.LC5(%rip), %xmm2
@@ -7798,7 +7798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  704              	.LVL66:
  705 025f F30F115C 		movss	%xmm3, 12(%rsp)
  705      240C
-GAS LISTING /tmp/ccb24Nf7.s 			page 131
+GAS LISTING /tmp/ccVfeQK4.s 			page 131
 
 
  706              	.LVL67:
@@ -7858,7 +7858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  746              	.LBE885:
  747              	.LBE901:
 1964:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__ret = __ret * __param.stddev() + __param.mean();
-GAS LISTING /tmp/ccb24Nf7.s 			page 132
+GAS LISTING /tmp/ccVfeQK4.s 			page 132
 
 
  748              		.loc 3 1964 0
@@ -7918,7 +7918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   10:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** // This library is distributed in the hope that it will be useful,
   11:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** // but WITHOUT ANY WARRANTY; without even the implied warranty of
   12:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GAS LISTING /tmp/ccb24Nf7.s 			page 133
+GAS LISTING /tmp/ccVfeQK4.s 			page 133
 
 
   13:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** // GNU General Public License for more details.
@@ -7978,7 +7978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   67:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** 
   68:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h ****       template<typename _Tp1>
   69:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h ****         struct rebind
-GAS LISTING /tmp/ccb24Nf7.s 			page 134
+GAS LISTING /tmp/ccVfeQK4.s 			page 134
 
 
   70:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h ****         { typedef new_allocator<_Tp1> other; };
@@ -8038,7 +8038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
    7:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** // Free Software Foundation; either version 3, or (at your option)
    8:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** // any later version.
    9:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
-GAS LISTING /tmp/ccb24Nf7.s 			page 135
+GAS LISTING /tmp/ccVfeQK4.s 			page 135
 
 
   10:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** // This library is distributed in the hope that it will be useful,
@@ -8098,7 +8098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   64:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
   65:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** namespace std _GLIBCXX_VISIBILITY(default)
   66:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** {
-GAS LISTING /tmp/ccb24Nf7.s 			page 136
+GAS LISTING /tmp/ccVfeQK4.s 			page 136
 
 
   67:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
@@ -8158,7 +8158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   91:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	{ }
   92:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
   93:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** #if __cplusplus >= 201103L
-GAS LISTING /tmp/ccb24Nf7.s 			page 137
+GAS LISTING /tmp/ccVfeQK4.s 			page 137
 
 
   94:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	_Vector_impl(_Tp_alloc_type&& __a) noexcept
@@ -8218,7 +8218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  148:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	if (__x.get_allocator() == __a)
  149:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	  this->_M_impl._M_swap_data(__x._M_impl);
  150:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	else
-GAS LISTING /tmp/ccb24Nf7.s 			page 138
+GAS LISTING /tmp/ccVfeQK4.s 			page 138
 
 
  151:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	  {
@@ -8278,7 +8278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
    0:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** // Core algorithmic facilities -*- C++ -*-
    1:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 
    2:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** // Copyright (C) 2001-2014 Free Software Foundation, Inc.
-GAS LISTING /tmp/ccb24Nf7.s 			page 139
+GAS LISTING /tmp/ccVfeQK4.s 			page 139
 
 
    3:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** //
@@ -8338,7 +8338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   57:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 
   58:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** #include <bits/c++config.h>
   59:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** #include <bits/functexcept.h>
-GAS LISTING /tmp/ccb24Nf7.s 			page 140
+GAS LISTING /tmp/ccVfeQK4.s 			page 140
 
 
   60:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** #include <bits/cpp_type_traits.h>
@@ -8398,7 +8398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  114:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  This function swaps the values pointed to by two iterators, not the
  115:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  iterators themselves.
  116:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   */
-GAS LISTING /tmp/ccb24Nf7.s 			page 141
+GAS LISTING /tmp/ccVfeQK4.s 			page 141
 
 
  117:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<typename _ForwardIterator1, typename _ForwardIterator2>
@@ -8458,7 +8458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  171:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       __glibcxx_function_requires(_Mutable_ForwardIteratorConcept<
  172:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 				  _ForwardIterator2>)
  173:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       __glibcxx_requires_valid_range(__first1, __last1);
-GAS LISTING /tmp/ccb24Nf7.s 			page 142
+GAS LISTING /tmp/ccVfeQK4.s 			page 142
 
 
  174:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 
@@ -8518,7 +8518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  228:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  @ingroup sorting_algorithms
  229:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  @param  __a  A thing of arbitrary type.
  230:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  @param  __b  Another thing of arbitrary type.
-GAS LISTING /tmp/ccb24Nf7.s 			page 143
+GAS LISTING /tmp/ccVfeQK4.s 			page 143
 
 
  231:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  @param  __comp  A @link comparison_functors comparison functor@endlink.
@@ -8578,7 +8578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  285:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 
  286:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<typename _Iterator>
  287:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     inline typename _Miter_base<_Iterator>::iterator_type
-GAS LISTING /tmp/ccb24Nf7.s 			page 144
+GAS LISTING /tmp/ccVfeQK4.s 			page 144
 
 
  288:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     __miter_base(_Iterator __it)
@@ -8638,7 +8638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  342:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 
  343:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** #if __cplusplus >= 201103L
  344:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<>
-GAS LISTING /tmp/ccb24Nf7.s 			page 145
+GAS LISTING /tmp/ccVfeQK4.s 			page 145
 
 
  345:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     struct __copy_move<true, false, random_access_iterator_tag>
@@ -8698,7 +8698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  399:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   // NB: avoid including <iosfwd>, relatively large.
  400:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<typename _CharT>
  401:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     struct char_traits;
-GAS LISTING /tmp/ccb24Nf7.s 			page 146
+GAS LISTING /tmp/ccVfeQK4.s 			page 146
 
 
  402:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 
@@ -8758,7 +8758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  456:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     {
  457:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       // concept requirements
  458:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       __glibcxx_function_requires(_InputIteratorConcept<_II>)
-GAS LISTING /tmp/ccb24Nf7.s 			page 147
+GAS LISTING /tmp/ccVfeQK4.s 			page 147
 
 
  459:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       __glibcxx_function_requires(_OutputIteratorConcept<_OI,
@@ -8818,7 +8818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  513:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	    *--__result = *--__last;
  514:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	  return __result;
  515:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	}
-GAS LISTING /tmp/ccb24Nf7.s 			page 148
+GAS LISTING /tmp/ccVfeQK4.s 			page 148
 
 
  516:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     };
@@ -8878,7 +8878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  570:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** #if __cplusplus >= 201103L
  571:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	  // trivial types can have deleted assignment
  572:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	  static_assert( is_copy_assignable<_Tp>::value,
-GAS LISTING /tmp/ccb24Nf7.s 			page 149
+GAS LISTING /tmp/ccVfeQK4.s 			page 149
 
 
  573:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	                 "type is not assignable" );
@@ -8938,7 +8938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  627:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<typename _BI1, typename _BI2>
  628:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     inline _BI2
  629:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     copy_backward(_BI1 __first, _BI1 __last, _BI2 __result)
-GAS LISTING /tmp/ccb24Nf7.s 			page 150
+GAS LISTING /tmp/ccVfeQK4.s 			page 150
 
 
  630:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     {
@@ -8998,7 +8998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  684:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 
  685:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<typename _ForwardIterator, typename _Tp>
  686:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     inline typename
-GAS LISTING /tmp/ccb24Nf7.s 			page 151
+GAS LISTING /tmp/ccVfeQK4.s 			page 151
 
 
  687:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     __gnu_cxx::__enable_if<!__is_scalar<_Tp>::__value, void>::__type
@@ -9058,7 +9058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  861              	.LBE961:
  862              	.LBB962:
  863              	.LBB959:
-GAS LISTING /tmp/ccb24Nf7.s 			page 152
+GAS LISTING /tmp/ccVfeQK4.s 			page 152
 
 
  864              	.LBB958:
@@ -9118,7 +9118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  216:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       typedef typename _Alloc::value_type                _Alloc_value_type;
  217:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       __glibcxx_class_requires(_Tp, _SGIAssignableConcept)
  218:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       __glibcxx_class_requires2(_Tp, _Alloc_value_type, _SameTypeConcept)
-GAS LISTING /tmp/ccb24Nf7.s 			page 153
+GAS LISTING /tmp/ccVfeQK4.s 			page 153
 
 
  219:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       
@@ -9178,7 +9178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  273:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  constructed elements.
  274:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
  275:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       explicit
-GAS LISTING /tmp/ccb24Nf7.s 			page 154
+GAS LISTING /tmp/ccVfeQK4.s 			page 154
 
 
  276:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       vector(size_type __n, const allocator_type& __a = allocator_type())
@@ -9238,7 +9238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  330:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *
  331:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  The newly-created %vector contains the exact contents of @a __x.
  332:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  The contents of @a __x are a valid, but unspecified %vector.
-GAS LISTING /tmp/ccb24Nf7.s 			page 155
+GAS LISTING /tmp/ccVfeQK4.s 			page 155
 
 
  333:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
@@ -9298,7 +9298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  387:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  Create a %vector consisting of copies of the elements from
  388:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  [first,last).
  389:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *
-GAS LISTING /tmp/ccb24Nf7.s 			page 156
+GAS LISTING /tmp/ccVfeQK4.s 			page 156
 
 
  390:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  If the iterators are forward, bidirectional, or
@@ -9358,7 +9358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  444:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @a __x is a valid, but unspecified %vector.
  445:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
  446:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       vector&
-GAS LISTING /tmp/ccb24Nf7.s 			page 157
+GAS LISTING /tmp/ccVfeQK4.s 			page 157
 
 
  447:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
@@ -9418,7 +9418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  501:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
  502:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** #if __cplusplus >= 201103L
  503:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       template<typename _InputIterator,
-GAS LISTING /tmp/ccb24Nf7.s 			page 158
+GAS LISTING /tmp/ccVfeQK4.s 			page 158
 
 
  504:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	       typename = std::_RequireInputIter<_InputIterator>>
@@ -9478,7 +9478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  558:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       /**
  559:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  Returns a read/write iterator that points one past the last
  560:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  element in the %vector.  Iteration is done in ordinary
-GAS LISTING /tmp/ccb24Nf7.s 			page 159
+GAS LISTING /tmp/ccVfeQK4.s 			page 159
 
 
  561:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  element order.
@@ -9538,7 +9538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  615:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  first element in the %vector.  Iteration is done in ordinary
  616:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  element order.
  617:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
-GAS LISTING /tmp/ccb24Nf7.s 			page 160
+GAS LISTING /tmp/ccVfeQK4.s 			page 160
 
 
  618:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       const_iterator
@@ -9598,7 +9598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  672:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       resize(size_type __new_size)
  673:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       {
  674:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	if (__new_size > size())
-GAS LISTING /tmp/ccb24Nf7.s 			page 161
+GAS LISTING /tmp/ccVfeQK4.s 			page 161
 
 
  675:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	  _M_default_append(__new_size - size());
@@ -9658,7 +9658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  729:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  Returns the total number of elements that the %vector can
  730:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  hold before needing to allocate more memory.
  731:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
-GAS LISTING /tmp/ccb24Nf7.s 			page 162
+GAS LISTING /tmp/ccVfeQK4.s 			page 162
 
 
  732:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       size_type
@@ -9718,7 +9718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  786:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *
  787:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  This operator allows for easy, array-style, data access.
  788:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  Note that data access with this operator is unchecked and
-GAS LISTING /tmp/ccb24Nf7.s 			page 163
+GAS LISTING /tmp/ccVfeQK4.s 			page 163
 
 
  789:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  out_of_range lookups are not defined. (For checked lookups
@@ -9778,7 +9778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  843:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       }
  844:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
  845:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       /**
-GAS LISTING /tmp/ccb24Nf7.s 			page 164
+GAS LISTING /tmp/ccVfeQK4.s 			page 164
 
 
  846:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  Returns a read/write reference to the data at the first
@@ -9838,7 +9838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  900:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       // [23.2.4.3] modifiers
  901:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       /**
  902:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @brief  Add data to the end of the %vector.
-GAS LISTING /tmp/ccb24Nf7.s 			page 165
+GAS LISTING /tmp/ccVfeQK4.s 			page 165
 
 
  903:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __x  Data to be added.
@@ -9898,7 +9898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  957:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __position  A const_iterator into the %vector.
  958:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __args  Arguments.
  959:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @return  An iterator that points to the inserted data.
-GAS LISTING /tmp/ccb24Nf7.s 			page 166
+GAS LISTING /tmp/ccVfeQK4.s 			page 166
 
 
  960:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *
@@ -9958,7 +9958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1014:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       { return emplace(__position, std::move(__x)); }
 1015:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
 1016:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       /**
-GAS LISTING /tmp/ccb24Nf7.s 			page 167
+GAS LISTING /tmp/ccVfeQK4.s 			page 167
 
 
 1017:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @brief  Inserts an initializer_list into the %vector.
@@ -10018,7 +10018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1071:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       insert(iterator __position, size_type __n, const value_type& __x)
 1072:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       { _M_fill_insert(__position, __n, __x); }
 1073:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** #endif
-GAS LISTING /tmp/ccb24Nf7.s 			page 168
+GAS LISTING /tmp/ccVfeQK4.s 			page 168
 
 
 1074:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
@@ -10078,7 +10078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1128:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       /**
 1129:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @brief  Remove element at given position.
 1130:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __position  Iterator pointing to element to be erased.
-GAS LISTING /tmp/ccb24Nf7.s 			page 169
+GAS LISTING /tmp/ccVfeQK4.s 			page 169
 
 
 1131:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @return  An iterator pointing to the next element (or end()).
@@ -10138,7 +10138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1185:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __x  A %vector of the same element and allocator types.
 1186:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *
 1187:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  This exchanges the elements between two vectors in constant time.
-GAS LISTING /tmp/ccb24Nf7.s 			page 170
+GAS LISTING /tmp/ccVfeQK4.s 			page 170
 
 
 1188:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  (Three pointers, so it should be quite fast.)
@@ -10198,7 +10198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1242:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       // _GLIBCXX_RESOLVE_LIB_DEFECTS
 1243:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       // 438. Ambiguity in the "do the right thing" clause
 1244:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       template<typename _Integer>
-GAS LISTING /tmp/ccb24Nf7.s 			page 171
+GAS LISTING /tmp/ccVfeQK4.s 			page 171
 
 
 1245:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****         void
@@ -10258,7 +10258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
 1299:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	std::__uninitialized_fill_n_a(this->_M_impl._M_start, __n, __value, 
 1300:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 				      _M_get_Tp_allocator());
 1301:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	this->_M_impl._M_finish = this->_M_impl._M_end_of_storage;
-GAS LISTING /tmp/ccb24Nf7.s 			page 172
+GAS LISTING /tmp/ccVfeQK4.s 			page 172
 
 
 1302:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       }
@@ -10318,7 +10318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  914 0336 488B5C24 		movq	40(%rsp), %rbx
  914      28
  915 033b 488D5424 		leaq	62(%rsp), %rdx
-GAS LISTING /tmp/ccb24Nf7.s 			page 173
+GAS LISTING /tmp/ccVfeQK4.s 			page 173
 
 
  915      3E
@@ -10378,7 +10378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  957              	.LBE966:
  958              	.LBE965:
   58:examples/simplest.cpp ****         std::cerr << "encoder error " << error << ": "<< lodepng_error_text(error) << std::endl;
-GAS LISTING /tmp/ccb24Nf7.s 			page 174
+GAS LISTING /tmp/ccVfeQK4.s 			page 174
 
 
   59:examples/simplest.cpp ****         return 1;
@@ -10438,7 +10438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  997              	.LBE987:
  998              	.LBB996:
  999              	.LBB997:
-GAS LISTING /tmp/ccb24Nf7.s 			page 175
+GAS LISTING /tmp/ccVfeQK4.s 			page 175
 
 
 1594:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     { _M_fini(); }
@@ -10498,7 +10498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1045              	.LVL106:
  1046 03d1 E9D3FEFF 		jmp	.L26
  1046      FF
-GAS LISTING /tmp/ccb24Nf7.s 			page 176
+GAS LISTING /tmp/ccVfeQK4.s 			page 176
 
 
  1047              	.LVL107:
@@ -10558,7 +10558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1089              	.LVL113:
  1090              	.L66:
  1091              	.LBE897:
-GAS LISTING /tmp/ccb24Nf7.s 			page 177
+GAS LISTING /tmp/ccVfeQK4.s 			page 177
 
 
  1092              	.LBE899:
@@ -10618,7 +10618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1135              	.LBB975:
  1136              	.LBB976:
  1137              		.file 10 "/opt/gcc/4.9.2/include/c++/4.9.2/ostream"
-GAS LISTING /tmp/ccb24Nf7.s 			page 178
+GAS LISTING /tmp/ccVfeQK4.s 			page 178
 
 
    0:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** // Output streams -*- C++ -*-
@@ -10678,7 +10678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   54:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****    *  derived from basic_streambuf to do the actual output.
   55:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****   */
   56:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****   template<typename _CharT, typename _Traits>
-GAS LISTING /tmp/ccb24Nf7.s 			page 179
+GAS LISTING /tmp/ccVfeQK4.s 			page 179
 
 
   57:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     class basic_ostream : virtual public basic_ios<_CharT, _Traits>
@@ -10738,7 +10738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  111:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 	// The inserters for manipulators are *not* formatted output functions.
  112:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 	return __pf(*this);
  113:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       }
-GAS LISTING /tmp/ccb24Nf7.s 			page 180
+GAS LISTING /tmp/ccVfeQK4.s 			page 180
 
 
  114:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
@@ -10798,7 +10798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  168:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       __ostream_type&
  169:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       operator<<(unsigned long __n)
  170:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       { return _M_insert(__n); }
-GAS LISTING /tmp/ccb24Nf7.s 			page 181
+GAS LISTING /tmp/ccVfeQK4.s 			page 181
 
 
  171:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
@@ -10858,7 +10858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1159      00
  1160              	.LEHE5:
  1161              	.LVL122:
-GAS LISTING /tmp/ccb24Nf7.s 			page 182
+GAS LISTING /tmp/ccVfeQK4.s 			page 182
 
 
  1162              	.LBE978:
@@ -10918,7 +10918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1205              	.L39:
  1206              	.LBE985:
  1207              	.LBE984:
-GAS LISTING /tmp/ccb24Nf7.s 			page 183
+GAS LISTING /tmp/ccVfeQK4.s 			page 183
 
 
  1208              	.LBE981:
@@ -10978,7 +10978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1254 04dd EBDA     		jmp	.L39
  1255              	.LVL136:
  1256              	.L46:
-GAS LISTING /tmp/ccb24Nf7.s 			page 184
+GAS LISTING /tmp/ccVfeQK4.s 			page 184
 
 
  1257 04df 4889C3   		movq	%rax, %rbx
@@ -11038,7 +11038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1303              	.LBE1012:
  1304              	.LBE1020:
  1305              		.cfi_endproc
-GAS LISTING /tmp/ccb24Nf7.s 			page 185
+GAS LISTING /tmp/ccVfeQK4.s 			page 185
 
 
  1306              	.LFE5111:
@@ -11098,7 +11098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1358              		.loc 4 64 0
  1359              		.cfi_startproc
  1360              	.LVL145:
-GAS LISTING /tmp/ccb24Nf7.s 			page 186
+GAS LISTING /tmp/ccVfeQK4.s 			page 186
 
 
  1361              	.LBB1021:
@@ -11158,7 +11158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
   51:/opt/gcc/4.9.2/include/c++/4.9.2/iostream ****    *  and the @link iosfwd I/O forward declarations @endlink
   52:/opt/gcc/4.9.2/include/c++/4.9.2/iostream ****    *
   53:/opt/gcc/4.9.2/include/c++/4.9.2/iostream ****    *  They are required by default to cooperate with the global C
-GAS LISTING /tmp/ccb24Nf7.s 			page 187
+GAS LISTING /tmp/ccVfeQK4.s 			page 187
 
 
   54:/opt/gcc/4.9.2/include/c++/4.9.2/iostream ****    *  library's @c FILE streams, and to be available during program
@@ -11218,7 +11218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1392              	.LFE5397:
  1393              		.size	_GLOBAL__sub_I_simplest.cpp, .-_GLOBAL__sub_I_simplest.cpp
  1394              		.section	.text.unlikely
-GAS LISTING /tmp/ccb24Nf7.s 			page 188
+GAS LISTING /tmp/ccVfeQK4.s 			page 188
 
 
  1395              	.LCOLDE14:
@@ -11278,7 +11278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1448              		.file 30 "/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h"
  1449              		.file 31 "/opt/gcc/4.9.2/include/c++/4.9.2/bits/ptr_traits.h"
  1450              		.file 32 "/opt/gcc/4.9.2/include/c++/4.9.2/bits/alloc_traits.h"
-GAS LISTING /tmp/ccb24Nf7.s 			page 189
+GAS LISTING /tmp/ccVfeQK4.s 			page 189
 
 
  1451              		.file 33 "/opt/gcc/4.9.2/include/c++/4.9.2/bits/vector.tcc"
@@ -11338,7 +11338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1504 0033 00000000 		.long	.LASF1
  1505 0037 03       		.uleb128 0x3
  1506 0038 73746400 		.string	"std"
-GAS LISTING /tmp/ccb24Nf7.s 			page 190
+GAS LISTING /tmp/ccVfeQK4.s 			page 190
 
 
  1507 003c 33       		.byte	0x33
@@ -11398,7 +11398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1561 009b EA530000 		.long	0x53ea
  1562 009f 05       		.uleb128 0x5
  1563 00a0 0C       		.byte	0xc
-GAS LISTING /tmp/ccb24Nf7.s 			page 191
+GAS LISTING /tmp/ccVfeQK4.s 			page 191
 
 
  1564 00a1 8E       		.byte	0x8e
@@ -11458,7 +11458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1618 0101 05       		.uleb128 0x5
  1619 0102 0C       		.byte	0xc
  1620 0103 F6       		.byte	0xf6
-GAS LISTING /tmp/ccb24Nf7.s 			page 192
+GAS LISTING /tmp/ccVfeQK4.s 			page 192
 
 
  1621 0104 B0460000 		.long	0x46b0
@@ -11518,7 +11518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1675 0176 20560000 		.long	0x5620
  1676 017a 0C       		.uleb128 0xc
  1677 017b 5F5F7600 		.string	"__v"
-GAS LISTING /tmp/ccb24Nf7.s 			page 193
+GAS LISTING /tmp/ccVfeQK4.s 			page 193
 
 
  1678 017f 20560000 		.long	0x5620
@@ -11578,7 +11578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1732 01f4 80580000 		.long	0x5880
  1733 01f8 05       		.uleb128 0x5
  1734 01f9 0E       		.byte	0xe
-GAS LISTING /tmp/ccb24Nf7.s 			page 194
+GAS LISTING /tmp/ccVfeQK4.s 			page 194
 
 
  1735 01fa 8B       		.byte	0x8b
@@ -11638,7 +11638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1789 025a 05       		.uleb128 0x5
  1790 025b 0E       		.byte	0xe
  1791 025c 9A       		.byte	0x9a
-GAS LISTING /tmp/ccb24Nf7.s 			page 195
+GAS LISTING /tmp/ccVfeQK4.s 			page 195
 
 
  1792 025d F4590000 		.long	0x59f4
@@ -11698,7 +11698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1846 02bd 0E       		.byte	0xe
  1847 02be B2       		.byte	0xb2
  1848 02bf A35B0000 		.long	0x5ba3
-GAS LISTING /tmp/ccb24Nf7.s 			page 196
+GAS LISTING /tmp/ccVfeQK4.s 			page 196
 
 
  1849 02c3 05       		.uleb128 0x5
@@ -11758,7 +11758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1903 0320 C2       		.byte	0xc2
  1904 0321 DF5D0000 		.long	0x5ddf
  1905 0325 05       		.uleb128 0x5
-GAS LISTING /tmp/ccb24Nf7.s 			page 197
+GAS LISTING /tmp/ccVfeQK4.s 			page 197
 
 
  1906 0326 0E       		.byte	0xe
@@ -11818,7 +11818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  1960 0383 7C5F0000 		.long	0x5f7c
  1961 0387 04       		.uleb128 0x4
  1962 0388 0E       		.byte	0xe
-GAS LISTING /tmp/ccb24Nf7.s 			page 198
+GAS LISTING /tmp/ccVfeQK4.s 			page 198
 
 
  1963 0389 0801     		.value	0x108
@@ -11878,7 +11878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2017 03f9 10       		.uleb128 0x10
  2018 03fa 00000000 		.long	.LASF25
  2019 03fe 0F       		.byte	0xf
-GAS LISTING /tmp/ccb24Nf7.s 			page 199
+GAS LISTING /tmp/ccVfeQK4.s 			page 199
 
 
  2020 03ff F2       		.byte	0xf2
@@ -11938,7 +11938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2074 0486 90040000 		.long	0x490
  2075 048a 11       		.uleb128 0x11
  2076 048b 07600000 		.long	0x6007
-GAS LISTING /tmp/ccb24Nf7.s 			page 200
+GAS LISTING /tmp/ccVfeQK4.s 			page 200
 
 
  2077 048f 00       		.byte	0
@@ -11998,7 +11998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2131 051a 11       		.uleb128 0x11
  2132 051b E3030000 		.long	0x3e3
  2133 051f 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 201
+GAS LISTING /tmp/ccVfeQK4.s 			page 201
 
 
  2134 0520 13       		.uleb128 0x13
@@ -12058,7 +12058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2188 05a6 30000000 		.long	0x30
  2189 05aa 05       		.uleb128 0x5
  2190 05ab 11       		.byte	0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 202
+GAS LISTING /tmp/ccVfeQK4.s 			page 202
 
 
  2191 05ac 30       		.byte	0x30
@@ -12118,7 +12118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2245 060c 05       		.uleb128 0x5
  2246 060d 11       		.byte	0x11
  2247 060e 42       		.byte	0x42
-GAS LISTING /tmp/ccb24Nf7.s 			page 203
+GAS LISTING /tmp/ccVfeQK4.s 			page 203
 
 
  2248 060f 19600000 		.long	0x6019
@@ -12178,7 +12178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2302 066f 00000000 		.long	.LASF35
  2303 0673 12       		.byte	0x12
  2304 0674 36       		.byte	0x36
-GAS LISTING /tmp/ccb24Nf7.s 			page 204
+GAS LISTING /tmp/ccVfeQK4.s 			page 204
 
 
  2305 0675 20080000 		.long	0x820
@@ -12238,7 +12238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2359 06f9 00       		.byte	0
  2360 06fa 1B       		.uleb128 0x1b
  2361 06fb 00000000 		.long	.LASF36
-GAS LISTING /tmp/ccb24Nf7.s 			page 205
+GAS LISTING /tmp/ccVfeQK4.s 			page 205
 
 
  2362 06ff 12       		.byte	0x12
@@ -12298,7 +12298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2416 077a 2F610000 		.long	0x612f
  2417 077e 11       		.uleb128 0x11
  2418 077f 3B610000 		.long	0x613b
-GAS LISTING /tmp/ccb24Nf7.s 			page 206
+GAS LISTING /tmp/ccVfeQK4.s 			page 206
 
 
  2419 0783 00       		.byte	0
@@ -12358,7 +12358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2473 0804 12       		.byte	0x12
  2474 0805 93       		.byte	0x93
  2475 0806 00000000 		.long	.LASF50
-GAS LISTING /tmp/ccb24Nf7.s 			page 207
+GAS LISTING /tmp/ccVfeQK4.s 			page 207
 
 
  2476 080a 52610000 		.long	0x6152
@@ -12418,7 +12418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2530 087c 01       		.byte	0x1
  2531 087d 22       		.uleb128 0x22
  2532 087e 00000000 		.long	.LASF57
-GAS LISTING /tmp/ccb24Nf7.s 			page 208
+GAS LISTING /tmp/ccVfeQK4.s 			page 208
 
 
  2533 0882 13       		.byte	0x13
@@ -12478,7 +12478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2587 08ee 62       		.byte	0x62
  2588 08ef 4B560000 		.long	0x564b
  2589 08f3 05       		.uleb128 0x5
-GAS LISTING /tmp/ccb24Nf7.s 			page 209
+GAS LISTING /tmp/ccVfeQK4.s 			page 209
 
 
  2590 08f4 15       		.byte	0x15
@@ -12538,7 +12538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2644 0951 E0640000 		.long	0x64e0
  2645 0955 05       		.uleb128 0x5
  2646 0956 15       		.byte	0x15
-GAS LISTING /tmp/ccb24Nf7.s 			page 210
+GAS LISTING /tmp/ccVfeQK4.s 			page 210
 
 
  2647 0957 76       		.byte	0x76
@@ -12598,7 +12598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2701 09b7 70       		.byte	0x70
  2702 09b8 D8220000 		.long	0x22d8
  2703 09bc 24       		.uleb128 0x24
-GAS LISTING /tmp/ccb24Nf7.s 			page 211
+GAS LISTING /tmp/ccVfeQK4.s 			page 211
 
 
  2704 09bd 00000000 		.long	.LASF61
@@ -12658,7 +12658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2758 0a37 BC090000 		.long	0x9bc
  2759 0a3b 00       		.byte	0
  2760 0a3c 22       		.uleb128 0x22
-GAS LISTING /tmp/ccb24Nf7.s 			page 212
+GAS LISTING /tmp/ccVfeQK4.s 			page 212
 
 
  2761 0a3d 00000000 		.long	.LASF65
@@ -12718,7 +12718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2815 0aa9 00000000 		.long	.LASF72
  2816 0aad 01       		.byte	0x1
  2817 0aae 97       		.byte	0x97
-GAS LISTING /tmp/ccb24Nf7.s 			page 213
+GAS LISTING /tmp/ccVfeQK4.s 			page 213
 
 
  2818 0aaf 110A0000 		.long	0xa11
@@ -12778,7 +12778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2872 0b27 00000000 		.long	.LASF82
  2873 0b2b 20560000 		.long	0x5620
  2874 0b2f 370B0000 		.long	0xb37
-GAS LISTING /tmp/ccb24Nf7.s 			page 214
+GAS LISTING /tmp/ccVfeQK4.s 			page 214
 
 
  2875 0b33 3D0B0000 		.long	0xb3d
@@ -12838,7 +12838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2929 0bbd D10B0000 		.long	0xbd1
  2930 0bc1 0A       		.uleb128 0xa
  2931 0bc2 2F660000 		.long	0x662f
-GAS LISTING /tmp/ccb24Nf7.s 			page 215
+GAS LISTING /tmp/ccVfeQK4.s 			page 215
 
 
  2932 0bc6 11       		.uleb128 0x11
@@ -12898,7 +12898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  2986 0c50 2D       		.uleb128 0x2d
  2987 0c51 00000000 		.long	.LASF100
  2988 0c55 16       		.byte	0x16
-GAS LISTING /tmp/ccb24Nf7.s 			page 216
+GAS LISTING /tmp/ccVfeQK4.s 			page 216
 
 
  2989 0c56 6F02     		.value	0x26f
@@ -12958,7 +12958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3043 0ce8 F20C0000 		.long	0xcf2
  3044 0cec 0A       		.uleb128 0xa
  3045 0ced 23660000 		.long	0x6623
-GAS LISTING /tmp/ccb24Nf7.s 			page 217
+GAS LISTING /tmp/ccVfeQK4.s 			page 217
 
 
  3046 0cf1 00       		.byte	0
@@ -13018,7 +13018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3100 0d7c 00000000 		.long	.LASF118
  3101 0d80 01       		.byte	0x1
  3102 0d81 5301     		.value	0x153
-GAS LISTING /tmp/ccb24Nf7.s 			page 218
+GAS LISTING /tmp/ccVfeQK4.s 			page 218
 
 
  3103 0d83 00000000 		.long	.LASF119
@@ -13078,7 +13078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3157 0e0e 00000000 		.long	.LASF128
  3158 0e12 260E0000 		.long	0xe26
  3159 0e16 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 219
+GAS LISTING /tmp/ccVfeQK4.s 			page 219
 
 
  3160 0e17 CB510000 		.long	0x51cb
@@ -13138,7 +13138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3214 0e9c 7F520000 		.long	0x527f
  3215 0ea0 11       		.uleb128 0x11
  3216 0ea1 7F520000 		.long	0x527f
-GAS LISTING /tmp/ccb24Nf7.s 			page 220
+GAS LISTING /tmp/ccVfeQK4.s 			page 220
 
 
  3217 0ea5 00       		.byte	0
@@ -13198,7 +13198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3271 0f2e 00       		.byte	0
  3272 0f2f 31       		.uleb128 0x31
  3273 0f30 00000000 		.long	.LASF140
-GAS LISTING /tmp/ccb24Nf7.s 			page 221
+GAS LISTING /tmp/ccVfeQK4.s 			page 221
 
 
  3274 0f34 01       		.byte	0x1
@@ -13258,7 +13258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3328 0fb3 7C610000 		.long	0x617c
  3329 0fb7 00       		.byte	0
  3330 0fb8 30       		.uleb128 0x30
-GAS LISTING /tmp/ccb24Nf7.s 			page 222
+GAS LISTING /tmp/ccVfeQK4.s 			page 222
 
 
  3331 0fb9 00000000 		.long	.LASF140
@@ -13318,7 +13318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3385 103b 11       		.uleb128 0x11
  3386 103c 41660000 		.long	0x6641
  3387 1040 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 223
+GAS LISTING /tmp/ccVfeQK4.s 			page 223
 
 
  3388 1041 30       		.uleb128 0x30
@@ -13378,7 +13378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3442 10c6 32       		.uleb128 0x32
  3443 10c7 00000000 		.long	.LASF43
  3444 10cb 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 224
+GAS LISTING /tmp/ccVfeQK4.s 			page 224
 
 
  3445 10cc 3D02     		.value	0x23d
@@ -13438,7 +13438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3499 1157 7102     		.value	0x271
  3500 1159 00000000 		.long	.LASF149
  3501 115d 6C0A0000 		.long	0xa6c
-GAS LISTING /tmp/ccb24Nf7.s 			page 225
+GAS LISTING /tmp/ccVfeQK4.s 			page 225
 
 
  3502 1161 01       		.byte	0x1
@@ -13498,7 +13498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3556 11ec 32       		.uleb128 0x32
  3557 11ed 00000000 		.long	.LASF155
  3558 11f1 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 226
+GAS LISTING /tmp/ccVfeQK4.s 			page 226
 
 
  3559 11f2 9F02     		.value	0x29f
@@ -13558,7 +13558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3613 1281 0A       		.uleb128 0xa
  3614 1282 23660000 		.long	0x6623
  3615 1286 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 227
+GAS LISTING /tmp/ccVfeQK4.s 			page 227
 
 
  3616 1287 32       		.uleb128 0x32
@@ -13618,7 +13618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3670 1310 18130000 		.long	0x1318
  3671 1314 28130000 		.long	0x1328
  3672 1318 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccb24Nf7.s 			page 228
+GAS LISTING /tmp/ccVfeQK4.s 			page 228
 
 
  3673 1319 29660000 		.long	0x6629
@@ -13678,7 +13678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3727 13a1 00       		.byte	0
  3728 13a2 34       		.uleb128 0x34
  3729 13a3 00000000 		.long	.LASF180
-GAS LISTING /tmp/ccb24Nf7.s 			page 229
+GAS LISTING /tmp/ccVfeQK4.s 			page 229
 
 
  3730 13a7 01       		.byte	0x1
@@ -13738,7 +13738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3784 142f 540A0000 		.long	0xa54
  3785 1433 01       		.byte	0x1
  3786 1434 3C140000 		.long	0x143c
-GAS LISTING /tmp/ccb24Nf7.s 			page 230
+GAS LISTING /tmp/ccVfeQK4.s 			page 230
 
 
  3787 1438 47140000 		.long	0x1447
@@ -13798,7 +13798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3841 14c2 29660000 		.long	0x6629
  3842 14c6 00       		.byte	0
  3843 14c7 32       		.uleb128 0x32
-GAS LISTING /tmp/ccb24Nf7.s 			page 231
+GAS LISTING /tmp/ccVfeQK4.s 			page 231
 
 
  3844 14c8 00000000 		.long	.LASF192
@@ -13858,7 +13858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3898 1553 00000000 		.long	.LASF195
  3899 1557 01       		.byte	0x1
  3900 1558 D403     		.value	0x3d4
-GAS LISTING /tmp/ccb24Nf7.s 			page 232
+GAS LISTING /tmp/ccVfeQK4.s 			page 232
 
 
  3901 155a 00000000 		.long	.LASF199
@@ -13918,7 +13918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  3955 15e7 7F520000 		.long	0x527f
  3956 15eb 11       		.uleb128 0x11
  3957 15ec 110A0000 		.long	0xa11
-GAS LISTING /tmp/ccb24Nf7.s 			page 233
+GAS LISTING /tmp/ccVfeQK4.s 			page 233
 
 
  3958 15f0 00       		.byte	0
@@ -13978,7 +13978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4012 1678 29660000 		.long	0x6629
  4013 167c 11       		.uleb128 0x11
  4014 167d D1510000 		.long	0x51d1
-GAS LISTING /tmp/ccb24Nf7.s 			page 234
+GAS LISTING /tmp/ccVfeQK4.s 			page 234
 
 
  4015 1681 00       		.byte	0
@@ -14038,7 +14038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4069 1709 11170000 		.long	0x1711
  4070 170d 21170000 		.long	0x1721
  4071 1711 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccb24Nf7.s 			page 235
+GAS LISTING /tmp/ccVfeQK4.s 			page 235
 
 
  4072 1712 29660000 		.long	0x6629
@@ -14098,7 +14098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4126 179a 00000000 		.long	.LASF217
  4127 179e 01       		.byte	0x1
  4128 179f A7170000 		.long	0x17a7
-GAS LISTING /tmp/ccb24Nf7.s 			page 236
+GAS LISTING /tmp/ccVfeQK4.s 			page 236
 
 
  4129 17a3 BC170000 		.long	0x17bc
@@ -14158,7 +14158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4183 182d 11       		.uleb128 0x11
  4184 182e 3B660000 		.long	0x663b
  4185 1832 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 237
+GAS LISTING /tmp/ccVfeQK4.s 			page 237
 
 
  4186 1833 110A0000 		.long	0xa11
@@ -14218,7 +14218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4240 18bd D1510000 		.long	0x51d1
  4241 18c1 00       		.byte	0
  4242 18c2 32       		.uleb128 0x32
-GAS LISTING /tmp/ccb24Nf7.s 			page 238
+GAS LISTING /tmp/ccVfeQK4.s 			page 238
 
 
  4243 18c3 00000000 		.long	.LASF216
@@ -14278,7 +14278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4297 1951 0A       		.uleb128 0xa
  4298 1952 29660000 		.long	0x6629
  4299 1956 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 239
+GAS LISTING /tmp/ccVfeQK4.s 			page 239
 
 
  4300 1957 600A0000 		.long	0xa60
@@ -14338,7 +14338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4354 19e1 00       		.byte	0
  4355 19e2 32       		.uleb128 0x32
  4356 19e3 00000000 		.long	.LASF231
-GAS LISTING /tmp/ccb24Nf7.s 			page 240
+GAS LISTING /tmp/ccVfeQK4.s 			page 240
 
 
  4357 19e7 01       		.byte	0x1
@@ -14398,7 +14398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4411 1a71 D1510000 		.long	0x51d1
  4412 1a75 00       		.byte	0
  4413 1a76 32       		.uleb128 0x32
-GAS LISTING /tmp/ccb24Nf7.s 			page 241
+GAS LISTING /tmp/ccVfeQK4.s 			page 241
 
 
  4414 1a77 00000000 		.long	.LASF231
@@ -14458,7 +14458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4468 1b04 00       		.byte	0
  4469 1b05 32       		.uleb128 0x32
  4470 1b06 00000000 		.long	.LASF231
-GAS LISTING /tmp/ccb24Nf7.s 			page 242
+GAS LISTING /tmp/ccVfeQK4.s 			page 242
 
 
  4471 1b0a 01       		.byte	0x1
@@ -14518,7 +14518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4525 1b94 7F520000 		.long	0x527f
  4526 1b98 11       		.uleb128 0x11
  4527 1b99 7F520000 		.long	0x527f
-GAS LISTING /tmp/ccb24Nf7.s 			page 243
+GAS LISTING /tmp/ccVfeQK4.s 			page 243
 
 
  4528 1b9d 00       		.byte	0
@@ -14578,7 +14578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4582 1c27 11       		.uleb128 0x11
  4583 1c28 600A0000 		.long	0xa60
  4584 1c2c 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 244
+GAS LISTING /tmp/ccVfeQK4.s 			page 244
 
 
  4585 1c2d E7220000 		.long	0x22e7
@@ -14638,7 +14638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4639 1cba 13       		.uleb128 0x13
  4640 1cbb 00000000 		.long	.LASF252
  4641 1cbf 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 245
+GAS LISTING /tmp/ccVfeQK4.s 			page 245
 
 
  4642 1cc0 F506     		.value	0x6f5
@@ -14698,7 +14698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4696 1d4b 32       		.uleb128 0x32
  4697 1d4c 00000000 		.long	.LASF258
  4698 1d50 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 246
+GAS LISTING /tmp/ccVfeQK4.s 			page 246
 
 
  4699 1d51 2507     		.value	0x725
@@ -14758,7 +14758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4753 1ddf 00       		.byte	0
  4754 1de0 32       		.uleb128 0x32
  4755 1de1 00000000 		.long	.LASF19
-GAS LISTING /tmp/ccb24Nf7.s 			page 247
+GAS LISTING /tmp/ccVfeQK4.s 			page 247
 
 
  4756 1de5 01       		.byte	0x1
@@ -14818,7 +14818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4810 1e70 891E0000 		.long	0x1e89
  4811 1e74 0A       		.uleb128 0xa
  4812 1e75 23660000 		.long	0x6623
-GAS LISTING /tmp/ccb24Nf7.s 			page 248
+GAS LISTING /tmp/ccVfeQK4.s 			page 248
 
 
  4813 1e79 11       		.uleb128 0x11
@@ -14878,7 +14878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4867 1f03 00       		.byte	0
  4868 1f04 32       		.uleb128 0x32
  4869 1f05 00000000 		.long	.LASF271
-GAS LISTING /tmp/ccb24Nf7.s 			page 249
+GAS LISTING /tmp/ccVfeQK4.s 			page 249
 
 
  4870 1f09 01       		.byte	0x1
@@ -14938,7 +14938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4924 1f94 01       		.byte	0x1
  4925 1f95 9D1F0000 		.long	0x1f9d
  4926 1f99 AD1F0000 		.long	0x1fad
-GAS LISTING /tmp/ccb24Nf7.s 			page 250
+GAS LISTING /tmp/ccVfeQK4.s 			page 250
 
 
  4927 1f9d 0A       		.uleb128 0xa
@@ -14998,7 +14998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  4981 2027 11       		.uleb128 0x11
  4982 2028 110A0000 		.long	0xa11
  4983 202c 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 251
+GAS LISTING /tmp/ccVfeQK4.s 			page 251
 
 
  4984 202d 32       		.uleb128 0x32
@@ -15058,7 +15058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5038 20b5 00000000 		.long	.LASF285
  5039 20b9 110A0000 		.long	0xa11
  5040 20bd 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 252
+GAS LISTING /tmp/ccVfeQK4.s 			page 252
 
 
  5041 20be C6200000 		.long	0x20c6
@@ -15118,7 +15118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5095 214b 11       		.uleb128 0x11
  5096 214c 7F520000 		.long	0x527f
  5097 2150 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 253
+GAS LISTING /tmp/ccVfeQK4.s 			page 253
 
 
  5098 2151 110A0000 		.long	0xa11
@@ -15178,7 +15178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5152 21dc 01       		.byte	0x1
  5153 21dd E5210000 		.long	0x21e5
  5154 21e1 FA210000 		.long	0x21fa
-GAS LISTING /tmp/ccb24Nf7.s 			page 254
+GAS LISTING /tmp/ccVfeQK4.s 			page 254
 
 
  5155 21e5 0A       		.uleb128 0xa
@@ -15238,7 +15238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5209 226f 0A       		.uleb128 0xa
  5210 2270 23660000 		.long	0x6623
  5211 2274 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 255
+GAS LISTING /tmp/ccVfeQK4.s 			page 255
 
 
  5212 2275 110A0000 		.long	0xa11
@@ -15298,7 +15298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5266 22fa 7F520000 		.long	0x527f
  5267 22fe 01       		.byte	0x1
  5268 22ff 18       		.uleb128 0x18
-GAS LISTING /tmp/ccb24Nf7.s 			page 256
+GAS LISTING /tmp/ccVfeQK4.s 			page 256
 
 
  5269 2300 00000000 		.long	.LASF306
@@ -15358,7 +15358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5323 2378 82230000 		.long	0x2382
  5324 237c 0A       		.uleb128 0xa
  5325 237d 53660000 		.long	0x6653
-GAS LISTING /tmp/ccb24Nf7.s 			page 257
+GAS LISTING /tmp/ccVfeQK4.s 			page 257
 
 
  5326 2381 00       		.byte	0
@@ -15418,7 +15418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5380 23fe E3670000 		.long	0x67e3
  5381 2402 00       		.byte	0
  5382 2403 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 258
+GAS LISTING /tmp/ccVfeQK4.s 			page 258
 
 
  5383 2404 24       		.uleb128 0x24
@@ -15478,7 +15478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5437 247b AF       		.byte	0xaf
  5438 247c 00000000 		.long	.LASF323
  5439 2480 29000000 		.long	0x29
-GAS LISTING /tmp/ccb24Nf7.s 			page 259
+GAS LISTING /tmp/ccVfeQK4.s 			page 259
 
 
  5440 2484 8C240000 		.long	0x248c
@@ -15538,7 +15538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5494 250e 30000000 		.long	0x30
  5495 2512 3E       		.uleb128 0x3e
  5496 2513 5F5F6D00 		.string	"__m"
-GAS LISTING /tmp/ccb24Nf7.s 			page 260
+GAS LISTING /tmp/ccVfeQK4.s 			page 260
 
 
  5497 2517 30000000 		.long	0x30
@@ -15598,7 +15598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5550 25a2 01       		.byte	0x1
  5551 25a3 3F       		.uleb128 0x3f
  5552 25a4 00000000 		.long	.LASF333
-GAS LISTING /tmp/ccb24Nf7.s 			page 261
+GAS LISTING /tmp/ccVfeQK4.s 			page 261
 
 
  5553 25a8 20560000 		.long	0x5620
@@ -15658,7 +15658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5606 2630 8813     		.value	0x1388
  5607 2632 05       		.byte	0x5
  5608 2633 C301     		.value	0x1c3
-GAS LISTING /tmp/ccb24Nf7.s 			page 262
+GAS LISTING /tmp/ccVfeQK4.s 			page 262
 
 
  5609 2635 72280000 		.long	0x2872
@@ -15718,7 +15718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5663 26ad 05       		.byte	0x5
  5664 26ae EC01     		.value	0x1ec
  5665 26b0 72280000 		.long	0x2872
-GAS LISTING /tmp/ccb24Nf7.s 			page 263
+GAS LISTING /tmp/ccVfeQK4.s 			page 263
 
 
  5666 26b4 01       		.byte	0x1
@@ -15778,7 +15778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5720 2727 2F270000 		.long	0x272f
  5721 272b 3A270000 		.long	0x273a
  5722 272f 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccb24Nf7.s 			page 264
+GAS LISTING /tmp/ccVfeQK4.s 			page 264
 
 
  5723 2730 86660000 		.long	0x6686
@@ -15838,7 +15838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5777 27b6 86660000 		.long	0x6686
  5778 27ba 00       		.byte	0
  5779 27bb 2B       		.uleb128 0x2b
-GAS LISTING /tmp/ccb24Nf7.s 			page 265
+GAS LISTING /tmp/ccVfeQK4.s 			page 265
 
 
  5780 27bc 00000000 		.long	.LASF362
@@ -15898,7 +15898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5834 2852 30000000 		.long	0x30
  5835 2856 0000C6EF 		.long	0xefc60000
  5836 285a 0C       		.uleb128 0xc
-GAS LISTING /tmp/ccb24Nf7.s 			page 266
+GAS LISTING /tmp/ccVfeQK4.s 			page 266
 
 
  5837 285b 5F5F6C00 		.string	"__l"
@@ -15958,7 +15958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5891 28d8 92660000 		.long	0x6692
  5892 28dc 11       		.uleb128 0x11
  5893 28dd 59660000 		.long	0x6659
-GAS LISTING /tmp/ccb24Nf7.s 			page 267
+GAS LISTING /tmp/ccVfeQK4.s 			page 267
 
 
  5894 28e1 00       		.byte	0
@@ -16018,7 +16018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  5948 2964 5D06     		.value	0x65d
  5949 2966 01       		.byte	0x1
  5950 2967 6F290000 		.long	0x296f
-GAS LISTING /tmp/ccb24Nf7.s 			page 268
+GAS LISTING /tmp/ccVfeQK4.s 			page 268
 
 
  5951 296b 7A290000 		.long	0x297a
@@ -16078,7 +16078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6005 29f3 00000000 		.long	.LASF381
  6006 29f7 05       		.byte	0x5
  6007 29f8 6606     		.value	0x666
-GAS LISTING /tmp/ccb24Nf7.s 			page 269
+GAS LISTING /tmp/ccVfeQK4.s 			page 269
 
 
  6008 29fa 00000000 		.long	.LASF382
@@ -16138,7 +16138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6062 2a80 45       		.uleb128 0x45
  6063 2a81 00000000 		.long	.LASF387
  6064 2a85 0D       		.byte	0xd
-GAS LISTING /tmp/ccb24Nf7.s 			page 270
+GAS LISTING /tmp/ccVfeQK4.s 			page 270
 
 
  6065 2a86 2F06     		.value	0x62f
@@ -16198,7 +16198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6119 2b06 5F547000 		.string	"_Tp"
  6120 2b0a 99510000 		.long	0x5199
  6121 2b0e 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 271
+GAS LISTING /tmp/ccVfeQK4.s 			page 271
 
 
  6122 2b0f 08       		.uleb128 0x8
@@ -16258,7 +16258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6176 2b84 00000000 		.long	.LASF413
  6177 2b88 808001   		.sleb128 16384
  6178 2b8b 50       		.uleb128 0x50
-GAS LISTING /tmp/ccb24Nf7.s 			page 272
+GAS LISTING /tmp/ccVfeQK4.s 			page 272
 
 
  6179 2b8c 00000000 		.long	.LASF414
@@ -16318,7 +16318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6233 2bff 02       		.sleb128 2
  6234 2c00 50       		.uleb128 0x50
  6235 2c01 00000000 		.long	.LASF431
-GAS LISTING /tmp/ccb24Nf7.s 			page 273
+GAS LISTING /tmp/ccVfeQK4.s 			page 273
 
 
  6236 2c05 04       		.sleb128 4
@@ -16378,7 +16378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6290 2c7c 54       		.uleb128 0x54
  6291 2c7d 00000000 		.long	.LASF441
  6292 2c81 1B       		.byte	0x1b
-GAS LISTING /tmp/ccb24Nf7.s 			page 274
+GAS LISTING /tmp/ccVfeQK4.s 			page 274
 
 
  6293 2c82 1A02     		.value	0x21a
@@ -16438,7 +16438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6347 2cf1 1001     		.value	0x110
  6348 2cf3 BC2C0000 		.long	0x2cbc
  6349 2cf7 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 275
+GAS LISTING /tmp/ccVfeQK4.s 			page 275
 
 
  6350 2cf8 10       		.byte	0x10
@@ -16498,7 +16498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6404 2d67 BC2C0000 		.long	0x2cbc
  6405 2d6b 01       		.byte	0x1
  6406 2d6c 0010     		.value	0x1000
-GAS LISTING /tmp/ccb24Nf7.s 			page 276
+GAS LISTING /tmp/ccVfeQK4.s 			page 276
 
 
  6407 2d6e 44       		.uleb128 0x44
@@ -16558,7 +16558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6461 2dde 5601     		.value	0x156
  6462 2de0 C52D0000 		.long	0x2dc5
  6463 2de4 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 277
+GAS LISTING /tmp/ccVfeQK4.s 			page 277
 
 
  6464 2de5 04       		.byte	0x4
@@ -16618,7 +16618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6518 2e51 7D01     		.value	0x17d
  6519 2e53 0F2E0000 		.long	0x2e0f
  6520 2e57 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 278
+GAS LISTING /tmp/ccVfeQK4.s 			page 278
 
 
  6521 2e58 20       		.byte	0x20
@@ -16678,7 +16678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6575 2ebc 04670000 		.long	0x6704
  6576 2ec0 05       		.uleb128 0x5
  6577 2ec1 1C       		.byte	0x1c
-GAS LISTING /tmp/ccb24Nf7.s 			page 279
+GAS LISTING /tmp/ccVfeQK4.s 			page 279
 
 
  6578 2ec2 69       		.byte	0x69
@@ -16738,7 +16738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6632 2f49 00000000 		.long	.LASF476
  6633 2f4d 30000000 		.long	0x30
  6634 2f51 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccb24Nf7.s 			page 280
+GAS LISTING /tmp/ccVfeQK4.s 			page 280
 
 
  6635 2f52 0D770000 		.long	0x770d
@@ -16798,7 +16798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6689 2fce 00       		.byte	0
  6690 2fcf 03       		.byte	0x3
  6691 2fd0 58       		.uleb128 0x58
-GAS LISTING /tmp/ccb24Nf7.s 			page 281
+GAS LISTING /tmp/ccVfeQK4.s 			page 281
 
 
  6692 2fd1 00000000 		.long	.LASF483
@@ -16858,7 +16858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6746 3055 01       		.byte	0x1
  6747 3056 26       		.uleb128 0x26
  6748 3057 00000000 		.long	.LASF490
-GAS LISTING /tmp/ccb24Nf7.s 			page 282
+GAS LISTING /tmp/ccVfeQK4.s 			page 282
 
 
  6749 305b 05       		.byte	0x5
@@ -16918,7 +16918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6803 30d9 E1300000 		.long	0x30e1
  6804 30dd E7300000 		.long	0x30e7
  6805 30e1 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccb24Nf7.s 			page 283
+GAS LISTING /tmp/ccVfeQK4.s 			page 283
 
 
  6806 30e2 30690000 		.long	0x6930
@@ -16978,7 +16978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6860 316a 8D08     		.value	0x88d
  6861 316c 00000000 		.long	.LASF501
  6862 3170 49300000 		.long	0x3049
-GAS LISTING /tmp/ccb24Nf7.s 			page 284
+GAS LISTING /tmp/ccVfeQK4.s 			page 284
 
 
  6863 3174 01       		.byte	0x1
@@ -17038,7 +17038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6917 31fa 21       		.uleb128 0x21
  6918 31fb 9B4E0000 		.long	0x4e9b
  6919 31ff 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 285
+GAS LISTING /tmp/ccVfeQK4.s 			page 285
 
 
  6920 3200 01       		.byte	0x1
@@ -17098,7 +17098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  6974 3272 00000000 		.long	.LASF507
  6975 3276 01       		.byte	0x1
  6976 3277 13       		.byte	0x13
-GAS LISTING /tmp/ccb24Nf7.s 			page 286
+GAS LISTING /tmp/ccVfeQK4.s 			page 286
 
 
  6977 3278 68       		.byte	0x68
@@ -17158,7 +17158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7031 32f0 00       		.byte	0
  7032 32f1 08       		.uleb128 0x8
  7033 32f2 00000000 		.long	.LASF515
-GAS LISTING /tmp/ccb24Nf7.s 			page 287
+GAS LISTING /tmp/ccVfeQK4.s 			page 287
 
 
  7034 32f6 1F       		.byte	0x1f
@@ -17218,7 +17218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7088 3368 01320000 		.long	0x3201
  7089 336c 03       		.byte	0x3
  7090 336d 08       		.uleb128 0x8
-GAS LISTING /tmp/ccb24Nf7.s 			page 288
+GAS LISTING /tmp/ccVfeQK4.s 			page 288
 
 
  7091 336e 00000000 		.long	.LASF55
@@ -17278,7 +17278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7145 33e6 5C       		.uleb128 0x5c
  7146 33e7 00000000 		.long	.LASF532
  7147 33eb 20       		.byte	0x20
-GAS LISTING /tmp/ccb24Nf7.s 			page 289
+GAS LISTING /tmp/ccVfeQK4.s 			page 289
 
 
  7148 33ec 94       		.byte	0x94
@@ -17338,7 +17338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7202 3469 3F330000 		.long	0x333f
  7203 346d 81340000 		.long	0x3481
  7204 3471 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 290
+GAS LISTING /tmp/ccVfeQK4.s 			page 290
 
 
  7205 3472 6C690000 		.long	0x696c
@@ -17398,7 +17398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7259 34f6 08       		.uleb128 0x8
  7260 34f7 00000000 		.long	.LASF387
  7261 34fb 20       		.byte	0x20
-GAS LISTING /tmp/ccb24Nf7.s 			page 291
+GAS LISTING /tmp/ccVfeQK4.s 			page 291
 
 
  7262 34fc 41       		.byte	0x41
@@ -17458,7 +17458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7316 3571 5A       		.byte	0x5a
  7317 3572 7A350000 		.long	0x357a
  7318 3576 85350000 		.long	0x3585
-GAS LISTING /tmp/ccb24Nf7.s 			page 292
+GAS LISTING /tmp/ccVfeQK4.s 			page 292
 
 
  7319 357a 0A       		.uleb128 0xa
@@ -17518,7 +17518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7373 35f8 00       		.byte	0
  7374 35f9 08       		.uleb128 0x8
  7375 35fa 00000000 		.long	.LASF65
-GAS LISTING /tmp/ccb24Nf7.s 			page 293
+GAS LISTING /tmp/ccVfeQK4.s 			page 293
 
 
  7376 35fe 08       		.byte	0x8
@@ -17578,7 +17578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7430 3685 A8690000 		.long	0x69a8
  7431 3689 00       		.byte	0
  7432 368a 0D       		.uleb128 0xd
-GAS LISTING /tmp/ccb24Nf7.s 			page 294
+GAS LISTING /tmp/ccVfeQK4.s 			page 294
 
 
  7433 368b F9350000 		.long	0x35f9
@@ -17638,7 +17638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7487 370c 9C690000 		.long	0x699c
  7488 3710 11       		.uleb128 0x11
  7489 3711 AE690000 		.long	0x69ae
-GAS LISTING /tmp/ccb24Nf7.s 			page 295
+GAS LISTING /tmp/ccVfeQK4.s 			page 295
 
 
  7490 3715 11       		.uleb128 0x11
@@ -17698,7 +17698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7544 3799 0B       		.uleb128 0xb
  7545 379a 5F547000 		.string	"_Tp"
  7546 379e 68510000 		.long	0x5168
-GAS LISTING /tmp/ccb24Nf7.s 			page 296
+GAS LISTING /tmp/ccVfeQK4.s 			page 296
 
 
  7547 37a2 35       		.uleb128 0x35
@@ -17758,7 +17758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7601 380b 22       		.uleb128 0x22
  7602 380c 00000000 		.long	.LASF57
  7603 3810 08       		.byte	0x8
-GAS LISTING /tmp/ccb24Nf7.s 			page 297
+GAS LISTING /tmp/ccVfeQK4.s 			page 297
 
 
  7604 3811 E6       		.byte	0xe6
@@ -17818,7 +17818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7658 387e 86380000 		.long	0x3886
  7659 3882 91380000 		.long	0x3891
  7660 3886 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccb24Nf7.s 			page 298
+GAS LISTING /tmp/ccVfeQK4.s 			page 298
 
 
  7661 3887 B4690000 		.long	0x69b4
@@ -17878,7 +17878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7715 3906 01       		.byte	0x1
  7716 3907 0F390000 		.long	0x390f
  7717 390b 1A390000 		.long	0x391a
-GAS LISTING /tmp/ccb24Nf7.s 			page 299
+GAS LISTING /tmp/ccVfeQK4.s 			page 299
 
 
  7718 390f 0A       		.uleb128 0xa
@@ -17938,7 +17938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7772 398e 0A       		.uleb128 0xa
  7773 398f B4690000 		.long	0x69b4
  7774 3993 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccb24Nf7.s 			page 300
+GAS LISTING /tmp/ccVfeQK4.s 			page 300
 
 
  7775 3994 92510000 		.long	0x5192
@@ -17998,7 +17998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7829 3a1e 11       		.uleb128 0x11
  7830 3a1f 47380000 		.long	0x3847
  7831 3a23 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 301
+GAS LISTING /tmp/ccVfeQK4.s 			page 301
 
 
  7832 3a24 C0690000 		.long	0x69c0
@@ -18058,7 +18058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7886 3aac 3E02     		.value	0x23e
  7887 3aae 00000000 		.long	.LASF583
  7888 3ab2 23380000 		.long	0x3823
-GAS LISTING /tmp/ccb24Nf7.s 			page 302
+GAS LISTING /tmp/ccVfeQK4.s 			page 302
 
 
  7889 3ab6 01       		.byte	0x1
@@ -18118,7 +18118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  7943 3b41 32       		.uleb128 0x32
  7944 3b42 00000000 		.long	.LASF158
  7945 3b46 08       		.byte	0x8
-GAS LISTING /tmp/ccb24Nf7.s 			page 303
+GAS LISTING /tmp/ccVfeQK4.s 			page 303
 
 
  7946 3b47 6C02     		.value	0x26c
@@ -18178,7 +18178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8000 3bd6 0A       		.uleb128 0xa
  8001 3bd7 D8690000 		.long	0x69d8
  8002 3bdb 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 304
+GAS LISTING /tmp/ccVfeQK4.s 			page 304
 
 
  8003 3bdc 32       		.uleb128 0x32
@@ -18238,7 +18238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8057 3c61 DE02     		.value	0x2de
  8058 3c63 00000000 		.long	.LASF597
  8059 3c67 47380000 		.long	0x3847
-GAS LISTING /tmp/ccb24Nf7.s 			page 305
+GAS LISTING /tmp/ccVfeQK4.s 			page 305
 
 
  8060 3c6b 01       		.byte	0x1
@@ -18298,7 +18298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8114 3cf5 0A       		.uleb128 0xa
  8115 3cf6 D8690000 		.long	0x69d8
  8116 3cfa 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 306
+GAS LISTING /tmp/ccVfeQK4.s 			page 306
 
 
  8117 3cfb 47380000 		.long	0x3847
@@ -18358,7 +18358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8171 3d84 00       		.byte	0
  8172 3d85 32       		.uleb128 0x32
  8173 3d86 00000000 		.long	.LASF189
-GAS LISTING /tmp/ccb24Nf7.s 			page 307
+GAS LISTING /tmp/ccVfeQK4.s 			page 307
 
 
  8174 3d8a 08       		.byte	0x8
@@ -18418,7 +18418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8228 3e16 203E0000 		.long	0x3e20
  8229 3e1a 0A       		.uleb128 0xa
  8230 3e1b D8690000 		.long	0x69d8
-GAS LISTING /tmp/ccb24Nf7.s 			page 308
+GAS LISTING /tmp/ccVfeQK4.s 			page 308
 
 
  8231 3e1f 00       		.byte	0
@@ -18478,7 +18478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8285 3ea3 32       		.uleb128 0x32
  8286 3ea4 00000000 		.long	.LASF216
  8287 3ea8 08       		.byte	0x8
-GAS LISTING /tmp/ccb24Nf7.s 			page 309
+GAS LISTING /tmp/ccVfeQK4.s 			page 309
 
 
  8288 3ea9 F603     		.value	0x3f6
@@ -18538,7 +18538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8342 3f34 3C3F0000 		.long	0x3f3c
  8343 3f38 473F0000 		.long	0x3f47
  8344 3f3c 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccb24Nf7.s 			page 310
+GAS LISTING /tmp/ccVfeQK4.s 			page 310
 
 
  8345 3f3d B4690000 		.long	0x69b4
@@ -18598,7 +18598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8399 3fc5 11       		.uleb128 0x11
  8400 3fc6 47380000 		.long	0x3847
  8401 3fca 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 311
+GAS LISTING /tmp/ccVfeQK4.s 			page 311
 
 
  8402 3fcb C0690000 		.long	0x69c0
@@ -18658,7 +18658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8456 404f 5E400000 		.long	0x405e
  8457 4053 0A       		.uleb128 0xa
  8458 4054 B4690000 		.long	0x69b4
-GAS LISTING /tmp/ccb24Nf7.s 			page 312
+GAS LISTING /tmp/ccVfeQK4.s 			page 312
 
 
  8459 4058 11       		.uleb128 0x11
@@ -18718,7 +18718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8513 40df B4690000 		.long	0x69b4
  8514 40e3 11       		.uleb128 0x11
  8515 40e4 17380000 		.long	0x3817
-GAS LISTING /tmp/ccb24Nf7.s 			page 313
+GAS LISTING /tmp/ccVfeQK4.s 			page 313
 
 
  8516 40e8 00       		.byte	0
@@ -18778,7 +18778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8570 4171 20       		.uleb128 0x20
  8571 4172 00000000 		.long	.LASF646
  8572 4176 0D       		.uleb128 0xd
-GAS LISTING /tmp/ccb24Nf7.s 			page 314
+GAS LISTING /tmp/ccVfeQK4.s 			page 314
 
 
  8573 4177 B1370000 		.long	0x37b1
@@ -18838,7 +18838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8627 41e9 01       		.byte	0x1
  8628 41ea F2410000 		.long	0x41f2
  8629 41ee F8410000 		.long	0x41f8
-GAS LISTING /tmp/ccb24Nf7.s 			page 315
+GAS LISTING /tmp/ccVfeQK4.s 			page 315
 
 
  8630 41f2 0A       		.uleb128 0xa
@@ -18898,7 +18898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8684 4272 B3       		.byte	0xb3
  8685 4273 3C080000 		.long	0x83c
  8686 4277 08       		.uleb128 0x8
-GAS LISTING /tmp/ccb24Nf7.s 			page 316
+GAS LISTING /tmp/ccVfeQK4.s 			page 316
 
 
  8687 4278 00000000 		.long	.LASF506
@@ -18958,7 +18958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8741 42f0 DA420000 		.long	0x42da
  8742 42f4 FE420000 		.long	0x42fe
  8743 42f8 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 317
+GAS LISTING /tmp/ccVfeQK4.s 			page 317
 
 
  8744 42f9 E3670000 		.long	0x67e3
@@ -19018,7 +19018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8798 4380 E22B0000 		.long	0x2be2
  8799 4384 11       		.uleb128 0x11
  8800 4385 E22B0000 		.long	0x2be2
-GAS LISTING /tmp/ccb24Nf7.s 			page 318
+GAS LISTING /tmp/ccVfeQK4.s 			page 318
 
 
  8801 4389 00       		.byte	0
@@ -19078,7 +19078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8855 4412 11       		.uleb128 0x11
  8856 4413 E3670000 		.long	0x67e3
  8857 4417 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 319
+GAS LISTING /tmp/ccVfeQK4.s 			page 319
 
 
  8858 4418 5F       		.uleb128 0x5f
@@ -19138,7 +19138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8912 44a0 00       		.byte	0
  8913 44a1 60       		.uleb128 0x60
  8914 44a2 6C6F6700 		.string	"log"
-GAS LISTING /tmp/ccb24Nf7.s 			page 320
+GAS LISTING /tmp/ccVfeQK4.s 			page 320
 
 
  8915 44a6 06       		.byte	0x6
@@ -19198,7 +19198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  8969 452c DA420000 		.long	0x42da
  8970 4530 43450000 		.long	0x4543
  8971 4534 35       		.uleb128 0x35
-GAS LISTING /tmp/ccb24Nf7.s 			page 321
+GAS LISTING /tmp/ccVfeQK4.s 			page 321
 
 
  8972 4535 00000000 		.long	.LASF653
@@ -19258,7 +19258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9026 45c5 0B       		.uleb128 0xb
  9027 45c6 5F547000 		.string	"_Tp"
  9028 45ca 68510000 		.long	0x5168
-GAS LISTING /tmp/ccb24Nf7.s 			page 322
+GAS LISTING /tmp/ccVfeQK4.s 			page 322
 
 
  9029 45ce 11       		.uleb128 0x11
@@ -19318,7 +19318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9083 4650 0A       		.byte	0xa
  9084 4651 3402     		.value	0x234
  9085 4653 00000000 		.long	.LASF687
-GAS LISTING /tmp/ccb24Nf7.s 			page 323
+GAS LISTING /tmp/ccVfeQK4.s 			page 323
 
 
  9086 4657 2E670000 		.long	0x672e
@@ -19378,7 +19378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9140 46c9 A0510000 		.long	0x51a0
  9141 46cd 00       		.byte	0
  9142 46ce 0F       		.uleb128 0xf
-GAS LISTING /tmp/ccb24Nf7.s 			page 324
+GAS LISTING /tmp/ccVfeQK4.s 			page 324
 
 
  9143 46cf 00000000 		.long	.LASF691
@@ -19438,7 +19438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9197 4737 00000000 		.long	.LASF57
  9198 473b 07       		.byte	0x7
  9199 473c 42       		.byte	0x42
-GAS LISTING /tmp/ccb24Nf7.s 			page 325
+GAS LISTING /tmp/ccVfeQK4.s 			page 325
 
 
  9200 473d 5E610000 		.long	0x615e
@@ -19498,7 +19498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9254 47b8 00000000 		.long	.LASF698
  9255 47bc 1E470000 		.long	0x471e
  9256 47c0 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 326
+GAS LISTING /tmp/ccVfeQK4.s 			page 326
 
 
  9257 47c1 C9470000 		.long	0x47c9
@@ -19558,7 +19558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9311 4848 0D       		.uleb128 0xd
  9312 4849 FA460000 		.long	0x46fa
  9313 484d 06       		.uleb128 0x6
-GAS LISTING /tmp/ccb24Nf7.s 			page 327
+GAS LISTING /tmp/ccVfeQK4.s 			page 327
 
 
  9314 484e 00000000 		.long	.LASF702
@@ -19618,7 +19618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9368 48c4 45       		.uleb128 0x45
  9369 48c5 00000000 		.long	.LASF506
  9370 48c9 29       		.byte	0x29
-GAS LISTING /tmp/ccb24Nf7.s 			page 328
+GAS LISTING /tmp/ccVfeQK4.s 			page 328
 
 
  9371 48ca D202     		.value	0x2d2
@@ -19678,7 +19678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9425 494e 366A0000 		.long	0x6a36
  9426 4952 01       		.byte	0x1
  9427 4953 5B490000 		.long	0x495b
-GAS LISTING /tmp/ccb24Nf7.s 			page 329
+GAS LISTING /tmp/ccVfeQK4.s 			page 329
 
 
  9428 4957 61490000 		.long	0x4961
@@ -19738,7 +19738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9482 49e2 306A0000 		.long	0x6a30
  9483 49e6 11       		.uleb128 0x11
  9484 49e7 AA480000 		.long	0x48aa
-GAS LISTING /tmp/ccb24Nf7.s 			page 330
+GAS LISTING /tmp/ccVfeQK4.s 			page 330
 
 
  9485 49eb 00       		.byte	0
@@ -19798,7 +19798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9539 4a76 11       		.uleb128 0x11
  9540 4a77 AA480000 		.long	0x48aa
  9541 4a7b 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 331
+GAS LISTING /tmp/ccVfeQK4.s 			page 331
 
 
  9542 4a7c 32       		.uleb128 0x32
@@ -19858,7 +19858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9596 4af8 01       		.byte	0x1
  9597 4af9 014B0000 		.long	0x4b01
  9598 4afd 074B0000 		.long	0x4b07
-GAS LISTING /tmp/ccb24Nf7.s 			page 332
+GAS LISTING /tmp/ccVfeQK4.s 			page 332
 
 
  9599 4b01 0A       		.uleb128 0xa
@@ -19918,7 +19918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9653 4b86 F402     		.value	0x2f4
  9654 4b88 00000000 		.long	.LASF736
  9655 4b8c AE4A0000 		.long	0x4aae
-GAS LISTING /tmp/ccb24Nf7.s 			page 333
+GAS LISTING /tmp/ccVfeQK4.s 			page 333
 
 
  9656 4b90 01       		.byte	0x1
@@ -19978,7 +19978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9710 4c1b 01       		.byte	0x1
  9711 4c1c 244C0000 		.long	0x4c24
  9712 4c20 2F4C0000 		.long	0x4c2f
-GAS LISTING /tmp/ccb24Nf7.s 			page 334
+GAS LISTING /tmp/ccVfeQK4.s 			page 334
 
 
  9713 4c24 0A       		.uleb128 0xa
@@ -20038,7 +20038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9767 4cac B44C0000 		.long	0x4cb4
  9768 4cb0 BA4C0000 		.long	0x4cba
  9769 4cb4 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccb24Nf7.s 			page 335
+GAS LISTING /tmp/ccVfeQK4.s 			page 335
 
 
  9770 4cb5 136A0000 		.long	0x6a13
@@ -20098,7 +20098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9824 4d2d 1B560000 		.long	0x561b
  9825 4d31 07       		.uleb128 0x7
  9826 4d32 00000000 		.long	.LASF747
-GAS LISTING /tmp/ccb24Nf7.s 			page 336
+GAS LISTING /tmp/ccVfeQK4.s 			page 336
 
 
  9827 4d36 28       		.byte	0x28
@@ -20158,7 +20158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9881 4dab 00000000 		.long	.LASF704
  9882 4daf 28       		.byte	0x28
  9883 4db0 3B       		.byte	0x3b
-GAS LISTING /tmp/ccb24Nf7.s 			page 337
+GAS LISTING /tmp/ccVfeQK4.s 			page 337
 
 
  9884 4db1 70660000 		.long	0x6670
@@ -20218,7 +20218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9938 4e29 3A       		.byte	0x3a
  9939 4e2a 85520000 		.long	0x5285
  9940 4e2e 07       		.uleb128 0x7
-GAS LISTING /tmp/ccb24Nf7.s 			page 338
+GAS LISTING /tmp/ccVfeQK4.s 			page 338
 
 
  9941 4e2f 00000000 		.long	.LASF704
@@ -20278,7 +20278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  9995 4ea7 08       		.uleb128 0x8
  9996 4ea8 00000000 		.long	.LASF55
  9997 4eac 07       		.byte	0x7
-GAS LISTING /tmp/ccb24Nf7.s 			page 339
+GAS LISTING /tmp/ccVfeQK4.s 			page 339
 
 
  9998 4ead 3D       		.byte	0x3d
@@ -20338,7 +20338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10052 4f28 00000000 		.long	.LASF696
  10053 4f2c 07       		.byte	0x7
  10054 4f2d 59       		.byte	0x59
-GAS LISTING /tmp/ccb24Nf7.s 			page 340
+GAS LISTING /tmp/ccVfeQK4.s 			page 340
 
 
  10055 4f2e 00000000 		.long	.LASF756
@@ -20398,7 +20398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10109 4fbb 71       		.byte	0x71
  10110 4fbc 00000000 		.long	.LASF760
  10111 4fc0 A74E0000 		.long	0x4ea7
-GAS LISTING /tmp/ccb24Nf7.s 			page 341
+GAS LISTING /tmp/ccVfeQK4.s 			page 341
 
 
  10112 4fc4 CC4F0000 		.long	0x4fcc
@@ -20458,7 +20458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10166 5039 3D       		.uleb128 0x3d
  10167 503a 00000000 		.long	.LASF762
  10168 503e 2A       		.byte	0x2a
-GAS LISTING /tmp/ccb24Nf7.s 			page 342
+GAS LISTING /tmp/ccVfeQK4.s 			page 342
 
 
  10169 503f 8B       		.byte	0x8b
@@ -20518,7 +20518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10223 50c6 06       		.uleb128 0x6
  10224 50c7 00000000 		.long	.LASF507
  10225 50cb 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 343
+GAS LISTING /tmp/ccVfeQK4.s 			page 343
 
 
  10226 50cc 2A       		.byte	0x2a
@@ -20578,7 +20578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10280 5147 D26A0000 		.long	0x6ad2
  10281 514b 11       		.uleb128 0x11
  10282 514c 92510000 		.long	0x5192
-GAS LISTING /tmp/ccb24Nf7.s 			page 344
+GAS LISTING /tmp/ccVfeQK4.s 			page 344
 
 
  10283 5150 00       		.byte	0
@@ -20638,7 +20638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10337 51b0 04       		.byte	0x4
  10338 51b1 00000000 		.long	.LASF794
  10339 51b5 08       		.uleb128 0x8
-GAS LISTING /tmp/ccb24Nf7.s 			page 345
+GAS LISTING /tmp/ccVfeQK4.s 			page 345
 
 
  10340 51b6 00000000 		.long	.LASF795
@@ -20698,7 +20698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10394 5225 6C       		.byte	0x6c
  10395 5226 99510000 		.long	0x5199
  10396 522a 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 346
+GAS LISTING /tmp/ccVfeQK4.s 			page 346
 
 
  10397 522b 6A       		.uleb128 0x6a
@@ -20758,7 +20758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10451 529a 2F       		.byte	0x2f
  10452 529b 8D       		.byte	0x8d
  10453 529c 99510000 		.long	0x5199
-GAS LISTING /tmp/ccb24Nf7.s 			page 347
+GAS LISTING /tmp/ccVfeQK4.s 			page 347
 
 
  10454 52a0 08       		.uleb128 0x8
@@ -20818,7 +20818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10508 5316 5E       		.uleb128 0x5e
  10509 5317 00000000 		.long	.LASF814
  10510 531b 2E       		.byte	0x2e
-GAS LISTING /tmp/ccb24Nf7.s 			page 348
+GAS LISTING /tmp/ccVfeQK4.s 			page 348
 
 
  10511 531c 0602     		.value	0x206
@@ -20878,7 +20878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10565 53a0 0F530000 		.long	0x530f
  10566 53a4 11       		.uleb128 0x11
  10567 53a5 0F530000 		.long	0x530f
-GAS LISTING /tmp/ccb24Nf7.s 			page 349
+GAS LISTING /tmp/ccVfeQK4.s 			page 349
 
 
  10568 53a9 11       		.uleb128 0x11
@@ -20938,7 +20938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10622 542c 40540000 		.long	0x5440
  10623 5430 11       		.uleb128 0x11
  10624 5431 40540000 		.long	0x5440
-GAS LISTING /tmp/ccb24Nf7.s 			page 350
+GAS LISTING /tmp/ccVfeQK4.s 			page 350
 
 
  10625 5435 11       		.uleb128 0x11
@@ -20998,7 +20998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10679 54b1 2E       		.byte	0x2e
  10680 54b2 7E01     		.value	0x17e
  10681 54b4 BE540000 		.long	0x54be
-GAS LISTING /tmp/ccb24Nf7.s 			page 351
+GAS LISTING /tmp/ccVfeQK4.s 			page 351
 
 
  10682 54b8 11       		.uleb128 0x11
@@ -21058,7 +21058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10736 5537 2E       		.byte	0x2e
  10737 5538 6A03     		.value	0x36a
  10738 553a D8510000 		.long	0x51d8
-GAS LISTING /tmp/ccb24Nf7.s 			page 352
+GAS LISTING /tmp/ccVfeQK4.s 			page 352
 
 
  10739 553e 52550000 		.long	0x5552
@@ -21118,7 +21118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10793 55c2 11       		.uleb128 0x11
  10794 55c3 92510000 		.long	0x5192
  10795 55c7 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 353
+GAS LISTING /tmp/ccVfeQK4.s 			page 353
 
 
  10796 55c8 41       		.uleb128 0x41
@@ -21178,7 +21178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10850 5643 72       		.uleb128 0x72
  10851 5644 26       		.byte	0x26
  10852 5645 38       		.byte	0x38
-GAS LISTING /tmp/ccb24Nf7.s 			page 354
+GAS LISTING /tmp/ccVfeQK4.s 			page 354
 
 
  10853 5646 EA010000 		.long	0x1ea
@@ -21238,7 +21238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10907 56bd 30       		.byte	0x30
  10908 56be 26       		.uleb128 0x26
  10909 56bf 00000000 		.long	.LASF852
-GAS LISTING /tmp/ccb24Nf7.s 			page 355
+GAS LISTING /tmp/ccVfeQK4.s 			page 355
 
 
  10910 56c3 32       		.byte	0x32
@@ -21298,7 +21298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  10964 5738 32       		.byte	0x32
  10965 5739 2C01     		.value	0x12c
  10966 573b 95520000 		.long	0x5295
-GAS LISTING /tmp/ccb24Nf7.s 			page 356
+GAS LISTING /tmp/ccVfeQK4.s 			page 356
 
 
  10967 573f 78       		.byte	0x78
@@ -21358,7 +21358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11021 57b4 B0       		.byte	0xb0
  11022 57b5 26       		.uleb128 0x26
  11023 57b6 00000000 		.long	.LASF871
-GAS LISTING /tmp/ccb24Nf7.s 			page 357
+GAS LISTING /tmp/ccVfeQK4.s 			page 357
 
 
  11024 57ba 32       		.byte	0x32
@@ -21418,7 +21418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11078 5826 00000000 		.long	.LASF880
  11079 582a 2D       		.byte	0x2d
  11080 582b 6101     		.value	0x161
-GAS LISTING /tmp/ccb24Nf7.s 			page 358
+GAS LISTING /tmp/ccVfeQK4.s 			page 358
 
 
  11081 582d 76510000 		.long	0x5176
@@ -21478,7 +21478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11135 58a0 00       		.byte	0
  11136 58a1 5E       		.uleb128 0x5e
  11137 58a2 00000000 		.long	.LASF889
-GAS LISTING /tmp/ccb24Nf7.s 			page 359
+GAS LISTING /tmp/ccVfeQK4.s 			page 359
 
 
  11138 58a6 34       		.byte	0x34
@@ -21538,7 +21538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11192 5929 92510000 		.long	0x5192
  11193 592d 00       		.byte	0
  11194 592e 5E       		.uleb128 0x5e
-GAS LISTING /tmp/ccb24Nf7.s 			page 360
+GAS LISTING /tmp/ccVfeQK4.s 			page 360
 
 
  11195 592f 00000000 		.long	.LASF894
@@ -21598,7 +21598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11249 59af 00000000 		.long	.LASF900
  11250 59b3 34       		.byte	0x34
  11251 59b4 6B01     		.value	0x16b
-GAS LISTING /tmp/ccb24Nf7.s 			page 361
+GAS LISTING /tmp/ccVfeQK4.s 			page 361
 
 
  11252 59b6 D8510000 		.long	0x51d8
@@ -21658,7 +21658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11306 5a3a 5E       		.uleb128 0x5e
  11307 5a3b 00000000 		.long	.LASF904
  11308 5a3f 34       		.byte	0x34
-GAS LISTING /tmp/ccb24Nf7.s 			page 362
+GAS LISTING /tmp/ccVfeQK4.s 			page 362
 
 
  11309 5a40 FC02     		.value	0x2fc
@@ -21718,7 +21718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11363 5ac3 C85A0000 		.long	0x5ac8
  11364 5ac7 00       		.byte	0
  11365 5ac8 68       		.uleb128 0x68
-GAS LISTING /tmp/ccb24Nf7.s 			page 363
+GAS LISTING /tmp/ccVfeQK4.s 			page 363
 
 
  11366 5ac9 08       		.byte	0x8
@@ -21778,7 +21778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11420 5b4e 5E       		.uleb128 0x5e
  11421 5b4f 00000000 		.long	.LASF913
  11422 5b53 34       		.byte	0x34
-GAS LISTING /tmp/ccb24Nf7.s 			page 364
+GAS LISTING /tmp/ccVfeQK4.s 			page 364
 
 
  11423 5b54 B702     		.value	0x2b7
@@ -21838,7 +21838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11477 5bd7 41       		.uleb128 0x41
  11478 5bd8 00000000 		.long	.LASF918
  11479 5bdc 34       		.byte	0x34
-GAS LISTING /tmp/ccb24Nf7.s 			page 365
+GAS LISTING /tmp/ccVfeQK4.s 			page 365
 
 
  11480 5bdd 90       		.byte	0x90
@@ -21898,7 +21898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11534 5c58 88       		.byte	0x88
  11535 5c59 92510000 		.long	0x5192
  11536 5c5d 04       		.byte	0x4
-GAS LISTING /tmp/ccb24Nf7.s 			page 366
+GAS LISTING /tmp/ccVfeQK4.s 			page 366
 
 
  11537 5c5e 18       		.uleb128 0x18
@@ -21958,7 +21958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11591 5cca 00       		.byte	0
  11592 5ccb 5E       		.uleb128 0x5e
  11593 5ccc 00000000 		.long	.LASF932
-GAS LISTING /tmp/ccb24Nf7.s 			page 367
+GAS LISTING /tmp/ccVfeQK4.s 			page 367
 
 
  11594 5cd0 34       		.byte	0x34
@@ -22018,7 +22018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11648 5d53 11       		.uleb128 0x11
  11649 5d54 635D0000 		.long	0x5d63
  11650 5d58 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 368
+GAS LISTING /tmp/ccVfeQK4.s 			page 368
 
 
  11651 5d59 D8510000 		.long	0x51d8
@@ -22078,7 +22078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11705 5dda 9E5D0000 		.long	0x5d9e
  11706 5dde 00       		.byte	0
  11707 5ddf 5E       		.uleb128 0x5e
-GAS LISTING /tmp/ccb24Nf7.s 			page 369
+GAS LISTING /tmp/ccVfeQK4.s 			page 369
 
 
  11708 5de0 00000000 		.long	.LASF941
@@ -22138,7 +22138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11762 5e65 52550000 		.long	0x5552
  11763 5e69 11       		.uleb128 0x11
  11764 5e6a 52550000 		.long	0x5552
-GAS LISTING /tmp/ccb24Nf7.s 			page 370
+GAS LISTING /tmp/ccVfeQK4.s 			page 370
 
 
  11765 5e6e 11       		.uleb128 0x11
@@ -22198,7 +22198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11819 5ef0 34       		.byte	0x34
  11820 5ef1 8002     		.value	0x280
  11821 5ef3 92510000 		.long	0x5192
-GAS LISTING /tmp/ccb24Nf7.s 			page 371
+GAS LISTING /tmp/ccVfeQK4.s 			page 371
 
 
  11822 5ef7 025F0000 		.long	0x5f02
@@ -22258,7 +22258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11876 5f7d 00000000 		.long	.LASF955
  11877 5f81 34       		.byte	0x34
  11878 5f82 3901     		.value	0x139
-GAS LISTING /tmp/ccb24Nf7.s 			page 372
+GAS LISTING /tmp/ccVfeQK4.s 			page 372
 
 
  11879 5f84 00000000 		.long	.LASF955
@@ -22318,7 +22318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11933 6008 08       		.byte	0x8
  11934 6009 13040000 		.long	0x413
  11935 600d 68       		.uleb128 0x68
-GAS LISTING /tmp/ccb24Nf7.s 			page 373
+GAS LISTING /tmp/ccVfeQK4.s 			page 373
 
 
  11936 600e 08       		.byte	0x8
@@ -22378,7 +22378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  11990 6083 6F510000 		.long	0x516f
  11991 6087 08       		.uleb128 0x8
  11992 6088 00000000 		.long	.LASF969
-GAS LISTING /tmp/ccb24Nf7.s 			page 374
+GAS LISTING /tmp/ccVfeQK4.s 			page 374
 
 
  11993 608c 36       		.byte	0x36
@@ -22438,7 +22438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12047 6101 00000000 		.long	.LASF980
  12048 6105 36       		.byte	0x36
  12049 6106 7B       		.byte	0x7b
-GAS LISTING /tmp/ccb24Nf7.s 			page 375
+GAS LISTING /tmp/ccVfeQK4.s 			page 375
 
 
  12050 6107 30000000 		.long	0x30
@@ -22498,7 +22498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12104 6176 68       		.uleb128 0x68
  12105 6177 08       		.byte	0x8
  12106 6178 52080000 		.long	0x852
-GAS LISTING /tmp/ccb24Nf7.s 			page 376
+GAS LISTING /tmp/ccVfeQK4.s 			page 376
 
 
  12107 617c 76       		.uleb128 0x76
@@ -22558,7 +22558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12161 61e8 4B       		.byte	0x4b
  12162 61e9 CB510000 		.long	0x51cb
  12163 61ed 38       		.byte	0x38
-GAS LISTING /tmp/ccb24Nf7.s 			page 377
+GAS LISTING /tmp/ccVfeQK4.s 			page 377
 
 
  12164 61ee 18       		.uleb128 0x18
@@ -22618,7 +22618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12218 625a 18       		.uleb128 0x18
  12219 625b 00000000 		.long	.LASF1003
  12220 625f 37       		.byte	0x37
-GAS LISTING /tmp/ccb24Nf7.s 			page 378
+GAS LISTING /tmp/ccVfeQK4.s 			page 378
 
 
  12221 6260 5F       		.byte	0x5f
@@ -22678,7 +22678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12275 62cf 80       		.byte	0x80
  12276 62d0 D4620000 		.long	0x62d4
  12277 62d4 68       		.uleb128 0x68
-GAS LISTING /tmp/ccb24Nf7.s 			page 379
+GAS LISTING /tmp/ccVfeQK4.s 			page 379
 
 
  12278 62d5 08       		.byte	0x8
@@ -22738,7 +22738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12332 6344 00       		.byte	0
  12333 6345 18       		.uleb128 0x18
  12334 6346 00000000 		.long	.LASF1019
-GAS LISTING /tmp/ccb24Nf7.s 			page 380
+GAS LISTING /tmp/ccVfeQK4.s 			page 380
 
 
  12335 634a 32       		.byte	0x32
@@ -22798,7 +22798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12389 63ba 92510000 		.long	0x5192
  12390 63be C8630000 		.long	0x63c8
  12391 63c2 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 381
+GAS LISTING /tmp/ccVfeQK4.s 			page 381
 
 
  12392 63c3 AD630000 		.long	0x63ad
@@ -22858,7 +22858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12446 6445 31       		.byte	0x31
  12447 6446 7202     		.value	0x272
  12448 6448 CB510000 		.long	0x51cb
-GAS LISTING /tmp/ccb24Nf7.s 			page 382
+GAS LISTING /tmp/ccVfeQK4.s 			page 382
 
 
  12449 644c 60640000 		.long	0x6460
@@ -22918,7 +22918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12503 64d1 AD630000 		.long	0x63ad
  12504 64d5 11       		.uleb128 0x11
  12505 64d6 99510000 		.long	0x5199
-GAS LISTING /tmp/ccb24Nf7.s 			page 383
+GAS LISTING /tmp/ccVfeQK4.s 			page 383
 
 
  12506 64da 11       		.uleb128 0x11
@@ -22978,7 +22978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12560 6559 4903     		.value	0x349
  12561 655b 65650000 		.long	0x6565
  12562 655f 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 384
+GAS LISTING /tmp/ccVfeQK4.s 			page 384
 
 
  12563 6560 7F520000 		.long	0x527f
@@ -23038,7 +23038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12617 65e1 00       		.byte	0
  12618 65e2 79       		.uleb128 0x79
  12619 65e3 00000000 		.long	.LASF1045
-GAS LISTING /tmp/ccb24Nf7.s 			page 385
+GAS LISTING /tmp/ccVfeQK4.s 			page 385
 
 
  12620 65e7 31       		.byte	0x31
@@ -23098,7 +23098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12674 665a 08       		.byte	0x8
  12675 665b CC230000 		.long	0x23cc
  12676 665f 6C       		.uleb128 0x6c
-GAS LISTING /tmp/ccb24Nf7.s 			page 386
+GAS LISTING /tmp/ccVfeQK4.s 			page 386
 
 
  12677 6660 30000000 		.long	0x30
@@ -23158,7 +23158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12731 66d6 B0       		.byte	0xb0
  12732 66d7 92510000 		.long	0x5192
  12733 66db EA660000 		.long	0x66ea
-GAS LISTING /tmp/ccb24Nf7.s 			page 387
+GAS LISTING /tmp/ccVfeQK4.s 			page 387
 
 
  12734 66df 11       		.uleb128 0x11
@@ -23218,7 +23218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12788 6757 50       		.uleb128 0x50
  12789 6758 00000000 		.long	.LASF1058
  12790 675c 04       		.sleb128 4
-GAS LISTING /tmp/ccb24Nf7.s 			page 388
+GAS LISTING /tmp/ccVfeQK4.s 			page 388
 
 
  12791 675d 50       		.uleb128 0x50
@@ -23278,7 +23278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12845 67d2 11       		.uleb128 0x11
  12846 67d3 D8510000 		.long	0x51d8
  12847 67d7 11       		.uleb128 0x11
-GAS LISTING /tmp/ccb24Nf7.s 			page 389
+GAS LISTING /tmp/ccVfeQK4.s 			page 389
 
 
  12848 67d8 FA670000 		.long	0x67fa
@@ -23338,7 +23338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12902 684c 00000000 		.long	.LASF1069
  12903 6850 3C       		.byte	0x3c
  12904 6851 1C01     		.value	0x11c
-GAS LISTING /tmp/ccb24Nf7.s 			page 390
+GAS LISTING /tmp/ccVfeQK4.s 			page 390
 
 
  12905 6853 76510000 		.long	0x5176
@@ -23398,7 +23398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  12959 68ca 9A680000 		.long	0x689a
  12960 68ce 69       		.uleb128 0x69
  12961 68cf 18       		.byte	0x18
-GAS LISTING /tmp/ccb24Nf7.s 			page 391
+GAS LISTING /tmp/ccVfeQK4.s 			page 391
 
 
  12962 68d0 3D       		.byte	0x3d
@@ -23458,7 +23458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13016 6938 68510000 		.long	0x5168
  13017 693c 76       		.uleb128 0x76
  13018 693d 08       		.byte	0x8
-GAS LISTING /tmp/ccb24Nf7.s 			page 392
+GAS LISTING /tmp/ccVfeQK4.s 			page 392
 
 
  13019 693e F5670000 		.long	0x67f5
@@ -23518,7 +23518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13073 69aa 8A360000 		.long	0x368a
  13074 69ae 78       		.uleb128 0x78
  13075 69af 08       		.byte	0x8
-GAS LISTING /tmp/ccb24Nf7.s 			page 393
+GAS LISTING /tmp/ccVfeQK4.s 			page 393
 
 
  13076 69b0 14350000 		.long	0x3514
@@ -23578,7 +23578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13130 6a1f 68       		.uleb128 0x68
  13131 6a20 08       		.byte	0x8
  13132 6a21 8F480000 		.long	0x488f
-GAS LISTING /tmp/ccb24Nf7.s 			page 394
+GAS LISTING /tmp/ccVfeQK4.s 			page 394
 
 
  13133 6a25 76       		.uleb128 0x76
@@ -23638,7 +23638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13187 6aa3 08       		.byte	0x8
  13188 6aa4 A86A0000 		.long	0x6aa8
  13189 6aa8 8301     		.uleb128 0x83
-GAS LISTING /tmp/ccb24Nf7.s 			page 395
+GAS LISTING /tmp/ccVfeQK4.s 			page 395
 
 
  13190 6aaa EB620000 		.long	0x62eb
@@ -23698,7 +23698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13244 6b28 51510000 		.long	0x5151
  13245 6b2c 03       		.byte	0x3
  13246 6b2d 4A6B0000 		.long	0x6b4a
-GAS LISTING /tmp/ccb24Nf7.s 			page 396
+GAS LISTING /tmp/ccVfeQK4.s 			page 396
 
 
  13247 6b31 8501     		.uleb128 0x85
@@ -23758,7 +23758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13301 6bb5 C66B0000 		.long	0x6bc6
  13302 6bb9 8501     		.uleb128 0x85
  13303 6bbb 00000000 		.long	.LASF1015
-GAS LISTING /tmp/ccb24Nf7.s 			page 397
+GAS LISTING /tmp/ccVfeQK4.s 			page 397
 
 
  13304 6bbf 23       		.byte	0x23
@@ -23818,7 +23818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13358 6c44 186C0000 		.long	0x6c18
  13359 6c48 7E       		.uleb128 0x7e
  13360 6c49 B83C0000 		.long	0x3cb8
-GAS LISTING /tmp/ccb24Nf7.s 			page 398
+GAS LISTING /tmp/ccVfeQK4.s 			page 398
 
 
  13361 6c4d 03       		.byte	0x3
@@ -23878,7 +23878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13415 6cdc 00000000 		.long	.LASF1075
  13416 6ce0 A76C0000 		.long	0x6ca7
  13417 6ce4 7F       		.uleb128 0x7f
-GAS LISTING /tmp/ccb24Nf7.s 			page 399
+GAS LISTING /tmp/ccVfeQK4.s 			page 399
 
 
  13418 6ce5 00000000 		.long	.LASF1082
@@ -23938,7 +23938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13472 6d76 846D0000 		.long	0x6d84
  13473 6d7a 7F       		.uleb128 0x7f
  13474 6d7b 00000000 		.long	.LASF1082
-GAS LISTING /tmp/ccb24Nf7.s 			page 400
+GAS LISTING /tmp/ccVfeQK4.s 			page 400
 
 
  13475 6d7f 7A520000 		.long	0x527a
@@ -23998,7 +23998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13529 6e0b 1001     		.value	0x110
  13530 6e0d 03       		.byte	0x3
  13531 6e0e 166E0000 		.long	0x6e16
-GAS LISTING /tmp/ccb24Nf7.s 			page 401
+GAS LISTING /tmp/ccVfeQK4.s 			page 401
 
 
  13532 6e12 296E0000 		.long	0x6e29
@@ -24058,7 +24058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13586 6e9f 00000000 		.long	.LASF300
  13587 6ea3 D7030000 		.long	0x3d7
  13588 6ea7 8901     		.uleb128 0x89
-GAS LISTING /tmp/ccb24Nf7.s 			page 402
+GAS LISTING /tmp/ccVfeQK4.s 			page 402
 
 
  13589 6ea9 00000000 		.long	.LASF1085
@@ -24118,7 +24118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13642 6f2e 5F5F6100 		.string	"__a"
  13643 6f32 30000000 		.long	0x30
  13644 6f36 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 403
+GAS LISTING /tmp/ccVfeQK4.s 			page 403
 
 
  13645 6f37 0C       		.uleb128 0xc
@@ -24178,7 +24178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13699 6fbf 4E01     		.value	0x14e
  13700 6fc1 9F050000 		.long	0x59f
  13701 6fc5 8101     		.uleb128 0x81
-GAS LISTING /tmp/ccb24Nf7.s 			page 404
+GAS LISTING /tmp/ccVfeQK4.s 			page 404
 
 
  13702 6fc7 8B01     		.uleb128 0x8b
@@ -24238,7 +24238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13756 704d E3670000 		.long	0x67e3
  13757 7051 8501     		.uleb128 0x85
  13758 7053 00000000 		.long	.LASF1089
-GAS LISTING /tmp/ccb24Nf7.s 			page 405
+GAS LISTING /tmp/ccVfeQK4.s 			page 405
 
 
  13759 7057 19       		.byte	0x19
@@ -24298,7 +24298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13813 70de 81340000 		.long	0x3481
  13814 70e2 03       		.byte	0x3
  13815 70e3 0F710000 		.long	0x710f
-GAS LISTING /tmp/ccb24Nf7.s 			page 406
+GAS LISTING /tmp/ccVfeQK4.s 			page 406
 
 
  13816 70e7 8801     		.uleb128 0x88
@@ -24358,7 +24358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13870 716f 0D       		.uleb128 0xd
  13871 7170 7E690000 		.long	0x697e
  13872 7174 7E       		.uleb128 0x7e
-GAS LISTING /tmp/ccb24Nf7.s 			page 407
+GAS LISTING /tmp/ccVfeQK4.s 			page 407
 
 
  13873 7175 04360000 		.long	0x3604
@@ -24418,7 +24418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13927 71ff 11720000 		.long	0x7211
  13928 7203 8801     		.uleb128 0x88
  13929 7205 5F5F7800 		.string	"__x"
-GAS LISTING /tmp/ccb24Nf7.s 			page 408
+GAS LISTING /tmp/ccVfeQK4.s 			page 408
 
 
  13930 7209 06       		.byte	0x6
@@ -24478,7 +24478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  13984 7290 A1440000 		.long	0x44a1
  13985 7294 03       		.byte	0x3
  13986 7295 A7720000 		.long	0x72a7
-GAS LISTING /tmp/ccb24Nf7.s 			page 409
+GAS LISTING /tmp/ccVfeQK4.s 			page 409
 
 
  13987 7299 8801     		.uleb128 0x88
@@ -24538,7 +24538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14041 7324 20       		.byte	0x20
  14042 7325 6401     		.value	0x164
  14043 7327 6D330000 		.long	0x336d
-GAS LISTING /tmp/ccb24Nf7.s 			page 410
+GAS LISTING /tmp/ccVfeQK4.s 			page 410
 
 
  14044 732b 00       		.byte	0
@@ -24598,7 +24598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14098 73b5 22       		.byte	0x22
  14099 73b6 D4       		.byte	0xd4
  14100 73b7 E3670000 		.long	0x67e3
-GAS LISTING /tmp/ccb24Nf7.s 			page 411
+GAS LISTING /tmp/ccVfeQK4.s 			page 411
 
 
  14101 73bb 00       		.byte	0
@@ -24658,7 +24658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14155 7446 5F5F6300 		.string	"__c"
  14156 744a 09       		.byte	0x9
  14157 744b 0103     		.value	0x301
-GAS LISTING /tmp/ccb24Nf7.s 			page 412
+GAS LISTING /tmp/ccVfeQK4.s 			page 412
 
 
  14158 744d 52740000 		.long	0x7452
@@ -24718,7 +24718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14212 74dc E3670000 		.long	0x67e3
  14213 74e0 35       		.uleb128 0x35
  14214 74e1 00000000 		.long	.LASF318
-GAS LISTING /tmp/ccb24Nf7.s 			page 413
+GAS LISTING /tmp/ccVfeQK4.s 			page 413
 
 
  14215 74e5 30000000 		.long	0x30
@@ -24778,7 +24778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14269 7574 8901     		.uleb128 0x89
  14270 7576 00000000 		.long	.LASF1088
  14271 757a 1A       		.byte	0x1a
-GAS LISTING /tmp/ccb24Nf7.s 			page 414
+GAS LISTING /tmp/ccVfeQK4.s 			page 414
 
 
  14272 757b 7502     		.value	0x275
@@ -24838,7 +24838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14326 7606 18760000 		.long	0x7618
  14327 760a 8901     		.uleb128 0x89
  14328 760c 00000000 		.long	.LASF1093
-GAS LISTING /tmp/ccb24Nf7.s 			page 415
+GAS LISTING /tmp/ccVfeQK4.s 			page 415
 
 
  14329 7610 05       		.byte	0x5
@@ -24898,7 +24898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14383 769e 00000000 		.long	.LASF1083
  14384 76a2 05       		.byte	0x5
  14385 76a3 5408     		.value	0x854
-GAS LISTING /tmp/ccb24Nf7.s 			page 416
+GAS LISTING /tmp/ccVfeQK4.s 			page 416
 
 
  14386 76a5 49300000 		.long	0x3049
@@ -24958,7 +24958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14440 7731 C0       		.byte	0xc0
  14441 7732 76510000 		.long	0x5176
  14442 7736 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 417
+GAS LISTING /tmp/ccVfeQK4.s 			page 417
 
 
  14443 7737 0D       		.uleb128 0xd
@@ -25018,7 +25018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14497 77c4 00000000 		.long	.LASF1096
  14498 77c8 04       		.byte	0x4
  14499 77c9 40       		.byte	0x40
-GAS LISTING /tmp/ccb24Nf7.s 			page 418
+GAS LISTING /tmp/ccVfeQK4.s 			page 418
 
 
  14500 77ca 92510000 		.long	0x5192
@@ -25078,7 +25078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14554 7853 5F5F6B00 		.string	"__k"
  14555 7857 03       		.byte	0x3
  14556 7858 9401     		.value	0x194
-GAS LISTING /tmp/ccb24Nf7.s 			page 419
+GAS LISTING /tmp/ccVfeQK4.s 			page 419
 
 
  14557 785a 9F050000 		.long	0x59f
@@ -25138,7 +25138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14611 78e0 03       		.byte	0x3
  14612 78e1 9407     		.value	0x794
  14613 78e3 42240000 		.long	0x2442
-GAS LISTING /tmp/ccb24Nf7.s 			page 420
+GAS LISTING /tmp/ccVfeQK4.s 			page 420
 
 
  14614 78e7 8101     		.uleb128 0x81
@@ -25198,7 +25198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14666      00000000 
  14667 7977 01       		.uleb128 0x1
  14668 7978 9C       		.byte	0x9c
-GAS LISTING /tmp/ccb24Nf7.s 			page 421
+GAS LISTING /tmp/ccVfeQK4.s 			page 421
 
 
  14669 7979 81790000 		.long	0x7981
@@ -25258,7 +25258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14717      00000000 
  14718 7a25 0B000000 		.quad	.LBE792-.LBB792
  14718      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 422
+GAS LISTING /tmp/ccVfeQK4.s 			page 422
 
 
  14719 7a2d 9901     		.uleb128 0x99
@@ -25318,7 +25318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14770 7abe 00000000 		.long	0
  14771 7ac2 A001     		.uleb128 0xa0
  14772 7ac4 00000000 		.long	.LASF1106
-GAS LISTING /tmp/ccb24Nf7.s 			page 423
+GAS LISTING /tmp/ccVfeQK4.s 			page 423
 
 
  14773 7ac8 03       		.byte	0x3
@@ -25378,7 +25378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14822 7b63 24780000 		.long	0x7824
  14823 7b67 A701     		.uleb128 0xa7
  14824 7b69 31780000 		.long	0x7831
-GAS LISTING /tmp/ccb24Nf7.s 			page 424
+GAS LISTING /tmp/ccVfeQK4.s 			page 424
 
 
  14825 7b6d 9901     		.uleb128 0x99
@@ -25438,7 +25438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14871 7bfb 92510000 		.long	0x5192
  14872 7bff 00000000 		.quad	.LFB5111
  14872      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 425
+GAS LISTING /tmp/ccVfeQK4.s 			page 425
 
 
  14873 7c07 17050000 		.quad	.LFE5111-.LFB5111
@@ -25498,7 +25498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14926 7c84 B101     		.uleb128 0xb1
  14927 7c86 00000000 		.long	.LASF1112
  14928 7c8a 04       		.byte	0x4
-GAS LISTING /tmp/ccb24Nf7.s 			page 426
+GAS LISTING /tmp/ccVfeQK4.s 			page 426
 
 
  14929 7c8b 2A       		.byte	0x2a
@@ -25558,7 +25558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  14979      00000000 
  14980 7d18 0C000000 		.quad	.LBE812-.LBB812
  14980      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 427
+GAS LISTING /tmp/ccVfeQK4.s 			page 427
 
 
  14981 7d20 01       		.byte	0x1
@@ -25618,7 +25618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15030 7daf D0B07F   		.sleb128 -10160
  15031 7db2 06       		.byte	0x6
  15032 7db3 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 428
+GAS LISTING /tmp/ccVfeQK4.s 			page 428
 
 
  15033 7db4 00       		.byte	0
@@ -25678,7 +25678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15081 7e5b D36E0000 		.long	0x6ed3
  15082 7e5f 00000000 		.long	.LLST23
  15083 7e63 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 429
+GAS LISTING /tmp/ccVfeQK4.s 			page 429
 
 
  15084 7e64 00       		.byte	0
@@ -25738,7 +25738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15132 7f05 00000000 		.long	.LLST35
  15133 7f09 9701     		.uleb128 0x97
  15134 7f0b BA6E0000 		.long	0x6eba
-GAS LISTING /tmp/ccb24Nf7.s 			page 430
+GAS LISTING /tmp/ccVfeQK4.s 			page 430
 
 
  15135 7f0f 00000000 		.quad	.LBB844
@@ -25798,7 +25798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15181 7fab 00000000 		.long	.LLST41
  15182 7faf 9301     		.uleb128 0x93
  15183 7fb1 9C760000 		.long	0x769c
-GAS LISTING /tmp/ccb24Nf7.s 			page 431
+GAS LISTING /tmp/ccVfeQK4.s 			page 431
 
 
  15184 7fb5 00000000 		.long	.LLST38
@@ -25858,7 +25858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15236 8059 E9780000 		.long	0x78e9
  15237 805d 00000000 		.long	.LLST51
  15238 8061 9901     		.uleb128 0x99
-GAS LISTING /tmp/ccb24Nf7.s 			page 432
+GAS LISTING /tmp/ccVfeQK4.s 			page 432
 
 
  15239 8063 F6780000 		.long	0x78f6
@@ -25918,7 +25918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15288 80f6 00       		.byte	0
  15289 80f7 B401     		.uleb128 0xb4
  15290 80f9 8E720000 		.long	0x728e
-GAS LISTING /tmp/ccb24Nf7.s 			page 433
+GAS LISTING /tmp/ccVfeQK4.s 			page 433
 
 
  15291 80fd 00000000 		.quad	.LBB864
@@ -25978,7 +25978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15339 818a 00000000 		.long	.LLST59
  15340 818e 9301     		.uleb128 0x93
  15341 8190 D3760000 		.long	0x76d3
-GAS LISTING /tmp/ccb24Nf7.s 			page 434
+GAS LISTING /tmp/ccVfeQK4.s 			page 434
 
 
  15342 8194 00000000 		.long	.LLST60
@@ -26038,7 +26038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15392 8244 B301     		.uleb128 0xb3
  15393 8246 01       		.uleb128 0x1
  15394 8247 55       		.byte	0x55
-GAS LISTING /tmp/ccb24Nf7.s 			page 435
+GAS LISTING /tmp/ccVfeQK4.s 			page 435
 
 
  15395 8248 02       		.uleb128 0x2
@@ -26098,7 +26098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15444 82c9 00       		.byte	0
  15445 82ca A301     		.uleb128 0xa3
  15446 82cc A7720000 		.long	0x72a7
-GAS LISTING /tmp/ccb24Nf7.s 			page 436
+GAS LISTING /tmp/ccVfeQK4.s 			page 436
 
 
  15447 82d0 00000000 		.quad	.LBB894
@@ -26158,7 +26158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15496      00000000 
  15497 835a 00000000 		.long	.Ldebug_ranges0+0x440
  15498 835e 08       		.byte	0x8
-GAS LISTING /tmp/ccb24Nf7.s 			page 437
+GAS LISTING /tmp/ccVfeQK4.s 			page 437
 
 
  15499 835f 1601     		.value	0x116
@@ -26218,7 +26218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15549 8407 00000000 		.long	.Ldebug_ranges0+0x4b0
  15550 840b 20       		.byte	0x20
  15551 840c 6501     		.value	0x165
-GAS LISTING /tmp/ccb24Nf7.s 			page 438
+GAS LISTING /tmp/ccVfeQK4.s 			page 438
 
 
  15552 840e A601     		.uleb128 0xa6
@@ -26278,7 +26278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15602 8499 4E750000 		.long	0x754e
  15603 849d 00000000 		.quad	.LBB941
  15603      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 439
+GAS LISTING /tmp/ccVfeQK4.s 			page 439
 
 
  15604 84a5 00000000 		.long	.Ldebug_ranges0+0x520
@@ -26338,7 +26338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15655 854b AC740000 		.long	0x74ac
  15656 854f 00000000 		.long	.LLST87
  15657 8553 9301     		.uleb128 0x93
-GAS LISTING /tmp/ccb24Nf7.s 			page 440
+GAS LISTING /tmp/ccVfeQK4.s 			page 440
 
 
  15658 8555 9F740000 		.long	0x749f
@@ -26398,7 +26398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15709 85e8 00       		.byte	0
  15710 85e9 00       		.byte	0
  15711 85ea 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 441
+GAS LISTING /tmp/ccVfeQK4.s 			page 441
 
 
  15712 85eb 00       		.byte	0
@@ -26458,7 +26458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15762 8680 B201     		.uleb128 0xb2
  15763 8682 00000000 		.quad	.LVL125
  15763      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 442
+GAS LISTING /tmp/ccVfeQK4.s 			page 442
 
 
  15764 868a 61790000 		.long	0x7961
@@ -26518,7 +26518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15813 8713 B701     		.uleb128 0xb7
  15814 8715 00000000 		.quad	.LVL122
  15814      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 443
+GAS LISTING /tmp/ccVfeQK4.s 			page 443
 
 
  15815 871d 4B460000 		.long	0x464b
@@ -26578,7 +26578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15862 87b7 B801     		.uleb128 0xb8
  15863 87b9 00000000 		.quad	.LVL87
  15863      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 444
+GAS LISTING /tmp/ccVfeQK4.s 			page 444
 
 
  15864 87c1 E4870000 		.long	0x87e4
@@ -26638,7 +26638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15916 881b 36       		.byte	0x36
  15917 881c B301     		.uleb128 0xb3
  15918 881e 01       		.uleb128 0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 445
+GAS LISTING /tmp/ccVfeQK4.s 			page 445
 
 
  15919 881f 59       		.byte	0x59
@@ -26698,7 +26698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  15967 8896 9601     		.uleb128 0x96
  15968 8898 75770000 		.long	0x7775
  15969 889c 00000000 		.quad	.LBB987
-GAS LISTING /tmp/ccb24Nf7.s 			page 446
+GAS LISTING /tmp/ccVfeQK4.s 			page 446
 
 
  15969      00000000 
@@ -26758,7 +26758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16014 894b 9301     		.uleb128 0x93
  16015 894d F4700000 		.long	0x70f4
  16016 8951 00000000 		.long	.LLST120
-GAS LISTING /tmp/ccb24Nf7.s 			page 447
+GAS LISTING /tmp/ccVfeQK4.s 			page 447
 
 
  16017 8955 A501     		.uleb128 0xa5
@@ -26818,7 +26818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16064      00000000 
  16065 89ea 0F000000 		.quad	.LBE1000-.LBB1000
  16065      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 448
+GAS LISTING /tmp/ccVfeQK4.s 			page 448
 
 
  16066 89f2 04       		.byte	0x4
@@ -26878,7 +26878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16112 8a9b A501     		.uleb128 0xa5
  16113 8a9d B3700000 		.long	0x70b3
  16114 8aa1 00000000 		.quad	.LBB1007
-GAS LISTING /tmp/ccb24Nf7.s 			page 449
+GAS LISTING /tmp/ccVfeQK4.s 			page 449
 
 
  16114      00000000 
@@ -26938,7 +26938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16161 8b38 A401     		.uleb128 0xa4
  16162 8b3a 30760000 		.long	0x7630
  16163 8b3e 01       		.uleb128 0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 450
+GAS LISTING /tmp/ccVfeQK4.s 			page 450
 
 
  16164 8b3f 56       		.byte	0x56
@@ -26998,7 +26998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16212 8bc9 01       		.uleb128 0x1
  16213 8bca 54       		.byte	0x54
  16214 8bcb 03       		.uleb128 0x3
-GAS LISTING /tmp/ccb24Nf7.s 			page 451
+GAS LISTING /tmp/ccVfeQK4.s 			page 451
 
 
  16215 8bcc 0A       		.byte	0xa
@@ -27058,7 +27058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16264      00000000 
  16265 8c39 F38E0000 		.long	0x8ef3
  16266 8c3d B301     		.uleb128 0xb3
-GAS LISTING /tmp/ccb24Nf7.s 			page 452
+GAS LISTING /tmp/ccVfeQK4.s 			page 452
 
 
  16267 8c3f 01       		.uleb128 0x1
@@ -27118,7 +27118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16315 8cc0 03       		.byte	0x3
  16316 8cc1 00000000 		.quad	_ZStL8__ioinit
  16316      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 453
+GAS LISTING /tmp/ccVfeQK4.s 			page 453
 
 
  16317 8cc9 BE01     		.uleb128 0xbe
@@ -27178,7 +27178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16370 8d56 FA4C0000 		.long	0x4cfa
  16371 8d5a 00000000 		.long	.LASF1125
  16372 8d5e C401     		.uleb128 0xc4
-GAS LISTING /tmp/ccb24Nf7.s 			page 454
+GAS LISTING /tmp/ccVfeQK4.s 			page 454
 
 
  16373 8d60 3C4D0000 		.long	0x4d3c
@@ -27238,7 +27238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16427 8e03 3D       		.uleb128 0x3d
  16428 8e04 00000000 		.long	.LASF1140
  16429 8e08 40       		.byte	0x40
-GAS LISTING /tmp/ccb24Nf7.s 			page 455
+GAS LISTING /tmp/ccVfeQK4.s 			page 455
 
 
  16430 8e09 80       		.byte	0x80
@@ -27298,7 +27298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16484 8e8f 00000000 		.long	.LASF1148
  16485 8e93 40       		.byte	0x40
  16486 8e94 84       		.byte	0x84
-GAS LISTING /tmp/ccb24Nf7.s 			page 456
+GAS LISTING /tmp/ccVfeQK4.s 			page 456
 
 
  16487 8e95 00000000 		.long	.LASF1149
@@ -27320,7 +27320,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16503 8ebd 41       		.uleb128 0x41
  16504 8ebe 00000000 		.long	.LASF1151
  16505 8ec2 3D       		.byte	0x3d
- 16506 8ec3 64       		.byte	0x64
+ 16506 8ec3 69       		.byte	0x69
  16507 8ec4 E3670000 		.long	0x67e3
  16508 8ec8 D78E0000 		.long	0x8ed7
  16509 8ecc 11       		.uleb128 0x11
@@ -27358,7 +27358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16541 8f1b 11       		.uleb128 0x11
  16542 8f1c AB520000 		.long	0x52ab
  16543 8f20 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 457
+GAS LISTING /tmp/ccVfeQK4.s 			page 457
 
 
  16544 8f21 00       		.byte	0
@@ -27418,7 +27418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16598 0033 13       		.uleb128 0x13
  16599 0034 00       		.byte	0
  16600 0035 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 458
+GAS LISTING /tmp/ccVfeQK4.s 			page 458
 
 
  16601 0036 05       		.uleb128 0x5
@@ -27478,7 +27478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16655 006c 00       		.byte	0
  16656 006d 00       		.byte	0
  16657 006e 09       		.uleb128 0x9
-GAS LISTING /tmp/ccb24Nf7.s 			page 459
+GAS LISTING /tmp/ccVfeQK4.s 			page 459
 
 
  16658 006f 2E       		.uleb128 0x2e
@@ -27538,7 +27538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16712 00a5 49       		.uleb128 0x49
  16713 00a6 13       		.uleb128 0x13
  16714 00a7 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 460
+GAS LISTING /tmp/ccVfeQK4.s 			page 460
 
 
  16715 00a8 00       		.byte	0
@@ -27598,7 +27598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16769 00de 3F       		.uleb128 0x3f
  16770 00df 19       		.uleb128 0x19
  16771 00e0 03       		.uleb128 0x3
-GAS LISTING /tmp/ccb24Nf7.s 			page 461
+GAS LISTING /tmp/ccVfeQK4.s 			page 461
 
 
  16772 00e1 08       		.uleb128 0x8
@@ -27658,7 +27658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16826 0117 00       		.byte	0
  16827 0118 15       		.uleb128 0x15
  16828 0119 2E       		.uleb128 0x2e
-GAS LISTING /tmp/ccb24Nf7.s 			page 462
+GAS LISTING /tmp/ccVfeQK4.s 			page 462
 
 
  16829 011a 01       		.byte	0x1
@@ -27718,7 +27718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16883 0150 49       		.uleb128 0x49
  16884 0151 13       		.uleb128 0x13
  16885 0152 38       		.uleb128 0x38
-GAS LISTING /tmp/ccb24Nf7.s 			page 463
+GAS LISTING /tmp/ccVfeQK4.s 			page 463
 
 
  16886 0153 0B       		.uleb128 0xb
@@ -27778,7 +27778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16940 0189 3B       		.uleb128 0x3b
  16941 018a 0B       		.uleb128 0xb
  16942 018b 32       		.uleb128 0x32
-GAS LISTING /tmp/ccb24Nf7.s 			page 464
+GAS LISTING /tmp/ccVfeQK4.s 			page 464
 
 
  16943 018c 0B       		.uleb128 0xb
@@ -27838,7 +27838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  16997 01c2 13       		.uleb128 0x13
  16998 01c3 00       		.byte	0
  16999 01c4 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 465
+GAS LISTING /tmp/ccVfeQK4.s 			page 465
 
 
  17000 01c5 1E       		.uleb128 0x1e
@@ -27898,7 +27898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17054 01fb 0E       		.uleb128 0xe
  17055 01fc 3C       		.uleb128 0x3c
  17056 01fd 19       		.uleb128 0x19
-GAS LISTING /tmp/ccb24Nf7.s 			page 466
+GAS LISTING /tmp/ccVfeQK4.s 			page 466
 
 
  17057 01fe 00       		.byte	0
@@ -27958,7 +27958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17111 0234 3A       		.uleb128 0x3a
  17112 0235 0B       		.uleb128 0xb
  17113 0236 3B       		.uleb128 0x3b
-GAS LISTING /tmp/ccb24Nf7.s 			page 467
+GAS LISTING /tmp/ccVfeQK4.s 			page 467
 
 
  17114 0237 05       		.uleb128 0x5
@@ -28018,7 +28018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17168 026d 0E       		.uleb128 0xe
  17169 026e 34       		.uleb128 0x34
  17170 026f 19       		.uleb128 0x19
-GAS LISTING /tmp/ccb24Nf7.s 			page 468
+GAS LISTING /tmp/ccVfeQK4.s 			page 468
 
 
  17171 0270 3C       		.uleb128 0x3c
@@ -28078,7 +28078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17225 02a6 05       		.uleb128 0x5
  17226 02a7 6E       		.uleb128 0x6e
  17227 02a8 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccb24Nf7.s 			page 469
+GAS LISTING /tmp/ccVfeQK4.s 			page 469
 
 
  17228 02a9 3C       		.uleb128 0x3c
@@ -28138,7 +28138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17282 02df 01       		.byte	0x1
  17283 02e0 3F       		.uleb128 0x3f
  17284 02e1 19       		.uleb128 0x19
-GAS LISTING /tmp/ccb24Nf7.s 			page 470
+GAS LISTING /tmp/ccVfeQK4.s 			page 470
 
 
  17285 02e2 03       		.uleb128 0x3
@@ -28198,7 +28198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17339 0318 31       		.uleb128 0x31
  17340 0319 2E       		.uleb128 0x2e
  17341 031a 01       		.byte	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 471
+GAS LISTING /tmp/ccVfeQK4.s 			page 471
 
 
  17342 031b 3F       		.uleb128 0x3f
@@ -28258,7 +28258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17396 0351 3B       		.uleb128 0x3b
  17397 0352 05       		.uleb128 0x5
  17398 0353 6E       		.uleb128 0x6e
-GAS LISTING /tmp/ccb24Nf7.s 			page 472
+GAS LISTING /tmp/ccVfeQK4.s 			page 472
 
 
  17399 0354 0E       		.uleb128 0xe
@@ -28318,7 +28318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17453 038a 00       		.byte	0
  17454 038b 00       		.byte	0
  17455 038c 37       		.uleb128 0x37
-GAS LISTING /tmp/ccb24Nf7.s 			page 473
+GAS LISTING /tmp/ccVfeQK4.s 			page 473
 
 
  17456 038d 2E       		.uleb128 0x2e
@@ -28378,7 +28378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17510 03c3 3C       		.uleb128 0x3c
  17511 03c4 19       		.uleb128 0x19
  17512 03c5 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 474
+GAS LISTING /tmp/ccVfeQK4.s 			page 474
 
 
  17513 03c6 00       		.byte	0
@@ -28438,7 +28438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17567 03fc 00       		.byte	0
  17568 03fd 00       		.byte	0
  17569 03fe 3D       		.uleb128 0x3d
-GAS LISTING /tmp/ccb24Nf7.s 			page 475
+GAS LISTING /tmp/ccVfeQK4.s 			page 475
 
 
  17570 03ff 2E       		.uleb128 0x2e
@@ -28498,7 +28498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17624 0435 2E       		.uleb128 0x2e
  17625 0436 01       		.byte	0x1
  17626 0437 3F       		.uleb128 0x3f
-GAS LISTING /tmp/ccb24Nf7.s 			page 476
+GAS LISTING /tmp/ccVfeQK4.s 			page 476
 
 
  17627 0438 19       		.uleb128 0x19
@@ -28558,7 +28558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17681 046e 3B       		.uleb128 0x3b
  17682 046f 05       		.uleb128 0x5
  17683 0470 49       		.uleb128 0x49
-GAS LISTING /tmp/ccb24Nf7.s 			page 477
+GAS LISTING /tmp/ccVfeQK4.s 			page 477
 
 
  17684 0471 13       		.uleb128 0x13
@@ -28618,7 +28618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17738 04a7 49       		.uleb128 0x49
  17739 04a8 13       		.uleb128 0x13
  17740 04a9 32       		.uleb128 0x32
-GAS LISTING /tmp/ccb24Nf7.s 			page 478
+GAS LISTING /tmp/ccVfeQK4.s 			page 478
 
 
  17741 04aa 0B       		.uleb128 0xb
@@ -28678,7 +28678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17795 04e0 00       		.byte	0
  17796 04e1 4C       		.uleb128 0x4c
  17797 04e2 0D       		.uleb128 0xd
-GAS LISTING /tmp/ccb24Nf7.s 			page 479
+GAS LISTING /tmp/ccVfeQK4.s 			page 479
 
 
  17798 04e3 00       		.byte	0
@@ -28738,7 +28738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17852 0519 0E       		.uleb128 0xe
  17853 051a 1C       		.uleb128 0x1c
  17854 051b 0D       		.uleb128 0xd
-GAS LISTING /tmp/ccb24Nf7.s 			page 480
+GAS LISTING /tmp/ccVfeQK4.s 			page 480
 
 
  17855 051c 00       		.byte	0
@@ -28798,7 +28798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17909 0552 3A       		.uleb128 0x3a
  17910 0553 0B       		.uleb128 0xb
  17911 0554 3B       		.uleb128 0x3b
-GAS LISTING /tmp/ccb24Nf7.s 			page 481
+GAS LISTING /tmp/ccVfeQK4.s 			page 481
 
 
  17912 0555 05       		.uleb128 0x5
@@ -28858,7 +28858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  17966 058b 03       		.uleb128 0x3
  17967 058c 0E       		.uleb128 0xe
  17968 058d 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccb24Nf7.s 			page 482
+GAS LISTING /tmp/ccVfeQK4.s 			page 482
 
 
  17969 058e 0B       		.uleb128 0xb
@@ -28918,7 +28918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18023 05c4 03       		.uleb128 0x3
  18024 05c5 0E       		.uleb128 0xe
  18025 05c6 3A       		.uleb128 0x3a
-GAS LISTING /tmp/ccb24Nf7.s 			page 483
+GAS LISTING /tmp/ccVfeQK4.s 			page 483
 
 
  18026 05c7 0B       		.uleb128 0xb
@@ -28978,7 +28978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18080 05fd 18       		.uleb128 0x18
  18081 05fe 00       		.byte	0
  18082 05ff 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 484
+GAS LISTING /tmp/ccVfeQK4.s 			page 484
 
 
  18083 0600 00       		.byte	0
@@ -29038,7 +29038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18137 0636 00       		.byte	0
  18138 0637 00       		.byte	0
  18139 0638 61       		.uleb128 0x61
-GAS LISTING /tmp/ccb24Nf7.s 			page 485
+GAS LISTING /tmp/ccVfeQK4.s 			page 485
 
 
  18140 0639 2E       		.uleb128 0x2e
@@ -29098,7 +29098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18194 066f 00       		.byte	0
  18195 0670 03       		.uleb128 0x3
  18196 0671 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccb24Nf7.s 			page 486
+GAS LISTING /tmp/ccVfeQK4.s 			page 486
 
 
  18197 0672 3A       		.uleb128 0x3a
@@ -29158,7 +29158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18251 06a8 0F       		.uleb128 0xf
  18252 06a9 00       		.byte	0
  18253 06aa 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccb24Nf7.s 			page 487
+GAS LISTING /tmp/ccVfeQK4.s 			page 487
 
 
  18254 06ab 0B       		.uleb128 0xb
@@ -29218,7 +29218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18308 06e1 49       		.uleb128 0x49
  18309 06e2 13       		.uleb128 0x13
  18310 06e3 2F       		.uleb128 0x2f
-GAS LISTING /tmp/ccb24Nf7.s 			page 488
+GAS LISTING /tmp/ccVfeQK4.s 			page 488
 
 
  18311 06e4 0B       		.uleb128 0xb
@@ -29278,7 +29278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18365 071a 0B       		.uleb128 0xb
  18366 071b 3A       		.uleb128 0x3a
  18367 071c 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccb24Nf7.s 			page 489
+GAS LISTING /tmp/ccVfeQK4.s 			page 489
 
 
  18368 071d 3B       		.uleb128 0x3b
@@ -29338,7 +29338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18422 0753 0B       		.uleb128 0xb
  18423 0754 49       		.uleb128 0x49
  18424 0755 13       		.uleb128 0x13
-GAS LISTING /tmp/ccb24Nf7.s 			page 490
+GAS LISTING /tmp/ccVfeQK4.s 			page 490
 
 
  18425 0756 00       		.byte	0
@@ -29398,7 +29398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18479 078c 47       		.uleb128 0x47
  18480 078d 13       		.uleb128 0x13
  18481 078e 20       		.uleb128 0x20
-GAS LISTING /tmp/ccb24Nf7.s 			page 491
+GAS LISTING /tmp/ccVfeQK4.s 			page 491
 
 
  18482 078f 0B       		.uleb128 0xb
@@ -29458,7 +29458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18536 07c9 35       		.uleb128 0x35
  18537 07ca 00       		.byte	0
  18538 07cb 49       		.uleb128 0x49
-GAS LISTING /tmp/ccb24Nf7.s 			page 492
+GAS LISTING /tmp/ccVfeQK4.s 			page 492
 
 
  18539 07cc 13       		.uleb128 0x13
@@ -29518,7 +29518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18593 0807 05       		.uleb128 0x5
  18594 0808 00       		.byte	0
  18595 0809 03       		.uleb128 0x3
-GAS LISTING /tmp/ccb24Nf7.s 			page 493
+GAS LISTING /tmp/ccVfeQK4.s 			page 493
 
 
  18596 080a 08       		.uleb128 0x8
@@ -29578,7 +29578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18650 0844 00       		.byte	0
  18651 0845 00       		.byte	0
  18652 0846 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 494
+GAS LISTING /tmp/ccVfeQK4.s 			page 494
 
 
  18653 0847 8D01     		.uleb128 0x8d
@@ -29638,7 +29638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18707 0882 01       		.byte	0x1
  18708 0883 01       		.uleb128 0x1
  18709 0884 13       		.uleb128 0x13
-GAS LISTING /tmp/ccb24Nf7.s 			page 495
+GAS LISTING /tmp/ccVfeQK4.s 			page 495
 
 
  18710 0885 00       		.byte	0
@@ -29698,7 +29698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18764 08c0 00       		.byte	0
  18765 08c1 00       		.byte	0
  18766 08c2 9601     		.uleb128 0x96
-GAS LISTING /tmp/ccb24Nf7.s 			page 496
+GAS LISTING /tmp/ccVfeQK4.s 			page 496
 
 
  18767 08c4 1D       		.uleb128 0x1d
@@ -29758,7 +29758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18821 0900 9542     		.uleb128 0x2115
  18822 0902 19       		.uleb128 0x19
  18823 0903 31       		.uleb128 0x31
-GAS LISTING /tmp/ccb24Nf7.s 			page 497
+GAS LISTING /tmp/ccVfeQK4.s 			page 497
 
 
  18824 0904 13       		.uleb128 0x13
@@ -29818,7 +29818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18878 093f 0B       		.uleb128 0xb
  18879 0940 00       		.byte	0
  18880 0941 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 498
+GAS LISTING /tmp/ccVfeQK4.s 			page 498
 
 
  18881 0942 9F01     		.uleb128 0x9f
@@ -29878,7 +29878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18935 097c 49       		.uleb128 0x49
  18936 097d 13       		.uleb128 0x13
  18937 097e 02       		.uleb128 0x2
-GAS LISTING /tmp/ccb24Nf7.s 			page 499
+GAS LISTING /tmp/ccVfeQK4.s 			page 499
 
 
  18938 097f 17       		.uleb128 0x17
@@ -29938,7 +29938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  18992 09ba 00       		.byte	0
  18993 09bb 00       		.byte	0
  18994 09bc A801     		.uleb128 0xa8
-GAS LISTING /tmp/ccb24Nf7.s 			page 500
+GAS LISTING /tmp/ccVfeQK4.s 			page 500
 
 
  18995 09be 0B       		.uleb128 0xb
@@ -29998,7 +29998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19049 09f9 34       		.uleb128 0x34
  19050 09fa 00       		.byte	0
  19051 09fb 03       		.uleb128 0x3
-GAS LISTING /tmp/ccb24Nf7.s 			page 501
+GAS LISTING /tmp/ccVfeQK4.s 			page 501
 
 
  19052 09fc 08       		.uleb128 0x8
@@ -30058,7 +30058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19106 0a35 00       		.byte	0
  19107 0a36 00       		.byte	0
  19108 0a37 B001     		.uleb128 0xb0
-GAS LISTING /tmp/ccb24Nf7.s 			page 502
+GAS LISTING /tmp/ccVfeQK4.s 			page 502
 
 
  19109 0a39 34       		.uleb128 0x34
@@ -30118,7 +30118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19163 0a78 12       		.uleb128 0x12
  19164 0a79 07       		.uleb128 0x7
  19165 0a7a 58       		.uleb128 0x58
-GAS LISTING /tmp/ccb24Nf7.s 			page 503
+GAS LISTING /tmp/ccVfeQK4.s 			page 503
 
 
  19166 0a7b 0B       		.uleb128 0xb
@@ -30178,7 +30178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19220 0ab9 13       		.uleb128 0x13
  19221 0aba 00       		.byte	0
  19222 0abb 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 504
+GAS LISTING /tmp/ccVfeQK4.s 			page 504
 
 
  19223 0abc B901     		.uleb128 0xb9
@@ -30238,7 +30238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19277 0afd 19       		.uleb128 0x19
  19278 0afe 31       		.uleb128 0x31
  19279 0aff 13       		.uleb128 0x13
-GAS LISTING /tmp/ccb24Nf7.s 			page 505
+GAS LISTING /tmp/ccVfeQK4.s 			page 505
 
 
  19280 0b00 00       		.byte	0
@@ -30298,7 +30298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19334 0b3c 3C       		.uleb128 0x3c
  19335 0b3d 19       		.uleb128 0x19
  19336 0b3e 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 506
+GAS LISTING /tmp/ccVfeQK4.s 			page 506
 
 
  19337 0b3f 00       		.byte	0
@@ -30358,7 +30358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19391 0b7a 34       		.uleb128 0x34
  19392 0b7b 19       		.uleb128 0x19
  19393 0b7c 3C       		.uleb128 0x3c
-GAS LISTING /tmp/ccb24Nf7.s 			page 507
+GAS LISTING /tmp/ccVfeQK4.s 			page 507
 
 
  19394 0b7d 19       		.uleb128 0x19
@@ -30418,7 +30418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19448 0bb6 00       		.byte	0
  19449 0bb7 00       		.byte	0
  19450 0bb8 00       		.byte	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 508
+GAS LISTING /tmp/ccVfeQK4.s 			page 508
 
 
  19451              		.section	.debug_loc,"",@progbits
@@ -30478,7 +30478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19489      00000000 
  19490 0097 0600     		.value	0x6
  19491 0099 F3       		.byte	0xf3
-GAS LISTING /tmp/ccb24Nf7.s 			page 509
+GAS LISTING /tmp/ccVfeQK4.s 			page 509
 
 
  19492 009a 01       		.uleb128 0x1
@@ -30538,7 +30538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19530 0130 75       		.byte	0x75
  19531 0131 10       		.sleb128 16
  19532 0132 9F       		.byte	0x9f
-GAS LISTING /tmp/ccb24Nf7.s 			page 510
+GAS LISTING /tmp/ccVfeQK4.s 			page 510
 
 
  19533 0133 00000000 		.quad	0
@@ -30598,7 +30598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19569 01da 1200     		.value	0x12
  19570 01dc 71       		.byte	0x71
  19571 01dd 00       		.sleb128 0
-GAS LISTING /tmp/ccb24Nf7.s 			page 511
+GAS LISTING /tmp/ccVfeQK4.s 			page 511
 
 
  19572 01de 70       		.byte	0x70
@@ -30658,7 +30658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19614              	.LLST11:
  19615 026e 00000000 		.quad	.LVL8
  19615      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 512
+GAS LISTING /tmp/ccVfeQK4.s 			page 512
 
 
  19616 0276 00000000 		.quad	.LVL9
@@ -30718,7 +30718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19653      00000000 
  19654              	.LLST12:
  19655 031b 00000000 		.quad	.LVL21
-GAS LISTING /tmp/ccb24Nf7.s 			page 513
+GAS LISTING /tmp/ccVfeQK4.s 			page 513
 
 
  19655      00000000 
@@ -30778,7 +30778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19695      00000000 
  19696 03b4 00000000 		.quad	.LVL41
  19696      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 514
+GAS LISTING /tmp/ccVfeQK4.s 			page 514
 
 
  19697 03bc 1800     		.value	0x18
@@ -30838,7 +30838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19747 041e 04       		.uleb128 0x4
  19748 041f ABAA2A42 		.long	0x422aaaab
  19749 0423 93       		.byte	0x93
-GAS LISTING /tmp/ccb24Nf7.s 			page 515
+GAS LISTING /tmp/ccVfeQK4.s 			page 515
 
 
  19750 0424 04       		.uleb128 0x4
@@ -30898,7 +30898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19799 048c 00000000 		.quad	.LVL106
  19799      00000000 
  19800 0494 1B00     		.value	0x1b
-GAS LISTING /tmp/ccb24Nf7.s 			page 516
+GAS LISTING /tmp/ccVfeQK4.s 			page 516
 
 
  19801 0496 9E       		.byte	0x9e
@@ -30958,7 +30958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19851 04fc 04       		.uleb128 0x4
  19852 04fd 91       		.byte	0x91
  19853 04fe CCB07F   		.sleb128 -10164
-GAS LISTING /tmp/ccb24Nf7.s 			page 517
+GAS LISTING /tmp/ccVfeQK4.s 			page 517
 
 
  19854 0501 93       		.byte	0x93
@@ -31018,7 +31018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19902 056a 9F       		.byte	0x9f
  19903 056b 93       		.byte	0x93
  19904 056c 01       		.uleb128 0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 518
+GAS LISTING /tmp/ccVfeQK4.s 			page 518
 
 
  19905 056d 93       		.byte	0x93
@@ -31078,7 +31078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  19953 05da 00008043 		.long	0x43800000
  19954 05de 93       		.byte	0x93
  19955 05df 04       		.uleb128 0x4
-GAS LISTING /tmp/ccb24Nf7.s 			page 519
+GAS LISTING /tmp/ccVfeQK4.s 			page 519
 
 
  19956 05e0 9E       		.byte	0x9e
@@ -31138,7 +31138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20006 0645 5D       		.byte	0x5d
  20007 0646 93       		.byte	0x93
  20008 0647 01       		.uleb128 0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 520
+GAS LISTING /tmp/ccVfeQK4.s 			page 520
 
 
  20009 0648 93       		.byte	0x93
@@ -31198,7 +31198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20057 06b5 00008043 		.long	0x43800000
  20058 06b9 93       		.byte	0x93
  20059 06ba 04       		.uleb128 0x4
-GAS LISTING /tmp/ccb24Nf7.s 			page 521
+GAS LISTING /tmp/ccVfeQK4.s 			page 521
 
 
  20060 06bb 9E       		.byte	0x9e
@@ -31258,7 +31258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20101      00000000 
  20102 074b 00000000 		.quad	.LVL136
  20102      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 522
+GAS LISTING /tmp/ccVfeQK4.s 			page 522
 
 
  20103 0753 0400     		.value	0x4
@@ -31318,7 +31318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20141 07f4 9F       		.byte	0x9f
  20142 07f5 00000000 		.quad	.LVL104
  20142      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 523
+GAS LISTING /tmp/ccVfeQK4.s 			page 523
 
 
  20143 07fd 00000000 		.quad	.LVL116
@@ -31378,7 +31378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20181      00000000 
  20182 089f 00000000 		.quad	.LVL89-1
  20182      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 524
+GAS LISTING /tmp/ccVfeQK4.s 			page 524
 
 
  20183 08a7 0100     		.value	0x1
@@ -31438,7 +31438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20221 0948 00000000 		.quad	.LVL31
  20221      00000000 
  20222 0950 00000000 		.quad	.LVL134
-GAS LISTING /tmp/ccb24Nf7.s 			page 525
+GAS LISTING /tmp/ccVfeQK4.s 			page 525
 
 
  20222      00000000 
@@ -31498,7 +31498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20261 09f3 00000000 		.quad	.LVL116
  20261      00000000 
  20262 09fb 0100     		.value	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 526
+GAS LISTING /tmp/ccVfeQK4.s 			page 526
 
 
  20263 09fd 56       		.byte	0x56
@@ -31558,7 +31558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20301 0a9a 00000000 		.quad	.LVL35
  20301      00000000 
  20302 0aa2 00000000 		.quad	.LVL37
-GAS LISTING /tmp/ccb24Nf7.s 			page 527
+GAS LISTING /tmp/ccVfeQK4.s 			page 527
 
 
  20302      00000000 
@@ -31618,7 +31618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20344              	.LLST34:
  20345 0b2d 00000000 		.quad	.LVL37
  20345      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 528
+GAS LISTING /tmp/ccVfeQK4.s 			page 528
 
 
  20346 0b35 00000000 		.quad	.LVL39
@@ -31678,7 +31678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20390      00000000 
  20391 0baf 00000000 		.quad	0
  20391      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 529
+GAS LISTING /tmp/ccVfeQK4.s 			page 529
 
 
  20392              	.LLST37:
@@ -31738,7 +31738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20432 0c4a 00008043 		.long	0x43800000
  20433 0c4e 00000000 		.quad	.LVL135
  20433      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 530
+GAS LISTING /tmp/ccVfeQK4.s 			page 530
 
 
  20434 0c56 00000000 		.quad	.LVL136
@@ -31798,7 +31798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20472      00000000 
  20473 0cfe 00000000 		.quad	.LVL133
  20473      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 531
+GAS LISTING /tmp/ccVfeQK4.s 			page 531
 
 
  20474 0d06 0600     		.value	0x6
@@ -31858,7 +31858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20512 0da8 91       		.byte	0x91
  20513 0da9 B058     		.sleb128 -5072
  20514 0dab 9F       		.byte	0x9f
-GAS LISTING /tmp/ccb24Nf7.s 			page 532
+GAS LISTING /tmp/ccVfeQK4.s 			page 532
 
 
  20515 0dac 00000000 		.quad	.LVL123
@@ -31918,7 +31918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20553 0e4e 12       		.uleb128 0x12
  20554 0e4f 29       		.uleb128 0x29
  20555 0e50 F4       		.byte	0xf4
-GAS LISTING /tmp/ccb24Nf7.s 			page 533
+GAS LISTING /tmp/ccVfeQK4.s 			page 533
 
 
  20556 0e51 29       		.uleb128 0x29
@@ -31978,7 +31978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20594      00000000 
  20595 0ef3 0400     		.value	0x4
  20596 0ef5 91       		.byte	0x91
-GAS LISTING /tmp/ccb24Nf7.s 			page 534
+GAS LISTING /tmp/ccVfeQK4.s 			page 534
 
 
  20597 0ef6 C4B07F   		.sleb128 -10172
@@ -32038,7 +32038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20633 0fa3 F2       		.byte	0xf2
  20634 0fa4 00000000 		.long	.Ldebug_info0+32843
  20635 0fa8 00       		.sleb128 0
-GAS LISTING /tmp/ccb24Nf7.s 			page 535
+GAS LISTING /tmp/ccVfeQK4.s 			page 535
 
 
  20636 0fa9 00000000 		.quad	.LVL113
@@ -32098,7 +32098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20674 1050 00000000 		.quad	0
  20674      00000000 
  20675 1058 00000000 		.quad	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 536
+GAS LISTING /tmp/ccVfeQK4.s 			page 536
 
 
  20675      00000000 
@@ -32158,7 +32158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20715      00000000 
  20716 10f2 0400     		.value	0x4
  20717 10f4 91       		.byte	0x91
-GAS LISTING /tmp/ccb24Nf7.s 			page 537
+GAS LISTING /tmp/ccVfeQK4.s 			page 537
 
 
  20718 10f5 B058     		.sleb128 -5072
@@ -32218,7 +32218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20756 1195 F2       		.byte	0xf2
  20757 1196 00000000 		.long	.Ldebug_info0+31860
  20758 119a 00       		.sleb128 0
-GAS LISTING /tmp/ccb24Nf7.s 			page 538
+GAS LISTING /tmp/ccVfeQK4.s 			page 538
 
 
  20759 119b 00000000 		.quad	.LVL109
@@ -32278,7 +32278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20801 122c 00000000 		.quad	0
  20801      00000000 
  20802 1234 00000000 		.quad	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 539
+GAS LISTING /tmp/ccVfeQK4.s 			page 539
 
 
  20802      00000000 
@@ -32338,7 +32338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20838      00000000 
  20839 12e7 0400     		.value	0x4
  20840 12e9 91       		.byte	0x91
-GAS LISTING /tmp/ccb24Nf7.s 			page 540
+GAS LISTING /tmp/ccVfeQK4.s 			page 540
 
 
  20841 12ea BCB07F   		.sleb128 -10180
@@ -32398,7 +32398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20878      00000000 
  20879 1396 00000000 		.quad	.LVL113
  20879      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 541
+GAS LISTING /tmp/ccVfeQK4.s 			page 541
 
 
  20880 139e 0600     		.value	0x6
@@ -32458,7 +32458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20922 142b 00000000 		.quad	.LVL70
  20922      00000000 
  20923 1433 00000000 		.quad	.LVL71
-GAS LISTING /tmp/ccb24Nf7.s 			page 542
+GAS LISTING /tmp/ccVfeQK4.s 			page 542
 
 
  20923      00000000 
@@ -32518,7 +32518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  20963 14ca 00000000 		.quad	.LVL88
  20963      00000000 
  20964 14d2 00000000 		.quad	.LVL89-1
-GAS LISTING /tmp/ccb24Nf7.s 			page 543
+GAS LISTING /tmp/ccVfeQK4.s 			page 543
 
 
  20964      00000000 
@@ -32578,7 +32578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21004 156e 0400     		.value	0x4
  21005 1570 40       		.byte	0x40
  21006 1571 3F       		.byte	0x3f
-GAS LISTING /tmp/ccb24Nf7.s 			page 544
+GAS LISTING /tmp/ccVfeQK4.s 			page 544
 
 
  21007 1572 24       		.byte	0x24
@@ -32638,7 +32638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21045 1613 0200     		.value	0x2
  21046 1615 30       		.byte	0x30
  21047 1616 9F       		.byte	0x9f
-GAS LISTING /tmp/ccb24Nf7.s 			page 545
+GAS LISTING /tmp/ccVfeQK4.s 			page 545
 
 
  21048 1617 00000000 		.quad	.LVL116
@@ -32698,7 +32698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21086      00000000 
  21087 16b1 0500     		.value	0x5
  21088 16b3 91       		.byte	0x91
-GAS LISTING /tmp/ccb24Nf7.s 			page 546
+GAS LISTING /tmp/ccVfeQK4.s 			page 546
 
 
  21089 16b4 80B17F   		.sleb128 -10112
@@ -32758,7 +32758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21127 1756 9F       		.byte	0x9f
  21128 1757 00000000 		.quad	.LVL116
  21128      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 547
+GAS LISTING /tmp/ccVfeQK4.s 			page 547
 
 
  21129 175f 00000000 		.quad	.LVL133
@@ -32818,7 +32818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21166 1802 30       		.byte	0x30
  21167 1803 9F       		.byte	0x9f
  21168 1804 00000000 		.quad	0
-GAS LISTING /tmp/ccb24Nf7.s 			page 548
+GAS LISTING /tmp/ccVfeQK4.s 			page 548
 
 
  21168      00000000 
@@ -32878,7 +32878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21205 18b0 00000000 		.quad	.LVL116
  21205      00000000 
  21206 18b8 00000000 		.quad	.LVL124
-GAS LISTING /tmp/ccb24Nf7.s 			page 549
+GAS LISTING /tmp/ccVfeQK4.s 			page 549
 
 
  21206      00000000 
@@ -32938,7 +32938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21243 1962 00000000 		.quad	.LVL119-1
  21243      00000000 
  21244 196a 0100     		.value	0x1
-GAS LISTING /tmp/ccb24Nf7.s 			page 550
+GAS LISTING /tmp/ccVfeQK4.s 			page 550
 
 
  21245 196c 50       		.byte	0x50
@@ -32998,7 +32998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21281      00000000 
  21282              	.LLST114:
  21283 1a17 00000000 		.quad	.LVL128
-GAS LISTING /tmp/ccb24Nf7.s 			page 551
+GAS LISTING /tmp/ccVfeQK4.s 			page 551
 
 
  21283      00000000 
@@ -33058,7 +33058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21321      00000000 
  21322 1abd 00000000 		.quad	.LVL98-1
  21322      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 552
+GAS LISTING /tmp/ccVfeQK4.s 			page 552
 
 
  21323 1ac5 0C00     		.value	0xc
@@ -33118,7 +33118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21361      00000000 
  21362 1b66 0C00     		.value	0xc
  21363 1b68 91       		.byte	0x91
-GAS LISTING /tmp/ccb24Nf7.s 			page 553
+GAS LISTING /tmp/ccVfeQK4.s 			page 553
 
 
  21364 1b69 90B17F   		.sleb128 -10096
@@ -33178,7 +33178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21404 1bfe 00000000 		.quad	.LVL133
  21404      00000000 
  21405 1c06 00000000 		.quad	.LVL134
-GAS LISTING /tmp/ccb24Nf7.s 			page 554
+GAS LISTING /tmp/ccVfeQK4.s 			page 554
 
 
  21405      00000000 
@@ -33238,7 +33238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21445 0010 00000000 		.quad	.Ltext0
  21445      00000000 
  21446 0018 2A000000 		.quad	.Letext0-.Ltext0
-GAS LISTING /tmp/ccb24Nf7.s 			page 555
+GAS LISTING /tmp/ccVfeQK4.s 			page 555
 
 
  21446      00000000 
@@ -33298,7 +33298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21474      00000000 
  21475 0090 00000000 		.quad	.LBB807
  21475      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 556
+GAS LISTING /tmp/ccVfeQK4.s 			page 556
 
 
  21476 0098 00000000 		.quad	.LBE807
@@ -33358,7 +33358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21503 0170 00000000 		.quad	.LBB829
  21503      00000000 
  21504 0178 00000000 		.quad	.LBE829
-GAS LISTING /tmp/ccb24Nf7.s 			page 557
+GAS LISTING /tmp/ccVfeQK4.s 			page 557
 
 
  21504      00000000 
@@ -33418,7 +33418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21531      00000000 
  21532 0258 00000000 		.quad	.LBE918
  21532      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 558
+GAS LISTING /tmp/ccVfeQK4.s 			page 558
 
 
  21533 0260 00000000 		.quad	0
@@ -33478,7 +33478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21560 0338 00000000 		.quad	.LBE914
  21560      00000000 
  21561 0340 00000000 		.quad	.LBB915
-GAS LISTING /tmp/ccb24Nf7.s 			page 559
+GAS LISTING /tmp/ccVfeQK4.s 			page 559
 
 
  21561      00000000 
@@ -33538,7 +33538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21588      00000000 
  21589 0420 00000000 		.quad	.LBB964
  21589      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 560
+GAS LISTING /tmp/ccVfeQK4.s 			page 560
 
 
  21590 0428 00000000 		.quad	.LBE964
@@ -33598,7 +33598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21617 0500 00000000 		.quad	.LBB963
  21617      00000000 
  21618 0508 00000000 		.quad	.LBE963
-GAS LISTING /tmp/ccb24Nf7.s 			page 561
+GAS LISTING /tmp/ccVfeQK4.s 			page 561
 
 
  21618      00000000 
@@ -33658,7 +33658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21645      00000000 
  21646 05e8 00000000 		.quad	0
  21646      00000000 
-GAS LISTING /tmp/ccb24Nf7.s 			page 562
+GAS LISTING /tmp/ccVfeQK4.s 			page 562
 
 
  21647 05f0 00000000 		.quad	.LBB1021
@@ -33718,7 +33718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21671      65642069 
  21672              	.LASF994:
  21673 007d 706F7369 		.string	"positive_sign"
-GAS LISTING /tmp/ccb24Nf7.s 			page 563
+GAS LISTING /tmp/ccVfeQK4.s 			page 563
 
 
  21673      74697665 
@@ -33778,7 +33778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21701 014d 5F5A4E4B 		.string	"_ZNKSs4_Rep12_M_is_leakedEv"
  21701      5373345F 
  21701      52657031 
-GAS LISTING /tmp/ccb24Nf7.s 			page 564
+GAS LISTING /tmp/ccVfeQK4.s 			page 564
 
 
  21701      325F4D5F 
@@ -33838,7 +33838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21723 0224 73687269 		.string	"shrink_to_fit"
  21723      6E6B5F74 
  21723      6F5F6669 
-GAS LISTING /tmp/ccb24Nf7.s 			page 565
+GAS LISTING /tmp/ccVfeQK4.s 			page 565
 
 
  21723      7400
@@ -33898,7 +33898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21745 03de 5F5F7763 		.string	"__wch"
  21745      6800
  21746              	.LASF988:
-GAS LISTING /tmp/ccb24Nf7.s 			page 566
+GAS LISTING /tmp/ccVfeQK4.s 			page 566
 
 
  21747 03e4 67726F75 		.string	"grouping"
@@ -33958,7 +33958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21771      6368616E 
  21771      67655F61 
  21771      6E645F61 
-GAS LISTING /tmp/ccb24Nf7.s 			page 567
+GAS LISTING /tmp/ccVfeQK4.s 			page 567
 
 
  21771      646400
@@ -34018,7 +34018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21794              	.LASF415:
  21795 0578 5F535F62 		.string	"_S_basefield"
  21795      61736566 
-GAS LISTING /tmp/ccb24Nf7.s 			page 568
+GAS LISTING /tmp/ccVfeQK4.s 			page 568
 
 
  21795      69656C64 
@@ -34078,7 +34078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21817      61624552 
  21818              	.LASF1069:
  21819 0670 6D696E6D 		.string	"minmatch"
-GAS LISTING /tmp/ccb24Nf7.s 			page 569
+GAS LISTING /tmp/ccVfeQK4.s 			page 569
 
 
  21819      61746368 
@@ -34138,7 +34138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21842              	.LASF42:
  21843 07e4 5F5A4E4B 		.string	"_ZNKSt15__exception_ptr13exception_ptr6_M_getEv"
  21843      53743135 
-GAS LISTING /tmp/ccb24Nf7.s 			page 570
+GAS LISTING /tmp/ccVfeQK4.s 			page 570
 
 
  21843      5F5F6578 
@@ -34198,7 +34198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21869      5F4F7065 
  21869      6E6D6F64 
  21869      6500
-GAS LISTING /tmp/ccb24Nf7.s 			page 571
+GAS LISTING /tmp/ccVfeQK4.s 			page 571
 
 
  21870              	.LASF732:
@@ -34258,7 +34258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21893      20646F75 
  21893      626C6500 
  21894              	.LASF332:
-GAS LISTING /tmp/ccb24Nf7.s 			page 572
+GAS LISTING /tmp/ccVfeQK4.s 			page 572
 
 
  21895 0a9e 5F5F6269 		.string	"__big_enough"
@@ -34318,7 +34318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21917 0b87 66676574 		.string	"fgetws"
  21917      777300
  21918              	.LASF967:
-GAS LISTING /tmp/ccb24Nf7.s 			page 573
+GAS LISTING /tmp/ccVfeQK4.s 			page 573
 
 
  21919 0b8e 75696E74 		.string	"uint_least8_t"
@@ -34378,7 +34378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21940              	.LASF1141:
  21941 0c67 5F5A6E77 		.string	"_Znwm"
  21941      6D00
-GAS LISTING /tmp/ccb24Nf7.s 			page 574
+GAS LISTING /tmp/ccVfeQK4.s 			page 574
 
 
  21942              	.LASF412:
@@ -34438,7 +34438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21969      6D3C6368 
  21969      61722C20 
  21970              	.LASF674:
-GAS LISTING /tmp/ccb24Nf7.s 			page 575
+GAS LISTING /tmp/ccVfeQK4.s 			page 575
 
 
  21971 0d21 6D61783C 		.string	"max<long unsigned int>"
@@ -34498,7 +34498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  21993 0e1d 5F5A4E53 		.string	"_ZNSs18_S_construct_aux_2EmcRKSaIcE"
  21993      7331385F 
  21993      535F636F 
-GAS LISTING /tmp/ccb24Nf7.s 			page 576
+GAS LISTING /tmp/ccVfeQK4.s 			page 576
 
 
  21993      6E737472 
@@ -34558,7 +34558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22018              	.LASF521:
  22019 0ee9 5F5F7369 		.string	"__size_type"
  22019      7A655F74 
-GAS LISTING /tmp/ccb24Nf7.s 			page 577
+GAS LISTING /tmp/ccVfeQK4.s 			page 577
 
 
  22019      79706500 
@@ -34618,7 +34618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22043      3C737464 
  22044              	.LASF906:
  22045 0ff8 73777363 		.string	"swscanf"
-GAS LISTING /tmp/ccb24Nf7.s 			page 578
+GAS LISTING /tmp/ccVfeQK4.s 			page 578
 
 
  22045      616E6600 
@@ -34678,7 +34678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22069      696F6E5F 
  22070              	.LASF153:
  22071 10e7 5F5A4E53 		.string	"_ZNSs6rbeginEv"
-GAS LISTING /tmp/ccb24Nf7.s 			page 579
+GAS LISTING /tmp/ccVfeQK4.s 			page 579
 
 
  22071      73367262 
@@ -34738,7 +34738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22093      49684545 
  22094              	.LASF1008:
  22095 1238 696E745F 		.string	"int_p_sign_posn"
-GAS LISTING /tmp/ccb24Nf7.s 			page 580
+GAS LISTING /tmp/ccVfeQK4.s 			page 580
 
 
  22095      705F7369 
@@ -34798,7 +34798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22119 1314 5F5A4E4B 		.string	"_ZNKSs4sizeEv"
  22119      53733473 
  22119      697A6545 
-GAS LISTING /tmp/ccb24Nf7.s 			page 581
+GAS LISTING /tmp/ccVfeQK4.s 			page 581
 
 
  22119      7600
@@ -34858,7 +34858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22145      7300
  22146              	.LASF976:
  22147 1448 75696E74 		.string	"uint_fast16_t"
-GAS LISTING /tmp/ccb24Nf7.s 			page 582
+GAS LISTING /tmp/ccVfeQK4.s 			page 582
 
 
  22147      5F666173 
@@ -34918,7 +34918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22169 154e 5F5A4E4B 		.string	"_ZNKSt19normal_distributionIfE3maxEv"
  22169      53743139 
  22169      6E6F726D 
-GAS LISTING /tmp/ccb24Nf7.s 			page 583
+GAS LISTING /tmp/ccVfeQK4.s 			page 583
 
 
  22169      616C5F64 
@@ -34978,7 +34978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22192              	.LASF702:
  22193 16e0 5F5F6E75 		.string	"__numeric_traits_integer<int>"
  22193      6D657269 
-GAS LISTING /tmp/ccb24Nf7.s 			page 584
+GAS LISTING /tmp/ccVfeQK4.s 			page 584
 
 
  22193      635F7472 
@@ -35038,7 +35038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22219      6E00
  22220              	.LASF38:
  22221 17c7 5F4D5F72 		.string	"_M_release"
-GAS LISTING /tmp/ccb24Nf7.s 			page 585
+GAS LISTING /tmp/ccVfeQK4.s 			page 585
 
 
  22221      656C6561 
@@ -35098,7 +35098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22245      63746F72 
  22245      49685361 
  22245      49684545 
-GAS LISTING /tmp/ccb24Nf7.s 			page 586
+GAS LISTING /tmp/ccVfeQK4.s 			page 586
 
 
  22246              	.LASF626:
@@ -35158,7 +35158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22269      63746F72 
  22269      5F626173 
  22269      6500
-GAS LISTING /tmp/ccb24Nf7.s 			page 587
+GAS LISTING /tmp/ccVfeQK4.s 			page 587
 
 
  22270              	.LASF1053:
@@ -35218,7 +35218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22294              	.LASF11:
  22295 1bb7 63686172 		.string	"char_type"
  22295      5F747970 
-GAS LISTING /tmp/ccb24Nf7.s 			page 588
+GAS LISTING /tmp/ccVfeQK4.s 			page 588
 
 
  22295      6500
@@ -35278,7 +35278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22317      5F5F6E6F 
  22318              	.LASF445:
  22319 1ce4 626F6F6C 		.string	"boolalpha"
-GAS LISTING /tmp/ccb24Nf7.s 			page 589
+GAS LISTING /tmp/ccVfeQK4.s 			page 589
 
 
  22319      616C7068 
@@ -35338,7 +35338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22344              	.LASF489:
  22345 1d99 5F4D5F70 		.string	"_M_param"
  22345      6172616D 
-GAS LISTING /tmp/ccb24Nf7.s 			page 590
+GAS LISTING /tmp/ccVfeQK4.s 			page 590
 
 
  22345      00
@@ -35398,7 +35398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22371      6E755F63 
  22371      78783137 
  22371      5F5F6E6F 
-GAS LISTING /tmp/ccb24Nf7.s 			page 591
+GAS LISTING /tmp/ccVfeQK4.s 			page 591
 
 
  22372              	.LASF206:
@@ -35458,7 +35458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22394              	.LASF914:
  22395 1f57 77637274 		.string	"wcrtomb"
  22395      6F6D6200 
-GAS LISTING /tmp/ccb24Nf7.s 			page 592
+GAS LISTING /tmp/ccVfeQK4.s 			page 592
 
 
  22396              	.LASF249:
@@ -35518,7 +35518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22417      49746572 
  22417      5F626173 
  22417      65495068 
-GAS LISTING /tmp/ccb24Nf7.s 			page 593
+GAS LISTING /tmp/ccVfeQK4.s 			page 593
 
 
  22418              	.LASF315:
@@ -35578,7 +35578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22443      696E6974 
  22443      69616C69 
  22444              	.LASF1105:
-GAS LISTING /tmp/ccb24Nf7.s 			page 594
+GAS LISTING /tmp/ccVfeQK4.s 			page 594
 
 
  22445 2102 5F5F696F 		.string	"__ioinit"
@@ -35638,7 +35638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22467      00
  22468              	.LASF1139:
  22469 21cc 68656174 		.string	"heatmap_add_point"
-GAS LISTING /tmp/ccb24Nf7.s 			page 595
+GAS LISTING /tmp/ccVfeQK4.s 			page 595
 
 
  22469      6D61705F 
@@ -35698,7 +35698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22492              	.LASF1129:
  22493 2281 5F5A4E39 		.string	"_ZN9__gnu_cxx24__numeric_traits_integerIlE5__maxE"
  22493      5F5F676E 
-GAS LISTING /tmp/ccb24Nf7.s 			page 596
+GAS LISTING /tmp/ccVfeQK4.s 			page 596
 
 
  22493      755F6378 
@@ -35758,7 +35758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22515      5F6C656E 
  22516              	.LASF846:
  22517 23f5 5F494F5F 		.string	"_IO_read_ptr"
-GAS LISTING /tmp/ccb24Nf7.s 			page 597
+GAS LISTING /tmp/ccVfeQK4.s 			page 597
 
 
  22517      72656164 
@@ -35818,7 +35818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22541 2497 68656174 		.string	"heatmap_free"
  22541      6D61705F 
  22541      66726565 
-GAS LISTING /tmp/ccb24Nf7.s 			page 598
+GAS LISTING /tmp/ccVfeQK4.s 			page 598
 
 
  22541      00
@@ -35878,7 +35878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22563      6E746966 
  22563      696300
  22564              	.LASF558:
-GAS LISTING /tmp/ccb24Nf7.s 			page 599
+GAS LISTING /tmp/ccVfeQK4.s 			page 599
 
 
  22565 25e1 5F54705F 		.string	"_Tp_alloc_type"
@@ -35938,7 +35938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22587 26a1 5F5A4E4B 		.string	"_ZNKSt19normal_distributionIfE10param_type6stddevEv"
  22587      53743139 
  22587      6E6F726D 
-GAS LISTING /tmp/ccb24Nf7.s 			page 600
+GAS LISTING /tmp/ccVfeQK4.s 			page 600
 
 
  22587      616C5F64 
@@ -35998,7 +35998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22609      535F656D 
  22609      7074795F 
  22609      72657045 
-GAS LISTING /tmp/ccb24Nf7.s 			page 601
+GAS LISTING /tmp/ccVfeQK4.s 			page 601
 
 
  22610              	.LASF1114:
@@ -36058,7 +36058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22633      7300
  22634              	.LASF485:
  22635 2893 6D65616E 		.string	"mean"
-GAS LISTING /tmp/ccb24Nf7.s 			page 602
+GAS LISTING /tmp/ccVfeQK4.s 			page 602
 
 
  22635      00
@@ -36118,7 +36118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22657      5F5F676E 
  22657      755F6378 
  22657      7831336E 
-GAS LISTING /tmp/ccb24Nf7.s 			page 603
+GAS LISTING /tmp/ccVfeQK4.s 			page 603
 
 
  22657      65775F61 
@@ -36178,7 +36178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22679      70747200 
  22680              	.LASF943:
  22681 2ae9 77637378 		.string	"wcsxfrm"
-GAS LISTING /tmp/ccb24Nf7.s 			page 604
+GAS LISTING /tmp/ccVfeQK4.s 			page 604
 
 
  22681      66726D00 
@@ -36238,7 +36238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22706              	.LASF964:
  22707 2b94 696E745F 		.string	"int_least16_t"
  22707      6C656173 
-GAS LISTING /tmp/ccb24Nf7.s 			page 605
+GAS LISTING /tmp/ccVfeQK4.s 			page 605
 
 
  22707      7431365F 
@@ -36298,7 +36298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22733 2c3f 77637363 		.string	"wcscspn"
  22733      73706E00 
  22734              	.LASF632:
-GAS LISTING /tmp/ccb24Nf7.s 			page 606
+GAS LISTING /tmp/ccVfeQK4.s 			page 606
 
 
  22735 2c47 5F5A4E53 		.string	"_ZNSt6vectorIhSaIhEE17_M_default_appendEm"
@@ -36358,7 +36358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22756              	.LASF729:
  22757 2df5 62617365 		.string	"base"
  22757      00
-GAS LISTING /tmp/ccb24Nf7.s 			page 607
+GAS LISTING /tmp/ccVfeQK4.s 			page 607
 
 
  22758              	.LASF696:
@@ -36418,7 +36418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22785      6600
  22786              	.LASF716:
  22787 2ea7 5F5A4E39 		.string	"_ZN9__gnu_cxx17__normal_iteratorIPcSsEppEv"
-GAS LISTING /tmp/ccb24Nf7.s 			page 608
+GAS LISTING /tmp/ccVfeQK4.s 			page 608
 
 
  22787      5F5F676E 
@@ -36478,7 +36478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22807      5F416461 
  22808              	.LASF0:
  22809 3050 666C6F61 		.string	"float"
-GAS LISTING /tmp/ccb24Nf7.s 			page 609
+GAS LISTING /tmp/ccVfeQK4.s 			page 609
 
 
  22809      7400
@@ -36538,7 +36538,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22831      7832345F 
  22831      5F6E756D 
  22832              	.LASF302:
-GAS LISTING /tmp/ccb24Nf7.s 			page 610
+GAS LISTING /tmp/ccVfeQK4.s 			page 610
 
 
  22833 317c 74797065 		.string	"type_info"
@@ -36598,7 +36598,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22858              	.LASF1052:
  22859 32f2 77637472 		.string	"wctrans"
  22859      616E7300 
-GAS LISTING /tmp/ccb24Nf7.s 			page 611
+GAS LISTING /tmp/ccVfeQK4.s 			page 611
 
 
  22860              	.LASF76:
@@ -36658,7 +36658,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22881      6F7200
  22882              	.LASF700:
  22883 33dc 5F5A4E39 		.string	"_ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm"
-GAS LISTING /tmp/ccb24Nf7.s 			page 612
+GAS LISTING /tmp/ccVfeQK4.s 			page 612
 
 
  22883      5F5F676E 
@@ -36718,7 +36718,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22907      646500
  22908              	.LASF776:
  22909 34af 5F535F6E 		.string	"_S_nothrow_move"
-GAS LISTING /tmp/ccb24Nf7.s 			page 613
+GAS LISTING /tmp/ccVfeQK4.s 			page 613
 
 
  22909      6F746872 
@@ -36778,7 +36778,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22937 3542 5F5A4E53 		.string	"_ZNSsaSEPKc"
  22937      73615345 
  22937      504B6300 
-GAS LISTING /tmp/ccb24Nf7.s 			page 614
+GAS LISTING /tmp/ccVfeQK4.s 			page 614
 
 
  22938              	.LASF422:
@@ -36838,7 +36838,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22961      643C6C6F 
  22961      6E672075 
  22961      6E736967 
-GAS LISTING /tmp/ccb24Nf7.s 			page 615
+GAS LISTING /tmp/ccVfeQK4.s 			page 615
 
 
  22961      6E656420 
@@ -36898,7 +36898,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  22987      706F6E65 
  22987      6E743130 
  22987      00
-GAS LISTING /tmp/ccb24Nf7.s 			page 616
+GAS LISTING /tmp/ccVfeQK4.s 			page 616
 
 
  22988              	.LASF836:
@@ -36958,7 +36958,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23012              	.LASF1027:
  23013 3898 66676574 		.string	"fgetc"
  23013      6300
-GAS LISTING /tmp/ccb24Nf7.s 			page 617
+GAS LISTING /tmp/ccVfeQK4.s 			page 617
 
 
  23014              	.LASF97:
@@ -37018,7 +37018,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23035      7832345F 
  23035      5F6E756D 
  23036              	.LASF403:
-GAS LISTING /tmp/ccb24Nf7.s 			page 618
+GAS LISTING /tmp/ccVfeQK4.s 			page 618
 
 
  23037 39bf 5F535F69 		.string	"_S_internal"
@@ -37078,7 +37078,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23061      5F6F6666 
  23061      73657400 
  23062              	.LASF820:
-GAS LISTING /tmp/ccb24Nf7.s 			page 619
+GAS LISTING /tmp/ccVfeQK4.s 			page 619
 
 
  23063 3ae2 67657465 		.string	"getenv"
@@ -37138,7 +37138,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23087      74734963 
  23088              	.LASF125:
  23089 3bd3 5F4D5F6D 		.string	"_M_move"
-GAS LISTING /tmp/ccb24Nf7.s 			page 620
+GAS LISTING /tmp/ccVfeQK4.s 			page 620
 
 
  23089      6F766500 
@@ -37198,7 +37198,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23113 3d76 5F494F5F 		.string	"_IO_save_end"
  23113      73617665 
  23113      5F656E64 
-GAS LISTING /tmp/ccb24Nf7.s 			page 621
+GAS LISTING /tmp/ccVfeQK4.s 			page 621
 
 
  23113      00
@@ -37258,7 +37258,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23136              	.LASF54:
  23137 3e63 616C6C6F 		.string	"allocator<char>"
  23137      6361746F 
-GAS LISTING /tmp/ccb24Nf7.s 			page 622
+GAS LISTING /tmp/ccVfeQK4.s 			page 622
 
 
  23137      723C6368 
@@ -37318,7 +37318,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23158              	.LASF568:
  23159 3f9b 5F4D5F64 		.string	"_M_deallocate"
  23159      65616C6C 
-GAS LISTING /tmp/ccb24Nf7.s 			page 623
+GAS LISTING /tmp/ccVfeQK4.s 			page 623
 
 
  23159      6F636174 
@@ -37378,7 +37378,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23181 40e2 5F5A4E53 		.string	"_ZNSt23mersenne_twister_engineImLm32ELm624ELm397ELm31ELm2567483615ELm11ELm4294967295ELm7E
  23181      7432336D 
  23181      65727365 
-GAS LISTING /tmp/ccb24Nf7.s 			page 624
+GAS LISTING /tmp/ccVfeQK4.s 			page 624
 
 
  23181      6E6E655F 
@@ -37438,7 +37438,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23205      7832345F 
  23205      5F6E756D 
  23206              	.LASF563:
-GAS LISTING /tmp/ccb24Nf7.s 			page 625
+GAS LISTING /tmp/ccVfeQK4.s 			page 625
 
 
  23207 4240 5F5A4E4B 		.string	"_ZNKSt12_Vector_baseIhSaIhEE13get_allocatorEv"
@@ -37498,7 +37498,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23228              	.LASF698:
  23229 4330 5F5A4E4B 		.string	"_ZNK9__gnu_cxx13new_allocatorIcE7addressERKc"
  23229      395F5F67 
-GAS LISTING /tmp/ccb24Nf7.s 			page 626
+GAS LISTING /tmp/ccVfeQK4.s 			page 626
 
 
  23229      6E755F63 
@@ -37558,7 +37558,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23249      65703130 
  23249      5F4D5F64 
  23249      65737472 
-GAS LISTING /tmp/ccb24Nf7.s 			page 627
+GAS LISTING /tmp/ccVfeQK4.s 			page 627
 
 
  23250              	.LASF857:
@@ -37618,7 +37618,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23273      6E5F6373 
  23273      5F707265 
  23273      63656465 
-GAS LISTING /tmp/ccb24Nf7.s 			page 628
+GAS LISTING /tmp/ccVfeQK4.s 			page 628
 
 
  23273      7300
@@ -37678,7 +37678,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23295 46a9 5F535F63 		.string	"_S_const_pointer_helper"
  23295      6F6E7374 
  23295      5F706F69 
-GAS LISTING /tmp/ccb24Nf7.s 			page 629
+GAS LISTING /tmp/ccVfeQK4.s 			page 629
 
 
  23295      6E746572 
@@ -37738,7 +37738,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23319 4761 5F535F6F 		.string	"_S_on_swap"
  23319      6E5F7377 
  23319      617000
-GAS LISTING /tmp/ccb24Nf7.s 			page 630
+GAS LISTING /tmp/ccVfeQK4.s 			page 630
 
 
  23320              	.LASF740:
@@ -37798,7 +37798,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23342              	.LASF20:
  23343 487c 5F5A4E53 		.string	"_ZNSt11char_traitsIcE4findEPKcmRS1_"
  23343      74313163 
-GAS LISTING /tmp/ccb24Nf7.s 			page 631
+GAS LISTING /tmp/ccVfeQK4.s 			page 631
 
 
  23343      6861725F 
@@ -37858,7 +37858,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23366              	.LASF118:
  23367 49e6 5F4D5F6C 		.string	"_M_limit"
  23367      696D6974 
-GAS LISTING /tmp/ccb24Nf7.s 			page 632
+GAS LISTING /tmp/ccVfeQK4.s 			page 632
 
 
  23367      00
@@ -37918,7 +37918,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23393 4aad 6D62726C 		.string	"mbrlen"
  23393      656E00
  23394              	.LASF741:
-GAS LISTING /tmp/ccb24Nf7.s 			page 633
+GAS LISTING /tmp/ccVfeQK4.s 			page 633
 
 
  23395 4ab4 5F5A4E4B 		.string	"_ZNK9__gnu_cxx17__normal_iteratorIPKcSsEplEl"
@@ -37978,7 +37978,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23415      736800
  23416              	.LASF570:
  23417 4c2e 5F4D5F63 		.string	"_M_create_storage"
-GAS LISTING /tmp/ccb24Nf7.s 			page 634
+GAS LISTING /tmp/ccVfeQK4.s 			page 634
 
 
  23417      72656174 
@@ -38038,7 +38038,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23439      7900
  23440              	.LASF96:
  23441 4da4 5F5A4E53 		.string	"_ZNSs4_Rep10_M_disposeERKSaIcE"
-GAS LISTING /tmp/ccb24Nf7.s 			page 635
+GAS LISTING /tmp/ccVfeQK4.s 			page 635
 
 
  23441      73345F52 
@@ -38098,7 +38098,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23466              	.LASF803:
  23467 4e82 376C6C64 		.string	"7lldiv_t"
  23467      69765F74 
-GAS LISTING /tmp/ccb24Nf7.s 			page 636
+GAS LISTING /tmp/ccVfeQK4.s 			page 636
 
 
  23467      00
@@ -38158,7 +38158,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23488              	.LASF838:
  23489 4fae 73747274 		.string	"strtoull"
  23489      6F756C6C 
-GAS LISTING /tmp/ccb24Nf7.s 			page 637
+GAS LISTING /tmp/ccVfeQK4.s 			page 637
 
 
  23489      00
@@ -38218,7 +38218,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23513      5F616C6C 
  23514              	.LASF601:
  23515 50af 5F5A4E4B 		.string	"_ZNKSt6vectorIhSaIhEEixEm"
-GAS LISTING /tmp/ccb24Nf7.s 			page 638
+GAS LISTING /tmp/ccVfeQK4.s 			page 638
 
 
  23515      53743676 
@@ -38278,7 +38278,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23533      7600
  23534              	.LASF244:
  23535 51d2 5F5A4E53 		.string	"_ZNSs7replaceEN9__gnu_cxx17__normal_iteratorIPcSsEES2_NS0_IPKcSsEES5_"
-GAS LISTING /tmp/ccb24Nf7.s 			page 639
+GAS LISTING /tmp/ccVfeQK4.s 			page 639
 
 
  23535      73377265 
@@ -38338,7 +38338,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23555      706C6163 
  23555      65454E39 
  23555      5F5F676E 
-GAS LISTING /tmp/ccb24Nf7.s 			page 640
+GAS LISTING /tmp/ccVfeQK4.s 			page 640
 
 
  23556              	.LASF1110:
@@ -38398,7 +38398,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23578              	.LASF116:
  23579 542d 5F4D5F63 		.string	"_M_check_length"
  23579      6865636B 
-GAS LISTING /tmp/ccb24Nf7.s 			page 641
+GAS LISTING /tmp/ccVfeQK4.s 			page 641
 
 
  23579      5F6C656E 
@@ -38458,7 +38458,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23601 553f 746D706E 		.string	"tmpnam"
  23601      616D00
  23602              	.LASF152:
-GAS LISTING /tmp/ccb24Nf7.s 			page 642
+GAS LISTING /tmp/ccVfeQK4.s 			page 642
 
 
  23603 5546 72626567 		.string	"rbegin"
@@ -38518,7 +38518,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23627 5610 5F5A4E53 		.string	"_ZNSs13shrink_to_fitEv"
  23627      73313373 
  23627      6872696E 
-GAS LISTING /tmp/ccb24Nf7.s 			page 643
+GAS LISTING /tmp/ccVfeQK4.s 			page 643
 
 
  23627      6B5F746F 
@@ -38578,7 +38578,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23651 5764 5F4D5F6C 		.string	"_M_leak_hard"
  23651      65616B5F 
  23651      68617264 
-GAS LISTING /tmp/ccb24Nf7.s 			page 644
+GAS LISTING /tmp/ccVfeQK4.s 			page 644
 
 
  23651      00
@@ -38638,7 +38638,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23675      7831345F 
  23675      5F616C6C 
  23676              	.LASF374:
-GAS LISTING /tmp/ccb24Nf7.s 			page 645
+GAS LISTING /tmp/ccVfeQK4.s 			page 645
 
 
  23677 586d 5F5A4E53 		.string	"_ZNSt13random_deviceaSERKS_"
@@ -38698,7 +38698,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23697      61697473 
  23697      5F666C6F 
  23698              	.LASF843:
-GAS LISTING /tmp/ccb24Nf7.s 			page 646
+GAS LISTING /tmp/ccVfeQK4.s 			page 646
 
 
  23699 5971 46494C45 		.string	"FILE"
@@ -38758,7 +38758,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23719      61496845 
  23720              	.LASF624:
  23721 5a80 5F5A4E53 		.string	"_ZNSt6vectorIhSaIhEE18_M_fill_initializeEmRKh"
-GAS LISTING /tmp/ccb24Nf7.s 			page 647
+GAS LISTING /tmp/ccVfeQK4.s 			page 647
 
 
  23721      74367665 
@@ -38818,7 +38818,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23747 5b6e 5F5A4E53 		.string	"_ZNSt6vectorIhSaIhEE6insertEN9__gnu_cxx17__normal_iteratorIPKhS1_EEOh"
  23747      74367665 
  23747      63746F72 
-GAS LISTING /tmp/ccb24Nf7.s 			page 648
+GAS LISTING /tmp/ccVfeQK4.s 			page 648
 
 
  23747      49685361 
@@ -38878,7 +38878,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23769      73367265 
  23769      73697A65 
  23769      456D6300 
-GAS LISTING /tmp/ccb24Nf7.s 			page 649
+GAS LISTING /tmp/ccVfeQK4.s 			page 649
 
 
  23770              	.LASF1091:
@@ -38938,7 +38938,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23793      63686172 
  23794              	.LASF50:
  23795 5dc2 5F5A4E4B 		.string	"_ZNKSt15__exception_ptr13exception_ptr20__cxa_exception_typeEv"
-GAS LISTING /tmp/ccb24Nf7.s 			page 650
+GAS LISTING /tmp/ccVfeQK4.s 			page 650
 
 
  23795      53743135 
@@ -38998,7 +38998,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23815      696C6C5F 
  23815      696E6974 
  23815      69616C69 
-GAS LISTING /tmp/ccb24Nf7.s 			page 651
+GAS LISTING /tmp/ccVfeQK4.s 			page 651
 
 
  23815      7A6500
@@ -39058,7 +39058,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23837      5F6C6173 
  23837      745F6F66 
  23838              	.LASF259:
-GAS LISTING /tmp/ccb24Nf7.s 			page 652
+GAS LISTING /tmp/ccVfeQK4.s 			page 652
 
 
  23839 5ff4 5F5A4E4B 		.string	"_ZNKSs4dataEv"
@@ -39118,7 +39118,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23861      00
  23862              	.LASF340:
  23863 60f0 73686966 		.string	"shift_size"
-GAS LISTING /tmp/ccb24Nf7.s 			page 653
+GAS LISTING /tmp/ccVfeQK4.s 			page 653
 
 
  23863      745F7369 
@@ -39178,7 +39178,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23884              	.LASF478:
  23885 6205 77696465 		.string	"widen"
  23885      6E00
-GAS LISTING /tmp/ccb24Nf7.s 			page 654
+GAS LISTING /tmp/ccVfeQK4.s 			page 654
 
 
  23886              	.LASF482:
@@ -39238,7 +39238,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23907      63656465 
  23907      7300
  23908              	.LASF77:
-GAS LISTING /tmp/ccb24Nf7.s 			page 655
+GAS LISTING /tmp/ccVfeQK4.s 			page 655
 
 
  23909 63a7 5F535F65 		.string	"_S_empty_rep_storage"
@@ -39298,7 +39298,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23933      00
  23934              	.LASF784:
  23935 6485 5F5F6578 		.string	"__exchange_and_add_single"
-GAS LISTING /tmp/ccb24Nf7.s 			page 656
+GAS LISTING /tmp/ccVfeQK4.s 			page 656
 
 
  23935      6368616E 
@@ -39358,7 +39358,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23959 6570 5F5A4E53 		.string	"_ZNSs10_S_compareEmm"
  23959      7331305F 
  23959      535F636F 
-GAS LISTING /tmp/ccb24Nf7.s 			page 657
+GAS LISTING /tmp/ccVfeQK4.s 			page 657
 
 
  23959      6D706172 
@@ -39418,7 +39418,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  23987 660e 6D627374 		.string	"mbstate_t"
  23987      6174655F 
  23987      7400
-GAS LISTING /tmp/ccb24Nf7.s 			page 658
+GAS LISTING /tmp/ccVfeQK4.s 			page 658
 
 
  23988              	.LASF604:
@@ -39478,7 +39478,7 @@ GAS LISTING /tmp/ccb24Nf7.s 			page 1
  24009      524B5373 
  24009      00
  24010              		.hidden	DW.ref.__gxx_personality_v0
-GAS LISTING /tmp/ccb24Nf7.s 			page 659
+GAS LISTING /tmp/ccVfeQK4.s 			page 659
 
 
  24011              		.weak	DW.ref.__gxx_personality_v0

@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccTWFgxc.s 			page 1
+GAS LISTING /tmp/ccauqTp8.s 			page 1
 
 
    1              		.file	"show_colorschemes.cpp"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   36:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** #pragma GCC system_header
   37:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 
   38:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** #include <cwctype>	// For wctype_t
-GAS LISTING /tmp/ccTWFgxc.s 			page 2
+GAS LISTING /tmp/ccauqTp8.s 			page 2
 
 
   39:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** #include <cctype>
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   93:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 
   94:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****   // Used by both numeric and monetary facets.
   95:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****   // Inserts "group separator" characters into an array of characters.
-GAS LISTING /tmp/ccTWFgxc.s 			page 3
+GAS LISTING /tmp/ccauqTp8.s 			page 3
 
 
   96:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****   // It's recursive, one iteration per group.  It moves the characters
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  150:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @brief  Test char_type classification.
  151:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  152:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  This function finds a mask M for @a __c and compares it to
-GAS LISTING /tmp/ccTWFgxc.s 			page 4
+GAS LISTING /tmp/ccauqTp8.s 			page 4
 
 
  153:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  mask @a __m.  It does so by returning the value of
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  207:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @return  Pointer to non-matching char if found, else @a __hi.
  208:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  209:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       const char_type*
-GAS LISTING /tmp/ccTWFgxc.s 			page 5
+GAS LISTING /tmp/ccauqTp8.s 			page 5
 
 
  210:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       scan_not(mask __m, const char_type* __lo, const char_type* __hi) const
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  264:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __hi  Pointer to end of range.
  265:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @return  @a __hi.
  266:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
-GAS LISTING /tmp/ccTWFgxc.s 			page 6
+GAS LISTING /tmp/ccauqTp8.s 			page 6
 
 
  267:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       const char_type*
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  321:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  322:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       char
  323:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       narrow(char_type __c, char __dfault) const
-GAS LISTING /tmp/ccTWFgxc.s 			page 7
+GAS LISTING /tmp/ccauqTp8.s 			page 7
 
 
  324:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       { return this->do_narrow(__c, __dfault); }
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  378:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  379:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  do_is() is a hook for a derived facet to change the behavior of
  380:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  classifying.  do_is() must always return the same result for the
-GAS LISTING /tmp/ccTWFgxc.s 			page 8
+GAS LISTING /tmp/ccauqTp8.s 			page 8
 
 
  381:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  same input.
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  435:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  argument.
  436:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  437:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  do_toupper() is a hook for a derived facet to change the behavior of
-GAS LISTING /tmp/ccTWFgxc.s 			page 9
+GAS LISTING /tmp/ccauqTp8.s 			page 9
 
 
  438:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  uppercasing.  do_toupper() must always return the same result for
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  492:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @return  @a __hi.
  493:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  494:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       virtual const char_type*
-GAS LISTING /tmp/ccTWFgxc.s 			page 10
+GAS LISTING /tmp/ccauqTp8.s 			page 10
 
 
  495:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       do_tolower(char_type* __lo, const char_type* __hi) const = 0;
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  549:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  codecvt for that.
  550:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  551:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __c  The char_type to convert.
-GAS LISTING /tmp/ccTWFgxc.s 			page 11
+GAS LISTING /tmp/ccauqTp8.s 			page 11
 
 
  552:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __dfault  Char to return if conversion fails.
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  606:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****     public:
  607:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       // Types:
  608:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       typedef _CharT			char_type;
-GAS LISTING /tmp/ccTWFgxc.s 			page 12
+GAS LISTING /tmp/ccauqTp8.s 			page 12
 
 
  609:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       typedef typename __ctype_abstract_base<_CharT>::mask mask;
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  663:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****   /**
  664:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****    *  @brief  The ctype<char> specialization.
  665:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****    *  @ingroup locales
-GAS LISTING /tmp/ccTWFgxc.s 			page 13
+GAS LISTING /tmp/ccauqTp8.s 			page 13
 
 
  666:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****    *
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  720:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __refs  Passed to the base facet class.
  721:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  722:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       explicit
-GAS LISTING /tmp/ccTWFgxc.s 			page 14
+GAS LISTING /tmp/ccauqTp8.s 			page 14
 
 
  723:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       ctype(__c_locale __cloc, const mask* __table = 0, bool __del = false,
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  777:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  778:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       inline const char*
  779:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       scan_not(mask __m, const char* __lo, const char* __hi) const;
-GAS LISTING /tmp/ccTWFgxc.s 			page 15
+GAS LISTING /tmp/ccauqTp8.s 			page 15
 
 
  780:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  834:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  if possible.  Other chars remain untouched.
  835:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  836:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  tolower() acts as if it returns ctype<char>:: do_tolower(__lo, __hi).
-GAS LISTING /tmp/ccTWFgxc.s 			page 16
+GAS LISTING /tmp/ccauqTp8.s 			page 16
 
 
  837:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  do_tolower() must always return the same result for the same input.
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  891:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       widen(const char* __lo, const char* __hi, char_type* __to) const
  892:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       {
  893:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 	if (_M_widen_ok == 1)
-GAS LISTING /tmp/ccTWFgxc.s 			page 17
+GAS LISTING /tmp/ccauqTp8.s 			page 17
 
 
  894:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 	  {
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  948:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __lo  Pointer to start of range.
  949:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __hi  Pointer to end of range.
  950:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __dfault  Char to use if conversion fails.
-GAS LISTING /tmp/ccTWFgxc.s 			page 18
+GAS LISTING /tmp/ccauqTp8.s 			page 18
 
 
  951:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __to  Pointer to the destination array.
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1005:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 
 1006:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       /**
 1007:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @brief  Convert array to uppercase.
-GAS LISTING /tmp/ccTWFgxc.s 			page 19
+GAS LISTING /tmp/ccauqTp8.s 			page 19
 
 
 1008:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1062:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
 1063:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  do_widen() is a hook for a derived facet to change the behavior of
 1064:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  widening.  do_widen() must always return the same result for the
-GAS LISTING /tmp/ccTWFgxc.s 			page 20
+GAS LISTING /tmp/ccauqTp8.s 			page 20
 
 
 1065:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  same input.
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   19:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** // You should have received a copy of the GNU General Public License and
   20:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** // a copy of the GCC Runtime Library Exception along with this program;
   21:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-GAS LISTING /tmp/ccTWFgxc.s 			page 21
+GAS LISTING /tmp/ccauqTp8.s 			page 21
 
 
   22:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** // <http://www.gnu.org/licenses/>.
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   76:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****    *                                        _M_length
   77:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****    *   [basic_string<char_type>]            _M_capacity
   78:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****    *   _M_dataplus                          _M_refcount
-GAS LISTING /tmp/ccTWFgxc.s 			page 22
+GAS LISTING /tmp/ccauqTp8.s 			page 22
 
 
   79:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****    *   _M_p ---------------->               unnamed array of char_type
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  133:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****       // _Rep: string representation
  134:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****       //   Invariants:
  135:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****       //   1. String really contains _M_length + 1 characters: due to 21.3.4
-GAS LISTING /tmp/ccTWFgxc.s 			page 23
+GAS LISTING /tmp/ccauqTp8.s 			page 23
 
 
  136:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****       //      must be kept null-terminated.
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  190:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 	_M_is_leaked() const _GLIBCXX_NOEXCEPT
  191:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****         { return this->_M_refcount < 0; }
  192:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 24
+GAS LISTING /tmp/ccauqTp8.s 			page 24
 
 
  193:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****         bool
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
    4:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** // This file is part of the GNU ISO C++ Library.  This library is free
    5:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** // software; you can redistribute it and/or modify it under the
    6:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** // terms of the GNU General Public License as published by the
-GAS LISTING /tmp/ccTWFgxc.s 			page 25
+GAS LISTING /tmp/ccauqTp8.s 			page 25
 
 
    7:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** // Free Software Foundation; either version 3, or (at your option)
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   61:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** #endif
   62:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h **** 
   63:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h ****   static inline _Atomic_word
-GAS LISTING /tmp/ccTWFgxc.s 			page 26
+GAS LISTING /tmp/ccauqTp8.s 			page 26
 
 
   64:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h ****   __exchange_and_add_single(_Atomic_word* __mem, int __val)
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   67:/opt/gcc/4.9.2/include/c++/4.9.2/ext/atomicity.h ****     _Atomic_word __result = *__mem;
   74              		.loc 3 67 0
   75 001a 8B4710   		movl	16(%rdi), %eax
-GAS LISTING /tmp/ccTWFgxc.s 			page 27
+GAS LISTING /tmp/ccauqTp8.s 			page 27
 
 
   76              	.LVL5:
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   17:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** // 3.1, as published by the Free Software Foundation.
   18:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
   19:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** // You should have received a copy of the GNU General Public License and
-GAS LISTING /tmp/ccTWFgxc.s 			page 28
+GAS LISTING /tmp/ccauqTp8.s 			page 28
 
 
   20:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** // a copy of the GCC Runtime Library Exception along with this program;
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   74:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    else
   75:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      __x = __c - __d;
   76:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  }
-GAS LISTING /tmp/ccTWFgxc.s 			page 29
+GAS LISTING /tmp/ccauqTp8.s 			page 29
 
 
   77:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	return __x;
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  131:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _UIntType, _UIntType __a, _UIntType __c, _UIntType __m>
  132:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     template<typename _Sseq>
  133:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typename std::enable_if<std::is_class<_Sseq>::value>::type
-GAS LISTING /tmp/ccTWFgxc.s 			page 30
+GAS LISTING /tmp/ccauqTp8.s 			page 30
 
 
  134:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       linear_congruential_engine<_UIntType, __a, __c, __m>::
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  188:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __is.flags(__flags);
  189:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       return __is;
  190:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
-GAS LISTING /tmp/ccTWFgxc.s 			page 31
+GAS LISTING /tmp/ccauqTp8.s 			page 31
 
 
  191:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  245:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 			    __s, __b, __t, __c, __l, __f>::tempering_u;
  246:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****    
  247:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _UIntType,
-GAS LISTING /tmp/ccTWFgxc.s 			page 32
+GAS LISTING /tmp/ccauqTp8.s 			page 32
 
 
  248:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   size_t __w, size_t __n, size_t __m, size_t __r,
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  302:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   size_t __w, size_t __n, size_t __m, size_t __r,
  303:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   _UIntType __a, size_t __u, _UIntType __d, size_t __s,
  304:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   _UIntType __b, size_t __t, _UIntType __c, size_t __l,
-GAS LISTING /tmp/ccTWFgxc.s 			page 33
+GAS LISTING /tmp/ccauqTp8.s 			page 33
 
 
  305:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   _UIntType __f>
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  359:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__q.generate(__arr + 0, __arr + __n * __k);
  360:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
  361:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	bool __zero = true;
-GAS LISTING /tmp/ccTWFgxc.s 			page 34
+GAS LISTING /tmp/ccauqTp8.s 			page 34
 
 
  362:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	for (size_t __i = 0; __i < state_size; ++__i)
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  416:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		       ^ ((__y & 0x01) ? __a : 0));
  417:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	}
  418:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 35
+GAS LISTING /tmp/ccauqTp8.s 			page 35
 
 
  419:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       _UIntType __y = ((_M_x[__n - 1] & __upper_mask)
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  473:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   _UIntType __b, size_t __t, _UIntType __c, size_t __l,
  474:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   _UIntType __f, typename _CharT, typename _Traits>
  475:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     std::basic_ostream<_CharT, _Traits>&
-GAS LISTING /tmp/ccTWFgxc.s 			page 36
+GAS LISTING /tmp/ccauqTp8.s 			page 36
 
 
  476:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
@@ -2158,7 +2158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  530:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
  531:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _UIntType, size_t __w, size_t __s, size_t __r>
  532:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     constexpr size_t
-GAS LISTING /tmp/ccTWFgxc.s 			page 37
+GAS LISTING /tmp/ccauqTp8.s 			page 37
 
 
  533:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     subtract_with_carry_engine<_UIntType, __w, __s, __r>::long_lag;
@@ -2218,7 +2218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  587:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      __detail::_Shift<_UIntType, __w>::__value>(__sum);
  588:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  }
  589:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	_M_carry = (_M_x[long_lag - 1] == 0) ? 1 : 0;
-GAS LISTING /tmp/ccTWFgxc.s 			page 38
+GAS LISTING /tmp/ccauqTp8.s 			page 38
 
 
  590:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	_M_p = 0;
@@ -2278,7 +2278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  644:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       for (size_t __i = 0; __i < __r; ++__i)
  645:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__os << __x._M_x[__i] << __space;
  646:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os << __x._M_carry << __space << __x._M_p;
-GAS LISTING /tmp/ccTWFgxc.s 			page 39
+GAS LISTING /tmp/ccauqTp8.s 			page 39
 
 
  647:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
@@ -2338,7 +2338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  701:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
  702:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       const discard_block_engine<_RandomNumberEngine,
  703:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       __p, __r>& __x)
-GAS LISTING /tmp/ccTWFgxc.s 			page 40
+GAS LISTING /tmp/ccauqTp8.s 			page 40
 
 
  704:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
@@ -2398,7 +2398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  758:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __ctype __s0, __s1, __y0, __y1;
  759:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
  760:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       for (size_t __i = 0; __i < 2; ++__i)
-GAS LISTING /tmp/ccTWFgxc.s 			page 41
+GAS LISTING /tmp/ccauqTp8.s 			page 41
 
 
  761:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	{
@@ -2458,7 +2458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  815:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     typename shuffle_order_engine<_RandomNumberEngine, __k>::result_type
  816:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     shuffle_order_engine<_RandomNumberEngine, __k>::
  817:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator()()
-GAS LISTING /tmp/ccTWFgxc.s 			page 42
+GAS LISTING /tmp/ccauqTp8.s 			page 42
 
 
  818:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
@@ -2518,7 +2518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  872:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
  873:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
  874:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _IntType>
-GAS LISTING /tmp/ccTWFgxc.s 			page 43
+GAS LISTING /tmp/ccauqTp8.s 			page 43
 
 
  875:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     template<typename _UniformRandomNumberGenerator>
@@ -2578,7 +2578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  929:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		__ret = __tmp + (__uctype(__urng()) - __urngmin);
  930:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      }
  931:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    while (__ret > __urange || __ret < __tmp);
-GAS LISTING /tmp/ccTWFgxc.s 			page 44
+GAS LISTING /tmp/ccauqTp8.s 			page 44
 
 
  932:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  }
@@ -2638,7 +2638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  986:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		    *__f++ = __ret / __scaling + __param.a();
  987:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		  }
  988:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      }
-GAS LISTING /tmp/ccTWFgxc.s 			page 45
+GAS LISTING /tmp/ccauqTp8.s 			page 45
 
 
  989:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  }
@@ -2698,7 +2698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1043:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.fill(__fill);
 1044:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       return __os;
 1045:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
-GAS LISTING /tmp/ccTWFgxc.s 			page 46
+GAS LISTING /tmp/ccauqTp8.s 			page 46
 
 
 1046:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
@@ -2758,7 +2758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1100:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1101:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os << __x.a() << __space << __x.b();
 1102:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 47
+GAS LISTING /tmp/ccauqTp8.s 			page 47
 
 
 1103:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.flags(__flags);
@@ -2818,7 +2818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1157:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const std::streamsize __precision = __os.precision();
 1158:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.flags(__ios_base::scientific | __ios_base::left);
 1159:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.fill(__os.widen(' '));
-GAS LISTING /tmp/ccTWFgxc.s 			page 48
+GAS LISTING /tmp/ccauqTp8.s 			page 48
 
 
 1160:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.precision(std::numeric_limits<double>::max_digits10);
@@ -2878,7 +2878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1214:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __aurng(__urng);
 1215:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1216:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	while (__f != __t)
-GAS LISTING /tmp/ccTWFgxc.s 			page 49
+GAS LISTING /tmp/ccauqTp8.s 			page 49
 
 
 1217:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  {
@@ -2938,7 +2938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1271:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1272:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   // This is Leger's algorithm, also in Devroye, Ch. X, Example 1.5.
 1273:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _IntType>
-GAS LISTING /tmp/ccTWFgxc.s 			page 50
+GAS LISTING /tmp/ccauqTp8.s 			page 50
 
 
 1274:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     template<typename _UniformRandomNumberGenerator>
@@ -2998,7 +2998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1328:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      _UniformRandomNumberGenerator& __urng,
 1329:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      const param_type& __p)
 1330:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       {
-GAS LISTING /tmp/ccTWFgxc.s 			page 51
+GAS LISTING /tmp/ccauqTp8.s 			page 51
 
 
 1331:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__glibcxx_function_requires(_ForwardIteratorConcept<_ForwardIterator>)
@@ -3058,7 +3058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1385:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1386:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __is.flags(__flags);
 1387:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       return __is;
-GAS LISTING /tmp/ccTWFgxc.s 			page 52
+GAS LISTING /tmp/ccauqTp8.s 			page 52
 
 
 1388:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
@@ -3118,7 +3118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1442:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  {
 1443:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    double __x;
 1444:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 53
+GAS LISTING /tmp/ccauqTp8.s 			page 53
 
 
 1445:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    // See comments above...
@@ -3178,7 +3178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1499:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		  {
 1500:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		    const double __v = -std::log(1.0 - __aurng());
 1501:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		    const double __y = __param._M_d
-GAS LISTING /tmp/ccTWFgxc.s 			page 54
+GAS LISTING /tmp/ccauqTp8.s 			page 54
 
 
 1502:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 				     + __v * __2cx / __param._M_d;
@@ -3238,7 +3238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1556:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1557:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const typename __ios_base::fmtflags __flags = __os.flags();
 1558:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const _CharT __fill = __os.fill();
-GAS LISTING /tmp/ccTWFgxc.s 			page 55
+GAS LISTING /tmp/ccauqTp8.s 			page 55
 
 
 1559:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const std::streamsize __precision = __os.precision();
@@ -3298,7 +3298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1613:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    std::sqrt(__np * __1p * std::log(32 * __np
 1614:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 					     / (81 * __pi_4 * __1p)));
 1615:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  _M_d1 = std::round(std::max(1.0, __d1x));
-GAS LISTING /tmp/ccTWFgxc.s 			page 56
+GAS LISTING /tmp/ccauqTp8.s 			page 56
 
 
 1616:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  const double __d2x =
@@ -3358,7 +3358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1670:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1671:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   /**
 1672:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****    * A rejection algorithm when t * p >= 8 and a simple waiting time
-GAS LISTING /tmp/ccTWFgxc.s 			page 57
+GAS LISTING /tmp/ccauqTp8.s 			page 57
 
 
 1673:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****    * method - the second in the referenced book - otherwise.
@@ -3418,7 +3418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1727:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		    __reject = __y >= __param._M_d1;
 1728:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		    if (!__reject)
 1729:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      {
-GAS LISTING /tmp/ccTWFgxc.s 			page 58
+GAS LISTING /tmp/ccauqTp8.s 			page 58
 
 
 1730:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 			const double __e = -std::log(1.0 - __aurng());
@@ -3478,7 +3478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1784:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1785:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    __x += __np + __naf;
 1786:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 59
+GAS LISTING /tmp/ccauqTp8.s 			page 59
 
 
 1787:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    const _IntType __z = _M_waiting(__urng, __t - _IntType(__x),
@@ -3538,7 +3538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1841:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _IntType,
 1842:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   typename _CharT, typename _Traits>
 1843:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     std::basic_istream<_CharT, _Traits>&
-GAS LISTING /tmp/ccTWFgxc.s 			page 60
+GAS LISTING /tmp/ccauqTp8.s 			page 60
 
 
 1844:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator>>(std::basic_istream<_CharT, _Traits>& __is,
@@ -3598,7 +3598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1898:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.fill(__fill);
 1899:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.precision(__precision);
 1900:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       return __os;
-GAS LISTING /tmp/ccTWFgxc.s 			page 61
+GAS LISTING /tmp/ccauqTp8.s 			page 61
 
 
 1901:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
@@ -3658,7 +3658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1955:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    while (__r2 > 1.0 || __r2 == 0.0);
 1956:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 1957:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    const result_type __mult = std::sqrt(-2 * std::log(__r2) / __r2);
-GAS LISTING /tmp/ccTWFgxc.s 			page 62
+GAS LISTING /tmp/ccauqTp8.s 			page 62
 
 
 1958:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    _M_saved = __x * __mult;
@@ -3718,7 +3718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2012:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    do
 2013:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      {
 2014:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		__x = result_type(2.0) * __aurng() - 1.0;
-GAS LISTING /tmp/ccTWFgxc.s 			page 63
+GAS LISTING /tmp/ccauqTp8.s 			page 63
 
 
 2015:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		__y = result_type(2.0) * __aurng() - 1.0;
@@ -3778,7 +3778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2069:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.fill(__fill);
 2070:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.precision(__precision);
 2071:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       return __os;
-GAS LISTING /tmp/ccTWFgxc.s 			page 64
+GAS LISTING /tmp/ccauqTp8.s 			page 64
 
 
 2072:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
@@ -3838,7 +3838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2126:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.precision(std::numeric_limits<_RealType>::max_digits10);
 2127:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2128:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os << __x.m() << __space << __x.s()
-GAS LISTING /tmp/ccTWFgxc.s 			page 65
+GAS LISTING /tmp/ccauqTp8.s 			page 65
 
 
 2129:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	   << __space << __x._M_nd;
@@ -3898,7 +3898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2183:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       }
 2184:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2185:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType, typename _CharT, typename _Traits>
-GAS LISTING /tmp/ccTWFgxc.s 			page 66
+GAS LISTING /tmp/ccauqTp8.s 			page 66
 
 
 2186:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     std::basic_ostream<_CharT, _Traits>&
@@ -3958,7 +3958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2240:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	do
 2241:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __u = __aurng();
 2242:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	while (__u == 0.5);
-GAS LISTING /tmp/ccTWFgxc.s 			page 67
+GAS LISTING /tmp/ccauqTp8.s 			page 67
 
 
 2243:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
@@ -4018,7 +4018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2297:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     std::basic_istream<_CharT, _Traits>&
 2298:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator>>(std::basic_istream<_CharT, _Traits>& __is,
 2299:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       cauchy_distribution<_RealType>& __x)
-GAS LISTING /tmp/ccTWFgxc.s 			page 68
+GAS LISTING /tmp/ccauqTp8.s 			page 68
 
 
 2300:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
@@ -4078,7 +4078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2354:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef std::basic_ostream<_CharT, _Traits>  __ostream_type;
 2355:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef typename __ostream_type::ios_base    __ios_base;
 2356:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 69
+GAS LISTING /tmp/ccauqTp8.s 			page 69
 
 
 2357:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const typename __ios_base::fmtflags __flags = __os.flags();
@@ -4138,7 +4138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2411:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       void
 2412:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       std::student_t_distribution<_RealType>::
 2413:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __generate_impl(_ForwardIterator __f, _ForwardIterator __t,
-GAS LISTING /tmp/ccTWFgxc.s 			page 70
+GAS LISTING /tmp/ccauqTp8.s 			page 70
 
 
 2414:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		      _UniformRandomNumberGenerator& __urng,
@@ -4198,7 +4198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2468:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType>
 2469:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     void
 2470:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     gamma_distribution<_RealType>::param_type::
-GAS LISTING /tmp/ccTWFgxc.s 			page 71
+GAS LISTING /tmp/ccauqTp8.s 			page 71
 
 
 2471:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     _M_initialize()
@@ -4258,7 +4258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2525:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       }
 2526:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2527:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType>
-GAS LISTING /tmp/ccTWFgxc.s 			page 72
+GAS LISTING /tmp/ccauqTp8.s 			page 72
 
 
 2528:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     template<typename _ForwardIterator,
@@ -4318,7 +4318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2582:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 					  * (1.0 - __v + std::log(__v)))));
 2583:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2584:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      do
-GAS LISTING /tmp/ccTWFgxc.s 			page 73
+GAS LISTING /tmp/ccauqTp8.s 			page 73
 
 
 2585:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		__u = __aurng();
@@ -4378,7 +4378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2639:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _RealType>
 2640:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     template<typename _UniformRandomNumberGenerator>
 2641:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typename weibull_distribution<_RealType>::result_type
-GAS LISTING /tmp/ccTWFgxc.s 			page 74
+GAS LISTING /tmp/ccauqTp8.s 			page 74
 
 
 2642:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       weibull_distribution<_RealType>::
@@ -4438,7 +4438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2696:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     std::basic_istream<_CharT, _Traits>&
 2697:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator>>(std::basic_istream<_CharT, _Traits>& __is,
 2698:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       weibull_distribution<_RealType>& __x)
-GAS LISTING /tmp/ccTWFgxc.s 			page 75
+GAS LISTING /tmp/ccauqTp8.s 			page 75
 
 
 2699:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
@@ -4498,7 +4498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2753:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef typename __ostream_type::ios_base    __ios_base;
 2754:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 2755:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const typename __ios_base::fmtflags __flags = __os.flags();
-GAS LISTING /tmp/ccTWFgxc.s 			page 76
+GAS LISTING /tmp/ccauqTp8.s 			page 76
 
 
 2756:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       const _CharT __fill = __os.fill();
@@ -4558,7 +4558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2810:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       std::partial_sum(_M_prob.begin(), _M_prob.end(),
 2811:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		       std::back_inserter(_M_cp));
 2812:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       // Make sure the last cumulative probability is one.
-GAS LISTING /tmp/ccTWFgxc.s 			page 77
+GAS LISTING /tmp/ccauqTp8.s 			page 77
 
 
 2813:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       _M_cp[_M_cp.size() - 1] = 1.0;
@@ -4618,7 +4618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2867:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    return;
 2868:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  }
 2869:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 78
+GAS LISTING /tmp/ccauqTp8.s 			page 78
 
 
 2870:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	__detail::_Adaptor<_UniformRandomNumberGenerator, double>
@@ -4678,7 +4678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2924:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       std::vector<double> __prob_vec;
 2925:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __prob_vec.reserve(__n);
 2926:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       for (; __n != 0; --__n)
-GAS LISTING /tmp/ccTWFgxc.s 			page 79
+GAS LISTING /tmp/ccauqTp8.s 			page 79
 
 
 2927:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	{
@@ -4738,7 +4738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2981:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	if (__bbegin != __bend)
 2982:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  {
 2983:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    for (;;)
-GAS LISTING /tmp/ccTWFgxc.s 			page 80
+GAS LISTING /tmp/ccauqTp8.s 			page 80
 
 
 2984:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	      {
@@ -4798,7 +4798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 3038:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       piecewise_constant_distribution<_RealType>::
 3039:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       operator()(_UniformRandomNumberGenerator& __urng,
 3040:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		 const param_type& __param)
-GAS LISTING /tmp/ccTWFgxc.s 			page 81
+GAS LISTING /tmp/ccauqTp8.s 			page 81
 
 
 3041:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       {
@@ -4858,7 +4858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 3095:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
 3096:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	       const piecewise_constant_distribution<_RealType>& __x)
 3097:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
-GAS LISTING /tmp/ccTWFgxc.s 			page 82
+GAS LISTING /tmp/ccauqTp8.s 			page 82
 
 
 3098:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       typedef std::basic_ostream<_CharT, _Traits>  __ostream_type;
@@ -4918,7 +4918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 3152:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  double __den;
 3153:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __is >> __den;
 3154:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __den_vec.push_back(__den);
-GAS LISTING /tmp/ccTWFgxc.s 			page 83
+GAS LISTING /tmp/ccauqTp8.s 			page 83
 
 
 3155:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	}
@@ -4978,7 +4978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 3209:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		 _InputIteratorW __wbegin)
 3210:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       : _M_int(), _M_den(), _M_cp(), _M_m()
 3211:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       {
-GAS LISTING /tmp/ccTWFgxc.s 			page 84
+GAS LISTING /tmp/ccauqTp8.s 			page 84
 
 
 3212:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	for (; __bbegin != __bend; ++__bbegin, ++__wbegin)
@@ -5038,7 +5038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 3266:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __aurng(__urng);
 3267:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 3268:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	const double __p = __aurng();
-GAS LISTING /tmp/ccTWFgxc.s 			page 85
+GAS LISTING /tmp/ccauqTp8.s 			page 85
 
 
 3269:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	if (__param._M_cp.empty())
@@ -5098,7 +5098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 3323:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os.precision(std::numeric_limits<_RealType>::max_digits10);
 3324:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 3325:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       std::vector<_RealType> __int = __x.intervals();
-GAS LISTING /tmp/ccTWFgxc.s 			page 86
+GAS LISTING /tmp/ccauqTp8.s 			page 86
 
 
 3326:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __os << __int.size() - 1;
@@ -5158,7 +5158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 3380:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 
 3381:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****   template<typename _IntType>
 3382:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     seed_seq::seed_seq(std::initializer_list<_IntType> __il)
-GAS LISTING /tmp/ccTWFgxc.s 			page 87
+GAS LISTING /tmp/ccauqTp8.s 			page 87
 
 
 3383:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     {
@@ -5218,7 +5218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 3437:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	           __detail::_Shift<_Type, 32>::__value>(__r2);
 3438:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __begin[(__k + __p) % __n] += __r1;
 3439:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __begin[(__k + __q) % __n] += __r2;
-GAS LISTING /tmp/ccTWFgxc.s 			page 88
+GAS LISTING /tmp/ccauqTp8.s 			page 88
 
 
 3440:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __begin[__k % __n] = __r2;
@@ -5278,7 +5278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  129 0030 4831C2   		xorq	%rax, %rdx
  130              	.LVL10:
  464:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       __z ^= (__z << __s) & __b;
-GAS LISTING /tmp/ccTWFgxc.s 			page 89
+GAS LISTING /tmp/ccauqTp8.s 			page 89
 
 
  131              		.loc 4 464 0
@@ -5338,7 +5338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  160 006e F30F5905 		mulss	.LC3(%rip), %xmm0
  160      00000000 
  161              	.LBE1404:
-GAS LISTING /tmp/ccTWFgxc.s 			page 90
+GAS LISTING /tmp/ccauqTp8.s 			page 90
 
 
 3483:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****     }
@@ -5398,7 +5398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  205 00d8 48D1E8   		shrq	%rax
  206 00db 4883C108 		addq	$8, %rcx
  207 00df 4831F0   		xorq	%rsi, %rax
-GAS LISTING /tmp/ccTWFgxc.s 			page 91
+GAS LISTING /tmp/ccauqTp8.s 			page 91
 
 
  208 00e2 488941F0 		movq	%rax, -16(%rcx)
@@ -5458,7 +5458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  422:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       _M_x[__n - 1] = (_M_x[__m - 1] ^ (__y >> 1)
  249              		.loc 4 422 0
  250 014d BEDFB008 		movl	$2567483615, %esi
-GAS LISTING /tmp/ccTWFgxc.s 			page 92
+GAS LISTING /tmp/ccauqTp8.s 			page 92
 
 
  250      99
@@ -5518,7 +5518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  289      45494748 
  289      54205B52 
  289      41444955 
-GAS LISTING /tmp/ccTWFgxc.s 			page 93
+GAS LISTING /tmp/ccauqTp8.s 			page 93
 
 
  290              	.LC9:
@@ -5578,7 +5578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  312              	.LC20:
  313 00e1 42724247 		.string	"BrBG_mixed_exp.png"
  313      5F6D6978 
-GAS LISTING /tmp/ccTWFgxc.s 			page 94
+GAS LISTING /tmp/ccauqTp8.s 			page 94
 
 
  313      65645F65 
@@ -5638,7 +5638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  333 018a 476E4275 		.string	"GnBu_soft.png"
  333      5F736F66 
  333      742E706E 
-GAS LISTING /tmp/ccTWFgxc.s 			page 95
+GAS LISTING /tmp/ccauqTp8.s 			page 95
 
 
  333      6700
@@ -5698,7 +5698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  353      7865645F 
  353      6578702E 
  353      706E6700 
-GAS LISTING /tmp/ccTWFgxc.s 			page 96
+GAS LISTING /tmp/ccauqTp8.s 			page 96
 
 
  354              	.LC41:
@@ -5758,7 +5758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  373      5F736F66 
  373      742E706E 
  373      6700
-GAS LISTING /tmp/ccTWFgxc.s 			page 97
+GAS LISTING /tmp/ccauqTp8.s 			page 97
 
 
  374              	.LC51:
@@ -5818,7 +5818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  393      5F657870 
  393      2E706E67 
  394              	.LC61:
-GAS LISTING /tmp/ccTWFgxc.s 			page 98
+GAS LISTING /tmp/ccauqTp8.s 			page 98
 
 
  395 03a8 50754275 		.string	"PuBu_discrete.png"
@@ -5878,7 +5878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  414              	.LC71:
  415 044c 50755264 		.string	"PuRd_mixed.png"
  415      5F6D6978 
-GAS LISTING /tmp/ccTWFgxc.s 			page 99
+GAS LISTING /tmp/ccauqTp8.s 			page 99
 
 
  415      65642E70 
@@ -5938,7 +5938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  434              	.LC81:
  435 04fe 52644779 		.string	"RdGy_discrete.png"
  435      5F646973 
-GAS LISTING /tmp/ccTWFgxc.s 			page 100
+GAS LISTING /tmp/ccauqTp8.s 			page 100
 
 
  435      63726574 
@@ -5998,7 +5998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  455      42755F6D 
  455      69786564 
  455      2E706E67 
-GAS LISTING /tmp/ccTWFgxc.s 			page 101
+GAS LISTING /tmp/ccauqTp8.s 			page 101
 
 
  455      00
@@ -6058,7 +6058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  475      7472616C 
  475      5F646973 
  475      63726574 
-GAS LISTING /tmp/ccTWFgxc.s 			page 102
+GAS LISTING /tmp/ccauqTp8.s 			page 102
 
 
  475      652E706E 
@@ -6118,7 +6118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  495 0714 596C476E 		.string	"YlGn_mixed.png"
  495      5F6D6978 
  495      65642E70 
-GAS LISTING /tmp/ccTWFgxc.s 			page 103
+GAS LISTING /tmp/ccauqTp8.s 			page 103
 
 
  495      6E6700
@@ -6178,7 +6178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  515 07ca 64656661 		.string	"default"
  515      756C7400 
  516              	.LC127:
-GAS LISTING /tmp/ccTWFgxc.s 			page 104
+GAS LISTING /tmp/ccauqTp8.s 			page 104
 
 
  517 07d2 72656E64 		.string	"rendering "
@@ -6238,7 +6238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   34:examples/show_colorschemes.cpp **** #include "colorschemes/gray.h"
   35:examples/show_colorschemes.cpp **** #include "colorschemes/Blues.h"
   36:examples/show_colorschemes.cpp **** #include "colorschemes/BrBG.h"
-GAS LISTING /tmp/ccTWFgxc.s 			page 105
+GAS LISTING /tmp/ccauqTp8.s 			page 105
 
 
   37:examples/show_colorschemes.cpp **** #include "colorschemes/BuGn.h"
@@ -6298,7 +6298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  554 000b 55       		pushq	%rbp
  555              		.cfi_def_cfa_offset 48
  556              		.cfi_offset 6, -48
-GAS LISTING /tmp/ccTWFgxc.s 			page 106
+GAS LISTING /tmp/ccauqTp8.s 			page 106
 
 
  557 000c 53       		pushq	%rbx
@@ -6358,7 +6358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   37:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** #include <ios>
   38:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** #include <bits/ostream_insert.h>
   39:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 107
+GAS LISTING /tmp/ccauqTp8.s 			page 107
 
 
   40:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** namespace std _GLIBCXX_VISIBILITY(default)
@@ -6418,7 +6418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   94:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       /// Safe prefix/suffix operations.
   95:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       class sentry;
   96:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       friend class sentry;
-GAS LISTING /tmp/ccTWFgxc.s 			page 108
+GAS LISTING /tmp/ccauqTp8.s 			page 108
 
 
   97:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
@@ -6478,7 +6478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  151:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  ios_base::failure to be thrown.  The original exception will then
  152:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  be rethrown.
  153:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       */
-GAS LISTING /tmp/ccTWFgxc.s 			page 109
+GAS LISTING /tmp/ccauqTp8.s 			page 109
 
 
  154:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
@@ -6538,7 +6538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  208:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
  209:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       //@{
  210:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       /**
-GAS LISTING /tmp/ccTWFgxc.s 			page 110
+GAS LISTING /tmp/ccauqTp8.s 			page 110
 
 
  211:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @brief  Floating point arithmetic inserters
@@ -6598,7 +6598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  265:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *
  266:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  If the function inserts no characters, failbit is set.
  267:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       */
-GAS LISTING /tmp/ccTWFgxc.s 			page 111
+GAS LISTING /tmp/ccauqTp8.s 			page 111
 
 
  268:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       __ostream_type&
@@ -6658,7 +6658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  322:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *
  323:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  Characters are copied from @p __s and inserted into the stream until
  324:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  one of the following happens:
-GAS LISTING /tmp/ccTWFgxc.s 			page 112
+GAS LISTING /tmp/ccauqTp8.s 			page 112
 
 
  325:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *
@@ -6718,7 +6718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  379:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        __ostream_type&
  380:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       seekp(off_type, ios_base::seekdir);
  381:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 113
+GAS LISTING /tmp/ccauqTp8.s 			page 113
 
 
  382:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     protected:
@@ -6778,7 +6778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  436:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       }
  437:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
  438:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       /**
-GAS LISTING /tmp/ccTWFgxc.s 			page 114
+GAS LISTING /tmp/ccauqTp8.s 			page 114
 
 
  439:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @brief  Quick status checking.
@@ -6838,7 +6838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  493:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     { return (__out << static_cast<char>(__c)); }
  494:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****   //@}
  495:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 115
+GAS LISTING /tmp/ccauqTp8.s 			page 115
 
 
  496:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****   //@{
@@ -6898,7 +6898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  583              	.LBE1417:
  584              	.LBB1419:
  585              	.LBB1420:
-GAS LISTING /tmp/ccTWFgxc.s 			page 116
+GAS LISTING /tmp/ccauqTp8.s 			page 116
 
 
  113:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 	return __pf(*this);
@@ -6958,7 +6958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  626 0082 4889EF   		movq	%rbp, %rdi
  627 0085 E8000000 		call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
  627      00
-GAS LISTING /tmp/ccTWFgxc.s 			page 117
+GAS LISTING /tmp/ccauqTp8.s 			page 117
 
 
  628              	.LVL35:
@@ -7018,7 +7018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  102:examples/show_colorschemes.cpp ****         make_pair(heatmap_cs_GnBu_mixed_exp,"GnBu_mixed_exp.png"),
  103:examples/show_colorschemes.cpp ****         make_pair(heatmap_cs_Greens_discrete, "Greens_discrete.png"),
  104:examples/show_colorschemes.cpp ****         make_pair(heatmap_cs_Greens_soft,     "Greens_soft.png"),
-GAS LISTING /tmp/ccTWFgxc.s 			page 118
+GAS LISTING /tmp/ccauqTp8.s 			page 118
 
 
  105:examples/show_colorschemes.cpp ****         make_pair(heatmap_cs_Greens_mixed,    "Greens_mixed.png"),
@@ -7078,7 +7078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  159:examples/show_colorschemes.cpp ****         make_pair(heatmap_cs_RdYlBu_discrete, "RdYlBu_discrete.png"),
  160:examples/show_colorschemes.cpp ****         make_pair(heatmap_cs_RdYlBu_soft,     "RdYlBu_soft.png"),
  161:examples/show_colorschemes.cpp ****         make_pair(heatmap_cs_RdYlBu_mixed,    "RdYlBu_mixed.png"),
-GAS LISTING /tmp/ccTWFgxc.s 			page 119
+GAS LISTING /tmp/ccauqTp8.s 			page 119
 
 
  162:examples/show_colorschemes.cpp ****         make_pair(heatmap_cs_RdYlBu_mixed_exp,"RdYlBu_mixed_exp.png"),
@@ -7138,7 +7138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  216:examples/show_colorschemes.cpp ****         cout << "rendering " << p.second << endl;
  217:examples/show_colorschemes.cpp ****         heatmap_render_to(hm, p.first, &image[0]);
  218:examples/show_colorschemes.cpp **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 120
+GAS LISTING /tmp/ccauqTp8.s 			page 120
 
 
  219:examples/show_colorschemes.cpp ****         if(unsigned error = lodepng::encode(p.second, image, w, h)) {
@@ -7198,7 +7198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   21:/usr/include/stdlib.h **** 
   22:/usr/include/stdlib.h **** #ifndef	_STDLIB_H
   23:/usr/include/stdlib.h **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 121
+GAS LISTING /tmp/ccauqTp8.s 			page 121
 
 
   24:/usr/include/stdlib.h **** #include <features.h>
@@ -7258,7 +7258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   78:/usr/include/stdlib.h **** #  define __WAIT_STATUS		int *
   79:/usr/include/stdlib.h **** #  define __WAIT_STATUS_DEFN	int *
   80:/usr/include/stdlib.h **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 122
+GAS LISTING /tmp/ccauqTp8.s 			page 122
 
 
   81:/usr/include/stdlib.h **** # endif /* Use BSD.  */
@@ -7318,7 +7318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  135:/usr/include/stdlib.h **** 
  136:/usr/include/stdlib.h **** 
  137:/usr/include/stdlib.h **** /* Maximum length of a multibyte character in the current locale.  */
-GAS LISTING /tmp/ccTWFgxc.s 			page 123
+GAS LISTING /tmp/ccauqTp8.s 			page 123
 
 
  138:/usr/include/stdlib.h **** #define	MB_CUR_MAX	(__ctype_get_mb_cur_max ())
@@ -7378,7 +7378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  192:/usr/include/stdlib.h **** #if defined __GLIBC_HAVE_LONG_LONG && defined __USE_BSD
  193:/usr/include/stdlib.h **** /* Convert a string to a quadword integer.  */
  194:/usr/include/stdlib.h **** __extension__
-GAS LISTING /tmp/ccTWFgxc.s 			page 124
+GAS LISTING /tmp/ccauqTp8.s 			page 124
 
 
  195:/usr/include/stdlib.h **** extern long long int strtoq (__const char *__restrict __nptr,
@@ -7438,7 +7438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  249:/usr/include/stdlib.h **** extern long long int strtoll_l (__const char *__restrict __nptr,
  250:/usr/include/stdlib.h **** 				char **__restrict __endptr, int __base,
  251:/usr/include/stdlib.h **** 				__locale_t __loc)
-GAS LISTING /tmp/ccTWFgxc.s 			page 125
+GAS LISTING /tmp/ccauqTp8.s 			page 125
 
 
  252:/usr/include/stdlib.h ****      __THROW __nonnull ((1, 4)) __wur;
@@ -7498,7 +7498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  687              	.LBB1433:
  688              		.loc 7 286 0
  689 00ce 31F6     		xorl	%esi, %esi
-GAS LISTING /tmp/ccTWFgxc.s 			page 126
+GAS LISTING /tmp/ccauqTp8.s 			page 126
 
 
  690 00d0 BA0A0000 		movl	$10, %edx
@@ -7558,7 +7558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  729 0127 488D0500 		leaq	.LC9(%rip), %rax
  729      000000
  730 012e 48898424 		movq	%rax, 168(%rsp)
-GAS LISTING /tmp/ccTWFgxc.s 			page 127
+GAS LISTING /tmp/ccauqTp8.s 			page 127
 
 
  730      A8000000 
@@ -7618,7 +7618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  763 01e2 488B00   		movq	(%rax), %rax
  764 01e5 48898424 		movq	%rax, 256(%rsp)
  764      00010000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 128
+GAS LISTING /tmp/ccauqTp8.s 			page 128
 
 
  765 01ed 488D0500 		leaq	.LC15(%rip), %rax
@@ -7678,7 +7678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  797              	.LVL61:
  798 02a1 488B0500 		movq	heatmap_cs_BuGn_discrete@GOTPCREL(%rip), %rax
  798      000000
-GAS LISTING /tmp/ccTWFgxc.s 			page 129
+GAS LISTING /tmp/ccauqTp8.s 			page 129
 
 
  799 02a8 488B00   		movq	(%rax), %rax
@@ -7738,7 +7738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  831      000000
  832 035f 48898424 		movq	%rax, 440(%rsp)
  832      B8010000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 130
+GAS LISTING /tmp/ccauqTp8.s 			page 130
 
 
  833              	.LVL67:
@@ -7798,7 +7798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  866 0416 48898424 		movq	%rax, 528(%rsp)
  866      10020000 
  867 041e 488D0500 		leaq	.LC32(%rip), %rax
-GAS LISTING /tmp/ccTWFgxc.s 			page 131
+GAS LISTING /tmp/ccauqTp8.s 			page 131
 
 
  867      000000
@@ -7858,7 +7858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  900 04d2 488B0500 		movq	heatmap_cs_Greys_soft@GOTPCREL(%rip), %rax
  900      000000
  901 04d9 488B00   		movq	(%rax), %rax
-GAS LISTING /tmp/ccTWFgxc.s 			page 132
+GAS LISTING /tmp/ccauqTp8.s 			page 132
 
 
  902 04dc 48898424 		movq	%rax, 624(%rsp)
@@ -7918,7 +7918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  934 0590 48898424 		movq	%rax, 712(%rsp)
  934      C8020000 
  935              	.LVL84:
-GAS LISTING /tmp/ccTWFgxc.s 			page 133
+GAS LISTING /tmp/ccauqTp8.s 			page 133
 
 
  936 0598 488B0500 		movq	heatmap_cs_Oranges_mixed_exp@GOTPCREL(%rip), %rax
@@ -7978,7 +7978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  968      20030000 
  969 064f 488D0500 		leaq	.LC49(%rip), %rax
  969      000000
-GAS LISTING /tmp/ccTWFgxc.s 			page 134
+GAS LISTING /tmp/ccauqTp8.s 			page 134
 
 
  970 0656 48898424 		movq	%rax, 808(%rsp)
@@ -8038,7 +8038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1002      000000
  1003 070a 488B00   		movq	(%rax), %rax
  1004 070d 48898424 		movq	%rax, 896(%rsp)
-GAS LISTING /tmp/ccTWFgxc.s 			page 135
+GAS LISTING /tmp/ccauqTp8.s 			page 135
 
 
  1004      80030000 
@@ -8098,7 +8098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1036      D8030000 
  1037              	.LVL101:
  1038 07c9 488B0500 		movq	heatmap_cs_PuBu_discrete@GOTPCREL(%rip), %rax
-GAS LISTING /tmp/ccTWFgxc.s 			page 136
+GAS LISTING /tmp/ccauqTp8.s 			page 136
 
 
  1038      000000
@@ -8158,7 +8158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1071 0880 488D0500 		leaq	.LC66(%rip), %rax
  1071      000000
  1072 0887 48898424 		movq	%rax, 1080(%rsp)
-GAS LISTING /tmp/ccTWFgxc.s 			page 137
+GAS LISTING /tmp/ccauqTp8.s 			page 137
 
 
  1072      38040000 
@@ -8218,7 +8218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1105 093b 488B00   		movq	(%rax), %rax
  1106 093e 48898424 		movq	%rax, 1168(%rsp)
  1106      90040000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 138
+GAS LISTING /tmp/ccauqTp8.s 			page 138
 
 
  1107 0946 488D0500 		leaq	.LC72(%rip), %rax
@@ -8278,7 +8278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1139              	.LVL118:
  1140 09fa 488B0500 		movq	heatmap_cs_RdBu_soft@GOTPCREL(%rip), %rax
  1140      000000
-GAS LISTING /tmp/ccTWFgxc.s 			page 139
+GAS LISTING /tmp/ccauqTp8.s 			page 139
 
 
  1141 0a01 488B00   		movq	(%rax), %rax
@@ -8338,7 +8338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1173      000000
  1174 0ab8 48898424 		movq	%rax, 1352(%rsp)
  1174      48050000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 140
+GAS LISTING /tmp/ccauqTp8.s 			page 140
 
 
  1175              	.LVL124:
@@ -8398,7 +8398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1208 0b6f 48898424 		movq	%rax, 1440(%rsp)
  1208      A0050000 
  1209 0b77 488D0500 		leaq	.LC89(%rip), %rax
-GAS LISTING /tmp/ccTWFgxc.s 			page 141
+GAS LISTING /tmp/ccauqTp8.s 			page 141
 
 
  1209      000000
@@ -8458,7 +8458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1242 0c2b 488B0500 		movq	heatmap_cs_RdYlGn_mixed@GOTPCREL(%rip), %rax
  1242      000000
  1243 0c32 488B00   		movq	(%rax), %rax
-GAS LISTING /tmp/ccTWFgxc.s 			page 142
+GAS LISTING /tmp/ccauqTp8.s 			page 142
 
 
  1244 0c35 48898424 		movq	%rax, 1536(%rsp)
@@ -8518,7 +8518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1276 0ce9 48898424 		movq	%rax, 1624(%rsp)
  1276      58060000 
  1277              	.LVL141:
-GAS LISTING /tmp/ccTWFgxc.s 			page 143
+GAS LISTING /tmp/ccauqTp8.s 			page 143
 
 
  1278 0cf1 488B0500 		movq	heatmap_cs_Spectral_discrete@GOTPCREL(%rip), %rax
@@ -8578,7 +8578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1310      B0060000 
  1311 0da8 488D0500 		leaq	.LC106(%rip), %rax
  1311      000000
-GAS LISTING /tmp/ccTWFgxc.s 			page 144
+GAS LISTING /tmp/ccauqTp8.s 			page 144
 
 
  1312 0daf 48898424 		movq	%rax, 1720(%rsp)
@@ -8638,7 +8638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1344      000000
  1345 0e63 488B00   		movq	(%rax), %rax
  1346 0e66 48898424 		movq	%rax, 1808(%rsp)
-GAS LISTING /tmp/ccTWFgxc.s 			page 145
+GAS LISTING /tmp/ccauqTp8.s 			page 145
 
 
  1346      10070000 
@@ -8698,7 +8698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1378              		.loc 5 192 0 discriminator 5
  1379 0f10 48898424 		movq	%rax, 1888(%rsp)
  1379      60070000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 146
+GAS LISTING /tmp/ccauqTp8.s 			page 146
 
 
  1380 0f18 488D0500 		leaq	.LC117(%rip), %rax
@@ -8758,7 +8758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1413 0fa2 4989C7   		movq	%rax, %r15
  1414              	.LVL162:
  196:examples/show_colorschemes.cpp ****     heatmap_stamp_t* stamp = heatmap_stamp_gen(r);
-GAS LISTING /tmp/ccTWFgxc.s 			page 147
+GAS LISTING /tmp/ccauqTp8.s 			page 147
 
 
  1415              		.loc 5 196 0 discriminator 5
@@ -8818,7 +8818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   29:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
   30:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** #ifndef _RANDOM_H
   31:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** #define _RANDOM_H 1
-GAS LISTING /tmp/ccTWFgxc.s 			page 148
+GAS LISTING /tmp/ccauqTp8.s 			page 148
 
 
   32:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
@@ -8878,7 +8878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   86:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	static_assert(__which < 0, /* needs to be dependent */
   87:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		      "sorry, would be too much trouble for a slow result");
   88:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       };
-GAS LISTING /tmp/ccTWFgxc.s 			page 149
+GAS LISTING /tmp/ccauqTp8.s 			page 149
 
 
   89:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
@@ -8938,7 +8938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  143:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	}
  144:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       };
  145:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 150
+GAS LISTING /tmp/ccauqTp8.s 			page 150
 
 
  146:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     template<typename _Tp, _Tp __m, _Tp __a = 1, _Tp __c = 0>
@@ -8998,7 +8998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  200:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
  201:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** _GLIBCXX_BEGIN_NAMESPACE_VERSION
  202:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 151
+GAS LISTING /tmp/ccauqTp8.s 			page 151
 
 
  203:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****   /**
@@ -9058,7 +9058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  257:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /** The modulus. */
  258:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static constexpr result_type modulus      = __m;
  259:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static constexpr result_type default_seed = 1u;
-GAS LISTING /tmp/ccTWFgxc.s 			page 152
+GAS LISTING /tmp/ccauqTp8.s 			page 152
 
 
  260:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
@@ -9118,7 +9118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  314:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
  315:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
  316:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Gets the largest possible value in the output range.
-GAS LISTING /tmp/ccTWFgxc.s 			page 153
+GAS LISTING /tmp/ccauqTp8.s 			page 153
 
 
  317:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
@@ -9178,7 +9178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  371:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		   __a1, __c1, __m1>& __lcr);
  372:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
  373:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
-GAS LISTING /tmp/ccTWFgxc.s 			page 154
+GAS LISTING /tmp/ccauqTp8.s 			page 154
 
 
  374:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Sets the state of the engine by reading its textual
@@ -9238,7 +9238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  428:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * Takuji Nishimura.
  429:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *
  430:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @tparam __w  Word size, the number of bits in each element of 
-GAS LISTING /tmp/ccTWFgxc.s 			page 155
+GAS LISTING /tmp/ccauqTp8.s 			page 155
 
 
  431:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *              the state vector.
@@ -9298,7 +9298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  485:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static constexpr size_t      state_size                = __n;
  486:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static constexpr size_t      shift_size                = __m;
  487:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static constexpr size_t      mask_bits                 = __r;
-GAS LISTING /tmp/ccTWFgxc.s 			page 156
+GAS LISTING /tmp/ccauqTp8.s 			page 156
 
 
  488:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       static constexpr result_type xor_mask                  = __a;
@@ -9358,7 +9358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  542:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       discard(unsigned long long __z);
  543:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
  544:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       result_type
-GAS LISTING /tmp/ccTWFgxc.s 			page 157
+GAS LISTING /tmp/ccauqTp8.s 			page 157
 
 
  545:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       operator()();
@@ -9418,7 +9418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  599:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
  600:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @returns The input stream with the state of @p __x extracted or in
  601:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * an error state.
-GAS LISTING /tmp/ccTWFgxc.s 			page 158
+GAS LISTING /tmp/ccauqTp8.s 			page 158
 
 
  602:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
@@ -9478,7 +9478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  656:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * numbers using:
  657:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @f[
  658:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *     x_{i}\leftarrow(x_{i - s} - x_{i - r} - carry_{i-1}) \bmod m 
-GAS LISTING /tmp/ccTWFgxc.s 			page 159
+GAS LISTING /tmp/ccauqTp8.s 			page 159
 
 
  659:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @f]
@@ -9538,7 +9538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  713:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * N1688[4.19] modifies this as follows.  If @p __value == 0,
  714:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * sets value to 19780503.  In any case, with a linear
  715:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * congruential generator lcg(i) having parameters @f$ m_{lcg} =
-GAS LISTING /tmp/ccTWFgxc.s 			page 160
+GAS LISTING /tmp/ccauqTp8.s 			page 160
 
 
  716:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * 2147483563, a_{lcg} = 40014, c_{lcg} = 0, and lcg(0) = value
@@ -9598,7 +9598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  770:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @param __rhs Another % subtract_with_carry_engine random number
  771:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *              generator object.
  772:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
-GAS LISTING /tmp/ccTWFgxc.s 			page 161
+GAS LISTING /tmp/ccauqTp8.s 			page 161
 
 
  773:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @returns true if the infinite sequences of generated values
@@ -9658,7 +9658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  827:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****   /**
  828:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @brief Compares two % subtract_with_carry_engine random number
  829:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *        generator objects of the same type for inequality.
-GAS LISTING /tmp/ccTWFgxc.s 			page 162
+GAS LISTING /tmp/ccauqTp8.s 			page 162
 
 
  830:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *
@@ -9718,7 +9718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  884:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       : _M_b(__rng), _M_n(0) { }
  885:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
  886:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
-GAS LISTING /tmp/ccTWFgxc.s 			page 163
+GAS LISTING /tmp/ccauqTp8.s 			page 163
 
 
  887:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Move constructs a %discard_block_engine engine.
@@ -9778,7 +9778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  941:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
  942:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
  943:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Reseeds the %discard_block_engine object with the given seed
-GAS LISTING /tmp/ccTWFgxc.s 			page 164
+GAS LISTING /tmp/ccauqTp8.s 			page 164
 
 
  944:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *        sequence.
@@ -9838,7 +9838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  998:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @param __rhs Another %discard_block_engine random number generator
  999:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *              object.
 1000:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
-GAS LISTING /tmp/ccTWFgxc.s 			page 165
+GAS LISTING /tmp/ccauqTp8.s 			page 165
 
 
 1001:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @returns true if the infinite sequences of generated values
@@ -9898,7 +9898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1055:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @param __rhs Another %discard_block_engine random number generator
 1056:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *              object.
 1057:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    *
-GAS LISTING /tmp/ccTWFgxc.s 			page 166
+GAS LISTING /tmp/ccauqTp8.s 			page 166
 
 
 1058:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @returns true if the infinite sequences of generated values
@@ -9958,7 +9958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1112:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       : _M_b(std::move(__rng)) { }
 1113:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 1114:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
-GAS LISTING /tmp/ccTWFgxc.s 			page 167
+GAS LISTING /tmp/ccauqTp8.s 			page 167
 
 
 1115:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Seed constructs a %independent_bits_engine engine.
@@ -10018,7 +10018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1169:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       base() const noexcept
 1170:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       { return _M_b; }
 1171:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 168
+GAS LISTING /tmp/ccauqTp8.s 			page 168
 
 
 1172:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
@@ -10078,7 +10078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1226:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *             engine.
 1227:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
 1228:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @returns The input stream with the state of @p __x extracted or in
-GAS LISTING /tmp/ccTWFgxc.s 			page 169
+GAS LISTING /tmp/ccauqTp8.s 			page 169
 
 
 1229:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *          an error state.
@@ -10138,7 +10138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1283:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       return __os;
 1284:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     }
 1285:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 170
+GAS LISTING /tmp/ccauqTp8.s 			page 170
 
 
 1286:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
@@ -10198,7 +10198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1340:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
 1341:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       explicit
 1342:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       shuffle_order_engine(result_type __s)
-GAS LISTING /tmp/ccTWFgxc.s 			page 171
+GAS LISTING /tmp/ccauqTp8.s 			page 171
 
 
 1343:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       : _M_b(__s)
@@ -10258,7 +10258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1397:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
 1398:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       const _RandomNumberEngine&
 1399:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       base() const noexcept
-GAS LISTING /tmp/ccTWFgxc.s 			page 172
+GAS LISTING /tmp/ccauqTp8.s 			page 172
 
 
 1400:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       { return _M_b; }
@@ -10318,7 +10318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1454:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
 1455:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @param __os An output stream.
 1456:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @param __x  A %shuffle_order_engine random number generator engine.
-GAS LISTING /tmp/ccTWFgxc.s 			page 173
+GAS LISTING /tmp/ccauqTp8.s 			page 173
 
 
 1457:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
@@ -10378,7 +10378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1511:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     operator!=(const std::shuffle_order_engine<_RandomNumberEngine,
 1512:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       __k>& __lhs,
 1513:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       const std::shuffle_order_engine<_RandomNumberEngine,
-GAS LISTING /tmp/ccTWFgxc.s 			page 174
+GAS LISTING /tmp/ccauqTp8.s 			page 174
 
 
 1514:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       __k>& __rhs)
@@ -10438,7 +10438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1568:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****   typedef shuffle_order_engine<minstd_rand0, 256> knuth_b;
 1569:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 1570:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****   typedef minstd_rand0 default_random_engine;
-GAS LISTING /tmp/ccTWFgxc.s 			page 175
+GAS LISTING /tmp/ccauqTp8.s 			page 175
 
 
 1571:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
@@ -10498,7 +10498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  265:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 
  266:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 	_CharT*
  267:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h **** 	_M_clone(const _Alloc&, size_type __res = 0);
-GAS LISTING /tmp/ccTWFgxc.s 			page 176
+GAS LISTING /tmp/ccauqTp8.s 			page 176
 
 
  268:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_string.h ****       };
@@ -10558,7 +10558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1466              	.LBB1448:
  1467              	.LBB1449:
 1590:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     }
-GAS LISTING /tmp/ccTWFgxc.s 			page 177
+GAS LISTING /tmp/ccauqTp8.s 			page 177
 
 
 1591:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
@@ -10618,7 +10618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  334:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc ****       for (size_t __i = 1; __i < state_size; ++__i)
  1488              		.loc 4 334 0
  1489 1008 BE010000 		movl	$1, %esi
-GAS LISTING /tmp/ccTWFgxc.s 			page 178
+GAS LISTING /tmp/ccauqTp8.s 			page 178
 
 
  1489      00
@@ -10678,7 +10678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  337:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	  __x ^= __x >> (__w - 2);
  1534              		.loc 4 337 0
  1535 1036 4831C8   		xorq	%rcx, %rax
-GAS LISTING /tmp/ccTWFgxc.s 			page 179
+GAS LISTING /tmp/ccauqTp8.s 			page 179
 
 
  1536              	.LVL175:
@@ -10738,7 +10738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1579 1070 48C78424 		movq	$624, 11952(%rsp)
  1579      B02E0000 
  1579      70020000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 180
+GAS LISTING /tmp/ccauqTp8.s 			page 180
 
 
  1580              	.LBE1477:
@@ -10798,7 +10798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1638:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     result_type _M_getval_pretr1();
 1639:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 1640:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     union
-GAS LISTING /tmp/ccTWFgxc.s 			page 181
+GAS LISTING /tmp/ccauqTp8.s 			page 181
 
 
 1641:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     {
@@ -10858,7 +10858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1695:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 1696:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	friend bool
 1697:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	operator==(const param_type& __p1, const param_type& __p2)
-GAS LISTING /tmp/ccTWFgxc.s 			page 182
+GAS LISTING /tmp/ccauqTp8.s 			page 182
 
 
 1698:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	{ return __p1._M_a == __p2._M_a && __p1._M_b == __p2._M_b; }
@@ -10918,7 +10918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1752:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Returns the inclusive lower bound of the distribution range.
 1753:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        */
 1754:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       result_type
-GAS LISTING /tmp/ccTWFgxc.s 			page 183
+GAS LISTING /tmp/ccauqTp8.s 			page 183
 
 
 1755:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       min() const
@@ -10978,7 +10978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1809:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     private:
 1810:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       template<typename _ForwardIterator,
 1811:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	       typename _UniformRandomNumberGenerator>
-GAS LISTING /tmp/ccTWFgxc.s 			page 184
+GAS LISTING /tmp/ccauqTp8.s 			page 184
 
 
 1812:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	void
@@ -11038,7 +11038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1866:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    */
 1867:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****   template<typename _RealType = double>
 1868:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     class uniform_real_distribution
-GAS LISTING /tmp/ccTWFgxc.s 			page 185
+GAS LISTING /tmp/ccauqTp8.s 			page 185
 
 
 1869:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     {
@@ -11098,7 +11098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1923:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 1924:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /**
 1925:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        * @brief Resets the distribution state.
-GAS LISTING /tmp/ccTWFgxc.s 			page 186
+GAS LISTING /tmp/ccauqTp8.s 			page 186
 
 
 1926:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****        *
@@ -11158,7 +11158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1980:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 		   const param_type& __p)
 1981:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	{
 1982:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	  __detail::_Adaptor<_UniformRandomNumberGenerator, result_type>
-GAS LISTING /tmp/ccTWFgxc.s 			page 187
+GAS LISTING /tmp/ccauqTp8.s 			page 187
 
 
 1983:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	    __aurng(__urng);
@@ -11218,7 +11218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2037:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****     { return !(__d1 == __d2); }
 2038:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 
 2039:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****   /**
-GAS LISTING /tmp/ccTWFgxc.s 			page 188
+GAS LISTING /tmp/ccauqTp8.s 			page 188
 
 
 2040:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****    * @brief Inserts a %uniform_real_distribution random number
@@ -11278,7 +11278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 2094:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       /** Parameter type. */
 2095:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       struct param_type
 2096:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h ****       {
-GAS LISTING /tmp/ccTWFgxc.s 			page 189
+GAS LISTING /tmp/ccauqTp8.s 			page 189
 
 
 2097:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.h **** 	typedef normal_distribution<_RealType> distribution_type;
@@ -11338,7 +11338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1620      2428
  1621 10ea F30F1144 		movss	%xmm0, 44(%rsp)
  1621      242C
-GAS LISTING /tmp/ccTWFgxc.s 			page 190
+GAS LISTING /tmp/ccauqTp8.s 			page 190
 
 
  1622              	.LVL182:
@@ -11398,7 +11398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1664              	.LVL186:
  1665              	.LBE1494:
  1666              	.LBE1495:
-GAS LISTING /tmp/ccTWFgxc.s 			page 191
+GAS LISTING /tmp/ccauqTp8.s 			page 191
 
 
 1953:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 		__y = result_type(2.0) * __aurng() - 1.0;
@@ -11458,7 +11458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   20:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** // a copy of the GCC Runtime Library Exception along with this program;
   21:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
   22:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** // <http://www.gnu.org/licenses/>.
-GAS LISTING /tmp/ccTWFgxc.s 			page 192
+GAS LISTING /tmp/ccauqTp8.s 			page 192
 
 
   23:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
@@ -11518,7 +11518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   77:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
   78:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
   79:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   inline _GLIBCXX_CONSTEXPR double
-GAS LISTING /tmp/ccTWFgxc.s 			page 193
+GAS LISTING /tmp/ccauqTp8.s 			page 193
 
 
   80:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   abs(double __x)
@@ -11578,7 +11578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  134:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
  135:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****                                     double>::__type
  136:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     asin(_Tp __x)
-GAS LISTING /tmp/ccTWFgxc.s 			page 194
+GAS LISTING /tmp/ccauqTp8.s 			page 194
 
 
  137:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     { return __builtin_asin(__x); }
@@ -11638,7 +11638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  191:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   template<typename _Tp>
  192:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     inline _GLIBCXX_CONSTEXPR
  193:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
-GAS LISTING /tmp/ccTWFgxc.s 			page 195
+GAS LISTING /tmp/ccauqTp8.s 			page 195
 
 
  194:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****                                     double>::__type
@@ -11698,7 +11698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  248:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   template<typename _Tp>
  249:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     inline _GLIBCXX_CONSTEXPR
  250:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
-GAS LISTING /tmp/ccTWFgxc.s 			page 196
+GAS LISTING /tmp/ccauqTp8.s 			page 196
 
 
  251:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****                                     double>::__type
@@ -11758,7 +11758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  305:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   template<typename _Tp, typename _Up>
  306:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     inline _GLIBCXX_CONSTEXPR
  307:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
-GAS LISTING /tmp/ccTWFgxc.s 			page 197
+GAS LISTING /tmp/ccauqTp8.s 			page 197
 
 
  308:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     fmod(_Tp __x, _Up __y)
@@ -11818,7 +11818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1696 1167 F30F1154 		movss	%xmm2, 8(%rsp)
  1696      2408
  1697              	.LVL189:
-GAS LISTING /tmp/ccTWFgxc.s 			page 198
+GAS LISTING /tmp/ccauqTp8.s 			page 198
 
 
  1698 116d F30F111C 		movss	%xmm3, (%rsp)
@@ -11878,7 +11878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  395:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   { return __builtin_modff(__x, __iptr); }
  396:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
  397:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   inline long double
-GAS LISTING /tmp/ccTWFgxc.s 			page 199
+GAS LISTING /tmp/ccauqTp8.s 			page 199
 
 
  398:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****   modf(long double __x, long double* __iptr)
@@ -11938,7 +11938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  452:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     inline _GLIBCXX_CONSTEXPR
  453:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
  454:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****                                     double>::__type
-GAS LISTING /tmp/ccTWFgxc.s 			page 200
+GAS LISTING /tmp/ccauqTp8.s 			page 200
 
 
  455:/opt/gcc/4.9.2/include/c++/4.9.2/cmath ****     sin(_Tp __x)
@@ -11998,7 +11998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1731 11a4 F30F59D0 		mulss	%xmm0, %xmm2
 1960:/opt/gcc/4.9.2/include/c++/4.9.2/bits/random.tcc **** 	    _M_saved_available = true;
  1732              		.loc 4 1960 0
-GAS LISTING /tmp/ccTWFgxc.s 			page 201
+GAS LISTING /tmp/ccauqTp8.s 			page 201
 
 
  1733 11a8 41BD0100 		movl	$1, %r13d
@@ -12058,7 +12058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1775              		.loc 4 1942 0
  1776 11cc 0F858603 		jne	.L86
  1776      0000
-GAS LISTING /tmp/ccTWFgxc.s 			page 202
+GAS LISTING /tmp/ccauqTp8.s 			page 202
 
 
  1777              	.LVL201:
@@ -12118,7 +12118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1817 120c 0F28C8   		movaps	%xmm0, %xmm1
  1818 120f F30F5C0D 		subss	.LC125(%rip), %xmm1
  1818      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 203
+GAS LISTING /tmp/ccauqTp8.s 			page 203
 
 
  1819              	.LVL205:
@@ -12178,7 +12178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1859              	.LVL211:
  1860              	.LBB1530:
  1861              	.LBB1528:
-GAS LISTING /tmp/ccTWFgxc.s 			page 204
+GAS LISTING /tmp/ccauqTp8.s 			page 204
 
 
  1862              		.loc 9 483 0
@@ -12238,7 +12238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1902              		.loc 5 204 0
  1903 12a3 F3480F2C 		cvttss2siq	%xmm1, %rsi
  1903      F1
-GAS LISTING /tmp/ccTWFgxc.s 			page 205
+GAS LISTING /tmp/ccauqTp8.s 			page 205
 
 
  1904 12a8 E8000000 		call	heatmap_add_point_with_stamp@PLT
@@ -12298,7 +12298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   31:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****  * provided that the above copyright notice appear in all copies and
   32:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****  * that both that copyright notice and this permission notice appear
   33:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****  * in supporting documentation.  Hewlett-Packard Company makes no
-GAS LISTING /tmp/ccTWFgxc.s 			page 206
+GAS LISTING /tmp/ccauqTp8.s 			page 206
 
 
   34:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****  * representations about the suitability of this software for any
@@ -12358,7 +12358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   88:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
   89:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
   90:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	: _Tp_alloc_type(__a), _M_start(0), _M_finish(0), _M_end_of_storage(0)
-GAS LISTING /tmp/ccTWFgxc.s 			page 207
+GAS LISTING /tmp/ccauqTp8.s 			page 207
 
 
   91:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	{ }
@@ -12418,7 +12418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  145:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       _Vector_base(_Vector_base&& __x, const allocator_type& __a)
  146:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       : _M_impl(__a)
  147:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       {
-GAS LISTING /tmp/ccTWFgxc.s 			page 208
+GAS LISTING /tmp/ccauqTp8.s 			page 208
 
 
  148:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	if (__x.get_allocator() == __a)
@@ -12478,7 +12478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  1949 12eb 4983FA13 		cmpq	$19, %r10
  1950 12ef 0F86DE03 		jbe	.L88
  1950      0000
-GAS LISTING /tmp/ccTWFgxc.s 			page 209
+GAS LISTING /tmp/ccauqTp8.s 			page 209
 
 
  1951 12f5 48C1E002 		salq	$2, %rax
@@ -12538,7 +12538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   91:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	: _Tp_alloc_type(__a), _M_start(0), _M_finish(0), _M_end_of_storage(0)
  1994              		.loc 10 91 0
  1995 134d 48C78424 		movq	$0, 128(%rsp)
-GAS LISTING /tmp/ccTWFgxc.s 			page 210
+GAS LISTING /tmp/ccauqTp8.s 			page 210
 
 
  1995      80000000 
@@ -12598,7 +12598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  175:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
  176:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	if (__p)
  177:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	  _Tr::deallocate(_M_impl, __p, __n);
-GAS LISTING /tmp/ccTWFgxc.s 			page 211
+GAS LISTING /tmp/ccauqTp8.s 			page 211
 
 
  178:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       }
@@ -12658,7 +12658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   27:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****  * Hewlett-Packard Company
   28:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****  *
   29:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****  * Permission to use, copy, modify, distribute and sell this software
-GAS LISTING /tmp/ccTWFgxc.s 			page 212
+GAS LISTING /tmp/ccauqTp8.s 			page 212
 
 
   30:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****  * and its documentation for any purpose is hereby granted without fee,
@@ -12718,7 +12718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   84:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****         static void
   85:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****         iter_swap(_ForwardIterator1 __a, _ForwardIterator2 __b)
   86:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****         {
-GAS LISTING /tmp/ccTWFgxc.s 			page 213
+GAS LISTING /tmp/ccauqTp8.s 			page 213
 
 
   87:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****           typedef typename iterator_traits<_ForwardIterator1>::value_type
@@ -12778,7 +12778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  141:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	_ReferenceType2;
  142:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       std::__iter_swap<__are_same<_ValueType1, _ValueType2>::__value
  143:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	&& __are_same<_ValueType1&, _ReferenceType1>::__value
-GAS LISTING /tmp/ccTWFgxc.s 			page 214
+GAS LISTING /tmp/ccauqTp8.s 			page 214
 
 
  144:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	&& __are_same<_ValueType2&, _ReferenceType2>::__value>::
@@ -12838,7 +12838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  198:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       if (__b < __a)
  199:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	return __b;
  200:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       return __a;
-GAS LISTING /tmp/ccTWFgxc.s 			page 215
+GAS LISTING /tmp/ccauqTp8.s 			page 215
 
 
  201:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     }
@@ -12898,7 +12898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  255:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  This will work on temporary expressions, since they are only evaluated
  256:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  once, unlike a preprocessor macro.
  257:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   */
-GAS LISTING /tmp/ccTWFgxc.s 			page 216
+GAS LISTING /tmp/ccauqTp8.s 			page 216
 
 
  258:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<typename _Tp, typename _Compare>
@@ -12958,7 +12958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  312:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     struct __copy_move<true, false, _Category>
  313:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     {
  314:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       template<typename _II, typename _OI>
-GAS LISTING /tmp/ccTWFgxc.s 			page 217
+GAS LISTING /tmp/ccauqTp8.s 			page 217
 
 
  315:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****         static _OI
@@ -13018,7 +13018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  369:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****         {
  370:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** #if __cplusplus >= 201103L
  371:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	  // trivial types can have deleted assignment
-GAS LISTING /tmp/ccTWFgxc.s 			page 218
+GAS LISTING /tmp/ccauqTp8.s 			page 218
 
 
  372:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	  static_assert( is_copy_assignable<_Tp>::value,
@@ -13078,7 +13078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  426:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 
  427:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<bool _IsMove, typename _II, typename _OI>
  428:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     inline _OI
-GAS LISTING /tmp/ccTWFgxc.s 			page 219
+GAS LISTING /tmp/ccauqTp8.s 			page 219
 
 
  429:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     __copy_move_a2(_II __first, _II __last, _OI __result)
@@ -13138,7 +13138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  483:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  Note that the end of the output range is permitted to be contained
  484:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  within [first,last).
  485:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   */
-GAS LISTING /tmp/ccTWFgxc.s 			page 220
+GAS LISTING /tmp/ccauqTp8.s 			page 220
 
 
  486:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<typename _II, typename _OI>
@@ -13198,7 +13198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  540:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	  typename iterator_traits<_BI1>::difference_type __n;
  541:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	  for (__n = __last - __first; __n > 0; --__n)
  542:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	    *--__result = *--__last;
-GAS LISTING /tmp/ccTWFgxc.s 			page 221
+GAS LISTING /tmp/ccauqTp8.s 			page 221
 
 
  543:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 	  return __result;
@@ -13258,7 +13258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  597:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 								 __result);
  598:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     }
  599:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 222
+GAS LISTING /tmp/ccauqTp8.s 			page 222
 
 
  600:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****   template<bool _IsMove, typename _BI1, typename _BI2>
@@ -13318,7 +13318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  654:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  range and works its way to the start, returning the start of the result.
  655:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  This inline function will boil down to a call to @c memmove whenever
  656:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  possible.  Failing that, if random access iterators are passed, then the
-GAS LISTING /tmp/ccTWFgxc.s 			page 223
+GAS LISTING /tmp/ccauqTp8.s 			page 223
 
 
  657:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****    *  loop count will be known (and therefore a candidate for compiler
@@ -13378,7 +13378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  711:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****     {
  712:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       const _Tp __tmp = __c;
  713:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_algobase.h ****       __builtin_memset(__first, static_cast<unsigned char>(__tmp),
-GAS LISTING /tmp/ccTWFgxc.s 			page 224
+GAS LISTING /tmp/ccauqTp8.s 			page 224
 
 
  2050              		.loc 11 714 0
@@ -13438,7 +13438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2099              	.LBE1599:
  2100              	.LBE1600:
  2101              	.LBE1601:
-GAS LISTING /tmp/ccTWFgxc.s 			page 225
+GAS LISTING /tmp/ccauqTp8.s 			page 225
 
 
  2102              	.LBE1602:
@@ -13498,7 +13498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  225:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       typedef _Tp					 value_type;
  226:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       typedef typename _Base::pointer                    pointer;
  227:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       typedef typename _Alloc_traits::const_pointer      const_pointer;
-GAS LISTING /tmp/ccTWFgxc.s 			page 226
+GAS LISTING /tmp/ccauqTp8.s 			page 226
 
 
  228:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       typedef typename _Alloc_traits::reference          reference;
@@ -13558,7 +13558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  282:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __n  The number of elements to initially create.
  283:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __value  An element to copy.
  284:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __a  An allocator.
-GAS LISTING /tmp/ccTWFgxc.s 			page 227
+GAS LISTING /tmp/ccauqTp8.s 			page 227
 
 
  285:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *
@@ -13618,7 +13618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  339:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       : _Base(__x.size(), __a)
  340:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       { this->_M_impl._M_finish =
  341:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
-GAS LISTING /tmp/ccTWFgxc.s 			page 228
+GAS LISTING /tmp/ccauqTp8.s 			page 228
 
 
  342:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 				      this->_M_impl._M_start,
@@ -13678,7 +13678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  396:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
  397:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** #if __cplusplus >= 201103L
  398:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       template<typename _InputIterator,
-GAS LISTING /tmp/ccTWFgxc.s 			page 229
+GAS LISTING /tmp/ccauqTp8.s 			page 229
 
 
  399:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	       typename = std::_RequireInputIter<_InputIterator>>
@@ -13738,7 +13738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  453:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****                        integral_constant<bool, __move_storage>());
  454:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	return *this;
  455:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       }
-GAS LISTING /tmp/ccTWFgxc.s 			page 230
+GAS LISTING /tmp/ccauqTp8.s 			page 230
 
 
  456:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
@@ -13798,7 +13798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  510:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****         void
  511:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****         assign(_InputIterator __first, _InputIterator __last)
  512:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****         {
-GAS LISTING /tmp/ccTWFgxc.s 			page 231
+GAS LISTING /tmp/ccauqTp8.s 			page 231
 
 
  513:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	  // Check whether it's an integral type.  If so, it's not an iterator.
@@ -13858,7 +13858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  567:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       /**
  568:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  Returns a read-only (constant) iterator that points one past
  569:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  the last element in the %vector.  Iteration is done in
-GAS LISTING /tmp/ccTWFgxc.s 			page 232
+GAS LISTING /tmp/ccauqTp8.s 			page 232
 
 
  570:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  ordinary element order.
@@ -13918,7 +13918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  624:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  the last element in the %vector.  Iteration is done in
  625:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  ordinary element order.
  626:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
-GAS LISTING /tmp/ccTWFgxc.s 			page 233
+GAS LISTING /tmp/ccauqTp8.s 			page 233
 
 
  627:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       const_iterator
@@ -13978,7 +13978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  681:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @brief  Resizes the %vector to the specified number of elements.
  682:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __new_size  Number of elements the %vector should contain.
  683:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __x  Data with which new elements should be populated.
-GAS LISTING /tmp/ccTWFgxc.s 			page 234
+GAS LISTING /tmp/ccauqTp8.s 			page 234
 
 
  684:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *
@@ -14038,7 +14038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  738:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  Returns true if the %vector is empty.  (Thus begin() would
  739:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  equal end().)
  740:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
-GAS LISTING /tmp/ccTWFgxc.s 			page 235
+GAS LISTING /tmp/ccauqTp8.s 			page 235
 
 
  741:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       bool
@@ -14098,7 +14098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  795:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
  796:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****     protected:
  797:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       /// Safety check used only from at().
-GAS LISTING /tmp/ccTWFgxc.s 			page 236
+GAS LISTING /tmp/ccauqTp8.s 			page 236
 
 
  798:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       void
@@ -14158,7 +14158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  852:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
  853:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       /**
  854:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  Returns a read-only (constant) reference to the data at the first
-GAS LISTING /tmp/ccTWFgxc.s 			page 237
+GAS LISTING /tmp/ccauqTp8.s 			page 237
 
 
  855:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  element of the %vector.
@@ -14218,7 +14218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  909:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  available.
  910:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
  911:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       void
-GAS LISTING /tmp/ccTWFgxc.s 			page 238
+GAS LISTING /tmp/ccauqTp8.s 			page 238
 
 
  912:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       push_back(const value_type& __x)
@@ -14278,7 +14278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  966:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        */
  967:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       template<typename... _Args>
  968:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****         iterator
-GAS LISTING /tmp/ccTWFgxc.s 			page 239
+GAS LISTING /tmp/ccauqTp8.s 			page 239
 
 
  969:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****         emplace(const_iterator __position, _Args&&... __args);
@@ -14338,7 +14338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1023:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  specified by @a position.
 1024:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *
 1025:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  Note that this kind of operation could be expensive for a
-GAS LISTING /tmp/ccTWFgxc.s 			page 240
+GAS LISTING /tmp/ccauqTp8.s 			page 240
 
 
 1026:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  %vector and if it is frequently used the user should
@@ -14398,7 +14398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1080:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @param  __last   An input iterator.
 1081:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  @return  An iterator that points to the inserted data.
 1082:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *
-GAS LISTING /tmp/ccTWFgxc.s 			page 241
+GAS LISTING /tmp/ccauqTp8.s 			page 241
 
 
 1083:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  This function will insert copies of the data in the range
@@ -14458,7 +14458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1137:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  frequently used the user should consider using std::list.
 1138:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  The user is also cautioned that this function only erases
 1139:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  the element, and that if the element is itself a pointer,
-GAS LISTING /tmp/ccTWFgxc.s 			page 242
+GAS LISTING /tmp/ccauqTp8.s 			page 242
 
 
 1140:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****        *  the pointed-to memory is not touched in any way.  Managing
@@ -14518,7 +14518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1194:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** #if __cplusplus >= 201103L
 1195:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       noexcept(_Alloc_traits::_S_nothrow_swap())
 1196:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** #endif
-GAS LISTING /tmp/ccTWFgxc.s 			page 243
+GAS LISTING /tmp/ccauqTp8.s 			page 243
 
 
 1197:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       {
@@ -14578,7 +14578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1251:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	  _M_fill_initialize(static_cast<size_type>(__n), __value);
 1252:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	}
 1253:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 
-GAS LISTING /tmp/ccTWFgxc.s 			page 244
+GAS LISTING /tmp/ccauqTp8.s 			page 244
 
 
 1254:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       // Called by the range constructor to implement [23.1.1]/9
@@ -14638,7 +14638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
 1308:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h ****       {
 1309:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	std::__uninitialized_default_n_a(this->_M_impl._M_start, __n, 
 1310:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 					 _M_get_Tp_allocator());
-GAS LISTING /tmp/ccTWFgxc.s 			page 245
+GAS LISTING /tmp/ccauqTp8.s 			page 245
 
 
 1311:/opt/gcc/4.9.2/include/c++/4.9.2/bits/stl_vector.h **** 	this->_M_impl._M_finish = this->_M_impl._M_end_of_storage;
@@ -14698,7 +14698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2156      00
  2157              		.p2align 3
  2158              	.L145:
-GAS LISTING /tmp/ccTWFgxc.s 			page 246
+GAS LISTING /tmp/ccauqTp8.s 			page 246
 
 
  2159 1400 410FBE75 		movsbl	67(%r13), %esi
@@ -14758,7 +14758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  573:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****   template<typename _CharT, typename _Traits>
  574:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     inline basic_ostream<_CharT, _Traits>&
  575:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     ends(basic_ostream<_CharT, _Traits>& __os)
-GAS LISTING /tmp/ccTWFgxc.s 			page 247
+GAS LISTING /tmp/ccauqTp8.s 			page 247
 
 
  576:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     { return __os.put(_CharT()); }
@@ -14818,7 +14818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2205              	.LEHB4:
  2206 1458 E8000000 		call	_ZN7lodepng6encodeERKSsRKSt6vectorIhSaIhEEjj16LodePNGColorTypej@PLT
  2206      00
-GAS LISTING /tmp/ccTWFgxc.s 			page 248
+GAS LISTING /tmp/ccauqTp8.s 			page 248
 
 
  2207              	.LEHE4:
@@ -14878,7 +14878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2251              	.LBB1754:
  2252              	.LBB1729:
  2253              	.LBB1730:
-GAS LISTING /tmp/ccTWFgxc.s 			page 249
+GAS LISTING /tmp/ccauqTp8.s 			page 249
 
 
  535:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 	__ostream_insert(__out, __s,
@@ -14938,7 +14938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   18:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** 
   19:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** // You should have received a copy of the GNU General Public License and
   20:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** // a copy of the GCC Runtime Library Exception along with this program;
-GAS LISTING /tmp/ccTWFgxc.s 			page 250
+GAS LISTING /tmp/ccauqTp8.s 			page 250
 
 
   21:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
@@ -14998,7 +14998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   75:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****    *  namespace __gnu_cxx may be.
   76:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****    *
   77:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****    *  See http://gcc.gnu.org/onlinedocs/libstdc++/manual/bk01pt05ch13s03.html
-GAS LISTING /tmp/ccTWFgxc.s 			page 251
+GAS LISTING /tmp/ccauqTp8.s 			page 251
 
 
   78:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****    *  for advice on how to make use of this class for @a unusual character
@@ -15058,7 +15058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  132:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       static _GLIBCXX_CONSTEXPR int_type
  133:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       eof()
  134:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       { return static_cast<int_type>(_GLIBCXX_STDIO_EOF); }
-GAS LISTING /tmp/ccTWFgxc.s 			page 252
+GAS LISTING /tmp/ccauqTp8.s 			page 252
 
 
  135:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** 
@@ -15118,7 +15118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  189:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****     {
  190:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       // NB: Inline std::copy so no recursive dependencies.
  191:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       std::copy(__s2, __s2 + __n, __s1);
-GAS LISTING /tmp/ccTWFgxc.s 			page 253
+GAS LISTING /tmp/ccauqTp8.s 			page 253
 
 
  192:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       return __s1;
@@ -15178,7 +15178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  246:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       { return __c1 == __c2; }
  247:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** 
  248:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       static _GLIBCXX_CONSTEXPR bool
-GAS LISTING /tmp/ccTWFgxc.s 			page 254
+GAS LISTING /tmp/ccauqTp8.s 			page 254
 
 
  249:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       lt(const char_type& __c1, const char_type& __c2) _GLIBCXX_NOEXCEPT
@@ -15238,7 +15238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   13:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** // GNU General Public License for more details.
   14:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 
   15:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** // Under Section 7 of GPL version 3, you are granted additional
-GAS LISTING /tmp/ccTWFgxc.s 			page 255
+GAS LISTING /tmp/ccauqTp8.s 			page 255
 
 
   16:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** // permissions described in the GCC Runtime Library Exception, version
@@ -15298,7 +15298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   70:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  These are standard types.  They permit a standardized way of
   71:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  referring to names of (or names dependent on) the template
   72:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  parameters, which are specific to the implementation.
-GAS LISTING /tmp/ccTWFgxc.s 			page 256
+GAS LISTING /tmp/ccauqTp8.s 			page 256
 
 
   73:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       */
@@ -15358,7 +15358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  127:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  users will call one of the interpreting wrappers, e.g., good().
  128:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       */
  129:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       iostate
-GAS LISTING /tmp/ccTWFgxc.s 			page 257
+GAS LISTING /tmp/ccauqTp8.s 			page 257
 
 
  130:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       rdstate() const
@@ -15418,7 +15418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  184:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       { return (this->rdstate() & eofbit) != 0; }
  185:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 
  186:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       /**
-GAS LISTING /tmp/ccTWFgxc.s 			page 258
+GAS LISTING /tmp/ccauqTp8.s 			page 258
 
 
  187:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  @brief  Fast error checking.
@@ -15478,7 +15478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  241:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *      std::cerr << "Setting badbit\n";
  242:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *      f.setstate (std::ios_base::badbit);
  243:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *
-GAS LISTING /tmp/ccTWFgxc.s 			page 259
+GAS LISTING /tmp/ccauqTp8.s 			page 259
 
 
  244:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *      std::cerr << "Setting exception mask\n";
@@ -15538,7 +15538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  298:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       */
  299:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       basic_ostream<_CharT, _Traits>*
  300:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       tie(basic_ostream<_CharT, _Traits>* __tiestr)
-GAS LISTING /tmp/ccTWFgxc.s 			page 260
+GAS LISTING /tmp/ccauqTp8.s 			page 260
 
 
  301:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       {
@@ -15598,7 +15598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  355:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 
  356:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       /**
  357:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  @brief  Retrieves the @a empty character.
-GAS LISTING /tmp/ccTWFgxc.s 			page 261
+GAS LISTING /tmp/ccauqTp8.s 			page 261
 
 
  358:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  @return  The current fill character.
@@ -15658,7 +15658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  412:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  if possible.
  413:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *
  414:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  Returns the result of
-GAS LISTING /tmp/ccTWFgxc.s 			page 262
+GAS LISTING /tmp/ccauqTp8.s 			page 262
 
 
  415:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  @code
@@ -15718,7 +15718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2324              	.LBB1720:
  869:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 	this->_M_widen_init();
  2325              		.loc 1 869 0
-GAS LISTING /tmp/ccTWFgxc.s 			page 263
+GAS LISTING /tmp/ccauqTp8.s 			page 263
 
 
  2326 14ec 4C89EF   		movq	%r13, %rdi
@@ -15778,7 +15778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2368              		.loc 5 209 0
  2369 1547 4839C8   		cmpq	%rcx, %rax
  2370 154a 75CF     		jne	.L146
-GAS LISTING /tmp/ccTWFgxc.s 			page 264
+GAS LISTING /tmp/ccauqTp8.s 			page 264
 
 
  2371 154c E9ECFDFF 		jmp	.L50
@@ -15838,7 +15838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2413              	.LBE1508:
  2414              	.LBE1511:
  2415              	.LBE1548:
-GAS LISTING /tmp/ccTWFgxc.s 			page 265
+GAS LISTING /tmp/ccauqTp8.s 			page 265
 
 
  2416              	.LBE1763:
@@ -15898,7 +15898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2456      00
  2457 15bd 4889C7   		movq	%rax, %rdi
  2458              	.LBE1655:
-GAS LISTING /tmp/ccTWFgxc.s 			page 266
+GAS LISTING /tmp/ccauqTp8.s 			page 266
 
 
  2459              	.LBE1654:
@@ -15958,7 +15958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2504              		.loc 13 444 0
  2505 15eb 488B40E8 		movq	-24(%rax), %rax
  2506 15ef 4D8BAC04 		movq	240(%r12,%rax), %r13
-GAS LISTING /tmp/ccTWFgxc.s 			page 267
+GAS LISTING /tmp/ccauqTp8.s 			page 267
 
 
  2506      F0000000 
@@ -16018,7 +16018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2549      FFFF
  2550              	.LVL285:
  2551              	.L142:
-GAS LISTING /tmp/ccTWFgxc.s 			page 268
+GAS LISTING /tmp/ccauqTp8.s 			page 268
 
 
  2552              	.LBE1764:
@@ -16078,7 +16078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   26:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h ****  */
   27:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** 
   28:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** #ifndef _NEW_ALLOCATOR_H
-GAS LISTING /tmp/ccTWFgxc.s 			page 269
+GAS LISTING /tmp/ccauqTp8.s 			page 269
 
 
   29:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** #define _NEW_ALLOCATOR_H 1
@@ -16138,7 +16138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   83:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h ****         new_allocator(const new_allocator<_Tp1>&) _GLIBCXX_USE_NOEXCEPT { }
   84:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** 
   85:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h ****       ~new_allocator() _GLIBCXX_USE_NOEXCEPT { }
-GAS LISTING /tmp/ccTWFgxc.s 			page 270
+GAS LISTING /tmp/ccauqTp8.s 			page 270
 
 
   86:/opt/gcc/4.9.2/include/c++/4.9.2/ext/new_allocator.h **** 
@@ -16198,7 +16198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2599              	.LVL291:
  2600 1656 662E0F1F 		.p2align 4,,10
  2600      84000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 271
+GAS LISTING /tmp/ccauqTp8.s 			page 271
 
 
  2600      0000
@@ -16258,7 +16258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2649              	.LBB1622:
  2650              		.loc 3 81 0
  2651 1688 48833D00 		cmpq	$0, _ZL28__gthrw___pthread_key_createPjPFvPvE@GOTPCREL(%rip)
-GAS LISTING /tmp/ccTWFgxc.s 			page 272
+GAS LISTING /tmp/ccauqTp8.s 			page 272
 
 
  2651      00000000 
@@ -16318,7 +16318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2694              	.LBB1741:
  2695              	.LBB1742:
  2696              		.file 15 "/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h"
-GAS LISTING /tmp/ccTWFgxc.s 			page 273
+GAS LISTING /tmp/ccauqTp8.s 			page 273
 
 
    0:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h **** // Iostreams base classes -*- C++ -*-
@@ -16378,7 +16378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   54:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****       _S_fixed 		= 1L << 2,
   55:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****       _S_hex 		= 1L << 3,
   56:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****       _S_internal 	= 1L << 4,
-GAS LISTING /tmp/ccTWFgxc.s 			page 274
+GAS LISTING /tmp/ccauqTp8.s 			page 274
 
 
   57:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****       _S_left 		= 1L << 5,
@@ -16438,7 +16438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  111:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****     };
  112:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h **** 
  113:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****   inline _GLIBCXX_CONSTEXPR _Ios_Openmode
-GAS LISTING /tmp/ccTWFgxc.s 			page 275
+GAS LISTING /tmp/ccauqTp8.s 			page 275
 
 
  114:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****   operator&(_Ios_Openmode __a, _Ios_Openmode __b)
@@ -16498,7 +16498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2705 16ce E9F6FDFF 		jmp	.L59
  2705      FF
  2706              	.LVL301:
-GAS LISTING /tmp/ccTWFgxc.s 			page 276
+GAS LISTING /tmp/ccauqTp8.s 			page 276
 
 
  2707              	.L88:
@@ -16558,7 +16558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2750 171a 8D4701   		leal	1(%rdi), %eax
  2751 171d 4939C3   		cmpq	%rax, %r11
  2752 1720 4889C7   		movq	%rax, %rdi
-GAS LISTING /tmp/ccTWFgxc.s 			page 277
+GAS LISTING /tmp/ccauqTp8.s 			page 277
 
 
  2753              	.LVL306:
@@ -16618,7 +16618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2796              	.LBB1630:
  2797              	.LBB1628:
  2798              	.LBB1627:
-GAS LISTING /tmp/ccTWFgxc.s 			page 278
+GAS LISTING /tmp/ccauqTp8.s 			page 278
 
 
  2799              	.LBB1625:
@@ -16678,7 +16678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2844              	.LVL316:
  2845 1791 E951FEFF 		jmp	.L73
  2845      FF
-GAS LISTING /tmp/ccTWFgxc.s 			page 279
+GAS LISTING /tmp/ccauqTp8.s 			page 279
 
 
  2846              	.LVL317:
@@ -16738,7 +16738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2895              	.LBB1529:
  2896              		.loc 9 483 0
  2897 17ae E8000000 		call	sqrtf@PLT
-GAS LISTING /tmp/ccTWFgxc.s 			page 280
+GAS LISTING /tmp/ccauqTp8.s 			page 280
 
 
  2897      00
@@ -16798,7 +16798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2942 17ed BA0A0000 		movl	$10, %edx
  2942      00
  2943 17f2 31F6     		xorl	%esi, %esi
-GAS LISTING /tmp/ccTWFgxc.s 			page 281
+GAS LISTING /tmp/ccauqTp8.s 			page 281
 
 
  2944 17f4 E8000000 		call	strtol@PLT
@@ -16858,7 +16858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  2986 184f E8000000 		call	_ZNSt13random_device7_M_finiEv@PLT
  2986      00
  2987              	.LVL335:
-GAS LISTING /tmp/ccTWFgxc.s 			page 282
+GAS LISTING /tmp/ccauqTp8.s 			page 282
 
 
  2988              	.L128:
@@ -16918,7 +16918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3033 1893 EBBF     		jmp	.L128
  3034              	.LVL344:
  3035              	.L148:
-GAS LISTING /tmp/ccTWFgxc.s 			page 283
+GAS LISTING /tmp/ccauqTp8.s 			page 283
 
 
  3036              	.LEHB9:
@@ -16978,7 +16978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3085 18aa E8000000 		call	_ZdlPv@PLT
  3085      00
  3086              	.LVL349:
-GAS LISTING /tmp/ccTWFgxc.s 			page 284
+GAS LISTING /tmp/ccauqTp8.s 			page 284
 
 
  3087 18af EB99     		jmp	.L84
@@ -17038,7 +17038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3136              	.LBB1716:
   49:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 	__throw_bad_cast();
  3137              		.loc 13 49 0
-GAS LISTING /tmp/ccTWFgxc.s 			page 285
+GAS LISTING /tmp/ccauqTp8.s 			page 285
 
 
  3138 18d2 E8000000 		call	_ZSt16__throw_bad_castv@PLT
@@ -17098,7 +17098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3191 0033 C730     		.uleb128 .L93-.LFB5505
  3192 0035 00       		.uleb128 0
  3193 0036 D730     		.uleb128 .LEHB8-.LFB5505
-GAS LISTING /tmp/ccTWFgxc.s 			page 286
+GAS LISTING /tmp/ccauqTp8.s 			page 286
 
 
  3194 0038 05       		.uleb128 .LEHE8-.LEHB8
@@ -17158,7 +17158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
   24:/opt/gcc/4.9.2/include/c++/4.9.2/iostream **** /** @file include/iostream
   25:/opt/gcc/4.9.2/include/c++/4.9.2/iostream ****  *  This is a Standard C++ Library header.
   26:/opt/gcc/4.9.2/include/c++/4.9.2/iostream ****  */
-GAS LISTING /tmp/ccTWFgxc.s 			page 287
+GAS LISTING /tmp/ccauqTp8.s 			page 287
 
 
   27:/opt/gcc/4.9.2/include/c++/4.9.2/iostream **** 
@@ -17218,7 +17218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3228              		.cfi_def_cfa_offset 16
  3229              	.LBB1809:
  3230              	.LBB1807:
-GAS LISTING /tmp/ccTWFgxc.s 			page 288
+GAS LISTING /tmp/ccauqTp8.s 			page 288
 
 
  3231              		.loc 16 74 0
@@ -17278,7 +17278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3279              	.LC125:
  3280 0014 0000803F 		.long	1065353216
  3281              		.align 4
-GAS LISTING /tmp/ccTWFgxc.s 			page 289
+GAS LISTING /tmp/ccauqTp8.s 			page 289
 
 
  3282              	.LC126:
@@ -17338,7 +17338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3336              		.file 65 "/usr/include/_G_config.h"
  3337              		.file 66 "/usr/include/bits/stdio.h"
  3338              		.file 67 "/usr/include/wctype.h"
-GAS LISTING /tmp/ccTWFgxc.s 			page 290
+GAS LISTING /tmp/ccauqTp8.s 			page 290
 
 
  3339              		.file 68 "examples/lodepng.h"
@@ -17398,7 +17398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3392 0037 02       		.uleb128 0x2
  3393 0038 10       		.byte	0x10
  3394 0039 07       		.byte	0x7
-GAS LISTING /tmp/ccTWFgxc.s 			page 291
+GAS LISTING /tmp/ccauqTp8.s 			page 291
 
 
  3395 003a 00000000 		.long	.LASF2
@@ -17458,7 +17458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3449 00b8 06       		.uleb128 0x6
  3450 00b9 00000000 		.long	.LASF6
  3451 00bd 11       		.byte	0x11
-GAS LISTING /tmp/ccTWFgxc.s 			page 292
+GAS LISTING /tmp/ccauqTp8.s 			page 292
 
 
  3452 00be 48       		.byte	0x48
@@ -17518,7 +17518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3506 012d 82       		.byte	0x82
  3507 012e 185B0000 		.long	0x5b18
  3508 0132 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 293
+GAS LISTING /tmp/ccauqTp8.s 			page 293
 
 
  3509 0133 12       		.byte	0x12
@@ -17578,7 +17578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3563 0190 9B5C0000 		.long	0x5c9b
  3564 0194 0E       		.uleb128 0xe
  3565 0195 12       		.byte	0x12
-GAS LISTING /tmp/ccTWFgxc.s 			page 294
+GAS LISTING /tmp/ccauqTp8.s 			page 294
 
 
  3566 0196 9D       		.byte	0x9d
@@ -17638,7 +17638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3620 01f9 13       		.byte	0x13
  3621 01fa 4B       		.byte	0x4b
  3622 01fb 94030000 		.long	0x394
-GAS LISTING /tmp/ccTWFgxc.s 			page 295
+GAS LISTING /tmp/ccauqTp8.s 			page 295
 
 
  3623 01ff 11       		.uleb128 0x11
@@ -17698,7 +17698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3677 0280 8A020000 		.long	0x28a
  3678 0284 08       		.uleb128 0x8
  3679 0285 D85D0000 		.long	0x5dd8
-GAS LISTING /tmp/ccTWFgxc.s 			page 296
+GAS LISTING /tmp/ccauqTp8.s 			page 296
 
 
  3680 0289 00       		.byte	0
@@ -17758,7 +17758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3734 0304 74       		.byte	0x74
  3735 0305 00000000 		.long	.LASF21
  3736 0309 F55D0000 		.long	0x5df5
-GAS LISTING /tmp/ccTWFgxc.s 			page 297
+GAS LISTING /tmp/ccauqTp8.s 			page 297
 
 
  3737 030d 01       		.byte	0x1
@@ -17818,7 +17818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3791 038e DE5D0000 		.long	0x5dde
  3792 0392 00       		.byte	0
  3793 0393 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 298
+GAS LISTING /tmp/ccauqTp8.s 			page 298
 
 
  3794 0394 0B       		.uleb128 0xb
@@ -17878,7 +17878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3848 03ff 8B       		.byte	0x8b
  3849 0400 F65F0000 		.long	0x5ff6
  3850 0404 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 299
+GAS LISTING /tmp/ccauqTp8.s 			page 299
 
 
  3851 0405 18       		.byte	0x18
@@ -17938,7 +17938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3905 0462 C5610000 		.long	0x61c5
  3906 0466 0E       		.uleb128 0xe
  3907 0467 18       		.byte	0x18
-GAS LISTING /tmp/ccTWFgxc.s 			page 300
+GAS LISTING /tmp/ccauqTp8.s 			page 300
 
 
  3908 0468 9B       		.byte	0x9b
@@ -17998,7 +17998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  3962 04c8 0E       		.uleb128 0xe
  3963 04c9 18       		.byte	0x18
  3964 04ca B3       		.byte	0xb3
-GAS LISTING /tmp/ccTWFgxc.s 			page 301
+GAS LISTING /tmp/ccauqTp8.s 			page 301
 
 
  3965 04cb 8E630000 		.long	0x638e
@@ -18058,7 +18058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4019 052b 18       		.byte	0x18
  4020 052c C3       		.byte	0xc3
  4021 052d D0650000 		.long	0x65d0
-GAS LISTING /tmp/ccTWFgxc.s 			page 302
+GAS LISTING /tmp/ccauqTp8.s 			page 302
 
 
  4022 0531 0E       		.uleb128 0xe
@@ -18118,7 +18118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4076 058e 0801     		.value	0x108
  4077 0590 71670000 		.long	0x6771
  4078 0594 1D       		.uleb128 0x1d
-GAS LISTING /tmp/ccTWFgxc.s 			page 303
+GAS LISTING /tmp/ccauqTp8.s 			page 303
 
 
  4079 0595 18       		.byte	0x18
@@ -18178,7 +18178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4133 0604 F2       		.byte	0xf2
  4134 0605 00000000 		.long	.LASF835
  4135 0609 18060000 		.long	0x618
-GAS LISTING /tmp/ccTWFgxc.s 			page 304
+GAS LISTING /tmp/ccauqTp8.s 			page 304
 
 
  4136 060d 13       		.uleb128 0x13
@@ -18238,7 +18238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4190 0694 00       		.byte	0
  4191 0695 20       		.uleb128 0x20
  4192 0696 00000000 		.long	.LASF41
-GAS LISTING /tmp/ccTWFgxc.s 			page 305
+GAS LISTING /tmp/ccauqTp8.s 			page 305
 
 
  4193 069a 0C       		.byte	0xc
@@ -18298,7 +18298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4247 0725 20       		.uleb128 0x20
  4248 0726 00000000 		.long	.LASF49
  4249 072a 0C       		.byte	0xc
-GAS LISTING /tmp/ccTWFgxc.s 			page 306
+GAS LISTING /tmp/ccauqTp8.s 			page 306
 
 
  4250 072b 1A01     		.value	0x11a
@@ -18358,7 +18358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4304 07b1 30       		.byte	0x30
  4305 07b2 525A0000 		.long	0x5a52
  4306 07b6 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 307
+GAS LISTING /tmp/ccauqTp8.s 			page 307
 
 
  4307 07b7 19       		.byte	0x19
@@ -18418,7 +18418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4361 0814 EA670000 		.long	0x67ea
  4362 0818 0E       		.uleb128 0xe
  4363 0819 19       		.byte	0x19
-GAS LISTING /tmp/ccTWFgxc.s 			page 308
+GAS LISTING /tmp/ccauqTp8.s 			page 308
 
 
  4364 081a 43       		.byte	0x43
@@ -18478,7 +18478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4418 087a 2E4E0000 		.long	0x4e2e
  4419 087e 06       		.uleb128 0x6
  4420 087f 00000000 		.long	.LASF58
-GAS LISTING /tmp/ccTWFgxc.s 			page 309
+GAS LISTING /tmp/ccauqTp8.s 			page 309
 
 
  4421 0883 11       		.byte	0x11
@@ -18538,7 +18538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4475 08f2 00000000 		.long	.LASF64
  4476 08f6 1A       		.byte	0x1a
  4477 08f7 79       		.byte	0x79
-GAS LISTING /tmp/ccTWFgxc.s 			page 310
+GAS LISTING /tmp/ccauqTp8.s 			page 310
 
 
  4478 08f8 01       		.byte	0x1
@@ -18598,7 +18598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4532 095b 0E       		.uleb128 0xe
  4533 095c 1C       		.byte	0x1c
  4534 095d 6B       		.byte	0x6b
-GAS LISTING /tmp/ccTWFgxc.s 			page 311
+GAS LISTING /tmp/ccauqTp8.s 			page 311
 
 
  4535 095e C96B0000 		.long	0x6bc9
@@ -18658,7 +18658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4589 09be 1C       		.byte	0x1c
  4590 09bf 85       		.byte	0x85
  4591 09c0 3E6D0000 		.long	0x6d3e
-GAS LISTING /tmp/ccTWFgxc.s 			page 312
+GAS LISTING /tmp/ccauqTp8.s 			page 312
 
 
  4592 09c4 0E       		.uleb128 0xe
@@ -18718,7 +18718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4646 0a33 2A       		.uleb128 0x2a
  4647 0a34 00000000 		.long	.LASF70
  4648 0a38 3C0A0000 		.long	0xa3c
-GAS LISTING /tmp/ccTWFgxc.s 			page 313
+GAS LISTING /tmp/ccauqTp8.s 			page 313
 
 
  4649 0a3c 08       		.uleb128 0x8
@@ -18778,7 +18778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4703 0aaa AB520000 		.long	0x52ab
  4704 0aae 01       		.byte	0x1
  4705 0aaf 24       		.uleb128 0x24
-GAS LISTING /tmp/ccTWFgxc.s 			page 314
+GAS LISTING /tmp/ccauqTp8.s 			page 314
 
 
  4706 0ab0 00000000 		.long	.LASF75
@@ -18838,7 +18838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4760 0b1c F1590000 		.long	0x59f1
  4761 0b20 05       		.uleb128 0x5
  4762 0b21 00000000 		.long	.LASF84
-GAS LISTING /tmp/ccTWFgxc.s 			page 315
+GAS LISTING /tmp/ccauqTp8.s 			page 315
 
 
  4763 0b25 1D       		.byte	0x1d
@@ -18898,7 +18898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4817 0bac CF       		.byte	0xcf
  4818 0bad 00000000 		.long	.LASF95
  4819 0bb1 B90B0000 		.long	0xbb9
-GAS LISTING /tmp/ccTWFgxc.s 			page 316
+GAS LISTING /tmp/ccauqTp8.s 			page 316
 
 
  4820 0bb5 C40B0000 		.long	0xbc4
@@ -18958,7 +18958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4874 0c40 D96D0000 		.long	0x6dd9
  4875 0c44 13       		.uleb128 0x13
  4876 0c45 24690000 		.long	0x6924
-GAS LISTING /tmp/ccTWFgxc.s 			page 317
+GAS LISTING /tmp/ccauqTp8.s 			page 317
 
 
  4877 0c49 00       		.byte	0
@@ -19018,7 +19018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4931 0cd2 00000000 		.long	.LASF112
  4932 0cd6 365A0000 		.long	0x5a36
  4933 0cda E20C0000 		.long	0xce2
-GAS LISTING /tmp/ccTWFgxc.s 			page 318
+GAS LISTING /tmp/ccauqTp8.s 			page 318
 
 
  4934 0cde ED0C0000 		.long	0xced
@@ -19078,7 +19078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  4988 0d6d 480A0000 		.long	0xa48
  4989 0d71 790D0000 		.long	0xd79
  4990 0d75 890D0000 		.long	0xd89
-GAS LISTING /tmp/ccTWFgxc.s 			page 319
+GAS LISTING /tmp/ccauqTp8.s 			page 319
 
 
  4991 0d79 08       		.uleb128 0x8
@@ -19138,7 +19138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5045 0e03 6401     		.value	0x164
  5046 0e05 00000000 		.long	.LASF131
  5047 0e09 1D0E0000 		.long	0xe1d
-GAS LISTING /tmp/ccTWFgxc.s 			page 320
+GAS LISTING /tmp/ccauqTp8.s 			page 320
 
 
  5048 0e0d 13       		.uleb128 0x13
@@ -19198,7 +19198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5102 0e92 13       		.uleb128 0x13
  5103 0e93 A30A0000 		.long	0xaa3
  5104 0e97 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 321
+GAS LISTING /tmp/ccauqTp8.s 			page 321
 
 
  5105 0e98 A30A0000 		.long	0xaa3
@@ -19258,7 +19258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5159 0f20 480A0000 		.long	0xa48
  5160 0f24 00       		.byte	0
  5161 0f25 2D       		.uleb128 0x2d
-GAS LISTING /tmp/ccTWFgxc.s 			page 322
+GAS LISTING /tmp/ccauqTp8.s 			page 322
 
 
  5162 0f26 00000000 		.long	.LASF145
@@ -19318,7 +19318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5216 0fa7 AF0F0000 		.long	0xfaf
  5217 0fab C40F0000 		.long	0xfc4
  5218 0faf 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 323
+GAS LISTING /tmp/ccauqTp8.s 			page 323
 
 
  5219 0fb0 D36D0000 		.long	0x6dd3
@@ -19378,7 +19378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5273 1031 24690000 		.long	0x6924
  5274 1035 00       		.byte	0
  5275 1036 32       		.uleb128 0x32
-GAS LISTING /tmp/ccTWFgxc.s 			page 324
+GAS LISTING /tmp/ccauqTp8.s 			page 324
 
 
  5276 1037 00000000 		.long	.LASF147
@@ -19438,7 +19438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5330 10b6 00000000 		.long	.LASF19
  5331 10ba 02       		.byte	0x2
  5332 10bb 2A02     		.value	0x22a
-GAS LISTING /tmp/ccTWFgxc.s 			page 325
+GAS LISTING /tmp/ccauqTp8.s 			page 325
 
 
  5333 10bd 00000000 		.long	.LASF149
@@ -19498,7 +19498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5387 114a 02       		.byte	0x2
  5388 114b 5902     		.value	0x259
  5389 114d 00000000 		.long	.LASF153
-GAS LISTING /tmp/ccTWFgxc.s 			page 326
+GAS LISTING /tmp/ccauqTp8.s 			page 326
 
 
  5390 1151 F16D0000 		.long	0x6df1
@@ -19558,7 +19558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5444 11df 08       		.uleb128 0x8
  5445 11e0 CD6D0000 		.long	0x6dcd
  5446 11e4 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 327
+GAS LISTING /tmp/ccauqTp8.s 			page 327
 
 
  5447 11e5 34       		.uleb128 0x34
@@ -19618,7 +19618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5501 1271 01       		.byte	0x1
  5502 1272 7A120000 		.long	0x127a
  5503 1276 80120000 		.long	0x1280
-GAS LISTING /tmp/ccTWFgxc.s 			page 328
+GAS LISTING /tmp/ccauqTp8.s 			page 328
 
 
  5504 127a 08       		.uleb128 0x8
@@ -19678,7 +19678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5558 1302 DA02     		.value	0x2da
  5559 1304 00000000 		.long	.LASF175
  5560 1308 480A0000 		.long	0xa48
-GAS LISTING /tmp/ccTWFgxc.s 			page 329
+GAS LISTING /tmp/ccauqTp8.s 			page 329
 
 
  5561 130c 01       		.byte	0x1
@@ -19738,7 +19738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5615 1394 08       		.uleb128 0x8
  5616 1395 D36D0000 		.long	0x6dd3
  5617 1399 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 330
+GAS LISTING /tmp/ccauqTp8.s 			page 330
 
 
  5618 139a 34       		.uleb128 0x34
@@ -19798,7 +19798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5672 1423 01       		.byte	0x1
  5673 1424 2C140000 		.long	0x142c
  5674 1428 37140000 		.long	0x1437
-GAS LISTING /tmp/ccTWFgxc.s 			page 331
+GAS LISTING /tmp/ccauqTp8.s 			page 331
 
 
  5675 142c 08       		.uleb128 0x8
@@ -19858,7 +19858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5729 14b2 BA140000 		.long	0x14ba
  5730 14b6 C0140000 		.long	0x14c0
  5731 14ba 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 332
+GAS LISTING /tmp/ccauqTp8.s 			page 332
 
 
  5732 14bb D36D0000 		.long	0x6dd3
@@ -19918,7 +19918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5786 1546 02       		.byte	0x2
  5787 1547 BE03     		.value	0x3be
  5788 1549 00000000 		.long	.LASF204
-GAS LISTING /tmp/ccTWFgxc.s 			page 333
+GAS LISTING /tmp/ccauqTp8.s 			page 333
 
 
  5789 154d F16D0000 		.long	0x6df1
@@ -19978,7 +19978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5843 15d7 EE03     		.value	0x3ee
  5844 15d9 00000000 		.long	.LASF209
  5845 15dd F16D0000 		.long	0x6df1
-GAS LISTING /tmp/ccTWFgxc.s 			page 334
+GAS LISTING /tmp/ccauqTp8.s 			page 334
 
 
  5846 15e1 01       		.byte	0x1
@@ -20038,7 +20038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5900 166b 480A0000 		.long	0xa48
  5901 166f 13       		.uleb128 0x13
  5902 1670 F6590000 		.long	0x59f6
-GAS LISTING /tmp/ccTWFgxc.s 			page 335
+GAS LISTING /tmp/ccauqTp8.s 			page 335
 
 
  5903 1674 00       		.byte	0
@@ -20098,7 +20098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  5957 16fc EB6D0000 		.long	0x6deb
  5958 1700 00       		.byte	0
  5959 1701 34       		.uleb128 0x34
-GAS LISTING /tmp/ccTWFgxc.s 			page 336
+GAS LISTING /tmp/ccauqTp8.s 			page 336
 
 
  5960 1702 00000000 		.long	.LASF47
@@ -20158,7 +20158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6014 178d 95170000 		.long	0x1795
  6015 1791 A5170000 		.long	0x17a5
  6016 1795 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 337
+GAS LISTING /tmp/ccauqTp8.s 			page 337
 
 
  6017 1796 D36D0000 		.long	0x6dd3
@@ -20218,7 +20218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6071 181d 02       		.byte	0x2
  6072 181e E304     		.value	0x4e3
  6073 1820 00000000 		.long	.LASF226
-GAS LISTING /tmp/ccTWFgxc.s 			page 338
+GAS LISTING /tmp/ccauqTp8.s 			page 338
 
 
  6074 1824 F16D0000 		.long	0x6df1
@@ -20278,7 +20278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6128 18ae F16D0000 		.long	0x6df1
  6129 18b2 01       		.byte	0x1
  6130 18b3 BB180000 		.long	0x18bb
-GAS LISTING /tmp/ccTWFgxc.s 			page 339
+GAS LISTING /tmp/ccauqTp8.s 			page 339
 
 
  6131 18b7 CB180000 		.long	0x18cb
@@ -20338,7 +20338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6185 1941 480A0000 		.long	0xa48
  6186 1945 13       		.uleb128 0x13
  6187 1946 480A0000 		.long	0xa48
-GAS LISTING /tmp/ccTWFgxc.s 			page 340
+GAS LISTING /tmp/ccauqTp8.s 			page 340
 
 
  6188 194a 00       		.byte	0
@@ -20398,7 +20398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6242 19d2 480A0000 		.long	0xa48
  6243 19d6 13       		.uleb128 0x13
  6244 19d7 480A0000 		.long	0xa48
-GAS LISTING /tmp/ccTWFgxc.s 			page 341
+GAS LISTING /tmp/ccauqTp8.s 			page 341
 
 
  6245 19db 13       		.uleb128 0x13
@@ -20458,7 +20458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6299 1a65 08       		.uleb128 0x8
  6300 1a66 D36D0000 		.long	0x6dd3
  6301 1a6a 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 342
+GAS LISTING /tmp/ccauqTp8.s 			page 342
 
 
  6302 1a6b 480A0000 		.long	0xa48
@@ -20518,7 +20518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6356 1af5 D36D0000 		.long	0x6dd3
  6357 1af9 13       		.uleb128 0x13
  6358 1afa 970A0000 		.long	0xa97
-GAS LISTING /tmp/ccTWFgxc.s 			page 343
+GAS LISTING /tmp/ccauqTp8.s 			page 343
 
 
  6359 1afe 13       		.uleb128 0x13
@@ -20578,7 +20578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6413 1b88 08       		.uleb128 0x8
  6414 1b89 D36D0000 		.long	0x6dd3
  6415 1b8d 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 344
+GAS LISTING /tmp/ccauqTp8.s 			page 344
 
 
  6416 1b8e 970A0000 		.long	0xa97
@@ -20638,7 +20638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6470 1c18 01       		.byte	0x1
  6471 1c19 211C0000 		.long	0x1c21
  6472 1c1d 3B1C0000 		.long	0x1c3b
-GAS LISTING /tmp/ccTWFgxc.s 			page 345
+GAS LISTING /tmp/ccauqTp8.s 			page 345
 
 
  6473 1c21 08       		.uleb128 0x8
@@ -20698,7 +20698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6527 1cab B31C0000 		.long	0x1cb3
  6528 1caf CD1C0000 		.long	0x1ccd
  6529 1cb3 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 346
+GAS LISTING /tmp/ccauqTp8.s 			page 346
 
 
  6530 1cb4 D36D0000 		.long	0x6dd3
@@ -20758,7 +20758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6584 1d3e 480A0000 		.long	0xa48
  6585 1d42 00       		.byte	0
  6586 1d43 36       		.uleb128 0x36
-GAS LISTING /tmp/ccTWFgxc.s 			page 347
+GAS LISTING /tmp/ccauqTp8.s 			page 347
 
 
  6587 1d44 00000000 		.long	.LASF23
@@ -20818,7 +20818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6641 1dd0 01       		.byte	0x1
  6642 1dd1 D91D0000 		.long	0x1dd9
  6643 1dd5 EE1D0000 		.long	0x1dee
-GAS LISTING /tmp/ccTWFgxc.s 			page 348
+GAS LISTING /tmp/ccauqTp8.s 			page 348
 
 
  6644 1dd9 08       		.uleb128 0x8
@@ -20878,7 +20878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6698 1e63 13       		.uleb128 0x13
  6699 1e64 480A0000 		.long	0xa48
  6700 1e68 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 349
+GAS LISTING /tmp/ccauqTp8.s 			page 349
 
 
  6701 1e69 34       		.uleb128 0x34
@@ -20938,7 +20938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6755 1ef1 00000000 		.long	.LASF277
  6756 1ef5 480A0000 		.long	0xa48
  6757 1ef9 01       		.byte	0x1
-GAS LISTING /tmp/ccTWFgxc.s 			page 350
+GAS LISTING /tmp/ccauqTp8.s 			page 350
 
 
  6758 1efa 021F0000 		.long	0x1f02
@@ -20998,7 +20998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6812 1f87 13       		.uleb128 0x13
  6813 1f88 EB590000 		.long	0x59eb
  6814 1f8c 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 351
+GAS LISTING /tmp/ccauqTp8.s 			page 351
 
 
  6815 1f8d 480A0000 		.long	0xa48
@@ -21058,7 +21058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6869 2017 02       		.byte	0x2
  6870 2018 1108     		.value	0x811
  6871 201a 00000000 		.long	.LASF286
-GAS LISTING /tmp/ccTWFgxc.s 			page 352
+GAS LISTING /tmp/ccauqTp8.s 			page 352
 
 
  6872 201e 480A0000 		.long	0xa48
@@ -21118,7 +21118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6926 20ab 13       		.uleb128 0x13
  6927 20ac EB590000 		.long	0x59eb
  6928 20b0 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 353
+GAS LISTING /tmp/ccauqTp8.s 			page 353
 
 
  6929 20b1 480A0000 		.long	0xa48
@@ -21178,7 +21178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  6983 213b 02       		.byte	0x2
  6984 213c 8208     		.value	0x882
  6985 213e 00000000 		.long	.LASF295
-GAS LISTING /tmp/ccTWFgxc.s 			page 354
+GAS LISTING /tmp/ccauqTp8.s 			page 354
 
 
  6986 2142 480A0000 		.long	0xa48
@@ -21238,7 +21238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7040 21cf 08       		.uleb128 0x8
  7041 21d0 CD6D0000 		.long	0x6dcd
  7042 21d4 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 355
+GAS LISTING /tmp/ccauqTp8.s 			page 355
 
 
  7043 21d5 480A0000 		.long	0xa48
@@ -21298,7 +21298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7097 225f 480A0000 		.long	0xa48
  7098 2263 13       		.uleb128 0x13
  7099 2264 480A0000 		.long	0xa48
-GAS LISTING /tmp/ccTWFgxc.s 			page 356
+GAS LISTING /tmp/ccauqTp8.s 			page 356
 
 
  7100 2268 00       		.byte	0
@@ -21358,7 +21358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7154 22ef F80A0000 		.long	0xaf8
  7155 22f3 1C       		.uleb128 0x1c
  7156 22f4 00000000 		.long	.LASF306
-GAS LISTING /tmp/ccTWFgxc.s 			page 357
+GAS LISTING /tmp/ccauqTp8.s 			page 357
 
 
  7157 22f8 F6590000 		.long	0x59f6
@@ -21418,7 +21418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7211 236d 75230000 		.long	0x2375
  7212 2371 85230000 		.long	0x2385
  7213 2375 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 358
+GAS LISTING /tmp/ccauqTp8.s 			page 358
 
 
  7214 2376 F76D0000 		.long	0x6df7
@@ -21478,7 +21478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7268 23f9 F6590000 		.long	0x59f6
  7269 23fd 00       		.byte	0
  7270 23fe 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 359
+GAS LISTING /tmp/ccauqTp8.s 			page 359
 
 
  7271 23ff 1E230000 		.long	0x231e
@@ -21538,7 +21538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7325 2479 08       		.uleb128 0x8
  7326 247a 1F740000 		.long	0x741f
  7327 247e 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 360
+GAS LISTING /tmp/ccauqTp8.s 			page 360
 
 
  7328 247f 19740000 		.long	0x7419
@@ -21598,7 +21598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7382 2506 00000000 		.long	.LASF334
  7383 250a 30000000 		.long	0x30
  7384 250e 18250000 		.long	0x2518
-GAS LISTING /tmp/ccTWFgxc.s 			page 361
+GAS LISTING /tmp/ccauqTp8.s 			page 361
 
 
  7385 2512 13       		.uleb128 0x13
@@ -21658,7 +21658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7438 259d 01       		.byte	0x1
  7439 259e 0A       		.uleb128 0xa
  7440 259f 5F5F6300 		.string	"__c"
-GAS LISTING /tmp/ccTWFgxc.s 			page 362
+GAS LISTING /tmp/ccauqTp8.s 			page 362
 
 
  7441 25a3 30000000 		.long	0x30
@@ -21718,7 +21718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7494 262e 30000000 		.long	0x30
  7495 2632 00       		.byte	0
  7496 2633 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 363
+GAS LISTING /tmp/ccauqTp8.s 			page 363
 
 
  7497 2634 30000000 		.long	0x30
@@ -21778,7 +21778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7551 26aa 2B       		.uleb128 0x2b
  7552 26ab 00000000 		.long	.LASF348
  7553 26af 08       		.byte	0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 364
+GAS LISTING /tmp/ccauqTp8.s 			page 364
 
 
  7554 26b0 EB01     		.value	0x1eb
@@ -21838,7 +21838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7608 2725 6E02     		.value	0x26e
  7609 2727 A4070000 		.long	0x7a4
  7610 272b 8013     		.value	0x1380
-GAS LISTING /tmp/ccTWFgxc.s 			page 365
+GAS LISTING /tmp/ccauqTp8.s 			page 365
 
 
  7611 272d 33       		.uleb128 0x33
@@ -21898,7 +21898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7665 27b0 08       		.byte	0x8
  7666 27b1 2202     		.value	0x222
  7667 27b3 00000000 		.long	.LASF364
-GAS LISTING /tmp/ccTWFgxc.s 			page 366
+GAS LISTING /tmp/ccauqTp8.s 			page 366
 
 
  7668 27b7 7E260000 		.long	0x267e
@@ -21958,7 +21958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7722 284a 30000000 		.long	0x30
  7723 284e 80562C9D 		.long	0x9d2c5680
  7724 2852 0A       		.uleb128 0xa
-GAS LISTING /tmp/ccTWFgxc.s 			page 367
+GAS LISTING /tmp/ccauqTp8.s 			page 367
 
 
  7725 2853 5F5F7400 		.string	"__t"
@@ -22018,7 +22018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7779 28d5 33       		.uleb128 0x33
  7780 28d6 00000000 		.long	.LASF368
  7781 28da 08       		.byte	0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 368
+GAS LISTING /tmp/ccauqTp8.s 			page 368
 
 
  7782 28db 3406     		.value	0x634
@@ -22078,7 +22078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7836 295f 67290000 		.long	0x2967
  7837 2963 6D290000 		.long	0x296d
  7838 2967 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 369
+GAS LISTING /tmp/ccauqTp8.s 			page 369
 
 
  7839 2968 396E0000 		.long	0x6e39
@@ -22138,7 +22138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7893 29ed 6406     		.value	0x664
  7894 29ef 00000000 		.long	.LASF383
  7895 29f3 FB290000 		.long	0x29fb
-GAS LISTING /tmp/ccTWFgxc.s 			page 370
+GAS LISTING /tmp/ccauqTp8.s 			page 370
 
 
  7896 29f7 012A0000 		.long	0x2a01
@@ -22198,7 +22198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  7950 2a80 00       		.byte	0
  7951 2a81 00       		.byte	0
  7952 2a82 4E       		.uleb128 0x4e
-GAS LISTING /tmp/ccTWFgxc.s 			page 371
+GAS LISTING /tmp/ccauqTp8.s 			page 371
 
 
  7953 2a83 00000000 		.long	.LASF394
@@ -22258,7 +22258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8007 2b02 8206     		.value	0x682
  8008 2b04 1E2B0000 		.long	0x2b1e
  8009 2b08 4D       		.uleb128 0x4d
-GAS LISTING /tmp/ccTWFgxc.s 			page 372
+GAS LISTING /tmp/ccauqTp8.s 			page 372
 
 
  8010 2b09 00000000 		.long	.LASF400
@@ -22318,7 +22318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8064 2b81 8010     		.sleb128 2048
  8065 2b83 50       		.uleb128 0x50
  8066 2b84 00000000 		.long	.LASF414
-GAS LISTING /tmp/ccTWFgxc.s 			page 373
+GAS LISTING /tmp/ccauqTp8.s 			page 373
 
 
  8067 2b88 8020     		.sleb128 4096
@@ -22378,7 +22378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8121 2bfd 50       		.uleb128 0x50
  8122 2bfe 00000000 		.long	.LASF431
  8123 2c02 00       		.sleb128 0
-GAS LISTING /tmp/ccTWFgxc.s 			page 374
+GAS LISTING /tmp/ccauqTp8.s 			page 374
 
 
  8124 2c03 50       		.uleb128 0x50
@@ -22438,7 +22438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8178 2c79 0F       		.byte	0xf
  8179 2c7a 1902     		.value	0x219
  8180 2c7c 01       		.byte	0x1
-GAS LISTING /tmp/ccTWFgxc.s 			page 375
+GAS LISTING /tmp/ccauqTp8.s 			page 375
 
 
  8181 2c7d 852C0000 		.long	0x2c85
@@ -22498,7 +22498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8235 2cf1 0F       		.byte	0xf
  8236 2cf2 0B01     		.value	0x10b
  8237 2cf4 CB2C0000 		.long	0x2ccb
-GAS LISTING /tmp/ccTWFgxc.s 			page 376
+GAS LISTING /tmp/ccauqTp8.s 			page 376
 
 
  8238 2cf8 01       		.byte	0x1
@@ -22558,7 +22558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8292 2d65 2901     		.value	0x129
  8293 2d67 CB2C0000 		.long	0x2ccb
  8294 2d6b 01       		.byte	0x1
-GAS LISTING /tmp/ccTWFgxc.s 			page 377
+GAS LISTING /tmp/ccauqTp8.s 			page 377
 
 
  8295 2d6c 0008     		.value	0x800
@@ -22618,7 +22618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8349 2dde 0F       		.byte	0xf
  8350 2ddf 5101     		.value	0x151
  8351 2de1 D42D0000 		.long	0x2dd4
-GAS LISTING /tmp/ccTWFgxc.s 			page 378
+GAS LISTING /tmp/ccauqTp8.s 			page 378
 
 
  8352 2de5 01       		.byte	0x1
@@ -22678,7 +22678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8406 2e51 0F       		.byte	0xf
  8407 2e52 7A01     		.value	0x17a
  8408 2e54 1E2E0000 		.long	0x2e1e
-GAS LISTING /tmp/ccTWFgxc.s 			page 379
+GAS LISTING /tmp/ccauqTp8.s 			page 379
 
 
  8409 2e58 01       		.byte	0x1
@@ -22738,7 +22738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8463 2ebd 7D6E0000 		.long	0x6e7d
  8464 2ec1 0E       		.uleb128 0xe
  8465 2ec2 21       		.byte	0x21
-GAS LISTING /tmp/ccTWFgxc.s 			page 380
+GAS LISTING /tmp/ccauqTp8.s 			page 380
 
 
  8466 2ec3 65       		.byte	0x65
@@ -22798,7 +22798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8520 2f44 00000000 		.long	.LASF477
  8521 2f48 22       		.byte	0x22
  8522 2f49 3F       		.byte	0x3f
-GAS LISTING /tmp/ccTWFgxc.s 			page 381
+GAS LISTING /tmp/ccauqTp8.s 			page 381
 
 
  8523 2f4a 00000000 		.long	.LASF478
@@ -22858,7 +22858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8577 2fd2 EA2F0000 		.long	0x2fea
  8578 2fd6 01       		.byte	0x1
  8579 2fd7 DF2F0000 		.long	0x2fdf
-GAS LISTING /tmp/ccTWFgxc.s 			page 382
+GAS LISTING /tmp/ccauqTp8.s 			page 382
 
 
  8580 2fdb EA2F0000 		.long	0x2fea
@@ -22918,7 +22918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8634 3052 3D       		.byte	0x3d
  8635 3053 475A0000 		.long	0x5a47
  8636 3057 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 383
+GAS LISTING /tmp/ccauqTp8.s 			page 383
 
 
  8637 3058 23       		.byte	0x23
@@ -22978,7 +22978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8691 30bb 365A0000 		.long	0x5a36
  8692 30bf 06       		.uleb128 0x6
  8693 30c0 00000000 		.long	.LASF61
-GAS LISTING /tmp/ccTWFgxc.s 			page 384
+GAS LISTING /tmp/ccauqTp8.s 			page 384
 
 
  8694 30c4 24       		.byte	0x24
@@ -23038,7 +23038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8748 313c 3B720000 		.long	0x723b
  8749 3140 13       		.uleb128 0x13
  8750 3141 52720000 		.long	0x7252
-GAS LISTING /tmp/ccTWFgxc.s 			page 385
+GAS LISTING /tmp/ccauqTp8.s 			page 385
 
 
  8751 3145 00       		.byte	0
@@ -23098,7 +23098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8805 31c9 DA310000 		.long	0x31da
  8806 31cd EA310000 		.long	0x31ea
  8807 31d1 09       		.uleb128 0x9
-GAS LISTING /tmp/ccTWFgxc.s 			page 386
+GAS LISTING /tmp/ccauqTp8.s 			page 386
 
 
  8808 31d2 5F553100 		.string	"_U1"
@@ -23158,7 +23158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8862 3250 26       		.uleb128 0x26
  8863 3251 00000000 		.long	.LASF505
  8864 3255 01       		.byte	0x1
-GAS LISTING /tmp/ccTWFgxc.s 			page 387
+GAS LISTING /tmp/ccauqTp8.s 			page 387
 
 
  8865 3256 11       		.byte	0x11
@@ -23218,7 +23218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8919 32cb E105     		.value	0x5e1
  8920 32cd CE720000 		.long	0x72ce
  8921 32d1 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 388
+GAS LISTING /tmp/ccauqTp8.s 			page 388
 
 
  8922 32d2 26       		.uleb128 0x26
@@ -23278,7 +23278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  8976 3347 59       		.uleb128 0x59
  8977 3348 00000000 		.long	.LASF517
  8978 334c 08       		.byte	0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 389
+GAS LISTING /tmp/ccauqTp8.s 			page 389
 
 
  8979 334d 08       		.byte	0x8
@@ -23338,7 +23338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9033 33cb 47330000 		.long	0x3347
  9034 33cf 28       		.uleb128 0x28
  9035 33d0 00000000 		.long	.LASF522
-GAS LISTING /tmp/ccTWFgxc.s 			page 390
+GAS LISTING /tmp/ccauqTp8.s 			page 390
 
 
  9036 33d4 08       		.byte	0x8
@@ -23398,7 +23398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9090 344d 55340000 		.long	0x3455
  9091 3451 5B340000 		.long	0x345b
  9092 3455 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 391
+GAS LISTING /tmp/ccauqTp8.s 			page 391
 
 
  9093 3456 48730000 		.long	0x7348
@@ -23458,7 +23458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9147 34de 8608     		.value	0x886
  9148 34e0 00000000 		.long	.LASF533
  9149 34e4 DC330000 		.long	0x33dc
-GAS LISTING /tmp/ccTWFgxc.s 			page 392
+GAS LISTING /tmp/ccauqTp8.s 			page 392
 
 
  9150 34e8 01       		.byte	0x1
@@ -23518,7 +23518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9204 3572 1C       		.uleb128 0x1c
  9205 3573 00000000 		.long	.LASF537
  9206 3577 29000000 		.long	0x29
-GAS LISTING /tmp/ccTWFgxc.s 			page 393
+GAS LISTING /tmp/ccauqTp8.s 			page 393
 
 
  9207 357b 00       		.byte	0
@@ -23578,7 +23578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9261 35ea 00000000 		.long	.LASF64
  9262 35ee 1A       		.byte	0x1a
  9263 35ef 79       		.byte	0x79
-GAS LISTING /tmp/ccTWFgxc.s 			page 394
+GAS LISTING /tmp/ccauqTp8.s 			page 394
 
 
  9264 35f0 01       		.byte	0x1
@@ -23638,7 +23638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9318 3665 25       		.byte	0x25
  9319 3666 9D       		.byte	0x9d
  9320 3667 73080000 		.long	0x873
-GAS LISTING /tmp/ccTWFgxc.s 			page 395
+GAS LISTING /tmp/ccauqTp8.s 			page 395
 
 
  9321 366b 3D       		.uleb128 0x3d
@@ -23698,7 +23698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9375 36e3 7E       		.byte	0x7e
  9376 36e4 8F360000 		.long	0x368f
  9377 36e8 03       		.byte	0x3
-GAS LISTING /tmp/ccTWFgxc.s 			page 396
+GAS LISTING /tmp/ccauqTp8.s 			page 396
 
 
  9378 36e9 06       		.uleb128 0x6
@@ -23758,7 +23758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9432 3761 5F       		.uleb128 0x5f
  9433 3762 00       		.byte	0
  9434 3763 5E       		.uleb128 0x5e
-GAS LISTING /tmp/ccTWFgxc.s 			page 397
+GAS LISTING /tmp/ccauqTp8.s 			page 397
 
 
  9435 3764 00000000 		.long	.LASF561
@@ -23818,7 +23818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9489 37dd D2360000 		.long	0x36d2
  9490 37e1 F0370000 		.long	0x37f0
  9491 37e5 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 398
+GAS LISTING /tmp/ccauqTp8.s 			page 398
 
 
  9492 37e6 90730000 		.long	0x7390
@@ -23878,7 +23878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9546 386e C5       		.byte	0xc5
  9547 386f 89380000 		.long	0x3889
  9548 3873 1C       		.uleb128 0x1c
-GAS LISTING /tmp/ccTWFgxc.s 			page 399
+GAS LISTING /tmp/ccauqTp8.s 			page 399
 
 
  9549 3874 00000000 		.long	.LASF308
@@ -23938,7 +23938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9603 38e9 38       		.uleb128 0x38
  9604 38ea 00000000 		.long	.LASF582
  9605 38ee 0A       		.byte	0xa
-GAS LISTING /tmp/ccTWFgxc.s 			page 400
+GAS LISTING /tmp/ccauqTp8.s 			page 400
 
 
  9606 38ef 56       		.byte	0x56
@@ -23998,7 +23998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9660 3970 0B       		.uleb128 0xb
  9661 3971 75390000 		.long	0x3975
  9662 3975 06       		.uleb128 0x6
-GAS LISTING /tmp/ccTWFgxc.s 			page 401
+GAS LISTING /tmp/ccauqTp8.s 			page 401
 
 
  9663 3976 00000000 		.long	.LASF589
@@ -24058,7 +24058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9717 39fd 08       		.uleb128 0x8
  9718 39fe C0730000 		.long	0x73c0
  9719 3a02 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 402
+GAS LISTING /tmp/ccauqTp8.s 			page 402
 
 
  9720 3a03 38       		.uleb128 0x38
@@ -24118,7 +24118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9774 3a84 08       		.uleb128 0x8
  9775 3a85 C0730000 		.long	0x73c0
  9776 3a89 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 403
+GAS LISTING /tmp/ccauqTp8.s 			page 403
 
 
  9777 3a8a D2730000 		.long	0x73d2
@@ -24178,7 +24178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9831 3b0e 00000000 		.long	.LASF601
  9832 3b12 0A       		.byte	0xa
  9833 3b13 B7       		.byte	0xb7
-GAS LISTING /tmp/ccTWFgxc.s 			page 404
+GAS LISTING /tmp/ccauqTp8.s 			page 404
 
 
  9834 3b14 00000000 		.long	.LASF602
@@ -24238,7 +24238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9888 3b86 24       		.uleb128 0x24
  9889 3b87 00000000 		.long	.LASF492
  9890 3b8b 0A       		.byte	0xa
-GAS LISTING /tmp/ccTWFgxc.s 			page 405
+GAS LISTING /tmp/ccauqTp8.s 			page 405
 
 
  9891 3b8c E3       		.byte	0xe3
@@ -24298,7 +24298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  9945 3bf8 FD       		.byte	0xfd
  9946 3bf9 01       		.byte	0x1
  9947 3bfa 023C0000 		.long	0x3c02
-GAS LISTING /tmp/ccTWFgxc.s 			page 406
+GAS LISTING /tmp/ccauqTp8.s 			page 406
 
 
  9948 3bfe 083C0000 		.long	0x3c08
@@ -24358,7 +24358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10002 3c7d 01       		.byte	0x1
  10003 3c7e 863C0000 		.long	0x3c86
  10004 3c82 913C0000 		.long	0x3c91
-GAS LISTING /tmp/ccTWFgxc.s 			page 407
+GAS LISTING /tmp/ccauqTp8.s 			page 407
 
 
  10005 3c86 08       		.uleb128 0x8
@@ -24418,7 +24418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10059 3d05 13       		.uleb128 0x13
  10060 3d06 0E450000 		.long	0x450e
  10061 3d0a 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 408
+GAS LISTING /tmp/ccauqTp8.s 			page 408
 
 
  10062 3d0b DE730000 		.long	0x73de
@@ -24478,7 +24478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10116 3d92 0E450000 		.long	0x450e
  10117 3d96 00       		.byte	0
  10118 3d97 36       		.uleb128 0x36
-GAS LISTING /tmp/ccTWFgxc.s 			page 409
+GAS LISTING /tmp/ccauqTp8.s 			page 409
 
 
  10119 3d98 00000000 		.long	.LASF47
@@ -24538,7 +24538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10173 3e20 3502     		.value	0x235
  10174 3e22 00000000 		.long	.LASF613
  10175 3e26 AA3B0000 		.long	0x3baa
-GAS LISTING /tmp/ccTWFgxc.s 			page 410
+GAS LISTING /tmp/ccauqTp8.s 			page 410
 
 
  10176 3e2a 01       		.byte	0x1
@@ -24598,7 +24598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10230 3eb5 34       		.uleb128 0x34
  10231 3eb6 00000000 		.long	.LASF162
  10232 3eba 0A       		.byte	0xa
-GAS LISTING /tmp/ccTWFgxc.s 			page 411
+GAS LISTING /tmp/ccauqTp8.s 			page 411
 
 
  10233 3ebb 6202     		.value	0x262
@@ -24658,7 +24658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10287 3f4a 08       		.uleb128 0x8
  10288 3f4b FC730000 		.long	0x73fc
  10289 3f4f 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 412
+GAS LISTING /tmp/ccauqTp8.s 			page 412
 
 
  10290 3f50 34       		.uleb128 0x34
@@ -24718,7 +24718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10344 3fd8 0A       		.byte	0xa
  10345 3fd9 D502     		.value	0x2d5
  10346 3fdb 00000000 		.long	.LASF627
-GAS LISTING /tmp/ccTWFgxc.s 			page 413
+GAS LISTING /tmp/ccauqTp8.s 			page 413
 
 
  10347 3fdf 01       		.byte	0x1
@@ -24778,7 +24778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10401 4069 13       		.uleb128 0x13
  10402 406a DA3B0000 		.long	0x3bda
  10403 406e 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 414
+GAS LISTING /tmp/ccauqTp8.s 			page 414
 
 
  10404 406f 34       		.uleb128 0x34
@@ -24838,7 +24838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10458 40f8 00       		.byte	0
  10459 40f9 34       		.uleb128 0x34
  10460 40fa 00000000 		.long	.LASF196
-GAS LISTING /tmp/ccTWFgxc.s 			page 415
+GAS LISTING /tmp/ccauqTp8.s 			page 415
 
 
  10461 40fe 0A       		.byte	0xa
@@ -24898,7 +24898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10515 418a 94410000 		.long	0x4194
  10516 418e 08       		.uleb128 0x8
  10517 418f D8730000 		.long	0x73d8
-GAS LISTING /tmp/ccTWFgxc.s 			page 416
+GAS LISTING /tmp/ccauqTp8.s 			page 416
 
 
  10518 4193 00       		.byte	0
@@ -24958,7 +24958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10572 4215 00000000 		.long	.LASF646
  10573 4219 AA3B0000 		.long	0x3baa
  10574 421d 01       		.byte	0x1
-GAS LISTING /tmp/ccTWFgxc.s 			page 417
+GAS LISTING /tmp/ccauqTp8.s 			page 417
 
 
  10575 421e 26420000 		.long	0x4226
@@ -25018,7 +25018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10629 42ab 13       		.uleb128 0x13
  10630 42ac DA3B0000 		.long	0x3bda
  10631 42b0 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 418
+GAS LISTING /tmp/ccauqTp8.s 			page 418
 
 
  10632 42b1 E4730000 		.long	0x73e4
@@ -25078,7 +25078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10686 4339 D8730000 		.long	0x73d8
  10687 433d 00       		.byte	0
  10688 433e 36       		.uleb128 0x36
-GAS LISTING /tmp/ccTWFgxc.s 			page 419
+GAS LISTING /tmp/ccauqTp8.s 			page 419
 
 
  10689 433f 00000000 		.long	.LASF654
@@ -25138,7 +25138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10743 43c6 13       		.uleb128 0x13
  10744 43c7 DA3B0000 		.long	0x3bda
  10745 43cb 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 420
+GAS LISTING /tmp/ccauqTp8.s 			page 420
 
 
  10746 43cc E4730000 		.long	0x73e4
@@ -25198,7 +25198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10800 4454 863B0000 		.long	0x3b86
  10801 4458 00       		.byte	0
  10802 4459 16       		.uleb128 0x16
-GAS LISTING /tmp/ccTWFgxc.s 			page 421
+GAS LISTING /tmp/ccauqTp8.s 			page 421
 
 
  10803 445a 00000000 		.long	.LASF670
@@ -25258,7 +25258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10857 44e6 13       		.uleb128 0x13
  10858 44e7 1E2B0000 		.long	0x2b1e
  10859 44eb 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 422
+GAS LISTING /tmp/ccauqTp8.s 			page 422
 
 
  10860 44ec 09       		.uleb128 0x9
@@ -25318,7 +25318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10914 4561 75450000 		.long	0x4575
  10915 4565 08       		.uleb128 0x8
  10916 4566 08740000 		.long	0x7408
-GAS LISTING /tmp/ccTWFgxc.s 			page 423
+GAS LISTING /tmp/ccauqTp8.s 			page 423
 
 
  10917 456a 13       		.uleb128 0x13
@@ -25378,7 +25378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  10971 45ed 00       		.byte	0
  10972 45ee 0B       		.uleb128 0xb
  10973 45ef 0E450000 		.long	0x450e
-GAS LISTING /tmp/ccTWFgxc.s 			page 424
+GAS LISTING /tmp/ccauqTp8.s 			page 424
 
 
  10974 45f3 04       		.uleb128 0x4
@@ -25438,7 +25438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11028 466e 51       		.uleb128 0x51
  11029 466f 00000000 		.long	.LASF688
  11030 4673 12470000 		.long	0x4712
-GAS LISTING /tmp/ccTWFgxc.s 			page 425
+GAS LISTING /tmp/ccauqTp8.s 			page 425
 
 
  11031 4677 16       		.uleb128 0x16
@@ -25498,7 +25498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11085 46fc 29       		.byte	0x29
  11086 46fd 00000000 		.long	.LASF694
  11087 4701 01       		.byte	0x1
-GAS LISTING /tmp/ccTWFgxc.s 			page 426
+GAS LISTING /tmp/ccauqTp8.s 			page 426
 
 
  11088 4702 06470000 		.long	0x4706
@@ -25558,7 +25558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11142 4787 09       		.uleb128 0x9
  11143 4788 5F547000 		.string	"_Tp"
  11144 478c 6A720000 		.long	0x726a
-GAS LISTING /tmp/ccTWFgxc.s 			page 427
+GAS LISTING /tmp/ccauqTp8.s 			page 427
 
 
  11145 4790 13       		.uleb128 0x13
@@ -25618,7 +25618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11199 4819 2C480000 		.long	0x482c
  11200 481d 09       		.uleb128 0x9
  11201 481e 5F547000 		.string	"_Tp"
-GAS LISTING /tmp/ccTWFgxc.s 			page 428
+GAS LISTING /tmp/ccauqTp8.s 			page 428
 
 
  11202 4822 96720000 		.long	0x7296
@@ -25678,7 +25678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11256 48ab B2720000 		.long	0x72b2
  11257 48af C2480000 		.long	0x48c2
  11258 48b3 09       		.uleb128 0x9
-GAS LISTING /tmp/ccTWFgxc.s 			page 429
+GAS LISTING /tmp/ccauqTp8.s 			page 429
 
 
  11259 48b4 5F547000 		.string	"_Tp"
@@ -25738,7 +25738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11313 4940 4C       		.byte	0x4c
  11314 4941 DE720000 		.long	0x72de
  11315 4945 58490000 		.long	0x4958
-GAS LISTING /tmp/ccTWFgxc.s 			page 430
+GAS LISTING /tmp/ccauqTp8.s 			page 430
 
 
  11316 4949 09       		.uleb128 0x9
@@ -25798,7 +25798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11370 49d5 29       		.byte	0x29
  11371 49d6 4C       		.byte	0x4c
  11372 49d7 0A730000 		.long	0x730a
-GAS LISTING /tmp/ccTWFgxc.s 			page 431
+GAS LISTING /tmp/ccauqTp8.s 			page 431
 
 
  11373 49db EE490000 		.long	0x49ee
@@ -25858,7 +25858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11427 4a67 00000000 		.long	.LASF718
  11428 4a6b 29       		.byte	0x29
  11429 4a6c 4C       		.byte	0x4c
-GAS LISTING /tmp/ccTWFgxc.s 			page 432
+GAS LISTING /tmp/ccauqTp8.s 			page 432
 
 
  11430 4a6d 36730000 		.long	0x7336
@@ -25918,7 +25918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11484 4afc 17       		.byte	0x17
  11485 4afd 7A       		.byte	0x7a
  11486 4afe 164B0000 		.long	0x4b16
-GAS LISTING /tmp/ccTWFgxc.s 			page 433
+GAS LISTING /tmp/ccauqTp8.s 			page 433
 
 
  11487 4b02 1C       		.uleb128 0x1c
@@ -25978,7 +25978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11541 4b87 9F4B0000 		.long	0x4b9f
  11542 4b8b 09       		.uleb128 0x9
  11543 4b8c 5F547000 		.string	"_Tp"
-GAS LISTING /tmp/ccTWFgxc.s 			page 434
+GAS LISTING /tmp/ccauqTp8.s 			page 434
 
 
  11544 4b90 30000000 		.long	0x30
@@ -26038,7 +26038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11598 4c18 30000000 		.long	0x30
  11599 4c1c 13       		.uleb128 0x13
  11600 4c1d 60730000 		.long	0x7360
-GAS LISTING /tmp/ccTWFgxc.s 			page 435
+GAS LISTING /tmp/ccauqTp8.s 			page 435
 
 
  11601 4c21 00       		.byte	0
@@ -26098,7 +26098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11655 4cab 7502     		.value	0x275
  11656 4cad DC4C0000 		.long	0x4cdc
  11657 4cb1 1C       		.uleb128 0x1c
-GAS LISTING /tmp/ccTWFgxc.s 			page 436
+GAS LISTING /tmp/ccauqTp8.s 			page 436
 
 
  11658 4cb2 00000000 		.long	.LASF31
@@ -26158,7 +26158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11712 4d41 474D0000 		.long	0x4d47
  11713 4d45 01       		.byte	0x1
  11714 4d46 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 437
+GAS LISTING /tmp/ccauqTp8.s 			page 437
 
 
  11715 4d47 0B       		.uleb128 0xb
@@ -26218,7 +26218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11769 4dce 2C       		.byte	0x2c
  11770 4dcf 62       		.byte	0x62
  11771 4dd0 73080000 		.long	0x873
-GAS LISTING /tmp/ccTWFgxc.s 			page 438
+GAS LISTING /tmp/ccauqTp8.s 			page 438
 
 
  11772 4dd4 68       		.uleb128 0x68
@@ -26278,7 +26278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11826 4e37 05       		.byte	0x5
  11827 4e38 00000000 		.long	.LASF757
  11828 4e3c 0F       		.uleb128 0xf
-GAS LISTING /tmp/ccTWFgxc.s 			page 439
+GAS LISTING /tmp/ccauqTp8.s 			page 439
 
 
  11829 4e3d 00000000 		.long	.LASF758
@@ -26338,7 +26338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11883 4ea9 05       		.uleb128 0x5
  11884 4eaa 00000000 		.long	.LASF763
  11885 4eae 30       		.byte	0x30
-GAS LISTING /tmp/ccTWFgxc.s 			page 440
+GAS LISTING /tmp/ccauqTp8.s 			page 440
 
 
  11886 4eaf 3A       		.byte	0x3a
@@ -26398,7 +26398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11940 4f1d 00000000 		.long	.LASF492
  11941 4f21 0E       		.byte	0xe
  11942 4f22 3F       		.byte	0x3f
-GAS LISTING /tmp/ccTWFgxc.s 			page 441
+GAS LISTING /tmp/ccauqTp8.s 			page 441
 
 
  11943 4f23 365A0000 		.long	0x5a36
@@ -26458,7 +26458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  11997 4f98 16       		.uleb128 0x16
  11998 4f99 00000000 		.long	.LASF772
  11999 4f9d 0E       		.byte	0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 442
+GAS LISTING /tmp/ccauqTp8.s 			page 442
 
 
  12000 4f9e 59       		.byte	0x59
@@ -26518,7 +26518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12054 5025 104F0000 		.long	0x4f10
  12055 5029 00       		.byte	0
  12056 502a 19       		.uleb128 0x19
-GAS LISTING /tmp/ccTWFgxc.s 			page 443
+GAS LISTING /tmp/ccauqTp8.s 			page 443
 
 
  12057 502b 00000000 		.long	.LASF176
@@ -26578,7 +26578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12111 50a5 00       		.byte	0
  12112 50a6 02       		.byte	0x2
  12113 50a7 45       		.uleb128 0x45
-GAS LISTING /tmp/ccTWFgxc.s 			page 444
+GAS LISTING /tmp/ccauqTp8.s 			page 444
 
 
  12114 50a8 00000000 		.long	.LASF491
@@ -26638,7 +26638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12168 5126 E902     		.value	0x2e9
  12169 5128 00000000 		.long	.LASF785
  12170 512c C1500000 		.long	0x50c1
-GAS LISTING /tmp/ccTWFgxc.s 			page 445
+GAS LISTING /tmp/ccauqTp8.s 			page 445
 
 
  12171 5130 01       		.byte	0x1
@@ -26698,7 +26698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12225 51bb C56F0000 		.long	0x6fc5
  12226 51bf 13       		.uleb128 0x13
  12227 51c0 274E0000 		.long	0x4e27
-GAS LISTING /tmp/ccTWFgxc.s 			page 446
+GAS LISTING /tmp/ccauqTp8.s 			page 446
 
 
  12228 51c4 00       		.byte	0
@@ -26758,7 +26758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12282 524f 13       		.uleb128 0x13
  12283 5250 A7500000 		.long	0x50a7
  12284 5254 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 447
+GAS LISTING /tmp/ccauqTp8.s 			page 447
 
 
  12285 5255 34       		.uleb128 0x34
@@ -26818,7 +26818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12339 52d8 31       		.byte	0x31
  12340 52d9 D102     		.value	0x2d1
  12341 52db 15460000 		.long	0x4615
-GAS LISTING /tmp/ccTWFgxc.s 			page 448
+GAS LISTING /tmp/ccauqTp8.s 			page 448
 
 
  12342 52df 01       		.byte	0x1
@@ -26878,7 +26878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12396 535f 00000000 		.long	.LASF786
  12397 5363 31       		.byte	0x31
  12398 5364 ED02     		.value	0x2ed
-GAS LISTING /tmp/ccTWFgxc.s 			page 449
+GAS LISTING /tmp/ccauqTp8.s 			page 449
 
 
  12399 5366 00000000 		.long	.LASF806
@@ -26938,7 +26938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12453 53f4 01       		.byte	0x1
  12454 53f5 FD530000 		.long	0x53fd
  12455 53f9 08540000 		.long	0x5408
-GAS LISTING /tmp/ccTWFgxc.s 			page 450
+GAS LISTING /tmp/ccauqTp8.s 			page 450
 
 
  12456 53fd 08       		.uleb128 0x8
@@ -26998,7 +26998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12510 5485 8D540000 		.long	0x548d
  12511 5489 98540000 		.long	0x5498
  12512 548d 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 451
+GAS LISTING /tmp/ccauqTp8.s 			page 451
 
 
  12513 548e 31740000 		.long	0x7431
@@ -27058,7 +27058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12567 550d 00000000 		.long	.LASF820
  12568 5511 01       		.byte	0x1
  12569 5512 30       		.byte	0x30
-GAS LISTING /tmp/ccTWFgxc.s 			page 452
+GAS LISTING /tmp/ccauqTp8.s 			page 452
 
 
  12570 5513 64       		.byte	0x64
@@ -27118,7 +27118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12624 558b 23590000 		.long	0x5923
  12625 558f 00       		.byte	0
  12626 5590 04       		.uleb128 0x4
-GAS LISTING /tmp/ccTWFgxc.s 			page 453
+GAS LISTING /tmp/ccauqTp8.s 			page 453
 
 
  12627 5591 00000000 		.long	.LASF822
@@ -27178,7 +27178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12681 5606 E6590000 		.long	0x59e6
  12682 560a 1C       		.uleb128 0x1c
  12683 560b 00000000 		.long	.LASF767
-GAS LISTING /tmp/ccTWFgxc.s 			page 454
+GAS LISTING /tmp/ccauqTp8.s 			page 454
 
 
  12684 560f F6590000 		.long	0x59f6
@@ -27238,7 +27238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12738 5684 0E       		.byte	0xe
  12739 5685 40       		.byte	0x40
  12740 5686 98700000 		.long	0x7098
-GAS LISTING /tmp/ccTWFgxc.s 			page 455
+GAS LISTING /tmp/ccauqTp8.s 			page 455
 
 
  12741 568a 01       		.byte	0x1
@@ -27298,7 +27298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12795 56ff 07570000 		.long	0x5707
  12796 5703 12570000 		.long	0x5712
  12797 5707 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 456
+GAS LISTING /tmp/ccauqTp8.s 			page 456
 
 
  12798 5708 72730000 		.long	0x7372
@@ -27358,7 +27358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12852 578c 67560000 		.long	0x5667
  12853 5790 01       		.byte	0x1
  12854 5791 95570000 		.long	0x5795
-GAS LISTING /tmp/ccTWFgxc.s 			page 457
+GAS LISTING /tmp/ccauqTp8.s 			page 457
 
 
  12855 5795 08       		.uleb128 0x8
@@ -27418,7 +27418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12909 5804 81350000 		.long	0x3581
  12910 5808 12580000 		.long	0x5812
  12911 580c 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 458
+GAS LISTING /tmp/ccauqTp8.s 			page 458
 
 
  12912 580d 7E730000 		.long	0x737e
@@ -27478,7 +27478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  12966 588e A7580000 		.long	0x58a7
  12967 5892 06       		.uleb128 0x6
  12968 5893 00000000 		.long	.LASF540
-GAS LISTING /tmp/ccTWFgxc.s 			page 459
+GAS LISTING /tmp/ccauqTp8.s 			page 459
 
 
  12969 5897 32       		.byte	0x32
@@ -27538,7 +27538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13023 5912 4E       		.byte	0x4e
  13024 5913 946A0000 		.long	0x6a94
  13025 5917 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 460
+GAS LISTING /tmp/ccauqTp8.s 			page 460
 
 
  13026 5918 D7740000 		.long	0x74d7
@@ -27598,7 +27598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13080 5981 07       		.byte	0x7
  13081 5982 6B       		.byte	0x6b
  13082 5983 00000000 		.long	.LASF861
-GAS LISTING /tmp/ccTWFgxc.s 			page 461
+GAS LISTING /tmp/ccauqTp8.s 			page 461
 
 
  13083 5987 A4590000 		.long	0x59a4
@@ -27658,7 +27658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13137 59f6 02       		.uleb128 0x2
  13138 59f7 01       		.byte	0x1
  13139 59f8 06       		.byte	0x6
-GAS LISTING /tmp/ccTWFgxc.s 			page 462
+GAS LISTING /tmp/ccauqTp8.s 			page 462
 
 
  13140 59f9 00000000 		.long	.LASF866
@@ -27718,7 +27718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13194 5a6e C5       		.byte	0xc5
  13195 5a6f 274E0000 		.long	0x4e27
  13196 5a73 06       		.uleb128 0x6
-GAS LISTING /tmp/ccTWFgxc.s 			page 463
+GAS LISTING /tmp/ccauqTp8.s 			page 463
 
 
  13197 5a74 00000000 		.long	.LASF877
@@ -27778,7 +27778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13251 5aee 0D02     		.value	0x20d
  13252 5af0 00000000 		.long	.LASF880
  13253 5af4 274E0000 		.long	0x4e27
-GAS LISTING /tmp/ccTWFgxc.s 			page 464
+GAS LISTING /tmp/ccauqTp8.s 			page 464
 
 
  13254 5af8 025B0000 		.long	0x5b02
@@ -27838,7 +27838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13308 5b7b 07       		.byte	0x7
  13309 5b7c 1103     		.value	0x311
  13310 5b7e 74590000 		.long	0x5974
-GAS LISTING /tmp/ccTWFgxc.s 			page 465
+GAS LISTING /tmp/ccauqTp8.s 			page 465
 
 
  13311 5b82 915B0000 		.long	0x5b91
@@ -27898,7 +27898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13365 5c04 04       		.byte	0x4
  13366 5c05 05       		.byte	0x5
  13367 5c06 00000000 		.long	.LASF889
-GAS LISTING /tmp/ccTWFgxc.s 			page 466
+GAS LISTING /tmp/ccauqTp8.s 			page 466
 
 
  13368 5c0a 61       		.uleb128 0x61
@@ -27958,7 +27958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13422 5c8a 13       		.uleb128 0x13
  13423 5c8b EB590000 		.long	0x59eb
  13424 5c8f 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 467
+GAS LISTING /tmp/ccauqTp8.s 			page 467
 
 
  13425 5c90 955C0000 		.long	0x5c95
@@ -28018,7 +28018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13479 5d10 08       		.byte	0x8
  13480 5d11 155D0000 		.long	0x5d15
  13481 5d15 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 468
+GAS LISTING /tmp/ccauqTp8.s 			page 468
 
 
  13482 5d16 035C0000 		.long	0x5c03
@@ -28078,7 +28078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13536 5d9a 955C0000 		.long	0x5c95
  13537 5d9e 13       		.uleb128 0x13
  13538 5d9f 274E0000 		.long	0x4e27
-GAS LISTING /tmp/ccTWFgxc.s 			page 469
+GAS LISTING /tmp/ccauqTp8.s 			page 469
 
 
  13539 5da3 00       		.byte	0
@@ -28138,7 +28138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13593 5e18 2A590000 		.long	0x592a
  13594 5e1c 06       		.uleb128 0x6
  13595 5e1d 00000000 		.long	.LASF910
-GAS LISTING /tmp/ccTWFgxc.s 			page 470
+GAS LISTING /tmp/ccauqTp8.s 			page 470
 
 
  13596 5e21 3A       		.byte	0x3a
@@ -28198,7 +28198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13650 5e95 1B01     		.value	0x11b
  13651 5e97 365A0000 		.long	0x5a36
  13652 5e9b 38       		.byte	0x38
-GAS LISTING /tmp/ccTWFgxc.s 			page 471
+GAS LISTING /tmp/ccauqTp8.s 			page 471
 
 
  13653 5e9c 28       		.uleb128 0x28
@@ -28258,7 +28258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13707 5f11 28       		.uleb128 0x28
  13708 5f12 00000000 		.long	.LASF929
  13709 5f16 3B       		.byte	0x3b
-GAS LISTING /tmp/ccTWFgxc.s 			page 472
+GAS LISTING /tmp/ccauqTp8.s 			page 472
 
 
  13710 5f17 3001     		.value	0x130
@@ -28318,7 +28318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13764 5f8c 4C01     		.value	0x14c
  13765 5f8e 44590000 		.long	0x5944
  13766 5f92 B8       		.byte	0xb8
-GAS LISTING /tmp/ccTWFgxc.s 			page 473
+GAS LISTING /tmp/ccauqTp8.s 			page 473
 
 
  13767 5f93 28       		.uleb128 0x28
@@ -28378,7 +28378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13821 6002 6E       		.uleb128 0x6e
  13822 6003 08       		.byte	0x8
  13823 6004 3D       		.byte	0x3d
-GAS LISTING /tmp/ccTWFgxc.s 			page 474
+GAS LISTING /tmp/ccauqTp8.s 			page 474
 
 
  13824 6005 54       		.byte	0x54
@@ -28438,7 +28438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13878 6078 E702     		.value	0x2e7
  13879 607a F65F0000 		.long	0x5ff6
  13880 607e 88600000 		.long	0x6088
-GAS LISTING /tmp/ccTWFgxc.s 			page 475
+GAS LISTING /tmp/ccauqTp8.s 			page 475
 
 
  13881 6082 13       		.uleb128 0x13
@@ -28498,7 +28498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13935 6104 3D       		.byte	0x3d
  13936 6105 5002     		.value	0x250
  13937 6107 274E0000 		.long	0x4e27
-GAS LISTING /tmp/ccTWFgxc.s 			page 476
+GAS LISTING /tmp/ccauqTp8.s 			page 476
 
 
  13938 610b 1B610000 		.long	0x611b
@@ -28558,7 +28558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  13992 618b A4610000 		.long	0x61a4
  13993 618f 13       		.uleb128 0x13
  13994 6190 FD5B0000 		.long	0x5bfd
-GAS LISTING /tmp/ccTWFgxc.s 			page 477
+GAS LISTING /tmp/ccauqTp8.s 			page 477
 
 
  13995 6194 13       		.uleb128 0x13
@@ -28618,7 +28618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14049 6213 F65F0000 		.long	0x5ff6
  14050 6217 21620000 		.long	0x6221
  14051 621b 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 478
+GAS LISTING /tmp/ccauqTp8.s 			page 478
 
 
  14052 621c 035C0000 		.long	0x5c03
@@ -28678,7 +28678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14106 629b B95F0000 		.long	0x5fb9
  14107 629f 61       		.uleb128 0x61
  14108 62a0 00000000 		.long	.LASF975
-GAS LISTING /tmp/ccTWFgxc.s 			page 479
+GAS LISTING /tmp/ccauqTp8.s 			page 479
 
 
  14109 62a4 3D       		.byte	0x3d
@@ -28738,7 +28738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14163 6327 274E0000 		.long	0x4e27
  14164 632b 3A630000 		.long	0x633a
  14165 632f 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 480
+GAS LISTING /tmp/ccauqTp8.s 			page 480
 
 
  14166 6330 0F5D0000 		.long	0x5d0f
@@ -28798,7 +28798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14220 63af FD5B0000 		.long	0x5bfd
  14221 63b3 C2630000 		.long	0x63c2
  14222 63b7 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 481
+GAS LISTING /tmp/ccauqTp8.s 			page 481
 
 
  14223 63b8 FD5B0000 		.long	0x5bfd
@@ -28858,7 +28858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14277 6430 00000000 		.long	.LASF989
  14278 6434 36       		.byte	0x36
  14279 6435 89       		.byte	0x89
-GAS LISTING /tmp/ccTWFgxc.s 			page 482
+GAS LISTING /tmp/ccauqTp8.s 			page 482
 
 
  14280 6436 274E0000 		.long	0x4e27
@@ -28918,7 +28918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14334 64a2 1C01     		.value	0x11c
  14335 64a4 44590000 		.long	0x5944
  14336 64a8 B2640000 		.long	0x64b2
-GAS LISTING /tmp/ccTWFgxc.s 			page 483
+GAS LISTING /tmp/ccauqTp8.s 			page 483
 
 
  14337 64ac 13       		.uleb128 0x13
@@ -28978,7 +28978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14391 652e 13       		.uleb128 0x13
  14392 652f 79610000 		.long	0x6179
  14393 6533 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 484
+GAS LISTING /tmp/ccauqTp8.s 			page 484
 
 
  14394 6534 69       		.uleb128 0x69
@@ -29038,7 +29038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14448 65b5 3D       		.byte	0x3d
  14449 65b6 D201     		.value	0x1d2
  14450 65b8 2E4E0000 		.long	0x4e2e
-GAS LISTING /tmp/ccTWFgxc.s 			page 485
+GAS LISTING /tmp/ccauqTp8.s 			page 485
 
 
  14451 65bc D0650000 		.long	0x65d0
@@ -29098,7 +29098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14505 6640 44590000 		.long	0x5944
  14506 6644 00       		.byte	0
  14507 6645 61       		.uleb128 0x61
-GAS LISTING /tmp/ccTWFgxc.s 			page 486
+GAS LISTING /tmp/ccauqTp8.s 			page 486
 
 
  14508 6646 00000000 		.long	.LASF1012
@@ -29158,7 +29158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14562 66cc 13       		.uleb128 0x13
  14563 66cd 0F5D0000 		.long	0x5d0f
  14564 66d1 5F       		.uleb128 0x5f
-GAS LISTING /tmp/ccTWFgxc.s 			page 487
+GAS LISTING /tmp/ccauqTp8.s 			page 487
 
 
  14565 66d2 00       		.byte	0
@@ -29218,7 +29218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14619 6759 0F5D0000 		.long	0x5d0f
  14620 675d 71670000 		.long	0x6771
  14621 6761 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 488
+GAS LISTING /tmp/ccauqTp8.s 			page 488
 
 
  14622 6762 0F5D0000 		.long	0x5d0f
@@ -29278,7 +29278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14676 67e0 E8050000 		.long	0x5e8
  14677 67e4 79       		.uleb128 0x79
  14678 67e5 08       		.byte	0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 489
+GAS LISTING /tmp/ccauqTp8.s 			page 489
 
 
  14679 67e6 3F070000 		.long	0x73f
@@ -29338,7 +29338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14733 685e 4F       		.byte	0x4f
  14734 685f 0B4E0000 		.long	0x4e0b
  14735 6863 06       		.uleb128 0x6
-GAS LISTING /tmp/ccTWFgxc.s 			page 490
+GAS LISTING /tmp/ccauqTp8.s 			page 490
 
 
  14736 6864 00000000 		.long	.LASF1036
@@ -29398,7 +29398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14790 68dc 06       		.uleb128 0x6
  14791 68dd 00000000 		.long	.LASF1047
  14792 68e1 3E       		.byte	0x3e
-GAS LISTING /tmp/ccTWFgxc.s 			page 491
+GAS LISTING /tmp/ccauqTp8.s 			page 491
 
 
  14793 68e2 87       		.byte	0x87
@@ -29458,7 +29458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14847 694e 11       		.uleb128 0x11
  14848 694f 00000000 		.long	.LASF1054
  14849 6953 3F       		.byte	0x3f
-GAS LISTING /tmp/ccTWFgxc.s 			page 492
+GAS LISTING /tmp/ccauqTp8.s 			page 492
 
 
  14850 6954 41       		.byte	0x41
@@ -29518,7 +29518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14904 69c0 4F       		.byte	0x4f
  14905 69c1 F6590000 		.long	0x59f6
  14906 69c5 51       		.byte	0x51
-GAS LISTING /tmp/ccTWFgxc.s 			page 493
+GAS LISTING /tmp/ccauqTp8.s 			page 493
 
 
  14907 69c6 11       		.uleb128 0x11
@@ -29578,7 +29578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  14961 6a32 11       		.uleb128 0x11
  14962 6a33 00000000 		.long	.LASF1073
  14963 6a37 3F       		.byte	0x3f
-GAS LISTING /tmp/ccTWFgxc.s 			page 494
+GAS LISTING /tmp/ccauqTp8.s 			page 494
 
 
  14964 6a38 68       		.byte	0x68
@@ -29638,7 +29638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15018 6aab 11       		.uleb128 0x11
  15019 6aac 00000000 		.long	.LASF1080
  15020 6ab0 41       		.byte	0x41
-GAS LISTING /tmp/ccTWFgxc.s 			page 495
+GAS LISTING /tmp/ccauqTp8.s 			page 495
 
 
  15021 6ab1 18       		.byte	0x18
@@ -29698,7 +29698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15075 6b1e DF590000 		.long	0x59df
  15076 6b22 00       		.byte	0
  15077 6b23 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 496
+GAS LISTING /tmp/ccauqTp8.s 			page 496
 
 
  15078 6b24 69       		.uleb128 0x69
@@ -29758,7 +29758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15132 6b9f 00000000 		.long	.LASF1092
  15133 6ba3 3A       		.byte	0x3a
  15134 6ba4 F1       		.byte	0xf1
-GAS LISTING /tmp/ccTWFgxc.s 			page 497
+GAS LISTING /tmp/ccauqTp8.s 			page 497
 
 
  15135 6ba5 274E0000 		.long	0x4e27
@@ -29818,7 +29818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15189 6c2a 3A       		.byte	0x3a
  15190 6c2b C002     		.value	0x2c0
  15191 6c2d 44590000 		.long	0x5944
-GAS LISTING /tmp/ccTWFgxc.s 			page 498
+GAS LISTING /tmp/ccauqTp8.s 			page 498
 
 
  15192 6c31 4A6C0000 		.long	0x6c4a
@@ -29878,7 +29878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15246 6cb5 3A       		.byte	0x3a
  15247 6cb6 ED02     		.value	0x2ed
  15248 6cb8 2E4E0000 		.long	0x4e2e
-GAS LISTING /tmp/ccTWFgxc.s 			page 499
+GAS LISTING /tmp/ccauqTp8.s 			page 499
 
 
  15249 6cbc C66C0000 		.long	0x6cc6
@@ -29938,7 +29938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15303 6d3d 00       		.byte	0
  15304 6d3e 64       		.uleb128 0x64
  15305 6d3f 00000000 		.long	.LASF1108
-GAS LISTING /tmp/ccTWFgxc.s 			page 500
+GAS LISTING /tmp/ccauqTp8.s 			page 500
 
 
  15306 6d43 3A       		.byte	0x3a
@@ -29998,7 +29998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15360 6dc2 576B0000 		.long	0x6b57
  15361 6dc6 00       		.byte	0
  15362 6dc7 69       		.uleb128 0x69
-GAS LISTING /tmp/ccTWFgxc.s 			page 501
+GAS LISTING /tmp/ccauqTp8.s 			page 501
 
 
  15363 6dc8 08       		.byte	0x8
@@ -30058,7 +30058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15417 6e3a 08       		.byte	0x8
  15418 6e3b 86280000 		.long	0x2886
  15419 6e3f 69       		.uleb128 0x69
-GAS LISTING /tmp/ccTWFgxc.s 			page 502
+GAS LISTING /tmp/ccauqTp8.s 			page 502
 
 
  15420 6e40 08       		.byte	0x8
@@ -30118,7 +30118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15474 6eb8 676E0000 		.long	0x6e67
  15475 6ebc C66E0000 		.long	0x6ec6
  15476 6ec0 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 503
+GAS LISTING /tmp/ccauqTp8.s 			page 503
 
 
  15477 6ec1 EB590000 		.long	0x59eb
@@ -30178,7 +30178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15531 6f3c 08       		.byte	0x8
  15532 6f3d 475A0000 		.long	0x5a47
  15533 6f41 41       		.uleb128 0x41
-GAS LISTING /tmp/ccTWFgxc.s 			page 504
+GAS LISTING /tmp/ccauqTp8.s 			page 504
 
 
  15534 6f42 00000000 		.long	.LASF1124
@@ -30238,7 +30238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15588 6fc4 00       		.byte	0
  15589 6fc5 69       		.uleb128 0x69
  15590 6fc6 08       		.byte	0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 505
+GAS LISTING /tmp/ccauqTp8.s 			page 505
 
 
  15591 6fc7 8C500000 		.long	0x508c
@@ -30298,7 +30298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15645 7036 0B4E0000 		.long	0x4e0b
  15646 703a 00       		.byte	0
  15647 703b 28       		.uleb128 0x28
-GAS LISTING /tmp/ccTWFgxc.s 			page 506
+GAS LISTING /tmp/ccauqTp8.s 			page 506
 
 
  15648 703c 00000000 		.long	.LASF1137
@@ -30358,7 +30358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15702 70b4 4D       		.uleb128 0x4d
  15703 70b5 00000000 		.long	.LASF1140
  15704 70b9 44       		.byte	0x44
-GAS LISTING /tmp/ccTWFgxc.s 			page 507
+GAS LISTING /tmp/ccauqTp8.s 			page 507
 
 
  15705 70ba 1501     		.value	0x115
@@ -30418,7 +30418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15759 7130 71710000 		.long	0x7171
  15760 7134 20       		.byte	0x20
  15761 7135 28       		.uleb128 0x28
-GAS LISTING /tmp/ccTWFgxc.s 			page 508
+GAS LISTING /tmp/ccauqTp8.s 			page 508
 
 
  15762 7136 00000000 		.long	.LASF1139
@@ -30478,7 +30478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15816 71a8 45       		.byte	0x45
  15817 71a9 2A       		.byte	0x2a
  15818 71aa 0B4E0000 		.long	0x4e0b
-GAS LISTING /tmp/ccTWFgxc.s 			page 509
+GAS LISTING /tmp/ccauqTp8.s 			page 509
 
 
  15819 71ae 10       		.byte	0x10
@@ -30538,7 +30538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15873 7216 45       		.byte	0x45
  15874 7217 41       		.byte	0x41
  15875 7218 44590000 		.long	0x5944
-GAS LISTING /tmp/ccTWFgxc.s 			page 510
+GAS LISTING /tmp/ccauqTp8.s 			page 510
 
 
  15876 721c 08       		.byte	0x8
@@ -30598,7 +30598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15930 728b 96720000 		.long	0x7296
  15931 728f 72       		.uleb128 0x72
  15932 7290 DF590000 		.long	0x59df
-GAS LISTING /tmp/ccTWFgxc.s 			page 511
+GAS LISTING /tmp/ccauqTp8.s 			page 511
 
 
  15933 7294 12       		.byte	0x12
@@ -30658,7 +30658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  15987 7309 00       		.byte	0
  15988 730a 79       		.uleb128 0x79
  15989 730b 08       		.byte	0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 512
+GAS LISTING /tmp/ccauqTp8.s 			page 512
 
 
  15990 730c FA720000 		.long	0x72fa
@@ -30718,7 +30718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16044 737e 79       		.uleb128 0x79
  16045 737f 08       		.byte	0x8
  16046 7380 23360000 		.long	0x3623
-GAS LISTING /tmp/ccTWFgxc.s 			page 513
+GAS LISTING /tmp/ccauqTp8.s 			page 513
 
 
  16047 7384 79       		.uleb128 0x79
@@ -30778,7 +30778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16101 73f0 7B       		.uleb128 0x7b
  16102 73f1 08       		.byte	0x8
  16103 73f2 443B0000 		.long	0x3b44
-GAS LISTING /tmp/ccTWFgxc.s 			page 514
+GAS LISTING /tmp/ccauqTp8.s 			page 514
 
 
  16104 73f6 79       		.uleb128 0x79
@@ -30838,7 +30838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16158 7471 8501     		.uleb128 0x85
  16159 7473 00000000 		.long	.LASF1156
  16160 7477 7C740000 		.long	0x747c
-GAS LISTING /tmp/ccTWFgxc.s 			page 515
+GAS LISTING /tmp/ccauqTp8.s 			page 515
 
 
  16161 747b 00       		.byte	0
@@ -30898,7 +30898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16215 74fa 03       		.byte	0x3
  16216 74fb 41       		.byte	0x41
  16217 74fc 274E0000 		.long	0x4e27
-GAS LISTING /tmp/ccTWFgxc.s 			page 516
+GAS LISTING /tmp/ccauqTp8.s 			page 516
 
 
  16218 7500 8701     		.uleb128 0x87
@@ -30958,7 +30958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16272 7581 17470000 		.long	0x4717
  16273 7585 03       		.byte	0x3
  16274 7586 A3750000 		.long	0x75a3
-GAS LISTING /tmp/ccTWFgxc.s 			page 517
+GAS LISTING /tmp/ccauqTp8.s 			page 517
 
 
  16275 758a 8D01     		.uleb128 0x8d
@@ -31018,7 +31018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16329 7613 06       		.byte	0x6
  16330 7614 1202     		.value	0x212
  16331 7616 EB590000 		.long	0x59eb
-GAS LISTING /tmp/ccTWFgxc.s 			page 518
+GAS LISTING /tmp/ccauqTp8.s 			page 518
 
 
  16332 761a 00       		.byte	0
@@ -31078,7 +31078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16386 76a7 85       		.byte	0x85
  16387 76a8 BE760000 		.long	0x76be
  16388 76ac 8D01     		.uleb128 0x8d
-GAS LISTING /tmp/ccTWFgxc.s 			page 519
+GAS LISTING /tmp/ccauqTp8.s 			page 519
 
 
  16389 76ae 5F5F7900 		.string	"__y"
@@ -31138,7 +31138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16443 7734 6A720000 		.long	0x726a
  16444 7738 79       		.uleb128 0x79
  16445 7739 08       		.byte	0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 520
+GAS LISTING /tmp/ccauqTp8.s 			page 520
 
 
  16446 773a 43320000 		.long	0x3243
@@ -31198,7 +31198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16500 77c8 29       		.byte	0x29
  16501 77c9 4C       		.byte	0x4c
  16502 77ca CF770000 		.long	0x77cf
-GAS LISTING /tmp/ccTWFgxc.s 			page 521
+GAS LISTING /tmp/ccauqTp8.s 			page 521
 
 
  16503 77ce 00       		.byte	0
@@ -31258,7 +31258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16557 7858 09       		.uleb128 0x9
  16558 7859 5F543200 		.string	"_T2"
  16559 785d AC720000 		.long	0x72ac
-GAS LISTING /tmp/ccTWFgxc.s 			page 522
+GAS LISTING /tmp/ccauqTp8.s 			page 522
 
 
  16560 7861 8E01     		.uleb128 0x8e
@@ -31318,7 +31318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16614 78eb 8F01     		.uleb128 0x8f
  16615 78ed 00       		.byte	0
  16616 78ee 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 523
+GAS LISTING /tmp/ccauqTp8.s 			page 523
 
 
  16617 78ef 64720000 		.long	0x7264
@@ -31378,7 +31378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16671 7979 09       		.uleb128 0x9
  16672 797a 5F547000 		.string	"_Tp"
  16673 797e DE720000 		.long	0x72de
-GAS LISTING /tmp/ccTWFgxc.s 			page 524
+GAS LISTING /tmp/ccauqTp8.s 			page 524
 
 
  16674 7982 8D01     		.uleb128 0x8d
@@ -31438,7 +31438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16728 7a0a 03       		.byte	0x3
  16729 7a0b 3E7A0000 		.long	0x7a3e
  16730 7a0f 09       		.uleb128 0x9
-GAS LISTING /tmp/ccTWFgxc.s 			page 525
+GAS LISTING /tmp/ccauqTp8.s 			page 525
 
 
  16731 7a10 5F543100 		.string	"_T1"
@@ -31498,7 +31498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16785 7a9e 8E01     		.uleb128 0x8e
  16786 7aa0 5F5F7900 		.string	"__y"
  16787 7aa4 15       		.byte	0x15
-GAS LISTING /tmp/ccTWFgxc.s 			page 526
+GAS LISTING /tmp/ccauqTp8.s 			page 526
 
 
  16788 7aa5 1401     		.value	0x114
@@ -31558,7 +31558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16842 7b2a 2D330000 		.long	0x332d
  16843 7b2e 8A01     		.uleb128 0x8a
  16844 7b30 664A0000 		.long	0x4a66
-GAS LISTING /tmp/ccTWFgxc.s 			page 527
+GAS LISTING /tmp/ccauqTp8.s 			page 527
 
 
  16845 7b34 03       		.byte	0x3
@@ -31618,7 +31618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16899 7bc0 D8730000 		.long	0x73d8
  16900 7bc4 8401     		.uleb128 0x84
  16901 7bc6 4C4F0000 		.long	0x4f4c
-GAS LISTING /tmp/ccTWFgxc.s 			page 528
+GAS LISTING /tmp/ccauqTp8.s 			page 528
 
 
  16902 7bca 03       		.byte	0x3
@@ -31678,7 +31678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  16956 7c68 08       		.byte	0x8
  16957 7c69 3508     		.value	0x835
  16958 7c6b 29000000 		.long	0x29
-GAS LISTING /tmp/ccTWFgxc.s 			page 529
+GAS LISTING /tmp/ccauqTp8.s 			page 529
 
 
  16959 7c6f 77       		.uleb128 0x77
@@ -31738,7 +31738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17013 7d07 0C7D0000 		.long	0x7d0c
  17014 7d0b 00       		.byte	0
  17015 7d0c 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 530
+GAS LISTING /tmp/ccauqTp8.s 			page 530
 
 
  17016 7d0d 12690000 		.long	0x6912
@@ -31798,7 +31798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17070 7da2 8A01     		.uleb128 0x8a
  17071 7da4 B14A0000 		.long	0x4ab1
  17072 7da8 03       		.byte	0x3
-GAS LISTING /tmp/ccTWFgxc.s 			page 531
+GAS LISTING /tmp/ccauqTp8.s 			page 531
 
 
  17073 7da9 C37D0000 		.long	0x7dc3
@@ -31858,7 +31858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17127 7e3c 08       		.byte	0x8
  17128 7e3d 8A       		.byte	0x8a
  17129 7e3e 30000000 		.long	0x30
-GAS LISTING /tmp/ccTWFgxc.s 			page 532
+GAS LISTING /tmp/ccauqTp8.s 			page 532
 
 
  17130 7e42 8701     		.uleb128 0x87
@@ -31918,7 +31918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17183 7ec6 FF7E0000 		.long	0x7eff
  17184 7eca 09       		.uleb128 0x9
  17185 7ecb 5F547000 		.string	"_Tp"
-GAS LISTING /tmp/ccTWFgxc.s 			page 533
+GAS LISTING /tmp/ccauqTp8.s 			page 533
 
 
  17186 7ecf 30000000 		.long	0x30
@@ -31978,7 +31978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17240 7f54 6C7F0000 		.long	0x7f6c
  17241 7f58 1C       		.uleb128 0x1c
  17242 7f59 00000000 		.long	.LASF31
-GAS LISTING /tmp/ccTWFgxc.s 			page 534
+GAS LISTING /tmp/ccauqTp8.s 			page 534
 
 
  17243 7f5d 8C700000 		.long	0x708c
@@ -32038,7 +32038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17297 7fe8 8501     		.uleb128 0x85
  17298 7fea 00000000 		.long	.LASF1156
  17299 7fee 9B7C0000 		.long	0x7c9b
-GAS LISTING /tmp/ccTWFgxc.s 			page 535
+GAS LISTING /tmp/ccauqTp8.s 			page 535
 
 
  17300 7ff2 13       		.uleb128 0x13
@@ -32098,7 +32098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17354 807f 7E01     		.value	0x17e
  17355 8081 00370000 		.long	0x3700
  17356 8085 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 536
+GAS LISTING /tmp/ccauqTp8.s 			page 536
 
 
  17357 8086 0B       		.uleb128 0xb
@@ -32158,7 +32158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17411 8118 8501     		.uleb128 0x85
  17412 811a 00000000 		.long	.LASF1156
  17413 811e BF800000 		.long	0x80bf
-GAS LISTING /tmp/ccTWFgxc.s 			page 537
+GAS LISTING /tmp/ccauqTp8.s 			page 537
 
 
  17414 8122 8501     		.uleb128 0x85
@@ -32218,7 +32218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17468 81ab 8D01     		.uleb128 0x8d
  17469 81ad 5F5F6200 		.string	"__b"
  17470 81b1 0B       		.byte	0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 538
+GAS LISTING /tmp/ccauqTp8.s 			page 538
 
 
  17471 81b2 D9       		.byte	0xd9
@@ -32278,7 +32278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17525 823e 8401     		.uleb128 0x84
  17526 8240 81570000 		.long	0x5781
  17527 8244 03       		.byte	0x3
-GAS LISTING /tmp/ccTWFgxc.s 			page 539
+GAS LISTING /tmp/ccauqTp8.s 			page 539
 
 
  17528 8245 4D820000 		.long	0x824d
@@ -32338,7 +32338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17582 82d8 8F01     		.uleb128 0x8f
  17583 82da 00       		.byte	0
  17584 82db 8401     		.uleb128 0x84
-GAS LISTING /tmp/ccTWFgxc.s 			page 540
+GAS LISTING /tmp/ccauqTp8.s 			page 540
 
 
  17585 82dd FE380000 		.long	0x38fe
@@ -32398,7 +32398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17639 836a C702     		.value	0x2c7
  17640 836c 8C700000 		.long	0x708c
  17641 8370 8E01     		.uleb128 0x8e
-GAS LISTING /tmp/ccTWFgxc.s 			page 541
+GAS LISTING /tmp/ccauqTp8.s 			page 541
 
 
  17642 8372 5F5F6300 		.string	"__c"
@@ -32458,7 +32458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17696 83fc 00       		.byte	0
  17697 83fd 8A01     		.uleb128 0x8a
  17698 83ff 414C0000 		.long	0x4c41
-GAS LISTING /tmp/ccTWFgxc.s 			page 542
+GAS LISTING /tmp/ccauqTp8.s 			page 542
 
 
  17699 8403 03       		.byte	0x3
@@ -32518,7 +32518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17753 848e CE840000 		.long	0x84ce
  17754 8492 1C       		.uleb128 0x1c
  17755 8493 00000000 		.long	.LASF31
-GAS LISTING /tmp/ccTWFgxc.s 			page 543
+GAS LISTING /tmp/ccauqTp8.s 			page 543
 
 
  17756 8497 8C700000 		.long	0x708c
@@ -32578,7 +32578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17810 8523 4A850000 		.long	0x854a
  17811 8527 8501     		.uleb128 0x85
  17812 8529 00000000 		.long	.LASF1156
-GAS LISTING /tmp/ccTWFgxc.s 			page 544
+GAS LISTING /tmp/ccauqTp8.s 			page 544
 
 
  17813 852d BF800000 		.long	0x80bf
@@ -32638,7 +32638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17867 85b7 6C       		.byte	0x6c
  17868 85b8 82850000 		.long	0x8582
  17869 85bc 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 545
+GAS LISTING /tmp/ccauqTp8.s 			page 545
 
 
  17870 85bd 0B       		.uleb128 0xb
@@ -32698,7 +32698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17924 8654 F601     		.value	0x1f6
  17925 8656 7E260000 		.long	0x267e
  17926 865a 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 546
+GAS LISTING /tmp/ccauqTp8.s 			page 546
 
 
  17927 865b 8401     		.uleb128 0x84
@@ -32758,7 +32758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  17981 86ef 8501     		.uleb128 0x85
  17982 86f1 00000000 		.long	.LASF1156
  17983 86f5 BD850000 		.long	0x85bd
-GAS LISTING /tmp/ccTWFgxc.s 			page 547
+GAS LISTING /tmp/ccauqTp8.s 			page 547
 
 
  17984 86f9 8D01     		.uleb128 0x8d
@@ -32818,7 +32818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18038 878e 00000000 		.long	.LASF1179
  18039 8792 05       		.byte	0x5
  18040 8793 E3       		.byte	0xe3
-GAS LISTING /tmp/ccTWFgxc.s 			page 548
+GAS LISTING /tmp/ccauqTp8.s 			page 548
 
 
  18041 8794 274E0000 		.long	0x4e27
@@ -32878,7 +32878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18095 8820 9101     		.uleb128 0x91
  18096 8822 5F5F7900 		.string	"__y"
  18097 8826 04       		.byte	0x4
-GAS LISTING /tmp/ccTWFgxc.s 			page 549
+GAS LISTING /tmp/ccauqTp8.s 			page 549
 
 
  18098 8827 9601     		.value	0x196
@@ -32938,7 +32938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18152 88ab 5F5F7800 		.string	"__x"
  18153 88af 04       		.byte	0x4
  18154 88b0 9D07     		.value	0x79d
-GAS LISTING /tmp/ccTWFgxc.s 			page 550
+GAS LISTING /tmp/ccauqTp8.s 			page 550
 
 
  18155 88b2 DC330000 		.long	0x33dc
@@ -32998,7 +32998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18209 8940 77       		.uleb128 0x77
  18210 8941 00000000 		.long	.LASF1167
  18211 8945 06       		.byte	0x6
-GAS LISTING /tmp/ccTWFgxc.s 			page 551
+GAS LISTING /tmp/ccauqTp8.s 			page 551
 
 
  18212 8946 3402     		.value	0x234
@@ -33058,7 +33058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18262 89de 00000000 		.long	.LLST1
  18263 89e2 9B01     		.uleb128 0x9b
  18264 89e4 2B750000 		.long	0x752b
-GAS LISTING /tmp/ccTWFgxc.s 			page 552
+GAS LISTING /tmp/ccauqTp8.s 			page 552
 
 
  18265 89e8 00000000 		.quad	.LBB1396
@@ -33118,7 +33118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18312 8a89 00000000 		.quad	.LVL7
  18312      00000000 
  18313 8a91 4A0C0000 		.long	0xc4a
-GAS LISTING /tmp/ccTWFgxc.s 			page 553
+GAS LISTING /tmp/ccauqTp8.s 			page 553
 
 
  18314 8a95 00       		.byte	0
@@ -33178,7 +33178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18366 8b24 930D     		.value	0xd93
  18367 8b26 A4070000 		.long	0x7a4
  18368 8b2a 00000000 		.long	.LLST8
-GAS LISTING /tmp/ccTWFgxc.s 			page 554
+GAS LISTING /tmp/ccauqTp8.s 			page 554
 
 
  18369 8b2e A901     		.uleb128 0xa9
@@ -33238,7 +33238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18416      00000000 
  18417 8bd6 FC8B0000 		.long	0x8bfc
  18418 8bda AD01     		.uleb128 0xad
-GAS LISTING /tmp/ccTWFgxc.s 			page 555
+GAS LISTING /tmp/ccauqTp8.s 			page 555
 
 
  18419 8bdc 11880000 		.long	0x8811
@@ -33298,7 +33298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18465 8c68 05       		.byte	0x5
  18466 8c69 42       		.byte	0x42
  18467 8c6a 274E0000 		.long	0x4e27
-GAS LISTING /tmp/ccTWFgxc.s 			page 556
+GAS LISTING /tmp/ccauqTp8.s 			page 556
 
 
  18468 8c6e 00000000 		.long	.LLST13
@@ -33358,7 +33358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18522 8cf6 B601     		.uleb128 0xb6
  18523 8cf8 726400   		.string	"rd"
  18524 8cfb 05       		.byte	0x5
-GAS LISTING /tmp/ccTWFgxc.s 			page 557
+GAS LISTING /tmp/ccauqTp8.s 			page 557
 
 
  18525 8cfc C7       		.byte	0xc7
@@ -33418,7 +33418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18576 8d85 02       		.uleb128 0x2
  18577 8d86 76       		.byte	0x76
  18578 8d87 00       		.sleb128 0
-GAS LISTING /tmp/ccTWFgxc.s 			page 558
+GAS LISTING /tmp/ccauqTp8.s 			page 558
 
 
  18579 8d88 B801     		.uleb128 0xb8
@@ -33478,7 +33478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18627 8e0b 00000000 		.quad	.LVL31
  18627      00000000 
  18628 8e13 944D0000 		.long	0x4d94
-GAS LISTING /tmp/ccTWFgxc.s 			page 559
+GAS LISTING /tmp/ccauqTp8.s 			page 559
 
 
  18629 8e17 B801     		.uleb128 0xb8
@@ -33538,7 +33538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18677 8e8f AC01     		.uleb128 0xac
  18678 8e91 01760000 		.long	0x7601
  18679 8e95 9A01     		.uleb128 0x9a
-GAS LISTING /tmp/ccTWFgxc.s 			page 560
+GAS LISTING /tmp/ccauqTp8.s 			page 560
 
 
  18680 8e97 0D760000 		.long	0x760d
@@ -33598,7 +33598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18727 8f21 9A01     		.uleb128 0x9a
  18728 8f23 295B0000 		.long	0x5b29
  18729 8f27 00000000 		.long	.LLST27
-GAS LISTING /tmp/ccTWFgxc.s 			page 561
+GAS LISTING /tmp/ccauqTp8.s 			page 561
 
 
  18730 8f2b B701     		.uleb128 0xb7
@@ -33658,7 +33658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18779 8fa7 00000000 		.long	.LLST29
  18780 8fab 9A01     		.uleb128 0x9a
  18781 8fad D1850000 		.long	0x85d1
-GAS LISTING /tmp/ccTWFgxc.s 			page 562
+GAS LISTING /tmp/ccauqTp8.s 			page 562
 
 
  18782 8fb1 00000000 		.long	.LLST30
@@ -33718,7 +33718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18831      00000000 
  18832 9045 AE890000 		.long	0x89ae
  18833 9049 B801     		.uleb128 0xb8
-GAS LISTING /tmp/ccTWFgxc.s 			page 563
+GAS LISTING /tmp/ccauqTp8.s 			page 563
 
 
  18834 904b 01       		.uleb128 0x1
@@ -33778,7 +33778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18883 90d6 9A01     		.uleb128 0x9a
  18884 90d8 1B7F0000 		.long	0x7f1b
  18885 90dc 00000000 		.long	.LLST36
-GAS LISTING /tmp/ccTWFgxc.s 			page 564
+GAS LISTING /tmp/ccauqTp8.s 			page 564
 
 
  18886 90e0 9A01     		.uleb128 0x9a
@@ -33838,7 +33838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18935 9185 F27E0000 		.long	0x7ef2
  18936 9189 00000000 		.long	.LLST45
  18937 918d BC01     		.uleb128 0xbc
-GAS LISTING /tmp/ccTWFgxc.s 			page 565
+GAS LISTING /tmp/ccauqTp8.s 			page 565
 
 
  18938 918f 527E0000 		.long	0x7e52
@@ -33898,7 +33898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  18985 9226 9D01     		.uleb128 0x9d
  18986 9228 5B860000 		.long	0x865b
  18987 922c 00000000 		.quad	.LBB1480
-GAS LISTING /tmp/ccTWFgxc.s 			page 566
+GAS LISTING /tmp/ccauqTp8.s 			page 566
 
 
  18987      00000000 
@@ -33958,7 +33958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19037 92d2 9A01     		.uleb128 0x9a
  19038 92d4 AA860000 		.long	0x86aa
  19039 92d8 00000000 		.long	.LLST53
-GAS LISTING /tmp/ccTWFgxc.s 			page 567
+GAS LISTING /tmp/ccauqTp8.s 			page 567
 
 
  19040 92dc AA01     		.uleb128 0xaa
@@ -34018,7 +34018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19090 938a 01       		.uleb128 0x1
  19091 938b 55       		.byte	0x55
  19092 938c 02       		.uleb128 0x2
-GAS LISTING /tmp/ccTWFgxc.s 			page 568
+GAS LISTING /tmp/ccauqTp8.s 			page 568
 
 
  19093 938d 76       		.byte	0x76
@@ -34078,7 +34078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19142 940c AA01     		.uleb128 0xaa
  19143 940e 25820000 		.long	0x8225
  19144 9412 00000000 		.quad	.LBB1498
-GAS LISTING /tmp/ccTWFgxc.s 			page 569
+GAS LISTING /tmp/ccauqTp8.s 			page 569
 
 
  19144      00000000 
@@ -34138,7 +34138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19195 94b5 00000000 		.long	.Ldebug_ranges0+0x3e0
  19196 94b9 A001     		.uleb128 0xa0
  19197 94bb A9880000 		.long	0x88a9
-GAS LISTING /tmp/ccTWFgxc.s 			page 570
+GAS LISTING /tmp/ccauqTp8.s 			page 570
 
 
  19198 94bf 00000000 		.long	.LLST77
@@ -34198,7 +34198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19247 9556 00       		.sleb128 0
  19248 9557 00       		.byte	0
  19249 9558 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 571
+GAS LISTING /tmp/ccauqTp8.s 			page 571
 
 
  19250 9559 BA01     		.uleb128 0xba
@@ -34258,7 +34258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19298 95df 7F       		.byte	0x7f
  19299 95e0 00       		.sleb128 0
  19300 95e1 B801     		.uleb128 0xb8
-GAS LISTING /tmp/ccTWFgxc.s 			page 572
+GAS LISTING /tmp/ccauqTp8.s 			page 572
 
 
  19301 95e3 01       		.uleb128 0x1
@@ -34318,7 +34318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19353 9666 0A       		.byte	0xa
  19354 9667 1601     		.value	0x116
  19355 9669 79970000 		.long	0x9779
-GAS LISTING /tmp/ccTWFgxc.s 			page 573
+GAS LISTING /tmp/ccauqTp8.s 			page 573
 
 
  19356 966d AC01     		.uleb128 0xac
@@ -34378,7 +34378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19404      00000000 
  19405 971b 26       		.byte	0x26
  19406 971c 6501     		.value	0x165
-GAS LISTING /tmp/ccTWFgxc.s 			page 574
+GAS LISTING /tmp/ccauqTp8.s 			page 574
 
 
  19407 971e AC01     		.uleb128 0xac
@@ -34438,7 +34438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19457      00000000 
  19458 97b0 00000000 		.long	.Ldebug_ranges0+0x700
  19459 97b4 0A       		.byte	0xa
-GAS LISTING /tmp/ccTWFgxc.s 			page 575
+GAS LISTING /tmp/ccauqTp8.s 			page 575
 
 
  19460 97b5 1E05     		.value	0x51e
@@ -34498,7 +34498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19511 985e 9A01     		.uleb128 0x9a
  19512 9860 23840000 		.long	0x8423
  19513 9864 00000000 		.long	.LLST104
-GAS LISTING /tmp/ccTWFgxc.s 			page 576
+GAS LISTING /tmp/ccauqTp8.s 			page 576
 
 
  19514 9868 AA01     		.uleb128 0xaa
@@ -34558,7 +34558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19565 98f7 00       		.byte	0
  19566 98f8 00       		.byte	0
  19567 98f9 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 577
+GAS LISTING /tmp/ccauqTp8.s 			page 577
 
 
  19568 98fa 00       		.byte	0
@@ -34618,7 +34618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19620 9993 889A0000 		.long	0x9a88
  19621 9997 9A01     		.uleb128 0x9a
  19622 9999 68750000 		.long	0x7568
-GAS LISTING /tmp/ccTWFgxc.s 			page 578
+GAS LISTING /tmp/ccauqTp8.s 			page 578
 
 
  19623 999d 00000000 		.long	.LLST123
@@ -34678,7 +34678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19672 9a46 E8740000 		.long	0x74e8
  19673 9a4a 00000000 		.long	.LLST132
  19674 9a4e 9F01     		.uleb128 0x9f
-GAS LISTING /tmp/ccTWFgxc.s 			page 579
+GAS LISTING /tmp/ccauqTp8.s 			page 579
 
 
  19675 9a50 00000000 		.quad	.LBB1626
@@ -34738,7 +34738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19721 9ae3 05       		.byte	0x5
  19722 9ae4 DD       		.byte	0xdd
  19723 9ae5 249B0000 		.long	0x9b24
-GAS LISTING /tmp/ccTWFgxc.s 			page 580
+GAS LISTING /tmp/ccauqTp8.s 			page 580
 
 
  19724 9ae9 AC01     		.uleb128 0xac
@@ -34798,7 +34798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19774 9b64 54       		.byte	0x54
  19775 9b65 08       		.uleb128 0x8
  19776 9b66 7C       		.byte	0x7c
-GAS LISTING /tmp/ccTWFgxc.s 			page 581
+GAS LISTING /tmp/ccauqTp8.s 			page 581
 
 
  19777 9b67 00       		.sleb128 0
@@ -34858,7 +34858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19827 9be5 00000000 		.long	.LLST140
  19828 9be9 9A01     		.uleb128 0x9a
  19829 9beb 01760000 		.long	0x7601
-GAS LISTING /tmp/ccTWFgxc.s 			page 582
+GAS LISTING /tmp/ccauqTp8.s 			page 582
 
 
  19830 9bef 00000000 		.long	.LLST141
@@ -34918,7 +34918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19876      00000000 
  19877 9c96 06000000 		.quad	.LBE1667-.LBB1667
  19877      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 583
+GAS LISTING /tmp/ccauqTp8.s 			page 583
 
 
  19878 9c9e 0D       		.byte	0xd
@@ -34978,7 +34978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19928 9d21 40890000 		.long	0x8940
  19929 9d25 00000000 		.long	.LLST149
  19930 9d29 BB01     		.uleb128 0xbb
-GAS LISTING /tmp/ccTWFgxc.s 			page 584
+GAS LISTING /tmp/ccauqTp8.s 			page 584
 
 
  19931 9d2b 4E870000 		.long	0x874e
@@ -35038,7 +35038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  19979 9dd9 00000000 		.quad	.LVL292
  19979      00000000 
  19980 9de1 32300000 		.long	0x3032
-GAS LISTING /tmp/ccTWFgxc.s 			page 585
+GAS LISTING /tmp/ccauqTp8.s 			page 585
 
 
  19981 9de5 F19D0000 		.long	0x9df1
@@ -35098,7 +35098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20030 9e58 00       		.byte	0
  20031 9e59 00       		.byte	0
  20032 9e5a 9D01     		.uleb128 0x9d
-GAS LISTING /tmp/ccTWFgxc.s 			page 586
+GAS LISTING /tmp/ccauqTp8.s 			page 586
 
 
  20033 9e5c F2850000 		.long	0x85f2
@@ -35158,7 +35158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20079      00000000 
  20080 9efa 159F0000 		.long	0x9f15
  20081 9efe B801     		.uleb128 0xb8
-GAS LISTING /tmp/ccTWFgxc.s 			page 587
+GAS LISTING /tmp/ccauqTp8.s 			page 587
 
 
  20082 9f00 01       		.uleb128 0x1
@@ -35218,7 +35218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20135 9f50 01       		.uleb128 0x1
  20136 9f51 58       		.byte	0x58
  20137 9f52 01       		.uleb128 0x1
-GAS LISTING /tmp/ccTWFgxc.s 			page 588
+GAS LISTING /tmp/ccauqTp8.s 			page 588
 
 
  20138 9f53 36       		.byte	0x36
@@ -35278,7 +35278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20186      00000000 
  20187 9fe1 6F2F0000 		.long	0x2f6f
  20188 9fe5 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 589
+GAS LISTING /tmp/ccauqTp8.s 			page 589
 
 
  20189 9fe6 BB01     		.uleb128 0xbb
@@ -35338,7 +35338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20236 a094 BE01     		.uleb128 0xbe
  20237 a096 00000000 		.quad	.LVL260
  20237      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 590
+GAS LISTING /tmp/ccauqTp8.s 			page 590
 
 
  20238 a09e 32300000 		.long	0x3032
@@ -35398,7 +35398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20289 a10b 00000000 		.quad	.LVL253
  20289      00000000 
  20290 a113 944D0000 		.long	0x4d94
-GAS LISTING /tmp/ccTWFgxc.s 			page 591
+GAS LISTING /tmp/ccauqTp8.s 			page 591
 
 
  20291 a117 B801     		.uleb128 0xb8
@@ -35458,7 +35458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20340 a197 00       		.sleb128 0
  20341 a198 00       		.byte	0
  20342 a199 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 592
+GAS LISTING /tmp/ccauqTp8.s 			page 592
 
 
  20343 a19a AE01     		.uleb128 0xae
@@ -35518,7 +35518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20389 a240 02       		.uleb128 0x2
  20390 a241 73       		.byte	0x73
  20391 a242 00       		.sleb128 0
-GAS LISTING /tmp/ccTWFgxc.s 			page 593
+GAS LISTING /tmp/ccauqTp8.s 			page 593
 
 
  20392 a243 B801     		.uleb128 0xb8
@@ -35578,7 +35578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20439      00000000 
  20440 a2c9 0A       		.byte	0xa
  20441 a2ca A0       		.byte	0xa0
-GAS LISTING /tmp/ccTWFgxc.s 			page 594
+GAS LISTING /tmp/ccauqTp8.s 			page 594
 
 
  20442 a2cb AC01     		.uleb128 0xac
@@ -35638,7 +35638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20489 a36f 00       		.byte	0
  20490 a370 9D01     		.uleb128 0x9d
  20491 a372 2A870000 		.long	0x872a
-GAS LISTING /tmp/ccTWFgxc.s 			page 595
+GAS LISTING /tmp/ccauqTp8.s 			page 595
 
 
  20492 a376 00000000 		.quad	.LBB1774
@@ -35698,7 +35698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20539      00000000 
  20540 a400 12000000 		.quad	.LBE1783-.LBB1783
  20540      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 596
+GAS LISTING /tmp/ccauqTp8.s 			page 596
 
 
  20541 a408 05       		.byte	0x5
@@ -35758,7 +35758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20588 a4a3 00000000 		.long	.LLST191
  20589 a4a7 B701     		.uleb128 0xb7
  20590 a4a9 00000000 		.quad	.LVL343
-GAS LISTING /tmp/ccTWFgxc.s 			page 597
+GAS LISTING /tmp/ccauqTp8.s 			page 597
 
 
  20590      00000000 
@@ -35818,7 +35818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20636      00000000 
  20637 a54e 9E01     		.uleb128 0x9e
  20638 a550 53800000 		.long	0x8053
-GAS LISTING /tmp/ccTWFgxc.s 			page 598
+GAS LISTING /tmp/ccauqTp8.s 			page 598
 
 
  20639 a554 00000000 		.quad	.LBB1799
@@ -35878,7 +35878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20687 a5e4 02       		.uleb128 0x2
  20688 a5e5 73       		.byte	0x73
  20689 a5e6 00       		.sleb128 0
-GAS LISTING /tmp/ccTWFgxc.s 			page 599
+GAS LISTING /tmp/ccauqTp8.s 			page 599
 
 
  20690 a5e7 00       		.byte	0
@@ -35938,7 +35938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20739 a65d 55       		.byte	0x55
  20740 a65e 02       		.uleb128 0x2
  20741 a65f 76       		.byte	0x76
-GAS LISTING /tmp/ccTWFgxc.s 			page 600
+GAS LISTING /tmp/ccauqTp8.s 			page 600
 
 
  20742 a660 00       		.sleb128 0
@@ -35998,7 +35998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20793 a6c5 EE710000 		.long	0x71ee
  20794 a6c9 79       		.uleb128 0x79
  20795 a6ca 08       		.byte	0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 601
+GAS LISTING /tmp/ccauqTp8.s 			page 601
 
 
  20796 a6cb ADA60000 		.long	0xa6ad
@@ -36058,7 +36058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20843 a754 3A       		.byte	0x3a
  20844 a755 A5       		.byte	0xa5
  20845 a756 0E6B0000 		.long	0x6b0e
-GAS LISTING /tmp/ccTWFgxc.s 			page 602
+GAS LISTING /tmp/ccauqTp8.s 			page 602
 
 
  20846 a75a C601     		.uleb128 0xc6
@@ -36118,7 +36118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20900 a7de C601     		.uleb128 0xc6
  20901 a7e0 00000000 		.long	.LASF1216
  20902 a7e4 48       		.byte	0x48
-GAS LISTING /tmp/ccTWFgxc.s 			page 603
+GAS LISTING /tmp/ccauqTp8.s 			page 603
 
 
  20903 a7e5 28       		.byte	0x28
@@ -36178,7 +36178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  20957 a868 4B       		.byte	0x4b
  20958 a869 25       		.byte	0x25
  20959 a86a 30720000 		.long	0x7230
-GAS LISTING /tmp/ccTWFgxc.s 			page 604
+GAS LISTING /tmp/ccauqTp8.s 			page 604
 
 
  20960 a86e C601     		.uleb128 0xc6
@@ -36238,7 +36238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21014 a8ee 30720000 		.long	0x7230
  21015 a8f2 C601     		.uleb128 0xc6
  21016 a8f4 00000000 		.long	.LASF1239
-GAS LISTING /tmp/ccTWFgxc.s 			page 605
+GAS LISTING /tmp/ccauqTp8.s 			page 605
 
 
  21017 a8f8 4E       		.byte	0x4e
@@ -36298,7 +36298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21071 a978 00000000 		.long	.LASF1250
  21072 a97c 51       		.byte	0x51
  21073 a97d 23       		.byte	0x23
-GAS LISTING /tmp/ccTWFgxc.s 			page 606
+GAS LISTING /tmp/ccauqTp8.s 			page 606
 
 
  21074 a97e 30720000 		.long	0x7230
@@ -36358,7 +36358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21128 aa01 21       		.byte	0x21
  21129 aa02 30720000 		.long	0x7230
  21130 aa06 C601     		.uleb128 0xc6
-GAS LISTING /tmp/ccTWFgxc.s 			page 607
+GAS LISTING /tmp/ccauqTp8.s 			page 607
 
 
  21131 aa08 00000000 		.long	.LASF1262
@@ -36418,7 +36418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21185 aa8a C601     		.uleb128 0xc6
  21186 aa8c 00000000 		.long	.LASF1273
  21187 aa90 57       		.byte	0x57
-GAS LISTING /tmp/ccTWFgxc.s 			page 608
+GAS LISTING /tmp/ccauqTp8.s 			page 608
 
 
  21188 aa91 21       		.byte	0x21
@@ -36478,7 +36478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21242 ab14 59       		.byte	0x59
  21243 ab15 28       		.byte	0x28
  21244 ab16 30720000 		.long	0x7230
-GAS LISTING /tmp/ccTWFgxc.s 			page 609
+GAS LISTING /tmp/ccauqTp8.s 			page 609
 
 
  21245 ab1a C601     		.uleb128 0xc6
@@ -36538,7 +36538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21299 ab9a 30720000 		.long	0x7230
  21300 ab9e C601     		.uleb128 0xc6
  21301 aba0 00000000 		.long	.LASF1296
-GAS LISTING /tmp/ccTWFgxc.s 			page 610
+GAS LISTING /tmp/ccauqTp8.s 			page 610
 
 
  21302 aba4 5C       		.byte	0x5c
@@ -36598,7 +36598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21356 ac24 00000000 		.long	.LASF1307
  21357 ac28 5F       		.byte	0x5f
  21358 ac29 25       		.byte	0x25
-GAS LISTING /tmp/ccTWFgxc.s 			page 611
+GAS LISTING /tmp/ccauqTp8.s 			page 611
 
 
  21359 ac2a 30720000 		.long	0x7230
@@ -36658,7 +36658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21413 acad 23       		.byte	0x23
  21414 acae 30720000 		.long	0x7230
  21415 acb2 C601     		.uleb128 0xc6
-GAS LISTING /tmp/ccTWFgxc.s 			page 612
+GAS LISTING /tmp/ccauqTp8.s 			page 612
 
 
  21416 acb4 00000000 		.long	.LASF1319
@@ -36718,7 +36718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21469 ad5a E9550000 		.long	0x55e9
  21470 ad5e 00000000 		.long	.LASF1333
  21471 ad62 CB01     		.uleb128 0xcb
-GAS LISTING /tmp/ccTWFgxc.s 			page 613
+GAS LISTING /tmp/ccauqTp8.s 			page 613
 
 
  21472 ad64 20560000 		.long	0x5620
@@ -36778,7 +36778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21526 adf8 13       		.uleb128 0x13
  21527 adf9 345A0000 		.long	0x5a34
  21528 adfd 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 614
+GAS LISTING /tmp/ccauqTp8.s 			page 614
 
 
  21529 adfe 274E0000 		.long	0x4e27
@@ -36831,14 +36831,14 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21576 ae74 41       		.uleb128 0x41
  21577 ae75 00000000 		.long	.LASF1351
  21578 ae79 45       		.byte	0x45
- 21579 ae7a 6E       		.byte	0x6e
+ 21579 ae7a 73       		.byte	0x73
  21580 ae7b 8C700000 		.long	0x708c
  21581 ae7f 93AE0000 		.long	0xae93
  21582 ae83 13       		.uleb128 0x13
  21583 ae84 93AE0000 		.long	0xae93
  21584 ae88 13       		.uleb128 0x13
  21585 ae89 30720000 		.long	0x7230
-GAS LISTING /tmp/ccTWFgxc.s 			page 615
+GAS LISTING /tmp/ccauqTp8.s 			page 615
 
 
  21586 ae8d 13       		.uleb128 0x13
@@ -36872,7 +36872,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21614 aecd 41       		.uleb128 0x41
  21615 aece 00000000 		.long	.LASF1355
  21616 aed2 45       		.byte	0x45
- 21617 aed3 8E       		.byte	0x8e
+ 21617 aed3 93       		.byte	0x93
  21618 aed4 C3A60000 		.long	0xa6c3
  21619 aed8 E2AE0000 		.long	0xaee2
  21620 aedc 13       		.uleb128 0x13
@@ -36898,7 +36898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21640 af0d 274E0000 		.long	0x4e27
  21641 af11 13       		.uleb128 0x13
  21642 af12 8E6A0000 		.long	0x6a8e
-GAS LISTING /tmp/ccTWFgxc.s 			page 616
+GAS LISTING /tmp/ccauqTp8.s 			page 616
 
 
  21643 af16 13       		.uleb128 0x13
@@ -36958,7 +36958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21697 002e 03       		.uleb128 0x3
  21698 002f 0E       		.uleb128 0xe
  21699 0030 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 617
+GAS LISTING /tmp/ccauqTp8.s 			page 617
 
 
  21700 0031 0B       		.uleb128 0xb
@@ -37018,7 +37018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21754 0067 3C       		.uleb128 0x3c
  21755 0068 19       		.uleb128 0x19
  21756 0069 64       		.uleb128 0x64
-GAS LISTING /tmp/ccTWFgxc.s 			page 618
+GAS LISTING /tmp/ccauqTp8.s 			page 618
 
 
  21757 006a 13       		.uleb128 0x13
@@ -37078,7 +37078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21811 00a0 0D       		.uleb128 0xd
  21812 00a1 39       		.uleb128 0x39
  21813 00a2 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 619
+GAS LISTING /tmp/ccauqTp8.s 			page 619
 
 
  21814 00a3 03       		.uleb128 0x3
@@ -37138,7 +37138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21868 00d9 3B       		.uleb128 0x3b
  21869 00da 0B       		.uleb128 0xb
  21870 00db 49       		.uleb128 0x49
-GAS LISTING /tmp/ccTWFgxc.s 			page 620
+GAS LISTING /tmp/ccauqTp8.s 			page 620
 
 
  21871 00dc 13       		.uleb128 0x13
@@ -37198,7 +37198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21925 0112 15       		.uleb128 0x15
  21926 0113 2E       		.uleb128 0x2e
  21927 0114 01       		.byte	0x1
-GAS LISTING /tmp/ccTWFgxc.s 			page 621
+GAS LISTING /tmp/ccauqTp8.s 			page 621
 
 
  21928 0115 3F       		.uleb128 0x3f
@@ -37258,7 +37258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  21982 014b 6E       		.uleb128 0x6e
  21983 014c 0E       		.uleb128 0xe
  21984 014d 32       		.uleb128 0x32
-GAS LISTING /tmp/ccTWFgxc.s 			page 622
+GAS LISTING /tmp/ccauqTp8.s 			page 622
 
 
  21985 014e 0B       		.uleb128 0xb
@@ -37318,7 +37318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22039 0184 19       		.uleb128 0x19
  22040 0185 64       		.uleb128 0x64
  22041 0186 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 623
+GAS LISTING /tmp/ccauqTp8.s 			page 623
 
 
  22042 0187 00       		.byte	0
@@ -37378,7 +37378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22096 01bd 0B       		.uleb128 0xb
  22097 01be 3B       		.uleb128 0x3b
  22098 01bf 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 624
+GAS LISTING /tmp/ccauqTp8.s 			page 624
 
 
  22099 01c0 6E       		.uleb128 0x6e
@@ -37438,7 +37438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22153 01f6 19       		.uleb128 0x19
  22154 01f7 03       		.uleb128 0x3
  22155 01f8 08       		.uleb128 0x8
-GAS LISTING /tmp/ccTWFgxc.s 			page 625
+GAS LISTING /tmp/ccauqTp8.s 			page 625
 
 
  22156 01f9 3A       		.uleb128 0x3a
@@ -37498,7 +37498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22210 022f 0B       		.uleb128 0xb
  22211 0230 00       		.byte	0
  22212 0231 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 626
+GAS LISTING /tmp/ccauqTp8.s 			page 626
 
 
  22213 0232 25       		.uleb128 0x25
@@ -37558,7 +37558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22267 0268 38       		.uleb128 0x38
  22268 0269 0B       		.uleb128 0xb
  22269 026a 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 627
+GAS LISTING /tmp/ccauqTp8.s 			page 627
 
 
  22270 026b 00       		.byte	0
@@ -37618,7 +37618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22324 02a1 2C       		.uleb128 0x2c
  22325 02a2 2E       		.uleb128 0x2e
  22326 02a3 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 628
+GAS LISTING /tmp/ccauqTp8.s 			page 628
 
 
  22327 02a4 3F       		.uleb128 0x3f
@@ -37678,7 +37678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22381 02da 64       		.uleb128 0x64
  22382 02db 13       		.uleb128 0x13
  22383 02dc 01       		.uleb128 0x1
-GAS LISTING /tmp/ccTWFgxc.s 			page 629
+GAS LISTING /tmp/ccauqTp8.s 			page 629
 
 
  22384 02dd 13       		.uleb128 0x13
@@ -37738,7 +37738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22438 0313 6E       		.uleb128 0x6e
  22439 0314 0E       		.uleb128 0xe
  22440 0315 49       		.uleb128 0x49
-GAS LISTING /tmp/ccTWFgxc.s 			page 630
+GAS LISTING /tmp/ccauqTp8.s 			page 630
 
 
  22441 0316 13       		.uleb128 0x13
@@ -37798,7 +37798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22495 034c 03       		.uleb128 0x3
  22496 034d 0E       		.uleb128 0xe
  22497 034e 3A       		.uleb128 0x3a
-GAS LISTING /tmp/ccTWFgxc.s 			page 631
+GAS LISTING /tmp/ccauqTp8.s 			page 631
 
 
  22498 034f 0B       		.uleb128 0xb
@@ -37858,7 +37858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22552 0385 0E       		.uleb128 0xe
  22553 0386 32       		.uleb128 0x32
  22554 0387 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 632
+GAS LISTING /tmp/ccauqTp8.s 			page 632
 
 
  22555 0388 3C       		.uleb128 0x3c
@@ -37918,7 +37918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22609 03be 0B       		.uleb128 0xb
  22610 03bf 3C       		.uleb128 0x3c
  22611 03c0 19       		.uleb128 0x19
-GAS LISTING /tmp/ccTWFgxc.s 			page 633
+GAS LISTING /tmp/ccauqTp8.s 			page 633
 
 
  22612 03c1 64       		.uleb128 0x64
@@ -37978,7 +37978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22666 03f7 19       		.uleb128 0x19
  22667 03f8 64       		.uleb128 0x64
  22668 03f9 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 634
+GAS LISTING /tmp/ccauqTp8.s 			page 634
 
 
  22669 03fa 01       		.uleb128 0x1
@@ -38038,7 +38038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22723 0430 1C       		.uleb128 0x1c
  22724 0431 05       		.uleb128 0x5
  22725 0432 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 635
+GAS LISTING /tmp/ccauqTp8.s 			page 635
 
 
  22726 0433 00       		.byte	0
@@ -38098,7 +38098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22780 0469 00       		.byte	0
  22781 046a 03       		.uleb128 0x3
  22782 046b 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 636
+GAS LISTING /tmp/ccauqTp8.s 			page 636
 
 
  22783 046c 3A       		.uleb128 0x3a
@@ -38158,7 +38158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22837 04a2 0B       		.uleb128 0xb
  22838 04a3 3B       		.uleb128 0x3b
  22839 04a4 05       		.uleb128 0x5
-GAS LISTING /tmp/ccTWFgxc.s 			page 637
+GAS LISTING /tmp/ccauqTp8.s 			page 637
 
 
  22840 04a5 6E       		.uleb128 0x6e
@@ -38218,7 +38218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22894 04db 3C       		.uleb128 0x3c
  22895 04dc 19       		.uleb128 0x19
  22896 04dd 64       		.uleb128 0x64
-GAS LISTING /tmp/ccTWFgxc.s 			page 638
+GAS LISTING /tmp/ccauqTp8.s 			page 638
 
 
  22897 04de 13       		.uleb128 0x13
@@ -38278,7 +38278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  22951 0514 00       		.byte	0
  22952 0515 50       		.uleb128 0x50
  22953 0516 28       		.uleb128 0x28
-GAS LISTING /tmp/ccTWFgxc.s 			page 639
+GAS LISTING /tmp/ccauqTp8.s 			page 639
 
 
  22954 0517 00       		.byte	0
@@ -38338,7 +38338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23008 054d 01       		.byte	0x1
  23009 054e 3F       		.uleb128 0x3f
  23010 054f 19       		.uleb128 0x19
-GAS LISTING /tmp/ccTWFgxc.s 			page 640
+GAS LISTING /tmp/ccauqTp8.s 			page 640
 
 
  23011 0550 03       		.uleb128 0x3
@@ -38398,7 +38398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23065 0586 00       		.byte	0
  23066 0587 00       		.byte	0
  23067 0588 57       		.uleb128 0x57
-GAS LISTING /tmp/ccTWFgxc.s 			page 641
+GAS LISTING /tmp/ccauqTp8.s 			page 641
 
 
  23068 0589 2E       		.uleb128 0x2e
@@ -38458,7 +38458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23122 05bf 0B       		.uleb128 0xb
  23123 05c0 0B       		.uleb128 0xb
  23124 05c1 3A       		.uleb128 0x3a
-GAS LISTING /tmp/ccTWFgxc.s 			page 642
+GAS LISTING /tmp/ccauqTp8.s 			page 642
 
 
  23125 05c2 0B       		.uleb128 0xb
@@ -38518,7 +38518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23179 05f8 3A       		.uleb128 0x3a
  23180 05f9 0B       		.uleb128 0xb
  23181 05fa 3B       		.uleb128 0x3b
-GAS LISTING /tmp/ccTWFgxc.s 			page 643
+GAS LISTING /tmp/ccauqTp8.s 			page 643
 
 
  23182 05fb 05       		.uleb128 0x5
@@ -38578,7 +38578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23236 0631 00       		.byte	0
  23237 0632 00       		.byte	0
  23238 0633 60       		.uleb128 0x60
-GAS LISTING /tmp/ccTWFgxc.s 			page 644
+GAS LISTING /tmp/ccauqTp8.s 			page 644
 
 
  23239 0634 2E       		.uleb128 0x2e
@@ -38638,7 +38638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23293 066a 00       		.byte	0
  23294 066b 00       		.byte	0
  23295 066c 63       		.uleb128 0x63
-GAS LISTING /tmp/ccTWFgxc.s 			page 645
+GAS LISTING /tmp/ccauqTp8.s 			page 645
 
 
  23296 066d 2E       		.uleb128 0x2e
@@ -38698,7 +38698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23350 06a3 00       		.byte	0
  23351 06a4 03       		.uleb128 0x3
  23352 06a5 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 646
+GAS LISTING /tmp/ccauqTp8.s 			page 646
 
 
  23353 06a6 3A       		.uleb128 0x3a
@@ -38758,7 +38758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23407 06dc 00       		.byte	0
  23408 06dd 6A       		.uleb128 0x6a
  23409 06de 24       		.uleb128 0x24
-GAS LISTING /tmp/ccTWFgxc.s 			page 647
+GAS LISTING /tmp/ccauqTp8.s 			page 647
 
 
  23410 06df 00       		.byte	0
@@ -38818,7 +38818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23464 0715 01       		.byte	0x1
  23465 0716 0B       		.uleb128 0xb
  23466 0717 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 648
+GAS LISTING /tmp/ccauqTp8.s 			page 648
 
 
  23467 0718 3A       		.uleb128 0x3a
@@ -38878,7 +38878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23521 074e 13       		.uleb128 0x13
  23522 074f 01       		.uleb128 0x1
  23523 0750 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 649
+GAS LISTING /tmp/ccauqTp8.s 			page 649
 
 
  23524 0751 00       		.byte	0
@@ -38938,7 +38938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23578 0787 05       		.uleb128 0x5
  23579 0788 49       		.uleb128 0x49
  23580 0789 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 650
+GAS LISTING /tmp/ccauqTp8.s 			page 650
 
 
  23581 078a 3C       		.uleb128 0x3c
@@ -38998,7 +38998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23635 07c0 00       		.byte	0
  23636 07c1 7E       		.uleb128 0x7e
  23637 07c2 13       		.uleb128 0x13
-GAS LISTING /tmp/ccTWFgxc.s 			page 651
+GAS LISTING /tmp/ccauqTp8.s 			page 651
 
 
  23638 07c3 01       		.byte	0x1
@@ -39058,7 +39058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23692 07fd 21       		.uleb128 0x21
  23693 07fe 00       		.byte	0
  23694 07ff 49       		.uleb128 0x49
-GAS LISTING /tmp/ccTWFgxc.s 			page 652
+GAS LISTING /tmp/ccauqTp8.s 			page 652
 
 
  23695 0800 13       		.uleb128 0x13
@@ -39118,7 +39118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23749 083b 03       		.uleb128 0x3
  23750 083c 0E       		.uleb128 0xe
  23751 083d 3A       		.uleb128 0x3a
-GAS LISTING /tmp/ccTWFgxc.s 			page 653
+GAS LISTING /tmp/ccauqTp8.s 			page 653
 
 
  23752 083e 0B       		.uleb128 0xb
@@ -39178,7 +39178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23806 0879 03       		.uleb128 0x3
  23807 087a 08       		.uleb128 0x8
  23808 087b 3A       		.uleb128 0x3a
-GAS LISTING /tmp/ccTWFgxc.s 			page 654
+GAS LISTING /tmp/ccauqTp8.s 			page 654
 
 
  23809 087c 0B       		.uleb128 0xb
@@ -39238,7 +39238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23863 08b6 00       		.byte	0
  23864 08b7 9201     		.uleb128 0x92
  23865 08b9 2E       		.uleb128 0x2e
-GAS LISTING /tmp/ccTWFgxc.s 			page 655
+GAS LISTING /tmp/ccauqTp8.s 			page 655
 
 
  23866 08ba 01       		.byte	0x1
@@ -39298,7 +39298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23920 08f4 13       		.uleb128 0x13
  23921 08f5 00       		.byte	0
  23922 08f6 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 656
+GAS LISTING /tmp/ccauqTp8.s 			page 656
 
 
  23923 08f7 9701     		.uleb128 0x97
@@ -39358,7 +39358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  23977 0933 02       		.uleb128 0x2
  23978 0934 17       		.uleb128 0x17
  23979 0935 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 657
+GAS LISTING /tmp/ccauqTp8.s 			page 657
 
 
  23980 0936 00       		.byte	0
@@ -39418,7 +39418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24034 0970 0B       		.uleb128 0xb
  24035 0971 59       		.uleb128 0x59
  24036 0972 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 658
+GAS LISTING /tmp/ccauqTp8.s 			page 658
 
 
  24037 0973 00       		.byte	0
@@ -39478,7 +39478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24091 09b2 0B       		.uleb128 0xb
  24092 09b3 3B       		.uleb128 0x3b
  24093 09b4 05       		.uleb128 0x5
-GAS LISTING /tmp/ccTWFgxc.s 			page 659
+GAS LISTING /tmp/ccauqTp8.s 			page 659
 
 
  24094 09b5 49       		.uleb128 0x49
@@ -39538,7 +39538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24148 09ef 1C       		.uleb128 0x1c
  24149 09f0 0B       		.uleb128 0xb
  24150 09f1 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 660
+GAS LISTING /tmp/ccauqTp8.s 			page 660
 
 
  24151 09f2 00       		.byte	0
@@ -39598,7 +39598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24205 0a2c 07       		.uleb128 0x7
  24206 0a2d 58       		.uleb128 0x58
  24207 0a2e 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 661
+GAS LISTING /tmp/ccauqTp8.s 			page 661
 
 
  24208 0a2f 59       		.uleb128 0x59
@@ -39658,7 +39658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24262 0a6a 07       		.uleb128 0x7
  24263 0a6b 40       		.uleb128 0x40
  24264 0a6c 18       		.uleb128 0x18
-GAS LISTING /tmp/ccTWFgxc.s 			page 662
+GAS LISTING /tmp/ccauqTp8.s 			page 662
 
 
  24265 0a6d 9742     		.uleb128 0x2117
@@ -39718,7 +39718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24319 0aa8 49       		.uleb128 0x49
  24320 0aa9 13       		.uleb128 0x13
  24321 0aaa 02       		.uleb128 0x2
-GAS LISTING /tmp/ccTWFgxc.s 			page 663
+GAS LISTING /tmp/ccauqTp8.s 			page 663
 
 
  24322 0aab 17       		.uleb128 0x17
@@ -39778,7 +39778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24376 0aed 11       		.uleb128 0x11
  24377 0aee 01       		.uleb128 0x1
  24378 0aef 31       		.uleb128 0x31
-GAS LISTING /tmp/ccTWFgxc.s 			page 664
+GAS LISTING /tmp/ccauqTp8.s 			page 664
 
 
  24379 0af0 13       		.uleb128 0x13
@@ -39838,7 +39838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24433 0b2a 00       		.byte	0
  24434 0b2b 03       		.uleb128 0x3
  24435 0b2c 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 665
+GAS LISTING /tmp/ccauqTp8.s 			page 665
 
 
  24436 0b2d 49       		.uleb128 0x49
@@ -39898,7 +39898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24490 0b6e C201     		.uleb128 0xc2
  24491 0b70 05       		.uleb128 0x5
  24492 0b71 00       		.byte	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 666
+GAS LISTING /tmp/ccauqTp8.s 			page 666
 
 
  24493 0b72 31       		.uleb128 0x31
@@ -39958,7 +39958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24547 0bb2 0E       		.uleb128 0xe
  24548 0bb3 3A       		.uleb128 0x3a
  24549 0bb4 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccTWFgxc.s 			page 667
+GAS LISTING /tmp/ccauqTp8.s 			page 667
 
 
  24550 0bb5 3B       		.uleb128 0x3b
@@ -40018,7 +40018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24604 0bf0 19       		.uleb128 0x19
  24605 0bf1 03       		.uleb128 0x3
  24606 0bf2 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 668
+GAS LISTING /tmp/ccauqTp8.s 			page 668
 
 
  24607 0bf3 6E       		.uleb128 0x6e
@@ -40078,7 +40078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24661 0c2c 0E       		.uleb128 0xe
  24662 0c2d 6E       		.uleb128 0x6e
  24663 0c2e 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccTWFgxc.s 			page 669
+GAS LISTING /tmp/ccauqTp8.s 			page 669
 
 
  24664 0c2f 34       		.uleb128 0x34
@@ -40138,7 +40138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24709      00000000 
  24710 0054 00000000 		.quad	.LFE5819
  24710      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 670
+GAS LISTING /tmp/ccauqTp8.s 			page 670
 
 
  24711 005c 0400     		.value	0x4
@@ -40198,7 +40198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24751 00e8 9F       		.byte	0x9f
  24752 00e9 00000000 		.quad	0
  24752      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 671
+GAS LISTING /tmp/ccauqTp8.s 			page 671
 
 
  24753 00f1 00000000 		.quad	0
@@ -40258,7 +40258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24790 018e 00000000 		.quad	.LVL19
  24790      00000000 
  24791 0196 00000000 		.quad	.LFE5766
-GAS LISTING /tmp/ccTWFgxc.s 			page 672
+GAS LISTING /tmp/ccauqTp8.s 			page 672
 
 
  24791      00000000 
@@ -40318,7 +40318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24833 0226 0600     		.value	0x6
  24834 0228 9E       		.byte	0x9e
  24835 0229 04       		.uleb128 0x4
-GAS LISTING /tmp/ccTWFgxc.s 			page 673
+GAS LISTING /tmp/ccauqTp8.s 			page 673
 
 
  24836 022a 0000803F 		.long	0x3f800000
@@ -40378,7 +40378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24873 02d5 00000000 		.quad	.LVL15
  24873      00000000 
  24874 02dd 0600     		.value	0x6
-GAS LISTING /tmp/ccTWFgxc.s 			page 674
+GAS LISTING /tmp/ccauqTp8.s 			page 674
 
 
  24875 02df 71       		.byte	0x71
@@ -40438,7 +40438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24917 0363 00000000 		.quad	.LVL25
  24917      00000000 
  24918 036b 00000000 		.quad	.LVL28
-GAS LISTING /tmp/ccTWFgxc.s 			page 675
+GAS LISTING /tmp/ccauqTp8.s 			page 675
 
 
  24918      00000000 
@@ -40498,7 +40498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24958 0404 55       		.byte	0x55
  24959 0405 9F       		.byte	0x9f
  24960 0406 00000000 		.quad	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 676
+GAS LISTING /tmp/ccauqTp8.s 			page 676
 
 
  24960      00000000 
@@ -40558,7 +40558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  24999 04a3 9F       		.byte	0x9f
  25000 04a4 00000000 		.quad	0
  25000      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 677
+GAS LISTING /tmp/ccauqTp8.s 			page 677
 
 
  25001 04ac 00000000 		.quad	0
@@ -40618,7 +40618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25038 0555 00000000 		.quad	.LVL319
  25038      00000000 
  25039 055d 00000000 		.quad	.LVL326
-GAS LISTING /tmp/ccTWFgxc.s 			page 678
+GAS LISTING /tmp/ccauqTp8.s 			page 678
 
 
  25039      00000000 
@@ -40678,7 +40678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25077 0606 00000000 		.quad	.LVL329
  25077      00000000 
  25078 060e 00000000 		.quad	.LFE5505
-GAS LISTING /tmp/ccTWFgxc.s 			page 679
+GAS LISTING /tmp/ccauqTp8.s 			page 679
 
 
  25078      00000000 
@@ -40738,7 +40738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25115      00000000 
  25116 06bc 00000000 		.quad	.LVL311
  25116      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 680
+GAS LISTING /tmp/ccauqTp8.s 			page 680
 
 
  25117 06c4 0400     		.value	0x4
@@ -40798,7 +40798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25159 074f A4A27F   		.sleb128 -11996
  25160 0752 93       		.byte	0x93
  25161 0753 04       		.uleb128 0x4
-GAS LISTING /tmp/ccTWFgxc.s 			page 681
+GAS LISTING /tmp/ccauqTp8.s 			page 681
 
 
  25162 0754 67       		.byte	0x67
@@ -40858,7 +40858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25211 07b6 00000000 		.quad	.LVL236
  25211      00000000 
  25212 07be 1700     		.value	0x17
-GAS LISTING /tmp/ccTWFgxc.s 			page 682
+GAS LISTING /tmp/ccauqTp8.s 			page 682
 
 
  25213 07c0 91       		.byte	0x91
@@ -40918,7 +40918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25263 0822 93       		.byte	0x93
  25264 0823 01       		.uleb128 0x1
  25265 0824 93       		.byte	0x93
-GAS LISTING /tmp/ccTWFgxc.s 			page 683
+GAS LISTING /tmp/ccauqTp8.s 			page 683
 
 
  25266 0825 03       		.uleb128 0x3
@@ -40978,7 +40978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25314 0892 04       		.uleb128 0x4
  25315 0893 91       		.byte	0x91
  25316 0894 B4A27F   		.sleb128 -11980
-GAS LISTING /tmp/ccTWFgxc.s 			page 684
+GAS LISTING /tmp/ccauqTp8.s 			page 684
 
 
  25317 0897 93       		.byte	0x93
@@ -41038,7 +41038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25365 0902 91       		.byte	0x91
  25366 0903 A0A27F   		.sleb128 -12000
  25367 0906 93       		.byte	0x93
-GAS LISTING /tmp/ccTWFgxc.s 			page 685
+GAS LISTING /tmp/ccauqTp8.s 			page 685
 
 
  25368 0907 04       		.uleb128 0x4
@@ -41098,7 +41098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25416 0968 91       		.byte	0x91
  25417 0969 A4A27F   		.sleb128 -11996
  25418 096c 93       		.byte	0x93
-GAS LISTING /tmp/ccTWFgxc.s 			page 686
+GAS LISTING /tmp/ccauqTp8.s 			page 686
 
 
  25419 096d 04       		.uleb128 0x4
@@ -41158,7 +41158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25467 09d8 04       		.uleb128 0x4
  25468 09d9 93       		.byte	0x93
  25469 09da 04       		.uleb128 0x4
-GAS LISTING /tmp/ccTWFgxc.s 			page 687
+GAS LISTING /tmp/ccauqTp8.s 			page 687
 
 
  25470 09db 00000000 		.quad	.LVL197
@@ -41218,7 +41218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25518 0a48 91       		.byte	0x91
  25519 0a49 B0A27F   		.sleb128 -11984
  25520 0a4c 93       		.byte	0x93
-GAS LISTING /tmp/ccTWFgxc.s 			page 688
+GAS LISTING /tmp/ccauqTp8.s 			page 688
 
 
  25521 0a4d 04       		.uleb128 0x4
@@ -41278,7 +41278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25569 0ab8 93       		.byte	0x93
  25570 0ab9 04       		.uleb128 0x4
  25571 0aba 91       		.byte	0x91
-GAS LISTING /tmp/ccTWFgxc.s 			page 689
+GAS LISTING /tmp/ccauqTp8.s 			page 689
 
 
  25572 0abb A8A27F   		.sleb128 -11992
@@ -41338,7 +41338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25620              	.LLST23:
  25621 0b27 00000000 		.quad	.LVL26
  25621      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 690
+GAS LISTING /tmp/ccauqTp8.s 			page 690
 
 
  25622 0b2f 00000000 		.quad	.LVL38
@@ -41398,7 +41398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25656      00000000 
  25657 0bde 0200     		.value	0x2
  25658 0be0 73       		.byte	0x73
-GAS LISTING /tmp/ccTWFgxc.s 			page 691
+GAS LISTING /tmp/ccauqTp8.s 			page 691
 
 
  25659 0be1 08       		.sleb128 8
@@ -41458,7 +41458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25695      00000000 
  25696 0c8a 0400     		.value	0x4
  25697 0c8c 91       		.byte	0x91
-GAS LISTING /tmp/ccTWFgxc.s 			page 692
+GAS LISTING /tmp/ccauqTp8.s 			page 692
 
 
  25698 0c8d B058     		.sleb128 -5072
@@ -41518,7 +41518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25736 0d2e 50       		.byte	0x50
  25737 0d2f 00000000 		.quad	.LVL168-1
  25737      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 693
+GAS LISTING /tmp/ccauqTp8.s 			page 693
 
 
  25738 0d37 00000000 		.quad	.LVL326
@@ -41578,7 +41578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25775      00000000 
  25776 0de0 0400     		.value	0x4
  25777 0de2 91       		.byte	0x91
-GAS LISTING /tmp/ccTWFgxc.s 			page 694
+GAS LISTING /tmp/ccauqTp8.s 			page 694
 
 
  25778 0de3 B058     		.sleb128 -5072
@@ -41638,7 +41638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25816 0e84 50       		.byte	0x50
  25817 0e85 00000000 		.quad	.LVL234
  25817      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 695
+GAS LISTING /tmp/ccauqTp8.s 			page 695
 
 
  25818 0e8d 00000000 		.quad	.LVL262
@@ -41698,7 +41698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25857      00000000 
  25858 0f33 0500     		.value	0x5
  25859 0f35 91       		.byte	0x91
-GAS LISTING /tmp/ccTWFgxc.s 			page 696
+GAS LISTING /tmp/ccauqTp8.s 			page 696
 
 
  25860 0f36 80A37F   		.sleb128 -11904
@@ -41758,7 +41758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25897 0fde 00000000 		.quad	.LVL335
  25897      00000000 
  25898 0fe6 0400     		.value	0x4
-GAS LISTING /tmp/ccTWFgxc.s 			page 697
+GAS LISTING /tmp/ccauqTp8.s 			page 697
 
 
  25899 0fe8 91       		.byte	0x91
@@ -41818,7 +41818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25937 1089 B058     		.sleb128 -5072
  25938 108b 9F       		.byte	0x9f
  25939 108c 00000000 		.quad	.LVL262
-GAS LISTING /tmp/ccTWFgxc.s 			page 698
+GAS LISTING /tmp/ccauqTp8.s 			page 698
 
 
  25939      00000000 
@@ -41878,7 +41878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  25977 1132 00000000 		.quad	.LVL174
  25977      00000000 
  25978 113a 0200     		.value	0x2
-GAS LISTING /tmp/ccTWFgxc.s 			page 699
+GAS LISTING /tmp/ccauqTp8.s 			page 699
 
 
  25979 113c 31       		.byte	0x31
@@ -41938,7 +41938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26020      00000000 
  26021 11c7 00000000 		.quad	.LVL333
  26021      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 700
+GAS LISTING /tmp/ccauqTp8.s 			page 700
 
 
  26022 11cf 0A00     		.value	0xa
@@ -41998,7 +41998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26063      00000000 
  26064 1259 00000000 		.quad	.LVL182
  26064      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 701
+GAS LISTING /tmp/ccauqTp8.s 			page 701
 
 
  26065 1261 0700     		.value	0x7
@@ -42058,7 +42058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26109      00000000 
  26110 12db 0A00     		.value	0xa
  26111 12dd 74       		.byte	0x74
-GAS LISTING /tmp/ccTWFgxc.s 			page 702
+GAS LISTING /tmp/ccauqTp8.s 			page 702
 
 
  26112 12de 7F       		.sleb128 -1
@@ -42118,7 +42118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26158 1348 40       		.byte	0x40
  26159 1349 F7       		.byte	0xf7
  26160 134a 37       		.uleb128 0x37
-GAS LISTING /tmp/ccTWFgxc.s 			page 703
+GAS LISTING /tmp/ccauqTp8.s 			page 703
 
 
  26161 134b 25       		.byte	0x25
@@ -42178,7 +42178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26213 1393 22       		.byte	0x22
  26214 1394 72       		.byte	0x72
  26215 1395 00       		.sleb128 0
-GAS LISTING /tmp/ccTWFgxc.s 			page 704
+GAS LISTING /tmp/ccauqTp8.s 			page 704
 
 
  26216 1396 22       		.byte	0x22
@@ -42238,7 +42238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26266 13ed 00000000 		.quad	0
  26266      00000000 
  26267 13f5 00000000 		.quad	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 705
+GAS LISTING /tmp/ccauqTp8.s 			page 705
 
 
  26267      00000000 
@@ -42298,7 +42298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26305 14a0 00000000 		.long	.Ldebug_info0+36134
  26306 14a4 00       		.sleb128 0
  26307 14a5 00000000 		.quad	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 706
+GAS LISTING /tmp/ccauqTp8.s 			page 706
 
 
  26307      00000000 
@@ -42358,7 +42358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26344 1553 00000000 		.quad	.LVL330
  26344      00000000 
  26345 155b 00000000 		.quad	.LVL331
-GAS LISTING /tmp/ccTWFgxc.s 			page 707
+GAS LISTING /tmp/ccauqTp8.s 			page 707
 
 
  26345      00000000 
@@ -42418,7 +42418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26383      00000000 
  26384 160a 0400     		.value	0x4
  26385 160c 91       		.byte	0x91
-GAS LISTING /tmp/ccTWFgxc.s 			page 708
+GAS LISTING /tmp/ccauqTp8.s 			page 708
 
 
  26386 160d B058     		.sleb128 -5072
@@ -42478,7 +42478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26424 16ad 91       		.byte	0x91
  26425 16ae A8A27F   		.sleb128 -11992
  26426 16b1 F6       		.byte	0xf6
-GAS LISTING /tmp/ccTWFgxc.s 			page 709
+GAS LISTING /tmp/ccauqTp8.s 			page 709
 
 
  26427 16b2 04       		.byte	0x4
@@ -42538,7 +42538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26467 1741 00000000 		.quad	.LVL191-1
  26467      00000000 
  26468 1749 00000000 		.quad	.LVL197
-GAS LISTING /tmp/ccTWFgxc.s 			page 710
+GAS LISTING /tmp/ccauqTp8.s 			page 710
 
 
  26468      00000000 
@@ -42598,7 +42598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26505 17f3 00000000 		.quad	.LVL197
  26505      00000000 
  26506 17fb 0600     		.value	0x6
-GAS LISTING /tmp/ccTWFgxc.s 			page 711
+GAS LISTING /tmp/ccauqTp8.s 			page 711
 
 
  26507 17fd F2       		.byte	0xf2
@@ -42658,7 +42658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26545 18a2 0200     		.value	0x2
  26546 18a4 77       		.byte	0x77
  26547 18a5 00       		.sleb128 0
-GAS LISTING /tmp/ccTWFgxc.s 			page 712
+GAS LISTING /tmp/ccauqTp8.s 			page 712
 
 
  26548 18a6 00000000 		.quad	0
@@ -42718,7 +42718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26588 1936 00000000 		.quad	.LVL228
  26588      00000000 
  26589 193e 00000000 		.quad	.LVL262
-GAS LISTING /tmp/ccTWFgxc.s 			page 713
+GAS LISTING /tmp/ccauqTp8.s 			page 713
 
 
  26589      00000000 
@@ -42778,7 +42778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26628 19df 00000000 		.quad	.LVL267
  26628      00000000 
  26629 19e7 0600     		.value	0x6
-GAS LISTING /tmp/ccTWFgxc.s 			page 714
+GAS LISTING /tmp/ccauqTp8.s 			page 714
 
 
  26630 19e9 F2       		.byte	0xf2
@@ -42838,7 +42838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26672      00000000 
  26673              	.LLST77:
  26674 1a78 00000000 		.quad	.LVL203
-GAS LISTING /tmp/ccTWFgxc.s 			page 715
+GAS LISTING /tmp/ccauqTp8.s 			page 715
 
 
  26674      00000000 
@@ -42898,7 +42898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26711 1b24 00       		.sleb128 0
  26712 1b25 00000000 		.quad	.LVL319
  26712      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 716
+GAS LISTING /tmp/ccauqTp8.s 			page 716
 
 
  26713 1b2d 00000000 		.quad	.LVL321
@@ -42958,7 +42958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26750 1bd4 0600     		.value	0x6
  26751 1bd6 F2       		.byte	0xf2
  26752 1bd7 00000000 		.long	.Ldebug_info0+38061
-GAS LISTING /tmp/ccTWFgxc.s 			page 717
+GAS LISTING /tmp/ccauqTp8.s 			page 717
 
 
  26753 1bdb 00       		.sleb128 0
@@ -43018,7 +43018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26793      00000000 
  26794 1c6b 0100     		.value	0x1
  26795 1c6d 61       		.byte	0x61
-GAS LISTING /tmp/ccTWFgxc.s 			page 718
+GAS LISTING /tmp/ccauqTp8.s 			page 718
 
 
  26796 1c6e 00000000 		.quad	.LVL319
@@ -43078,7 +43078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26832 1d17 00000000 		.quad	0
  26832      00000000 
  26833 1d1f 00000000 		.quad	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 719
+GAS LISTING /tmp/ccauqTp8.s 			page 719
 
 
  26833      00000000 
@@ -43138,7 +43138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26869 1dcb 0500     		.value	0x5
  26870 1dcd 91       		.byte	0x91
  26871 1dce 80A37F   		.sleb128 -11904
-GAS LISTING /tmp/ccTWFgxc.s 			page 720
+GAS LISTING /tmp/ccauqTp8.s 			page 720
 
 
  26872 1dd1 9F       		.byte	0x9f
@@ -43198,7 +43198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26908      00000000 
  26909 1e7c 0400     		.value	0x4
  26910 1e7e 91       		.byte	0x91
-GAS LISTING /tmp/ccTWFgxc.s 			page 721
+GAS LISTING /tmp/ccauqTp8.s 			page 721
 
 
  26911 1e7f C8A27F   		.sleb128 -11960
@@ -43258,7 +43258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26949 1f27 88A27F   		.sleb128 -12024
  26950 1f2a 00000000 		.quad	.LVL344
  26950      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 722
+GAS LISTING /tmp/ccauqTp8.s 			page 722
 
 
  26951 1f32 00000000 		.quad	.LFE5505
@@ -43318,7 +43318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  26988 1fd3 00000000 		.quad	.LVL229
  26988      00000000 
  26989 1fdb 00000000 		.quad	.LVL232
-GAS LISTING /tmp/ccTWFgxc.s 			page 723
+GAS LISTING /tmp/ccauqTp8.s 			page 723
 
 
  26989      00000000 
@@ -43378,7 +43378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27027 207f 93       		.byte	0x93
  27028 2080 08       		.uleb128 0x8
  27029 2081 5C       		.byte	0x5c
-GAS LISTING /tmp/ccTWFgxc.s 			page 724
+GAS LISTING /tmp/ccauqTp8.s 			page 724
 
 
  27030 2082 93       		.byte	0x93
@@ -43438,7 +43438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27074 20f9 00000000 		.quad	.LVL354
  27074      00000000 
  27075 2101 00000000 		.quad	.LFE5505
-GAS LISTING /tmp/ccTWFgxc.s 			page 725
+GAS LISTING /tmp/ccauqTp8.s 			page 725
 
 
  27075      00000000 
@@ -43498,7 +43498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27119 2187 9F       		.byte	0x9f
  27120 2188 00000000 		.quad	.LVL344
  27120      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 726
+GAS LISTING /tmp/ccauqTp8.s 			page 726
 
 
  27121 2190 00000000 		.quad	.LFE5505
@@ -43558,7 +43558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27160 2229 56       		.byte	0x56
  27161 222a 00000000 		.quad	.LVL311
  27161      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 727
+GAS LISTING /tmp/ccauqTp8.s 			page 727
 
 
  27162 2232 00000000 		.quad	.LVL317
@@ -43618,7 +43618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27199 22db 00000000 		.quad	.LVL244
  27199      00000000 
  27200 22e3 00000000 		.quad	.LVL245
-GAS LISTING /tmp/ccTWFgxc.s 			page 728
+GAS LISTING /tmp/ccauqTp8.s 			page 728
 
 
  27200      00000000 
@@ -43678,7 +43678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27237      00000000 
  27238 2394 00000000 		.quad	.LVL345
  27238      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 729
+GAS LISTING /tmp/ccauqTp8.s 			page 729
 
 
  27239 239c 0400     		.value	0x4
@@ -43738,7 +43738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27276      00000000 
  27277 2448 00000000 		.quad	.LVL314
  27277      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 730
+GAS LISTING /tmp/ccauqTp8.s 			page 730
 
 
  27278 2450 0100     		.value	0x1
@@ -43798,7 +43798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27314      00000000 
  27315 24fa 0300     		.value	0x3
  27316 24fc 09       		.byte	0x9
-GAS LISTING /tmp/ccTWFgxc.s 			page 731
+GAS LISTING /tmp/ccauqTp8.s 			page 731
 
 
  27317 24fd FF       		.byte	0xff
@@ -43858,7 +43858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27358 2587 00000000 		.quad	.LVL296
  27358      00000000 
  27359 258f 0300     		.value	0x3
-GAS LISTING /tmp/ccTWFgxc.s 			page 732
+GAS LISTING /tmp/ccauqTp8.s 			page 732
 
 
  27360 2591 09       		.byte	0x9
@@ -43918,7 +43918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27400 261e 00000000 		.quad	0
  27400      00000000 
  27401 2626 00000000 		.quad	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 733
+GAS LISTING /tmp/ccauqTp8.s 			page 733
 
 
  27401      00000000 
@@ -43978,7 +43978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27437 26d1 00000000 		.quad	.LVL272
  27437      00000000 
  27438 26d9 00000000 		.quad	.LVL274
-GAS LISTING /tmp/ccTWFgxc.s 			page 734
+GAS LISTING /tmp/ccauqTp8.s 			page 734
 
 
  27438      00000000 
@@ -44038,7 +44038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27474 2786 50       		.byte	0x50
  27475 2787 00000000 		.quad	.LVL275-1
  27475      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 735
+GAS LISTING /tmp/ccauqTp8.s 			page 735
 
 
  27476 278f 00000000 		.quad	.LVL285
@@ -44098,7 +44098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27511 283c 0100     		.value	0x1
  27512 283e 5C       		.byte	0x5c
  27513 283f 00000000 		.quad	.LVL314
-GAS LISTING /tmp/ccTWFgxc.s 			page 736
+GAS LISTING /tmp/ccauqTp8.s 			page 736
 
 
  27513      00000000 
@@ -44158,7 +44158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27548 28ef 0200     		.value	0x2
  27549 28f1 31       		.byte	0x31
  27550 28f2 9F       		.byte	0x9f
-GAS LISTING /tmp/ccTWFgxc.s 			page 737
+GAS LISTING /tmp/ccauqTp8.s 			page 737
 
 
  27551 28f3 00000000 		.quad	0
@@ -44218,7 +44218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27585      00000000 
  27586 29a3 0200     		.value	0x2
  27587 29a5 3A       		.byte	0x3a
-GAS LISTING /tmp/ccTWFgxc.s 			page 738
+GAS LISTING /tmp/ccauqTp8.s 			page 738
 
 
  27588 29a6 9F       		.byte	0x9f
@@ -44278,7 +44278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27630 2a28 00       		.sleb128 0
  27631 2a29 22       		.byte	0x22
  27632 2a2a 9F       		.byte	0x9f
-GAS LISTING /tmp/ccTWFgxc.s 			page 739
+GAS LISTING /tmp/ccauqTp8.s 			page 739
 
 
  27633 2a2b 00000000 		.quad	0
@@ -44338,7 +44338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27668      00000000 
  27669 2ad7 00000000 		.quad	.LVL294
  27669      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 740
+GAS LISTING /tmp/ccauqTp8.s 			page 740
 
 
  27670 2adf 0100     		.value	0x1
@@ -44398,7 +44398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27705      00000000 
  27706 2b8a 00000000 		.quad	.LVL354
  27706      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 741
+GAS LISTING /tmp/ccauqTp8.s 			page 741
 
 
  27707 2b92 0400     		.value	0x4
@@ -44458,7 +44458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27743      00000000 
  27744 2c3a 0200     		.value	0x2
  27745 2c3c 3A       		.byte	0x3a
-GAS LISTING /tmp/ccTWFgxc.s 			page 742
+GAS LISTING /tmp/ccauqTp8.s 			page 742
 
 
  27746 2c3d 9F       		.byte	0x9f
@@ -44518,7 +44518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27782 2ce5 0100     		.value	0x1
  27783 2ce7 5D       		.byte	0x5d
  27784 2ce8 00000000 		.quad	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 743
+GAS LISTING /tmp/ccauqTp8.s 			page 743
 
 
  27784      00000000 
@@ -44578,7 +44578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27821      00000000 
  27822 2d90 0100     		.value	0x1
  27823 2d92 5D       		.byte	0x5d
-GAS LISTING /tmp/ccTWFgxc.s 			page 744
+GAS LISTING /tmp/ccauqTp8.s 			page 744
 
 
  27824 2d93 00000000 		.quad	.LVL258
@@ -44638,7 +44638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27859      00000000 
  27860 2e41 00000000 		.quad	0
  27860      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 745
+GAS LISTING /tmp/ccauqTp8.s 			page 745
 
 
  27861              	.LLST169:
@@ -44698,7 +44698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27896      00000000 
  27897 2ef5 0100     		.value	0x1
  27898 2ef7 5C       		.byte	0x5c
-GAS LISTING /tmp/ccTWFgxc.s 			page 746
+GAS LISTING /tmp/ccauqTp8.s 			page 746
 
 
  27899 2ef8 00000000 		.quad	.LVL253
@@ -44758,7 +44758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27934      00000000 
  27935 2fa4 00000000 		.quad	0
  27935      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 747
+GAS LISTING /tmp/ccauqTp8.s 			page 747
 
 
  27936              	.LLST174:
@@ -44818,7 +44818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  27975      00000000 
  27976 3043 00000000 		.quad	0
  27976      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 748
+GAS LISTING /tmp/ccauqTp8.s 			page 748
 
 
  27977              	.LLST180:
@@ -44878,7 +44878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28017 30dd 91       		.byte	0x91
  28018 30de D8A27F   		.sleb128 -11944
  28019 30e1 00000000 		.quad	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 749
+GAS LISTING /tmp/ccauqTp8.s 			page 749
 
 
  28019      00000000 
@@ -44938,7 +44938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28055      00000000 
  28056 3190 00000000 		.quad	.LVL344
  28056      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 750
+GAS LISTING /tmp/ccauqTp8.s 			page 750
 
 
  28057 3198 0500     		.value	0x5
@@ -44998,7 +44998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28097 322a 00000000 		.quad	.LVL347
  28097      00000000 
  28098 3232 00000000 		.quad	.LVL349-1
-GAS LISTING /tmp/ccTWFgxc.s 			page 751
+GAS LISTING /tmp/ccauqTp8.s 			page 751
 
 
  28098      00000000 
@@ -45058,7 +45058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28141 0018 2A000000 		.quad	.Letext0-.Ltext0
  28141      00000000 
  28142 0020 00000000 		.quad	.LFB5091
-GAS LISTING /tmp/ccTWFgxc.s 			page 752
+GAS LISTING /tmp/ccauqTp8.s 			page 752
 
 
  28142      00000000 
@@ -45118,7 +45118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28170      00000000 
  28171 0088 00000000 		.quad	0
  28171      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 753
+GAS LISTING /tmp/ccauqTp8.s 			page 753
 
 
  28172 0090 00000000 		.quad	.LBB1416
@@ -45178,7 +45178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28199 0168 00000000 		.quad	0
  28199      00000000 
  28200 0170 00000000 		.quad	.LBB1450
-GAS LISTING /tmp/ccTWFgxc.s 			page 754
+GAS LISTING /tmp/ccauqTp8.s 			page 754
 
 
  28200      00000000 
@@ -45238,7 +45238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28227      00000000 
  28228 0250 00000000 		.quad	.LBB1484
  28228      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 755
+GAS LISTING /tmp/ccauqTp8.s 			page 755
 
 
  28229 0258 00000000 		.quad	.LBE1484
@@ -45298,7 +45298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28256 0330 00000000 		.quad	0
  28256      00000000 
  28257 0338 00000000 		.quad	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 756
+GAS LISTING /tmp/ccauqTp8.s 			page 756
 
 
  28257      00000000 
@@ -45358,7 +45358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28284      00000000 
  28285 0418 00000000 		.quad	.LBE1520
  28285      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 757
+GAS LISTING /tmp/ccauqTp8.s 			page 757
 
 
  28286 0420 00000000 		.quad	.LBB1523
@@ -45418,7 +45418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28313 04f8 00000000 		.quad	.LBE1554
  28313      00000000 
  28314 0500 00000000 		.quad	.LBB1555
-GAS LISTING /tmp/ccTWFgxc.s 			page 758
+GAS LISTING /tmp/ccauqTp8.s 			page 758
 
 
  28314      00000000 
@@ -45478,7 +45478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28341      00000000 
  28342 05e0 00000000 		.quad	.LBB1607
  28342      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 759
+GAS LISTING /tmp/ccauqTp8.s 			page 759
 
 
  28343 05e8 00000000 		.quad	.LBE1607
@@ -45538,7 +45538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28370 06c0 00000000 		.quad	.LBB1582
  28370      00000000 
  28371 06c8 00000000 		.quad	.LBE1582
-GAS LISTING /tmp/ccTWFgxc.s 			page 760
+GAS LISTING /tmp/ccauqTp8.s 			page 760
 
 
  28371      00000000 
@@ -45598,7 +45598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28398      00000000 
  28399 07a8 00000000 		.quad	0
  28399      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 761
+GAS LISTING /tmp/ccauqTp8.s 			page 761
 
 
  28400 07b0 00000000 		.quad	.LBB1614
@@ -45658,7 +45658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28427 0888 00000000 		.quad	0
  28427      00000000 
  28428 0890 00000000 		.quad	.LBB1617
-GAS LISTING /tmp/ccTWFgxc.s 			page 762
+GAS LISTING /tmp/ccauqTp8.s 			page 762
 
 
  28428      00000000 
@@ -45718,7 +45718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28455      00000000 
  28456 0970 00000000 		.quad	0
  28456      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 763
+GAS LISTING /tmp/ccauqTp8.s 			page 763
 
 
  28457 0978 00000000 		.quad	0
@@ -45778,7 +45778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28484 0a50 00000000 		.quad	.LBB1673
  28484      00000000 
  28485 0a58 00000000 		.quad	.LBE1673
-GAS LISTING /tmp/ccTWFgxc.s 			page 764
+GAS LISTING /tmp/ccauqTp8.s 			page 764
 
 
  28485      00000000 
@@ -45838,7 +45838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28512      00000000 
  28513 0b38 00000000 		.quad	.LBE1712
  28513      00000000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 765
+GAS LISTING /tmp/ccauqTp8.s 			page 765
 
 
  28514 0b40 00000000 		.quad	.LBB1723
@@ -45898,7 +45898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28541 0c18 00000000 		.quad	.LBE1810
  28541      00000000 
  28542 0c20 00000000 		.quad	0
-GAS LISTING /tmp/ccTWFgxc.s 			page 766
+GAS LISTING /tmp/ccauqTp8.s 			page 766
 
 
  28542      00000000 
@@ -45958,7 +45958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28566      74697665 
  28566      5F736967 
  28566      6E00
-GAS LISTING /tmp/ccTWFgxc.s 			page 767
+GAS LISTING /tmp/ccauqTp8.s 			page 767
 
 
  28567              	.LASF1126:
@@ -46018,7 +46018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28594      61746F72 
  28594      5F747261 
  28595              	.LASF898:
-GAS LISTING /tmp/ccTWFgxc.s 			page 768
+GAS LISTING /tmp/ccauqTp8.s 			page 768
 
 
  28596 01ae 73747274 		.string	"strtoul"
@@ -46078,7 +46078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28616      20636F6E 
  28616      73742028 
  28617              	.LASF767:
-GAS LISTING /tmp/ccTWFgxc.s 			page 769
+GAS LISTING /tmp/ccauqTp8.s 			page 769
 
 
  28618 0286 5F56616C 		.string	"_Value"
@@ -46138,7 +46138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28639              	.LASF1355:
  28640 03d8 68656174 		.string	"heatmap_stamp_gen"
  28640      6D61705F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 770
+GAS LISTING /tmp/ccauqTp8.s 			page 770
 
 
  28640      7374616D 
@@ -46198,7 +46198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28664      5F697465 
  28664      7261746F 
  28664      7200
-GAS LISTING /tmp/ccTWFgxc.s 			page 771
+GAS LISTING /tmp/ccauqTp8.s 			page 771
 
 
  28665              	.LASF229:
@@ -46258,7 +46258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28686 060e 5F5A4E4B 		.string	"_ZNKSs6cbeginEv"
  28686      53733663 
  28686      62656769 
-GAS LISTING /tmp/ccTWFgxc.s 			page 772
+GAS LISTING /tmp/ccauqTp8.s 			page 772
 
 
  28686      6E457600 
@@ -46318,7 +46318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28710      5F737562 
  28710      5F495F73 
  28710      686F775F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 773
+GAS LISTING /tmp/ccauqTp8.s 			page 773
 
 
  28711              	.LASF1111:
@@ -46378,7 +46378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28734      6570375F 
  28734      4D5F6772 
  28734      61624552 
-GAS LISTING /tmp/ccTWFgxc.s 			page 774
+GAS LISTING /tmp/ccauqTp8.s 			page 774
 
 
  28735              	.LASF1144:
@@ -46438,7 +46438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28758 0953 746D5F6D 		.string	"tm_mday"
  28758      64617900 
  28759              	.LASF795:
-GAS LISTING /tmp/ccTWFgxc.s 			page 775
+GAS LISTING /tmp/ccauqTp8.s 			page 775
 
 
  28760 095b 5F5A4E4B 		.string	"_ZNK9__gnu_cxx17__normal_iteratorIPcSsEplEl"
@@ -46498,7 +46498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28785              	.LASF535:
  28786 0a7b 6F706572 		.string	"operator()<std::mersenne_twister_engine<long unsigned int, 32ul, 624ul, 397ul, 31ul, 2567
  28786      61746F72 
-GAS LISTING /tmp/ccTWFgxc.s 			page 776
+GAS LISTING /tmp/ccauqTp8.s 			page 776
 
 
  28786      28293C73 
@@ -46558,7 +46558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28808      00
  28809              	.LASF419:
  28810 0c4c 5F535F66 		.string	"_S_floatfield"
-GAS LISTING /tmp/ccTWFgxc.s 			page 777
+GAS LISTING /tmp/ccauqTp8.s 			page 777
 
 
  28810      6C6F6174 
@@ -46618,7 +46618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28830 0d3a 5F5A4E4B 		.string	"_ZNKSt6vectorIhSaIhEE5crendEv"
  28830      53743676 
  28830      6563746F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 778
+GAS LISTING /tmp/ccauqTp8.s 			page 778
 
 
  28830      72496853 
@@ -46678,7 +46678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28854 0e1d 64697363 		.string	"discard"
  28854      61726400 
  28855              	.LASF295:
-GAS LISTING /tmp/ccTWFgxc.s 			page 779
+GAS LISTING /tmp/ccauqTp8.s 			page 779
 
 
  28856 0e25 5F5A4E4B 		.string	"_ZNKSs16find_last_not_ofEPKcmm"
@@ -46738,7 +46738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28876      7550755F 
  28876      64697363 
  28877              	.LASF415:
-GAS LISTING /tmp/ccTWFgxc.s 			page 780
+GAS LISTING /tmp/ccauqTp8.s 			page 780
 
 
  28878 0f24 5F535F75 		.string	"_S_unitbuf"
@@ -46798,7 +46798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28902      6D697865 
  28903              	.LASF173:
  28904 0fd2 73697A65 		.string	"size"
-GAS LISTING /tmp/ccTWFgxc.s 			page 781
+GAS LISTING /tmp/ccauqTp8.s 			page 781
 
 
  28904      00
@@ -46858,7 +46858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28926      6C756573 
  28926      5F736F66 
  28927              	.LASF1215:
-GAS LISTING /tmp/ccTWFgxc.s 			page 782
+GAS LISTING /tmp/ccauqTp8.s 			page 782
 
 
  28928 10dc 68656174 		.string	"heatmap_cs_Blues_mixed"
@@ -46918,7 +46918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28952      6E755F63 
  28952      78783137 
  28952      5F5F6E6F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 783
+GAS LISTING /tmp/ccauqTp8.s 			page 783
 
 
  28953              	.LASF287:
@@ -46978,7 +46978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  28978      72496853 
  28978      61496845 
  28979              	.LASF278:
-GAS LISTING /tmp/ccTWFgxc.s 			page 784
+GAS LISTING /tmp/ccauqTp8.s 			page 784
 
 
  28980 128f 66696E64 		.string	"find_first_of"
@@ -47038,7 +47038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29004      73747200 
  29005              	.LASF483:
  29006 1385 5F5A4E53 		.string	"_ZNSo3putEc"
-GAS LISTING /tmp/ccTWFgxc.s 			page 785
+GAS LISTING /tmp/ccauqTp8.s 			page 785
 
 
  29006      6F337075 
@@ -47098,7 +47098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29028      63746F72 
  29028      49685361 
  29028      49684545 
-GAS LISTING /tmp/ccTWFgxc.s 			page 786
+GAS LISTING /tmp/ccauqTp8.s 			page 786
 
 
  29029              	.LASF1113:
@@ -47158,7 +47158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29054      665F7374 
  29054      6F726167 
  29054      6500
-GAS LISTING /tmp/ccTWFgxc.s 			page 787
+GAS LISTING /tmp/ccauqTp8.s 			page 787
 
 
  29055              	.LASF1372:
@@ -47218,7 +47218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29078 168a 5F535F70 		.string	"_S_propagate_on_container_move_assignment_helper"
  29078      726F7061 
  29078      67617465 
-GAS LISTING /tmp/ccTWFgxc.s 			page 788
+GAS LISTING /tmp/ccauqTp8.s 			page 788
 
 
  29078      5F6F6E5F 
@@ -47278,7 +47278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29104      7400
  29105              	.LASF519:
  29106 17be 5F5A4E4B 		.string	"_ZNKSt19normal_distributionIfE10param_type4meanEv"
-GAS LISTING /tmp/ccTWFgxc.s 			page 789
+GAS LISTING /tmp/ccauqTp8.s 			page 789
 
 
  29106      53743139 
@@ -47338,7 +47338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29127              	.LASF534:
  29128 18db 5F5A4E4B 		.string	"_ZNKSt19normal_distributionIfE3maxEv"
  29128      53743139 
-GAS LISTING /tmp/ccTWFgxc.s 			page 790
+GAS LISTING /tmp/ccauqTp8.s 			page 790
 
 
  29128      6E6F726D 
@@ -47398,7 +47398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29148      616E6F6E 
  29149              	.LASF527:
  29150 1a6d 5F5A4E53 		.string	"_ZNSt19normal_distributionIfE5resetEv"
-GAS LISTING /tmp/ccTWFgxc.s 			page 791
+GAS LISTING /tmp/ccauqTp8.s 			page 791
 
 
  29150      7431396E 
@@ -47458,7 +47458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29176 1b5a 6E6F726D 		.string	"normal_distribution<float>"
  29176      616C5F64 
  29176      69737472 
-GAS LISTING /tmp/ccTWFgxc.s 			page 792
+GAS LISTING /tmp/ccauqTp8.s 			page 792
 
 
  29176      69627574 
@@ -47518,7 +47518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29202      00
  29203              	.LASF1163:
  29204 1c3f 5F5F6F75 		.string	"__out"
-GAS LISTING /tmp/ccTWFgxc.s 			page 793
+GAS LISTING /tmp/ccauqTp8.s 			page 793
 
 
  29204      7400
@@ -47578,7 +47578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29224      5F646967 
  29224      69747300 
  29225              	.LASF1003:
-GAS LISTING /tmp/ccTWFgxc.s 			page 794
+GAS LISTING /tmp/ccauqTp8.s 			page 794
 
 
  29226 1e08 77637373 		.string	"wcsspn"
@@ -47638,7 +47638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29250      5F657869 
  29250      7400
  29251              	.LASF771:
-GAS LISTING /tmp/ccTWFgxc.s 			page 795
+GAS LISTING /tmp/ccauqTp8.s 			page 795
 
 
  29252 1f54 7E6E6577 		.string	"~new_allocator"
@@ -47698,7 +47698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29274 2061 5F4D6F64 		.string	"_Mod<long unsigned int, 624ul, 1ul, 0ul, true, true>"
  29274      3C6C6F6E 
  29274      6720756E 
-GAS LISTING /tmp/ccTWFgxc.s 			page 796
+GAS LISTING /tmp/ccauqTp8.s 			page 796
 
 
  29274      7369676E 
@@ -47758,7 +47758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29297              	.LASF1205:
  29298 2173 73746469 		.string	"stdin"
  29298      6E00
-GAS LISTING /tmp/ccTWFgxc.s 			page 797
+GAS LISTING /tmp/ccauqTp8.s 			page 797
 
 
  29299              	.LASF1142:
@@ -47818,7 +47818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29322      6172616D 
  29322      00
  29323              	.LASF498:
-GAS LISTING /tmp/ccTWFgxc.s 			page 798
+GAS LISTING /tmp/ccauqTp8.s 			page 798
 
 
  29324 2239 5F5A4E53 		.string	"_ZNSt4pairIPK21heatmap_colorscheme_tPKcEaSERKS5_"
@@ -47878,7 +47878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29348      00
  29349              	.LASF810:
  29350 232c 5F5A4E4B 		.string	"_ZNK9__gnu_cxx17__normal_iteratorIPKcSsEixEl"
-GAS LISTING /tmp/ccTWFgxc.s 			page 799
+GAS LISTING /tmp/ccauqTp8.s 			page 799
 
 
  29350      395F5F67 
@@ -47938,7 +47938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29372 240c 68656174 		.string	"heatmap_cs_RdYlGn_mixed"
  29372      6D61705F 
  29372      63735F52 
-GAS LISTING /tmp/ccTWFgxc.s 			page 800
+GAS LISTING /tmp/ccauqTp8.s 			page 800
 
 
  29372      64596C47 
@@ -47998,7 +47998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29395              	.LASF816:
  29396 24cf 5F5F6E75 		.string	"__numeric_traits_floating<float>"
  29396      6D657269 
-GAS LISTING /tmp/ccTWFgxc.s 			page 801
+GAS LISTING /tmp/ccauqTp8.s 			page 801
 
 
  29396      635F7472 
@@ -48058,7 +48058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29419              	.LASF102:
  29420 25e0 5F4D5F64 		.string	"_M_dispose"
  29420      6973706F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 802
+GAS LISTING /tmp/ccauqTp8.s 			page 802
 
 
  29420      736500
@@ -48118,7 +48118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29442      5F6E756D 
  29443              	.LASF274:
  29444 26f1 5F5A4E4B 		.string	"_ZNKSs5rfindERKSsm"
-GAS LISTING /tmp/ccTWFgxc.s 			page 803
+GAS LISTING /tmp/ccauqTp8.s 			page 803
 
 
  29444      53733572 
@@ -48178,7 +48178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29466      00
  29467              	.LASF591:
  29468 27a2 5F4D5F67 		.string	"_M_get_Tp_allocator"
-GAS LISTING /tmp/ccTWFgxc.s 			page 804
+GAS LISTING /tmp/ccauqTp8.s 			page 804
 
 
  29468      65745F54 
@@ -48238,7 +48238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29490      6D61705F 
  29490      63735F50 
  29490      7542755F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 805
+GAS LISTING /tmp/ccauqTp8.s 			page 805
 
 
  29490      6D697865 
@@ -48298,7 +48298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29512      65766963 
  29513              	.LASF364:
  29514 2979 5F5A4E53 		.string	"_ZNSt23mersenne_twister_engineImLm32ELm624ELm397ELm31ELm2567483615ELm11ELm4294967295ELm7E
-GAS LISTING /tmp/ccTWFgxc.s 			page 806
+GAS LISTING /tmp/ccauqTp8.s 			page 806
 
 
  29514      7432336D 
@@ -48358,7 +48358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29538      65666175 
  29538      6C745F61 
  29538      7070656E 
-GAS LISTING /tmp/ccTWFgxc.s 			page 807
+GAS LISTING /tmp/ccauqTp8.s 			page 807
 
 
  29538      6400
@@ -48418,7 +48418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29560 2b94 72657665 		.string	"reverse_iterator<__gnu_cxx::__normal_iterator<unsigned char const*, std::vector<unsigned 
  29560      7273655F 
  29560      69746572 
-GAS LISTING /tmp/ccTWFgxc.s 			page 808
+GAS LISTING /tmp/ccauqTp8.s 			page 808
 
 
  29560      61746F72 
@@ -48478,7 +48478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29583              	.LASF455:
  29584 2cd1 73686F77 		.string	"showpoint"
  29584      706F696E 
-GAS LISTING /tmp/ccTWFgxc.s 			page 809
+GAS LISTING /tmp/ccauqTp8.s 			page 809
 
 
  29584      7400
@@ -48538,7 +48538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29605              	.LASF1330:
  29606 2dd1 5F5A4E39 		.string	"_ZN9__gnu_cxx25__numeric_traits_floatingIeE16__max_exponent10E"
  29606      5F5F676E 
-GAS LISTING /tmp/ccTWFgxc.s 			page 810
+GAS LISTING /tmp/ccauqTp8.s 			page 810
 
 
  29606      755F6378 
@@ -48598,7 +48598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29626      72657045 
  29627              	.LASF1203:
  29628 2ebe 6572726F 		.string	"error"
-GAS LISTING /tmp/ccTWFgxc.s 			page 811
+GAS LISTING /tmp/ccauqTp8.s 			page 811
 
 
  29628      7200
@@ -48658,7 +48658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29650      696E7465 
  29650      7200
  29651              	.LASF197:
-GAS LISTING /tmp/ccTWFgxc.s 			page 812
+GAS LISTING /tmp/ccauqTp8.s 			page 812
 
 
  29652 2fbb 5F5A4E53 		.string	"_ZNSs5frontEv"
@@ -48718,7 +48718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29672      72496853 
  29672      61496845 
  29673              	.LASF13:
-GAS LISTING /tmp/ccTWFgxc.s 			page 813
+GAS LISTING /tmp/ccauqTp8.s 			page 813
 
 
  29674 30e0 5F4D5F61 		.string	"_M_addref"
@@ -48778,7 +48778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29694      6D61705F 
  29694      63735F59 
  29694      6C4F7242 
-GAS LISTING /tmp/ccTWFgxc.s 			page 814
+GAS LISTING /tmp/ccauqTp8.s 			page 814
 
 
  29694      725F6D69 
@@ -48838,7 +48838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29716      5F666173 
  29716      7433325F 
  29716      7400
-GAS LISTING /tmp/ccTWFgxc.s 			page 815
+GAS LISTING /tmp/ccauqTp8.s 			page 815
 
 
  29717              	.LASF806:
@@ -48898,7 +48898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29740      74617465 
  29740      00
  29741              	.LASF751:
-GAS LISTING /tmp/ccTWFgxc.s 			page 816
+GAS LISTING /tmp/ccauqTp8.s 			page 816
 
 
  29742 33e9 73686F72 		.string	"short unsigned int"
@@ -48958,7 +48958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29766 34ba 70616972 		.string	"pair"
  29766      00
  29767              	.LASF12:
-GAS LISTING /tmp/ccTWFgxc.s 			page 817
+GAS LISTING /tmp/ccauqTp8.s 			page 817
 
 
  29768 34bf 65786365 		.string	"exception_ptr"
@@ -49018,7 +49018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29790      63686172 
  29790      20636F6E 
  29790      73742028 
-GAS LISTING /tmp/ccTWFgxc.s 			page 818
+GAS LISTING /tmp/ccauqTp8.s 			page 818
 
 
  29791              	.LASF915:
@@ -49078,7 +49078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29812      63735F52 
  29812      6564735F 
  29812      736F6674 
-GAS LISTING /tmp/ccTWFgxc.s 			page 819
+GAS LISTING /tmp/ccauqTp8.s 			page 819
 
 
  29813              	.LASF533:
@@ -49138,7 +49138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29836      75476E5F 
  29836      736F6674 
  29837              	.LASF941:
-GAS LISTING /tmp/ccTWFgxc.s 			page 820
+GAS LISTING /tmp/ccauqTp8.s 			page 820
 
 
  29838 3801 5F5F4649 		.string	"__FILE"
@@ -49198,7 +49198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29862      6563746F 
  29862      72496853 
  29862      61496845 
-GAS LISTING /tmp/ccTWFgxc.s 			page 821
+GAS LISTING /tmp/ccauqTp8.s 			page 821
 
 
  29863              	.LASF595:
@@ -49258,7 +49258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29886      53743139 
  29886      6E6F726D 
  29886      616C5F64 
-GAS LISTING /tmp/ccTWFgxc.s 			page 822
+GAS LISTING /tmp/ccauqTp8.s 			page 822
 
 
  29886      69737472 
@@ -49318,7 +49318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29910      6D61705F 
  29910      63735F50 
  29910      52476E5F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 823
+GAS LISTING /tmp/ccauqTp8.s 			page 823
 
 
  29910      6D697865 
@@ -49378,7 +49378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29934      6E672075 
  29934      6E736967 
  29935              	.LASF281:
-GAS LISTING /tmp/ccTWFgxc.s 			page 824
+GAS LISTING /tmp/ccauqTp8.s 			page 824
 
 
  29936 3d34 5F5A4E4B 		.string	"_ZNKSs13find_first_ofEPKcm"
@@ -49438,7 +49438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29957              	.LASF1076:
  29958 3e28 7365746C 		.string	"setlocale"
  29958      6F63616C 
-GAS LISTING /tmp/ccTWFgxc.s 			page 825
+GAS LISTING /tmp/ccauqTp8.s 			page 825
 
 
  29958      6500
@@ -49498,7 +49498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  29982      68656174 
  29983              	.LASF1266:
  29984 3f0d 68656174 		.string	"heatmap_cs_PuOr_soft"
-GAS LISTING /tmp/ccTWFgxc.s 			page 826
+GAS LISTING /tmp/ccauqTp8.s 			page 826
 
 
  29984      6D61705F 
@@ -49558,7 +49558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30010      63735F47 
  30010      7265656E 
  30010      735F736F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 827
+GAS LISTING /tmp/ccauqTp8.s 			page 827
 
 
  30011              	.LASF207:
@@ -49618,7 +49618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30034      757800
  30035              	.LASF976:
  30036 4084 76737770 		.string	"vswprintf"
-GAS LISTING /tmp/ccTWFgxc.s 			page 828
+GAS LISTING /tmp/ccauqTp8.s 			page 828
 
 
  30036      72696E74 
@@ -49678,7 +49678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30057              	.LASF264:
  30058 41d7 5F5A4E4B 		.string	"_ZNKSs5c_strEv"
  30058      53733563 
-GAS LISTING /tmp/ccTWFgxc.s 			page 829
+GAS LISTING /tmp/ccauqTp8.s 			page 829
 
 
  30058      5F737472 
@@ -49738,7 +49738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30082      6E743130 
  30082      00
  30083              	.LASF903:
-GAS LISTING /tmp/ccTWFgxc.s 			page 830
+GAS LISTING /tmp/ccauqTp8.s 			page 830
 
 
  30084 42a3 61746F6C 		.string	"atoll"
@@ -49798,7 +49798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30106      7336696E 
  30106      73657274 
  30106      456D524B 
-GAS LISTING /tmp/ccTWFgxc.s 			page 831
+GAS LISTING /tmp/ccauqTp8.s 			page 831
 
 
  30106      53736D6D 
@@ -49858,7 +49858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30132      616C5F64 
  30132      69737472 
  30132      69627574 
-GAS LISTING /tmp/ccTWFgxc.s 			page 832
+GAS LISTING /tmp/ccauqTp8.s 			page 832
 
 
  30132      696F6E00 
@@ -49918,7 +49918,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30156 4655 5F5F7265 		.string	"__ret"
  30156      7400
  30157              	.LASF206:
-GAS LISTING /tmp/ccTWFgxc.s 			page 833
+GAS LISTING /tmp/ccauqTp8.s 			page 833
 
 
  30158 465b 5F5A4E53 		.string	"_ZNSspLESt16initializer_listIcE"
@@ -49978,7 +49978,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30182      7400
  30183              	.LASF578:
  30184 4716 5F5A4E53 		.string	"_ZNSt16allocator_traitsISaIhEE37select_on_container_copy_constructionERKS0_"
-GAS LISTING /tmp/ccTWFgxc.s 			page 834
+GAS LISTING /tmp/ccauqTp8.s 			page 834
 
 
  30184      74313661 
@@ -50038,7 +50038,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30208      65776973 
  30208      655F636F 
  30208      6E737472 
-GAS LISTING /tmp/ccTWFgxc.s 			page 835
+GAS LISTING /tmp/ccauqTp8.s 			page 835
 
 
  30208      7563745F 
@@ -50098,7 +50098,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30232      61746F72 
  30232      282900
  30233              	.LASF199:
-GAS LISTING /tmp/ccTWFgxc.s 			page 836
+GAS LISTING /tmp/ccauqTp8.s 			page 836
 
 
  30234 49da 6261636B 		.string	"back"
@@ -50158,7 +50158,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30256      504E4744 
  30256      65636F6D 
  30256      70726573 
-GAS LISTING /tmp/ccTWFgxc.s 			page 837
+GAS LISTING /tmp/ccauqTp8.s 			page 837
 
 
  30256      73536574 
@@ -50218,7 +50218,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30277              	.LASF785:
  30278 4bf9 5F5A4E4B 		.string	"_ZNK9__gnu_cxx17__normal_iteratorIPcSsEptEv"
  30278      395F5F67 
-GAS LISTING /tmp/ccTWFgxc.s 			page 838
+GAS LISTING /tmp/ccauqTp8.s 			page 838
 
 
  30278      6E755F63 
@@ -50278,7 +50278,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30299              	.LASF889:
  30300 4d3f 77636861 		.string	"wchar_t"
  30300      725F7400 
-GAS LISTING /tmp/ccTWFgxc.s 			page 839
+GAS LISTING /tmp/ccauqTp8.s 			page 839
 
 
  30301              	.LASF645:
@@ -50338,7 +50338,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30322      5F666C6F 
  30323              	.LASF1024:
  30324 4ed1 77637374 		.string	"wcstoull"
-GAS LISTING /tmp/ccTWFgxc.s 			page 840
+GAS LISTING /tmp/ccauqTp8.s 			page 840
 
 
  30324      6F756C6C 
@@ -50398,7 +50398,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30348 4f97 5F5A4E53 		.string	"_ZNSs4_Rep8_M_cloneERKSaIcEm"
  30348      73345F52 
  30348      6570385F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 841
+GAS LISTING /tmp/ccauqTp8.s 			page 841
 
 
  30348      4D5F636C 
@@ -50458,7 +50458,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30368      6D697865 
  30369              	.LASF1195:
  30370 5089 7374616D 		.string	"stamp"
-GAS LISTING /tmp/ccTWFgxc.s 			page 842
+GAS LISTING /tmp/ccauqTp8.s 			page 842
 
 
  30370      7000
@@ -50518,7 +50518,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30390      6400
  30391              	.LASF488:
  30392 51a5 5F4D5F77 		.string	"_M_widen_init"
-GAS LISTING /tmp/ccTWFgxc.s 			page 843
+GAS LISTING /tmp/ccauqTp8.s 			page 843
 
 
  30392      6964656E 
@@ -50578,7 +50578,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30412      656E6F00 
  30413              	.LASF7:
  30414 52b9 6F706572 		.string	"operator std::integral_constant<bool, false>::value_type"
-GAS LISTING /tmp/ccTWFgxc.s 			page 844
+GAS LISTING /tmp/ccauqTp8.s 			page 844
 
 
  30414      61746F72 
@@ -50638,7 +50638,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30436      73356572 
  30436      61736545 
  30436      4E395F5F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 845
+GAS LISTING /tmp/ccauqTp8.s 			page 845
 
 
  30436      676E755F 
@@ -50698,7 +50698,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30456      69736A75 
  30456      6E637445 
  30457              	.LASF283:
-GAS LISTING /tmp/ccTWFgxc.s 			page 846
+GAS LISTING /tmp/ccauqTp8.s 			page 846
 
 
  30458 54db 66696E64 		.string	"find_last_of"
@@ -50758,7 +50758,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30479              	.LASF88:
  30480 559e 5F4D5F69 		.string	"_M_is_shared"
  30480      735F7368 
-GAS LISTING /tmp/ccTWFgxc.s 			page 847
+GAS LISTING /tmp/ccauqTp8.s 			page 847
 
 
  30480      61726564 
@@ -50818,7 +50818,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30502      6E7400
  30503              	.LASF1188:
  30504 5695 5F5F6C6F 		.string	"__log2r"
-GAS LISTING /tmp/ccTWFgxc.s 			page 848
+GAS LISTING /tmp/ccauqTp8.s 			page 848
 
 
  30504      67327200 
@@ -50878,7 +50878,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30524      6E6E655F 
  30524      74776973 
  30525              	.LASF53:
-GAS LISTING /tmp/ccTWFgxc.s 			page 849
+GAS LISTING /tmp/ccauqTp8.s 			page 849
 
 
  30526 57f4 65715F69 		.string	"eq_int_type"
@@ -50938,7 +50938,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30550 58c0 5F4D5F6C 		.string	"_M_limit"
  30550      696D6974 
  30550      00
-GAS LISTING /tmp/ccTWFgxc.s 			page 850
+GAS LISTING /tmp/ccauqTp8.s 			page 850
 
 
  30551              	.LASF215:
@@ -50998,7 +50998,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30576      6361746F 
  30576      723C756E 
  30576      7369676E 
-GAS LISTING /tmp/ccTWFgxc.s 			page 851
+GAS LISTING /tmp/ccauqTp8.s 			page 851
 
 
  30576      65642063 
@@ -51058,7 +51058,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30598      63735F47 
  30598      7265656E 
  30598      735F6D69 
-GAS LISTING /tmp/ccTWFgxc.s 			page 852
+GAS LISTING /tmp/ccauqTp8.s 			page 852
 
 
  30599              	.LASF614:
@@ -51118,7 +51118,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30621              	.LASF226:
  30622 5c77 5F5A4E53 		.string	"_ZNSs6insertEmRKSs"
  30622      7336696E 
-GAS LISTING /tmp/ccTWFgxc.s 			page 853
+GAS LISTING /tmp/ccauqTp8.s 			page 853
 
 
  30622      73657274 
@@ -51178,7 +51178,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30647              	.LASF1219:
  30648 5d69 68656174 		.string	"heatmap_cs_BrBG_mixed"
  30648      6D61705F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 854
+GAS LISTING /tmp/ccauqTp8.s 			page 854
 
 
  30648      63735F42 
@@ -51238,7 +51238,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30671              	.LASF801:
  30672 5e38 5F5A4E4B 		.string	"_ZNK9__gnu_cxx17__normal_iteratorIPcSsE4baseEv"
  30672      395F5F67 
-GAS LISTING /tmp/ccTWFgxc.s 			page 855
+GAS LISTING /tmp/ccauqTp8.s 			page 855
 
 
  30672      6E755F63 
@@ -51298,7 +51298,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30695              	.LASF1005:
  30696 5f56 77637374 		.string	"wcstof"
  30696      6F6600
-GAS LISTING /tmp/ccTWFgxc.s 			page 856
+GAS LISTING /tmp/ccauqTp8.s 			page 856
 
 
  30697              	.LASF228:
@@ -51358,7 +51358,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30716      76696365 
  30717              	.LASF1318:
  30718 607f 68656174 		.string	"heatmap_cs_YlOrRd_soft"
-GAS LISTING /tmp/ccTWFgxc.s 			page 857
+GAS LISTING /tmp/ccauqTp8.s 			page 857
 
 
  30718      6D61705F 
@@ -51418,7 +51418,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30736      49684545 
  30737              	.LASF955:
  30738 61c4 62746F77 		.string	"btowc"
-GAS LISTING /tmp/ccTWFgxc.s 			page 858
+GAS LISTING /tmp/ccauqTp8.s 			page 858
 
 
  30738      6300
@@ -51478,7 +51478,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30759              	.LASF1011:
  30760 630b 776D656D 		.string	"wmemcmp"
  30760      636D7000 
-GAS LISTING /tmp/ccTWFgxc.s 			page 859
+GAS LISTING /tmp/ccauqTp8.s 			page 859
 
 
  30761              	.LASF837:
@@ -51538,7 +51538,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30781              	.LASF123:
  30782 6406 5F4D5F63 		.string	"_M_check_length"
  30782      6865636B 
-GAS LISTING /tmp/ccTWFgxc.s 			page 860
+GAS LISTING /tmp/ccauqTp8.s 			page 860
 
 
  30782      5F6C656E 
@@ -51598,7 +51598,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30802      7200
  30803              	.LASF830:
  30804 6516 5F5A4E4B 		.string	"_ZNK9__gnu_cxx13new_allocatorIhE8max_sizeEv"
-GAS LISTING /tmp/ccTWFgxc.s 			page 861
+GAS LISTING /tmp/ccauqTp8.s 			page 861
 
 
  30804      395F5F67 
@@ -51658,7 +51658,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30828 6600 7266696E 		.string	"rfind"
  30828      6400
  30829              	.LASF243:
-GAS LISTING /tmp/ccTWFgxc.s 			page 862
+GAS LISTING /tmp/ccauqTp8.s 			page 862
 
 
  30830 6606 5F5A4E53 		.string	"_ZNSs7replaceEmmmc"
@@ -51718,7 +51718,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30850      6D697445 
  30850      6D6D00
  30851              	.LASF329:
-GAS LISTING /tmp/ccTWFgxc.s 			page 863
+GAS LISTING /tmp/ccauqTp8.s 			page 863
 
 
  30852 66d4 5F5A4E53 		.string	"_ZNSt8__detail8_AdaptorISt23mersenne_twister_engineImLm32ELm624ELm397ELm31ELm2567483615EL
@@ -51778,7 +51778,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30875              	.LASF1101:
  30876 681a 6674656C 		.string	"ftell"
  30876      6C00
-GAS LISTING /tmp/ccTWFgxc.s 			page 864
+GAS LISTING /tmp/ccauqTp8.s 			page 864
 
 
  30877              	.LASF409:
@@ -51838,7 +51838,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30898      76696365 
  30899              	.LASF294:
  30900 692e 5F5A4E4B 		.string	"_ZNKSs16find_last_not_ofERKSsm"
-GAS LISTING /tmp/ccTWFgxc.s 			page 865
+GAS LISTING /tmp/ccauqTp8.s 			page 865
 
 
  30900      53733136 
@@ -51898,7 +51898,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30920      63735F52 
  30920      6564735F 
  30920      6D697865 
-GAS LISTING /tmp/ccTWFgxc.s 			page 866
+GAS LISTING /tmp/ccauqTp8.s 			page 866
 
 
  30921              	.LASF685:
@@ -51958,7 +51958,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30944      755F6378 
  30944      78336469 
  30944      76457878 
-GAS LISTING /tmp/ccTWFgxc.s 			page 867
+GAS LISTING /tmp/ccauqTp8.s 			page 867
 
 
  30945              	.LASF629:
@@ -52018,7 +52018,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30968 6c3d 74656D70 		.string	"tempering_u"
  30968      6572696E 
  30968      675F7500 
-GAS LISTING /tmp/ccTWFgxc.s 			page 868
+GAS LISTING /tmp/ccauqTp8.s 			page 868
 
 
  30969              	.LASF1116:
@@ -52078,7 +52078,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  30992      6B457600 
  30993              	.LASF54:
  30994 6d4a 5F5A4E53 		.string	"_ZNSt11char_traitsIcE11eq_int_typeERKiS2_"
-GAS LISTING /tmp/ccTWFgxc.s 			page 869
+GAS LISTING /tmp/ccauqTp8.s 			page 869
 
 
  30994      74313163 
@@ -52138,7 +52138,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31013              	.LASF1173:
  31014 6e52 5F5F746D 		.string	"__tmp"
  31014      7000
-GAS LISTING /tmp/ccTWFgxc.s 			page 870
+GAS LISTING /tmp/ccauqTp8.s 			page 870
 
 
  31015              	.LASF1160:
@@ -52198,7 +52198,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31036 6f43 5F5A4E4B 		.string	"_ZNKSs5rfindEcm"
  31036      53733572 
  31036      66696E64 
-GAS LISTING /tmp/ccTWFgxc.s 			page 871
+GAS LISTING /tmp/ccauqTp8.s 			page 871
 
 
  31036      45636D00 
@@ -52258,7 +52258,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31058      7331335F 
  31058      535F636F 
  31058      70795F63 
-GAS LISTING /tmp/ccTWFgxc.s 			page 872
+GAS LISTING /tmp/ccauqTp8.s 			page 872
 
 
  31058      68617273 
@@ -52318,7 +52318,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31078      63735F52 
  31078      64596C47 
  31078      6E5F6D69 
-GAS LISTING /tmp/ccTWFgxc.s 			page 873
+GAS LISTING /tmp/ccauqTp8.s 			page 873
 
 
  31079              	.LASF726:
@@ -52378,7 +52378,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31102      5F617267 
  31102      5F617265 
  31102      6100
-GAS LISTING /tmp/ccTWFgxc.s 			page 874
+GAS LISTING /tmp/ccauqTp8.s 			page 874
 
 
  31103              	.LASF946:
@@ -52438,7 +52438,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31125              	.LASF643:
  31126 739b 5F5A4E53 		.string	"_ZNSt6vectorIhSaIhEE9push_backERKh"
  31126      74367665 
-GAS LISTING /tmp/ccTWFgxc.s 			page 875
+GAS LISTING /tmp/ccauqTp8.s 			page 875
 
 
  31126      63746F72 
@@ -52498,7 +52498,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31148      5F646967 
  31148      69747300 
  31149              	.LASF462:
-GAS LISTING /tmp/ccTWFgxc.s 			page 876
+GAS LISTING /tmp/ccauqTp8.s 			page 876
 
 
  31150 749a 666C6F61 		.string	"floatfield"
@@ -52558,7 +52558,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31172      5F5F676E 
  31172      755F6378 
  31172      7831345F 
-GAS LISTING /tmp/ccTWFgxc.s 			page 877
+GAS LISTING /tmp/ccauqTp8.s 			page 877
 
 
  31172      5F616C6C 
@@ -52618,7 +52618,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31192      00
  31193              	.LASF1015:
  31194 772c 77707269 		.string	"wprintf"
-GAS LISTING /tmp/ccTWFgxc.s 			page 878
+GAS LISTING /tmp/ccauqTp8.s 			page 878
 
 
  31194      6E746600 
@@ -52678,7 +52678,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31218      61766564 
  31218      00
  31219              	.LASF854:
-GAS LISTING /tmp/ccTWFgxc.s 			page 879
+GAS LISTING /tmp/ccauqTp8.s 			page 879
 
 
  31220 7819 5F5F6578 		.string	"__exchange_and_add_single"
@@ -52738,7 +52738,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31244      6600
  31245              	.LASF410:
  31246 7913 5F535F73 		.string	"_S_scientific"
-GAS LISTING /tmp/ccTWFgxc.s 			page 880
+GAS LISTING /tmp/ccauqTp8.s 			page 880
 
 
  31246      6369656E 
@@ -52798,7 +52798,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31272      00
  31273              	.LASF1132:
  31274 79c3 4C43545F 		.string	"LCT_PALETTE"
-GAS LISTING /tmp/ccTWFgxc.s 			page 881
+GAS LISTING /tmp/ccauqTp8.s 			page 881
 
 
  31274      50414C45 
@@ -52858,7 +52858,7 @@ GAS LISTING /tmp/ccTWFgxc.s 			page 1
  31296 7a8c 756E7369 		.string	"unsigned int"
  31296      676E6564 
  31296      20696E74 
-GAS LISTING /tmp/ccTWFgxc.s 			page 882
+GAS LISTING /tmp/ccauqTp8.s 			page 882
 
 
  31296      00

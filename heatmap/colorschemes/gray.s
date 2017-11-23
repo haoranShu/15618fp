@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccirBf7i.s 			page 1
+GAS LISTING /tmp/cc5fxkXb.s 			page 1
 
 
    1              		.file	"gray.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
   45              	b2w_o:
   46 0010 00000000 		.quad	b2w_o_data
   46      00000000 
-GAS LISTING /tmp/ccirBf7i.s 			page 2
+GAS LISTING /tmp/cc5fxkXb.s 			page 2
 
 
   47 0018 00010000 		.quad	256
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
   96 001f FF       		.byte	-1
   97 0020 07       		.byte	7
   98 0021 07       		.byte	7
-GAS LISTING /tmp/ccirBf7i.s 			page 3
+GAS LISTING /tmp/cc5fxkXb.s 			page 3
 
 
   99 0022 07       		.byte	7
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  153 0058 15       		.byte	21
  154 0059 15       		.byte	21
  155 005a 15       		.byte	21
-GAS LISTING /tmp/ccirBf7i.s 			page 4
+GAS LISTING /tmp/cc5fxkXb.s 			page 4
 
 
  156 005b FF       		.byte	-1
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  210 0091 23       		.byte	35
  211 0092 23       		.byte	35
  212 0093 FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 5
+GAS LISTING /tmp/cc5fxkXb.s 			page 5
 
 
  213 0094 24       		.byte	36
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  267 00ca 31       		.byte	49
  268 00cb FF       		.byte	-1
  269 00cc 32       		.byte	50
-GAS LISTING /tmp/ccirBf7i.s 			page 6
+GAS LISTING /tmp/cc5fxkXb.s 			page 6
 
 
  270 00cd 32       		.byte	50
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  324 0103 FF       		.byte	-1
  325 0104 40       		.byte	64
  326 0105 40       		.byte	64
-GAS LISTING /tmp/ccirBf7i.s 			page 7
+GAS LISTING /tmp/cc5fxkXb.s 			page 7
 
 
  327 0106 40       		.byte	64
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  381 013c 4E       		.byte	78
  382 013d 4E       		.byte	78
  383 013e 4E       		.byte	78
-GAS LISTING /tmp/ccirBf7i.s 			page 8
+GAS LISTING /tmp/cc5fxkXb.s 			page 8
 
 
  384 013f FF       		.byte	-1
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  438 0175 5C       		.byte	92
  439 0176 5C       		.byte	92
  440 0177 FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 9
+GAS LISTING /tmp/cc5fxkXb.s 			page 9
 
 
  441 0178 5D       		.byte	93
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  495 01ae 6A       		.byte	106
  496 01af FF       		.byte	-1
  497 01b0 6B       		.byte	107
-GAS LISTING /tmp/ccirBf7i.s 			page 10
+GAS LISTING /tmp/cc5fxkXb.s 			page 10
 
 
  498 01b1 6B       		.byte	107
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  552 01e7 FF       		.byte	-1
  553 01e8 79       		.byte	121
  554 01e9 79       		.byte	121
-GAS LISTING /tmp/ccirBf7i.s 			page 11
+GAS LISTING /tmp/cc5fxkXb.s 			page 11
 
 
  555 01ea 79       		.byte	121
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  609 0220 87       		.byte	-121
  610 0221 87       		.byte	-121
  611 0222 87       		.byte	-121
-GAS LISTING /tmp/ccirBf7i.s 			page 12
+GAS LISTING /tmp/cc5fxkXb.s 			page 12
 
 
  612 0223 FF       		.byte	-1
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  666 0259 95       		.byte	-107
  667 025a 95       		.byte	-107
  668 025b FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 13
+GAS LISTING /tmp/cc5fxkXb.s 			page 13
 
 
  669 025c 96       		.byte	-106
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  723 0292 A3       		.byte	-93
  724 0293 FF       		.byte	-1
  725 0294 A4       		.byte	-92
-GAS LISTING /tmp/ccirBf7i.s 			page 14
+GAS LISTING /tmp/cc5fxkXb.s 			page 14
 
 
  726 0295 A4       		.byte	-92
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  780 02cb FF       		.byte	-1
  781 02cc B2       		.byte	-78
  782 02cd B2       		.byte	-78
-GAS LISTING /tmp/ccirBf7i.s 			page 15
+GAS LISTING /tmp/cc5fxkXb.s 			page 15
 
 
  783 02ce B2       		.byte	-78
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  837 0304 C0       		.byte	-64
  838 0305 C0       		.byte	-64
  839 0306 C0       		.byte	-64
-GAS LISTING /tmp/ccirBf7i.s 			page 16
+GAS LISTING /tmp/cc5fxkXb.s 			page 16
 
 
  840 0307 FF       		.byte	-1
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  894 033d CE       		.byte	-50
  895 033e CE       		.byte	-50
  896 033f FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 17
+GAS LISTING /tmp/cc5fxkXb.s 			page 17
 
 
  897 0340 CF       		.byte	-49
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  951 0376 DC       		.byte	-36
  952 0377 FF       		.byte	-1
  953 0378 DD       		.byte	-35
-GAS LISTING /tmp/ccirBf7i.s 			page 18
+GAS LISTING /tmp/cc5fxkXb.s 			page 18
 
 
  954 0379 DD       		.byte	-35
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1008 03af FF       		.byte	-1
  1009 03b0 EB       		.byte	-21
  1010 03b1 EB       		.byte	-21
-GAS LISTING /tmp/ccirBf7i.s 			page 19
+GAS LISTING /tmp/cc5fxkXb.s 			page 19
 
 
  1011 03b2 EB       		.byte	-21
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1065 03e8 F9       		.byte	-7
  1066 03e9 F9       		.byte	-7
  1067 03ea F9       		.byte	-7
-GAS LISTING /tmp/ccirBf7i.s 			page 20
+GAS LISTING /tmp/cc5fxkXb.s 			page 20
 
 
  1068 03eb FF       		.byte	-1
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1118 0435 05       		.byte	5
  1119 0436 05       		.byte	5
  1120 0437 FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 21
+GAS LISTING /tmp/cc5fxkXb.s 			page 21
 
 
  1121 0438 06       		.byte	6
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1175 046e 13       		.byte	19
  1176 046f FF       		.byte	-1
  1177 0470 14       		.byte	20
-GAS LISTING /tmp/ccirBf7i.s 			page 22
+GAS LISTING /tmp/cc5fxkXb.s 			page 22
 
 
  1178 0471 14       		.byte	20
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1232 04a7 FF       		.byte	-1
  1233 04a8 22       		.byte	34
  1234 04a9 22       		.byte	34
-GAS LISTING /tmp/ccirBf7i.s 			page 23
+GAS LISTING /tmp/cc5fxkXb.s 			page 23
 
 
  1235 04aa 22       		.byte	34
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1289 04e0 30       		.byte	48
  1290 04e1 30       		.byte	48
  1291 04e2 30       		.byte	48
-GAS LISTING /tmp/ccirBf7i.s 			page 24
+GAS LISTING /tmp/cc5fxkXb.s 			page 24
 
 
  1292 04e3 FF       		.byte	-1
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1346 0519 3E       		.byte	62
  1347 051a 3E       		.byte	62
  1348 051b FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 25
+GAS LISTING /tmp/cc5fxkXb.s 			page 25
 
 
  1349 051c 3F       		.byte	63
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1403 0552 4C       		.byte	76
  1404 0553 FF       		.byte	-1
  1405 0554 4D       		.byte	77
-GAS LISTING /tmp/ccirBf7i.s 			page 26
+GAS LISTING /tmp/cc5fxkXb.s 			page 26
 
 
  1406 0555 4D       		.byte	77
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1460 058b FF       		.byte	-1
  1461 058c 5B       		.byte	91
  1462 058d 5B       		.byte	91
-GAS LISTING /tmp/ccirBf7i.s 			page 27
+GAS LISTING /tmp/cc5fxkXb.s 			page 27
 
 
  1463 058e 5B       		.byte	91
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1517 05c4 69       		.byte	105
  1518 05c5 69       		.byte	105
  1519 05c6 69       		.byte	105
-GAS LISTING /tmp/ccirBf7i.s 			page 28
+GAS LISTING /tmp/cc5fxkXb.s 			page 28
 
 
  1520 05c7 FF       		.byte	-1
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1574 05fd 77       		.byte	119
  1575 05fe 77       		.byte	119
  1576 05ff FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 29
+GAS LISTING /tmp/cc5fxkXb.s 			page 29
 
 
  1577 0600 78       		.byte	120
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1631 0636 85       		.byte	-123
  1632 0637 FF       		.byte	-1
  1633 0638 86       		.byte	-122
-GAS LISTING /tmp/ccirBf7i.s 			page 30
+GAS LISTING /tmp/cc5fxkXb.s 			page 30
 
 
  1634 0639 86       		.byte	-122
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1688 066f FF       		.byte	-1
  1689 0670 94       		.byte	-108
  1690 0671 94       		.byte	-108
-GAS LISTING /tmp/ccirBf7i.s 			page 31
+GAS LISTING /tmp/cc5fxkXb.s 			page 31
 
 
  1691 0672 94       		.byte	-108
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1745 06a8 A2       		.byte	-94
  1746 06a9 A2       		.byte	-94
  1747 06aa A2       		.byte	-94
-GAS LISTING /tmp/ccirBf7i.s 			page 32
+GAS LISTING /tmp/cc5fxkXb.s 			page 32
 
 
  1748 06ab FF       		.byte	-1
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1802 06e1 B0       		.byte	-80
  1803 06e2 B0       		.byte	-80
  1804 06e3 FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 33
+GAS LISTING /tmp/cc5fxkXb.s 			page 33
 
 
  1805 06e4 B1       		.byte	-79
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1859 071a BE       		.byte	-66
  1860 071b FF       		.byte	-1
  1861 071c BF       		.byte	-65
-GAS LISTING /tmp/ccirBf7i.s 			page 34
+GAS LISTING /tmp/cc5fxkXb.s 			page 34
 
 
  1862 071d BF       		.byte	-65
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1916 0753 FF       		.byte	-1
  1917 0754 CD       		.byte	-51
  1918 0755 CD       		.byte	-51
-GAS LISTING /tmp/ccirBf7i.s 			page 35
+GAS LISTING /tmp/cc5fxkXb.s 			page 35
 
 
  1919 0756 CD       		.byte	-51
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  1973 078c DB       		.byte	-37
  1974 078d DB       		.byte	-37
  1975 078e DB       		.byte	-37
-GAS LISTING /tmp/ccirBf7i.s 			page 36
+GAS LISTING /tmp/cc5fxkXb.s 			page 36
 
 
  1976 078f FF       		.byte	-1
@@ -2158,7 +2158,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2030 07c5 E9       		.byte	-23
  2031 07c6 E9       		.byte	-23
  2032 07c7 FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 37
+GAS LISTING /tmp/cc5fxkXb.s 			page 37
 
 
  2033 07c8 EA       		.byte	-22
@@ -2218,7 +2218,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2087 07fe F7       		.byte	-9
  2088 07ff FF       		.byte	-1
  2089 0800 F8       		.byte	-8
-GAS LISTING /tmp/ccirBf7i.s 			page 38
+GAS LISTING /tmp/cc5fxkXb.s 			page 38
 
 
  2090 0801 F8       		.byte	-8
@@ -2278,7 +2278,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2144 0833 FF       		.byte	-1
  2145 0834 FB       		.byte	-5
  2146 0835 FB       		.byte	-5
-GAS LISTING /tmp/ccirBf7i.s 			page 39
+GAS LISTING /tmp/cc5fxkXb.s 			page 39
 
 
  2147 0836 FB       		.byte	-5
@@ -2338,7 +2338,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2201 086c ED       		.byte	-19
  2202 086d ED       		.byte	-19
  2203 086e ED       		.byte	-19
-GAS LISTING /tmp/ccirBf7i.s 			page 40
+GAS LISTING /tmp/cc5fxkXb.s 			page 40
 
 
  2204 086f FF       		.byte	-1
@@ -2398,7 +2398,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2258 08a5 DF       		.byte	-33
  2259 08a6 DF       		.byte	-33
  2260 08a7 FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 41
+GAS LISTING /tmp/cc5fxkXb.s 			page 41
 
 
  2261 08a8 DE       		.byte	-34
@@ -2458,7 +2458,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2315 08de D1       		.byte	-47
  2316 08df FF       		.byte	-1
  2317 08e0 D0       		.byte	-48
-GAS LISTING /tmp/ccirBf7i.s 			page 42
+GAS LISTING /tmp/cc5fxkXb.s 			page 42
 
 
  2318 08e1 D0       		.byte	-48
@@ -2518,7 +2518,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2372 0917 FF       		.byte	-1
  2373 0918 C2       		.byte	-62
  2374 0919 C2       		.byte	-62
-GAS LISTING /tmp/ccirBf7i.s 			page 43
+GAS LISTING /tmp/cc5fxkXb.s 			page 43
 
 
  2375 091a C2       		.byte	-62
@@ -2578,7 +2578,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2429 0950 B4       		.byte	-76
  2430 0951 B4       		.byte	-76
  2431 0952 B4       		.byte	-76
-GAS LISTING /tmp/ccirBf7i.s 			page 44
+GAS LISTING /tmp/cc5fxkXb.s 			page 44
 
 
  2432 0953 FF       		.byte	-1
@@ -2638,7 +2638,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2486 0989 A6       		.byte	-90
  2487 098a A6       		.byte	-90
  2488 098b FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 45
+GAS LISTING /tmp/cc5fxkXb.s 			page 45
 
 
  2489 098c A5       		.byte	-91
@@ -2698,7 +2698,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2543 09c2 98       		.byte	-104
  2544 09c3 FF       		.byte	-1
  2545 09c4 97       		.byte	-105
-GAS LISTING /tmp/ccirBf7i.s 			page 46
+GAS LISTING /tmp/cc5fxkXb.s 			page 46
 
 
  2546 09c5 97       		.byte	-105
@@ -2758,7 +2758,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2600 09fb FF       		.byte	-1
  2601 09fc 89       		.byte	-119
  2602 09fd 89       		.byte	-119
-GAS LISTING /tmp/ccirBf7i.s 			page 47
+GAS LISTING /tmp/cc5fxkXb.s 			page 47
 
 
  2603 09fe 89       		.byte	-119
@@ -2818,7 +2818,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2657 0a34 7B       		.byte	123
  2658 0a35 7B       		.byte	123
  2659 0a36 7B       		.byte	123
-GAS LISTING /tmp/ccirBf7i.s 			page 48
+GAS LISTING /tmp/cc5fxkXb.s 			page 48
 
 
  2660 0a37 FF       		.byte	-1
@@ -2878,7 +2878,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2714 0a6d 6D       		.byte	109
  2715 0a6e 6D       		.byte	109
  2716 0a6f FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 49
+GAS LISTING /tmp/cc5fxkXb.s 			page 49
 
 
  2717 0a70 6C       		.byte	108
@@ -2938,7 +2938,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2771 0aa6 5F       		.byte	95
  2772 0aa7 FF       		.byte	-1
  2773 0aa8 5E       		.byte	94
-GAS LISTING /tmp/ccirBf7i.s 			page 50
+GAS LISTING /tmp/cc5fxkXb.s 			page 50
 
 
  2774 0aa9 5E       		.byte	94
@@ -2998,7 +2998,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2828 0adf FF       		.byte	-1
  2829 0ae0 50       		.byte	80
  2830 0ae1 50       		.byte	80
-GAS LISTING /tmp/ccirBf7i.s 			page 51
+GAS LISTING /tmp/cc5fxkXb.s 			page 51
 
 
  2831 0ae2 50       		.byte	80
@@ -3058,7 +3058,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2885 0b18 42       		.byte	66
  2886 0b19 42       		.byte	66
  2887 0b1a 42       		.byte	66
-GAS LISTING /tmp/ccirBf7i.s 			page 52
+GAS LISTING /tmp/cc5fxkXb.s 			page 52
 
 
  2888 0b1b FF       		.byte	-1
@@ -3118,7 +3118,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2942 0b51 34       		.byte	52
  2943 0b52 34       		.byte	52
  2944 0b53 FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 53
+GAS LISTING /tmp/cc5fxkXb.s 			page 53
 
 
  2945 0b54 33       		.byte	51
@@ -3178,7 +3178,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  2999 0b8a 26       		.byte	38
  3000 0b8b FF       		.byte	-1
  3001 0b8c 25       		.byte	37
-GAS LISTING /tmp/ccirBf7i.s 			page 54
+GAS LISTING /tmp/cc5fxkXb.s 			page 54
 
 
  3002 0b8d 25       		.byte	37
@@ -3238,7 +3238,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3056 0bc3 FF       		.byte	-1
  3057 0bc4 17       		.byte	23
  3058 0bc5 17       		.byte	23
-GAS LISTING /tmp/ccirBf7i.s 			page 55
+GAS LISTING /tmp/cc5fxkXb.s 			page 55
 
 
  3059 0bc6 17       		.byte	23
@@ -3298,7 +3298,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3113 0bfc 09       		.byte	9
  3114 0bfd 09       		.byte	9
  3115 0bfe 09       		.byte	9
-GAS LISTING /tmp/ccirBf7i.s 			page 56
+GAS LISTING /tmp/cc5fxkXb.s 			page 56
 
 
  3116 0bff FF       		.byte	-1
@@ -3358,7 +3358,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3166 0c49 FD       		.byte	-3
  3167 0c4a FD       		.byte	-3
  3168 0c4b FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 57
+GAS LISTING /tmp/cc5fxkXb.s 			page 57
 
 
  3169 0c4c FC       		.byte	-4
@@ -3418,7 +3418,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3223 0c82 EF       		.byte	-17
  3224 0c83 FF       		.byte	-1
  3225 0c84 EE       		.byte	-18
-GAS LISTING /tmp/ccirBf7i.s 			page 58
+GAS LISTING /tmp/cc5fxkXb.s 			page 58
 
 
  3226 0c85 EE       		.byte	-18
@@ -3478,7 +3478,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3280 0cbb FF       		.byte	-1
  3281 0cbc E0       		.byte	-32
  3282 0cbd E0       		.byte	-32
-GAS LISTING /tmp/ccirBf7i.s 			page 59
+GAS LISTING /tmp/cc5fxkXb.s 			page 59
 
 
  3283 0cbe E0       		.byte	-32
@@ -3538,7 +3538,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3337 0cf4 D2       		.byte	-46
  3338 0cf5 D2       		.byte	-46
  3339 0cf6 D2       		.byte	-46
-GAS LISTING /tmp/ccirBf7i.s 			page 60
+GAS LISTING /tmp/cc5fxkXb.s 			page 60
 
 
  3340 0cf7 FF       		.byte	-1
@@ -3598,7 +3598,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3394 0d2d C4       		.byte	-60
  3395 0d2e C4       		.byte	-60
  3396 0d2f FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 61
+GAS LISTING /tmp/cc5fxkXb.s 			page 61
 
 
  3397 0d30 C3       		.byte	-61
@@ -3658,7 +3658,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3451 0d66 B6       		.byte	-74
  3452 0d67 FF       		.byte	-1
  3453 0d68 B5       		.byte	-75
-GAS LISTING /tmp/ccirBf7i.s 			page 62
+GAS LISTING /tmp/cc5fxkXb.s 			page 62
 
 
  3454 0d69 B5       		.byte	-75
@@ -3718,7 +3718,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3508 0d9f FF       		.byte	-1
  3509 0da0 A7       		.byte	-89
  3510 0da1 A7       		.byte	-89
-GAS LISTING /tmp/ccirBf7i.s 			page 63
+GAS LISTING /tmp/cc5fxkXb.s 			page 63
 
 
  3511 0da2 A7       		.byte	-89
@@ -3778,7 +3778,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3565 0dd8 99       		.byte	-103
  3566 0dd9 99       		.byte	-103
  3567 0dda 99       		.byte	-103
-GAS LISTING /tmp/ccirBf7i.s 			page 64
+GAS LISTING /tmp/cc5fxkXb.s 			page 64
 
 
  3568 0ddb FF       		.byte	-1
@@ -3838,7 +3838,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3622 0e11 8B       		.byte	-117
  3623 0e12 8B       		.byte	-117
  3624 0e13 FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 65
+GAS LISTING /tmp/cc5fxkXb.s 			page 65
 
 
  3625 0e14 8A       		.byte	-118
@@ -3898,7 +3898,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3679 0e4a 7D       		.byte	125
  3680 0e4b FF       		.byte	-1
  3681 0e4c 7C       		.byte	124
-GAS LISTING /tmp/ccirBf7i.s 			page 66
+GAS LISTING /tmp/cc5fxkXb.s 			page 66
 
 
  3682 0e4d 7C       		.byte	124
@@ -3958,7 +3958,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3736 0e83 FF       		.byte	-1
  3737 0e84 6E       		.byte	110
  3738 0e85 6E       		.byte	110
-GAS LISTING /tmp/ccirBf7i.s 			page 67
+GAS LISTING /tmp/cc5fxkXb.s 			page 67
 
 
  3739 0e86 6E       		.byte	110
@@ -4018,7 +4018,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3793 0ebc 60       		.byte	96
  3794 0ebd 60       		.byte	96
  3795 0ebe 60       		.byte	96
-GAS LISTING /tmp/ccirBf7i.s 			page 68
+GAS LISTING /tmp/cc5fxkXb.s 			page 68
 
 
  3796 0ebf FF       		.byte	-1
@@ -4078,7 +4078,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3850 0ef5 52       		.byte	82
  3851 0ef6 52       		.byte	82
  3852 0ef7 FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 69
+GAS LISTING /tmp/cc5fxkXb.s 			page 69
 
 
  3853 0ef8 51       		.byte	81
@@ -4138,7 +4138,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3907 0f2e 44       		.byte	68
  3908 0f2f FF       		.byte	-1
  3909 0f30 43       		.byte	67
-GAS LISTING /tmp/ccirBf7i.s 			page 70
+GAS LISTING /tmp/cc5fxkXb.s 			page 70
 
 
  3910 0f31 43       		.byte	67
@@ -4198,7 +4198,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  3964 0f67 FF       		.byte	-1
  3965 0f68 35       		.byte	53
  3966 0f69 35       		.byte	53
-GAS LISTING /tmp/ccirBf7i.s 			page 71
+GAS LISTING /tmp/cc5fxkXb.s 			page 71
 
 
  3967 0f6a 35       		.byte	53
@@ -4258,7 +4258,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4021 0fa0 27       		.byte	39
  4022 0fa1 27       		.byte	39
  4023 0fa2 27       		.byte	39
-GAS LISTING /tmp/ccirBf7i.s 			page 72
+GAS LISTING /tmp/cc5fxkXb.s 			page 72
 
 
  4024 0fa3 FF       		.byte	-1
@@ -4318,7 +4318,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4078 0fd9 19       		.byte	25
  4079 0fda 19       		.byte	25
  4080 0fdb FF       		.byte	-1
-GAS LISTING /tmp/ccirBf7i.s 			page 73
+GAS LISTING /tmp/cc5fxkXb.s 			page 73
 
 
  4081 0fdc 18       		.byte	24
@@ -4378,7 +4378,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4135 1012 0B       		.byte	11
  4136 1013 FF       		.byte	-1
  4137 1014 0A       		.byte	10
-GAS LISTING /tmp/ccirBf7i.s 			page 74
+GAS LISTING /tmp/cc5fxkXb.s 			page 74
 
 
  4138 1015 0A       		.byte	10
@@ -4438,7 +4438,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4192 000c 00000000 		.long	.LASF19
  4193 0010 01       		.byte	0x1
  4194 0011 00000000 		.long	.LASF20
-GAS LISTING /tmp/ccirBf7i.s 			page 75
+GAS LISTING /tmp/cc5fxkXb.s 			page 75
 
 
  4195 0015 00000000 		.long	.LASF21
@@ -4498,7 +4498,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4247 0087 02       		.uleb128 0x2
  4248 0088 01       		.byte	0x1
  4249 0089 08       		.byte	0x8
-GAS LISTING /tmp/ccirBf7i.s 			page 76
+GAS LISTING /tmp/cc5fxkXb.s 			page 76
 
 
  4250 008a 00000000 		.long	.LASF6
@@ -4558,7 +4558,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4301 010a 00000000 		.long	.LASF11
  4302 010e 03       		.byte	0x3
  4303 010f 25       		.byte	0x25
-GAS LISTING /tmp/ccirBf7i.s 			page 77
+GAS LISTING /tmp/cc5fxkXb.s 			page 77
 
 
  4304 0110 D9000000 		.long	0xd9
@@ -4618,7 +4618,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4352      00000000 
  4353 0192 07       		.uleb128 0x7
  4354 0193 08       		.byte	0x8
-GAS LISTING /tmp/ccirBf7i.s 			page 78
+GAS LISTING /tmp/cc5fxkXb.s 			page 78
 
 
  4355 0194 D9000000 		.long	0xd9
@@ -4678,7 +4678,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4406 0015 00       		.byte	0x0
  4407 0016 0B       		.uleb128 0xb
  4408 0017 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccirBf7i.s 			page 79
+GAS LISTING /tmp/cc5fxkXb.s 			page 79
 
 
  4409 0018 3E       		.uleb128 0x3e
@@ -4738,7 +4738,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4463 004e 38       		.uleb128 0x38
  4464 004f 0D       		.uleb128 0xd
  4465 0050 00       		.byte	0x0
-GAS LISTING /tmp/ccirBf7i.s 			page 80
+GAS LISTING /tmp/cc5fxkXb.s 			page 80
 
 
  4466 0051 00       		.byte	0x0
@@ -4798,7 +4798,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4520 0087 08       		.uleb128 0x8
  4521 0088 3A       		.uleb128 0x3a
  4522 0089 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccirBf7i.s 			page 81
+GAS LISTING /tmp/cc5fxkXb.s 			page 81
 
 
  4523 008a 3B       		.uleb128 0x3b
@@ -4858,7 +4858,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4563              		.section	.debug_pubtypes,"",@progbits
  4564 0000 33000000 		.long	0x33
  4565 0004 0200     		.value	0x2
-GAS LISTING /tmp/ccirBf7i.s 			page 82
+GAS LISTING /tmp/cc5fxkXb.s 			page 82
 
 
  4566 0006 00000000 		.long	.Ldebug_info0
@@ -4918,7 +4918,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4591      31353631 
  4591      382F7072 
  4592              	.LASF15:
-GAS LISTING /tmp/ccirBf7i.s 			page 83
+GAS LISTING /tmp/cc5fxkXb.s 			page 83
 
 
  4593 0097 68656174 		.string	"heatmap_cs_b2w"
@@ -4978,7 +4978,7 @@ GAS LISTING /tmp/ccirBf7i.s 			page 1
  4617      63735F77 
  4617      326200
  4618              		.ident	"GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-4)"
-GAS LISTING /tmp/ccirBf7i.s 			page 84
+GAS LISTING /tmp/cc5fxkXb.s 			page 84
 
 
  4619              		.section	.note.GNU-stack,"",@progbits

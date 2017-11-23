@@ -1,4 +1,4 @@
-GAS LISTING /tmp/cc36vOse.s 			page 1
+GAS LISTING /tmp/ccrWPnlb.s 			page 1
 
 
    1              		.file	"test.cpp"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   36:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** #pragma GCC system_header
   37:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 
   38:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** #include <cwctype>	// For wctype_t
-GAS LISTING /tmp/cc36vOse.s 			page 2
+GAS LISTING /tmp/ccrWPnlb.s 			page 2
 
 
   39:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** #include <cctype>
@@ -118,7 +118,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   93:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 
   94:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****   // Used by both numeric and monetary facets.
   95:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****   // Inserts "group separator" characters into an array of characters.
-GAS LISTING /tmp/cc36vOse.s 			page 3
+GAS LISTING /tmp/ccrWPnlb.s 			page 3
 
 
   96:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****   // It's recursive, one iteration per group.  It moves the characters
@@ -178,7 +178,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  150:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @brief  Test char_type classification.
  151:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  152:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  This function finds a mask M for @a __c and compares it to
-GAS LISTING /tmp/cc36vOse.s 			page 4
+GAS LISTING /tmp/ccrWPnlb.s 			page 4
 
 
  153:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  mask @a __m.  It does so by returning the value of
@@ -238,7 +238,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  207:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @return  Pointer to non-matching char if found, else @a __hi.
  208:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  209:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       const char_type*
-GAS LISTING /tmp/cc36vOse.s 			page 5
+GAS LISTING /tmp/ccrWPnlb.s 			page 5
 
 
  210:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       scan_not(mask __m, const char_type* __lo, const char_type* __hi) const
@@ -298,7 +298,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  264:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __hi  Pointer to end of range.
  265:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @return  @a __hi.
  266:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
-GAS LISTING /tmp/cc36vOse.s 			page 6
+GAS LISTING /tmp/ccrWPnlb.s 			page 6
 
 
  267:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       const char_type*
@@ -358,7 +358,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  321:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  322:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       char
  323:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       narrow(char_type __c, char __dfault) const
-GAS LISTING /tmp/cc36vOse.s 			page 7
+GAS LISTING /tmp/ccrWPnlb.s 			page 7
 
 
  324:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       { return this->do_narrow(__c, __dfault); }
@@ -418,7 +418,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  378:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  379:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  do_is() is a hook for a derived facet to change the behavior of
  380:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  classifying.  do_is() must always return the same result for the
-GAS LISTING /tmp/cc36vOse.s 			page 8
+GAS LISTING /tmp/ccrWPnlb.s 			page 8
 
 
  381:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  same input.
@@ -478,7 +478,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  435:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  argument.
  436:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  437:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  do_toupper() is a hook for a derived facet to change the behavior of
-GAS LISTING /tmp/cc36vOse.s 			page 9
+GAS LISTING /tmp/ccrWPnlb.s 			page 9
 
 
  438:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  uppercasing.  do_toupper() must always return the same result for
@@ -538,7 +538,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  492:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @return  @a __hi.
  493:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  494:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       virtual const char_type*
-GAS LISTING /tmp/cc36vOse.s 			page 10
+GAS LISTING /tmp/ccrWPnlb.s 			page 10
 
 
  495:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       do_tolower(char_type* __lo, const char_type* __hi) const = 0;
@@ -598,7 +598,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  549:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  codecvt for that.
  550:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  551:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __c  The char_type to convert.
-GAS LISTING /tmp/cc36vOse.s 			page 11
+GAS LISTING /tmp/ccrWPnlb.s 			page 11
 
 
  552:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __dfault  Char to return if conversion fails.
@@ -658,7 +658,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  606:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****     public:
  607:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       // Types:
  608:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       typedef _CharT			char_type;
-GAS LISTING /tmp/cc36vOse.s 			page 12
+GAS LISTING /tmp/ccrWPnlb.s 			page 12
 
 
  609:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       typedef typename __ctype_abstract_base<_CharT>::mask mask;
@@ -718,7 +718,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  663:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****   /**
  664:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****    *  @brief  The ctype<char> specialization.
  665:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****    *  @ingroup locales
-GAS LISTING /tmp/cc36vOse.s 			page 13
+GAS LISTING /tmp/ccrWPnlb.s 			page 13
 
 
  666:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****    *
@@ -778,7 +778,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  720:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __refs  Passed to the base facet class.
  721:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  722:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       explicit
-GAS LISTING /tmp/cc36vOse.s 			page 14
+GAS LISTING /tmp/ccrWPnlb.s 			page 14
 
 
  723:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       ctype(__c_locale __cloc, const mask* __table = 0, bool __del = false,
@@ -838,7 +838,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  777:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       */
  778:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       inline const char*
  779:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       scan_not(mask __m, const char* __lo, const char* __hi) const;
-GAS LISTING /tmp/cc36vOse.s 			page 15
+GAS LISTING /tmp/ccrWPnlb.s 			page 15
 
 
  780:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 
@@ -898,7 +898,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  834:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  if possible.  Other chars remain untouched.
  835:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
  836:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  tolower() acts as if it returns ctype<char>:: do_tolower(__lo, __hi).
-GAS LISTING /tmp/cc36vOse.s 			page 16
+GAS LISTING /tmp/ccrWPnlb.s 			page 16
 
 
  837:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  do_tolower() must always return the same result for the same input.
@@ -958,7 +958,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  891:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       widen(const char* __lo, const char* __hi, char_type* __to) const
  892:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       {
  893:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 	if (_M_widen_ok == 1)
-GAS LISTING /tmp/cc36vOse.s 			page 17
+GAS LISTING /tmp/ccrWPnlb.s 			page 17
 
 
  894:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 	  {
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  948:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __lo  Pointer to start of range.
  949:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __hi  Pointer to end of range.
  950:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __dfault  Char to use if conversion fails.
-GAS LISTING /tmp/cc36vOse.s 			page 18
+GAS LISTING /tmp/ccrWPnlb.s 			page 18
 
 
  951:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @param __to  Pointer to the destination array.
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
 1005:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h **** 
 1006:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****       /**
 1007:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  @brief  Convert array to uppercase.
-GAS LISTING /tmp/cc36vOse.s 			page 19
+GAS LISTING /tmp/ccrWPnlb.s 			page 19
 
 
 1008:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
 1062:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *
 1063:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  do_widen() is a hook for a derived facet to change the behavior of
 1064:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  widening.  do_widen() must always return the same result for the
-GAS LISTING /tmp/cc36vOse.s 			page 20
+GAS LISTING /tmp/ccrWPnlb.s 			page 20
 
 
 1065:/opt/gcc/4.9.2/include/c++/4.9.2/bits/locale_facets.h ****        *  same input.
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   19:tests/test.cpp ****  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
   20:tests/test.cpp ****  * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
   21:tests/test.cpp ****  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-GAS LISTING /tmp/cc36vOse.s 			page 21
+GAS LISTING /tmp/ccrWPnlb.s 			page 21
 
 
   22:tests/test.cpp ****  */
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   76:tests/test.cpp ****         && hm->h == expected->h
   77:tests/test.cpp ****         && 0 == memcmp(expected->buf, hm->buf, sizeof(float)*hm->w*hm->h);
   78:tests/test.cpp **** }
-GAS LISTING /tmp/cc36vOse.s 			page 22
+GAS LISTING /tmp/ccrWPnlb.s 			page 22
 
 
   79:tests/test.cpp **** 
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  133:tests/test.cpp **** }
  134:tests/test.cpp **** 
  135:tests/test.cpp **** void test_add_point_with_stamp_topleft()
-GAS LISTING /tmp/cc36vOse.s 			page 23
+GAS LISTING /tmp/ccrWPnlb.s 			page 23
 
 
  136:tests/test.cpp **** {
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  190:tests/test.cpp ****     };
  191:tests/test.cpp **** 
  192:tests/test.cpp ****     heatmap_t* hm = heatmap_new(3, 3);
-GAS LISTING /tmp/cc36vOse.s 			page 24
+GAS LISTING /tmp/ccrWPnlb.s 			page 24
 
 
  193:tests/test.cpp ****     heatmap_add_point_with_stamp(hm, 3, 2, &g_3x3_stamp);
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   43              		.loc 2 247 0
   44              		.cfi_startproc
   45              	.LVL1:
-GAS LISTING /tmp/cc36vOse.s 			page 25
+GAS LISTING /tmp/ccrWPnlb.s 			page 25
 
 
   46              		.loc 2 247 0
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   93      00000000 
   94 0028 C3       		ret
   95              		.cfi_endproc
-GAS LISTING /tmp/cc36vOse.s 			page 26
+GAS LISTING /tmp/ccrWPnlb.s 			page 26
 
 
   96              	.LFE1527:
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
    6:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** // terms of the GNU General Public License as published by the
    7:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** // Free Software Foundation; either version 3, or (at your option)
    8:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** // any later version.
-GAS LISTING /tmp/cc36vOse.s 			page 27
+GAS LISTING /tmp/ccrWPnlb.s 			page 27
 
 
    9:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   63:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       typedef typename _Traits::pos_type 		pos_type;
   64:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       typedef typename _Traits::off_type 		off_type;
   65:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       typedef _Traits			 		traits_type;
-GAS LISTING /tmp/cc36vOse.s 			page 28
+GAS LISTING /tmp/ccrWPnlb.s 			page 28
 
 
   66:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  120:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 	// The inserters for manipulators are *not* formatted output functions.
  121:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 	__pf(*this);
  122:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 	return *this;
-GAS LISTING /tmp/cc36vOse.s 			page 29
+GAS LISTING /tmp/ccrWPnlb.s 			page 29
 
 
  123:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       }
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  177:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       operator<<(short __n);
  178:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
  179:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       __ostream_type&
-GAS LISTING /tmp/cc36vOse.s 			page 30
+GAS LISTING /tmp/ccrWPnlb.s 			page 30
 
 
  180:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       operator<<(unsigned short __n)
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  234:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
  235:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       /**
  236:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @brief  Pointer arithmetic inserters
-GAS LISTING /tmp/cc36vOse.s 			page 31
+GAS LISTING /tmp/ccrWPnlb.s 			page 31
 
 
  237:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @param  __p A variable of pointer type.
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  291:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       /**
  292:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @brief  Simple insertion.
  293:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @param  __c  The character to insert.
-GAS LISTING /tmp/cc36vOse.s 			page 32
+GAS LISTING /tmp/ccrWPnlb.s 			page 32
 
 
  294:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @return  *this
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  348:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
  349:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       /**
  350:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @brief  Getting the current write position.
-GAS LISTING /tmp/cc36vOse.s 			page 33
+GAS LISTING /tmp/ccrWPnlb.s 			page 33
 
 
  351:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @return  A file position object.
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  405:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     public:
  406:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       /**
  407:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @brief  The constructor performs preparatory work.
-GAS LISTING /tmp/cc36vOse.s 			page 34
+GAS LISTING /tmp/ccrWPnlb.s 			page 34
 
 
  408:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****        *  @param  __os  The output stream to guard.
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  462:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****    *  padding (as determined by [22.2.2.2.2]).  @c __out.width(0) is then
  463:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****    *  called.
  464:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****    *
-GAS LISTING /tmp/cc36vOse.s 			page 35
+GAS LISTING /tmp/ccrWPnlb.s 			page 35
 
 
  465:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****    *  If @p __c is of type @c char and the character type of the stream is not
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  519:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****       return __out;
  520:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     }
  521:/opt/gcc/4.9.2/include/c++/4.9.2/ostream **** 
-GAS LISTING /tmp/cc36vOse.s 			page 36
+GAS LISTING /tmp/ccrWPnlb.s 			page 36
 
 
  522:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****   template<typename _CharT, typename _Traits>
@@ -2158,7 +2158,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  166              	.LVL9:
  167              	.LBB281:
  168              	.LBB282:
-GAS LISTING /tmp/cc36vOse.s 			page 37
+GAS LISTING /tmp/ccrWPnlb.s 			page 37
 
 
  169              		.loc 3 535 0
@@ -2218,7 +2218,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   23:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** 
   24:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** /** @file bits/char_traits.h
   25:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****  *  This is an internal header file, included by other library headers.
-GAS LISTING /tmp/cc36vOse.s 			page 38
+GAS LISTING /tmp/ccrWPnlb.s 			page 38
 
 
   26:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****  *  Do not attempt to use it directly. @headername{string}
@@ -2278,7 +2278,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   80:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****    */
   81:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****   template<typename _CharT>
   82:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****     struct char_traits
-GAS LISTING /tmp/cc36vOse.s 			page 39
+GAS LISTING /tmp/ccrWPnlb.s 			page 39
 
 
   83:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****     {
@@ -2338,7 +2338,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  137:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       not_eof(const int_type& __c)
  138:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       { return !eq_int_type(__c, eof()) ? __c : to_int_type(char_type()); }
  139:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****     };
-GAS LISTING /tmp/cc36vOse.s 			page 40
+GAS LISTING /tmp/ccrWPnlb.s 			page 40
 
 
  140:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** 
@@ -2398,7 +2398,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  194:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** 
  195:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****   template<typename _CharT>
  196:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****     typename char_traits<_CharT>::char_type*
-GAS LISTING /tmp/cc36vOse.s 			page 41
+GAS LISTING /tmp/ccrWPnlb.s 			page 41
 
 
  197:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****     char_traits<_CharT>::
@@ -2458,7 +2458,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  251:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** 	// LWG 467.
  252:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** 	return (static_cast<unsigned char>(__c1)
  253:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h **** 		< static_cast<unsigned char>(__c2));
-GAS LISTING /tmp/cc36vOse.s 			page 42
+GAS LISTING /tmp/ccrWPnlb.s 			page 42
 
 
  254:/opt/gcc/4.9.2/include/c++/4.9.2/bits/char_traits.h ****       }
@@ -2518,7 +2518,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  560:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****   */
  561:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****   template<typename _CharT, typename _Traits>
  562:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     inline basic_ostream<_CharT, _Traits>&
-GAS LISTING /tmp/cc36vOse.s 			page 43
+GAS LISTING /tmp/ccrWPnlb.s 			page 43
 
 
  563:/opt/gcc/4.9.2/include/c++/4.9.2/ostream ****     endl(basic_ostream<_CharT, _Traits>& __os)
@@ -2578,7 +2578,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   47:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       if (!__f)
   48:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 	__throw_bad_cast();
   49:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       return *__f;
-GAS LISTING /tmp/cc36vOse.s 			page 44
+GAS LISTING /tmp/ccrWPnlb.s 			page 44
 
 
   50:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****     }
@@ -2638,7 +2638,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  104:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       const __num_get_type*                          _M_num_get;
  105:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 
  106:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****     public:
-GAS LISTING /tmp/cc36vOse.s 			page 45
+GAS LISTING /tmp/ccrWPnlb.s 			page 45
 
 
  107:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       //@{
@@ -2698,7 +2698,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  161:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 	_M_streambuf_state |= __state;
  162:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 	if (this->exceptions() & __state)
  163:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 	  __throw_exception_again;
-GAS LISTING /tmp/cc36vOse.s 			page 46
+GAS LISTING /tmp/ccrWPnlb.s 			page 46
 
 
  164:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       }
@@ -2758,7 +2758,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  218:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       /**
  219:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  @brief  Throwing exceptions on errors.
  220:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  @param  __except  The new exceptions mask.
-GAS LISTING /tmp/cc36vOse.s 			page 47
+GAS LISTING /tmp/ccrWPnlb.s 			page 47
 
 
  221:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *
@@ -2818,7 +2818,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  275:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       ~basic_ios() { }
  276:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 
  277:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       // Members:
-GAS LISTING /tmp/cc36vOse.s 			page 48
+GAS LISTING /tmp/ccrWPnlb.s 			page 48
 
 
  278:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       /**
@@ -2878,7 +2878,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  332:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  @code
  333:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  std::fstream     foo;         // or some other derived type
  334:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  std::streambuf*  p = .....;
-GAS LISTING /tmp/cc36vOse.s 			page 49
+GAS LISTING /tmp/ccrWPnlb.s 			page 49
 
 
  335:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *
@@ -2938,7 +2938,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  389:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h **** 
  390:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       // Locales:
  391:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****       /**
-GAS LISTING /tmp/cc36vOse.s 			page 50
+GAS LISTING /tmp/ccrWPnlb.s 			page 50
 
 
  392:/opt/gcc/4.9.2/include/c++/4.9.2/bits/basic_ios.h ****        *  @brief  Moves to a new locale.
@@ -2998,7 +2998,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  219 00b1 488BAC03 		movq	240(%rbx,%rax), %rbp
  219      F0000000 
  220              	.LVL15:
-GAS LISTING /tmp/cc36vOse.s 			page 51
+GAS LISTING /tmp/ccrWPnlb.s 			page 51
 
 
  221              	.LBB301:
@@ -3058,7 +3058,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  249      00
  250              	.LVL19:
  251              	.LBE314:
-GAS LISTING /tmp/cc36vOse.s 			page 52
+GAS LISTING /tmp/ccrWPnlb.s 			page 52
 
 
  252              	.LBE313:
@@ -3118,7 +3118,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  297              	.LVL25:
  298 010b 0FBEF0   		movsbl	%al, %esi
  299 010e EBB8     		jmp	.L10
-GAS LISTING /tmp/cc36vOse.s 			page 53
+GAS LISTING /tmp/ccrWPnlb.s 			page 53
 
 
  300              	.LVL26:
@@ -3178,7 +3178,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   26:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****  *  Do not attempt to use it directly. @headername{ios}
   27:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****  */
   28:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h **** 
-GAS LISTING /tmp/cc36vOse.s 			page 54
+GAS LISTING /tmp/ccrWPnlb.s 			page 54
 
 
   29:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h **** //
@@ -3238,7 +3238,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   83:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****   { return _Ios_Fmtflags(static_cast<int>(__a) ^ static_cast<int>(__b)); }
   84:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h **** 
   85:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****   inline _GLIBCXX_CONSTEXPR _Ios_Fmtflags
-GAS LISTING /tmp/cc36vOse.s 			page 55
+GAS LISTING /tmp/ccrWPnlb.s 			page 55
 
 
   86:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****   operator~(_Ios_Fmtflags __a)
@@ -3298,7 +3298,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  140:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h **** 
  141:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h **** 
  142:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****   enum _Ios_Iostate
-GAS LISTING /tmp/cc36vOse.s 			page 56
+GAS LISTING /tmp/ccrWPnlb.s 			page 56
 
 
  143:/opt/gcc/4.9.2/include/c++/4.9.2/bits/ios_base.h ****     { 
@@ -3358,7 +3358,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  362              	.LFE1706:
  363              		.size	_ZL11ensure_thatPKcbS0_i.part.9.constprop.12, .-_ZL11ensure_thatPKcbS0_i.part.9.constprop.12
  364              		.section	.text.unlikely
-GAS LISTING /tmp/cc36vOse.s 			page 57
+GAS LISTING /tmp/ccrWPnlb.s 			page 57
 
 
  365              	.LCOLDE10:
@@ -3418,7 +3418,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  404      000000
  405 0153 480FAFD0 		imulq	%rax, %rdx
  406 0157 48C1E202 		salq	$2, %rdx
-GAS LISTING /tmp/cc36vOse.s 			page 58
+GAS LISTING /tmp/ccrWPnlb.s 			page 58
 
 
  407 015b E8000000 		call	memcmp@PLT
@@ -3478,7 +3478,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  106:tests/test.cpp **** }
  445              		.loc 2 106 0
  446 018f 5B       		popq	%rbx
-GAS LISTING /tmp/cc36vOse.s 			page 59
+GAS LISTING /tmp/ccrWPnlb.s 			page 59
 
 
  447              		.cfi_remember_state
@@ -3538,7 +3538,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  488 01cf EBA2     		jmp	.L17
  489              	.LBE329:
  490              	.LBE334:
-GAS LISTING /tmp/cc36vOse.s 			page 60
+GAS LISTING /tmp/ccrWPnlb.s 			page 60
 
 
  491              	.LBE336:
@@ -3598,7 +3598,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  521              		.type	_Z32test_add_point_with_stamp_centerv, @function
  522              	_Z32test_add_point_with_stamp_centerv:
  523              	.LFB1514:
-GAS LISTING /tmp/cc36vOse.s 			page 61
+GAS LISTING /tmp/ccrWPnlb.s 			page 61
 
 
  109:tests/test.cpp **** {
@@ -3658,7 +3658,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  562 0221 480FAFD0 		imulq	%rax, %rdx
  563 0225 48C1E202 		salq	$2, %rdx
  564 0229 E8000000 		call	memcmp@PLT
-GAS LISTING /tmp/cc36vOse.s 			page 62
+GAS LISTING /tmp/ccrWPnlb.s 			page 62
 
 
  564      00
@@ -3718,7 +3718,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  116:tests/test.cpp ****     heatmap_add_point_with_stamp(hm, 1, 1, &g_3x3_stamp);
  601              		.loc 2 116 0
  602 0266 488D0D00 		leaq	_ZL11g_3x3_stamp(%rip), %rcx
-GAS LISTING /tmp/cc36vOse.s 			page 63
+GAS LISTING /tmp/ccrWPnlb.s 			page 63
 
 
  602      000000
@@ -3778,7 +3778,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   51:tests/test.cpp ****     g_total_tests++;
  641              		.loc 2 51 0
  642 02b8 83C201   		addl	$1, %edx
-GAS LISTING /tmp/cc36vOse.s 			page 64
+GAS LISTING /tmp/ccrWPnlb.s 			page 64
 
 
   53:tests/test.cpp ****     if(!condition) {
@@ -3838,7 +3838,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  676 030a 3B430C   		cmpl	12(%rbx), %eax
  677 030d 0F84AD00 		je	.L48
  677      0000
-GAS LISTING /tmp/cc36vOse.s 			page 65
+GAS LISTING /tmp/ccrWPnlb.s 			page 65
 
 
  678              	.L33:
@@ -3898,7 +3898,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  719              	.L46:
  720              		.cfi_restore_state
  721              	.LBB360:
-GAS LISTING /tmp/cc36vOse.s 			page 66
+GAS LISTING /tmp/ccrWPnlb.s 			page 66
 
 
  722              	.LBB342:
@@ -3958,7 +3958,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  762              	.LBB363:
  763              	.LBB345:
  764 03a0 488D3D00 		leaq	.LC17(%rip), %rdi
-GAS LISTING /tmp/cc36vOse.s 			page 67
+GAS LISTING /tmp/ccrWPnlb.s 			page 67
 
 
  764      000000
@@ -4018,7 +4018,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  804              		.section	.text.unlikely
  805              	.LCOLDE22:
  806              		.text
-GAS LISTING /tmp/cc36vOse.s 			page 68
+GAS LISTING /tmp/ccrWPnlb.s 			page 68
 
 
  807              	.LHOTE22:
@@ -4078,7 +4078,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  145:tests/test.cpp ****     heatmap_add_point_with_stamp(hm, 0, 0, &g_3x3_stamp);
  844              		.loc 2 145 0
  845 0415 488D0D00 		leaq	_ZL11g_3x3_stamp(%rip), %rcx
-GAS LISTING /tmp/cc36vOse.s 			page 69
+GAS LISTING /tmp/ccrWPnlb.s 			page 69
 
 
  845      000000
@@ -4138,7 +4138,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  884      08
  885              	.LVL79:
  886              	.LBB375:
-GAS LISTING /tmp/cc36vOse.s 			page 70
+GAS LISTING /tmp/ccrWPnlb.s 			page 70
 
 
  887              	.LBB376:
@@ -4198,7 +4198,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  922 04b3 E8000000 		call	heatmap_add_point_with_stamp@PLT
  922      00
  923              	.LVL84:
-GAS LISTING /tmp/cc36vOse.s 			page 71
+GAS LISTING /tmp/ccrWPnlb.s 			page 71
 
 
  153:tests/test.cpp ****     heatmap_add_weighted_point_with_stamp(hm2, 0, 0, 3.0f, &g_3x3_stamp);
@@ -4258,7 +4258,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  158:tests/test.cpp ****     heatmap_free(hm2);
  964              		.loc 2 158 0
  965 04ff 4889EF   		movq	%rbp, %rdi
-GAS LISTING /tmp/cc36vOse.s 			page 72
+GAS LISTING /tmp/ccrWPnlb.s 			page 72
 
 
  966              	.LBE389:
@@ -4318,7 +4318,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1005              		.p2align 3
  1006              	.L63:
  1007              	.LBE377:
-GAS LISTING /tmp/cc36vOse.s 			page 73
+GAS LISTING /tmp/ccrWPnlb.s 			page 73
 
 
  1008              	.LBE385:
@@ -4378,7 +4378,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1048      696E7420 
  1048      77697468 
  1048      20776569 
-GAS LISTING /tmp/cc36vOse.s 			page 74
+GAS LISTING /tmp/ccrWPnlb.s 			page 74
 
 
  1048      67687420 
@@ -4438,7 +4438,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1087 05bc E8000000 		call	heatmap_add_point_with_stamp@PLT
  1087      00
  1088              	.LVL100:
-GAS LISTING /tmp/cc36vOse.s 			page 75
+GAS LISTING /tmp/ccrWPnlb.s 			page 75
 
 
  1089              	.LBB392:
@@ -4498,7 +4498,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1127 0604 89150000 		movl	%edx, _ZL13g_total_tests(%rip)
  1127      0000
   53:tests/test.cpp ****     if(!condition) {
-GAS LISTING /tmp/cc36vOse.s 			page 76
+GAS LISTING /tmp/ccrWPnlb.s 			page 76
 
 
  1128              		.loc 2 53 0
@@ -4558,7 +4558,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1162 0662 8B450C   		movl	12(%rbp), %eax
   78:tests/test.cpp ****         && 0 == memcmp(expected->buf, hm->buf, sizeof(float)*hm->w*hm->h);
  1163              		.loc 2 78 0
-GAS LISTING /tmp/cc36vOse.s 			page 77
+GAS LISTING /tmp/ccrWPnlb.s 			page 77
 
 
  1164 0665 3B430C   		cmpl	12(%rbx), %eax
@@ -4618,7 +4618,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1205      00000000 
  1206              		.p2align 3
  1207              	.L77:
-GAS LISTING /tmp/cc36vOse.s 			page 78
+GAS LISTING /tmp/ccrWPnlb.s 			page 78
 
 
  1208              		.cfi_restore_state
@@ -4678,7 +4678,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1247      00
  1248              	.LVL119:
  1249 0700 85C0     		testl	%eax, %eax
-GAS LISTING /tmp/cc36vOse.s 			page 79
+GAS LISTING /tmp/ccrWPnlb.s 			page 79
 
 
  1250 0702 0F8562FF 		jne	.L68
@@ -4738,7 +4738,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1289              		.cfi_offset 3, -16
  1290              	.LBB413:
  193:tests/test.cpp ****     heatmap_t* hm = heatmap_new(3, 3);
-GAS LISTING /tmp/cc36vOse.s 			page 80
+GAS LISTING /tmp/ccrWPnlb.s 			page 80
 
 
  1291              		.loc 2 193 0
@@ -4798,7 +4798,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1324 077e 8B4310   		movl	16(%rbx), %eax
  1325 0781 8B530C   		movl	12(%rbx), %edx
  1326 0784 488D3D00 		leaq	_ZZ33test_add_point_with_stamp_outsidevE8expected(%rip), %rdi
-GAS LISTING /tmp/cc36vOse.s 			page 81
+GAS LISTING /tmp/ccrWPnlb.s 			page 81
 
 
  1326      000000
@@ -4858,7 +4858,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1365      0000
  1366              	.LVL129:
  1367              	.L81:
-GAS LISTING /tmp/cc36vOse.s 			page 82
+GAS LISTING /tmp/ccrWPnlb.s 			page 82
 
 
  1368              	.LBE421:
@@ -4918,7 +4918,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1402 084a 48C1E202 		salq	$2, %rdx
  1403 084e E8000000 		call	memcmp@PLT
  1403      00
-GAS LISTING /tmp/cc36vOse.s 			page 83
+GAS LISTING /tmp/ccrWPnlb.s 			page 83
 
 
  1404              	.LVL133:
@@ -4978,7 +4978,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1445 0882 5B       		popq	%rbx
  1446              		.cfi_remember_state
  1447              		.cfi_def_cfa_offset 8
-GAS LISTING /tmp/cc36vOse.s 			page 84
+GAS LISTING /tmp/ccrWPnlb.s 			page 84
 
 
  1448              	.LVL136:
@@ -5038,7 +5038,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1488              	.LVL142:
  1489 08c9 0F1F8000 		.p2align 4,,10
  1489      000000
-GAS LISTING /tmp/cc36vOse.s 			page 85
+GAS LISTING /tmp/ccrWPnlb.s 			page 85
 
 
  1490              		.p2align 3
@@ -5098,7 +5098,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1529 03c4 00000000 		.align 8
  1530              	.LC37:
  1531 03c8 74686520 		.string	"the 1-radius stamp data is correct (stamp_almost_eq(s, expected))"
-GAS LISTING /tmp/cc36vOse.s 			page 86
+GAS LISTING /tmp/ccrWPnlb.s 			page 86
 
 
  1531      312D7261 
@@ -5158,7 +5158,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1568 094b E8E0F6FF 		call	_ZL11ensure_thatPKcbS0_i.part.9.constprop.12
  1568      FF
  1569              	.LVL149:
-GAS LISTING /tmp/cc36vOse.s 			page 87
+GAS LISTING /tmp/ccrWPnlb.s 			page 87
 
 
  1570 0950 448B0D00 		movl	_ZL13g_total_tests(%rip), %r9d
@@ -5218,7 +5218,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   17:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** // 3.1, as published by the Free Software Foundation.
   18:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
   19:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** // You should have received a copy of the GNU General Public License and
-GAS LISTING /tmp/cc36vOse.s 			page 88
+GAS LISTING /tmp/ccrWPnlb.s 			page 88
 
 
   20:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** // a copy of the GCC Runtime Library Exception along with this program;
@@ -5278,7 +5278,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   74:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** namespace std _GLIBCXX_VISIBILITY(default)
   75:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** {
   76:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** _GLIBCXX_BEGIN_NAMESPACE_VERSION
-GAS LISTING /tmp/cc36vOse.s 			page 89
+GAS LISTING /tmp/ccrWPnlb.s 			page 89
 
 
   77:/opt/gcc/4.9.2/include/c++/4.9.2/cmath **** 
@@ -5338,7 +5338,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1635              		.loc 2 62 0
  1636 09ac F30F5AC0 		cvtss2sd	%xmm0, %xmm0
  1637 09b0 660F2EC2 		ucomisd	%xmm2, %xmm0
-GAS LISTING /tmp/cc36vOse.s 			page 90
+GAS LISTING /tmp/ccrWPnlb.s 			page 90
 
 
  1638 09b4 7722     		ja	.L100
@@ -5398,7 +5398,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1682      000000
   51:tests/test.cpp ****     g_total_tests++;
  1683              		.loc 2 51 0
-GAS LISTING /tmp/cc36vOse.s 			page 91
+GAS LISTING /tmp/ccrWPnlb.s 			page 91
 
 
  1684 09df 4183C101 		addl	$1, %r9d
@@ -5458,7 +5458,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1720 04b0 74686520 		.string	"the 1-radius nonlinear 10-stamp size is correct (s3->w == 3 && s3->h == 3)"
  1720      312D7261 
  1720      64697573 
-GAS LISTING /tmp/cc36vOse.s 			page 92
+GAS LISTING /tmp/ccrWPnlb.s 			page 92
 
 
  1720      206E6F6E 
@@ -5518,7 +5518,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1756 0a0c 53       		pushq	%rbx
  1757              		.cfi_def_cfa_offset 40
  1758              		.cfi_offset 3, -40
-GAS LISTING /tmp/cc36vOse.s 			page 93
+GAS LISTING /tmp/ccrWPnlb.s 			page 93
 
 
  1759              	.LBB498:
@@ -5578,7 +5578,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   53:tests/test.cpp ****     if(!condition) {
  1796              		.loc 2 53 0
  1797 0a4f 48B80300 		movabsq	$12884901891, %rax
-GAS LISTING /tmp/cc36vOse.s 			page 94
+GAS LISTING /tmp/ccrWPnlb.s 			page 94
 
 
  1797      00000300 
@@ -5638,7 +5638,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1831              	.LBE466:
  1832              	.LBB468:
  1833              	.LBB469:
-GAS LISTING /tmp/cc36vOse.s 			page 95
+GAS LISTING /tmp/ccrWPnlb.s 			page 95
 
 
   51:tests/test.cpp ****     g_total_tests++;
@@ -5698,7 +5698,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1872      00
  1873              	.LVL180:
  1874              	.LBE472:
-GAS LISTING /tmp/cc36vOse.s 			page 96
+GAS LISTING /tmp/ccrWPnlb.s 			page 96
 
 
  1875              	.LBE477:
@@ -5758,7 +5758,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   51:tests/test.cpp ****     g_total_tests++;
  1916              		.loc 2 51 0 discriminator 2
  1917 0b35 891D0000 		movl	%ebx, _ZL13g_total_tests(%rip)
-GAS LISTING /tmp/cc36vOse.s 			page 97
+GAS LISTING /tmp/ccrWPnlb.s 			page 97
 
 
  1917      0000
@@ -5818,7 +5818,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1958      FF
  1959              	.LVL185:
  1960              	.L114:
-GAS LISTING /tmp/cc36vOse.s 			page 98
+GAS LISTING /tmp/ccrWPnlb.s 			page 98
 
 
  1961              	.LBE493:
@@ -5878,7 +5878,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  1997              		.p2align 3
  1998              	.L126:
  1999              		.cfi_restore_state
-GAS LISTING /tmp/cc36vOse.s 			page 99
+GAS LISTING /tmp/ccrWPnlb.s 			page 99
 
 
  2000              	.LBB496:
@@ -5938,7 +5938,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2040 0bdc 0F1F4000 		.p2align 4,,15
  2041              		.globl	_Z22test_render_to_nothingv
  2042              		.type	_Z22test_render_to_nothingv, @function
-GAS LISTING /tmp/cc36vOse.s 			page 100
+GAS LISTING /tmp/ccrWPnlb.s 			page 100
 
 
  2043              	_Z22test_render_to_nothingv:
@@ -5998,7 +5998,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2075 0c16 48C74424 		movq	$0, 16(%rsp)
  2075      10000000 
  2075      00
-GAS LISTING /tmp/cc36vOse.s 			page 101
+GAS LISTING /tmp/ccrWPnlb.s 			page 101
 
 
  2076 0c1f 48C74424 		movq	$0, 24(%rsp)
@@ -6058,7 +6058,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2111 0c74 4883C438 		addq	$56, %rsp
  2112              		.cfi_def_cfa_offset 24
  2113 0c78 5B       		popq	%rbx
-GAS LISTING /tmp/cc36vOse.s 			page 102
+GAS LISTING /tmp/ccrWPnlb.s 			page 102
 
 
  2114              		.cfi_def_cfa_offset 16
@@ -6118,7 +6118,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2150      00
  2151              	.LBE506:
  281:tests/test.cpp ****     static unsigned char expected[] = {
-GAS LISTING /tmp/cc36vOse.s 			page 103
+GAS LISTING /tmp/ccrWPnlb.s 			page 103
 
 
  2152              		.loc 2 281 0
@@ -6178,7 +6178,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   51:tests/test.cpp ****     g_total_tests++;
  2189              		.loc 2 51 0
  2190 0cdc 83050000 		addl	$1, _ZL13g_total_tests(%rip)
-GAS LISTING /tmp/cc36vOse.s 			page 104
+GAS LISTING /tmp/ccrWPnlb.s 			page 104
 
 
  2190      000001
@@ -6238,7 +6238,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2232              		.section	.rodata.str1.8
  2233 0673 00000000 		.align 8
  2233      00
-GAS LISTING /tmp/cc36vOse.s 			page 105
+GAS LISTING /tmp/ccrWPnlb.s 			page 105
 
 
  2234              	.LC50:
@@ -6298,7 +6298,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2270 0d22 E8000000 		call	heatmap_new@PLT
  2270      00
  2271              	.LVL214:
-GAS LISTING /tmp/cc36vOse.s 			page 106
+GAS LISTING /tmp/ccrWPnlb.s 			page 106
 
 
  307:tests/test.cpp ****     heatmap_add_point_with_stamp(hm, 1, 1, &g_3x3_stamp);
@@ -6358,7 +6358,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2302              		.loc 2 313 0
  2303 0d8b 488D3500 		leaq	_ZZ26test_render_to_normalizingvE8expected(%rip), %rsi
  2303      000000
-GAS LISTING /tmp/cc36vOse.s 			page 107
+GAS LISTING /tmp/ccrWPnlb.s 			page 107
 
 
  2304 0d92 BA240000 		movl	$36, %edx
@@ -6418,7 +6418,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   51:tests/test.cpp ****     g_total_tests++;
  2340              		.loc 2 51 0
  2341 0de6 83050000 		addl	$1, _ZL13g_total_tests(%rip)
-GAS LISTING /tmp/cc36vOse.s 			page 108
+GAS LISTING /tmp/ccrWPnlb.s 			page 108
 
 
  2341      000001
@@ -6478,7 +6478,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2381      FF
  2382              	.LBE515:
  2383              	.LBE518:
-GAS LISTING /tmp/cc36vOse.s 			page 109
+GAS LISTING /tmp/ccrWPnlb.s 			page 109
 
 
  2384              	.LBE521:
@@ -6538,7 +6538,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  333:tests/test.cpp ****         191, 191, 191, 255,   255, 255, 255, 255,   191, 191, 191, 255,
  334:tests/test.cpp ****                 0, 0, 0, 0,   191, 191, 191, 255,   0, 0, 0, 0,
  335:tests/test.cpp ****     };
-GAS LISTING /tmp/cc36vOse.s 			page 110
+GAS LISTING /tmp/ccrWPnlb.s 			page 110
 
 
  336:tests/test.cpp **** 
@@ -6598,7 +6598,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2450 0e6d BA010000 		movl	$1, %edx
  2450      00
  2451 0e72 BE010000 		movl	$1, %esi
-GAS LISTING /tmp/cc36vOse.s 			page 111
+GAS LISTING /tmp/ccrWPnlb.s 			page 111
 
 
  2451      00
@@ -6658,7 +6658,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2483 0ef1 4889E7   		movq	%rsp, %rdi
  2484 0ef4 E8000000 		call	memcmp@PLT
  2484      00
-GAS LISTING /tmp/cc36vOse.s 			page 112
+GAS LISTING /tmp/ccrWPnlb.s 			page 112
 
 
  2485              	.LVL234:
@@ -6718,7 +6718,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2522              	.LBE527:
  2523              	.LBE526:
  348:tests/test.cpp **** 
-GAS LISTING /tmp/cc36vOse.s 			page 113
+GAS LISTING /tmp/ccrWPnlb.s 			page 113
 
 
  349:tests/test.cpp ****     heatmap_free(hm);
@@ -6778,7 +6778,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2568      206F6620 
  2568      00
  2569              	.LC57:
-GAS LISTING /tmp/cc36vOse.s 			page 114
+GAS LISTING /tmp/ccrWPnlb.s 			page 114
 
 
  2570 0024 20746573 		.string	" tests failed, shame on you!"
@@ -6838,7 +6838,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  358:tests/test.cpp ****     test_add_point_with_stamp_botright();
  2605              		.loc 2 359 0
  2606 0015 E8000000 		call	_Z34test_add_point_with_stamp_botrightv@PLT
-GAS LISTING /tmp/cc36vOse.s 			page 115
+GAS LISTING /tmp/ccrWPnlb.s 			page 115
 
 
  2606      00
@@ -6898,7 +6898,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2636 0054 488D3500 		leaq	.LC58(%rip), %rsi
  2636      000000
  2637 005b E8000000 		call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-GAS LISTING /tmp/cc36vOse.s 			page 116
+GAS LISTING /tmp/ccrWPnlb.s 			page 116
 
 
  2637      00
@@ -6958,7 +6958,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2677      0000
  2678 00a2 E8000000 		call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
  2678      00
-GAS LISTING /tmp/cc36vOse.s 			page 117
+GAS LISTING /tmp/ccrWPnlb.s 			page 117
 
 
  2679              	.LVL258:
@@ -7018,7 +7018,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2721              	.LCOLDE60:
  2722              		.section	.text.startup
  2723              	.LHOTE60:
-GAS LISTING /tmp/cc36vOse.s 			page 118
+GAS LISTING /tmp/ccrWPnlb.s 			page 118
 
 
  2724              		.section	.text.unlikely
@@ -7078,7 +7078,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
   37:/opt/gcc/4.9.2/include/c++/4.9.2/iostream **** #include <bits/c++config.h>
   38:/opt/gcc/4.9.2/include/c++/4.9.2/iostream **** #include <ostream>
   39:/opt/gcc/4.9.2/include/c++/4.9.2/iostream **** #include <istream>
-GAS LISTING /tmp/cc36vOse.s 			page 119
+GAS LISTING /tmp/ccrWPnlb.s 			page 119
 
 
   40:/opt/gcc/4.9.2/include/c++/4.9.2/iostream **** 
@@ -7138,7 +7138,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2753              	.LBE544:
  2754              	.LBE546:
  2755              		.loc 2 376 0
-GAS LISTING /tmp/cc36vOse.s 			page 120
+GAS LISTING /tmp/ccrWPnlb.s 			page 120
 
 
  2756 0115 4883C408 		addq	$8, %rsp
@@ -7198,7 +7198,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2808 001c BF       		.byte	-65
  2809 001d BF       		.byte	-65
  2810 001e BF       		.byte	-65
-GAS LISTING /tmp/cc36vOse.s 			page 121
+GAS LISTING /tmp/ccrWPnlb.s 			page 121
 
 
  2811 001f FF       		.byte	-1
@@ -7258,7 +7258,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2857              		.type	_ZZ26test_render_to_normalizingvE8expected, @object
  2858              		.size	_ZZ26test_render_to_normalizingvE8expected, 36
  2859              	_ZZ26test_render_to_normalizingvE8expected:
-GAS LISTING /tmp/cc36vOse.s 			page 122
+GAS LISTING /tmp/ccrWPnlb.s 			page 122
 
 
  2860 0080 00       		.byte	0
@@ -7318,7 +7318,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2910 00ca 00       		.byte	0
  2911 00cb 00       		.byte	0
  2912 00cc 7F       		.byte	127
-GAS LISTING /tmp/cc36vOse.s 			page 123
+GAS LISTING /tmp/ccrWPnlb.s 			page 123
 
 
  2913 00cd 7F       		.byte	127
@@ -7378,7 +7378,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  2959 0148 0000003F 		.long	1056964608
  2960 014c 0000003F 		.long	1056964608
  2961 0150 0000003F 		.long	1056964608
-GAS LISTING /tmp/cc36vOse.s 			page 124
+GAS LISTING /tmp/ccrWPnlb.s 			page 124
 
 
  2962 0154 0000003F 		.long	1056964608
@@ -7438,7 +7438,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3004 0218 00000000 		.long	0
  3005 021c 00000000 		.long	0
  3006 0220 00000000 		.long	0
-GAS LISTING /tmp/cc36vOse.s 			page 125
+GAS LISTING /tmp/ccrWPnlb.s 			page 125
 
 
  3007 0224 00000000 		.align 32
@@ -7498,7 +7498,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3052              	.LC1:
  3053 0000 0000003F 		.long	1056964608
  3054              		.align 4
-GAS LISTING /tmp/cc36vOse.s 			page 126
+GAS LISTING /tmp/ccrWPnlb.s 			page 126
 
 
  3055              	.LC3:
@@ -7558,7 +7558,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3109              		.file 27 "/opt/gcc/4.9.2/include/c++/4.9.2/bits/functexcept.h"
  3110              		.file 28 "/usr/include/time.h"
  3111              		.file 29 "/opt/gcc/4.9.2/include/c++/4.9.2/debug/debug.h"
-GAS LISTING /tmp/cc36vOse.s 			page 127
+GAS LISTING /tmp/ccrWPnlb.s 			page 127
 
 
  3112              		.file 30 "/opt/gcc/4.9.2/include/c++/4.9.2/bits/predefined_ops.h"
@@ -7618,7 +7618,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3165 005a 09       		.byte	0x9
  3166 005b 1501     		.value	0x115
  3167 005d 5B150000 		.long	0x155b
-GAS LISTING /tmp/cc36vOse.s 			page 128
+GAS LISTING /tmp/ccrWPnlb.s 			page 128
 
 
  3168 0061 08       		.byte	0x8
@@ -7678,7 +7678,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3222 00d6 50       		.byte	0x50
  3223 00d7 05       		.uleb128 0x5
  3224 00d8 00000000 		.long	.LASF11
-GAS LISTING /tmp/cc36vOse.s 			page 129
+GAS LISTING /tmp/ccrWPnlb.s 			page 129
 
 
  3225 00dc 09       		.byte	0x9
@@ -7738,7 +7738,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3279 0151 09       		.byte	0x9
  3280 0152 3601     		.value	0x136
  3281 0154 0E240000 		.long	0x240e
-GAS LISTING /tmp/cc36vOse.s 			page 130
+GAS LISTING /tmp/ccrWPnlb.s 			page 130
 
 
  3282 0158 88       		.byte	0x88
@@ -7798,7 +7798,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3336 01c9 3B000000 		.long	0x3b
  3337 01cd 02       		.uleb128 0x2
  3338 01ce 08       		.byte	0x8
-GAS LISTING /tmp/cc36vOse.s 			page 131
+GAS LISTING /tmp/ccrWPnlb.s 			page 131
 
 
  3339 01cf 07       		.byte	0x7
@@ -7858,7 +7858,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3393 0239 08       		.byte	0x8
  3394 023a 0D       		.byte	0xd
  3395 023b 54       		.byte	0x54
-GAS LISTING /tmp/cc36vOse.s 			page 132
+GAS LISTING /tmp/ccrWPnlb.s 			page 132
 
 
  3396 023c 00000000 		.long	.LASF367
@@ -7918,7 +7918,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3450 02ab 6A       		.byte	0x6a
  3451 02ac 9A020000 		.long	0x29a
  3452 02b0 02       		.uleb128 0x2
-GAS LISTING /tmp/cc36vOse.s 			page 133
+GAS LISTING /tmp/ccrWPnlb.s 			page 133
 
 
  3453 02b1 02       		.byte	0x2
@@ -7978,7 +7978,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3507 0314 1C130000 		.long	0x131c
  3508 0318 13       		.uleb128 0x13
  3509 0319 0E       		.byte	0xe
-GAS LISTING /tmp/cc36vOse.s 			page 134
+GAS LISTING /tmp/ccrWPnlb.s 			page 134
 
 
  3510 031a 95       		.byte	0x95
@@ -8038,7 +8038,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3564 037a 13       		.uleb128 0x13
  3565 037b 0E       		.byte	0xe
  3566 037c AA       		.byte	0xaa
-GAS LISTING /tmp/cc36vOse.s 			page 135
+GAS LISTING /tmp/ccrWPnlb.s 			page 135
 
 
  3567 037d E5140000 		.long	0x14e5
@@ -8098,7 +8098,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3621 03dd 0E       		.byte	0xe
  3622 03de BB       		.byte	0xbb
  3623 03df 16170000 		.long	0x1716
-GAS LISTING /tmp/cc36vOse.s 			page 136
+GAS LISTING /tmp/ccrWPnlb.s 			page 136
 
 
  3624 03e3 13       		.uleb128 0x13
@@ -8158,7 +8158,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3678 0440 CB       		.byte	0xcb
  3679 0441 D1180000 		.long	0x18d1
  3680 0445 13       		.uleb128 0x13
-GAS LISTING /tmp/cc36vOse.s 			page 137
+GAS LISTING /tmp/ccrWPnlb.s 			page 137
 
 
  3681 0446 0E       		.byte	0xe
@@ -8218,7 +8218,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3735 04ac 3B1C0000 		.long	0x1c3b
  3736 04b0 14       		.uleb128 0x14
  3737 04b1 0E       		.byte	0xe
-GAS LISTING /tmp/cc36vOse.s 			page 138
+GAS LISTING /tmp/ccrWPnlb.s 			page 138
 
 
  3738 04b2 2701     		.value	0x127
@@ -8278,7 +8278,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3792 052e 00000000 		.long	.LASF64
  3793 0532 18020000 		.long	0x218
  3794 0536 3E050000 		.long	0x53e
-GAS LISTING /tmp/cc36vOse.s 			page 139
+GAS LISTING /tmp/ccrWPnlb.s 			page 139
 
 
  3795 053a 44050000 		.long	0x544
@@ -8338,7 +8338,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3849 05b2 00000000 		.long	.LASF59
  3850 05b6 A61C0000 		.long	0x1ca6
  3851 05ba 01       		.byte	0x1
-GAS LISTING /tmp/cc36vOse.s 			page 140
+GAS LISTING /tmp/ccrWPnlb.s 			page 140
 
 
  3852 05bb C3050000 		.long	0x5c3
@@ -8398,7 +8398,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3906 063f 49060000 		.long	0x649
  3907 0643 18       		.uleb128 0x18
  3908 0644 8F1C0000 		.long	0x1c8f
-GAS LISTING /tmp/cc36vOse.s 			page 141
+GAS LISTING /tmp/ccrWPnlb.s 			page 141
 
 
  3909 0648 00       		.byte	0
@@ -8458,7 +8458,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  3963 06b7 24       		.uleb128 0x24
  3964 06b8 00000000 		.long	.LASF84
  3965 06bc 04       		.byte	0x4
-GAS LISTING /tmp/cc36vOse.s 			page 142
+GAS LISTING /tmp/ccrWPnlb.s 			page 142
 
 
  3966 06bd F2       		.byte	0xf2
@@ -8518,7 +8518,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4020 0744 4E070000 		.long	0x74e
  4021 0748 19       		.uleb128 0x19
  4022 0749 F71C0000 		.long	0x1cf7
-GAS LISTING /tmp/cc36vOse.s 			page 143
+GAS LISTING /tmp/ccrWPnlb.s 			page 143
 
 
  4023 074d 00       		.byte	0
@@ -8578,7 +8578,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4077 07d8 19       		.uleb128 0x19
  4078 07d9 A1060000 		.long	0x6a1
  4079 07dd 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 144
+GAS LISTING /tmp/ccrWPnlb.s 			page 144
 
 
  4080 07de 26       		.uleb128 0x26
@@ -8638,7 +8638,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4134 0864 25020000 		.long	0x225
  4135 0868 13       		.uleb128 0x13
  4136 0869 11       		.byte	0x11
-GAS LISTING /tmp/cc36vOse.s 			page 145
+GAS LISTING /tmp/ccrWPnlb.s 			page 145
 
 
  4137 086a 30       		.byte	0x30
@@ -8698,7 +8698,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4191 08ca 13       		.uleb128 0x13
  4192 08cb 11       		.byte	0x11
  4193 08cc 42       		.byte	0x42
-GAS LISTING /tmp/cc36vOse.s 			page 146
+GAS LISTING /tmp/ccrWPnlb.s 			page 146
 
 
  4194 08cd 351D0000 		.long	0x1d35
@@ -8758,7 +8758,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4248 092d 12       		.byte	0x12
  4249 092e 35       		.byte	0x35
  4250 092f 4B1E0000 		.long	0x1e4b
-GAS LISTING /tmp/cc36vOse.s 			page 147
+GAS LISTING /tmp/ccrWPnlb.s 			page 147
 
 
  4251 0933 13       		.uleb128 0x13
@@ -8818,7 +8818,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4305 0993 13       		.byte	0x13
  4306 0994 8B       		.byte	0x8b
  4307 0995 71210000 		.long	0x2171
-GAS LISTING /tmp/cc36vOse.s 			page 148
+GAS LISTING /tmp/ccrWPnlb.s 			page 148
 
 
  4308 0999 13       		.uleb128 0x13
@@ -8878,7 +8878,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4362 09f6 F1       		.byte	0xf1
  4363 09f7 6C200000 		.long	0x206c
  4364 09fb 13       		.uleb128 0x13
-GAS LISTING /tmp/cc36vOse.s 			page 149
+GAS LISTING /tmp/ccrWPnlb.s 			page 149
 
 
  4365 09fc 13       		.byte	0x13
@@ -8938,7 +8938,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4419 0a59 88240000 		.long	0x2488
  4420 0a5d 13       		.uleb128 0x13
  4421 0a5e 14       		.byte	0x14
-GAS LISTING /tmp/cc36vOse.s 			page 150
+GAS LISTING /tmp/ccrWPnlb.s 			page 150
 
 
  4422 0a5f 6A       		.byte	0x6a
@@ -8998,7 +8998,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4476 0abf 13       		.uleb128 0x13
  4477 0ac0 14       		.byte	0x14
  4478 0ac1 84       		.byte	0x84
-GAS LISTING /tmp/cc36vOse.s 			page 151
+GAS LISTING /tmp/ccrWPnlb.s 			page 151
 
 
  4479 0ac2 0E260000 		.long	0x260e
@@ -9058,7 +9058,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4533 0b2c 8001     		.sleb128 128
  4534 0b2e 2A       		.uleb128 0x2a
  4535 0b2f 00000000 		.long	.LASF102
-GAS LISTING /tmp/cc36vOse.s 			page 152
+GAS LISTING /tmp/ccrWPnlb.s 			page 152
 
 
  4536 0b33 8002     		.sleb128 256
@@ -9118,7 +9118,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4590 0baa 00000000 		.long	.LASF120
  4591 0bae 20       		.sleb128 32
  4592 0baf 2A       		.uleb128 0x2a
-GAS LISTING /tmp/cc36vOse.s 			page 153
+GAS LISTING /tmp/ccrWPnlb.s 			page 153
 
 
  4593 0bb0 00000000 		.long	.LASF121
@@ -9178,7 +9178,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4647 0c23 2D       		.uleb128 0x2d
  4648 0c24 00000000 		.long	.LASF133
  4649 0c28 06       		.byte	0x6
-GAS LISTING /tmp/cc36vOse.s 			page 154
+GAS LISTING /tmp/ccrWPnlb.s 			page 154
 
 
  4650 0c29 1D02     		.value	0x21d
@@ -9238,7 +9238,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4704 0c9f 920C0000 		.long	0xc92
  4705 0ca3 01       		.byte	0x1
  4706 0ca4 02       		.byte	0x2
-GAS LISTING /tmp/cc36vOse.s 			page 155
+GAS LISTING /tmp/ccrWPnlb.s 			page 155
 
 
  4707 0ca5 32       		.uleb128 0x32
@@ -9298,7 +9298,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4761 0d14 01       		.byte	0x1
  4762 0d15 0002     		.value	0x200
  4763 0d17 34       		.uleb128 0x34
-GAS LISTING /tmp/cc36vOse.s 			page 156
+GAS LISTING /tmp/ccrWPnlb.s 			page 156
 
 
  4764 0d18 00000000 		.long	.LASF146
@@ -9358,7 +9358,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4818 0d8b 0401     		.value	0x104
  4819 0d8d 32       		.uleb128 0x32
  4820 0d8e 00000000 		.long	.LASF154
-GAS LISTING /tmp/cc36vOse.s 			page 157
+GAS LISTING /tmp/ccrWPnlb.s 			page 157
 
 
  4821 0d92 06       		.byte	0x6
@@ -9418,7 +9418,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4875 0e00 E50D0000 		.long	0xde5
  4876 0e04 01       		.byte	0x1
  4877 0e05 04       		.byte	0x4
-GAS LISTING /tmp/cc36vOse.s 			page 158
+GAS LISTING /tmp/ccrWPnlb.s 			page 158
 
 
  4878 0e06 33       		.uleb128 0x33
@@ -9478,7 +9478,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4932 0e6f C2260000 		.long	0x26c2
  4933 0e73 13       		.uleb128 0x13
  4934 0e74 15       		.byte	0x15
-GAS LISTING /tmp/cc36vOse.s 			page 159
+GAS LISTING /tmp/ccrWPnlb.s 			page 159
 
 
  4935 0e75 53       		.byte	0x53
@@ -9538,7 +9538,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  4989 0eed 18       		.uleb128 0x18
  4990 0eee 3E290000 		.long	0x293e
  4991 0ef2 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 160
+GAS LISTING /tmp/ccrWPnlb.s 			page 160
 
 
  4992 0ef3 11020000 		.long	0x211
@@ -9598,7 +9598,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5046 0f7a 20       		.uleb128 0x20
  5047 0f7b 00000000 		.long	.LASF171
  5048 0f7f 16       		.byte	0x16
-GAS LISTING /tmp/cc36vOse.s 			page 161
+GAS LISTING /tmp/ccrWPnlb.s 			page 161
 
 
  5049 0f80 3F       		.byte	0x3f
@@ -9658,7 +9658,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5103 1004 8C020000 		.long	0x28c
  5104 1008 00       		.byte	0
  5105 1009 34       		.uleb128 0x34
-GAS LISTING /tmp/cc36vOse.s 			page 162
+GAS LISTING /tmp/ccrWPnlb.s 			page 162
 
 
  5106 100a 00000000 		.long	.LASF177
@@ -9718,7 +9718,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5160 108a 05       		.byte	0x5
  5161 108b BB01     		.value	0x1bb
  5162 108d 00000000 		.long	.LASF187
-GAS LISTING /tmp/cc36vOse.s 			page 163
+GAS LISTING /tmp/ccrWPnlb.s 			page 163
 
 
  5163 1091 A9100000 		.long	0x10a9
@@ -9778,7 +9778,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5217 1113 00000000 		.long	.LASF188
  5218 1117 95060000 		.long	0x695
  5219 111b 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 164
+GAS LISTING /tmp/ccrWPnlb.s 			page 164
 
 
  5220 111c 36270000 		.long	0x2736
@@ -9838,7 +9838,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5274 11a8 19       		.uleb128 0x19
  5275 11a9 36270000 		.long	0x2736
  5276 11ad 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 165
+GAS LISTING /tmp/ccrWPnlb.s 			page 165
 
 
  5277 11ae 3F       		.uleb128 0x3f
@@ -9898,7 +9898,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5331 122f 00000000 		.long	.LASF204
  5332 1233 1A       		.byte	0x1a
  5333 1234 62       		.byte	0x62
-GAS LISTING /tmp/cc36vOse.s 			page 166
+GAS LISTING /tmp/ccrWPnlb.s 			page 166
 
 
  5334 1235 41090000 		.long	0x941
@@ -9958,7 +9958,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5388 12b4 19       		.uleb128 0x19
  5389 12b5 9D120000 		.long	0x129d
  5390 12b9 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 167
+GAS LISTING /tmp/ccrWPnlb.s 			page 167
 
 
  5391 12ba 71120000 		.long	0x1271
@@ -10018,7 +10018,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5445 1339 00000000 		.long	.LASF214
  5446 133d 0D       		.byte	0xd
  5447 133e E802     		.value	0x2e8
-GAS LISTING /tmp/cc36vOse.s 			page 168
+GAS LISTING /tmp/ccrWPnlb.s 			page 168
 
 
  5448 1340 2C020000 		.long	0x22c
@@ -10078,7 +10078,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5502 13c2 A5020000 		.long	0x2a5
  5503 13c6 3D       		.uleb128 0x3d
  5504 13c7 00000000 		.long	.LASF220
-GAS LISTING /tmp/cc36vOse.s 			page 169
+GAS LISTING /tmp/ccrWPnlb.s 			page 169
 
 
  5505 13cb 0D       		.byte	0xd
@@ -10138,7 +10138,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5559 144b 93020000 		.long	0x293
  5560 144f 5F140000 		.long	0x145f
  5561 1453 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 170
+GAS LISTING /tmp/ccrWPnlb.s 			page 170
 
 
  5562 1454 DA120000 		.long	0x12da
@@ -10198,7 +10198,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5616 14d6 1A020000 		.long	0x21a
  5617 14da 19       		.uleb128 0x19
  5618 14db DA120000 		.long	0x12da
-GAS LISTING /tmp/cc36vOse.s 			page 171
+GAS LISTING /tmp/ccrWPnlb.s 			page 171
 
 
  5619 14df 19       		.uleb128 0x19
@@ -10258,7 +10258,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5673 1561 3C       		.uleb128 0x3c
  5674 1562 00000000 		.long	.LASF233
  5675 1566 0D       		.byte	0xd
-GAS LISTING /tmp/cc36vOse.s 			page 172
+GAS LISTING /tmp/ccrWPnlb.s 			page 172
 
 
  5676 1567 98       		.byte	0x98
@@ -10318,7 +10318,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5730 15e8 0D       		.byte	0xd
  5731 15e9 5503     		.value	0x355
  5732 15eb 1A020000 		.long	0x21a
-GAS LISTING /tmp/cc36vOse.s 			page 173
+GAS LISTING /tmp/ccrWPnlb.s 			page 173
 
 
  5733 15ef 08160000 		.long	0x1608
@@ -10378,7 +10378,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5787 1660 8C       		.byte	0x8c
  5788 1661 93020000 		.long	0x293
  5789 1665 14       		.byte	0x14
-GAS LISTING /tmp/cc36vOse.s 			page 174
+GAS LISTING /tmp/ccrWPnlb.s 			page 174
 
 
  5790 1666 07       		.uleb128 0x7
@@ -10438,7 +10438,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5844 16d9 00000000 		.long	.LASF252
  5845 16dd 0D       		.byte	0xd
  5846 16de A3       		.byte	0xa3
-GAS LISTING /tmp/cc36vOse.s 			page 175
+GAS LISTING /tmp/ccrWPnlb.s 			page 175
 
 
  5847 16df 93020000 		.long	0x293
@@ -10498,7 +10498,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5901 1761 C001     		.value	0x1c0
  5902 1763 76170000 		.long	0x1776
  5903 1767 76170000 		.long	0x1776
-GAS LISTING /tmp/cc36vOse.s 			page 176
+GAS LISTING /tmp/ccrWPnlb.s 			page 176
 
 
  5904 176b 19       		.uleb128 0x19
@@ -10558,7 +10558,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  5958 17e6 00000000 		.long	.LASF262
  5959 17ea 0D       		.byte	0xd
  5960 17eb D701     		.value	0x1d7
-GAS LISTING /tmp/cc36vOse.s 			page 177
+GAS LISTING /tmp/ccrWPnlb.s 			page 177
 
 
  5961 17ed 25020000 		.long	0x225
@@ -10618,7 +10618,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6015 1874 19       		.uleb128 0x19
  6016 1875 1A020000 		.long	0x21a
  6017 1879 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 178
+GAS LISTING /tmp/ccrWPnlb.s 			page 178
 
 
  6018 187a 3D       		.uleb128 0x3d
@@ -10678,7 +10678,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6072 18fc DA120000 		.long	0x12da
  6073 1900 19       		.uleb128 0x19
  6074 1901 9D120000 		.long	0x129d
-GAS LISTING /tmp/cc36vOse.s 			page 179
+GAS LISTING /tmp/ccrWPnlb.s 			page 179
 
 
  6075 1905 00       		.byte	0
@@ -10738,7 +10738,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6129 198c F2       		.byte	0xf2
  6130 198d 191C0000 		.long	0x1c19
  6131 1991 13       		.uleb128 0x13
-GAS LISTING /tmp/cc36vOse.s 			page 180
+GAS LISTING /tmp/ccrWPnlb.s 			page 180
 
 
  6132 1992 0E       		.byte	0xe
@@ -10798,7 +10798,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6186 1a00 13       		.byte	0x13
  6187 1a01 C9       		.byte	0xc9
  6188 1a02 6C200000 		.long	0x206c
-GAS LISTING /tmp/cc36vOse.s 			page 181
+GAS LISTING /tmp/ccrWPnlb.s 			page 181
 
 
  6189 1a06 13       		.uleb128 0x13
@@ -10858,7 +10858,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6243 1a75 20       		.byte	0x20
  6244 1a76 6B       		.byte	0x6b
  6245 1a77 B7020000 		.long	0x2b7
-GAS LISTING /tmp/cc36vOse.s 			page 182
+GAS LISTING /tmp/ccrWPnlb.s 			page 182
 
 
  6246 1a7b 47       		.uleb128 0x47
@@ -10918,7 +10918,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6300 1af0 CE1C0000 		.long	0x1cce
  6301 1af4 47       		.uleb128 0x47
  6302 1af5 00000000 		.long	.LASF288
-GAS LISTING /tmp/cc36vOse.s 			page 183
+GAS LISTING /tmp/ccrWPnlb.s 			page 183
 
 
  6303 1af9 20       		.byte	0x20
@@ -10978,7 +10978,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6357 1b6e 00000000 		.long	.LASF281
  6358 1b72 20       		.byte	0x20
  6359 1b73 3B       		.byte	0x3b
-GAS LISTING /tmp/cc36vOse.s 			page 184
+GAS LISTING /tmp/ccrWPnlb.s 			page 184
 
 
  6360 1b74 C2020000 		.long	0x2c2
@@ -11038,7 +11038,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6414 1be9 41270000 		.long	0x2741
  6415 1bed 47       		.uleb128 0x47
  6416 1bee 00000000 		.long	.LASF281
-GAS LISTING /tmp/cc36vOse.s 			page 185
+GAS LISTING /tmp/ccrWPnlb.s 			page 185
 
 
  6417 1bf2 20       		.byte	0x20
@@ -11098,7 +11098,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6471 1c6a 821C0000 		.long	0x1c82
  6472 1c6e 821C0000 		.long	0x1c82
  6473 1c72 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 186
+GAS LISTING /tmp/ccrWPnlb.s 			page 186
 
 
  6474 1c73 DA120000 		.long	0x12da
@@ -11158,7 +11158,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6528 1cdf EB1C0000 		.long	0x1ceb
  6529 1ce3 4C       		.uleb128 0x4c
  6530 1ce4 1D       		.byte	0x1d
-GAS LISTING /tmp/cc36vOse.s 			page 187
+GAS LISTING /tmp/ccrWPnlb.s 			page 187
 
 
  6531 1ce5 38       		.byte	0x38
@@ -11218,7 +11218,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6585 1d57 00000000 		.long	.LASF313
  6586 1d5b 21       		.byte	0x21
  6587 1d5c 38       		.byte	0x38
-GAS LISTING /tmp/cc36vOse.s 			page 188
+GAS LISTING /tmp/ccrWPnlb.s 			page 188
 
 
  6588 1d5d 25020000 		.long	0x225
@@ -11278,7 +11278,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6642 1dd5 5E       		.byte	0x5e
  6643 1dd6 DE170000 		.long	0x17de
  6644 1dda 03       		.uleb128 0x3
-GAS LISTING /tmp/cc36vOse.s 			page 189
+GAS LISTING /tmp/ccrWPnlb.s 			page 189
 
 
  6645 1ddb 00000000 		.long	.LASF325
@@ -11338,7 +11338,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6699 1e50 60       		.byte	0x60
  6700 1e51 22       		.byte	0x22
  6701 1e52 36       		.byte	0x36
-GAS LISTING /tmp/cc36vOse.s 			page 190
+GAS LISTING /tmp/ccrWPnlb.s 			page 190
 
 
  6702 1e53 781F0000 		.long	0x1f78
@@ -11398,7 +11398,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6756 1ec2 40       		.byte	0x40
  6757 1ec3 07       		.uleb128 0x7
  6758 1ec4 00000000 		.long	.LASF346
-GAS LISTING /tmp/cc36vOse.s 			page 191
+GAS LISTING /tmp/ccrWPnlb.s 			page 191
 
 
  6759 1ec8 22       		.byte	0x22
@@ -11458,7 +11458,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6813 1f34 22       		.byte	0x22
  6814 1f35 62       		.byte	0x62
  6815 1f36 8C020000 		.long	0x28c
-GAS LISTING /tmp/cc36vOse.s 			page 192
+GAS LISTING /tmp/ccrWPnlb.s 			page 192
 
 
  6816 1f3a 58       		.byte	0x58
@@ -11518,7 +11518,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6870 1fa9 29       		.byte	0x29
  6871 1faa 93020000 		.long	0x293
  6872 1fae 03       		.uleb128 0x3
-GAS LISTING /tmp/cc36vOse.s 			page 193
+GAS LISTING /tmp/ccrWPnlb.s 			page 193
 
 
  6873 1faf 00000000 		.long	.LASF364
@@ -11578,7 +11578,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6927 201b 00000000 		.long	.LASF371
  6928 201f 3C200000 		.long	0x203c
  6929 2023 07       		.uleb128 0x7
-GAS LISTING /tmp/cc36vOse.s 			page 194
+GAS LISTING /tmp/ccrWPnlb.s 			page 194
 
 
  6930 2024 00000000 		.long	.LASF369
@@ -11638,7 +11638,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  6984 2097 19       		.uleb128 0x19
  6985 2098 E01F0000 		.long	0x1fe0
  6986 209c 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 195
+GAS LISTING /tmp/ccrWPnlb.s 			page 195
 
 
  6987 209d 3D       		.uleb128 0x3d
@@ -11698,7 +11698,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7041 211e 18020000 		.long	0x218
  7042 2122 40210000 		.long	0x2140
  7043 2126 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 196
+GAS LISTING /tmp/ccrWPnlb.s 			page 196
 
 
  7044 2127 E01F0000 		.long	0x1fe0
@@ -11758,7 +11758,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7098 21ac 25       		.byte	0x25
  7099 21ad 6703     		.value	0x367
  7100 21af 1A020000 		.long	0x21a
-GAS LISTING /tmp/cc36vOse.s 			page 197
+GAS LISTING /tmp/ccrWPnlb.s 			page 197
 
 
  7101 21b3 C7210000 		.long	0x21c7
@@ -11818,7 +11818,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7155 2233 11020000 		.long	0x211
  7156 2237 00       		.byte	0
  7157 2238 3C       		.uleb128 0x3c
-GAS LISTING /tmp/cc36vOse.s 			page 198
+GAS LISTING /tmp/ccrWPnlb.s 			page 198
 
 
  7158 2239 00000000 		.long	.LASF391
@@ -11878,7 +11878,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7212 22bc 19       		.uleb128 0x19
  7213 22bd 5B150000 		.long	0x155b
  7214 22c1 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 199
+GAS LISTING /tmp/ccrWPnlb.s 			page 199
 
 
  7215 22c2 DA120000 		.long	0x12da
@@ -11938,7 +11938,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7269 2346 19       		.uleb128 0x19
  7270 2347 BC020000 		.long	0x2bc
  7271 234b 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 200
+GAS LISTING /tmp/ccrWPnlb.s 			page 200
 
 
  7272 234c 52220000 		.long	0x2252
@@ -11998,7 +11998,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7326 23c1 06       		.uleb128 0x6
  7327 23c2 00000000 		.long	.LASF407
  7328 23c6 18       		.byte	0x18
-GAS LISTING /tmp/cc36vOse.s 			page 201
+GAS LISTING /tmp/ccrWPnlb.s 			page 201
 
 
  7329 23c7 09       		.byte	0x9
@@ -12058,7 +12058,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7383 2437 41240000 		.long	0x2441
  7384 243b 19       		.uleb128 0x19
  7385 243c 41240000 		.long	0x2441
-GAS LISTING /tmp/cc36vOse.s 			page 202
+GAS LISTING /tmp/ccrWPnlb.s 			page 202
 
 
  7386 2440 00       		.byte	0
@@ -12118,7 +12118,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7440 24bf CE240000 		.long	0x24ce
  7441 24c3 19       		.uleb128 0x19
  7442 24c4 41240000 		.long	0x2441
-GAS LISTING /tmp/cc36vOse.s 			page 203
+GAS LISTING /tmp/ccrWPnlb.s 			page 203
 
 
  7443 24c8 19       		.uleb128 0x19
@@ -12178,7 +12178,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7497 254a BC020000 		.long	0x2bc
  7498 254e 19       		.uleb128 0x19
  7499 254f 41240000 		.long	0x2441
-GAS LISTING /tmp/cc36vOse.s 			page 204
+GAS LISTING /tmp/ccrWPnlb.s 			page 204
 
 
  7500 2553 00       		.byte	0
@@ -12238,7 +12238,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7554 25d2 00000000 		.long	.LASF428
  7555 25d6 0A       		.byte	0xa
  7556 25d7 7A02     		.value	0x27a
-GAS LISTING /tmp/cc36vOse.s 			page 205
+GAS LISTING /tmp/ccrWPnlb.s 			page 205
 
 
  7557 25d9 5B150000 		.long	0x155b
@@ -12298,7 +12298,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7611 2657 4F01     		.value	0x14f
  7612 2659 93020000 		.long	0x293
  7613 265d 76260000 		.long	0x2676
-GAS LISTING /tmp/cc36vOse.s 			page 206
+GAS LISTING /tmp/ccrWPnlb.s 			page 206
 
 
  7614 2661 19       		.uleb128 0x19
@@ -12358,7 +12358,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7668 26dd 28       		.byte	0x28
  7669 26de B0       		.byte	0xb0
  7670 26df 93020000 		.long	0x293
-GAS LISTING /tmp/cc36vOse.s 			page 207
+GAS LISTING /tmp/ccrWPnlb.s 			page 207
 
 
  7671 26e3 F2260000 		.long	0x26f2
@@ -12418,7 +12418,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7725 275e 2A       		.byte	0x2a
  7726 275f 27       		.byte	0x27
  7727 2760 00000000 		.long	.LASF446
-GAS LISTING /tmp/cc36vOse.s 			page 208
+GAS LISTING /tmp/ccrWPnlb.s 			page 208
 
 
  7728 2764 95270000 		.long	0x2795
@@ -12478,7 +12478,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7782 27cb 2A       		.byte	0x2a
  7783 27cc 33       		.byte	0x33
  7784 27cd 11020000 		.long	0x211
-GAS LISTING /tmp/cc36vOse.s 			page 209
+GAS LISTING /tmp/ccrWPnlb.s 			page 209
 
 
  7785 27d1 0C       		.byte	0xc
@@ -12538,7 +12538,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7839 2840 11       		.uleb128 0x11
  7840 2841 08       		.byte	0x8
  7841 2842 DC420000 		.long	0x42dc
-GAS LISTING /tmp/cc36vOse.s 			page 210
+GAS LISTING /tmp/ccrWPnlb.s 			page 210
 
 
  7842 2846 11       		.uleb128 0x11
@@ -12598,7 +12598,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7896 28bd B80B0000 		.long	0xbb8
  7897 28c1 00       		.byte	0
  7898 28c2 11       		.uleb128 0x11
-GAS LISTING /tmp/cc36vOse.s 			page 211
+GAS LISTING /tmp/ccrWPnlb.s 			page 211
 
 
  7899 28c3 08       		.byte	0x8
@@ -12658,7 +12658,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  7953 2944 11       		.uleb128 0x11
  7954 2945 08       		.byte	0x8
  7955 2946 4A290000 		.long	0x294a
-GAS LISTING /tmp/cc36vOse.s 			page 212
+GAS LISTING /tmp/ccrWPnlb.s 			page 212
 
 
  7956 294a 51       		.uleb128 0x51
@@ -12718,7 +12718,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8010 29c5 03       		.byte	0x3
  8011 29c6 CE290000 		.long	0x29ce
  8012 29ca E4290000 		.long	0x29e4
-GAS LISTING /tmp/cc36vOse.s 			page 213
+GAS LISTING /tmp/ccrWPnlb.s 			page 213
 
 
  8013 29ce 57       		.uleb128 0x57
@@ -12778,7 +12778,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8067 2a3c 56       		.byte	0x56
  8068 2a3d AC1C0000 		.long	0x1cac
  8069 2a41 01       		.byte	0x1
-GAS LISTING /tmp/cc36vOse.s 			page 214
+GAS LISTING /tmp/ccrWPnlb.s 			page 214
 
 
  8070 2a42 5B2A0000 		.long	0x2a5b
@@ -12838,7 +12838,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8124 2ac1 95060000 		.long	0x695
  8125 2ac5 5D       		.uleb128 0x5d
  8126 2ac6 00000000 		.long	.LASF465
-GAS LISTING /tmp/cc36vOse.s 			page 215
+GAS LISTING /tmp/ccrWPnlb.s 			page 215
 
 
  8127 2aca 03       		.byte	0x3
@@ -12898,7 +12898,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8181 2b4d DD0F0000 		.long	0xfdd
  8182 2b51 03       		.byte	0x3
  8183 2b52 5A2B0000 		.long	0x2b5a
-GAS LISTING /tmp/cc36vOse.s 			page 216
+GAS LISTING /tmp/ccrWPnlb.s 			page 216
 
 
  8184 2b56 702B0000 		.long	0x2b70
@@ -12958,7 +12958,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8236 2bd5 9C       		.byte	0x9c
  8237 2bd6 DE2B0000 		.long	0x2bde
  8238 2bda ED2B0000 		.long	0x2bed
-GAS LISTING /tmp/cc36vOse.s 			page 217
+GAS LISTING /tmp/ccrWPnlb.s 			page 217
 
 
  8239 2bde 63       		.uleb128 0x63
@@ -13018,7 +13018,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8288 2c62 68       		.uleb128 0x68
  8289 2c63 00000000 		.quad	.LVL7
  8289      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 218
+GAS LISTING /tmp/ccrWPnlb.s 			page 218
 
 
  8290 2c6b F9110000 		.long	0x11f9
@@ -13078,7 +13078,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8339 2cd1 00000000 		.quad	.LC8
  8339      00000000 
  8340 2cd9 69       		.uleb128 0x69
-GAS LISTING /tmp/cc36vOse.s 			page 219
+GAS LISTING /tmp/ccrWPnlb.s 			page 219
 
 
  8341 2cda 01       		.uleb128 0x1
@@ -13138,7 +13138,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8390 2d49 02       		.byte	0x2
  8391 2d4a 36       		.byte	0x36
  8392 2d4b 442E0000 		.long	0x2e44
-GAS LISTING /tmp/cc36vOse.s 			page 220
+GAS LISTING /tmp/ccrWPnlb.s 			page 220
 
 
  8393 2d4f 65       		.uleb128 0x65
@@ -13198,7 +13198,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8440 2de4 D6280000 		.long	0x28d6
  8441 2de8 00000000 		.long	.LLST9
  8442 2dec 6A       		.uleb128 0x6a
-GAS LISTING /tmp/cc36vOse.s 			page 221
+GAS LISTING /tmp/ccrWPnlb.s 			page 221
 
 
  8443 2ded A1280000 		.long	0x28a1
@@ -13258,7 +13258,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8491      00000000 
  8492 2e72 00000000 		.long	.Ldebug_ranges0+0x90
  8493 2e76 03       		.byte	0x3
-GAS LISTING /tmp/cc36vOse.s 			page 222
+GAS LISTING /tmp/ccrWPnlb.s 			page 222
 
 
  8494 2e77 71       		.byte	0x71
@@ -13318,7 +13318,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8542 2f16 00000000 		.long	.LLST18
  8543 2f1a 65       		.uleb128 0x65
  8544 2f1b CE290000 		.long	0x29ce
-GAS LISTING /tmp/cc36vOse.s 			page 223
+GAS LISTING /tmp/ccrWPnlb.s 			page 223
 
 
  8545 2f1f 00000000 		.long	.LLST19
@@ -13378,7 +13378,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8593 2f95 55       		.byte	0x55
  8594 2f96 02       		.uleb128 0x2
  8595 2f97 73       		.byte	0x73
-GAS LISTING /tmp/cc36vOse.s 			page 224
+GAS LISTING /tmp/ccrWPnlb.s 			page 224
 
 
  8596 2f98 00       		.sleb128 0
@@ -13438,7 +13438,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8645      00000000 
  8646 300d 1D000000 		.quad	.LBE325-.LBB325
  8646      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 225
+GAS LISTING /tmp/ccrWPnlb.s 			page 225
 
 
  8647 3015 02       		.byte	0x2
@@ -13498,7 +13498,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8696 3099 8D290000 		.long	0x298d
  8697 309d 0A       		.uleb128 0xa
  8698 309e 03       		.byte	0x3
-GAS LISTING /tmp/cc36vOse.s 			page 226
+GAS LISTING /tmp/ccrWPnlb.s 			page 226
 
 
  8699 309f 00000000 		.quad	.LC11
@@ -13558,7 +13558,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8747 3120 01       		.uleb128 0x1
  8748 3121 54       		.byte	0x54
  8749 3122 02       		.uleb128 0x2
-GAS LISTING /tmp/cc36vOse.s 			page 227
+GAS LISTING /tmp/ccrWPnlb.s 			page 227
 
 
  8750 3123 08       		.byte	0x8
@@ -13618,7 +13618,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8799 319a 6E       		.byte	0x6e
  8800 319b 9B280000 		.long	0x289b
  8801 319f 00000000 		.long	.LLST30
-GAS LISTING /tmp/cc36vOse.s 			page 228
+GAS LISTING /tmp/ccrWPnlb.s 			page 228
 
 
  8802 31a3 78       		.uleb128 0x78
@@ -13678,7 +13678,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8851 3236 0A       		.uleb128 0xa
  8852 3237 03       		.byte	0x3
  8853 3238 00000000 		.quad	.LC7
-GAS LISTING /tmp/cc36vOse.s 			page 229
+GAS LISTING /tmp/ccrWPnlb.s 			page 229
 
 
  8853      00000000 
@@ -13738,7 +13738,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8902 32c0 ED2B0000 		.long	0x2bed
  8903 32c4 69       		.uleb128 0x69
  8904 32c5 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 230
+GAS LISTING /tmp/ccrWPnlb.s 			page 230
 
 
  8905 32c6 55       		.byte	0x55
@@ -13798,7 +13798,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  8953 3347 91330000 		.long	0x3391
  8954 334b 65       		.uleb128 0x65
  8955 334c AE290000 		.long	0x29ae
-GAS LISTING /tmp/cc36vOse.s 			page 231
+GAS LISTING /tmp/ccrWPnlb.s 			page 231
 
 
  8956 3350 00000000 		.long	.LLST45
@@ -13858,7 +13858,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9006 33da 01       		.uleb128 0x1
  9007 33db 55       		.byte	0x55
  9008 33dc 09       		.uleb128 0x9
-GAS LISTING /tmp/cc36vOse.s 			page 232
+GAS LISTING /tmp/ccrWPnlb.s 			page 232
 
 
  9009 33dd 03       		.byte	0x3
@@ -13918,7 +13918,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9058 346a 01       		.uleb128 0x1
  9059 346b 55       		.byte	0x55
  9060 346c 09       		.uleb128 0x9
-GAS LISTING /tmp/cc36vOse.s 			page 233
+GAS LISTING /tmp/ccrWPnlb.s 			page 233
 
 
  9061 346d 03       		.byte	0x3
@@ -13978,7 +13978,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9111      00000000 
  9112 34c8 00       		.byte	0
  9113 34c9 73       		.uleb128 0x73
-GAS LISTING /tmp/cc36vOse.s 			page 234
+GAS LISTING /tmp/ccrWPnlb.s 			page 234
 
 
  9114 34ca 00000000 		.quad	.LVL50
@@ -14038,7 +14038,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9164 352a 00       		.sleb128 0
  9165 352b 69       		.uleb128 0x69
  9166 352c 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 235
+GAS LISTING /tmp/ccrWPnlb.s 			page 235
 
 
  9167 352d 54       		.byte	0x54
@@ -14098,7 +14098,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9216 3596 76       		.uleb128 0x76
  9217 3597 00000000 		.long	.Ldebug_ranges0+0x380
  9218 359b 78       		.uleb128 0x78
-GAS LISTING /tmp/cc36vOse.s 			page 236
+GAS LISTING /tmp/ccrWPnlb.s 			page 236
 
 
  9219 359c 00000000 		.long	.LASF454
@@ -14158,7 +14158,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9268 3625 00000000 		.quad	_ZZ33test_add_point_with_stamp_topleftvE8expected
  9268      00000000 
  9269 362d 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 237
+GAS LISTING /tmp/ccrWPnlb.s 			page 237
 
 
  9270 362e 00       		.byte	0
@@ -14218,7 +14218,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9318 36a9 94       		.byte	0x94
  9319 36aa F4360000 		.long	0x36f4
  9320 36ae 65       		.uleb128 0x65
-GAS LISTING /tmp/cc36vOse.s 			page 238
+GAS LISTING /tmp/ccrWPnlb.s 			page 238
 
 
  9321 36af AE290000 		.long	0x29ae
@@ -14278,7 +14278,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9370 373c 02       		.byte	0x2
  9371 373d 9B       		.byte	0x9b
  9372 373e 84370000 		.long	0x3784
-GAS LISTING /tmp/cc36vOse.s 			page 239
+GAS LISTING /tmp/ccrWPnlb.s 			page 239
 
 
  9373 3742 65       		.uleb128 0x65
@@ -14338,7 +14338,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9423 37b4 02       		.uleb128 0x2
  9424 37b5 73       		.byte	0x73
  9425 37b6 00       		.sleb128 0
-GAS LISTING /tmp/cc36vOse.s 			page 240
+GAS LISTING /tmp/ccrWPnlb.s 			page 240
 
 
  9426 37b7 69       		.uleb128 0x69
@@ -14398,7 +14398,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9477 380b 30       		.byte	0x30
  9478 380c 69       		.uleb128 0x69
  9479 380d 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 241
+GAS LISTING /tmp/ccrWPnlb.s 			page 241
 
 
  9480 380e 52       		.byte	0x52
@@ -14458,7 +14458,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9530 3868 01       		.uleb128 0x1
  9531 3869 30       		.byte	0x30
  9532 386a 69       		.uleb128 0x69
-GAS LISTING /tmp/cc36vOse.s 			page 242
+GAS LISTING /tmp/ccrWPnlb.s 			page 242
 
 
  9533 386b 01       		.uleb128 0x1
@@ -14518,7 +14518,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9582 38dd 00000000 		.quad	_ZZ34test_add_point_with_stamp_botrightvE8expected
  9582      00000000 
  9583 38e5 77       		.uleb128 0x77
-GAS LISTING /tmp/cc36vOse.s 			page 243
+GAS LISTING /tmp/ccrWPnlb.s 			page 243
 
 
  9584 38e6 686D00   		.string	"hm"
@@ -14578,7 +14578,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9632 3975 02       		.byte	0x2
  9633 3976 AC       		.byte	0xac
  9634 3977 CC390000 		.long	0x39cc
-GAS LISTING /tmp/cc36vOse.s 			page 244
+GAS LISTING /tmp/ccrWPnlb.s 			page 244
 
 
  9635 397b 79       		.uleb128 0x79
@@ -14638,7 +14638,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9684 39f6 98290000 		.long	0x2998
  9685 39fa 00000000 		.long	.LLST81
  9686 39fe 65       		.uleb128 0x65
-GAS LISTING /tmp/cc36vOse.s 			page 245
+GAS LISTING /tmp/ccrWPnlb.s 			page 245
 
 
  9687 39ff 8D290000 		.long	0x298d
@@ -14698,7 +14698,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9736 3a89 67       		.uleb128 0x67
  9737 3a8a 98290000 		.long	0x2998
  9738 3a8e 65       		.uleb128 0x65
-GAS LISTING /tmp/cc36vOse.s 			page 246
+GAS LISTING /tmp/ccrWPnlb.s 			page 246
 
 
  9739 3a8f 8D290000 		.long	0x298d
@@ -14758,7 +14758,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9789 3af2 01       		.uleb128 0x1
  9790 3af3 51       		.byte	0x51
  9791 3af4 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 247
+GAS LISTING /tmp/ccrWPnlb.s 			page 247
 
 
  9792 3af5 32       		.byte	0x32
@@ -14818,7 +14818,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9842 3b4f 73       		.uleb128 0x73
  9843 3b50 00000000 		.quad	.LVL108
  9843      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 248
+GAS LISTING /tmp/ccrWPnlb.s 			page 248
 
 
  9844 3b58 48540000 		.long	0x5448
@@ -14878,7 +14878,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9895 3bb5 02       		.byte	0x2
  9896 3bb6 B9       		.byte	0xb9
  9897 3bb7 00000000 		.long	.LASF480
-GAS LISTING /tmp/cc36vOse.s 			page 249
+GAS LISTING /tmp/ccrWPnlb.s 			page 249
 
 
  9898 3bbb 00000000 		.quad	.LFB1517
@@ -14938,7 +14938,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9945 3c4d 01       		.uleb128 0x1
  9946 3c4e 55       		.byte	0x55
  9947 3c4f 09       		.uleb128 0x9
-GAS LISTING /tmp/cc36vOse.s 			page 250
+GAS LISTING /tmp/ccrWPnlb.s 			page 250
 
 
  9948 3c50 03       		.byte	0x3
@@ -14998,7 +14998,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  9996 3cc8 00000000 		.quad	.LBB419
  9996      00000000 
  9997 3cd0 00000000 		.long	.Ldebug_ranges0+0x610
-GAS LISTING /tmp/cc36vOse.s 			page 251
+GAS LISTING /tmp/ccrWPnlb.s 			page 251
 
 
  9998 3cd4 02       		.byte	0x2
@@ -15058,7 +15058,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10048 3d5b 00000000 		.long	.LLST100
  10049 3d5f 68       		.uleb128 0x68
  10050 3d60 00000000 		.quad	.LVL133
-GAS LISTING /tmp/cc36vOse.s 			page 252
+GAS LISTING /tmp/ccrWPnlb.s 			page 252
 
 
  10050      00000000 
@@ -15118,7 +15118,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10099 3de5 00000000 		.long	.Ldebug_ranges0+0x680
  10100 3de9 02       		.byte	0x2
  10101 3dea CE       		.byte	0xce
-GAS LISTING /tmp/cc36vOse.s 			page 253
+GAS LISTING /tmp/ccrWPnlb.s 			page 253
 
 
  10102 3deb 353E0000 		.long	0x3e35
@@ -15178,7 +15178,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10152 3e63 01       		.uleb128 0x1
  10153 3e64 55       		.byte	0x55
  10154 3e65 02       		.uleb128 0x2
-GAS LISTING /tmp/cc36vOse.s 			page 254
+GAS LISTING /tmp/ccrWPnlb.s 			page 254
 
 
  10155 3e66 73       		.byte	0x73
@@ -15238,7 +15238,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10205 3ec0 69       		.uleb128 0x69
  10206 3ec1 01       		.uleb128 0x1
  10207 3ec2 55       		.byte	0x55
-GAS LISTING /tmp/cc36vOse.s 			page 255
+GAS LISTING /tmp/ccrWPnlb.s 			page 255
 
 
  10208 3ec3 02       		.uleb128 0x2
@@ -15298,7 +15298,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10260 3f0e 03       		.byte	0x3
  10261 3f0f 00000000 		.quad	_ZL11g_3x3_stamp
  10261      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 256
+GAS LISTING /tmp/ccrWPnlb.s 			page 256
 
 
  10262 3f17 00       		.byte	0
@@ -15358,7 +15358,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10313 3f6e 69       		.uleb128 0x69
  10314 3f6f 01       		.uleb128 0x1
  10315 3f70 51       		.byte	0x51
-GAS LISTING /tmp/cc36vOse.s 			page 257
+GAS LISTING /tmp/ccrWPnlb.s 			page 257
 
 
  10316 3f71 01       		.uleb128 0x1
@@ -15418,7 +15418,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10364 3fe7 DB       		.byte	0xdb
  10365 3fe8 5B2A0000 		.long	0x2a5b
  10366 3fec 00000000 		.long	.LLST109
-GAS LISTING /tmp/cc36vOse.s 			page 258
+GAS LISTING /tmp/ccrWPnlb.s 			page 258
 
 
  10367 3ff0 6A       		.uleb128 0x6a
@@ -15478,7 +15478,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10413 4071 02       		.byte	0x2
  10414 4072 DE       		.byte	0xde
  10415 4073 F3400000 		.long	0x40f3
-GAS LISTING /tmp/cc36vOse.s 			page 259
+GAS LISTING /tmp/ccrWPnlb.s 			page 259
 
 
  10416 4077 63       		.uleb128 0x63
@@ -15538,7 +15538,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10465 4104 02       		.byte	0x2
  10466 4105 DE       		.byte	0xde
  10467 4106 62410000 		.long	0x4162
-GAS LISTING /tmp/cc36vOse.s 			page 260
+GAS LISTING /tmp/ccrWPnlb.s 			page 260
 
 
  10468 410a 79       		.uleb128 0x79
@@ -15598,7 +15598,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10517 4179 7A       		.uleb128 0x7a
  10518 417a 00000000 		.quad	.LVL161
  10518      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 261
+GAS LISTING /tmp/ccrWPnlb.s 			page 261
 
 
  10519 4182 83540000 		.long	0x5483
@@ -15658,7 +15658,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10567 4208 06       		.uleb128 0x6
  10568 4209 00000000 		.long	.LASF488
  10569 420d 01       		.byte	0x1
-GAS LISTING /tmp/cc36vOse.s 			page 262
+GAS LISTING /tmp/ccrWPnlb.s 			page 262
 
 
  10570 420e 02       		.byte	0x2
@@ -15718,7 +15718,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10622 4299 733200   		.string	"s2"
  10623 429c 02       		.byte	0x2
  10624 429d F8       		.byte	0xf8
-GAS LISTING /tmp/cc36vOse.s 			page 263
+GAS LISTING /tmp/ccrWPnlb.s 			page 263
 
 
  10625 429e 5B2A0000 		.long	0x2a5b
@@ -15778,7 +15778,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10677 4332 01       		.uleb128 0x1
  10678 4333 61       		.byte	0x61
  10679 4334 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 264
+GAS LISTING /tmp/ccrWPnlb.s 			page 264
 
 
  10680 4335 00       		.byte	0
@@ -15838,7 +15838,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10732      00000000 
  10733 43c8 01       		.uleb128 0x1
  10734 43c9 9C       		.byte	0x9c
-GAS LISTING /tmp/cc36vOse.s 			page 265
+GAS LISTING /tmp/ccrWPnlb.s 			page 265
 
 
  10735 43ca 8001     		.uleb128 0x80
@@ -15898,7 +15898,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10783 4440 6A       		.uleb128 0x6a
  10784 4441 81290000 		.long	0x2981
  10785 4445 00000000 		.quad	.LBB466
-GAS LISTING /tmp/cc36vOse.s 			page 266
+GAS LISTING /tmp/ccrWPnlb.s 			page 266
 
 
  10785      00000000 
@@ -15958,7 +15958,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10832 44c7 79       		.uleb128 0x79
  10833 44c8 AE290000 		.long	0x29ae
  10834 44cc FD       		.byte	0xfd
-GAS LISTING /tmp/cc36vOse.s 			page 267
+GAS LISTING /tmp/ccrWPnlb.s 			page 267
 
 
  10835 44cd 63       		.uleb128 0x63
@@ -16018,7 +16018,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10883 4548 68       		.uleb128 0x68
  10884 4549 00000000 		.quad	.LVL180
  10884      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 268
+GAS LISTING /tmp/ccrWPnlb.s 			page 268
 
 
  10885 4551 D1530000 		.long	0x53d1
@@ -16078,7 +16078,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10933 45c6 00       		.byte	0
  10934 45c7 00       		.byte	0
  10935 45c8 66       		.uleb128 0x66
-GAS LISTING /tmp/cc36vOse.s 			page 269
+GAS LISTING /tmp/ccrWPnlb.s 			page 269
 
 
  10936 45c9 702B0000 		.long	0x2b70
@@ -16138,7 +16138,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  10985 4656 00000000 		.quad	.LC43
  10985      00000000 
  10986 465e 69       		.uleb128 0x69
-GAS LISTING /tmp/cc36vOse.s 			page 270
+GAS LISTING /tmp/ccrWPnlb.s 			page 270
 
 
  10987 465f 01       		.uleb128 0x1
@@ -16198,7 +16198,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11037 46e5 00000000 		.quad	.LVL185
  11037      00000000 
  11038 46ed ED2B0000 		.long	0x2bed
-GAS LISTING /tmp/cc36vOse.s 			page 271
+GAS LISTING /tmp/ccrWPnlb.s 			page 271
 
 
  11039 46f1 69       		.uleb128 0x69
@@ -16258,7 +16258,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11087 4758 95540000 		.long	0x5495
  11088 475c 73470000 		.long	0x4773
  11089 4760 69       		.uleb128 0x69
-GAS LISTING /tmp/cc36vOse.s 			page 272
+GAS LISTING /tmp/ccrWPnlb.s 			page 272
 
 
  11090 4761 01       		.uleb128 0x1
@@ -16318,7 +16318,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11138 47d5 76       		.uleb128 0x76
  11139 47d6 00000000 		.long	.Ldebug_ranges0+0x950
  11140 47da 8201     		.uleb128 0x82
-GAS LISTING /tmp/cc36vOse.s 			page 273
+GAS LISTING /tmp/ccrWPnlb.s 			page 273
 
 
  11141 47dc 00000000 		.long	.LASF454
@@ -16378,7 +16378,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11189 4868 ED2B0000 		.long	0x2bed
  11190 486c 69       		.uleb128 0x69
  11191 486d 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 274
+GAS LISTING /tmp/ccrWPnlb.s 			page 274
 
 
  11192 486e 55       		.byte	0x55
@@ -16438,7 +16438,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11242 48cf 55       		.byte	0x55
  11243 48d0 02       		.uleb128 0x2
  11244 48d1 77       		.byte	0x77
-GAS LISTING /tmp/cc36vOse.s 			page 275
+GAS LISTING /tmp/ccrWPnlb.s 			page 275
 
 
  11245 48d2 00       		.sleb128 0
@@ -16498,7 +16498,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11295 4942 09       		.uleb128 0x9
  11296 4943 03       		.byte	0x3
  11297 4944 00000000 		.quad	_ZZ23test_render_to_creationvE8expected
-GAS LISTING /tmp/cc36vOse.s 			page 276
+GAS LISTING /tmp/ccrWPnlb.s 			page 276
 
 
  11297      00000000 
@@ -16558,7 +16558,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11345 49d5 01       		.uleb128 0x1
  11346 49d6 54       		.byte	0x54
  11347 49d7 03       		.uleb128 0x3
-GAS LISTING /tmp/cc36vOse.s 			page 277
+GAS LISTING /tmp/ccrWPnlb.s 			page 277
 
 
  11348 49d8 0A       		.byte	0xa
@@ -16618,7 +16618,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11398 4a39 69       		.uleb128 0x69
  11399 4a3a 01       		.uleb128 0x1
  11400 4a3b 55       		.byte	0x55
-GAS LISTING /tmp/cc36vOse.s 			page 278
+GAS LISTING /tmp/ccrWPnlb.s 			page 278
 
 
  11401 4a3c 02       		.uleb128 0x2
@@ -16678,7 +16678,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11451 4a99 B91C0000 		.long	0x1cb9
  11452 4a9d 8101     		.uleb128 0x81
  11453 4a9f 00000000 		.long	.LASF499
-GAS LISTING /tmp/cc36vOse.s 			page 279
+GAS LISTING /tmp/ccrWPnlb.s 			page 279
 
 
  11454 4aa3 02       		.byte	0x2
@@ -16738,7 +16738,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11503 4b2e 98290000 		.long	0x2998
  11504 4b32 00000000 		.long	.LLST140
  11505 4b36 63       		.uleb128 0x63
-GAS LISTING /tmp/cc36vOse.s 			page 280
+GAS LISTING /tmp/ccrWPnlb.s 			page 280
 
 
  11506 4b37 8D290000 		.long	0x298d
@@ -16798,7 +16798,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11554 4bba 03       		.byte	0x3
  11555 4bbb 00000000 		.quad	.LC50
  11555      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 281
+GAS LISTING /tmp/ccrWPnlb.s 			page 281
 
 
  11556 4bc3 69       		.uleb128 0x69
@@ -16858,7 +16858,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11607 4c18 00000000 		.quad	.LVL217
  11607      00000000 
  11608 4c20 AF540000 		.long	0x54af
-GAS LISTING /tmp/cc36vOse.s 			page 282
+GAS LISTING /tmp/ccrWPnlb.s 			page 282
 
 
  11609 4c24 354C0000 		.long	0x4c35
@@ -16918,7 +16918,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11660 4c7b 31       		.byte	0x31
  11661 4c7c 69       		.uleb128 0x69
  11662 4c7d 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 283
+GAS LISTING /tmp/ccrWPnlb.s 			page 283
 
 
  11663 4c7e 51       		.byte	0x51
@@ -16978,7 +16978,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11713 4cd8 68       		.uleb128 0x68
  11714 4cd9 00000000 		.quad	.LVL224
  11714      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 284
+GAS LISTING /tmp/ccrWPnlb.s 			page 284
 
 
  11715 4ce1 0A540000 		.long	0x540a
@@ -17038,7 +17038,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11765 4d62 91       		.byte	0x91
  11766 4d63 B07F     		.sleb128 -80
  11767 4d65 70       		.uleb128 0x70
-GAS LISTING /tmp/cc36vOse.s 			page 285
+GAS LISTING /tmp/ccrWPnlb.s 			page 285
 
 
  11768 4d66 81290000 		.long	0x2981
@@ -17098,7 +17098,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11815 4de9 344E0000 		.long	0x4e34
  11816 4ded 65       		.uleb128 0x65
  11817 4dee AE290000 		.long	0x29ae
-GAS LISTING /tmp/cc36vOse.s 			page 286
+GAS LISTING /tmp/ccrWPnlb.s 			page 286
 
 
  11818 4df2 00000000 		.long	.LLST147
@@ -17158,7 +17158,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11868 4e65 73       		.byte	0x73
  11869 4e66 00       		.sleb128 0
  11870 4e67 69       		.uleb128 0x69
-GAS LISTING /tmp/cc36vOse.s 			page 287
+GAS LISTING /tmp/ccrWPnlb.s 			page 287
 
 
  11871 4e68 01       		.uleb128 0x1
@@ -17218,7 +17218,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11921 4ec2 02       		.uleb128 0x2
  11922 4ec3 73       		.byte	0x73
  11923 4ec4 00       		.sleb128 0
-GAS LISTING /tmp/cc36vOse.s 			page 288
+GAS LISTING /tmp/ccrWPnlb.s 			page 288
 
 
  11924 4ec5 69       		.uleb128 0x69
@@ -17278,7 +17278,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  11975 4f1c 00       		.sleb128 0
  11976 4f1d 69       		.uleb128 0x69
  11977 4f1e 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 289
+GAS LISTING /tmp/ccrWPnlb.s 			page 289
 
 
  11978 4f1f 54       		.byte	0x54
@@ -17338,7 +17338,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12029 4f76 00000000 		.quad	_ZZ25test_render_to_saturatingvE9expected2
  12029      00000000 
  12030 4f7e 69       		.uleb128 0x69
-GAS LISTING /tmp/cc36vOse.s 			page 290
+GAS LISTING /tmp/ccrWPnlb.s 			page 290
 
 
  12031 4f7f 01       		.uleb128 0x1
@@ -17398,7 +17398,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12079 4ffd 73       		.byte	0x73
  12080 4ffe 00       		.sleb128 0
  12081 4fff 0C       		.byte	0xc
-GAS LISTING /tmp/cc36vOse.s 			page 291
+GAS LISTING /tmp/ccrWPnlb.s 			page 291
 
 
  12082 5000 FFFFFFFF 		.long	0xffffffff
@@ -17458,7 +17458,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12130 5086 6B       		.uleb128 0x6b
  12131 5087 612A0000 		.long	0x2a61
  12132 508b 00000000 		.quad	.LBB538
-GAS LISTING /tmp/cc36vOse.s 			page 292
+GAS LISTING /tmp/ccrWPnlb.s 			page 292
 
 
  12132      00000000 
@@ -17518,7 +17518,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12179 511b 6F310000 		.long	0x316f
  12180 511f 6E       		.uleb128 0x6e
  12181 5120 00000000 		.quad	.LVL245
-GAS LISTING /tmp/cc36vOse.s 			page 293
+GAS LISTING /tmp/ccrWPnlb.s 			page 293
 
 
  12181      00000000 
@@ -17578,7 +17578,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12224 51c6 54       		.byte	0x54
  12225 51c7 09       		.uleb128 0x9
  12226 51c8 03       		.byte	0x3
-GAS LISTING /tmp/cc36vOse.s 			page 294
+GAS LISTING /tmp/ccrWPnlb.s 			page 294
 
 
  12227 51c9 00000000 		.quad	.LC59
@@ -17638,7 +17638,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12271      00000000 
  12272 5255 00000000 		.long	.Ldebug_ranges0+0xad0
  12273 5259 02       		.byte	0x2
-GAS LISTING /tmp/cc36vOse.s 			page 295
+GAS LISTING /tmp/ccrWPnlb.s 			page 295
 
 
  12274 525a 7801     		.value	0x178
@@ -17698,7 +17698,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12324 52d2 10       		.uleb128 0x10
  12325 52d3 0E280000 		.long	0x280e
  12326 52d7 78       		.uleb128 0x78
-GAS LISTING /tmp/cc36vOse.s 			page 296
+GAS LISTING /tmp/ccrWPnlb.s 			page 296
 
 
  12327 52d8 00000000 		.long	.LASF511
@@ -17758,7 +17758,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12376 5365 00000000 		.long	.LASF518
  12377 5369 8F01     		.uleb128 0x8f
  12378 536b BD1A0000 		.long	0x1abd
-GAS LISTING /tmp/cc36vOse.s 			page 297
+GAS LISTING /tmp/ccrWPnlb.s 			page 297
 
 
  12379 536f 00000000 		.long	.LASF519
@@ -17818,7 +17818,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12433 540a 9101     		.uleb128 0x91
  12434 540c 00000000 		.long	.LASF530
  12435 5410 2A       		.byte	0x2a
-GAS LISTING /tmp/cc36vOse.s 			page 298
+GAS LISTING /tmp/ccrWPnlb.s 			page 298
 
 
  12436 5411 47       		.byte	0x47
@@ -17864,7 +17864,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12476 546e 3C       		.uleb128 0x3c
  12477 546f 00000000 		.long	.LASF533
  12478 5473 2A       		.byte	0x2a
- 12479 5474 8E       		.byte	0x8e
+ 12479 5474 93       		.byte	0x93
  12480 5475 5B2A0000 		.long	0x2a5b
  12481 5479 83540000 		.long	0x5483
  12482 547d 19       		.uleb128 0x19
@@ -17873,18 +17873,18 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12485 5483 9101     		.uleb128 0x91
  12486 5485 00000000 		.long	.LASF534
  12487 5489 2A       		.byte	0x2a
- 12488 548a 9E       		.byte	0x9e
+ 12488 548a A3       		.byte	0xa3
  12489 548b 95540000 		.long	0x5495
  12490 548f 19       		.uleb128 0x19
  12491 5490 5B2A0000 		.long	0x2a5b
  12492 5494 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 299
+GAS LISTING /tmp/ccrWPnlb.s 			page 299
 
 
  12493 5495 3C       		.uleb128 0x3c
  12494 5496 00000000 		.long	.LASF535
  12495 549a 2A       		.byte	0x2a
- 12496 549b 9B       		.byte	0x9b
+ 12496 549b A0       		.byte	0xa0
  12497 549c 5B2A0000 		.long	0x2a5b
  12498 54a0 AF540000 		.long	0x54af
  12499 54a4 19       		.uleb128 0x19
@@ -17895,7 +17895,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12504 54af 3C       		.uleb128 0x3c
  12505 54b0 00000000 		.long	.LASF536
  12506 54b4 2A       		.byte	0x2a
- 12507 54b5 6E       		.byte	0x6e
+ 12507 54b5 73       		.byte	0x73
  12508 54b6 974A0000 		.long	0x4a97
  12509 54ba CE540000 		.long	0x54ce
  12510 54be 19       		.uleb128 0x19
@@ -17921,7 +17921,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12530 54eb 3C       		.uleb128 0x3c
  12531 54ec 00000000 		.long	.LASF538
  12532 54f0 2A       		.byte	0x2a
- 12533 54f1 7C       		.byte	0x7c
+ 12533 54f1 81       		.byte	0x81
  12534 54f2 974A0000 		.long	0x4a97
  12535 54f6 0F550000 		.long	0x550f
  12536 54fa 19       		.uleb128 0x19
@@ -17938,7 +17938,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12547 5515 93020000 		.long	0x293
  12548 5519 19       		.uleb128 0x19
  12549 551a CF1F0000 		.long	0x1fcf
-GAS LISTING /tmp/cc36vOse.s 			page 300
+GAS LISTING /tmp/ccrWPnlb.s 			page 300
 
 
  12550 551e 19       		.uleb128 0x19
@@ -17998,7 +17998,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12604 002e 03       		.uleb128 0x3
  12605 002f 0E       		.uleb128 0xe
  12606 0030 0B       		.uleb128 0xb
-GAS LISTING /tmp/cc36vOse.s 			page 301
+GAS LISTING /tmp/ccrWPnlb.s 			page 301
 
 
  12607 0031 0B       		.uleb128 0xb
@@ -18058,7 +18058,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12661 0067 08       		.uleb128 0x8
  12662 0068 0F       		.uleb128 0xf
  12663 0069 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 302
+GAS LISTING /tmp/ccrWPnlb.s 			page 302
 
 
  12664 006a 0B       		.uleb128 0xb
@@ -18118,7 +18118,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12718 00a0 49       		.uleb128 0x49
  12719 00a1 13       		.uleb128 0x13
  12720 00a2 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 303
+GAS LISTING /tmp/ccrWPnlb.s 			page 303
 
 
  12721 00a3 00       		.byte	0
@@ -18178,7 +18178,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12775 00d9 0B       		.uleb128 0xb
  12776 00da 01       		.uleb128 0x1
  12777 00db 13       		.uleb128 0x13
-GAS LISTING /tmp/cc36vOse.s 			page 304
+GAS LISTING /tmp/ccrWPnlb.s 			page 304
 
 
  12778 00dc 00       		.byte	0
@@ -18238,7 +18238,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12832 0112 01       		.byte	0x1
  12833 0113 3F       		.uleb128 0x3f
  12834 0114 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 305
+GAS LISTING /tmp/ccrWPnlb.s 			page 305
 
 
  12835 0115 03       		.uleb128 0x3
@@ -18298,7 +18298,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12889 014b 2E       		.uleb128 0x2e
  12890 014c 01       		.byte	0x1
  12891 014d 3F       		.uleb128 0x3f
-GAS LISTING /tmp/cc36vOse.s 			page 306
+GAS LISTING /tmp/ccrWPnlb.s 			page 306
 
 
  12892 014e 19       		.uleb128 0x19
@@ -18358,7 +18358,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  12946 0184 13       		.uleb128 0x13
  12947 0185 32       		.uleb128 0x32
  12948 0186 0B       		.uleb128 0xb
-GAS LISTING /tmp/cc36vOse.s 			page 307
+GAS LISTING /tmp/ccrWPnlb.s 			page 307
 
 
  12949 0187 3C       		.uleb128 0x3c
@@ -18418,7 +18418,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13003 01bd 01       		.uleb128 0x1
  13004 01be 13       		.uleb128 0x13
  13005 01bf 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 308
+GAS LISTING /tmp/ccrWPnlb.s 			page 308
 
 
  13006 01c0 00       		.byte	0
@@ -18478,7 +18478,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13060 01f6 0B       		.uleb128 0xb
  13061 01f7 00       		.byte	0
  13062 01f8 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 309
+GAS LISTING /tmp/ccrWPnlb.s 			page 309
 
 
  13063 01f9 24       		.uleb128 0x24
@@ -18538,7 +18538,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13117 022f 13       		.uleb128 0x13
  13118 0230 3C       		.uleb128 0x3c
  13119 0231 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 310
+GAS LISTING /tmp/ccrWPnlb.s 			page 310
 
 
  13120 0232 01       		.uleb128 0x1
@@ -18598,7 +18598,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13174 0268 13       		.uleb128 0x13
  13175 0269 00       		.byte	0
  13176 026a 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 311
+GAS LISTING /tmp/ccrWPnlb.s 			page 311
 
 
  13177 026b 2A       		.uleb128 0x2a
@@ -18658,7 +18658,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13231 02a1 2E       		.uleb128 0x2e
  13232 02a2 2E       		.uleb128 0x2e
  13233 02a3 01       		.byte	0x1
-GAS LISTING /tmp/cc36vOse.s 			page 312
+GAS LISTING /tmp/ccrWPnlb.s 			page 312
 
 
  13234 02a4 3F       		.uleb128 0x3f
@@ -18718,7 +18718,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13288 02da 00       		.byte	0
  13289 02db 03       		.uleb128 0x3
  13290 02dc 0E       		.uleb128 0xe
-GAS LISTING /tmp/cc36vOse.s 			page 313
+GAS LISTING /tmp/ccrWPnlb.s 			page 313
 
 
  13291 02dd 3A       		.uleb128 0x3a
@@ -18778,7 +18778,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13345 0313 00       		.byte	0
  13346 0314 03       		.uleb128 0x3
  13347 0315 0E       		.uleb128 0xe
-GAS LISTING /tmp/cc36vOse.s 			page 314
+GAS LISTING /tmp/ccrWPnlb.s 			page 314
 
 
  13348 0316 3A       		.uleb128 0x3a
@@ -18838,7 +18838,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13402 034c 19       		.uleb128 0x19
  13403 034d 64       		.uleb128 0x64
  13404 034e 13       		.uleb128 0x13
-GAS LISTING /tmp/cc36vOse.s 			page 315
+GAS LISTING /tmp/ccrWPnlb.s 			page 315
 
 
  13405 034f 01       		.uleb128 0x1
@@ -18898,7 +18898,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13459 0385 64       		.uleb128 0x64
  13460 0386 13       		.uleb128 0x13
  13461 0387 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 316
+GAS LISTING /tmp/ccrWPnlb.s 			page 316
 
 
  13462 0388 13       		.uleb128 0x13
@@ -18958,7 +18958,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13516 03be 49       		.uleb128 0x49
  13517 03bf 13       		.uleb128 0x13
  13518 03c0 3C       		.uleb128 0x3c
-GAS LISTING /tmp/cc36vOse.s 			page 317
+GAS LISTING /tmp/ccrWPnlb.s 			page 317
 
 
  13519 03c1 19       		.uleb128 0x19
@@ -19018,7 +19018,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13573 03f7 3C       		.uleb128 0x3c
  13574 03f8 19       		.uleb128 0x19
  13575 03f9 1C       		.uleb128 0x1c
-GAS LISTING /tmp/cc36vOse.s 			page 318
+GAS LISTING /tmp/ccrWPnlb.s 			page 318
 
 
  13576 03fa 0A       		.uleb128 0xa
@@ -19078,7 +19078,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13630 0430 01       		.uleb128 0x1
  13631 0431 13       		.uleb128 0x13
  13632 0432 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 319
+GAS LISTING /tmp/ccrWPnlb.s 			page 319
 
 
  13633 0433 00       		.byte	0
@@ -19138,7 +19138,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13687 0469 00       		.byte	0
  13688 046a 47       		.uleb128 0x47
  13689 046b 0D       		.uleb128 0xd
-GAS LISTING /tmp/cc36vOse.s 			page 320
+GAS LISTING /tmp/ccrWPnlb.s 			page 320
 
 
  13690 046c 00       		.byte	0
@@ -19198,7 +19198,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13744 04a2 3A       		.uleb128 0x3a
  13745 04a3 00       		.byte	0
  13746 04a4 3A       		.uleb128 0x3a
-GAS LISTING /tmp/cc36vOse.s 			page 321
+GAS LISTING /tmp/ccrWPnlb.s 			page 321
 
 
  13747 04a5 0B       		.uleb128 0xb
@@ -19258,7 +19258,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13801 04db 49       		.uleb128 0x49
  13802 04dc 13       		.uleb128 0x13
  13803 04dd 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 322
+GAS LISTING /tmp/ccrWPnlb.s 			page 322
 
 
  13804 04de 13       		.uleb128 0x13
@@ -19318,7 +19318,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13858 0514 00       		.byte	0
  13859 0515 56       		.uleb128 0x56
  13860 0516 2E       		.uleb128 0x2e
-GAS LISTING /tmp/cc36vOse.s 			page 323
+GAS LISTING /tmp/ccrWPnlb.s 			page 323
 
 
  13861 0517 01       		.byte	0x1
@@ -19378,7 +19378,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13915 054d 00       		.byte	0
  13916 054e 03       		.uleb128 0x3
  13917 054f 0E       		.uleb128 0xe
-GAS LISTING /tmp/cc36vOse.s 			page 324
+GAS LISTING /tmp/ccrWPnlb.s 			page 324
 
 
  13918 0550 3A       		.uleb128 0x3a
@@ -19438,7 +19438,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  13972 0586 20       		.uleb128 0x20
  13973 0587 0B       		.uleb128 0xb
  13974 0588 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 325
+GAS LISTING /tmp/ccrWPnlb.s 			page 325
 
 
  13975 0589 13       		.uleb128 0x13
@@ -19498,7 +19498,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14029 05c0 00       		.byte	0
  14030 05c1 63       		.uleb128 0x63
  14031 05c2 05       		.uleb128 0x5
-GAS LISTING /tmp/cc36vOse.s 			page 326
+GAS LISTING /tmp/ccrWPnlb.s 			page 326
 
 
  14032 05c3 00       		.byte	0
@@ -19558,7 +19558,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14086 05fa 13       		.uleb128 0x13
  14087 05fb 00       		.byte	0
  14088 05fc 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 327
+GAS LISTING /tmp/ccrWPnlb.s 			page 327
 
 
  14089 05fd 68       		.uleb128 0x68
@@ -19618,7 +19618,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14143 0638 01       		.byte	0x1
  14144 0639 11       		.uleb128 0x11
  14145 063a 01       		.uleb128 0x1
-GAS LISTING /tmp/cc36vOse.s 			page 328
+GAS LISTING /tmp/ccrWPnlb.s 			page 328
 
 
  14146 063b 12       		.uleb128 0x12
@@ -19678,7 +19678,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14200 0673 58       		.uleb128 0x58
  14201 0674 0B       		.uleb128 0xb
  14202 0675 59       		.uleb128 0x59
-GAS LISTING /tmp/cc36vOse.s 			page 329
+GAS LISTING /tmp/ccrWPnlb.s 			page 329
 
 
  14203 0676 05       		.uleb128 0x5
@@ -19738,7 +19738,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14257 06b0 3A       		.uleb128 0x3a
  14258 06b1 0B       		.uleb128 0xb
  14259 06b2 3B       		.uleb128 0x3b
-GAS LISTING /tmp/cc36vOse.s 			page 330
+GAS LISTING /tmp/ccrWPnlb.s 			page 330
 
 
  14260 06b3 0B       		.uleb128 0xb
@@ -19798,7 +19798,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14314 06ea 00       		.byte	0
  14315 06eb 31       		.uleb128 0x31
  14316 06ec 13       		.uleb128 0x13
-GAS LISTING /tmp/cc36vOse.s 			page 331
+GAS LISTING /tmp/ccrWPnlb.s 			page 331
 
 
  14317 06ed 1C       		.uleb128 0x1c
@@ -19858,7 +19858,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14371 0729 13       		.uleb128 0x13
  14372 072a 34       		.uleb128 0x34
  14373 072b 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 332
+GAS LISTING /tmp/ccrWPnlb.s 			page 332
 
 
  14374 072c 20       		.uleb128 0x20
@@ -19918,7 +19918,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14428 0765 18       		.uleb128 0x18
  14429 0766 9742     		.uleb128 0x2117
  14430 0768 19       		.uleb128 0x19
-GAS LISTING /tmp/cc36vOse.s 			page 333
+GAS LISTING /tmp/ccrWPnlb.s 			page 333
 
 
  14431 0769 01       		.uleb128 0x1
@@ -19978,7 +19978,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14485 07a3 1C       		.uleb128 0x1c
  14486 07a4 05       		.uleb128 0x5
  14487 07a5 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 334
+GAS LISTING /tmp/ccrWPnlb.s 			page 334
 
 
  14488 07a6 00       		.byte	0
@@ -20038,7 +20038,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14542 07e3 8901     		.uleb128 0x89
  14543 07e5 898201   		.uleb128 0x4109
  14544 07e8 01       		.byte	0x1
-GAS LISTING /tmp/cc36vOse.s 			page 335
+GAS LISTING /tmp/ccrWPnlb.s 			page 335
 
 
  14545 07e9 11       		.uleb128 0x11
@@ -20098,7 +20098,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14599 0826 8E01     		.uleb128 0x8e
  14600 0828 34       		.uleb128 0x34
  14601 0829 00       		.byte	0
-GAS LISTING /tmp/cc36vOse.s 			page 336
+GAS LISTING /tmp/ccrWPnlb.s 			page 336
 
 
  14602 082a 47       		.uleb128 0x47
@@ -20158,7 +20158,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14656 0864 3F       		.uleb128 0x3f
  14657 0865 19       		.uleb128 0x19
  14658 0866 03       		.uleb128 0x3
-GAS LISTING /tmp/cc36vOse.s 			page 337
+GAS LISTING /tmp/ccrWPnlb.s 			page 337
 
 
  14659 0867 0E       		.uleb128 0xe
@@ -20218,7 +20218,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14701 0075 00000000 		.quad	.LVL4
  14701      00000000 
  14702 007d 00000000 		.quad	.LVL5
-GAS LISTING /tmp/cc36vOse.s 			page 338
+GAS LISTING /tmp/ccrWPnlb.s 			page 338
 
 
  14702      00000000 
@@ -20278,7 +20278,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14739 0125 00000000 		.quad	.LVL15
  14739      00000000 
  14740 012d 0100     		.value	0x1
-GAS LISTING /tmp/cc36vOse.s 			page 339
+GAS LISTING /tmp/ccrWPnlb.s 			page 339
 
 
  14741 012f 56       		.byte	0x56
@@ -20338,7 +20338,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14778      00000000 
  14779 01d0 00000000 		.quad	0
  14779      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 340
+GAS LISTING /tmp/ccrWPnlb.s 			page 340
 
 
  14780              	.LLST6:
@@ -20398,7 +20398,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14816 027a 00000000 		.quad	0
  14816      00000000 
  14817 0282 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 341
+GAS LISTING /tmp/ccrWPnlb.s 			page 341
 
 
  14817      00000000 
@@ -20458,7 +20458,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14855 0322 48       		.byte	0x48
  14856 0323 1C       		.byte	0x1c
  14857 0324 06       		.byte	0x6
-GAS LISTING /tmp/cc36vOse.s 			page 342
+GAS LISTING /tmp/ccrWPnlb.s 			page 342
 
 
  14858 0325 22       		.byte	0x22
@@ -20518,7 +20518,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14897 03b8 00000000 		.quad	.LVL26
  14897      00000000 
  14898 03c0 0200     		.value	0x2
-GAS LISTING /tmp/cc36vOse.s 			page 343
+GAS LISTING /tmp/ccrWPnlb.s 			page 343
 
 
  14899 03c2 3A       		.byte	0x3a
@@ -20578,7 +20578,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14934      00000000 
  14935 046c 00000000 		.quad	0
  14935      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 344
+GAS LISTING /tmp/ccrWPnlb.s 			page 344
 
 
  14936              	.LLST21:
@@ -20638,7 +20638,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  14974 050f 9F       		.byte	0x9f
  14975 0510 00000000 		.quad	.LVL41
  14975      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 345
+GAS LISTING /tmp/ccrWPnlb.s 			page 345
 
 
  14976 0518 00000000 		.quad	.LVL42-1
@@ -20698,7 +20698,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15016 05a3 00000000 		.long	0
  15017 05a7 29       		.byte	0x29
  15018 05a8 9F       		.byte	0x9f
-GAS LISTING /tmp/cc36vOse.s 			page 346
+GAS LISTING /tmp/ccrWPnlb.s 			page 346
 
 
  15019 05a9 00000000 		.quad	.LVL38
@@ -20758,7 +20758,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15056      00000000 
  15057              	.LLST31:
  15058 064c 00000000 		.quad	.LVL56
-GAS LISTING /tmp/cc36vOse.s 			page 347
+GAS LISTING /tmp/ccrWPnlb.s 			page 347
 
 
  15058      00000000 
@@ -20818,7 +20818,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15093      00000000 
  15094 0701 00000000 		.quad	0
  15094      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 348
+GAS LISTING /tmp/ccrWPnlb.s 			page 348
 
 
  15095              	.LLST36:
@@ -20878,7 +20878,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15136      00000000 
  15137 078f 00000000 		.quad	.LVL63
  15137      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 349
+GAS LISTING /tmp/ccrWPnlb.s 			page 349
 
 
  15138 0797 0A00     		.value	0xa
@@ -20938,7 +20938,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15179 0823 00000000 		.quad	.LVL63
  15179      00000000 
  15180 082b 0A00     		.value	0xa
-GAS LISTING /tmp/cc36vOse.s 			page 350
+GAS LISTING /tmp/ccrWPnlb.s 			page 350
 
 
  15181 082d 03       		.byte	0x3
@@ -20998,7 +20998,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15216 08d8 0A00     		.value	0xa
  15217 08da 03       		.byte	0x3
  15218 08db 00000000 		.quad	_ZZ32test_add_point_with_stamp_centervE8expected
-GAS LISTING /tmp/cc36vOse.s 			page 351
+GAS LISTING /tmp/ccrWPnlb.s 			page 351
 
 
  15218      00000000 
@@ -21058,7 +21058,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15256 097b 00000000 		.quad	.LVL65
  15256      00000000 
  15257 0983 00000000 		.quad	.LVL69
-GAS LISTING /tmp/cc36vOse.s 			page 352
+GAS LISTING /tmp/ccrWPnlb.s 			page 352
 
 
  15257      00000000 
@@ -21118,7 +21118,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15297      00000000 
  15298 0a17 0A00     		.value	0xa
  15299 0a19 03       		.byte	0x3
-GAS LISTING /tmp/cc36vOse.s 			page 353
+GAS LISTING /tmp/ccrWPnlb.s 			page 353
 
 
  15300 0a1a 00000000 		.quad	.LC18
@@ -21178,7 +21178,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15337              	.LLST50:
  15338 0aba 00000000 		.quad	.LVL53
  15338      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 354
+GAS LISTING /tmp/ccrWPnlb.s 			page 354
 
 
  15339 0ac2 00000000 		.quad	.LVL63
@@ -21238,7 +21238,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15379 0b53 04       		.byte	0x4
  15380 0b54 00000040 		.long	0x40000000
  15381 0b58 29       		.byte	0x29
-GAS LISTING /tmp/cc36vOse.s 			page 355
+GAS LISTING /tmp/ccrWPnlb.s 			page 355
 
 
  15382 0b59 9F       		.byte	0x9f
@@ -21298,7 +21298,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15417              	.LLST54:
  15418 0c04 00000000 		.quad	.LVL57
  15418      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 356
+GAS LISTING /tmp/ccrWPnlb.s 			page 356
 
 
  15419 0c0c 00000000 		.quad	.LVL62
@@ -21358,7 +21358,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15455      00000000 
  15456 0cb3 0A00     		.value	0xa
  15457 0cb5 03       		.byte	0x3
-GAS LISTING /tmp/cc36vOse.s 			page 357
+GAS LISTING /tmp/ccrWPnlb.s 			page 357
 
 
  15458 0cb6 00000000 		.quad	.LC7
@@ -21418,7 +21418,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15493 0d60 00000000 		.quad	.LVL82
  15493      00000000 
  15494 0d68 00000000 		.quad	.LVL83-1
-GAS LISTING /tmp/cc36vOse.s 			page 358
+GAS LISTING /tmp/ccrWPnlb.s 			page 358
 
 
  15494      00000000 
@@ -21478,7 +21478,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15532 0e0a 29       		.byte	0x29
  15533 0e0b 9F       		.byte	0x9f
  15534 0e0c 00000000 		.quad	.LVL91
-GAS LISTING /tmp/cc36vOse.s 			page 359
+GAS LISTING /tmp/ccrWPnlb.s 			page 359
 
 
  15534      00000000 
@@ -21538,7 +21538,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15573      00000000 
  15574 0ea7 9F       		.byte	0x9f
  15575 0ea8 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 360
+GAS LISTING /tmp/ccrWPnlb.s 			page 360
 
 
  15575      00000000 
@@ -21598,7 +21598,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15616 0f3b 9F       		.byte	0x9f
  15617 0f3c 00000000 		.quad	0
  15617      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 361
+GAS LISTING /tmp/ccrWPnlb.s 			page 361
 
 
  15618 0f44 00000000 		.quad	0
@@ -21658,7 +21658,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15653      00000000 
  15654 0ff0 0300     		.value	0x3
  15655 0ff2 08       		.byte	0x8
-GAS LISTING /tmp/cc36vOse.s 			page 362
+GAS LISTING /tmp/ccrWPnlb.s 			page 362
 
 
  15656 0ff3 9B       		.byte	0x9b
@@ -21718,7 +21718,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15691      00000000 
  15692 109d 00000000 		.quad	.LVL100-1
  15692      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 363
+GAS LISTING /tmp/ccrWPnlb.s 			page 363
 
 
  15693 10a5 0100     		.value	0x1
@@ -21778,7 +21778,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15729 114d 00000000 		.quad	.LVL114
  15729      00000000 
  15730 1155 00000000 		.quad	.LFE1516
-GAS LISTING /tmp/cc36vOse.s 			page 364
+GAS LISTING /tmp/ccrWPnlb.s 			page 364
 
 
  15730      00000000 
@@ -21838,7 +21838,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15772 11dd 9F       		.byte	0x9f
  15773 11de 00000000 		.quad	0
  15773      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 365
+GAS LISTING /tmp/ccrWPnlb.s 			page 365
 
 
  15774 11e6 00000000 		.quad	0
@@ -21898,7 +21898,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15815 1272 00000000 		.quad	0
  15815      00000000 
  15816 127a 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 366
+GAS LISTING /tmp/ccrWPnlb.s 			page 366
 
 
  15816      00000000 
@@ -21958,7 +21958,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15852 1326 00000000 		.quad	.LVL118
  15852      00000000 
  15853 132e 00000000 		.quad	.LFE1516
-GAS LISTING /tmp/cc36vOse.s 			page 367
+GAS LISTING /tmp/ccrWPnlb.s 			page 367
 
 
  15853      00000000 
@@ -22018,7 +22018,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15890 13d3 00000000 		.quad	.LVL114
  15890      00000000 
  15891 13db 0A00     		.value	0xa
-GAS LISTING /tmp/cc36vOse.s 			page 368
+GAS LISTING /tmp/ccrWPnlb.s 			page 368
 
 
  15892 13dd 03       		.byte	0x3
@@ -22078,7 +22078,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15928 1485 00000000 		.quad	0
  15928      00000000 
  15929 148d 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 369
+GAS LISTING /tmp/ccrWPnlb.s 			page 369
 
 
  15929      00000000 
@@ -22138,7 +22138,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  15967 152e 0800     		.value	0x8
  15968 1530 70       		.byte	0x70
  15969 1531 00       		.sleb128 0
-GAS LISTING /tmp/cc36vOse.s 			page 370
+GAS LISTING /tmp/ccrWPnlb.s 			page 370
 
 
  15970 1532 08       		.byte	0x8
@@ -22198,7 +22198,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16010 15bf 00000000 		.quad	.LVL143-1
  16010      00000000 
  16011 15c7 0C00     		.value	0xc
-GAS LISTING /tmp/cc36vOse.s 			page 371
+GAS LISTING /tmp/ccrWPnlb.s 			page 371
 
 
  16012 15c9 F5       		.byte	0xf5
@@ -22258,7 +22258,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16050 1665 00000000 		.quad	.LVL142
  16050      00000000 
  16051 166d 0100     		.value	0x1
-GAS LISTING /tmp/cc36vOse.s 			page 372
+GAS LISTING /tmp/ccrWPnlb.s 			page 372
 
 
  16052 166f 53       		.byte	0x53
@@ -22318,7 +22318,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16088 1711 08       		.byte	0x8
  16089 1712 20       		.byte	0x20
  16090 1713 24       		.byte	0x24
-GAS LISTING /tmp/cc36vOse.s 			page 373
+GAS LISTING /tmp/ccrWPnlb.s 			page 373
 
 
  16091 1714 30       		.byte	0x30
@@ -22378,7 +22378,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16130 17a5 00000000 		.quad	.LC7
  16130      00000000 
  16131 17ad 9F       		.byte	0x9f
-GAS LISTING /tmp/cc36vOse.s 			page 374
+GAS LISTING /tmp/ccrWPnlb.s 			page 374
 
 
  16132 17ae 00000000 		.quad	0
@@ -22438,7 +22438,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16172 183e 00000000 		.quad	.LVL148
  16172      00000000 
  16173 1846 0100     		.value	0x1
-GAS LISTING /tmp/cc36vOse.s 			page 375
+GAS LISTING /tmp/ccrWPnlb.s 			page 375
 
 
  16174 1848 50       		.byte	0x50
@@ -22498,7 +22498,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16212 18dd 29       		.byte	0x29
  16213 18de 9F       		.byte	0x9f
  16214 18df 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 376
+GAS LISTING /tmp/ccrWPnlb.s 			page 376
 
 
  16214      00000000 
@@ -22558,7 +22558,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16249 1991 0100     		.value	0x1
  16250 1993 54       		.byte	0x54
  16251 1994 00000000 		.quad	.LVL161
-GAS LISTING /tmp/cc36vOse.s 			page 377
+GAS LISTING /tmp/ccrWPnlb.s 			page 377
 
 
  16251      00000000 
@@ -22618,7 +22618,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16290      00000000 
  16291 1a2f 00000000 		.quad	.LVL155
  16291      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 378
+GAS LISTING /tmp/ccrWPnlb.s 			page 378
 
 
  16292 1a37 0100     		.value	0x1
@@ -22678,7 +22678,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16338 1aa1 00       		.sleb128 0
  16339 1aa2 F6       		.byte	0xf6
  16340 1aa3 04       		.byte	0x4
-GAS LISTING /tmp/cc36vOse.s 			page 379
+GAS LISTING /tmp/ccrWPnlb.s 			page 379
 
 
  16341 1aa4 29       		.uleb128 0x29
@@ -22738,7 +22738,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16378      00000000 
  16379              	.LLST118:
  16380 1b44 00000000 		.quad	.LVL170
-GAS LISTING /tmp/cc36vOse.s 			page 380
+GAS LISTING /tmp/ccrWPnlb.s 			page 380
 
 
  16380      00000000 
@@ -22798,7 +22798,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16415      00000000 
  16416 1bf9 0B00     		.value	0xb
  16417 1bfb 7D       		.byte	0x7d
-GAS LISTING /tmp/cc36vOse.s 			page 381
+GAS LISTING /tmp/ccrWPnlb.s 			page 381
 
 
  16418 1bfc 08       		.sleb128 8
@@ -22858,7 +22858,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16457 1c83 00000000 		.quad	.LVL191
  16457      00000000 
  16458 1c8b 00000000 		.quad	.LFE1519
-GAS LISTING /tmp/cc36vOse.s 			page 382
+GAS LISTING /tmp/ccrWPnlb.s 			page 382
 
 
  16458      00000000 
@@ -22918,7 +22918,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16494 1d35 00000000 		.quad	.LVL193
  16494      00000000 
  16495 1d3d 0A00     		.value	0xa
-GAS LISTING /tmp/cc36vOse.s 			page 383
+GAS LISTING /tmp/ccrWPnlb.s 			page 383
 
 
  16496 1d3f 03       		.byte	0x3
@@ -22978,7 +22978,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16531 1de7 00000000 		.quad	.LVL184
  16531      00000000 
  16532 1def 00000000 		.quad	.LVL191
-GAS LISTING /tmp/cc36vOse.s 			page 384
+GAS LISTING /tmp/ccrWPnlb.s 			page 384
 
 
  16532      00000000 
@@ -23038,7 +23038,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16568              	.LLST135:
  16569 1e9b 00000000 		.quad	.LVL199
  16569      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 385
+GAS LISTING /tmp/ccrWPnlb.s 			page 385
 
 
  16570 1ea3 00000000 		.quad	.LVL200-1
@@ -23098,7 +23098,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16607      00000000 
  16608              	.LLST138:
  16609 1f44 00000000 		.quad	.LVL208
-GAS LISTING /tmp/cc36vOse.s 			page 386
+GAS LISTING /tmp/ccrWPnlb.s 			page 386
 
 
  16609      00000000 
@@ -23158,7 +23158,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16649      00000000 
  16650 1fd9 00000000 		.quad	.LVL227-1
  16650      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 387
+GAS LISTING /tmp/ccrWPnlb.s 			page 387
 
 
  16651 1fe1 0800     		.value	0x8
@@ -23218,7 +23218,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16692 2067 00000000 		.quad	0
  16692      00000000 
  16693 206f 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 388
+GAS LISTING /tmp/ccrWPnlb.s 			page 388
 
 
  16693      00000000 
@@ -23278,7 +23278,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16731 210e 00000000 		.quad	.LVL242-1
  16731      00000000 
  16732 2116 0800     		.value	0x8
-GAS LISTING /tmp/cc36vOse.s 			page 389
+GAS LISTING /tmp/ccrWPnlb.s 			page 389
 
 
  16733 2118 70       		.byte	0x70
@@ -23338,7 +23338,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16773      00000000 
  16774 21a4 00000000 		.quad	0
  16774      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 390
+GAS LISTING /tmp/ccrWPnlb.s 			page 390
 
 
  16775              	.LLST150:
@@ -23398,7 +23398,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16810 2254 00000000 		.quad	0
  16810      00000000 
  16811 225c 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 391
+GAS LISTING /tmp/ccrWPnlb.s 			page 391
 
 
  16811      00000000 
@@ -23458,7 +23458,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16846      00000000 
  16847 0008 00000000 		.quad	.LBE275
  16847      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 392
+GAS LISTING /tmp/ccrWPnlb.s 			page 392
 
 
  16848 0010 00000000 		.quad	.LBB278
@@ -23518,7 +23518,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16875 00e8 00000000 		.quad	.LBE315
  16875      00000000 
  16876 00f0 00000000 		.quad	.LBB316
-GAS LISTING /tmp/cc36vOse.s 			page 393
+GAS LISTING /tmp/ccrWPnlb.s 			page 393
 
 
  16876      00000000 
@@ -23578,7 +23578,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16903      00000000 
  16904 01d0 00000000 		.quad	0
  16904      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 394
+GAS LISTING /tmp/ccrWPnlb.s 			page 394
 
 
  16905 01d8 00000000 		.quad	0
@@ -23638,7 +23638,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16932 02b0 00000000 		.quad	0
  16932      00000000 
  16933 02b8 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 395
+GAS LISTING /tmp/ccrWPnlb.s 			page 395
 
 
  16933      00000000 
@@ -23698,7 +23698,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16960      00000000 
  16961 0398 00000000 		.quad	.LBE388
  16961      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 396
+GAS LISTING /tmp/ccrWPnlb.s 			page 396
 
 
  16962 03a0 00000000 		.quad	.LBB389
@@ -23758,7 +23758,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  16989 0478 00000000 		.quad	.LBE387
  16989      00000000 
  16990 0480 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 397
+GAS LISTING /tmp/ccrWPnlb.s 			page 397
 
 
  16990      00000000 
@@ -23818,7 +23818,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17017      00000000 
  17018 0560 00000000 		.quad	0
  17018      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 398
+GAS LISTING /tmp/ccrWPnlb.s 			page 398
 
 
  17019 0568 00000000 		.quad	0
@@ -23878,7 +23878,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17046 0640 00000000 		.quad	0
  17046      00000000 
  17047 0648 00000000 		.quad	0
-GAS LISTING /tmp/cc36vOse.s 			page 399
+GAS LISTING /tmp/ccrWPnlb.s 			page 399
 
 
  17047      00000000 
@@ -23938,7 +23938,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17074      00000000 
  17075 0728 00000000 		.quad	0
  17075      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 400
+GAS LISTING /tmp/ccrWPnlb.s 			page 400
 
 
  17076 0730 00000000 		.quad	.LBB447
@@ -23998,7 +23998,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17103 0808 00000000 		.quad	0
  17103      00000000 
  17104 0810 00000000 		.quad	.LBB470
-GAS LISTING /tmp/cc36vOse.s 			page 401
+GAS LISTING /tmp/ccrWPnlb.s 			page 401
 
 
  17104      00000000 
@@ -24058,7 +24058,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17131      00000000 
  17132 08f0 00000000 		.quad	.LBB488
  17132      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 402
+GAS LISTING /tmp/ccrWPnlb.s 			page 402
 
 
  17133 08f8 00000000 		.quad	.LBE488
@@ -24118,7 +24118,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17160 09d0 00000000 		.quad	.LBB512
  17160      00000000 
  17161 09d8 00000000 		.quad	.LBE512
-GAS LISTING /tmp/cc36vOse.s 			page 403
+GAS LISTING /tmp/ccrWPnlb.s 			page 403
 
 
  17161      00000000 
@@ -24178,7 +24178,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17188      00000000 
  17189 0ab8 00000000 		.quad	.LBE528
  17189      00000000 
-GAS LISTING /tmp/cc36vOse.s 			page 404
+GAS LISTING /tmp/ccrWPnlb.s 			page 404
 
 
  17190 0ac0 00000000 		.quad	0
@@ -24238,7 +24238,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17218 000e 5F535F73 		.string	"_S_showpoint"
  17218      686F7770 
  17218      6F696E74 
-GAS LISTING /tmp/cc36vOse.s 			page 405
+GAS LISTING /tmp/ccrWPnlb.s 			page 405
 
 
  17218      00
@@ -24298,7 +24298,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17244      6E6400
  17245              	.LASF555:
  17246 00b5 5F5F7374 		.string	"__static_initialization_and_destruction_0"
-GAS LISTING /tmp/cc36vOse.s 			page 406
+GAS LISTING /tmp/ccrWPnlb.s 			page 406
 
 
  17246      61746963 
@@ -24358,7 +24358,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17272      756500
  17273              	.LASF19:
  17274 0167 5F73686F 		.string	"_shortbuf"
-GAS LISTING /tmp/cc36vOse.s 			page 407
+GAS LISTING /tmp/ccrWPnlb.s 			page 407
 
 
  17274      72746275 
@@ -24418,7 +24418,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17298      5F6E6F74 
  17298      68696E67 
  17298      00
-GAS LISTING /tmp/cc36vOse.s 			page 408
+GAS LISTING /tmp/ccrWPnlb.s 			page 408
 
 
  17299              	.LASF37:
@@ -24478,7 +24478,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17325              	.LASF441:
  17326 02d5 746F7763 		.string	"towctrans"
  17326      7472616E 
-GAS LISTING /tmp/cc36vOse.s 			page 409
+GAS LISTING /tmp/ccrWPnlb.s 			page 409
 
 
  17326      7300
@@ -24538,7 +24538,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17354      6F395F4D 
  17354      5F696E73 
  17354      65727449 
-GAS LISTING /tmp/cc36vOse.s 			page 410
+GAS LISTING /tmp/ccrWPnlb.s 			page 410
 
 
  17354      6D454552 
@@ -24598,7 +24598,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17386      616E6600 
  17387              	.LASF103:
  17388 041d 5F535F73 		.string	"_S_showbase"
-GAS LISTING /tmp/cc36vOse.s 			page 411
+GAS LISTING /tmp/ccrWPnlb.s 			page 411
 
 
  17388      686F7762 
@@ -24658,7 +24658,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17414      00
  17415              	.LASF450:
  17416 050b 32316865 		.string	"21heatmap_colorscheme_t"
-GAS LISTING /tmp/cc36vOse.s 			page 412
+GAS LISTING /tmp/ccrWPnlb.s 			page 412
 
 
  17416      61746D61 
@@ -24718,7 +24718,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17441              	.LASF347:
  17442 05e2 696E745F 		.string	"int_frac_digits"
  17442      66726163 
-GAS LISTING /tmp/cc36vOse.s 			page 413
+GAS LISTING /tmp/ccrWPnlb.s 			page 413
 
 
  17442      5F646967 
@@ -24778,7 +24778,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17470      5F6E756D 
  17471              	.LASF144:
  17472 069e 73636965 		.string	"scientific"
-GAS LISTING /tmp/cc36vOse.s 			page 414
+GAS LISTING /tmp/ccrWPnlb.s 			page 414
 
 
  17472      6E746966 
@@ -24838,7 +24838,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17496 07a4 646F7562 		.string	"double_t"
  17496      6C655F74 
  17496      00
-GAS LISTING /tmp/cc36vOse.s 			page 415
+GAS LISTING /tmp/ccrWPnlb.s 			page 415
 
 
  17497              	.LASF191:
@@ -24898,7 +24898,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17520      653C6368 
  17520      61723E00 
  17521              	.LASF367:
-GAS LISTING /tmp/cc36vOse.s 			page 416
+GAS LISTING /tmp/ccrWPnlb.s 			page 416
 
 
  17522 08b0 31315F5F 		.string	"11__mbstate_t"
@@ -24958,7 +24958,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17546 0977 656E7375 		.string	"ensure_that"
  17546      72655F74 
  17546      68617400 
-GAS LISTING /tmp/cc36vOse.s 			page 417
+GAS LISTING /tmp/ccrWPnlb.s 			page 417
 
 
  17547              	.LASF72:
@@ -25018,7 +25018,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17574      74696D65 
  17574      00
  17575              	.LASF63:
-GAS LISTING /tmp/cc36vOse.s 			page 418
+GAS LISTING /tmp/ccrWPnlb.s 			page 418
 
 
  17576 0a2a 73776170 		.string	"swap"
@@ -25078,7 +25078,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17602      6E00
  17603              	.LASF233:
  17604 0aeb 77637363 		.string	"wcscat"
-GAS LISTING /tmp/cc36vOse.s 			page 419
+GAS LISTING /tmp/ccrWPnlb.s 			page 419
 
 
  17604      617400
@@ -25138,7 +25138,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17630      74726169 
  17630      74734963 
  17631              	.LASF237:
-GAS LISTING /tmp/cc36vOse.s 			page 420
+GAS LISTING /tmp/ccrWPnlb.s 			page 420
 
 
  17632 0baa 77637363 		.string	"wcscspn"
@@ -25198,7 +25198,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17660      6200
  17661              	.LASF343:
  17662 0c49 6D6F6E5F 		.string	"mon_thousands_sep"
-GAS LISTING /tmp/cc36vOse.s 			page 421
+GAS LISTING /tmp/ccrWPnlb.s 			page 421
 
 
  17662      74686F75 
@@ -25258,7 +25258,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17687              	.LASF283:
  17688 0d2d 5F5F6469 		.string	"__digits"
  17688      67697473 
-GAS LISTING /tmp/cc36vOse.s 			page 422
+GAS LISTING /tmp/ccrWPnlb.s 			page 422
 
 
  17688      00
@@ -25318,7 +25318,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17713              	.LASF124:
  17714 0df2 5F535F62 		.string	"_S_badbit"
  17714      61646269 
-GAS LISTING /tmp/cc36vOse.s 			page 423
+GAS LISTING /tmp/ccrWPnlb.s 			page 423
 
 
  17714      7400
@@ -25378,7 +25378,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17738      2900
  17739              	.LASF455:
  17740 0ea6 74686973 		.string	"this"
-GAS LISTING /tmp/cc36vOse.s 			page 424
+GAS LISTING /tmp/ccrWPnlb.s 			page 424
 
 
  17740      00
@@ -25438,7 +25438,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17764      74313163 
  17764      6861725F 
  17764      74726169 
-GAS LISTING /tmp/cc36vOse.s 			page 425
+GAS LISTING /tmp/ccrWPnlb.s 			page 425
 
 
  17764      74734963 
@@ -25498,7 +25498,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17792 102a 5F5A4E53 		.string	"_ZNSt11char_traitsIcE6assignERcRKc"
  17792      74313163 
  17792      6861725F 
-GAS LISTING /tmp/cc36vOse.s 			page 426
+GAS LISTING /tmp/ccrWPnlb.s 			page 426
 
 
  17792      74726169 
@@ -25558,7 +25558,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17818      66667365 
  17818      7400
  17819              	.LASF220:
-GAS LISTING /tmp/cc36vOse.s 			page 427
+GAS LISTING /tmp/ccrWPnlb.s 			page 427
 
 
  17820 10de 6D627372 		.string	"mbsrtowcs"
@@ -25618,7 +25618,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17848 1180 696E7431 		.string	"int16_t"
  17848      365F7400 
  17849              	.LASF34:
-GAS LISTING /tmp/cc36vOse.s 			page 428
+GAS LISTING /tmp/ccrWPnlb.s 			page 428
 
 
  17850 1188 74797065 		.string	"typedef __va_list_tag __va_list_tag"
@@ -25678,7 +25678,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17876      6600
  17877              	.LASF221:
  17878 1241 70757477 		.string	"putwc"
-GAS LISTING /tmp/cc36vOse.s 			page 429
+GAS LISTING /tmp/ccrWPnlb.s 			page 429
 
 
  17878      6300
@@ -25738,7 +25738,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17906 12dc 5F5A4E53 		.string	"_ZNSt11char_traitsIcE4moveEPcPKcm"
  17906      74313163 
  17906      6861725F 
-GAS LISTING /tmp/cc36vOse.s 			page 430
+GAS LISTING /tmp/ccrWPnlb.s 			page 430
 
 
  17906      74726169 
@@ -25798,7 +25798,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17932 13a9 5F535F66 		.string	"_S_failbit"
  17932      61696C62 
  17932      697400
-GAS LISTING /tmp/cc36vOse.s 			page 431
+GAS LISTING /tmp/ccrWPnlb.s 			page 431
 
 
  17933              	.LASF82:
@@ -25858,7 +25858,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17958 1466 5F535F75 		.string	"_S_uppercase"
  17958      70706572 
  17958      63617365 
-GAS LISTING /tmp/cc36vOse.s 			page 432
+GAS LISTING /tmp/ccrWPnlb.s 			page 432
 
 
  17958      00
@@ -25918,7 +25918,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  17983              	.LASF510:
  17984 154d 68656174 		.string	"heatmap_cs_b2w"
  17984      6D61705F 
-GAS LISTING /tmp/cc36vOse.s 			page 433
+GAS LISTING /tmp/ccrWPnlb.s 			page 433
 
 
  17984      63735F62 
@@ -25978,7 +25978,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18009              	.LASF47:
  18010 1615 63686172 		.string	"char"
  18010      00
-GAS LISTING /tmp/cc36vOse.s 			page 434
+GAS LISTING /tmp/ccrWPnlb.s 			page 434
 
 
  18011              	.LASF295:
@@ -26038,7 +26038,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18034      00
  18035              	.LASF2:
  18036 16c9 5F494F5F 		.string	"_IO_read_end"
-GAS LISTING /tmp/cc36vOse.s 			page 435
+GAS LISTING /tmp/ccrWPnlb.s 			page 435
 
 
  18036      72656164 
@@ -26098,7 +26098,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18062      3C636861 
  18062      722C2073 
  18062      74643A3A 
-GAS LISTING /tmp/cc36vOse.s 			page 436
+GAS LISTING /tmp/ccrWPnlb.s 			page 436
 
 
  18062      63686172 
@@ -26158,7 +26158,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18090      5F706F69 
  18090      6E745F77 
  18091              	.LASF424:
-GAS LISTING /tmp/cc36vOse.s 			page 437
+GAS LISTING /tmp/ccrWPnlb.s 			page 437
 
 
  18092 1881 66736574 		.string	"fsetpos"
@@ -26218,7 +26218,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18119              	.LASF182:
  18120 19a2 72647374 		.string	"rdstate"
  18120      61746500 
-GAS LISTING /tmp/cc36vOse.s 			page 438
+GAS LISTING /tmp/ccrWPnlb.s 			page 438
 
 
  18121              	.LASF387:
@@ -26278,7 +26278,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18149              	.LASF370:
  18150 1a5a 6469765F 		.string	"div_t"
  18150      7400
-GAS LISTING /tmp/cc36vOse.s 			page 439
+GAS LISTING /tmp/ccrWPnlb.s 			page 439
 
 
  18151              	.LASF290:
@@ -26338,7 +26338,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18172      5F636F6C 
  18172      756D6E00 
  18173              	.LASF266:
-GAS LISTING /tmp/cc36vOse.s 			page 440
+GAS LISTING /tmp/ccrWPnlb.s 			page 440
 
 
  18174 1b63 776D656D 		.string	"wmemcpy"
@@ -26398,7 +26398,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18200 1c23 68656174 		.string	"heatmap_new"
  18200      6D61705F 
  18200      6E657700 
-GAS LISTING /tmp/cc36vOse.s 			page 441
+GAS LISTING /tmp/ccrWPnlb.s 			page 441
 
 
  18201              	.LASF523:
@@ -26458,7 +26458,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18224      777300
  18225              	.LASF389:
  18226 1cfa 72616E64 		.string	"rand"
-GAS LISTING /tmp/cc36vOse.s 			page 442
+GAS LISTING /tmp/ccrWPnlb.s 			page 442
 
 
  18226      00
@@ -26518,7 +26518,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18253              	.LASF155:
  18254 1dc4 656F6662 		.string	"eofbit"
  18254      697400
-GAS LISTING /tmp/cc36vOse.s 			page 443
+GAS LISTING /tmp/ccrWPnlb.s 			page 443
 
 
  18255              	.LASF427:
@@ -26578,7 +26578,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18280      3C3C00
  18281              	.LASF174:
  18282 1e65 5F56616C 		.string	"_ValueT"
-GAS LISTING /tmp/cc36vOse.s 			page 444
+GAS LISTING /tmp/ccrWPnlb.s 			page 444
 
 
  18282      75655400 
@@ -26638,7 +26638,7 @@ GAS LISTING /tmp/cc36vOse.s 			page 1
  18306      736800
  18307              	.LASF326:
  18308 1f1b 75696E74 		.string	"uint_fast8_t"
-GAS LISTING /tmp/cc36vOse.s 			page 445
+GAS LISTING /tmp/ccrWPnlb.s 			page 445
 
 
  18308      5F666173 

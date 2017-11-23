@@ -1,4 +1,4 @@
-GAS LISTING /tmp/ccMFaucZ.s 			page 1
+GAS LISTING /tmp/ccK2IhnQ.s 			page 1
 
 
    1              		.file	"heatmap_block.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
   35:heatmap_block.c ****  * since there is no need to create a new stamp.
   36:heatmap_block.c ****  */
   37:heatmap_block.c **** static float stamp_default_4_data[] = {
-GAS LISTING /tmp/ccMFaucZ.s 			page 2
+GAS LISTING /tmp/ccK2IhnQ.s 			page 2
 
 
   38:heatmap_block.c ****     0.0f      , 0.0f      , 0.1055728f, 0.1753789f, 0.2f, 0.1753789f, 0.1055728f, 0.0f      , 0.0f 
@@ -118,7 +118,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
   92:heatmap_block.c **** 
   93:heatmap_block.c ****         heatmap_init(&local_heatmap[idx], h->w, h->h);
   94:heatmap_block.c **** 
-GAS LISTING /tmp/ccMFaucZ.s 			page 3
+GAS LISTING /tmp/ccK2IhnQ.s 			page 3
 
 
   95:heatmap_block.c ****         unsigned i;
@@ -178,7 +178,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
   29 0008 4139F3   		cmpl	%esi, %r11d
  133:heatmap_block.c ****     /* I'm still unsure whether we want this to be an assert or not... */
   30              		.loc 1 133 0
-GAS LISTING /tmp/ccMFaucZ.s 			page 4
+GAS LISTING /tmp/ccK2IhnQ.s 			page 4
 
 
   31 000b 4155     		pushq	%r13
@@ -238,7 +238,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
   70 0049 4129D2   		subl	%edx, %r10d
   71 004c 4439FA   		cmpl	%r15d, %edx
   72 004f 450F42CA 		cmovb	%r10d, %r9d
-GAS LISTING /tmp/ccMFaucZ.s 			page 5
+GAS LISTING /tmp/ccK2IhnQ.s 			page 5
 
 
   73              	.LVL2:
@@ -298,7 +298,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  112              		.loc 1 132 0
  113 00a1 F7D0     		notl	%eax
  114 00a3 4401E8   		addl	%r13d, %eax
-GAS LISTING /tmp/ccMFaucZ.s 			page 6
+GAS LISTING /tmp/ccK2IhnQ.s 			page 6
 
 
  115              		.loc 1 152 0
@@ -358,7 +358,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  147 00f3 7605     		jbe	.L11
  148 00f5 F30F1147 		movss	%xmm0, 8(%rdi)
  148      08
-GAS LISTING /tmp/ccMFaucZ.s 			page 7
+GAS LISTING /tmp/ccK2IhnQ.s 			page 7
 
 
  149              	.L11:
@@ -418,7 +418,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  192      1F840000 
  192      000000
  193              	.globl heatmap_add_point
-GAS LISTING /tmp/ccMFaucZ.s 			page 8
+GAS LISTING /tmp/ccK2IhnQ.s 			page 8
 
 
  194              		.type	heatmap_add_point, @function
@@ -478,7 +478,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  226 014b 4155     		pushq	%r13
  227              		.cfi_def_cfa_offset 32
  228              		.cfi_offset 13, -32
-GAS LISTING /tmp/ccMFaucZ.s 			page 9
+GAS LISTING /tmp/ccK2IhnQ.s 			page 9
 
 
  229 014d 4154     		pushq	%r12
@@ -538,7 +538,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  265 0189 4129D2   		subl	%edx, %r10d
  266 018c 4439FA   		cmpl	%r15d, %edx
  267 018f 450F42CA 		cmovb	%r10d, %r9d
-GAS LISTING /tmp/ccMFaucZ.s 			page 10
+GAS LISTING /tmp/ccK2IhnQ.s 			page 10
 
 
  268              	.LVL15:
@@ -598,7 +598,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  307              		.loc 1 182 0
  308 01e1 F7D0     		notl	%eax
  309 01e3 4401E8   		addl	%r13d, %eax
-GAS LISTING /tmp/ccMFaucZ.s 			page 11
+GAS LISTING /tmp/ccK2IhnQ.s 			page 11
 
 
  310              		.loc 1 205 0
@@ -658,7 +658,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  344 0239 F30F114F 		movss	%xmm1, 8(%rdi)
  344      08
  345              	.L32:
-GAS LISTING /tmp/ccMFaucZ.s 			page 12
+GAS LISTING /tmp/ccK2IhnQ.s 			page 12
 
 
  346 023e 4883C004 		addq	$4, %rax
@@ -718,7 +718,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  389              	.globl heatmap_add_weighted_point
  390              		.type	heatmap_add_weighted_point, @function
  391              	heatmap_add_weighted_point:
-GAS LISTING /tmp/ccMFaucZ.s 			page 13
+GAS LISTING /tmp/ccK2IhnQ.s 			page 13
 
 
  392              	.LFB29:
@@ -778,7 +778,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  256:heatmap_block.c **** 
  257:heatmap_block.c ****         unsigned x;
  258:heatmap_block.c ****         for(x = 0 ; x < h->w ; ++x, ++bufline) {
-GAS LISTING /tmp/ccMFaucZ.s 			page 14
+GAS LISTING /tmp/ccK2IhnQ.s 			page 14
 
 
  259:heatmap_block.c ****             /* Saturate the heat value to the given saturation, and then
@@ -838,7 +838,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  408              	.LVL26:
  311:heatmap_block.c ****     return dist;
  312:heatmap_block.c **** }
-GAS LISTING /tmp/ccMFaucZ.s 			page 15
+GAS LISTING /tmp/ccK2IhnQ.s 			page 15
 
 
  409              		.loc 1 313 0
@@ -898,7 +898,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  353:heatmap_block.c ****     heatmap_colorscheme_t* cs = (heatmap_colorscheme_t*)calloc(1, sizeof(heatmap_colorscheme_t));
  354:heatmap_block.c ****     unsigned char* colors = (unsigned char*)malloc(4*ncolors);
  355:heatmap_block.c **** 
-GAS LISTING /tmp/ccMFaucZ.s 			page 16
+GAS LISTING /tmp/ccK2IhnQ.s 			page 16
 
 
  356:heatmap_block.c ****     if(!cs || !colors) {
@@ -958,7 +958,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  449              		.cfi_startproc
  450              	.LVL30:
  451 02b0 53       		pushq	%rbx
-GAS LISTING /tmp/ccMFaucZ.s 			page 17
+GAS LISTING /tmp/ccK2IhnQ.s 			page 17
 
 
  452              		.cfi_def_cfa_offset 16
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  491 02df 5B       		popq	%rbx
  492              		.cfi_def_cfa_offset 8
  493              	.LVL35:
-GAS LISTING /tmp/ccMFaucZ.s 			page 18
+GAS LISTING /tmp/ccK2IhnQ.s 			page 18
 
 
   72:heatmap_block.c ****     free(h);
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  530 0322 4989FD   		movq	%rdi, %r13
  354:heatmap_block.c ****     heatmap_colorscheme_t* cs = (heatmap_colorscheme_t*)calloc(1, sizeof(heatmap_colorscheme_t));
  531              		.loc 1 354 0
-GAS LISTING /tmp/ccMFaucZ.s 			page 19
+GAS LISTING /tmp/ccK2IhnQ.s 			page 19
 
 
  532 0325 BF010000 		movl	$1, %edi
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  570 036c 4C8B6424 		movq	24(%rsp), %r12
  570      18
  571              	.LVL45:
-GAS LISTING /tmp/ccMFaucZ.s 			page 20
+GAS LISTING /tmp/ccK2IhnQ.s 			page 20
 
 
  572 0371 4C8B6C24 		movq	32(%rsp), %r13
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  615              		.cfi_def_cfa_offset 24
  616              		.cfi_offset 6, -24
  617 03a6 53       		pushq	%rbx
-GAS LISTING /tmp/ccMFaucZ.s 			page 21
+GAS LISTING /tmp/ccK2IhnQ.s 			page 21
 
 
  618              		.cfi_def_cfa_offset 32
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  656 03f7 4531C0   		xorl	%r8d, %r8d
  255:heatmap_block.c ****         float* bufline = h->buf + y*h->w;
  657              		.loc 1 255 0
-GAS LISTING /tmp/ccMFaucZ.s 			page 22
+GAS LISTING /tmp/ccK2IhnQ.s 			page 22
 
 
  658 03fa 89FA     		mov	%edi, %edx
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  701              		.loc 1 239 0
  702 0438 4D8D0C0A 		leaq	(%r10,%rcx), %r9
  703              	.LBB15:
-GAS LISTING /tmp/ccMFaucZ.s 			page 23
+GAS LISTING /tmp/ccK2IhnQ.s 			page 23
 
 
  263:heatmap_block.c ****             const float val = (*bufline > saturation ? saturation : *bufline)/saturation;
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  747 049a 0F8248FF 		jb	.L67
  747      FFFF
  748              	.LVL66:
-GAS LISTING /tmp/ccMFaucZ.s 			page 24
+GAS LISTING /tmp/ccK2IhnQ.s 			page 24
 
 
  749              	.L58:
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  236:heatmap_block.c ****     return heatmap_render_saturated_to(h, colorscheme, h->max > 0.0f ? h->max : 1.0f, colorbuf);
  792              		.loc 1 236 0
  793 04e0 0F57C9   		xorps	%xmm1, %xmm1
-GAS LISTING /tmp/ccMFaucZ.s 			page 25
+GAS LISTING /tmp/ccK2IhnQ.s 			page 25
 
 
  794 04e3 F30F1047 		movss	8(%rdi), %xmm0
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  288:heatmap_block.c ****     if(stamp) {
  833              		.loc 1 288 0
  834 0530 4885FF   		testq	%rdi, %rdi
-GAS LISTING /tmp/ccMFaucZ.s 			page 26
+GAS LISTING /tmp/ccK2IhnQ.s 			page 26
 
 
  835 0533 7409     		je	.L82
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  876 056a 4C89E9   		movq	%r13, %rcx
  298:heatmap_block.c ****     heatmap_stamp_t* stamp = (heatmap_stamp_t*)malloc(sizeof(heatmap_stamp_t));
  877              		.loc 1 298 0
-GAS LISTING /tmp/ccMFaucZ.s 			page 27
+GAS LISTING /tmp/ccK2IhnQ.s 			page 27
 
 
  878 056d 4889C5   		movq	%rax, %rbp
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  325:heatmap_block.c ****     float* stamp = (float*)calloc(d*d, sizeof(float));
  923              		.loc 1 325 0
  924 05ab BE040000 		movl	$4, %esi
-GAS LISTING /tmp/ccMFaucZ.s 			page 28
+GAS LISTING /tmp/ccK2IhnQ.s 			page 28
 
 
  924      00
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  334:heatmap_block.c ****             const float ds = (*distshape)(dist);
  963              		.loc 1 334 0
  964 05ef F3480F2A 		cvtsi2ssq	%rax, %xmm0
-GAS LISTING /tmp/ccMFaucZ.s 			page 29
+GAS LISTING /tmp/ccK2IhnQ.s 			page 29
 
 
  964      C0
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1005 064c 7707     		ja	.L95
  1006 064e 0F57C9   		xorps	%xmm1, %xmm1
  1007 0651 F30F5FC8 		maxss	%xmm0, %xmm1
-GAS LISTING /tmp/ccMFaucZ.s 			page 30
+GAS LISTING /tmp/ccK2IhnQ.s 			page 30
 
 
  1008              	.L95:
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1047              		.loc 1 344 0
  1048 068b 5B       		popq	%rbx
  1049              		.cfi_def_cfa_offset 48
-GAS LISTING /tmp/ccMFaucZ.s 			page 31
+GAS LISTING /tmp/ccK2IhnQ.s 			page 31
 
 
  1050              	.LVL101:
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1098              		.loc 1 317 0
  1099 06b0 488D35C9 		leaq	linear_dist(%rip), %rsi
  1099      FBFFFF
-GAS LISTING /tmp/ccMFaucZ.s 			page 32
+GAS LISTING /tmp/ccK2IhnQ.s 			page 32
 
 
  1100 06b7 E9000000 		jmp	heatmap_stamp_gen_nonlinear@PLT
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1140              	.LVL111:
  306:heatmap_block.c ****     memcpy(copy, data, sizeof(float)*w*h);
  1141              		.loc 1 306 0
-GAS LISTING /tmp/ccMFaucZ.s 			page 33
+GAS LISTING /tmp/ccK2IhnQ.s 			page 33
 
 
  1142 06f9 4C89F2   		movq	%r14, %rdx
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1180      E8
  1181 0745 48896C24 		movq	%rbp, -16(%rsp)
  1181      F0
-GAS LISTING /tmp/ccMFaucZ.s 			page 34
+GAS LISTING /tmp/ccK2IhnQ.s 			page 34
 
 
  1182 074a 4889FB   		movq	%rdi, %rbx
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1220 079d C3       		ret
  1221              		.cfi_endproc
  1222              	.LFE22:
-GAS LISTING /tmp/ccMFaucZ.s 			page 35
+GAS LISTING /tmp/ccK2IhnQ.s 			page 35
 
 
  1223              		.size	heatmap_init, .-heatmap_init
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1262 07d5 488B1C24 		movq	(%rsp), %rbx
  1263              	.LVL130:
  1264 07d9 488B6C24 		movq	8(%rsp), %rbp
-GAS LISTING /tmp/ccMFaucZ.s 			page 36
+GAS LISTING /tmp/ccK2IhnQ.s 			page 36
 
 
  1264      08
@@ -2158,7 +2158,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1309              	.LVL136:
   91:heatmap_block.c ****         unsigned start = idx * block_length;
  1310              		.loc 1 91 0
-GAS LISTING /tmp/ccMFaucZ.s 			page 37
+GAS LISTING /tmp/ccK2IhnQ.s 			page 37
 
 
  1311 080d 440FAFE5 		imull	%ebp, %r12d
@@ -2218,7 +2218,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1351 0863 4183C401 		addl	$1, %r12d
  1352              	.LVL142:
  100:heatmap_block.c ****             local_heatmap[idx].buf[ys[i] * h->w + xs[i]] += 1.0;
-GAS LISTING /tmp/ccMFaucZ.s 			page 38
+GAS LISTING /tmp/ccK2IhnQ.s 			page 38
 
 
  1353              		.loc 1 100 0
@@ -2278,7 +2278,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1399              		.cfi_def_cfa_offset 24
  1400              		.cfi_offset 13, -24
  1401 08a7 4189CD   		movl	%ecx, %r13d
-GAS LISTING /tmp/ccMFaucZ.s 			page 39
+GAS LISTING /tmp/ccK2IhnQ.s 			page 39
 
 
  1402              	.LVL147:
@@ -2338,7 +2338,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1439      00
  1440              	.LVL151:
  1441 091c 4889DF   		movq	%rbx, %rdi
-GAS LISTING /tmp/ccMFaucZ.s 			page 40
+GAS LISTING /tmp/ccK2IhnQ.s 			page 40
 
 
  1442 091f E8CCFEFF 		call	heatmap_add_points_omp_with_stamp.omp_fn.0
@@ -2398,7 +2398,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  114:heatmap_block.c ****                 w += local_heatmap[k].buf[i];
  1481              		.loc 1 114 0
  1482 097a 488B5424 		movq	40(%rsp), %rdx
-GAS LISTING /tmp/ccMFaucZ.s 			page 41
+GAS LISTING /tmp/ccK2IhnQ.s 			page 41
 
 
  1482      28
@@ -2458,7 +2458,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1517 09e6 418B4C24 		movl	12(%r12), %ecx
  1517      0C
  109:heatmap_block.c ****         for (x = 0; x < h->w; x++, i++)
-GAS LISTING /tmp/ccMFaucZ.s 			page 42
+GAS LISTING /tmp/ccK2IhnQ.s 			page 42
 
 
  1518              		.loc 1 109 0
@@ -2518,7 +2518,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1562              		.cfi_startproc
  1563              	.LVL174:
   78:heatmap_block.c ****     heatmap_add_points_omp_with_stamp(h, xs, ys, num_points, &stamp_default_4);
-GAS LISTING /tmp/ccMFaucZ.s 			page 43
+GAS LISTING /tmp/ccK2IhnQ.s 			page 43
 
 
  1564              		.loc 1 78 0
@@ -2578,7 +2578,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1611 003c A1CA8E3E 		.long	1049545377
  1612 0040 731B1B3E 		.long	1041963891
  1613 0044 00000000 		.long	0
-GAS LISTING /tmp/ccMFaucZ.s 			page 44
+GAS LISTING /tmp/ccK2IhnQ.s 			page 44
 
 
  1614 0048 8D36D83D 		.long	1037579917
@@ -2638,7 +2638,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1668 0120 00000000 		.long	0
  1669 0124 00000000 		.long	0
  1670 0128 8D36D83D 		.long	1037579917
-GAS LISTING /tmp/ccMFaucZ.s 			page 45
+GAS LISTING /tmp/ccK2IhnQ.s 			page 45
 
 
  1671 012c 8796333E 		.long	1043568263
@@ -2698,7 +2698,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1725 002b 43       		.byte	67
  1726 002c 59       		.byte	89
  1727 002d 54       		.byte	84
-GAS LISTING /tmp/ccMFaucZ.s 			page 46
+GAS LISTING /tmp/ccK2IhnQ.s 			page 46
 
 
  1728 002e A6       		.byte	-90
@@ -2758,7 +2758,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1782 0064 52       		.byte	82
  1783 0065 5B       		.byte	91
  1784 0066 AA       		.byte	-86
-GAS LISTING /tmp/ccMFaucZ.s 			page 47
+GAS LISTING /tmp/ccK2IhnQ.s 			page 47
 
 
  1785 0067 B3       		.byte	-77
@@ -2818,7 +2818,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1839 009d 61       		.byte	97
  1840 009e AE       		.byte	-82
  1841 009f FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 48
+GAS LISTING /tmp/ccK2IhnQ.s 			page 48
 
 
  1842 00a0 4B       		.byte	75
@@ -2878,7 +2878,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1896 00d6 B7       		.byte	-73
  1897 00d7 FF       		.byte	-1
  1898 00d8 3C       		.byte	60
-GAS LISTING /tmp/ccMFaucZ.s 			page 49
+GAS LISTING /tmp/ccK2IhnQ.s 			page 49
 
 
  1899 00d9 73       		.byte	115
@@ -2938,7 +2938,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  1953 010f FF       		.byte	-1
  1954 0110 36       		.byte	54
  1955 0111 79       		.byte	121
-GAS LISTING /tmp/ccMFaucZ.s 			page 50
+GAS LISTING /tmp/ccK2IhnQ.s 			page 50
 
 
  1956 0112 B9       		.byte	-71
@@ -2998,7 +2998,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2010 0148 32       		.byte	50
  2011 0149 7F       		.byte	127
  2012 014a BB       		.byte	-69
-GAS LISTING /tmp/ccMFaucZ.s 			page 51
+GAS LISTING /tmp/ccK2IhnQ.s 			page 51
 
 
  2013 014b FF       		.byte	-1
@@ -3058,7 +3058,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2067 0181 85       		.byte	-123
  2068 0182 BC       		.byte	-68
  2069 0183 FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 52
+GAS LISTING /tmp/ccK2IhnQ.s 			page 52
 
 
  2070 0184 31       		.byte	49
@@ -3118,7 +3118,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2124 01ba BE       		.byte	-66
  2125 01bb FF       		.byte	-1
  2126 01bc 27       		.byte	39
-GAS LISTING /tmp/ccMFaucZ.s 			page 53
+GAS LISTING /tmp/ccK2IhnQ.s 			page 53
 
 
  2127 01bd 8C       		.byte	-116
@@ -3178,7 +3178,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2181 01f3 FF       		.byte	-1
  2182 01f4 0C       		.byte	12
  2183 01f5 93       		.byte	-109
-GAS LISTING /tmp/ccMFaucZ.s 			page 54
+GAS LISTING /tmp/ccK2IhnQ.s 			page 54
 
 
  2184 01f6 BF       		.byte	-65
@@ -3238,7 +3238,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2238 022c 0A       		.byte	10
  2239 022d 9A       		.byte	-102
  2240 022e BE       		.byte	-66
-GAS LISTING /tmp/ccMFaucZ.s 			page 55
+GAS LISTING /tmp/ccK2IhnQ.s 			page 55
 
 
  2241 022f FF       		.byte	-1
@@ -3298,7 +3298,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2295 0265 A1       		.byte	-95
  2296 0266 BB       		.byte	-69
  2297 0267 FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 56
+GAS LISTING /tmp/ccK2IhnQ.s 			page 56
 
 
  2298 0268 0A       		.byte	10
@@ -3358,7 +3358,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2352 029e B2       		.byte	-78
  2353 029f FF       		.byte	-1
  2354 02a0 30       		.byte	48
-GAS LISTING /tmp/ccMFaucZ.s 			page 57
+GAS LISTING /tmp/ccK2IhnQ.s 			page 57
 
 
  2355 02a1 B3       		.byte	-77
@@ -3418,7 +3418,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2409 02d7 FF       		.byte	-1
  2410 02d8 45       		.byte	69
  2411 02d9 B9       		.byte	-71
-GAS LISTING /tmp/ccMFaucZ.s 			page 58
+GAS LISTING /tmp/ccK2IhnQ.s 			page 58
 
 
  2412 02da AD       		.byte	-83
@@ -3478,7 +3478,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2466 0310 59       		.byte	89
  2467 0311 BE       		.byte	-66
  2468 0312 A8       		.byte	-88
-GAS LISTING /tmp/ccMFaucZ.s 			page 59
+GAS LISTING /tmp/ccK2IhnQ.s 			page 59
 
 
  2469 0313 FF       		.byte	-1
@@ -3538,7 +3538,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2523 0349 C2       		.byte	-62
  2524 034a A4       		.byte	-92
  2525 034b FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 60
+GAS LISTING /tmp/ccK2IhnQ.s 			page 60
 
 
  2526 034c 68       		.byte	104
@@ -3598,7 +3598,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2580 0382 A4       		.byte	-92
  2581 0383 FF       		.byte	-1
  2582 0384 70       		.byte	112
-GAS LISTING /tmp/ccMFaucZ.s 			page 61
+GAS LISTING /tmp/ccK2IhnQ.s 			page 61
 
 
  2583 0385 C6       		.byte	-58
@@ -3658,7 +3658,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2637 03bb FF       		.byte	-1
  2638 03bc 77       		.byte	119
  2639 03bd C9       		.byte	-55
-GAS LISTING /tmp/ccMFaucZ.s 			page 62
+GAS LISTING /tmp/ccK2IhnQ.s 			page 62
 
 
  2640 03be A4       		.byte	-92
@@ -3718,7 +3718,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2694 03f4 7F       		.byte	127
  2695 03f5 CC       		.byte	-52
  2696 03f6 A4       		.byte	-92
-GAS LISTING /tmp/ccMFaucZ.s 			page 63
+GAS LISTING /tmp/ccK2IhnQ.s 			page 63
 
 
  2697 03f7 FF       		.byte	-1
@@ -3778,7 +3778,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2751 042d D4       		.byte	-44
  2752 042e A3       		.byte	-93
  2753 042f FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 64
+GAS LISTING /tmp/ccK2IhnQ.s 			page 64
 
 
  2754 0430 95       		.byte	-107
@@ -3838,7 +3838,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2808 0466 A3       		.byte	-93
  2809 0467 FF       		.byte	-1
  2810 0468 9C       		.byte	-100
-GAS LISTING /tmp/ccMFaucZ.s 			page 65
+GAS LISTING /tmp/ccK2IhnQ.s 			page 65
 
 
  2811 0469 D7       		.byte	-41
@@ -3898,7 +3898,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2865 049f FF       		.byte	-1
  2866 04a0 A4       		.byte	-92
  2867 04a1 DA       		.byte	-38
-GAS LISTING /tmp/ccMFaucZ.s 			page 66
+GAS LISTING /tmp/ccK2IhnQ.s 			page 66
 
 
  2868 04a2 A3       		.byte	-93
@@ -3958,7 +3958,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2922 04d8 AB       		.byte	-85
  2923 04d9 DD       		.byte	-35
  2924 04da A3       		.byte	-93
-GAS LISTING /tmp/ccMFaucZ.s 			page 67
+GAS LISTING /tmp/ccK2IhnQ.s 			page 67
 
 
  2925 04db FF       		.byte	-1
@@ -4018,7 +4018,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  2979 0511 E0       		.byte	-32
  2980 0512 A2       		.byte	-94
  2981 0513 FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 68
+GAS LISTING /tmp/ccK2IhnQ.s 			page 68
 
 
  2982 0514 B1       		.byte	-79
@@ -4078,7 +4078,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3036 054a A1       		.byte	-95
  3037 054b FF       		.byte	-1
  3038 054c B7       		.byte	-73
-GAS LISTING /tmp/ccMFaucZ.s 			page 69
+GAS LISTING /tmp/ccK2IhnQ.s 			page 69
 
 
  3039 054d E3       		.byte	-29
@@ -4138,7 +4138,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3093 0583 FF       		.byte	-1
  3094 0584 BD       		.byte	-67
  3095 0585 E6       		.byte	-26
-GAS LISTING /tmp/ccMFaucZ.s 			page 70
+GAS LISTING /tmp/ccK2IhnQ.s 			page 70
 
 
  3096 0586 9F       		.byte	-97
@@ -4198,7 +4198,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3150 05bc CF       		.byte	-49
  3151 05bd ED       		.byte	-19
  3152 05be 9C       		.byte	-100
-GAS LISTING /tmp/ccMFaucZ.s 			page 71
+GAS LISTING /tmp/ccK2IhnQ.s 			page 71
 
 
  3153 05bf FF       		.byte	-1
@@ -4258,7 +4258,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3207 05f5 F0       		.byte	-16
  3208 05f6 9A       		.byte	-102
  3209 05f7 FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 72
+GAS LISTING /tmp/ccK2IhnQ.s 			page 72
 
 
  3210 05f8 D7       		.byte	-41
@@ -4318,7 +4318,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3264 062e 99       		.byte	-103
  3265 062f FF       		.byte	-1
  3266 0630 DE       		.byte	-34
-GAS LISTING /tmp/ccMFaucZ.s 			page 73
+GAS LISTING /tmp/ccK2IhnQ.s 			page 73
 
 
  3267 0631 F2       		.byte	-14
@@ -4378,7 +4378,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3321 0667 FF       		.byte	-1
  3322 0668 E5       		.byte	-27
  3323 0669 F4       		.byte	-12
-GAS LISTING /tmp/ccMFaucZ.s 			page 74
+GAS LISTING /tmp/ccK2IhnQ.s 			page 74
 
 
  3324 066a 98       		.byte	-104
@@ -4438,7 +4438,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3378 06a0 E7       		.byte	-25
  3379 06a1 F3       		.byte	-13
  3380 06a2 97       		.byte	-105
-GAS LISTING /tmp/ccMFaucZ.s 			page 75
+GAS LISTING /tmp/ccK2IhnQ.s 			page 75
 
 
  3381 06a3 FF       		.byte	-1
@@ -4498,7 +4498,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3435 06d9 F2       		.byte	-14
  3436 06da 96       		.byte	-106
  3437 06db FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 76
+GAS LISTING /tmp/ccK2IhnQ.s 			page 76
 
 
  3438 06dc E9       		.byte	-23
@@ -4558,7 +4558,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3492 0712 95       		.byte	-107
  3493 0713 FF       		.byte	-1
  3494 0714 EA       		.byte	-22
-GAS LISTING /tmp/ccMFaucZ.s 			page 77
+GAS LISTING /tmp/ccK2IhnQ.s 			page 77
 
 
  3495 0715 F1       		.byte	-15
@@ -4618,7 +4618,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3549 074b FF       		.byte	-1
  3550 074c EC       		.byte	-20
  3551 074d F0       		.byte	-16
-GAS LISTING /tmp/ccMFaucZ.s 			page 78
+GAS LISTING /tmp/ccK2IhnQ.s 			page 78
 
 
  3552 074e 94       		.byte	-108
@@ -4678,7 +4678,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3606 0784 ED       		.byte	-19
  3607 0785 EF       		.byte	-17
  3608 0786 94       		.byte	-108
-GAS LISTING /tmp/ccMFaucZ.s 			page 79
+GAS LISTING /tmp/ccK2IhnQ.s 			page 79
 
 
  3609 0787 FF       		.byte	-1
@@ -4738,7 +4738,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3663 07bd EE       		.byte	-18
  3664 07be 93       		.byte	-109
  3665 07bf FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 80
+GAS LISTING /tmp/ccK2IhnQ.s 			page 80
 
 
  3666 07c0 EF       		.byte	-17
@@ -4798,7 +4798,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3720 07f6 93       		.byte	-109
  3721 07f7 FF       		.byte	-1
  3722 07f8 F0       		.byte	-16
-GAS LISTING /tmp/ccMFaucZ.s 			page 81
+GAS LISTING /tmp/ccK2IhnQ.s 			page 81
 
 
  3723 07f9 EC       		.byte	-20
@@ -4858,7 +4858,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3777 082f FF       		.byte	-1
  3778 0830 F6       		.byte	-10
  3779 0831 E7       		.byte	-25
-GAS LISTING /tmp/ccMFaucZ.s 			page 82
+GAS LISTING /tmp/ccK2IhnQ.s 			page 82
 
 
  3780 0832 91       		.byte	-111
@@ -4918,7 +4918,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3834 0868 F7       		.byte	-9
  3835 0869 E6       		.byte	-26
  3836 086a 90       		.byte	-112
-GAS LISTING /tmp/ccMFaucZ.s 			page 83
+GAS LISTING /tmp/ccK2IhnQ.s 			page 83
 
 
  3837 086b FF       		.byte	-1
@@ -4978,7 +4978,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3891 08a1 E5       		.byte	-27
  3892 08a2 90       		.byte	-112
  3893 08a3 FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 84
+GAS LISTING /tmp/ccK2IhnQ.s 			page 84
 
 
  3894 08a4 F9       		.byte	-7
@@ -5038,7 +5038,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  3948 08da 90       		.byte	-112
  3949 08db FF       		.byte	-1
  3950 08dc FA       		.byte	-6
-GAS LISTING /tmp/ccMFaucZ.s 			page 85
+GAS LISTING /tmp/ccK2IhnQ.s 			page 85
 
 
  3951 08dd E3       		.byte	-29
@@ -5098,7 +5098,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4005 0913 FF       		.byte	-1
  4006 0914 FB       		.byte	-5
  4007 0915 E2       		.byte	-30
-GAS LISTING /tmp/ccMFaucZ.s 			page 86
+GAS LISTING /tmp/ccK2IhnQ.s 			page 86
 
 
  4008 0916 90       		.byte	-112
@@ -5158,7 +5158,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4062 094c FC       		.byte	-4
  4063 094d E1       		.byte	-31
  4064 094e 90       		.byte	-112
-GAS LISTING /tmp/ccMFaucZ.s 			page 87
+GAS LISTING /tmp/ccK2IhnQ.s 			page 87
 
 
  4065 094f FF       		.byte	-1
@@ -5218,7 +5218,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4119 0985 E0       		.byte	-32
  4120 0986 90       		.byte	-112
  4121 0987 FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 88
+GAS LISTING /tmp/ccK2IhnQ.s 			page 88
 
 
  4122 0988 FD       		.byte	-3
@@ -5278,7 +5278,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4176 09be 8C       		.byte	-116
  4177 09bf FF       		.byte	-1
  4178 09c0 FD       		.byte	-3
-GAS LISTING /tmp/ccMFaucZ.s 			page 89
+GAS LISTING /tmp/ccK2IhnQ.s 			page 89
 
 
  4179 09c1 DC       		.byte	-36
@@ -5338,7 +5338,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4233 09f7 FF       		.byte	-1
  4234 09f8 FD       		.byte	-3
  4235 09f9 D7       		.byte	-41
-GAS LISTING /tmp/ccMFaucZ.s 			page 90
+GAS LISTING /tmp/ccK2IhnQ.s 			page 90
 
 
  4236 09fa 86       		.byte	-122
@@ -5398,7 +5398,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4290 0a30 FD       		.byte	-3
  4291 0a31 D2       		.byte	-46
  4292 0a32 80       		.byte	-128
-GAS LISTING /tmp/ccMFaucZ.s 			page 91
+GAS LISTING /tmp/ccK2IhnQ.s 			page 91
 
 
  4293 0a33 FF       		.byte	-1
@@ -5458,7 +5458,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4347 0a69 CC       		.byte	-52
  4348 0a6a 7B       		.byte	123
  4349 0a6b FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 92
+GAS LISTING /tmp/ccK2IhnQ.s 			page 92
 
 
  4350 0a6c FD       		.byte	-3
@@ -5518,7 +5518,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4404 0aa2 6C       		.byte	108
  4405 0aa3 FF       		.byte	-1
  4406 0aa4 FD       		.byte	-3
-GAS LISTING /tmp/ccMFaucZ.s 			page 93
+GAS LISTING /tmp/ccK2IhnQ.s 			page 93
 
 
  4407 0aa5 BC       		.byte	-68
@@ -5578,7 +5578,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4461 0adb FF       		.byte	-1
  4462 0adc FD       		.byte	-3
  4463 0add B7       		.byte	-73
-GAS LISTING /tmp/ccMFaucZ.s 			page 94
+GAS LISTING /tmp/ccK2IhnQ.s 			page 94
 
 
  4464 0ade 67       		.byte	103
@@ -5638,7 +5638,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4518 0b14 FD       		.byte	-3
  4519 0b15 B1       		.byte	-79
  4520 0b16 63       		.byte	99
-GAS LISTING /tmp/ccMFaucZ.s 			page 95
+GAS LISTING /tmp/ccK2IhnQ.s 			page 95
 
 
  4521 0b17 FF       		.byte	-1
@@ -5698,7 +5698,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4575 0b4d AB       		.byte	-85
  4576 0b4e 5F       		.byte	95
  4577 0b4f FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 96
+GAS LISTING /tmp/ccK2IhnQ.s 			page 96
 
 
  4578 0b50 FC       		.byte	-4
@@ -5758,7 +5758,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4632 0b86 5A       		.byte	90
  4633 0b87 FF       		.byte	-1
  4634 0b88 FB       		.byte	-5
-GAS LISTING /tmp/ccMFaucZ.s 			page 97
+GAS LISTING /tmp/ccK2IhnQ.s 			page 97
 
 
  4635 0b89 A4       		.byte	-92
@@ -5818,7 +5818,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4689 0bbf FF       		.byte	-1
  4690 0bc0 FB       		.byte	-5
  4691 0bc1 9D       		.byte	-99
-GAS LISTING /tmp/ccMFaucZ.s 			page 98
+GAS LISTING /tmp/ccK2IhnQ.s 			page 98
 
 
  4692 0bc2 56       		.byte	86
@@ -5878,7 +5878,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4746 0bf8 FA       		.byte	-6
  4747 0bf9 96       		.byte	-106
  4748 0bfa 52       		.byte	82
-GAS LISTING /tmp/ccMFaucZ.s 			page 99
+GAS LISTING /tmp/ccK2IhnQ.s 			page 99
 
 
  4749 0bfb FF       		.byte	-1
@@ -5938,7 +5938,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4803 0c31 82       		.byte	-126
  4804 0c32 49       		.byte	73
  4805 0c33 FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 100
+GAS LISTING /tmp/ccK2IhnQ.s 			page 100
 
 
  4806 0c34 F7       		.byte	-9
@@ -5998,7 +5998,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4860 0c6a 46       		.byte	70
  4861 0c6b FF       		.byte	-1
  4862 0c6c F6       		.byte	-10
-GAS LISTING /tmp/ccMFaucZ.s 			page 101
+GAS LISTING /tmp/ccK2IhnQ.s 			page 101
 
 
  4863 0c6d 7A       		.byte	122
@@ -6058,7 +6058,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4917 0ca3 FF       		.byte	-1
  4918 0ca4 F5       		.byte	-11
  4919 0ca5 73       		.byte	115
-GAS LISTING /tmp/ccMFaucZ.s 			page 102
+GAS LISTING /tmp/ccK2IhnQ.s 			page 102
 
 
  4920 0ca6 44       		.byte	68
@@ -6118,7 +6118,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  4974 0cdc F3       		.byte	-13
  4975 0cdd 6B       		.byte	107
  4976 0cde 43       		.byte	67
-GAS LISTING /tmp/ccMFaucZ.s 			page 103
+GAS LISTING /tmp/ccK2IhnQ.s 			page 103
 
 
  4977 0cdf FF       		.byte	-1
@@ -6178,7 +6178,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5031 0d15 66       		.byte	102
  5032 0d16 44       		.byte	68
  5033 0d17 FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 104
+GAS LISTING /tmp/ccK2IhnQ.s 			page 104
 
 
  5034 0d18 F0       		.byte	-16
@@ -6238,7 +6238,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5088 0d4e 46       		.byte	70
  5089 0d4f FF       		.byte	-1
  5090 0d50 ED       		.byte	-19
-GAS LISTING /tmp/ccMFaucZ.s 			page 105
+GAS LISTING /tmp/ccK2IhnQ.s 			page 105
 
 
  5091 0d51 60       		.byte	96
@@ -6298,7 +6298,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5145 0d87 FF       		.byte	-1
  5146 0d88 EA       		.byte	-22
  5147 0d89 5B       		.byte	91
-GAS LISTING /tmp/ccMFaucZ.s 			page 106
+GAS LISTING /tmp/ccK2IhnQ.s 			page 106
 
 
  5148 0d8a 47       		.byte	71
@@ -6358,7 +6358,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5202 0dc0 E0       		.byte	-32
  5203 0dc1 4D       		.byte	77
  5204 0dc2 4B       		.byte	75
-GAS LISTING /tmp/ccMFaucZ.s 			page 107
+GAS LISTING /tmp/ccK2IhnQ.s 			page 107
 
 
  5205 0dc3 FF       		.byte	-1
@@ -6418,7 +6418,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5259 0df9 48       		.byte	72
  5260 0dfa 4C       		.byte	76
  5261 0dfb FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 108
+GAS LISTING /tmp/ccK2IhnQ.s 			page 108
 
 
  5262 0dfc DC       		.byte	-36
@@ -6478,7 +6478,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5316 0e32 4D       		.byte	77
  5317 0e33 FF       		.byte	-1
  5318 0e34 D8       		.byte	-40
-GAS LISTING /tmp/ccMFaucZ.s 			page 109
+GAS LISTING /tmp/ccK2IhnQ.s 			page 109
 
 
  5319 0e35 42       		.byte	66
@@ -6538,7 +6538,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5373 0e6b FF       		.byte	-1
  5374 0e6c D4       		.byte	-44
  5375 0e6d 3D       		.byte	61
-GAS LISTING /tmp/ccMFaucZ.s 			page 110
+GAS LISTING /tmp/ccK2IhnQ.s 			page 110
 
 
  5376 0e6e 4E       		.byte	78
@@ -6598,7 +6598,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5430 0ea4 CE       		.byte	-50
  5431 0ea5 38       		.byte	56
  5432 0ea6 4D       		.byte	77
-GAS LISTING /tmp/ccMFaucZ.s 			page 111
+GAS LISTING /tmp/ccK2IhnQ.s 			page 111
 
 
  5433 0ea7 FF       		.byte	-1
@@ -6658,7 +6658,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5487 0edd 32       		.byte	50
  5488 0ede 4C       		.byte	76
  5489 0edf FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 112
+GAS LISTING /tmp/ccK2IhnQ.s 			page 112
 
 
  5490 0ee0 C8       		.byte	-56
@@ -6718,7 +6718,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5544 0f16 4B       		.byte	75
  5545 0f17 FF       		.byte	-1
  5546 0f18 C2       		.byte	-62
-GAS LISTING /tmp/ccMFaucZ.s 			page 113
+GAS LISTING /tmp/ccK2IhnQ.s 			page 113
 
 
  5547 0f19 2C       		.byte	44
@@ -6778,7 +6778,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5601 0f4f FF       		.byte	-1
  5602 0f50 B1       		.byte	-79
  5603 0f51 1A       		.byte	26
-GAS LISTING /tmp/ccMFaucZ.s 			page 114
+GAS LISTING /tmp/ccK2IhnQ.s 			page 114
 
 
  5604 0f52 46       		.byte	70
@@ -6838,7 +6838,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5658 0f88 AB       		.byte	-85
  5659 0f89 14       		.byte	20
  5660 0f8a 45       		.byte	69
-GAS LISTING /tmp/ccMFaucZ.s 			page 115
+GAS LISTING /tmp/ccK2IhnQ.s 			page 115
 
 
  5661 0f8b FF       		.byte	-1
@@ -6898,7 +6898,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5715 0fc1 0C       		.byte	12
  5716 0fc2 43       		.byte	67
  5717 0fc3 FF       		.byte	-1
-GAS LISTING /tmp/ccMFaucZ.s 			page 116
+GAS LISTING /tmp/ccK2IhnQ.s 			page 116
 
 
  5718 0fc4 A4       		.byte	-92
@@ -6958,7 +6958,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5772 0ffa 42       		.byte	66
  5773 0ffb FF       		.byte	-1
  5774 0ffc 9E       		.byte	-98
-GAS LISTING /tmp/ccMFaucZ.s 			page 117
+GAS LISTING /tmp/ccK2IhnQ.s 			page 117
 
 
  5775 0ffd 02       		.byte	2
@@ -7018,7 +7018,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5817      00000000 
  5818              	.LLST2:
  5819 006c 00000000 		.quad	.LVL0-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 118
+GAS LISTING /tmp/ccK2IhnQ.s 			page 118
 
 
  5819      00000000 
@@ -7078,7 +7078,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5854 011e 0100     		.value	0x1
  5855 0120 5D       		.byte	0x5d
  5856 0121 1A010000 		.quad	.LVL11-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 119
+GAS LISTING /tmp/ccK2IhnQ.s 			page 119
 
 
  5856      00000000 
@@ -7138,7 +7138,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5897 01ad B87F     		.sleb128 -72
  5898 01af 06       		.byte	0x6
  5899 01b0 22       		.byte	0x22
-GAS LISTING /tmp/ccMFaucZ.s 			page 120
+GAS LISTING /tmp/ccK2IhnQ.s 			page 120
 
 
  5900 01b1 32       		.byte	0x32
@@ -7198,7 +7198,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5944 0222 40010000 		.quad	.LVL13-.Ltext0
  5944      00000000 
  5945 022a BD010000 		.quad	.LVL18-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 121
+GAS LISTING /tmp/ccK2IhnQ.s 			page 121
 
 
  5945      00000000 
@@ -7258,7 +7258,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  5981 02d7 5E020000 		.quad	.LVL24-.Ltext0
  5981      00000000 
  5982 02df 69020000 		.quad	.LFE30-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 122
+GAS LISTING /tmp/ccK2IhnQ.s 			page 122
 
 
  5982      00000000 
@@ -7318,7 +7318,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6017      00000000 
  6018 0391 53020000 		.quad	.LVL23-.Ltext0
  6018      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 123
+GAS LISTING /tmp/ccK2IhnQ.s 			page 123
 
 
  6019 0399 0100     		.value	0x1
@@ -7378,7 +7378,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6065 0401 08       		.byte	0x8
  6066 0402 20       		.byte	0x20
  6067 0403 24       		.byte	0x24
-GAS LISTING /tmp/ccMFaucZ.s 			page 124
+GAS LISTING /tmp/ccK2IhnQ.s 			page 124
 
 
  6068 0404 08       		.byte	0x8
@@ -7438,7 +7438,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6107 0495 B7020000 		.quad	.LVL31-.Ltext0
  6107      00000000 
  6108 049d 0100     		.value	0x1
-GAS LISTING /tmp/ccMFaucZ.s 			page 125
+GAS LISTING /tmp/ccK2IhnQ.s 			page 125
 
 
  6109 049f 55       		.byte	0x55
@@ -7498,7 +7498,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6144      00000000 
  6145 054d 9C030000 		.quad	.LFE41-.Ltext0
  6145      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 126
+GAS LISTING /tmp/ccK2IhnQ.s 			page 126
 
 
  6146 0555 0100     		.value	0x1
@@ -7558,7 +7558,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6182 05fd 8D030000 		.quad	.LVL49-.Ltext0
  6182      00000000 
  6183 0605 9C030000 		.quad	.LFE41-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 127
+GAS LISTING /tmp/ccK2IhnQ.s 			page 127
 
 
  6183      00000000 
@@ -7618,7 +7618,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6219 06b4 53       		.byte	0x53
  6220 06b5 00000000 		.quad	0x0
  6220      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 128
+GAS LISTING /tmp/ccK2IhnQ.s 			page 128
 
 
  6221 06bd 00000000 		.quad	0x0
@@ -7678,7 +7678,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6256 0769 51       		.byte	0x51
  6257 076a C4040000 		.quad	.LVL70-.Ltext0
  6257      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 129
+GAS LISTING /tmp/ccK2IhnQ.s 			page 129
 
 
  6258 0772 D9040000 		.quad	.LFE33-.Ltext0
@@ -7738,7 +7738,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6299 07f8 0F00     		.value	0xf
  6300 07fa 75       		.byte	0x75
  6301 07fb 00       		.sleb128 0
-GAS LISTING /tmp/ccMFaucZ.s 			page 130
+GAS LISTING /tmp/ccK2IhnQ.s 			page 130
 
 
  6302 07fc 08       		.byte	0x8
@@ -7798,7 +7798,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6350 0857 20       		.byte	0x20
  6351 0858 25       		.byte	0x25
  6352 0859 70       		.byte	0x70
-GAS LISTING /tmp/ccMFaucZ.s 			page 131
+GAS LISTING /tmp/ccK2IhnQ.s 			page 131
 
 
  6353 085a 00       		.sleb128 0
@@ -7858,7 +7858,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6398      00000000 
  6399 08c9 31040000 		.quad	.LVL59-.Ltext0
  6399      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 132
+GAS LISTING /tmp/ccK2IhnQ.s 			page 132
 
 
  6400 08d1 0100     		.value	0x1
@@ -7918,7 +7918,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6435      00000000 
  6436 097e 8F050000 		.quad	.LVL82-.Ltext0
  6436      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 133
+GAS LISTING /tmp/ccK2IhnQ.s 			page 133
 
 
  6437 0986 0100     		.value	0x1
@@ -7978,7 +7978,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6472      00000000 
  6473 0a33 8D060000 		.quad	.LVL102-.Ltext0
  6473      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 134
+GAS LISTING /tmp/ccK2IhnQ.s 			page 134
 
 
  6474 0a3b 0100     		.value	0x1
@@ -8038,7 +8038,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6510              	.LLST45:
  6511 0ae3 B8050000 		.quad	.LVL86-.Ltext0
  6511      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 135
+GAS LISTING /tmp/ccK2IhnQ.s 			page 135
 
 
  6512 0aeb 8C060000 		.quad	.LVL101-.Ltext0
@@ -8098,7 +8098,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6548      00000000 
  6549 0b94 7E060000 		.quad	.LVL100-.Ltext0
  6549      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 136
+GAS LISTING /tmp/ccK2IhnQ.s 			page 136
 
 
  6550 0b9c 0300     		.value	0x3
@@ -8158,7 +8158,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6586 0c41 0100     		.value	0x1
  6587 0c43 62       		.byte	0x62
  6588 0c44 00000000 		.quad	0x0
-GAS LISTING /tmp/ccMFaucZ.s 			page 137
+GAS LISTING /tmp/ccK2IhnQ.s 			page 137
 
 
  6588      00000000 
@@ -8218,7 +8218,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6623 0cf6 0100     		.value	0x1
  6624 0cf8 51       		.byte	0x51
  6625 0cf9 F8060000 		.quad	.LVL111-1-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 138
+GAS LISTING /tmp/ccK2IhnQ.s 			page 138
 
 
  6625      00000000 
@@ -8278,7 +8278,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6660 0dab 0100     		.value	0x1
  6661 0dad 54       		.byte	0x54
  6662 0dae 7C070000 		.quad	.LVL120-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 139
+GAS LISTING /tmp/ccK2IhnQ.s 			page 139
 
 
  6662      00000000 
@@ -8338,7 +8338,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6697      00000000 
  6698 0e61 0100     		.value	0x1
  6699 0e63 54       		.byte	0x54
-GAS LISTING /tmp/ccMFaucZ.s 			page 140
+GAS LISTING /tmp/ccK2IhnQ.s 			page 140
 
 
  6700 0e64 C1070000 		.quad	.LVL127-1-.Ltext0
@@ -8398,7 +8398,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6734      00000000 
  6735 0f16 0500     		.value	0x5
  6736 0f18 75       		.byte	0x75
-GAS LISTING /tmp/ccMFaucZ.s 			page 141
+GAS LISTING /tmp/ccK2IhnQ.s 			page 141
 
 
  6737 0f19 00       		.sleb128 0
@@ -8458,7 +8458,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6777 0fa6 20       		.uleb128 0x20
  6778 0fa7 00000000 		.quad	0x0
  6778      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 142
+GAS LISTING /tmp/ccK2IhnQ.s 			page 142
 
 
  6779 0faf 00000000 		.quad	0x0
@@ -8518,7 +8518,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6818 1041 75       		.byte	0x75
  6819 1042 00       		.sleb128 0
  6820 1043 04080000 		.quad	.LVL135-1-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 143
+GAS LISTING /tmp/ccK2IhnQ.s 			page 143
 
 
  6820      00000000 
@@ -8578,7 +8578,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6855      00000000 
  6856              	.LLST71:
  6857 10f6 37080000 		.quad	.LVL140-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 144
+GAS LISTING /tmp/ccK2IhnQ.s 			page 144
 
 
  6857      00000000 
@@ -8638,7 +8638,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6893      00000000 
  6894 11a5 31090000 		.quad	.LVL152-.Ltext0
  6894      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 145
+GAS LISTING /tmp/ccK2IhnQ.s 			page 145
 
 
  6895 11ad 0100     		.value	0x1
@@ -8698,7 +8698,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6931 1256 0200     		.value	0x2
  6932 1258 91       		.byte	0x91
  6933 1259 40       		.sleb128 -64
-GAS LISTING /tmp/ccMFaucZ.s 			page 146
+GAS LISTING /tmp/ccK2IhnQ.s 			page 146
 
 
  6934 125a 00000000 		.quad	0x0
@@ -8758,7 +8758,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  6972 12f2 63090000 		.quad	.LVL156-.Ltext0
  6972      00000000 
  6973 12fa 6E090000 		.quad	.LVL158-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 147
+GAS LISTING /tmp/ccK2IhnQ.s 			page 147
 
 
  6973      00000000 
@@ -8818,7 +8818,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7010      00000000 
  7011 13a3 98090000 		.quad	.LVL162-.Ltext0
  7011      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 148
+GAS LISTING /tmp/ccK2IhnQ.s 			page 148
 
 
  7012 13ab 0200     		.value	0x2
@@ -8878,7 +8878,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7050 1447 0100     		.value	0x1
  7051 1449 56       		.byte	0x56
  7052 144a 00000000 		.quad	0x0
-GAS LISTING /tmp/ccMFaucZ.s 			page 149
+GAS LISTING /tmp/ccK2IhnQ.s 			page 149
 
 
  7052      00000000 
@@ -8938,7 +8938,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7095 0034 03       		.uleb128 0x3
  7096 0035 00000000 		.long	.LASF4
  7097 0039 03       		.byte	0x3
-GAS LISTING /tmp/ccMFaucZ.s 			page 150
+GAS LISTING /tmp/ccK2IhnQ.s 			page 150
 
 
  7098 003a D3       		.byte	0xd3
@@ -8998,7 +8998,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7152 009c 2B       		.byte	0x2b
  7153 009d 4D000000 		.long	0x4d
  7154 00a1 05       		.uleb128 0x5
-GAS LISTING /tmp/ccMFaucZ.s 			page 151
+GAS LISTING /tmp/ccK2IhnQ.s 			page 151
 
 
  7155 00a2 10       		.byte	0x10
@@ -9058,7 +9058,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7209 0104 00000000 		.long	.LASF9
  7210 0108 03       		.uleb128 0x3
  7211 0109 00000000 		.long	.LASF10
-GAS LISTING /tmp/ccMFaucZ.s 			page 152
+GAS LISTING /tmp/ccK2IhnQ.s 			page 152
 
 
  7212 010d 02       		.byte	0x2
@@ -9118,7 +9118,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7264 0172 84       		.byte	0x84
  7265 0173 8F000000 		.long	0x8f
  7266 0177 00000000 		.long	.LLST0
-GAS LISTING /tmp/ccMFaucZ.s 			page 153
+GAS LISTING /tmp/ccK2IhnQ.s 			page 153
 
 
  7267 017b 0C       		.uleb128 0xc
@@ -9178,7 +9178,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7321 01fb 01       		.byte	0x1
  7322 01fc 99       		.byte	0x99
  7323 01fd 2C020000 		.long	0x22c
-GAS LISTING /tmp/ccMFaucZ.s 			page 154
+GAS LISTING /tmp/ccK2IhnQ.s 			page 154
 
 
  7324 0201 00000000 		.long	.LLST9
@@ -9238,7 +9238,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7376 026f 01       		.byte	0x1
  7377 0270 7F       		.byte	0x7f
  7378 0271 8F000000 		.long	0x8f
-GAS LISTING /tmp/ccMFaucZ.s 			page 155
+GAS LISTING /tmp/ccK2IhnQ.s 			page 155
 
 
  7379 0275 01       		.byte	0x1
@@ -9298,7 +9298,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7431 02e1 27020000 		.long	0x227
  7432 02e5 00000000 		.long	.LLST14
  7433 02e9 0F       		.uleb128 0xf
-GAS LISTING /tmp/ccMFaucZ.s 			page 156
+GAS LISTING /tmp/ccK2IhnQ.s 			page 156
 
 
  7434 02ea 793000   		.string	"y0"
@@ -9358,7 +9358,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7487 0366 00000000 		.quad	.LFE29
  7487      00000000 
  7488 036e 01       		.byte	0x1
-GAS LISTING /tmp/ccMFaucZ.s 			page 157
+GAS LISTING /tmp/ccK2IhnQ.s 			page 157
 
 
  7489 036f 9C       		.byte	0x9c
@@ -9418,7 +9418,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7541 03d5 00000000 		.long	.LASF26
  7542 03d9 01       		.byte	0x1
  7543 03da 7201     		.value	0x172
-GAS LISTING /tmp/ccMFaucZ.s 			page 158
+GAS LISTING /tmp/ccK2IhnQ.s 			page 158
 
 
  7544 03dc 01       		.byte	0x1
@@ -9478,7 +9478,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7592 045d 0C       		.uleb128 0xc
  7593 045e 6800     		.string	"h"
  7594 0460 01       		.byte	0x1
-GAS LISTING /tmp/ccMFaucZ.s 			page 159
+GAS LISTING /tmp/ccK2IhnQ.s 			page 159
 
 
  7595 0461 45       		.byte	0x45
@@ -9538,7 +9538,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7646      00000000 
  7647 04ea 00000000 		.quad	.LFE33
  7647      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 160
+GAS LISTING /tmp/ccK2IhnQ.s 			page 160
 
 
  7648 04f2 01       		.byte	0x1
@@ -9598,7 +9598,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7700 0575 8F000000 		.long	0x8f
  7701 0579 00000000 		.long	.LLST36
  7702 057d 0E       		.uleb128 0xe
-GAS LISTING /tmp/ccMFaucZ.s 			page 161
+GAS LISTING /tmp/ccK2IhnQ.s 			page 161
 
 
  7703 057e 00000000 		.long	.Ldebug_ranges0+0xc0
@@ -9658,7 +9658,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7755 05f3 1C       		.uleb128 0x1c
  7756 05f4 00000000 		.long	.LASF34
  7757 05f8 01       		.byte	0x1
-GAS LISTING /tmp/ccMFaucZ.s 			page 162
+GAS LISTING /tmp/ccK2IhnQ.s 			page 162
 
 
  7758 05f9 E3       		.byte	0xe3
@@ -9718,7 +9718,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7808 066e 7700     		.string	"w"
  7809 0670 01       		.byte	0x1
  7810 0671 1E01     		.value	0x11e
-GAS LISTING /tmp/ccMFaucZ.s 			page 163
+GAS LISTING /tmp/ccK2IhnQ.s 			page 163
 
 
  7811 0673 8F000000 		.long	0x8f
@@ -9778,7 +9778,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7863 06ec 38040000 		.long	0x438
  7864 06f0 00000000 		.long	.LLST41
  7865 06f4 00       		.byte	0x0
-GAS LISTING /tmp/ccMFaucZ.s 			page 164
+GAS LISTING /tmp/ccK2IhnQ.s 			page 164
 
 
  7866 06f5 15       		.uleb128 0x15
@@ -9838,7 +9838,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7916 0780 00000000 		.long	.LLST47
  7917 0784 17       		.uleb128 0x17
  7918 0785 7800     		.string	"x"
-GAS LISTING /tmp/ccMFaucZ.s 			page 165
+GAS LISTING /tmp/ccK2IhnQ.s 			page 165
 
 
  7919 0787 01       		.byte	0x1
@@ -9898,7 +9898,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  7971 0805 8F000000 		.long	0x8f
  7972 0809 01       		.byte	0x1
  7973 080a 55       		.byte	0x55
-GAS LISTING /tmp/ccMFaucZ.s 			page 166
+GAS LISTING /tmp/ccK2IhnQ.s 			page 166
 
 
  7974 080b 00       		.byte	0x0
@@ -9958,7 +9958,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8024 088d 686D00   		.string	"hm"
  8025 0890 01       		.byte	0x1
  8026 0891 36       		.byte	0x36
-GAS LISTING /tmp/ccMFaucZ.s 			page 167
+GAS LISTING /tmp/ccK2IhnQ.s 			page 167
 
 
  8027 0892 16020000 		.long	0x216
@@ -10018,7 +10018,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8078 0910 00000000 		.quad	.LFE43
  8078      00000000 
  8079 0918 01       		.byte	0x1
-GAS LISTING /tmp/ccMFaucZ.s 			page 168
+GAS LISTING /tmp/ccK2IhnQ.s 			page 168
 
 
  8080 0919 9C       		.byte	0x9c
@@ -10078,7 +10078,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8132 09a2 10       		.uleb128 0x10
  8133 09a3 00000000 		.long	.LASF53
  8134 09a7 01       		.byte	0x1
-GAS LISTING /tmp/ccMFaucZ.s 			page 169
+GAS LISTING /tmp/ccK2IhnQ.s 			page 169
 
 
  8135 09a8 5B       		.byte	0x5b
@@ -10138,7 +10138,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8189 0a17 58       		.byte	0x58
  8190 0a18 27020000 		.long	0x227
  8191 0a1c 24       		.sleb128 36
-GAS LISTING /tmp/ccMFaucZ.s 			page 170
+GAS LISTING /tmp/ccK2IhnQ.s 			page 170
 
 
  8192 0a1d 00       		.byte	0x0
@@ -10198,7 +10198,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8244 0a97 0D       		.uleb128 0xd
  8245 0a98 00000000 		.long	.LASF18
  8246 0a9c 01       		.byte	0x1
-GAS LISTING /tmp/ccMFaucZ.s 			page 171
+GAS LISTING /tmp/ccK2IhnQ.s 			page 171
 
 
  8247 0a9d 51       		.byte	0x51
@@ -10258,7 +10258,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8301 0b0f 00000000 		.quad	.LFB25
  8301      00000000 
  8302 0b17 00000000 		.quad	.LFE25
-GAS LISTING /tmp/ccMFaucZ.s 			page 172
+GAS LISTING /tmp/ccK2IhnQ.s 			page 172
 
 
  8302      00000000 
@@ -10297,7 +10297,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8335 0b56 27       		.uleb128 0x27
  8336 0b57 00000000 		.long	.LASF60
  8337 0b5b 02       		.byte	0x2
- 8338 0b5c AC       		.byte	0xac
+ 8338 0b5c B1       		.byte	0xb1
  8339 0b5d A8050000 		.long	0x5a8
  8340 0b61 01       		.byte	0x1
  8341 0b62 01       		.byte	0x1
@@ -10318,7 +10318,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8356 0b80 00000000 		.quad	stamp_default_4_data
  8356      00000000 
  8357 0b88 26       		.uleb128 0x26
-GAS LISTING /tmp/ccMFaucZ.s 			page 173
+GAS LISTING /tmp/ccK2IhnQ.s 			page 173
 
 
  8358 0b89 00000000 		.long	.LASF57
@@ -10378,7 +10378,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8408 0007 03       		.uleb128 0x3
  8409 0008 0E       		.uleb128 0xe
  8410 0009 1B       		.uleb128 0x1b
-GAS LISTING /tmp/ccMFaucZ.s 			page 174
+GAS LISTING /tmp/ccK2IhnQ.s 			page 174
 
 
  8411 000a 0E       		.uleb128 0xe
@@ -10438,7 +10438,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8465 0040 13       		.uleb128 0x13
  8466 0041 00       		.byte	0x0
  8467 0042 00       		.byte	0x0
-GAS LISTING /tmp/ccMFaucZ.s 			page 175
+GAS LISTING /tmp/ccK2IhnQ.s 			page 175
 
 
  8468 0043 06       		.uleb128 0x6
@@ -10498,7 +10498,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8522 0079 0B       		.uleb128 0xb
  8523 007a 3B       		.uleb128 0x3b
  8524 007b 0B       		.uleb128 0xb
-GAS LISTING /tmp/ccMFaucZ.s 			page 176
+GAS LISTING /tmp/ccK2IhnQ.s 			page 176
 
 
  8525 007c 27       		.uleb128 0x27
@@ -10558,7 +10558,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8579 00b2 06       		.uleb128 0x6
  8580 00b3 00       		.byte	0x0
  8581 00b4 00       		.byte	0x0
-GAS LISTING /tmp/ccMFaucZ.s 			page 177
+GAS LISTING /tmp/ccK2IhnQ.s 			page 177
 
 
  8582 00b5 0E       		.uleb128 0xe
@@ -10618,7 +10618,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8636 00eb 40       		.uleb128 0x40
  8637 00ec 0A       		.uleb128 0xa
  8638 00ed 01       		.uleb128 0x1
-GAS LISTING /tmp/ccMFaucZ.s 			page 178
+GAS LISTING /tmp/ccK2IhnQ.s 			page 178
 
 
  8639 00ee 13       		.uleb128 0x13
@@ -10678,7 +10678,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8693 0124 00       		.byte	0x0
  8694 0125 00       		.byte	0x0
  8695 0126 15       		.uleb128 0x15
-GAS LISTING /tmp/ccMFaucZ.s 			page 179
+GAS LISTING /tmp/ccK2IhnQ.s 			page 179
 
 
  8696 0127 2E       		.uleb128 0x2e
@@ -10738,7 +10738,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8750 015d 18       		.uleb128 0x18
  8751 015e 34       		.uleb128 0x34
  8752 015f 00       		.byte	0x0
-GAS LISTING /tmp/ccMFaucZ.s 			page 180
+GAS LISTING /tmp/ccK2IhnQ.s 			page 180
 
 
  8753 0160 03       		.uleb128 0x3
@@ -10798,7 +10798,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8807 0196 05       		.uleb128 0x5
  8808 0197 49       		.uleb128 0x49
  8809 0198 13       		.uleb128 0x13
-GAS LISTING /tmp/ccMFaucZ.s 			page 181
+GAS LISTING /tmp/ccK2IhnQ.s 			page 181
 
 
  8810 0199 00       		.byte	0x0
@@ -10858,7 +10858,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8864 01cf 00       		.byte	0x0
  8865 01d0 00       		.byte	0x0
  8866 01d1 20       		.uleb128 0x20
-GAS LISTING /tmp/ccMFaucZ.s 			page 182
+GAS LISTING /tmp/ccK2IhnQ.s 			page 182
 
 
  8867 01d2 05       		.uleb128 0x5
@@ -10918,7 +10918,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8921 0208 01       		.uleb128 0x1
  8922 0209 13       		.uleb128 0x13
  8923 020a 00       		.byte	0x0
-GAS LISTING /tmp/ccMFaucZ.s 			page 183
+GAS LISTING /tmp/ccK2IhnQ.s 			page 183
 
 
  8924 020b 00       		.byte	0x0
@@ -10978,7 +10978,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  8978 0241 03       		.uleb128 0x3
  8979 0242 0E       		.uleb128 0xe
  8980 0243 3A       		.uleb128 0x3a
-GAS LISTING /tmp/ccMFaucZ.s 			page 184
+GAS LISTING /tmp/ccK2IhnQ.s 			page 184
 
 
  8981 0244 0B       		.uleb128 0xb
@@ -11038,7 +11038,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9020      77656967 
  9020      68746564 
  9021 008e D3030000 		.long	0x3d3
-GAS LISTING /tmp/ccMFaucZ.s 			page 185
+GAS LISTING /tmp/ccK2IhnQ.s 			page 185
 
 
  9022 0092 68656174 		.string	"heatmap_colorscheme_free"
@@ -11098,7 +11098,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9040      6D61705F 
  9040      7374616D 
  9040      705F6765 
-GAS LISTING /tmp/ccMFaucZ.s 			page 186
+GAS LISTING /tmp/ccK2IhnQ.s 			page 186
 
 
  9040      6E5F6E6F 
@@ -11158,7 +11158,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9066 002b 68656174 		.string	"heatmap_stamp_t"
  9066      6D61705F 
  9066      7374616D 
-GAS LISTING /tmp/ccMFaucZ.s 			page 187
+GAS LISTING /tmp/ccK2IhnQ.s 			page 187
 
 
  9066      705F7400 
@@ -11218,7 +11218,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9097      00000000 
  9098 0060 64010000 		.quad	.LBB6-.Ltext0
  9098      00000000 
-GAS LISTING /tmp/ccMFaucZ.s 			page 188
+GAS LISTING /tmp/ccK2IhnQ.s 			page 188
 
 
  9099 0068 53020000 		.quad	.LBE6-.Ltext0
@@ -11278,7 +11278,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9126 0140 61060000 		.quad	.LBB19-.Ltext0
  9126      00000000 
  9127 0148 65060000 		.quad	.LBE19-.Ltext0
-GAS LISTING /tmp/ccMFaucZ.s 			page 189
+GAS LISTING /tmp/ccK2IhnQ.s 			page 189
 
 
  9127      00000000 
@@ -11338,7 +11338,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9150      7400
  9151              	.LASF13:
  9152 00ab 7369676E 		.string	"signed char"
-GAS LISTING /tmp/ccMFaucZ.s 			page 190
+GAS LISTING /tmp/ccK2IhnQ.s 			page 190
 
 
  9152      65642063 
@@ -11398,7 +11398,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9176      20696E74 
  9176      00
  9177              	.LASF56:
-GAS LISTING /tmp/ccMFaucZ.s 			page 191
+GAS LISTING /tmp/ccK2IhnQ.s 			page 191
 
 
  9178 014c 7374616D 		.string	"stamp_default_4_data"
@@ -11458,7 +11458,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9199              	.LASF47:
  9200 01fe 636F7079 		.string	"copy"
  9200      00
-GAS LISTING /tmp/ccMFaucZ.s 			page 192
+GAS LISTING /tmp/ccK2IhnQ.s 			page 192
 
 
  9201              	.LASF51:
@@ -11518,7 +11518,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9222      20636861 
  9222      7200
  9223              	.LASF14:
-GAS LISTING /tmp/ccMFaucZ.s 			page 193
+GAS LISTING /tmp/ccK2IhnQ.s 			page 193
 
 
  9224 02df 73686F72 		.string	"short int"
@@ -11578,7 +11578,7 @@ GAS LISTING /tmp/ccMFaucZ.s 			page 1
  9246      6E657700 
  9247              	.LASF25:
  9248 03b0 64697374 		.string	"dist"
-GAS LISTING /tmp/ccMFaucZ.s 			page 194
+GAS LISTING /tmp/ccK2IhnQ.s 			page 194
 
 
  9248      00

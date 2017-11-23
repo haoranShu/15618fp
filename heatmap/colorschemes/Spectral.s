@@ -1,4 +1,4 @@
-GAS LISTING /tmp/cc4asFIX.s 			page 1
+GAS LISTING /tmp/ccrBp1WT.s 			page 1
 
 
    1              		.file	"Spectral.c"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
   45              	soft:
   46 0010 00000000 		.quad	soft_data
   46      00000000 
-GAS LISTING /tmp/cc4asFIX.s 			page 2
+GAS LISTING /tmp/ccrBp1WT.s 			page 2
 
 
   47 0018 01040000 		.quad	1025
@@ -118,7 +118,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
   96 001f FF       		.byte	-1
   97 0020 FD       		.byte	-3
   98 0021 AE       		.byte	-82
-GAS LISTING /tmp/cc4asFIX.s 			page 3
+GAS LISTING /tmp/ccrBp1WT.s 			page 3
 
 
   99 0022 61       		.byte	97
@@ -178,7 +178,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  150 0061 53       		.byte	83
  151 0062 A5       		.byte	-91
  152 0063 34       		.byte	52
-GAS LISTING /tmp/cc4asFIX.s 			page 4
+GAS LISTING /tmp/ccrBp1WT.s 			page 4
 
 
  153 0064 59       		.byte	89
@@ -238,7 +238,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  207 009a AB       		.byte	-85
  208 009b 9C       		.byte	-100
  209 009c 50       		.byte	80
-GAS LISTING /tmp/cc4asFIX.s 			page 5
+GAS LISTING /tmp/ccrBp1WT.s 			page 5
 
 
  210 009d 5D       		.byte	93
@@ -298,7 +298,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  264 00d3 FF       		.byte	-1
  265 00d4 48       		.byte	72
  266 00d5 65       		.byte	101
-GAS LISTING /tmp/cc4asFIX.s 			page 6
+GAS LISTING /tmp/ccrBp1WT.s 			page 6
 
 
  267 00d6 B1       		.byte	-79
@@ -358,7 +358,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  321 010c 40       		.byte	64
  322 010d 6D       		.byte	109
  323 010e B5       		.byte	-75
-GAS LISTING /tmp/cc4asFIX.s 			page 7
+GAS LISTING /tmp/ccrBp1WT.s 			page 7
 
 
  324 010f FF       		.byte	-1
@@ -418,7 +418,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  378 0145 74       		.byte	116
  379 0146 B8       		.byte	-72
  380 0147 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 8
+GAS LISTING /tmp/ccrBp1WT.s 			page 8
 
 
  381 0148 38       		.byte	56
@@ -478,7 +478,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  435 017e BA       		.byte	-70
  436 017f FF       		.byte	-1
  437 0180 33       		.byte	51
-GAS LISTING /tmp/cc4asFIX.s 			page 9
+GAS LISTING /tmp/ccrBp1WT.s 			page 9
 
 
  438 0181 7C       		.byte	124
@@ -538,7 +538,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  492 01b7 FF       		.byte	-1
  493 01b8 31       		.byte	49
  494 01b9 83       		.byte	-125
-GAS LISTING /tmp/cc4asFIX.s 			page 10
+GAS LISTING /tmp/ccrBp1WT.s 			page 10
 
 
  495 01ba BC       		.byte	-68
@@ -598,7 +598,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  549 01f0 2A       		.byte	42
  550 01f1 8B       		.byte	-117
  551 01f2 BE       		.byte	-66
-GAS LISTING /tmp/cc4asFIX.s 			page 11
+GAS LISTING /tmp/ccrBp1WT.s 			page 11
 
 
  552 01f3 FF       		.byte	-1
@@ -658,7 +658,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  606 0229 94       		.byte	-108
  607 022a BF       		.byte	-65
  608 022b FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 12
+GAS LISTING /tmp/ccrBp1WT.s 			page 12
 
 
  609 022c 09       		.byte	9
@@ -718,7 +718,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  663 0262 BE       		.byte	-66
  664 0263 FF       		.byte	-1
  665 0264 00       		.byte	0
-GAS LISTING /tmp/cc4asFIX.s 			page 13
+GAS LISTING /tmp/ccrBp1WT.s 			page 13
 
 
  666 0265 9E       		.byte	-98
@@ -778,7 +778,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  720 029b FF       		.byte	-1
  721 029c 00       		.byte	0
  722 029d A6       		.byte	-90
-GAS LISTING /tmp/cc4asFIX.s 			page 14
+GAS LISTING /tmp/ccrBp1WT.s 			page 14
 
 
  723 029e BB       		.byte	-69
@@ -838,7 +838,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  777 02d4 1C       		.byte	28
  778 02d5 AE       		.byte	-82
  779 02d6 B7       		.byte	-73
-GAS LISTING /tmp/cc4asFIX.s 			page 15
+GAS LISTING /tmp/ccrBp1WT.s 			page 15
 
 
  780 02d7 FF       		.byte	-1
@@ -898,7 +898,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  834 030d B5       		.byte	-75
  835 030e B1       		.byte	-79
  836 030f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 16
+GAS LISTING /tmp/ccrBp1WT.s 			page 16
 
 
  837 0310 3A       		.byte	58
@@ -958,7 +958,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  891 0346 AA       		.byte	-86
  892 0347 FF       		.byte	-1
  893 0348 52       		.byte	82
-GAS LISTING /tmp/cc4asFIX.s 			page 17
+GAS LISTING /tmp/ccrBp1WT.s 			page 17
 
 
  894 0349 BC       		.byte	-68
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  948 037f FF       		.byte	-1
  949 0380 67       		.byte	103
  950 0381 C2       		.byte	-62
-GAS LISTING /tmp/cc4asFIX.s 			page 18
+GAS LISTING /tmp/ccrBp1WT.s 			page 18
 
 
  951 0382 A4       		.byte	-92
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1005 03b8 70       		.byte	112
  1006 03b9 C6       		.byte	-58
  1007 03ba A4       		.byte	-92
-GAS LISTING /tmp/cc4asFIX.s 			page 19
+GAS LISTING /tmp/ccrBp1WT.s 			page 19
 
 
  1008 03bb FF       		.byte	-1
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1062 03f1 CA       		.byte	-54
  1063 03f2 A4       		.byte	-92
  1064 03f3 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 20
+GAS LISTING /tmp/ccrBp1WT.s 			page 20
 
 
  1065 03f4 7B       		.byte	123
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1119 042a A3       		.byte	-93
  1120 042b FF       		.byte	-1
  1121 042c 84       		.byte	-124
-GAS LISTING /tmp/cc4asFIX.s 			page 21
+GAS LISTING /tmp/ccrBp1WT.s 			page 21
 
 
  1122 042d CE       		.byte	-50
@@ -1258,7 +1258,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1176 0463 FF       		.byte	-1
  1177 0464 8D       		.byte	-115
  1178 0465 D2       		.byte	-46
-GAS LISTING /tmp/cc4asFIX.s 			page 22
+GAS LISTING /tmp/ccrBp1WT.s 			page 22
 
 
  1179 0466 A3       		.byte	-93
@@ -1318,7 +1318,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1233 049c 97       		.byte	-105
  1234 049d D5       		.byte	-43
  1235 049e A3       		.byte	-93
-GAS LISTING /tmp/cc4asFIX.s 			page 23
+GAS LISTING /tmp/ccrBp1WT.s 			page 23
 
 
  1236 049f FF       		.byte	-1
@@ -1378,7 +1378,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1290 04d5 D9       		.byte	-39
  1291 04d6 A3       		.byte	-93
  1292 04d7 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 24
+GAS LISTING /tmp/ccrBp1WT.s 			page 24
 
 
  1293 04d8 A1       		.byte	-95
@@ -1438,7 +1438,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1347 050e A3       		.byte	-93
  1348 050f FF       		.byte	-1
  1349 0510 AA       		.byte	-86
-GAS LISTING /tmp/cc4asFIX.s 			page 25
+GAS LISTING /tmp/ccrBp1WT.s 			page 25
 
 
  1350 0511 DC       		.byte	-36
@@ -1498,7 +1498,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1404 0547 FF       		.byte	-1
  1405 0548 B1       		.byte	-79
  1406 0549 E0       		.byte	-32
-GAS LISTING /tmp/cc4asFIX.s 			page 26
+GAS LISTING /tmp/ccrBp1WT.s 			page 26
 
 
  1407 054a A2       		.byte	-94
@@ -1558,7 +1558,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1461 0580 B8       		.byte	-72
  1462 0581 E4       		.byte	-28
  1463 0582 A0       		.byte	-96
-GAS LISTING /tmp/cc4asFIX.s 			page 27
+GAS LISTING /tmp/ccrBp1WT.s 			page 27
 
 
  1464 0583 FF       		.byte	-1
@@ -1618,7 +1618,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1518 05b9 E7       		.byte	-25
  1519 05ba 9F       		.byte	-97
  1520 05bb FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 28
+GAS LISTING /tmp/ccrBp1WT.s 			page 28
 
 
  1521 05bc C1       		.byte	-63
@@ -1678,7 +1678,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1575 05f2 9D       		.byte	-99
  1576 05f3 FF       		.byte	-1
  1577 05f4 C9       		.byte	-55
-GAS LISTING /tmp/cc4asFIX.s 			page 29
+GAS LISTING /tmp/ccrBp1WT.s 			page 29
 
 
  1578 05f5 EB       		.byte	-21
@@ -1738,7 +1738,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1632 062b FF       		.byte	-1
  1633 062c D1       		.byte	-47
  1634 062d EE       		.byte	-18
-GAS LISTING /tmp/cc4asFIX.s 			page 30
+GAS LISTING /tmp/ccrBp1WT.s 			page 30
 
 
  1635 062e 9B       		.byte	-101
@@ -1798,7 +1798,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1689 0664 DA       		.byte	-38
  1690 0665 F1       		.byte	-15
  1691 0666 99       		.byte	-103
-GAS LISTING /tmp/cc4asFIX.s 			page 31
+GAS LISTING /tmp/ccrBp1WT.s 			page 31
 
 
  1692 0667 FF       		.byte	-1
@@ -1858,7 +1858,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1746 069d F4       		.byte	-12
  1747 069e 98       		.byte	-104
  1748 069f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 32
+GAS LISTING /tmp/ccrBp1WT.s 			page 32
 
 
  1749 06a0 E4       		.byte	-28
@@ -1918,7 +1918,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1803 06d6 99       		.byte	-103
  1804 06d7 FF       		.byte	-1
  1805 06d8 E7       		.byte	-25
-GAS LISTING /tmp/cc4asFIX.s 			page 33
+GAS LISTING /tmp/ccrBp1WT.s 			page 33
 
 
  1806 06d9 F4       		.byte	-12
@@ -1978,7 +1978,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1860 070f FF       		.byte	-1
  1861 0710 E9       		.byte	-23
  1862 0711 F4       		.byte	-12
-GAS LISTING /tmp/cc4asFIX.s 			page 34
+GAS LISTING /tmp/ccrBp1WT.s 			page 34
 
 
  1863 0712 9B       		.byte	-101
@@ -2038,7 +2038,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1917 0748 EA       		.byte	-22
  1918 0749 F4       		.byte	-12
  1919 074a 9D       		.byte	-99
-GAS LISTING /tmp/cc4asFIX.s 			page 35
+GAS LISTING /tmp/ccrBp1WT.s 			page 35
 
 
  1920 074b FF       		.byte	-1
@@ -2098,7 +2098,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  1974 0781 F3       		.byte	-13
  1975 0782 9F       		.byte	-97
  1976 0783 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 36
+GAS LISTING /tmp/ccrBp1WT.s 			page 36
 
 
  1977 0784 EC       		.byte	-20
@@ -2158,7 +2158,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2031 07ba A1       		.byte	-95
  2032 07bb FF       		.byte	-1
  2033 07bc ED       		.byte	-19
-GAS LISTING /tmp/cc4asFIX.s 			page 37
+GAS LISTING /tmp/ccrBp1WT.s 			page 37
 
 
  2034 07bd F3       		.byte	-13
@@ -2218,7 +2218,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2088 07f3 FF       		.byte	-1
  2089 07f4 EF       		.byte	-17
  2090 07f5 F3       		.byte	-13
-GAS LISTING /tmp/cc4asFIX.s 			page 38
+GAS LISTING /tmp/ccrBp1WT.s 			page 38
 
 
  2091 07f6 A3       		.byte	-93
@@ -2278,7 +2278,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2145 082c F0       		.byte	-16
  2146 082d F3       		.byte	-13
  2147 082e A6       		.byte	-90
-GAS LISTING /tmp/cc4asFIX.s 			page 39
+GAS LISTING /tmp/ccrBp1WT.s 			page 39
 
 
  2148 082f FF       		.byte	-1
@@ -2338,7 +2338,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2202 0865 F1       		.byte	-15
  2203 0866 A4       		.byte	-92
  2204 0867 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 40
+GAS LISTING /tmp/ccrBp1WT.s 			page 40
 
 
  2205 0868 F2       		.byte	-14
@@ -2398,7 +2398,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2259 089e A1       		.byte	-95
  2260 089f FF       		.byte	-1
  2261 08a0 F3       		.byte	-13
-GAS LISTING /tmp/cc4asFIX.s 			page 41
+GAS LISTING /tmp/ccrBp1WT.s 			page 41
 
 
  2262 08a1 EE       		.byte	-18
@@ -2458,7 +2458,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2316 08d7 FF       		.byte	-1
  2317 08d8 F5       		.byte	-11
  2318 08d9 EC       		.byte	-20
-GAS LISTING /tmp/cc4asFIX.s 			page 42
+GAS LISTING /tmp/ccrBp1WT.s 			page 42
 
 
  2319 08da 9D       		.byte	-99
@@ -2518,7 +2518,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2373 0910 F7       		.byte	-9
  2374 0911 E9       		.byte	-23
  2375 0912 9A       		.byte	-102
-GAS LISTING /tmp/cc4asFIX.s 			page 43
+GAS LISTING /tmp/ccrBp1WT.s 			page 43
 
 
  2376 0913 FF       		.byte	-1
@@ -2578,7 +2578,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2430 0949 E7       		.byte	-25
  2431 094a 97       		.byte	-105
  2432 094b FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 44
+GAS LISTING /tmp/ccrBp1WT.s 			page 44
 
 
  2433 094c F9       		.byte	-7
@@ -2638,7 +2638,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2487 0982 94       		.byte	-108
  2488 0983 FF       		.byte	-1
  2489 0984 FB       		.byte	-5
-GAS LISTING /tmp/cc4asFIX.s 			page 45
+GAS LISTING /tmp/ccrBp1WT.s 			page 45
 
 
  2490 0985 E4       		.byte	-28
@@ -2698,7 +2698,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2544 09bb FF       		.byte	-1
  2545 09bc FC       		.byte	-4
  2546 09bd E1       		.byte	-31
-GAS LISTING /tmp/cc4asFIX.s 			page 46
+GAS LISTING /tmp/ccrBp1WT.s 			page 46
 
 
  2547 09be 91       		.byte	-111
@@ -2758,7 +2758,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2601 09f4 FD       		.byte	-3
  2602 09f5 DD       		.byte	-35
  2603 09f6 8C       		.byte	-116
-GAS LISTING /tmp/cc4asFIX.s 			page 47
+GAS LISTING /tmp/ccrBp1WT.s 			page 47
 
 
  2604 09f7 FF       		.byte	-1
@@ -2818,7 +2818,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2658 0a2d D6       		.byte	-42
  2659 0a2e 85       		.byte	-123
  2660 0a2f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 48
+GAS LISTING /tmp/ccrBp1WT.s 			page 48
 
 
  2661 0a30 FD       		.byte	-3
@@ -2878,7 +2878,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2715 0a66 7E       		.byte	126
  2716 0a67 FF       		.byte	-1
  2717 0a68 FD       		.byte	-3
-GAS LISTING /tmp/cc4asFIX.s 			page 49
+GAS LISTING /tmp/ccrBp1WT.s 			page 49
 
 
  2718 0a69 CF       		.byte	-49
@@ -2938,7 +2938,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2772 0a9f FF       		.byte	-1
  2773 0aa0 FD       		.byte	-3
  2774 0aa1 C8       		.byte	-56
-GAS LISTING /tmp/cc4asFIX.s 			page 50
+GAS LISTING /tmp/ccrBp1WT.s 			page 50
 
 
  2775 0aa2 76       		.byte	118
@@ -2998,7 +2998,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2829 0ad8 FD       		.byte	-3
  2830 0ad9 C2       		.byte	-62
  2831 0ada 70       		.byte	112
-GAS LISTING /tmp/cc4asFIX.s 			page 51
+GAS LISTING /tmp/ccrBp1WT.s 			page 51
 
 
  2832 0adb FF       		.byte	-1
@@ -3058,7 +3058,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2886 0b11 BB       		.byte	-69
  2887 0b12 6A       		.byte	106
  2888 0b13 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 52
+GAS LISTING /tmp/ccrBp1WT.s 			page 52
 
 
  2889 0b14 FD       		.byte	-3
@@ -3118,7 +3118,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  2943 0b4a 65       		.byte	101
  2944 0b4b FF       		.byte	-1
  2945 0b4c FD       		.byte	-3
-GAS LISTING /tmp/cc4asFIX.s 			page 53
+GAS LISTING /tmp/ccrBp1WT.s 			page 53
 
 
  2946 0b4d B3       		.byte	-77
@@ -3178,7 +3178,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3000 0b83 FF       		.byte	-1
  3001 0b84 FC       		.byte	-4
  3002 0b85 AC       		.byte	-84
-GAS LISTING /tmp/cc4asFIX.s 			page 54
+GAS LISTING /tmp/ccrBp1WT.s 			page 54
 
 
  3003 0b86 5F       		.byte	95
@@ -3238,7 +3238,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3057 0bbc FB       		.byte	-5
  3058 0bbd A3       		.byte	-93
  3059 0bbe 59       		.byte	89
-GAS LISTING /tmp/cc4asFIX.s 			page 55
+GAS LISTING /tmp/ccrBp1WT.s 			page 55
 
 
  3060 0bbf FF       		.byte	-1
@@ -3298,7 +3298,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3114 0bf5 9B       		.byte	-101
  3115 0bf6 54       		.byte	84
  3116 0bf7 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 56
+GAS LISTING /tmp/ccrBp1WT.s 			page 56
 
 
  3117 0bf8 FA       		.byte	-6
@@ -3358,7 +3358,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3171 0c2e 4F       		.byte	79
  3172 0c2f FF       		.byte	-1
  3173 0c30 F9       		.byte	-7
-GAS LISTING /tmp/cc4asFIX.s 			page 57
+GAS LISTING /tmp/ccrBp1WT.s 			page 57
 
 
  3174 0c31 92       		.byte	-110
@@ -3418,7 +3418,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3228 0c67 FF       		.byte	-1
  3229 0c68 F8       		.byte	-8
  3230 0c69 89       		.byte	-119
-GAS LISTING /tmp/cc4asFIX.s 			page 58
+GAS LISTING /tmp/ccrBp1WT.s 			page 58
 
 
  3231 0c6a 4B       		.byte	75
@@ -3478,7 +3478,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3285 0ca0 F7       		.byte	-9
  3286 0ca1 80       		.byte	-128
  3287 0ca2 48       		.byte	72
-GAS LISTING /tmp/cc4asFIX.s 			page 59
+GAS LISTING /tmp/ccrBp1WT.s 			page 59
 
 
  3288 0ca3 FF       		.byte	-1
@@ -3538,7 +3538,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3342 0cd9 76       		.byte	118
  3343 0cda 45       		.byte	69
  3344 0cdb FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 60
+GAS LISTING /tmp/ccrBp1WT.s 			page 60
 
 
  3345 0cdc F5       		.byte	-11
@@ -3598,7 +3598,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3399 0d12 43       		.byte	67
  3400 0d13 FF       		.byte	-1
  3401 0d14 F3       		.byte	-13
-GAS LISTING /tmp/cc4asFIX.s 			page 61
+GAS LISTING /tmp/ccrBp1WT.s 			page 61
 
 
  3402 0d15 6C       		.byte	108
@@ -3658,7 +3658,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3456 0d4b FF       		.byte	-1
  3457 0d4c F0       		.byte	-16
  3458 0d4d 65       		.byte	101
-GAS LISTING /tmp/cc4asFIX.s 			page 62
+GAS LISTING /tmp/ccrBp1WT.s 			page 62
 
 
  3459 0d4e 44       		.byte	68
@@ -3718,7 +3718,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3513 0d84 EC       		.byte	-20
  3514 0d85 5F       		.byte	95
  3515 0d86 46       		.byte	70
-GAS LISTING /tmp/cc4asFIX.s 			page 63
+GAS LISTING /tmp/ccrBp1WT.s 			page 63
 
 
  3516 0d87 FF       		.byte	-1
@@ -3778,7 +3778,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3570 0dbd 58       		.byte	88
  3571 0dbe 48       		.byte	72
  3572 0dbf FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 64
+GAS LISTING /tmp/ccrBp1WT.s 			page 64
 
 
  3573 0dc0 E8       		.byte	-24
@@ -3838,7 +3838,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3627 0df6 49       		.byte	73
  3628 0df7 FF       		.byte	-1
  3629 0df8 E4       		.byte	-28
-GAS LISTING /tmp/cc4asFIX.s 			page 65
+GAS LISTING /tmp/ccrBp1WT.s 			page 65
 
 
  3630 0df9 51       		.byte	81
@@ -3898,7 +3898,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3684 0e2f FF       		.byte	-1
  3685 0e30 DF       		.byte	-33
  3686 0e31 4B       		.byte	75
-GAS LISTING /tmp/cc4asFIX.s 			page 66
+GAS LISTING /tmp/ccrBp1WT.s 			page 66
 
 
  3687 0e32 4B       		.byte	75
@@ -3958,7 +3958,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3741 0e68 DA       		.byte	-38
  3742 0e69 45       		.byte	69
  3743 0e6a 4D       		.byte	77
-GAS LISTING /tmp/cc4asFIX.s 			page 67
+GAS LISTING /tmp/ccrBp1WT.s 			page 67
 
 
  3744 0e6b FF       		.byte	-1
@@ -4018,7 +4018,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3798 0ea1 3F       		.byte	63
  3799 0ea2 4E       		.byte	78
  3800 0ea3 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 68
+GAS LISTING /tmp/ccrBp1WT.s 			page 68
 
 
  3801 0ea4 D5       		.byte	-43
@@ -4078,7 +4078,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3855 0eda 4D       		.byte	77
  3856 0edb FF       		.byte	-1
  3857 0edc CE       		.byte	-50
-GAS LISTING /tmp/cc4asFIX.s 			page 69
+GAS LISTING /tmp/ccrBp1WT.s 			page 69
 
 
  3858 0edd 37       		.byte	55
@@ -4138,7 +4138,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3912 0f13 FF       		.byte	-1
  3913 0f14 C7       		.byte	-57
  3914 0f15 31       		.byte	49
-GAS LISTING /tmp/cc4asFIX.s 			page 70
+GAS LISTING /tmp/ccrBp1WT.s 			page 70
 
 
  3915 0f16 4C       		.byte	76
@@ -4198,7 +4198,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  3969 0f4c BF       		.byte	-65
  3970 0f4d 2A       		.byte	42
  3971 0f4e 4A       		.byte	74
-GAS LISTING /tmp/cc4asFIX.s 			page 71
+GAS LISTING /tmp/ccrBp1WT.s 			page 71
 
 
  3972 0f4f FF       		.byte	-1
@@ -4258,7 +4258,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4026 0f85 22       		.byte	34
  4027 0f86 48       		.byte	72
  4028 0f87 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 72
+GAS LISTING /tmp/ccrBp1WT.s 			page 72
 
 
  4029 0f88 B7       		.byte	-73
@@ -4318,7 +4318,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4083 0fbe 46       		.byte	70
  4084 0fbf FF       		.byte	-1
  4085 0fc0 AF       		.byte	-81
-GAS LISTING /tmp/cc4asFIX.s 			page 73
+GAS LISTING /tmp/ccrBp1WT.s 			page 73
 
 
  4086 0fc1 1A       		.byte	26
@@ -4378,7 +4378,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4140 0ff7 FF       		.byte	-1
  4141 0ff8 A8       		.byte	-88
  4142 0ff9 11       		.byte	17
-GAS LISTING /tmp/cc4asFIX.s 			page 74
+GAS LISTING /tmp/ccrBp1WT.s 			page 74
 
 
  4143 0ffa 44       		.byte	68
@@ -4438,7 +4438,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4197 1030 A0       		.byte	-96
  4198 1031 05       		.byte	5
  4199 1032 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 75
+GAS LISTING /tmp/ccrBp1WT.s 			page 75
 
 
  4200 1033 FF       		.byte	-1
@@ -4498,7 +4498,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4250 107d 52       		.byte	82
  4251 107e A4       		.byte	-92
  4252 107f 2C       		.byte	44
-GAS LISTING /tmp/cc4asFIX.s 			page 76
+GAS LISTING /tmp/ccrBp1WT.s 			page 76
 
 
  4253 1080 5A       		.byte	90
@@ -4558,7 +4558,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4307 10b6 A9       		.byte	-87
  4308 10b7 95       		.byte	-107
  4309 10b8 53       		.byte	83
-GAS LISTING /tmp/cc4asFIX.s 			page 77
+GAS LISTING /tmp/ccrBp1WT.s 			page 77
 
 
  4310 10b9 59       		.byte	89
@@ -4618,7 +4618,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4364 10ef FE       		.byte	-2
  4365 10f0 4D       		.byte	77
  4366 10f1 60       		.byte	96
-GAS LISTING /tmp/cc4asFIX.s 			page 78
+GAS LISTING /tmp/ccrBp1WT.s 			page 78
 
 
  4367 10f2 AE       		.byte	-82
@@ -4678,7 +4678,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4421 1128 46       		.byte	70
  4422 1129 66       		.byte	102
  4423 112a B1       		.byte	-79
-GAS LISTING /tmp/cc4asFIX.s 			page 79
+GAS LISTING /tmp/ccrBp1WT.s 			page 79
 
 
  4424 112b FF       		.byte	-1
@@ -4738,7 +4738,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4478 1161 78       		.byte	120
  4479 1162 B9       		.byte	-71
  4480 1163 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 80
+GAS LISTING /tmp/ccrBp1WT.s 			page 80
 
 
  4481 1164 37       		.byte	55
@@ -4798,7 +4798,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4535 119a BB       		.byte	-69
  4536 119b FF       		.byte	-1
  4537 119c 33       		.byte	51
-GAS LISTING /tmp/cc4asFIX.s 			page 81
+GAS LISTING /tmp/ccrBp1WT.s 			page 81
 
 
  4538 119d 7E       		.byte	126
@@ -4858,7 +4858,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4592 11d3 FF       		.byte	-1
  4593 11d4 31       		.byte	49
  4594 11d5 84       		.byte	-124
-GAS LISTING /tmp/cc4asFIX.s 			page 82
+GAS LISTING /tmp/ccrBp1WT.s 			page 82
 
 
  4595 11d6 BC       		.byte	-68
@@ -4918,7 +4918,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4649 120c 2D       		.byte	45
  4650 120d 8A       		.byte	-118
  4651 120e BD       		.byte	-67
-GAS LISTING /tmp/cc4asFIX.s 			page 83
+GAS LISTING /tmp/ccrBp1WT.s 			page 83
 
 
  4652 120f FF       		.byte	-1
@@ -4978,7 +4978,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4706 1245 91       		.byte	-111
  4707 1246 BF       		.byte	-65
  4708 1247 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 84
+GAS LISTING /tmp/ccrBp1WT.s 			page 84
 
 
  4709 1248 14       		.byte	20
@@ -5038,7 +5038,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4763 127e BE       		.byte	-66
  4764 127f FF       		.byte	-1
  4765 1280 0A       		.byte	10
-GAS LISTING /tmp/cc4asFIX.s 			page 85
+GAS LISTING /tmp/ccrBp1WT.s 			page 85
 
 
  4766 1281 99       		.byte	-103
@@ -5098,7 +5098,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4820 12b7 FF       		.byte	-1
  4821 12b8 0A       		.byte	10
  4822 12b9 9F       		.byte	-97
-GAS LISTING /tmp/cc4asFIX.s 			page 86
+GAS LISTING /tmp/ccrBp1WT.s 			page 86
 
 
  4823 12ba BC       		.byte	-68
@@ -5158,7 +5158,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4877 12f0 29       		.byte	41
  4878 12f1 B1       		.byte	-79
  4879 12f2 B3       		.byte	-77
-GAS LISTING /tmp/cc4asFIX.s 			page 87
+GAS LISTING /tmp/ccrBp1WT.s 			page 87
 
 
  4880 12f3 FF       		.byte	-1
@@ -5218,7 +5218,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4934 1329 B7       		.byte	-73
  4935 132a AF       		.byte	-81
  4936 132b FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 88
+GAS LISTING /tmp/ccrBp1WT.s 			page 88
 
 
  4937 132c 41       		.byte	65
@@ -5278,7 +5278,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  4991 1362 AA       		.byte	-86
  4992 1363 FF       		.byte	-1
  4993 1364 55       		.byte	85
-GAS LISTING /tmp/cc4asFIX.s 			page 89
+GAS LISTING /tmp/ccrBp1WT.s 			page 89
 
 
  4994 1365 BD       		.byte	-67
@@ -5338,7 +5338,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5048 139b FF       		.byte	-1
  5049 139c 66       		.byte	102
  5050 139d C2       		.byte	-62
-GAS LISTING /tmp/cc4asFIX.s 			page 90
+GAS LISTING /tmp/ccrBp1WT.s 			page 90
 
 
  5051 139e A4       		.byte	-92
@@ -5398,7 +5398,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5105 13d4 6E       		.byte	110
  5106 13d5 C5       		.byte	-59
  5107 13d6 A4       		.byte	-92
-GAS LISTING /tmp/cc4asFIX.s 			page 91
+GAS LISTING /tmp/ccrBp1WT.s 			page 91
 
 
  5108 13d7 FF       		.byte	-1
@@ -5458,7 +5458,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5162 140d C8       		.byte	-56
  5163 140e A4       		.byte	-92
  5164 140f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 92
+GAS LISTING /tmp/ccrBp1WT.s 			page 92
 
 
  5165 1410 76       		.byte	118
@@ -5518,7 +5518,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5219 1446 A4       		.byte	-92
  5220 1447 FF       		.byte	-1
  5221 1448 7D       		.byte	125
-GAS LISTING /tmp/cc4asFIX.s 			page 93
+GAS LISTING /tmp/ccrBp1WT.s 			page 93
 
 
  5222 1449 CB       		.byte	-53
@@ -5578,7 +5578,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5276 147f FF       		.byte	-1
  5277 1480 93       		.byte	-109
  5278 1481 D4       		.byte	-44
-GAS LISTING /tmp/cc4asFIX.s 			page 94
+GAS LISTING /tmp/ccrBp1WT.s 			page 94
 
 
  5279 1482 A3       		.byte	-93
@@ -5638,7 +5638,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5333 14b8 9A       		.byte	-102
  5334 14b9 D6       		.byte	-42
  5335 14ba A3       		.byte	-93
-GAS LISTING /tmp/cc4asFIX.s 			page 95
+GAS LISTING /tmp/ccrBp1WT.s 			page 95
 
 
  5336 14bb FF       		.byte	-1
@@ -5698,7 +5698,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5390 14f1 D9       		.byte	-39
  5391 14f2 A3       		.byte	-93
  5392 14f3 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 96
+GAS LISTING /tmp/ccrBp1WT.s 			page 96
 
 
  5393 14f4 A2       		.byte	-94
@@ -5758,7 +5758,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5447 152a A3       		.byte	-93
  5448 152b FF       		.byte	-1
  5449 152c AA       		.byte	-86
-GAS LISTING /tmp/cc4asFIX.s 			page 97
+GAS LISTING /tmp/ccrBp1WT.s 			page 97
 
 
  5450 152d DC       		.byte	-36
@@ -5818,7 +5818,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5504 1563 FF       		.byte	-1
  5505 1564 AF       		.byte	-81
  5506 1565 DF       		.byte	-33
-GAS LISTING /tmp/cc4asFIX.s 			page 98
+GAS LISTING /tmp/ccrBp1WT.s 			page 98
 
 
  5507 1566 A2       		.byte	-94
@@ -5878,7 +5878,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5561 159c B5       		.byte	-75
  5562 159d E2       		.byte	-30
  5563 159e A1       		.byte	-95
-GAS LISTING /tmp/cc4asFIX.s 			page 99
+GAS LISTING /tmp/ccrBp1WT.s 			page 99
 
 
  5564 159f FF       		.byte	-1
@@ -5938,7 +5938,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5618 15d5 E5       		.byte	-27
  5619 15d6 A0       		.byte	-96
  5620 15d7 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 100
+GAS LISTING /tmp/ccrBp1WT.s 			page 100
 
 
  5621 15d8 BC       		.byte	-68
@@ -5998,7 +5998,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5675 160e 9C       		.byte	-100
  5676 160f FF       		.byte	-1
  5677 1610 CE       		.byte	-50
-GAS LISTING /tmp/cc4asFIX.s 			page 101
+GAS LISTING /tmp/ccrBp1WT.s 			page 101
 
 
  5678 1611 EC       		.byte	-20
@@ -6058,7 +6058,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5732 1647 FF       		.byte	-1
  5733 1648 D5       		.byte	-43
  5734 1649 EF       		.byte	-17
-GAS LISTING /tmp/cc4asFIX.s 			page 102
+GAS LISTING /tmp/ccrBp1WT.s 			page 102
 
 
  5735 164a 9B       		.byte	-101
@@ -6118,7 +6118,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5789 1680 DC       		.byte	-36
  5790 1681 F1       		.byte	-15
  5791 1682 99       		.byte	-103
-GAS LISTING /tmp/cc4asFIX.s 			page 103
+GAS LISTING /tmp/ccrBp1WT.s 			page 103
 
 
  5792 1683 FF       		.byte	-1
@@ -6178,7 +6178,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5846 16b9 F4       		.byte	-12
  5847 16ba 98       		.byte	-104
  5848 16bb FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 104
+GAS LISTING /tmp/ccrBp1WT.s 			page 104
 
 
  5849 16bc E4       		.byte	-28
@@ -6238,7 +6238,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5903 16f2 99       		.byte	-103
  5904 16f3 FF       		.byte	-1
  5905 16f4 E7       		.byte	-25
-GAS LISTING /tmp/cc4asFIX.s 			page 105
+GAS LISTING /tmp/ccrBp1WT.s 			page 105
 
 
  5906 16f5 F4       		.byte	-12
@@ -6298,7 +6298,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  5960 172b FF       		.byte	-1
  5961 172c E8       		.byte	-24
  5962 172d F4       		.byte	-12
-GAS LISTING /tmp/cc4asFIX.s 			page 106
+GAS LISTING /tmp/ccrBp1WT.s 			page 106
 
 
  5963 172e 9A       		.byte	-102
@@ -6358,7 +6358,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6017 1764 E9       		.byte	-23
  6018 1765 F4       		.byte	-12
  6019 1766 9C       		.byte	-100
-GAS LISTING /tmp/cc4asFIX.s 			page 107
+GAS LISTING /tmp/ccrBp1WT.s 			page 107
 
 
  6020 1767 FF       		.byte	-1
@@ -6418,7 +6418,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6074 179d F3       		.byte	-13
  6075 179e A0       		.byte	-96
  6076 179f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 108
+GAS LISTING /tmp/ccrBp1WT.s 			page 108
 
 
  6077 17a0 ED       		.byte	-19
@@ -6478,7 +6478,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6131 17d6 A2       		.byte	-94
  6132 17d7 FF       		.byte	-1
  6133 17d8 EE       		.byte	-18
-GAS LISTING /tmp/cc4asFIX.s 			page 109
+GAS LISTING /tmp/ccrBp1WT.s 			page 109
 
 
  6134 17d9 F3       		.byte	-13
@@ -6538,7 +6538,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6188 180f FF       		.byte	-1
  6189 1810 EF       		.byte	-17
  6190 1811 F3       		.byte	-13
-GAS LISTING /tmp/cc4asFIX.s 			page 110
+GAS LISTING /tmp/ccrBp1WT.s 			page 110
 
 
  6191 1812 A4       		.byte	-92
@@ -6598,7 +6598,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6245 1848 F0       		.byte	-16
  6246 1849 F3       		.byte	-13
  6247 184a A6       		.byte	-90
-GAS LISTING /tmp/cc4asFIX.s 			page 111
+GAS LISTING /tmp/ccrBp1WT.s 			page 111
 
 
  6248 184b FF       		.byte	-1
@@ -6658,7 +6658,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6302 1881 F2       		.byte	-14
  6303 1882 A5       		.byte	-91
  6304 1883 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 112
+GAS LISTING /tmp/ccrBp1WT.s 			page 112
 
 
  6305 1884 F1       		.byte	-15
@@ -6718,7 +6718,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6359 18ba A2       		.byte	-94
  6360 18bb FF       		.byte	-1
  6361 18bc F3       		.byte	-13
-GAS LISTING /tmp/cc4asFIX.s 			page 113
+GAS LISTING /tmp/ccrBp1WT.s 			page 113
 
 
  6362 18bd EF       		.byte	-17
@@ -6778,7 +6778,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6416 18f3 FF       		.byte	-1
  6417 18f4 F4       		.byte	-12
  6418 18f5 ED       		.byte	-19
-GAS LISTING /tmp/cc4asFIX.s 			page 114
+GAS LISTING /tmp/ccrBp1WT.s 			page 114
 
 
  6419 18f6 9F       		.byte	-97
@@ -6838,7 +6838,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6473 192c F5       		.byte	-11
  6474 192d EB       		.byte	-21
  6475 192e 9D       		.byte	-99
-GAS LISTING /tmp/cc4asFIX.s 			page 115
+GAS LISTING /tmp/ccrBp1WT.s 			page 115
 
 
  6476 192f FF       		.byte	-1
@@ -6898,7 +6898,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6530 1965 E5       		.byte	-27
  6531 1966 96       		.byte	-106
  6532 1967 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 116
+GAS LISTING /tmp/ccrBp1WT.s 			page 116
 
 
  6533 1968 FA       		.byte	-6
@@ -6958,7 +6958,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6587 199e 93       		.byte	-109
  6588 199f FF       		.byte	-1
  6589 19a0 FB       		.byte	-5
-GAS LISTING /tmp/cc4asFIX.s 			page 117
+GAS LISTING /tmp/ccrBp1WT.s 			page 117
 
 
  6590 19a1 E3       		.byte	-29
@@ -7018,7 +7018,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6644 19d7 FF       		.byte	-1
  6645 19d8 FD       		.byte	-3
  6646 19d9 E1       		.byte	-31
-GAS LISTING /tmp/cc4asFIX.s 			page 118
+GAS LISTING /tmp/ccrBp1WT.s 			page 118
 
 
  6647 19da 91       		.byte	-111
@@ -7078,7 +7078,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6701 1a10 FD       		.byte	-3
  6702 1a11 DE       		.byte	-34
  6703 1a12 8D       		.byte	-115
-GAS LISTING /tmp/cc4asFIX.s 			page 119
+GAS LISTING /tmp/ccrBp1WT.s 			page 119
 
 
  6704 1a13 FF       		.byte	-1
@@ -7138,7 +7138,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6758 1a49 D9       		.byte	-39
  6759 1a4a 87       		.byte	-121
  6760 1a4b FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 120
+GAS LISTING /tmp/ccrBp1WT.s 			page 120
 
 
  6761 1a4c FD       		.byte	-3
@@ -7198,7 +7198,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6815 1a82 82       		.byte	-126
  6816 1a83 FF       		.byte	-1
  6817 1a84 FD       		.byte	-3
-GAS LISTING /tmp/cc4asFIX.s 			page 121
+GAS LISTING /tmp/ccrBp1WT.s 			page 121
 
 
  6818 1a85 D3       		.byte	-45
@@ -7258,7 +7258,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6872 1abb FF       		.byte	-1
  6873 1abc FD       		.byte	-3
  6874 1abd CD       		.byte	-51
-GAS LISTING /tmp/cc4asFIX.s 			page 122
+GAS LISTING /tmp/ccrBp1WT.s 			page 122
 
 
  6875 1abe 7C       		.byte	124
@@ -7318,7 +7318,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6929 1af4 FD       		.byte	-3
  6930 1af5 BE       		.byte	-66
  6931 1af6 6D       		.byte	109
-GAS LISTING /tmp/cc4asFIX.s 			page 123
+GAS LISTING /tmp/ccrBp1WT.s 			page 123
 
 
  6932 1af7 FF       		.byte	-1
@@ -7378,7 +7378,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  6986 1b2d B8       		.byte	-72
  6987 1b2e 69       		.byte	105
  6988 1b2f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 124
+GAS LISTING /tmp/ccrBp1WT.s 			page 124
 
 
  6989 1b30 FD       		.byte	-3
@@ -7438,7 +7438,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7043 1b66 64       		.byte	100
  7044 1b67 FF       		.byte	-1
  7045 1b68 FD       		.byte	-3
-GAS LISTING /tmp/cc4asFIX.s 			page 125
+GAS LISTING /tmp/ccrBp1WT.s 			page 125
 
 
  7046 1b69 B2       		.byte	-78
@@ -7498,7 +7498,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7100 1b9f FF       		.byte	-1
  7101 1ba0 FC       		.byte	-4
  7102 1ba1 AC       		.byte	-84
-GAS LISTING /tmp/cc4asFIX.s 			page 126
+GAS LISTING /tmp/ccrBp1WT.s 			page 126
 
 
  7103 1ba2 60       		.byte	96
@@ -7558,7 +7558,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7157 1bd8 FC       		.byte	-4
  7158 1bd9 A6       		.byte	-90
  7159 1bda 5B       		.byte	91
-GAS LISTING /tmp/cc4asFIX.s 			page 127
+GAS LISTING /tmp/ccrBp1WT.s 			page 127
 
 
  7160 1bdb FF       		.byte	-1
@@ -7618,7 +7618,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7214 1c11 9F       		.byte	-97
  7215 1c12 57       		.byte	87
  7216 1c13 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 128
+GAS LISTING /tmp/ccrBp1WT.s 			page 128
 
 
  7217 1c14 FB       		.byte	-5
@@ -7678,7 +7678,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7271 1c4a 53       		.byte	83
  7272 1c4b FF       		.byte	-1
  7273 1c4c FA       		.byte	-6
-GAS LISTING /tmp/cc4asFIX.s 			page 129
+GAS LISTING /tmp/ccrBp1WT.s 			page 129
 
 
  7274 1c4d 98       		.byte	-104
@@ -7738,7 +7738,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7328 1c83 FF       		.byte	-1
  7329 1c84 F7       		.byte	-9
  7330 1c85 84       		.byte	-124
-GAS LISTING /tmp/cc4asFIX.s 			page 130
+GAS LISTING /tmp/ccrBp1WT.s 			page 130
 
 
  7331 1c86 4A       		.byte	74
@@ -7798,7 +7798,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7385 1cbc F6       		.byte	-10
  7386 1cbd 7C       		.byte	124
  7387 1cbe 47       		.byte	71
-GAS LISTING /tmp/cc4asFIX.s 			page 131
+GAS LISTING /tmp/ccrBp1WT.s 			page 131
 
 
  7388 1cbf FF       		.byte	-1
@@ -7858,7 +7858,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7442 1cf5 75       		.byte	117
  7443 1cf6 44       		.byte	68
  7444 1cf7 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 132
+GAS LISTING /tmp/ccrBp1WT.s 			page 132
 
 
  7445 1cf8 F5       		.byte	-11
@@ -7918,7 +7918,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7499 1d2e 43       		.byte	67
  7500 1d2f FF       		.byte	-1
  7501 1d30 F4       		.byte	-12
-GAS LISTING /tmp/cc4asFIX.s 			page 133
+GAS LISTING /tmp/ccrBp1WT.s 			page 133
 
 
  7502 1d31 6D       		.byte	109
@@ -7978,7 +7978,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7556 1d67 FF       		.byte	-1
  7557 1d68 F1       		.byte	-15
  7558 1d69 67       		.byte	103
-GAS LISTING /tmp/cc4asFIX.s 			page 134
+GAS LISTING /tmp/ccrBp1WT.s 			page 134
 
 
  7559 1d6a 44       		.byte	68
@@ -8038,7 +8038,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7613 1da0 EE       		.byte	-18
  7614 1da1 62       		.byte	98
  7615 1da2 45       		.byte	69
-GAS LISTING /tmp/cc4asFIX.s 			page 135
+GAS LISTING /tmp/ccrBp1WT.s 			page 135
 
 
  7616 1da3 FF       		.byte	-1
@@ -8098,7 +8098,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7670 1dd9 5D       		.byte	93
  7671 1dda 47       		.byte	71
  7672 1ddb FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 136
+GAS LISTING /tmp/ccrBp1WT.s 			page 136
 
 
  7673 1ddc EA       		.byte	-22
@@ -8158,7 +8158,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7727 1e12 4A       		.byte	74
  7728 1e13 FF       		.byte	-1
  7729 1e14 E1       		.byte	-31
-GAS LISTING /tmp/cc4asFIX.s 			page 137
+GAS LISTING /tmp/ccrBp1WT.s 			page 137
 
 
  7730 1e15 4E       		.byte	78
@@ -8218,7 +8218,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7784 1e4b FF       		.byte	-1
  7785 1e4c DD       		.byte	-35
  7786 1e4d 49       		.byte	73
-GAS LISTING /tmp/cc4asFIX.s 			page 138
+GAS LISTING /tmp/ccrBp1WT.s 			page 138
 
 
  7787 1e4e 4C       		.byte	76
@@ -8278,7 +8278,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7841 1e84 D9       		.byte	-39
  7842 1e85 44       		.byte	68
  7843 1e86 4D       		.byte	77
-GAS LISTING /tmp/cc4asFIX.s 			page 139
+GAS LISTING /tmp/ccrBp1WT.s 			page 139
 
 
  7844 1e87 FF       		.byte	-1
@@ -8338,7 +8338,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7898 1ebd 3F       		.byte	63
  7899 1ebe 4E       		.byte	78
  7900 1ebf FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 140
+GAS LISTING /tmp/ccrBp1WT.s 			page 140
 
 
  7901 1ec0 D5       		.byte	-43
@@ -8398,7 +8398,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  7955 1ef6 4E       		.byte	78
  7956 1ef7 FF       		.byte	-1
  7957 1ef8 D0       		.byte	-48
-GAS LISTING /tmp/cc4asFIX.s 			page 141
+GAS LISTING /tmp/ccrBp1WT.s 			page 141
 
 
  7958 1ef9 39       		.byte	57
@@ -8458,7 +8458,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8012 1f2f FF       		.byte	-1
  8013 1f30 CA       		.byte	-54
  8014 1f31 34       		.byte	52
-GAS LISTING /tmp/cc4asFIX.s 			page 142
+GAS LISTING /tmp/ccrBp1WT.s 			page 142
 
 
  8015 1f32 4C       		.byte	76
@@ -8518,7 +8518,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8069 1f68 C4       		.byte	-60
  8070 1f69 2E       		.byte	46
  8071 1f6a 4B       		.byte	75
-GAS LISTING /tmp/cc4asFIX.s 			page 143
+GAS LISTING /tmp/ccrBp1WT.s 			page 143
 
 
  8072 1f6b FF       		.byte	-1
@@ -8578,7 +8578,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8126 1fa1 1C       		.byte	28
  8127 1fa2 47       		.byte	71
  8128 1fa3 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 144
+GAS LISTING /tmp/ccrBp1WT.s 			page 144
 
 
  8129 1fa4 B2       		.byte	-78
@@ -8638,7 +8638,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8183 1fda 45       		.byte	69
  8184 1fdb FF       		.byte	-1
  8185 1fdc AC       		.byte	-84
-GAS LISTING /tmp/cc4asFIX.s 			page 145
+GAS LISTING /tmp/ccrBp1WT.s 			page 145
 
 
  8186 1fdd 15       		.byte	21
@@ -8698,7 +8698,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8240 2013 FF       		.byte	-1
  8241 2014 A6       		.byte	-90
  8242 2015 0E       		.byte	14
-GAS LISTING /tmp/cc4asFIX.s 			page 146
+GAS LISTING /tmp/ccrBp1WT.s 			page 146
 
 
  8243 2016 44       		.byte	68
@@ -8758,7 +8758,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8297 204c A0       		.byte	-96
  8298 204d 05       		.byte	5
  8299 204e 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 147
+GAS LISTING /tmp/ccrBp1WT.s 			page 147
 
 
  8300 204f FF       		.byte	-1
@@ -8818,7 +8818,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8350 2099 66       		.byte	102
  8351 209a B1       		.byte	-79
  8352 209b 7C       		.byte	124
-GAS LISTING /tmp/cc4asFIX.s 			page 148
+GAS LISTING /tmp/ccrBp1WT.s 			page 148
 
 
  8353 209c 39       		.byte	57
@@ -8878,7 +8878,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8407 20d2 AF       		.byte	-81
  8408 20d3 FF       		.byte	-1
  8409 20d4 49       		.byte	73
-GAS LISTING /tmp/cc4asFIX.s 			page 149
+GAS LISTING /tmp/ccrBp1WT.s 			page 149
 
 
  8410 20d5 BA       		.byte	-70
@@ -8938,7 +8938,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8464 210b FF       		.byte	-1
  8465 210c A3       		.byte	-93
  8466 210d DA       		.byte	-38
-GAS LISTING /tmp/cc4asFIX.s 			page 150
+GAS LISTING /tmp/ccrBp1WT.s 			page 150
 
 
  8467 210e A3       		.byte	-93
@@ -8998,7 +8998,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8521 2144 DB       		.byte	-37
  8522 2145 F1       		.byte	-15
  8523 2146 99       		.byte	-103
-GAS LISTING /tmp/cc4asFIX.s 			page 151
+GAS LISTING /tmp/ccrBp1WT.s 			page 151
 
 
  8524 2147 FF       		.byte	-1
@@ -9058,7 +9058,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8578 217d F3       		.byte	-13
  8579 217e A2       		.byte	-94
  8580 217f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 152
+GAS LISTING /tmp/ccrBp1WT.s 			page 152
 
 
  8581 2180 EE       		.byte	-18
@@ -9118,7 +9118,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8635 21b6 9F       		.byte	-97
  8636 21b7 FF       		.byte	-1
  8637 21b8 F5       		.byte	-11
-GAS LISTING /tmp/cc4asFIX.s 			page 153
+GAS LISTING /tmp/ccrBp1WT.s 			page 153
 
 
  8638 21b9 EC       		.byte	-20
@@ -9178,7 +9178,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8692 21ef FF       		.byte	-1
  8693 21f0 FD       		.byte	-3
  8694 21f1 DD       		.byte	-35
-GAS LISTING /tmp/cc4asFIX.s 			page 154
+GAS LISTING /tmp/ccrBp1WT.s 			page 154
 
 
  8695 21f2 8D       		.byte	-115
@@ -9238,7 +9238,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8749 2228 FD       		.byte	-3
  8750 2229 BE       		.byte	-66
  8751 222a 6D       		.byte	109
-GAS LISTING /tmp/cc4asFIX.s 			page 155
+GAS LISTING /tmp/ccrBp1WT.s 			page 155
 
 
  8752 222b FF       		.byte	-1
@@ -9298,7 +9298,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8806 2261 A9       		.byte	-87
  8807 2262 5D       		.byte	93
  8808 2263 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 156
+GAS LISTING /tmp/ccrBp1WT.s 			page 156
 
 
  8809 2264 FC       		.byte	-4
@@ -9358,7 +9358,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8863 229a 4B       		.byte	75
  8864 229b FF       		.byte	-1
  8865 229c F7       		.byte	-9
-GAS LISTING /tmp/cc4asFIX.s 			page 157
+GAS LISTING /tmp/ccrBp1WT.s 			page 157
 
 
  8866 229d 86       		.byte	-122
@@ -9418,7 +9418,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8920 22d3 FF       		.byte	-1
  8921 22d4 F4       		.byte	-12
  8922 22d5 72       		.byte	114
-GAS LISTING /tmp/cc4asFIX.s 			page 158
+GAS LISTING /tmp/ccrBp1WT.s 			page 158
 
 
  8923 22d6 44       		.byte	68
@@ -9478,7 +9478,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  8977 230c EF       		.byte	-17
  8978 230d 64       		.byte	100
  8979 230e 45       		.byte	69
-GAS LISTING /tmp/cc4asFIX.s 			page 159
+GAS LISTING /tmp/ccrBp1WT.s 			page 159
 
 
  8980 230f FF       		.byte	-1
@@ -9538,7 +9538,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9034 2345 5A       		.byte	90
  9035 2346 47       		.byte	71
  9036 2347 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 160
+GAS LISTING /tmp/ccrBp1WT.s 			page 160
 
 
  9037 2348 E2       		.byte	-30
@@ -9598,7 +9598,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9091 237e 4C       		.byte	76
  9092 237f FF       		.byte	-1
  9093 2380 DC       		.byte	-36
-GAS LISTING /tmp/cc4asFIX.s 			page 161
+GAS LISTING /tmp/ccrBp1WT.s 			page 161
 
 
  9094 2381 47       		.byte	71
@@ -9658,7 +9658,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9148 23b7 FF       		.byte	-1
  9149 23b8 D7       		.byte	-41
  9150 23b9 40       		.byte	64
-GAS LISTING /tmp/cc4asFIX.s 			page 162
+GAS LISTING /tmp/ccrBp1WT.s 			page 162
 
 
  9151 23ba 4E       		.byte	78
@@ -9718,7 +9718,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9205 23f0 D0       		.byte	-48
  9206 23f1 3A       		.byte	58
  9207 23f2 4E       		.byte	78
-GAS LISTING /tmp/cc4asFIX.s 			page 163
+GAS LISTING /tmp/ccrBp1WT.s 			page 163
 
 
  9208 23f3 FF       		.byte	-1
@@ -9778,7 +9778,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9262 2429 34       		.byte	52
  9263 242a 4C       		.byte	76
  9264 242b FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 164
+GAS LISTING /tmp/ccrBp1WT.s 			page 164
 
 
  9265 242c CA       		.byte	-54
@@ -9838,7 +9838,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9319 2462 4B       		.byte	75
  9320 2463 FF       		.byte	-1
  9321 2464 C4       		.byte	-60
-GAS LISTING /tmp/cc4asFIX.s 			page 165
+GAS LISTING /tmp/ccrBp1WT.s 			page 165
 
 
  9322 2465 2E       		.byte	46
@@ -9898,7 +9898,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9376 249b FF       		.byte	-1
  9377 249c C0       		.byte	-64
  9378 249d 2A       		.byte	42
-GAS LISTING /tmp/cc4asFIX.s 			page 166
+GAS LISTING /tmp/ccrBp1WT.s 			page 166
 
 
  9379 249e 4A       		.byte	74
@@ -9958,7 +9958,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9433 24d4 B1       		.byte	-79
  9434 24d5 1A       		.byte	26
  9435 24d6 46       		.byte	70
-GAS LISTING /tmp/cc4asFIX.s 			page 167
+GAS LISTING /tmp/ccrBp1WT.s 			page 167
 
 
  9436 24d7 FF       		.byte	-1
@@ -10018,7 +10018,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9490 250d 16       		.byte	22
  9491 250e 46       		.byte	70
  9492 250f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 168
+GAS LISTING /tmp/ccrBp1WT.s 			page 168
 
 
  9493 2510 AD       		.byte	-83
@@ -10078,7 +10078,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9547 2546 45       		.byte	69
  9548 2547 FF       		.byte	-1
  9549 2548 AA       		.byte	-86
-GAS LISTING /tmp/cc4asFIX.s 			page 169
+GAS LISTING /tmp/ccrBp1WT.s 			page 169
 
 
  9550 2549 13       		.byte	19
@@ -10138,7 +10138,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9604 257f FF       		.byte	-1
  9605 2580 A8       		.byte	-88
  9606 2581 10       		.byte	16
-GAS LISTING /tmp/cc4asFIX.s 			page 170
+GAS LISTING /tmp/ccrBp1WT.s 			page 170
 
 
  9607 2582 44       		.byte	68
@@ -10198,7 +10198,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9661 25b8 A6       		.byte	-90
  9662 25b9 0E       		.byte	14
  9663 25ba 44       		.byte	68
-GAS LISTING /tmp/cc4asFIX.s 			page 171
+GAS LISTING /tmp/ccrBp1WT.s 			page 171
 
 
  9664 25bb FF       		.byte	-1
@@ -10258,7 +10258,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9718 25f1 0C       		.byte	12
  9719 25f2 43       		.byte	67
  9720 25f3 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 172
+GAS LISTING /tmp/ccrBp1WT.s 			page 172
 
 
  9721 25f4 A5       		.byte	-91
@@ -10318,7 +10318,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9775 262a 43       		.byte	67
  9776 262b FF       		.byte	-1
  9777 262c A3       		.byte	-93
-GAS LISTING /tmp/cc4asFIX.s 			page 173
+GAS LISTING /tmp/ccrBp1WT.s 			page 173
 
 
  9778 262d 0A       		.byte	10
@@ -10378,7 +10378,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9832 2663 FF       		.byte	-1
  9833 2664 A2       		.byte	-94
  9834 2665 08       		.byte	8
-GAS LISTING /tmp/cc4asFIX.s 			page 174
+GAS LISTING /tmp/ccrBp1WT.s 			page 174
 
 
  9835 2666 43       		.byte	67
@@ -10438,7 +10438,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9889 269c A1       		.byte	-95
  9890 269d 06       		.byte	6
  9891 269e 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 175
+GAS LISTING /tmp/ccrBp1WT.s 			page 175
 
 
  9892 269f FF       		.byte	-1
@@ -10498,7 +10498,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  9946 26d5 05       		.byte	5
  9947 26d6 42       		.byte	66
  9948 26d7 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 176
+GAS LISTING /tmp/ccrBp1WT.s 			page 176
 
 
  9949 26d8 A0       		.byte	-96
@@ -10558,7 +10558,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10003 270e 42       		.byte	66
  10004 270f FF       		.byte	-1
  10005 2710 A0       		.byte	-96
-GAS LISTING /tmp/cc4asFIX.s 			page 177
+GAS LISTING /tmp/ccrBp1WT.s 			page 177
 
 
  10006 2711 04       		.byte	4
@@ -10618,7 +10618,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10060 2747 FF       		.byte	-1
  10061 2748 9F       		.byte	-97
  10062 2749 03       		.byte	3
-GAS LISTING /tmp/cc4asFIX.s 			page 178
+GAS LISTING /tmp/ccrBp1WT.s 			page 178
 
 
  10063 274a 42       		.byte	66
@@ -10678,7 +10678,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10117 2780 9F       		.byte	-97
  10118 2781 03       		.byte	3
  10119 2782 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 179
+GAS LISTING /tmp/ccrBp1WT.s 			page 179
 
 
  10120 2783 FF       		.byte	-1
@@ -10738,7 +10738,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10174 27b9 02       		.byte	2
  10175 27ba 42       		.byte	66
  10176 27bb FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 180
+GAS LISTING /tmp/ccrBp1WT.s 			page 180
 
 
  10177 27bc 9F       		.byte	-97
@@ -10798,7 +10798,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10231 27f2 42       		.byte	66
  10232 27f3 FF       		.byte	-1
  10233 27f4 9E       		.byte	-98
-GAS LISTING /tmp/cc4asFIX.s 			page 181
+GAS LISTING /tmp/ccrBp1WT.s 			page 181
 
 
  10234 27f5 02       		.byte	2
@@ -10858,7 +10858,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10288 282b FF       		.byte	-1
  10289 282c 9E       		.byte	-98
  10290 282d 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 182
+GAS LISTING /tmp/ccrBp1WT.s 			page 182
 
 
  10291 282e 42       		.byte	66
@@ -10918,7 +10918,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10345 2864 9E       		.byte	-98
  10346 2865 01       		.byte	1
  10347 2866 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 183
+GAS LISTING /tmp/ccrBp1WT.s 			page 183
 
 
  10348 2867 FF       		.byte	-1
@@ -10978,7 +10978,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10402 289d 01       		.byte	1
  10403 289e 42       		.byte	66
  10404 289f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 184
+GAS LISTING /tmp/ccrBp1WT.s 			page 184
 
 
  10405 28a0 9E       		.byte	-98
@@ -11038,7 +11038,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10459 28d6 42       		.byte	66
  10460 28d7 FF       		.byte	-1
  10461 28d8 9E       		.byte	-98
-GAS LISTING /tmp/cc4asFIX.s 			page 185
+GAS LISTING /tmp/ccrBp1WT.s 			page 185
 
 
  10462 28d9 01       		.byte	1
@@ -11098,7 +11098,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10516 290f FF       		.byte	-1
  10517 2910 9E       		.byte	-98
  10518 2911 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 186
+GAS LISTING /tmp/ccrBp1WT.s 			page 186
 
 
  10519 2912 42       		.byte	66
@@ -11158,7 +11158,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10573 2948 9E       		.byte	-98
  10574 2949 01       		.byte	1
  10575 294a 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 187
+GAS LISTING /tmp/ccrBp1WT.s 			page 187
 
 
  10576 294b FF       		.byte	-1
@@ -11218,7 +11218,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10630 2981 01       		.byte	1
  10631 2982 42       		.byte	66
  10632 2983 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 188
+GAS LISTING /tmp/ccrBp1WT.s 			page 188
 
 
  10633 2984 9E       		.byte	-98
@@ -11278,7 +11278,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10687 29ba 42       		.byte	66
  10688 29bb FF       		.byte	-1
  10689 29bc 9E       		.byte	-98
-GAS LISTING /tmp/cc4asFIX.s 			page 189
+GAS LISTING /tmp/ccrBp1WT.s 			page 189
 
 
  10690 29bd 01       		.byte	1
@@ -11338,7 +11338,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10744 29f3 FF       		.byte	-1
  10745 29f4 9E       		.byte	-98
  10746 29f5 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 190
+GAS LISTING /tmp/ccrBp1WT.s 			page 190
 
 
  10747 29f6 42       		.byte	66
@@ -11398,7 +11398,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10801 2a2c 9E       		.byte	-98
  10802 2a2d 01       		.byte	1
  10803 2a2e 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 191
+GAS LISTING /tmp/ccrBp1WT.s 			page 191
 
 
  10804 2a2f FF       		.byte	-1
@@ -11458,7 +11458,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10858 2a65 01       		.byte	1
  10859 2a66 42       		.byte	66
  10860 2a67 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 192
+GAS LISTING /tmp/ccrBp1WT.s 			page 192
 
 
  10861 2a68 9E       		.byte	-98
@@ -11518,7 +11518,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10915 2a9e 42       		.byte	66
  10916 2a9f FF       		.byte	-1
  10917 2aa0 9E       		.byte	-98
-GAS LISTING /tmp/cc4asFIX.s 			page 193
+GAS LISTING /tmp/ccrBp1WT.s 			page 193
 
 
  10918 2aa1 01       		.byte	1
@@ -11578,7 +11578,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  10972 2ad7 FF       		.byte	-1
  10973 2ad8 9E       		.byte	-98
  10974 2ad9 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 194
+GAS LISTING /tmp/ccrBp1WT.s 			page 194
 
 
  10975 2ada 42       		.byte	66
@@ -11638,7 +11638,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11029 2b10 9E       		.byte	-98
  11030 2b11 01       		.byte	1
  11031 2b12 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 195
+GAS LISTING /tmp/ccrBp1WT.s 			page 195
 
 
  11032 2b13 FF       		.byte	-1
@@ -11698,7 +11698,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11086 2b49 01       		.byte	1
  11087 2b4a 42       		.byte	66
  11088 2b4b FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 196
+GAS LISTING /tmp/ccrBp1WT.s 			page 196
 
 
  11089 2b4c 9E       		.byte	-98
@@ -11758,7 +11758,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11143 2b82 42       		.byte	66
  11144 2b83 FF       		.byte	-1
  11145 2b84 9E       		.byte	-98
-GAS LISTING /tmp/cc4asFIX.s 			page 197
+GAS LISTING /tmp/ccrBp1WT.s 			page 197
 
 
  11146 2b85 01       		.byte	1
@@ -11818,7 +11818,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11200 2bbb FF       		.byte	-1
  11201 2bbc 9E       		.byte	-98
  11202 2bbd 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 198
+GAS LISTING /tmp/ccrBp1WT.s 			page 198
 
 
  11203 2bbe 42       		.byte	66
@@ -11878,7 +11878,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11257 2bf4 9E       		.byte	-98
  11258 2bf5 01       		.byte	1
  11259 2bf6 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 199
+GAS LISTING /tmp/ccrBp1WT.s 			page 199
 
 
  11260 2bf7 FF       		.byte	-1
@@ -11938,7 +11938,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11314 2c2d 01       		.byte	1
  11315 2c2e 42       		.byte	66
  11316 2c2f FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 200
+GAS LISTING /tmp/ccrBp1WT.s 			page 200
 
 
  11317 2c30 9E       		.byte	-98
@@ -11998,7 +11998,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11371 2c66 42       		.byte	66
  11372 2c67 FF       		.byte	-1
  11373 2c68 9E       		.byte	-98
-GAS LISTING /tmp/cc4asFIX.s 			page 201
+GAS LISTING /tmp/ccrBp1WT.s 			page 201
 
 
  11374 2c69 01       		.byte	1
@@ -12058,7 +12058,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11428 2c9f FF       		.byte	-1
  11429 2ca0 9E       		.byte	-98
  11430 2ca1 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 202
+GAS LISTING /tmp/ccrBp1WT.s 			page 202
 
 
  11431 2ca2 42       		.byte	66
@@ -12118,7 +12118,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11485 2cd8 9E       		.byte	-98
  11486 2cd9 01       		.byte	1
  11487 2cda 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 203
+GAS LISTING /tmp/ccrBp1WT.s 			page 203
 
 
  11488 2cdb FF       		.byte	-1
@@ -12178,7 +12178,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11542 2d11 01       		.byte	1
  11543 2d12 42       		.byte	66
  11544 2d13 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 204
+GAS LISTING /tmp/ccrBp1WT.s 			page 204
 
 
  11545 2d14 9E       		.byte	-98
@@ -12238,7 +12238,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11599 2d4a 42       		.byte	66
  11600 2d4b FF       		.byte	-1
  11601 2d4c 9E       		.byte	-98
-GAS LISTING /tmp/cc4asFIX.s 			page 205
+GAS LISTING /tmp/ccrBp1WT.s 			page 205
 
 
  11602 2d4d 01       		.byte	1
@@ -12298,7 +12298,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11656 2d83 FF       		.byte	-1
  11657 2d84 9E       		.byte	-98
  11658 2d85 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 206
+GAS LISTING /tmp/ccrBp1WT.s 			page 206
 
 
  11659 2d86 42       		.byte	66
@@ -12358,7 +12358,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11713 2dbc 9E       		.byte	-98
  11714 2dbd 01       		.byte	1
  11715 2dbe 42       		.byte	66
-GAS LISTING /tmp/cc4asFIX.s 			page 207
+GAS LISTING /tmp/ccrBp1WT.s 			page 207
 
 
  11716 2dbf FF       		.byte	-1
@@ -12418,7 +12418,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11770 2df5 01       		.byte	1
  11771 2df6 41       		.byte	65
  11772 2df7 FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 208
+GAS LISTING /tmp/ccrBp1WT.s 			page 208
 
 
  11773 2df8 9D       		.byte	-99
@@ -12478,7 +12478,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11827 2e2e 41       		.byte	65
  11828 2e2f FF       		.byte	-1
  11829 2e30 9D       		.byte	-99
-GAS LISTING /tmp/cc4asFIX.s 			page 209
+GAS LISTING /tmp/ccrBp1WT.s 			page 209
 
 
  11830 2e31 01       		.byte	1
@@ -12538,7 +12538,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11884 2e67 FF       		.byte	-1
  11885 2e68 9D       		.byte	-99
  11886 2e69 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 210
+GAS LISTING /tmp/ccrBp1WT.s 			page 210
 
 
  11887 2e6a 41       		.byte	65
@@ -12598,7 +12598,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11941 2ea0 9D       		.byte	-99
  11942 2ea1 01       		.byte	1
  11943 2ea2 41       		.byte	65
-GAS LISTING /tmp/cc4asFIX.s 			page 211
+GAS LISTING /tmp/ccrBp1WT.s 			page 211
 
 
  11944 2ea3 FF       		.byte	-1
@@ -12658,7 +12658,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  11998 2ed9 01       		.byte	1
  11999 2eda 41       		.byte	65
  12000 2edb FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 212
+GAS LISTING /tmp/ccrBp1WT.s 			page 212
 
 
  12001 2edc 9D       		.byte	-99
@@ -12718,7 +12718,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12055 2f12 41       		.byte	65
  12056 2f13 FF       		.byte	-1
  12057 2f14 9D       		.byte	-99
-GAS LISTING /tmp/cc4asFIX.s 			page 213
+GAS LISTING /tmp/ccrBp1WT.s 			page 213
 
 
  12058 2f15 01       		.byte	1
@@ -12778,7 +12778,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12112 2f4b FF       		.byte	-1
  12113 2f4c 9D       		.byte	-99
  12114 2f4d 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 214
+GAS LISTING /tmp/ccrBp1WT.s 			page 214
 
 
  12115 2f4e 41       		.byte	65
@@ -12838,7 +12838,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12169 2f84 9D       		.byte	-99
  12170 2f85 01       		.byte	1
  12171 2f86 41       		.byte	65
-GAS LISTING /tmp/cc4asFIX.s 			page 215
+GAS LISTING /tmp/ccrBp1WT.s 			page 215
 
 
  12172 2f87 FF       		.byte	-1
@@ -12898,7 +12898,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12226 2fbd 01       		.byte	1
  12227 2fbe 41       		.byte	65
  12228 2fbf FF       		.byte	-1
-GAS LISTING /tmp/cc4asFIX.s 			page 216
+GAS LISTING /tmp/ccrBp1WT.s 			page 216
 
 
  12229 2fc0 9D       		.byte	-99
@@ -12958,7 +12958,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12283 2ff6 41       		.byte	65
  12284 2ff7 FF       		.byte	-1
  12285 2ff8 9D       		.byte	-99
-GAS LISTING /tmp/cc4asFIX.s 			page 217
+GAS LISTING /tmp/ccrBp1WT.s 			page 217
 
 
  12286 2ff9 01       		.byte	1
@@ -13018,7 +13018,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12340 302f FF       		.byte	-1
  12341 3030 9D       		.byte	-99
  12342 3031 01       		.byte	1
-GAS LISTING /tmp/cc4asFIX.s 			page 218
+GAS LISTING /tmp/ccrBp1WT.s 			page 218
 
 
  12343 3032 41       		.byte	65
@@ -13078,7 +13078,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12397 3068 9D       		.byte	-99
  12398 3069 01       		.byte	1
  12399 306a 41       		.byte	65
-GAS LISTING /tmp/cc4asFIX.s 			page 219
+GAS LISTING /tmp/ccrBp1WT.s 			page 219
 
 
  12400 306b FF       		.byte	-1
@@ -13138,7 +13138,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12452 003f 02       		.uleb128 0x2
  12453 0040 08       		.byte	0x8
  12454 0041 07       		.byte	0x7
-GAS LISTING /tmp/cc4asFIX.s 			page 220
+GAS LISTING /tmp/ccrBp1WT.s 			page 220
 
 
  12455 0042 00000000 		.long	.LASF1
@@ -13198,7 +13198,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12509 00ae 03       		.byte	0x3
  12510 00af 20       		.byte	0x20
  12511 00b0 BE000000 		.long	0xbe
-GAS LISTING /tmp/cc4asFIX.s 			page 221
+GAS LISTING /tmp/ccrBp1WT.s 			page 221
 
 
  12512 00b4 09       		.byte	0x9
@@ -13258,7 +13258,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12561 0133 DD000000 		.long	0xdd
  12562 0137 0B       		.uleb128 0xb
  12563 0138 00000000 		.long	.LASF14
-GAS LISTING /tmp/cc4asFIX.s 			page 222
+GAS LISTING /tmp/ccrBp1WT.s 			page 222
 
 
  12564 013c 03       		.byte	0x3
@@ -13318,7 +13318,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12613 01b4 91010000 		.long	0x191
  12614 01b8 01       		.byte	0x1
  12615 01b9 09       		.byte	0x9
-GAS LISTING /tmp/cc4asFIX.s 			page 223
+GAS LISTING /tmp/ccrBp1WT.s 			page 223
 
 
  12616 01ba 03       		.byte	0x3
@@ -13378,7 +13378,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12668 0027 49       		.uleb128 0x49
  12669 0028 13       		.uleb128 0x13
  12670 0029 00       		.byte	0x0
-GAS LISTING /tmp/cc4asFIX.s 			page 224
+GAS LISTING /tmp/ccrBp1WT.s 			page 224
 
 
  12671 002a 00       		.byte	0x0
@@ -13438,7 +13438,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12725 0060 00       		.byte	0x0
  12726 0061 00       		.byte	0x0
  12727 0062 09       		.uleb128 0x9
-GAS LISTING /tmp/cc4asFIX.s 			page 225
+GAS LISTING /tmp/ccrBp1WT.s 			page 225
 
 
  12728 0063 01       		.uleb128 0x1
@@ -13498,7 +13498,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12782 0099 02       		.uleb128 0x2
  12783 009a 0A       		.uleb128 0xa
  12784 009b 00       		.byte	0x0
-GAS LISTING /tmp/cc4asFIX.s 			page 226
+GAS LISTING /tmp/ccrBp1WT.s 			page 226
 
 
  12785 009c 00       		.byte	0x0
@@ -13558,7 +13558,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12816              	.LASF16:
  12817 000f 6D697865 		.string	"mixed_exp"
  12817      645F6578 
-GAS LISTING /tmp/cc4asFIX.s 			page 227
+GAS LISTING /tmp/ccrBp1WT.s 			page 227
 
 
  12817      7000
@@ -13618,7 +13618,7 @@ GAS LISTING /tmp/cc4asFIX.s 			page 1
  12839      652F6873 
  12839      6875312F 
  12839      31353631 
-GAS LISTING /tmp/cc4asFIX.s 			page 228
+GAS LISTING /tmp/ccrBp1WT.s 			page 228
 
 
  12839      382F7072 

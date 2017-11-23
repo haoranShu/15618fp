@@ -85,6 +85,11 @@ void heatmap_add_weighted_point(heatmap_t* h, unsigned x, unsigned y, float w);
 /* Adds a single weighted point to the heatmap using a given stamp. */
 void heatmap_add_weighted_point_with_stamp(heatmap_t* h, unsigned x, unsigned y, float w, const heatmap_stamp_t* stamp);
 
+/* Haoran: CUDA renderer */
+void cudaKDE_renderer(heatmap_t* h, float* xs, float* ys, float* ws, unsigned num_points,
+                      float x_min, float x_max, float y_min, float y_max, float KDE_sd);
+
+
 /* Renders an image of the heatmap into the given colorbuf.
  *
  * colorbuf: A buffer large enough to hold 4*heatmap_width*heatmap_height

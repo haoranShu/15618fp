@@ -1,6 +1,7 @@
 CC?=gcc
 CXX?=g++
 AR?=ar
+NVCC=nvcc
 
 # Set the default optional flags if none are specified
 
@@ -26,6 +27,20 @@ CFLAGS+=-fPIC -I. -pedantic
 CXXFLAGS+=-fPIC -I. -std=c++0x
 LDFLAGS+=-lm
 
+LIBS :=
+
+NVCCFLAGS=-O3 -m64 --gpu-architecture compute_35
+LIBS += GL glut cudart
+
+ifneq ($(wildcard /opt/cuda-8.0/.*),)
+# Latedays
+LDFLAGS=-L/opt/cuda-8.0/lib64/ -lcudart -fopenmp
+else
+# GHC
+LDFLAGS=-L/usr/local/depot/cuda-8.0/lib64/ -lcudart
+endif
+
+LDLIBS  := $(addprefix -l, $(LIBS))
 
 .PHONY: all benchmarks samples clean
 
@@ -53,6 +68,9 @@ clean:
 
 test: tests
 	tests/test
+
+cuda_heatmap.o: heatmap.cu heatmap.h
+	$(NVCC) $< $(NVCCFLAGS) -c -o $@
 
 heatmap.o: heatmap_block.c heatmap.h
 	$(CC) -c $< $(CFLAGS) -o $@
@@ -99,8 +117,8 @@ examples/simplest_cpp: examples/simplest_cpp.o examples/lodepng_cpp.o libheatmap
 examples/simplest_c.o: examples/simplest.c
 	$(CC) -c $< $(CFLAGS) -o $@
 
-examples/simplest_c: examples/simplest_c.o examples/lodepng_c.o libheatmap.a
-	$(CC) $^ $(LDFLAGS) -o $@
+examples/simplest_c: examples/simplest_c.o examples/lodepng_c.o libheatmap.a cuda_heatmap.o
+	$(CXX) $(CXXFLAGS) -o $@ examples/simplest_c.o examples/lodepng_c.o libheatmap.a cuda_heatmap.o $(LDFLAGS) $(LDLIBS)
 
 examples/simplest_libpng_cpp.o: examples/simplest_libpng.cpp
 	$(CXX) -c $< $(CXXFLAGS) -o $@
