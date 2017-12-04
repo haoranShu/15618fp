@@ -215,7 +215,7 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    const size_t w = atoi(argv[1]), h = atoi(argv[2]);
+    unsigned w = atoi(argv[1]), h = atoi(argv[2]);
     heatmap_t* hm = heatmap_new(w, h);
 
     const size_t r = argc >= 4 ? atoi(argv[3]) : std::min(w, h)/10;
@@ -227,7 +227,7 @@ int main(int argc, char* argv[])
     }
     const heatmap_colorscheme_t* colorscheme = argc == 5 ? g_schemes[argv[4]] : heatmap_cs_default;
 
-    unsigned int x, y;
+    unsigned x, y;
     float weight = 1.0f;
 #ifdef WEIGHTED
     while(std::cin >> x >> y >> weight) {
@@ -244,12 +244,25 @@ int main(int argc, char* argv[])
     }
     heatmap_stamp_free(stamp);
 
-    std::vector<unsigned char> image(w*h*4);
+    std::vector<unsigned char> image(w * h * 4);
     heatmap_render_to(hm, colorscheme, &image[0]);
     heatmap_free(hm);
 
+    std::vector<unsigned char> base;
+    std::vector<unsigned char> raw;
+    const char* filename = "dota2map.png";
+    lodepng::load_file(raw, filename);
+    unsigned error = lodepng::decode(base, w, h, raw);
+    if(error) std::cout << "decoder error " << error << ": " << lodepng_error_text(error) << std::endl;
+
+for (std::vector<int>::size_type i = 0; i != image.size(); i++)
+{
+if (image[i] != 0)
+	base[i] = image[i];
+}
+
     std::vector<unsigned char> png;
-    if(unsigned error = lodepng::encode(png, image, w, h)) {
+    if(unsigned error = lodepng::encode(png, base, w, h)) {
         std::cerr << "encoder error " << error << ": "<< lodepng_error_text(error) << std::endl;
         return 1;
     }
