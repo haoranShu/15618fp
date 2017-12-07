@@ -17,6 +17,7 @@ float* ws;
 heatmap_t* hm;
 int renderW, renderH;
 float width, height;
+Quad leveledPts;
 
 int main(int argc, char** argv)
 {

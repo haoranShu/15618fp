@@ -12,6 +12,7 @@
 #include <GLUT/glut.h>
 
 #include "heatmap.h"
+#include "quad_tree.h"
 
 extern float scale;
 extern float curr_scale;
@@ -23,6 +24,7 @@ extern float* ws;
 extern heatmap_t* hm;
 extern int renderW, renderH;
 extern float width, height;
+extern Quad leveledPts;
 
 void renderNewPoints(float x0, float y0, float w, float h);
 
