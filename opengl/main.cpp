@@ -7,39 +7,56 @@
 #include <random>
 #include <vector>
 
-#include "heatmap.h"
 #include "gl_utility.h"
+
+std::vector<unsigned char> image;
+int npoints;
+float* xs;
+float* ys;
+float* ws;
+heatmap_t* hm;
+int renderW, renderH;
+float width, height;
 
 int main(int argc, char** argv)
 {
-    static const size_t w = 256, h = 512, npoints = 1000;
-
-    // Create the heatmap object with the given dimensions (in pixel).
-    heatmap_t* hm = heatmap_new(w, h);
-
-    // This creates two normal random distributions which will give us random points.
-    std::random_device rd;
-    std::mt19937 prng(rd());
-    std::normal_distribution<float> x_distr(0.5f*w, 0.5f/3.0f*w), y_distr(0.5f*h, 0.25f*h);
-
-    // Add a bunch of random points to the heatmap now.
-    for(unsigned i = 0 ; i < npoints ; ++i) {
-        heatmap_add_point(hm, x_distr(prng), y_distr(prng));
+ 
+    if (argc != 3) {
+        return -1;
+    } else {
+        renderW = std::atoi(argv[1]);
+        renderH = std::atoi(argv[2]);
+        image.resize(renderW * renderH * 4);
+        hm = heatmap_new(renderW, renderH);
     }
 
-    // This creates an image out of the heatmap.
-    // `image` now contains the image data in 32-bit RGBA.
-    image.resize(w*h*4);
-    heatmap_render_default_to(hm, &image[0]);
+    std::cin >> npoints;
 
-    // Now that we've got a finished heatmap picture, we don't need the map anymore.
-    heatmap_free(hm);
+    int weighted;
+    std::cin >> weighted;
+
+    std::cin >> width >> height;
+
+    xs = (float *)malloc(npoints * sizeof(float));
+    ys = (float *)malloc(npoints * sizeof(float));
+    ws = (float *)malloc(npoints * sizeof(float));
+
+    if (weighted == 0) {
+        for (int i = 0; i < npoints; i++) {
+            std::cin >> xs[i] >> ys[i];
+            ws[i] = 1.0f;
+        }
+    } else {
+        for (int i = 0; i < npoints; i++) {
+            std::cin >> xs[i] >> ys[i] >> ws[i];
+        }
+    }
 
     // init GLUT and create window
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowPosition(100, 100);
-	glutInitWindowSize(256, 512);
+	glutInitWindowSize(renderW, renderH);
 	glutCreateWindow("Heatmap");
 
     glutDisplayFunc(renderScene);
