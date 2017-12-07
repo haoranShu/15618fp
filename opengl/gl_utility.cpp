@@ -22,12 +22,15 @@ void renderNewPoints(float x0, float y0, float w, float h)
     float x_gap = w / renderW;
     float y_gap = h / renderH;
 
-    for (int i = 0; i < npoints; i++) {
-        if (xs[i] >= x0 && ys[i] >= y0 && xs[i] < x1 && ys[i] < y1) {
-            x = (unsigned)floor((xs[i] - x0) / x_gap);
-            y = (unsigned)floor((ys[i] - y0) / y_gap);
+    Node *node = leveledPts->search(Point(x0, y1), Point(x1, y0));
+    while (node != NULL) {
+        Point p = node->pos;
+        if (p.x >= x0 && p.y >= y0 && p.x < x1 && p.y < y1) {
+            x = (unsigned)floor((p.x - x0) / x_gap);
+            y = (unsigned)floor((p.y - y0) / y_gap);
             heatmap_add_point(hm, x, y);
         }
+        node = node->next;
     }
 
     heatmap_render_default_to(hm, &image[0]);
@@ -78,7 +81,7 @@ void zooming(int button, int state, int x, int y)
             cout << x << ' ' << y << endl;
             width = width*0.9;
             height = height*0.9;
-            renderNewPoints(g_x0, g_y0, width, height); 
+            renderNewPoints(g_x0, g_y0, width, height);
             glTexSubImage2D(GL_TEXTURE_2D, 0 ,0, 0, renderW, renderH, GL_RGBA, GL_UNSIGNED_BYTE, (GLvoid*)(&image[0]));
         }
     } else if (button == GLUT_RIGHT_BUTTON) {
@@ -87,7 +90,7 @@ void zooming(int button, int state, int x, int y)
             g_y0 = g_y0 - height * 0.05;
             width = width*1.1;
             height = height*1.1;
-            renderNewPoints(g_x0, g_y0, width, height); 
+            renderNewPoints(g_x0, g_y0, width, height);
             glTexSubImage2D(GL_TEXTURE_2D, 0 ,0, 0, renderW, renderH, GL_RGBA, GL_UNSIGNED_BYTE, (GLvoid*)(&image[0]));
         }
     }

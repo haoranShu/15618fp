@@ -4,12 +4,20 @@
 // Used to hold details of a point
 struct Point
 {
-    double x;
-    double y;
-    Point(double _x, double _y)
+    float x;
+    float y;
+    float w;
+    Point(float _x, float _y)
     {
         x = _x;
         y = _y;
+        w = 1.0f;
+    }
+    Point(float _x, float _y, float _w)
+    {
+        x = _x;
+        y = _y;
+        w = _w;
     }
     Point()
     {

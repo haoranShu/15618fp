@@ -17,11 +17,11 @@ float* ws;
 heatmap_t* hm;
 int renderW, renderH;
 float width, height;
-Quad leveledPts;
+Quad* leveledPts;
 
 int main(int argc, char** argv)
 {
- 
+
     if (argc != 3) {
         return -1;
     } else {
@@ -38,27 +38,29 @@ int main(int argc, char** argv)
 
     std::cin >> width >> height;
 
-    xs = (float *)malloc(npoints * sizeof(float));
-    ys = (float *)malloc(npoints * sizeof(float));
-    ws = (float *)malloc(npoints * sizeof(float));
+    leveledPts = new Quad(Point(0, 0), Point(width, height));
+    float x, y, w;
 
     if (weighted == 0) {
         for (int i = 0; i < npoints; i++) {
-            std::cin >> xs[i] >> ys[i];
-            ws[i] = 1.0f;
+            std::cin >> x >> y;
+            Node n(Point(x, y, 1.0f));
+            leveledPts->insert(&n);
         }
     } else {
         for (int i = 0; i < npoints; i++) {
-            std::cin >> xs[i] >> ys[i] >> ws[i];
+            std::cin >> x >> y >> w;
+            Node n(Point(x, y, w));
+            leveledPts->insert(&n);
         }
     }
 
     // init GLUT and create window
-	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
-	glutInitWindowPosition(100, 100);
-	glutInitWindowSize(renderW, renderH);
-	glutCreateWindow("Heatmap");
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
+    glutInitWindowPosition(100, 100);
+    glutInitWindowSize(renderW, renderH);
+    glutCreateWindow("Heatmap");
 
     glutDisplayFunc(renderScene);
     glutIdleFunc(renderScene);
@@ -67,8 +69,8 @@ int main(int argc, char** argv)
     glEnable(GL_TEXTURE_2D);
     setupTexture();
 
-	// enter GLUT event processing cycle
-	glutMainLoop();
+    // enter GLUT event processing cycle
+    glutMainLoop();
 
-	return 0;
+    return 0;
 }
