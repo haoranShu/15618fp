@@ -35,7 +35,6 @@ int main(int argc, char** argv)
 
     int weighted;
     std::cin >> weighted;
-
     std::cin >> width >> height;
 
     leveledPts = new Quad(Point(0, 0), Point(width, height));
@@ -44,14 +43,14 @@ int main(int argc, char** argv)
     if (weighted == 0) {
         for (int i = 0; i < npoints; i++) {
             std::cin >> x >> y;
-            Node n(Point(x, y, 1.0f));
-            leveledPts->insert(&n);
+            Point p(x, y, 1.0f);
+            leveledPts->insert(p);
         }
     } else {
         for (int i = 0; i < npoints; i++) {
             std::cin >> x >> y >> w;
-            Node n(Point(x, y, w));
-            leveledPts->insert(&n);
+            Point p(x, y, w);
+            leveledPts->insert(p);
         }
     }
 
@@ -68,7 +67,6 @@ int main(int argc, char** argv)
 
     glEnable(GL_TEXTURE_2D);
     setupTexture();
-
     // enter GLUT event processing cycle
     glutMainLoop();
 

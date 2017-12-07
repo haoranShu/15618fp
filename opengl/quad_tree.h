@@ -1,3 +1,5 @@
+#include <vector>
+
 #define MAX_NODES_IN_QUAD 10
 #define MIN_QUAD_LENGTH 10
 
@@ -21,24 +23,12 @@ struct Point
     }
     Point()
     {
-        x = 0;
-        y = 0;
+        x = 1.0f;
+        y = 1.0f;
     }
 };
 
 // The objects that we want stored in the quadtree
-struct Node
-{
-    Point pos;
-    Node *next;
-
-    Node(Point _pos)
-    {
-        pos = _pos;
-        next = NULL;
-    }
-};
-
 // The main quadtree class
 class Quad
 {
@@ -46,9 +36,7 @@ class Quad
     Point topLeft;
     Point botRight;
 
-    size_t count;
-    // Contains details of node
-    Node *n;
+    std::vector<Point> points;
 
     // Children of this tree
     Quad *topLeftTree;
@@ -61,8 +49,6 @@ public:
     {
         topLeft = Point();
         botRight = Point();
-        n = NULL;
-        count = 0;
         topLeftTree  = NULL;
         topRightTree = NULL;
         botLeftTree  = NULL;
@@ -70,17 +56,15 @@ public:
     }
     Quad(Point topL, Point botR)
     {
-        n = NULL;
-        count = 0;
+        topLeft = topL;
+        botRight = botR;
         topLeftTree  = NULL;
         topRightTree = NULL;
         botLeftTree  = NULL;
         botRightTree = NULL;
-        topLeft = topL;
-        botRight = botR;
     }
-    void insert(Node*);
-    Node* search(Point, Point);
-    bool inBoundary(Point);
-    bool overlaps(Point, Point);
+    void insert(Point&);
+    void search(Point&, Point&, float, float);
+    bool inBoundary(Point&);
+    bool overlaps(Point&, Point&);
 };

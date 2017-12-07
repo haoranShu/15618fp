@@ -1,30 +1,27 @@
 #include <iostream>
 #include <cmath>
 
-#include "quad_tree.h"
+#include "gl_utility.h"
 
 using namespace std;
 
 // Insert a node into the quadtree
-void Quad::insert(Node *node)
+void Quad::insert(Point& point)
 {
-    if (node == NULL)
-        return;
-
     // Current quad cannot contain it
-    if (!inBoundary(node->pos))
+    if (!inBoundary(point))
         return;
 
-    node->next = n;
-    n = node;
-    count++;
+    points.push_back(point);
 
     // We are at a quad of unit area
     // We cannot subdivide this quad further
     if (abs(topLeft.x - botRight.x) <= MIN_QUAD_LENGTH ||
         abs(topLeft.y - botRight.y) <= MIN_QUAD_LENGTH ||
-        count < MAX_NODES_IN_QUAD)
+        (topLeftTree == NULL && points.size() < MAX_NODES_IN_QUAD))
+    {
         return;
+    }
 
     if (topLeftTree == NULL)
     {
@@ -42,105 +39,57 @@ void Quad::insert(Node *node)
             Point(botRight.x, botRight.y));
     }
 
-    while (n != NULL) {
-        topLeftTree->insert(n);
-        botLeftTree->insert(n);
-        topRightTree->insert(n);
-        botRightTree->insert(n);
-        n = n->next;
+    while (!points.empty()) {
+        Point p = points.back();
+        topLeftTree->insert(p);
+        topRightTree->insert(p);
+        botLeftTree->insert(p);
+        botRightTree->insert(p);
+        points.pop_back();
     }
 }
 
 // Find a node in a quadtree
-Node* Quad::search(Point tl, Point br)
+void Quad::search(Point& tl, Point& br, float x_gap, float y_gap)
 {
     // Current quad cannot contain it
     if (!overlaps(tl, br))
-        return NULL;
+        return;
 
-    Node *result = NULL;
     // We are at a quad of unit length
     // We cannot subdivide this quad further
     if (abs(topLeft.x - botRight.x) <= MIN_QUAD_LENGTH ||
         abs(topLeft.y - botRight.y) <= MIN_QUAD_LENGTH ||
-        count < MAX_NODES_IN_QUAD)
+        topLeftTree == NULL)
     {
-        Node *curr = n;
-        while (curr != NULL)
+        for (Point p: points)
         {
-            if (curr->pos.x >= tl.x &&
-                    curr->pos.x <= br.x &&
-                    curr->pos.y >= tl.y &&
-                    curr->pos.y <= br.y)
-            {
-                Node *node = (Node *)malloc(sizeof(struct Node));
-                node->pos = curr->pos;
-                node->next = result;
-                result = node;
+            if (p.x >= tl.x && p.y >= tl.y && p.x < br.x && p.y < br.y) {
+                unsigned x = (unsigned)floor((p.x - tl.x) / x_gap);
+                unsigned y = (unsigned)floor((p.y - tl.y) / y_gap);
+                heatmap_add_point(hm, x, y);
             }
-            curr = curr->next;
         }
 
-        return result;
+        return;
     }
 
-    Node *head = topLeftTree->search(tl, br);
-    if (head != NULL)
-    {
-        Node *curr = head;
-        while (curr->next != NULL)
-            curr = curr->next;
-
-        curr->next = result;
-        result = head;
-    }
-
-    head = topRightTree->search(tl, br);
-    if (head != NULL)
-    {
-        Node *curr = head;
-        while (curr->next != NULL)
-            curr = curr->next;
-
-        curr->next = result;
-        result = head;
-    }
-
-    head = botLeftTree->search(tl, br);
-    if (head != NULL)
-    {
-        Node *curr = head;
-        while (curr->next != NULL)
-            curr = curr->next;
-
-        curr->next = result;
-        result = head;
-    }
-
-    head = botRightTree->search(tl, br);
-    if (head != NULL)
-    {
-        Node *curr = head;
-        while (curr->next != NULL)
-            curr = curr->next;
-
-        curr->next = result;
-        result = head;
-    }
-
-    return result;
+    topLeftTree->search(tl, br, x_gap, y_gap);
+    topRightTree->search(tl, br, x_gap, y_gap);
+    botLeftTree->search(tl, br, x_gap, y_gap);
+    botRightTree->search(tl, br, x_gap, y_gap);
 }
 
 // Check if current quadtree contains the point
-bool Quad::inBoundary(Point p)
+bool Quad::inBoundary(Point& p)
 {
     return (p.x >= topLeft.x &&
-        p.x <= botRight.x &&
+        p.x < botRight.x &&
         p.y >= topLeft.y &&
-        p.y <= botRight.y);
+        p.y < botRight.y);
 }
 
-bool Quad::overlaps(Point tl, Point br)
+bool Quad::overlaps(Point& tl, Point& br)
 {
     if (topLeft.x > br.x || tl.x > botRight.x)
         return false;

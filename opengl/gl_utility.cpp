@@ -17,22 +17,13 @@ void renderNewPoints(float x0, float y0, float w, float h)
     hm->max = 0;
     float x1 = x0 + w;
     float y1 = y0 + h;
-    unsigned x, y;
 
     float x_gap = w / renderW;
     float y_gap = h / renderH;
 
-    Node *node = leveledPts->search(Point(x0, y1), Point(x1, y0));
-    while (node != NULL) {
-        Point p = node->pos;
-        if (p.x >= x0 && p.y >= y0 && p.x < x1 && p.y < y1) {
-            x = (unsigned)floor((p.x - x0) / x_gap);
-            y = (unsigned)floor((p.y - y0) / y_gap);
-            heatmap_add_point(hm, x, y);
-        }
-        node = node->next;
-    }
-
+    Point a(x0, y0);
+    Point b(x1, y1);
+    leveledPts->search(a, b, x_gap, y_gap);
     heatmap_render_default_to(hm, &image[0]);
 }
 
