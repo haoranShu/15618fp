@@ -1,6 +1,7 @@
 #include <math.h>
 #include <iostream>
 #include <string>
+#include <string.h>
 #include <ctime>
 
 #include "gl_utility.h"
@@ -49,7 +50,6 @@ void setupTexture()
     renderNewPoints(0, 0, width, height, "output/output.ppm");
 
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, renderW, renderH, 0, GL_RGBA, GL_UNSIGNED_BYTE, (GLvoid*)(&image[0]));
-    glGenerateMipmap(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, id);
 }
 
