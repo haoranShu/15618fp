@@ -38,6 +38,10 @@ extern int renderW, renderH;
 extern float width, height;
 extern Quad* leveledPts;
 
+// cuda objects
+extern float* pixel_weights;
+extern unsigned char* pixel_color;
+
 void renderNewPoints(float x0, float y0, float w, float h, std::string filename);
 
 void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename);
