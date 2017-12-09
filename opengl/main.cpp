@@ -23,6 +23,10 @@ int renderW, renderH;
 float width, height;
 Quad* leveledPts;
 
+// cuda objects
+float* pixel_weights;
+unsigned char* pixel_color;
+
 void usage(const char* progname) {
     printf("Usage: %s [options] width height input\n", progname);
     printf("Program Options:\n");
@@ -86,34 +90,35 @@ int main(int argc, char** argv)
     ppmOutput = new Image<unsigned char>(renderW, renderH);
 
     fstream fs;
-    fs.open(inputFile, fstream::in);
-
-    fs >> npoints;
-
-    int weighted;
-    fs >> weighted;
-    fs >> width >> height;
-
-    leveledPts = new Quad(Point(0, 0), Point(width, height));
-    float x, y, w;
-
-    if (weighted == 0) {
-        for (int i = 0; i < npoints; i++) {
-            fs >> x >> y;
-            Point p(x, y, 1.0f);
-            leveledPts->insert(p);
-        }
-    } else {
-        for (int i = 0; i < npoints; i++) {
-            fs >> x >> y >> w;
-            Point p(x, y, w);
-            leveledPts->insert(p);
-        }
-    }
-
-    fs.close();
 
     if (!useCuda) {
+        fs.open(inputFile, fstream::in);
+
+        fs >> npoints;
+    
+        int weighted;
+        fs >> weighted;
+        fs >> width >> height;
+
+        leveledPts = new Quad(Point(0, 0), Point(width, height));
+        float x, y, w;
+
+        if (weighted == 0) {
+            for (int i = 0; i < npoints; i++) {
+                fs >> x >> y;
+                Point p(x, y, 1.0f);
+                leveledPts->insert(p);
+            }
+        } else {
+            for (int i = 0; i < npoints; i++) {
+                fs >> x >> y >> w;
+                Point p(x, y, w);
+                leveledPts->insert(p);
+            }
+        }
+
+        fs.close();
+
         if (!zoom) {
             // init GLUT and create window
             glutInit(&argc, argv);
@@ -143,18 +148,29 @@ int main(int argc, char** argv)
             fs.close(); 
         }
     } else {
-        fs.open(traceFile, fstream::in);
+        // parse input from inputFile and construct Quadtree
+        fs.open(inputFile, fstream::in);
+            // TODO: declare extern Quadtree_node * in gl_utility.h
+            // TODO: declare Quadtree_node * in main.cpp
+            // TODO: cudaMalloc space for points
+            // TODO: thrust IO to set up Quadtree
+        fs.close();
 
+        // allocate device buffer to store processed data points for each pixel
+        cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
+        cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
+
+        fs.open(traceFile, fstream::in);
+        fs >> ntrace;
+        string outputPre = "cuda_medianoutput/trace";
+        char outputName[30];
+        for (int i = 0; i < ntrace; i++) {
+            fs >> x0 >> y0 >> width >> height;
+            sprintf(outputName, "%s%04d.ppm", outputPre.c_str(), i+1);
+            renderNewPointsCUDA(x0, y0, width, height, string(outputName));
+        }
 
         fs.close(); 
-        // thrust io
-
-        
-        // build quadtree on GPU
-
-        
-
-
     }
 
     return 0;
