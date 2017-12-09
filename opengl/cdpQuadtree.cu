@@ -490,16 +490,16 @@ void build_quadtree_kernel(Quadtree_node *nodes, Points *points, Parameters para
     if (threadIdx.x == NUM_THREADS_PER_BLOCK-1)
     {
         // The children.
-        Quadtree_node *children = &nodes[params.num_nodes_at_this_level];
+        Quadtree_node *children = &nodes[params.num_nodes_at_this_level - node.id()];
 
         // The offsets of the children at their level.
         int child_offset = 4*node.id();
 
         // Set IDs.
-        children[child_offset+0].set_id(4*node.id()+ 0);
-        children[child_offset+1].set_id(4*node.id()+ 4);
-        children[child_offset+2].set_id(4*node.id()+ 8);
-        children[child_offset+3].set_id(4*node.id()+12);
+        children[child_offset+0].set_id(4*node.id() + 0);
+        children[child_offset+1].set_id(4*node.id() + 1);
+        children[child_offset+2].set_id(4*node.id() + 2);
+        children[child_offset+3].set_id(4*node.id() + 3);
 
         // Points of the bounding-box.
         const float2 &p_min = bbox.get_min();
@@ -518,7 +518,7 @@ void build_quadtree_kernel(Quadtree_node *nodes, Points *points, Parameters para
         children[child_offset+3].set_range(s_num_pts[2][warp_id], s_num_pts[3][warp_id]);
 
         // Launch 4 children.
-        build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<4, NUM_THREADS_PER_BLOCK, 4 *NUM_WARPS_PER_BLOCK *sizeof(int)>>>(children, points, Parameters(params, true));
+        build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<4, NUM_THREADS_PER_BLOCK, 4 *NUM_WARPS_PER_BLOCK *sizeof(int)>>>(&children[child_offset], points, Parameters(params, true));
     }
 }
 
