@@ -1,5 +1,7 @@
 #include <math.h>
 #include <iostream>
+#include <string>
+#include <ctime>
 
 #include "gl_utility.h"
 
@@ -11,8 +13,11 @@ float curr_scale = 1.0f;
 float g_x0 = 0;
 float g_y0 = 0;
 
-void renderNewPoints(float x0, float y0, float w, float h)
+clock_t start;
+
+void renderNewPoints(float x0, float y0, float w, float h, string filename)
 {
+    start = clock();
     memset(hm->buf, 0, hm->w * hm->h * sizeof(float));
     hm->max = 0;
     float x1 = x0 + w;
@@ -25,6 +30,9 @@ void renderNewPoints(float x0, float y0, float w, float h)
     Point b(x1, y1);
     leveledPts->search(a, b, x_gap, y_gap);
     heatmap_render_default_to(hm, &image[0]);
+    cout << (clock() - start) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
+    heatmap_render_default_to(hm, ppmOutput->data);
+    writePPMImage(ppmOutput, filename);
 }
 
 void setupTexture()
@@ -38,7 +46,7 @@ void setupTexture()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
 
-    renderNewPoints(0, 0, width, height);
+    renderNewPoints(0, 0, width, height, "output/output.ppm");
 
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, renderW, renderH, 0, GL_RGBA, GL_UNSIGNED_BYTE, (GLvoid*)(&image[0]));
     glGenerateMipmap(GL_TEXTURE_2D);
@@ -72,7 +80,7 @@ void zooming(int button, int state, int x, int y)
             cout << x << ' ' << y << endl;
             width = width*0.9;
             height = height*0.9;
-            renderNewPoints(g_x0, g_y0, width, height);
+            renderNewPoints(g_x0, g_y0, width, height, "output/output.ppm");
             glTexSubImage2D(GL_TEXTURE_2D, 0 ,0, 0, renderW, renderH, GL_RGBA, GL_UNSIGNED_BYTE, (GLvoid*)(&image[0]));
         }
     } else if (button == GLUT_RIGHT_BUTTON) {
@@ -81,7 +89,7 @@ void zooming(int button, int state, int x, int y)
             g_y0 = g_y0 - height * 0.05;
             width = width*1.1;
             height = height*1.1;
-            renderNewPoints(g_x0, g_y0, width, height);
+            renderNewPoints(g_x0, g_y0, width, height, "output/output.ppm");
             glTexSubImage2D(GL_TEXTURE_2D, 0 ,0, 0, renderW, renderH, GL_RGBA, GL_UNSIGNED_BYTE, (GLvoid*)(&image[0]));
         }
     }

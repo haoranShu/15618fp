@@ -16,13 +16,14 @@ LDFLAGS+=-lm
 
 .PHONY: all clean
 
-all: libheatmap.a libheatmap.so quad_tree.o gl_utility.o main
+all: libheatmap.a libheatmap.so quad_tree.o gl_utility.o ppm.o main
 
 clean:
 	rm -f libheatmap.a
 	rm -f libheatmap.so
 	rm -f quad_tree.o
 	rm -f gl_utility.o
+	rm -f ppm.o
 	rm -f main
 	find . -name '*.[os]' -print0 | xargs -0 rm -f
 
@@ -38,14 +39,17 @@ libheatmap.a: heatmap.o $(patsubst %.c,%.o,$(wildcard colorschemes/*.c))
 libheatmap.so: heatmap.o $(patsubst %.c,%.o,$(wildcard colorschemes/*.c))
 	$(CC) $(LDFLAGS) -shared -o $@ $^
 
-quad_tree.o: quad_tree.cpp quad_tree.h
+ppm.o: ppm.cpp
 	$(CXX) -c $< $(CXXFLAGS) -o $@
 
-gl_utility.o: gl_utility.cpp gl_utility.h
+quad_tree.o: quad_tree.cpp
+	$(CXX) -c $< $(CXXFLAGS) -o $@
+
+gl_utility.o: gl_utility.cpp
 	$(CXX) -framework OpenGL -framework GLUT -c $< $(CXXFLAGS) -o $@
 
 main.o: main.cpp
 	$(CXX) -framework OpenGL -framework GLUT -c $< $(CXXFLAGS) -o $@
 
-main: main.o libheatmap.a quad_tree.o gl_utility.o
+main: main.o libheatmap.a quad_tree.o gl_utility.o ppm.o
 	$(CXX) -framework OpenGL -framework GLUT $^ $(LDFLAGS) -o $@
