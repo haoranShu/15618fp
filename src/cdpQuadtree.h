@@ -1,5 +1,5 @@
-#include <thrust/random.h>
-#include <thrust/device_vector.h>
+#include <cuda.h>
+#include <cuda_runtime.h>
 #include <helper_cuda.h>
 
 class Points
