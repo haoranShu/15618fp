@@ -275,7 +275,6 @@
  __global__
  void build_quadtree_kernel(Quadtree_node *nodes, Points *points, Parameters params)
  {
-     printf("here\n");
      // The number of warps in a block.
      const int NUM_WARPS_PER_BLOCK = NUM_THREADS_PER_BLOCK / warpSize;
  

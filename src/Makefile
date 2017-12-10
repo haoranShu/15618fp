@@ -290,6 +290,6 @@ gl_utility.o: gl_utility.cpp
 main.o: main.cpp
 	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
-main: main.o libheatmap.a libcudarenderer.a quad_tree.o gl_utility.o ppm.o
+main: main.o libheatmap.a cuda_renderer.o quad_tree.o gl_utility.o ppm.o $(patsubst %.c,%.o,$(wildcard colorschemes/*.c))
 	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDLIBS)
 	#$(CXX) -lGL -lGLU -lglut $^ $(LDFLAGS) -o $@ $(LDFLAGS) $(LDLIBS)
