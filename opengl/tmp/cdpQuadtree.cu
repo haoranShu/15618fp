@@ -90,6 +90,27 @@ class Bounding_box
             return p.x >= m_p_min.x && p.x < m_p_max.x && p.y >= m_p_min.y && p.y < m_p_max.y;
         }
 
+        __host__ __device__ bool contains(const Bounding_box &other) const
+        {
+            float2 other_min = other.get_min();
+            float2 other_max = other.get_max();
+
+            return other_min.x >= m_p_min.x && other_min.y >= m_p_min.y && 
+                other_max.x <= m_p_max.x && other_max.y <= m_p_max.y;
+        }
+
+        __host__ __device__ bool overlaps(const Bounding_box &other) const
+        {
+            float2 other_min = other.get_min();
+            float2 other_max = other.get_max();
+
+            if (other_max.x < m_p_min.x || m_p_max.x < other_min.x)
+                return false;
+            if (other_max.y < m_p_min.y || m_p_max.y < other_min.y)
+                return false;
+            return true;
+        }
+
         // Define the bounding box.
         __host__ __device__ void set(float min_x, float min_y, float max_x, float max_y)
         {
