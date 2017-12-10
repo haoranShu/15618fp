@@ -104,7 +104,7 @@ void cudaInit()
 {
     cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
     cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
-    cudaMalloc(&maxbuf, 1 * sizeof(float));
+    cudaMalloc(&max_buf, 1 * sizeof(float));
 
     cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
         renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
@@ -115,7 +115,9 @@ __global__ void tempMax(float* src, float* dst, int n)
     int idx = threadIdx.x + blockDim.x * blockIdx.x;
     float &max_weight = dst[0];
     if (idx == 0) {
-        max_weight = max_weight > pixel_weights[i] ? max_weight : pixel_weights[i];
+        for (int i = 0; i < n; i++) {
+            max_weight = max_weight > pixel_weights[i] ? max_weight : pixel_weights[i];
+        }
     }
 }
 
@@ -130,7 +132,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
 
     // get the maximum value of all weigths
     float max_weight;
-    tempMax<<<1, 1>>>(pixel_weights, maxbuf);
+    tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
     cudaMemcpy((void *)&max_weight, (void *)maxbuf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
     printf("here\n");
     writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, renderH * renderW, max_weight, heatmap_cs_default);
