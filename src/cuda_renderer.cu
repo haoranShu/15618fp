@@ -758,6 +758,7 @@ __global__ void renderNewPointsKernel(float x0, float y0, float w, float h,
     int W, int H, float* buf, Quadtree_node* nodes, Points* points,
     float pt_width, float pt_height, float* stamp)
 {
+    printf("entered\n");
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     float x_reso = w / W;
     float y_reso = h / H;
