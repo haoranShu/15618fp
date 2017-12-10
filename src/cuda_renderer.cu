@@ -123,14 +123,12 @@ __global__ void tempMax(float* src, float* dst, int n)
 
 void shrink(int n, int* sizes)
 {
-    int &g = sizes[0];
-    int &b = sizes[1];
-    if (n <= 2 * b) {
-        g = 1;
-        while (b > n) b >>= 1;
+    if (n <= 2 * sizes[1]) {
+        sizes[0] = 1;
+        while (sizes[1] > n) sizes[1] >>= 1;
     } else {
-        int m = (n + (b - 1)) / b;
-        while (g > m) g >>= 1;
+        int m = (n + (sizes[1] - 1)) / sizes[1];
+        while (sizes[0] > m) sizes[0] >>= 1;
     }
 }
 
