@@ -150,12 +150,14 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     int slen = sizes[0];
     float* ps = pixel_weights;
     int smemSize = 0;
+    int blockSize;
     if (slen > 1) {
         float* pd = max_buf + sizes[0];
         do {
             shrink(slen, sizes);
             smemSize = sizes[1] * sizeof(float);
-            reduceMaxKernel<sizes[1]><<<sizes[0], sizes[1], smemSize>>>(ps, pd, sizes[0]);
+            blockSize = sizes[1];
+            reduceMaxKernel<blockSize><<<sizes[0], sizes[1], smemSize>>>(ps, pd, sizes[0]);
             float *pt = ps;
             ps = pd;
             pd = pt;
