@@ -702,7 +702,7 @@
 
 clock_t start_cuda;
 
-__device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box &box, 
+__device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box box, 
     Points *pts, Parameters params, float pt_x, float pt_y, float x_reso, float y_reso,
     float* stamp)
 {
