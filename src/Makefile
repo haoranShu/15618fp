@@ -254,11 +254,11 @@ clean:
 	rm -f main
 	find . -name '*.[os]' -print0 | xargs -0 rm -f
 
-cdpQuadtree.o: cdpQuadtree.cu cdpQuadtree.h
-	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
+#cdpQuadtree.o: cdpQuadtree.cu cdpQuadtree.h
+#	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
 cuda_renderer.o: cuda_renderer.cu
-	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ cdpQuadtree.o -c $<
+	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
 heatmap.o: heatmap.c heatmap.h
 	$(CC) -c $< $(CFLAGS) -o $@
