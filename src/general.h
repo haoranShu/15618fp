@@ -23,5 +23,6 @@ extern Quad* leveledPts;
 // cuda objects
 extern float* pixel_weights;
 extern unsigned char* pixel_color;
+extern float* max_buf;
 
 #endif /* GENERAL_H */

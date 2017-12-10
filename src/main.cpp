@@ -27,6 +27,7 @@ Quad* leveledPts;
 // cuda objects
 float* pixel_weights;
 unsigned char* pixel_color;
+float* max_buf;
 
 void usage(const char* progname) {
     printf("Usage: %s [options] width height input\n", progname);
