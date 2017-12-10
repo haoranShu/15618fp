@@ -121,7 +121,7 @@ __global__ void tempMax(float* src, float* dst, int n)
     }
 }
 
-void shrink(int n, int* sizes)
+__device__ void shrink(int n, int* sizes)
 {
     if (n <= 2 * sizes[1]) {
         sizes[0] = 1;
