@@ -239,7 +239,7 @@ endif
 
 .PHONY: all clean
 
-all: libheatmap.a libheatmap.so quad_tree.o gl_utility.o ppm.o cdpQuadtree.o main
+all: libheatmap.a libheatmap.so quad_tree.o gl_utility.o ppm.o cuda_renderer.o main
 
 clean:
 	rm -f libheatmap.a
@@ -248,7 +248,7 @@ clean:
 	rm -f libcudarenderer.so
 	rm -f quad_tree.o
 	rm -f cuda_renderer.o
-	rm -f cdpQuadtree.o
+	#rm -f cdpQuadtree.o
 	rm -f gl_utility.o
 	rm -f ppm.o
 	rm -f main
@@ -290,6 +290,6 @@ gl_utility.o: gl_utility.cpp
 main.o: main.cpp
 	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
-main: main.o libheatmap.a libcudarenderer.a quad_tree.o gl_utility.o ppm.o cdpQuadtree.o
+main: main.o libheatmap.a libcudarenderer.a quad_tree.o gl_utility.o ppm.o
 	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDLIBS)
 	#$(CXX) -lGL -lGLU -lglut $^ $(LDFLAGS) -o $@ $(LDFLAGS) $(LDLIBS)
