@@ -706,14 +706,13 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     Points *pts, Parameters params, float pt_x, float pt_y, float x_reso, float y_reso,
     float* stamp)
 {
-    printf("entered\n");
     Quadtree_node* current = &nodes[idx];
     const Bounding_box &curr_box = current->bounding_box();
     if (!box.overlaps(curr_box)) {
-        printf("None\n");
         return;
     }
 
+    printf("entered\n");
     int x_dist, y_dist;
     float2 p_min = curr_box.get_min();
     float2 p_max = curr_box.get_max();
@@ -735,6 +734,7 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
         return;
     }
 
+    printf("entered2\n");
     if (params.depth == params.max_depth || current->num_points() <= params.min_points_per_node)
     {
         for (int it = current->points_begin() ; it < current->points_end() ; ++it)
