@@ -1,6 +1,7 @@
 #include <string>
 #include <ctime>
 #include <iostream>
+#include <stdio.h>
 
 #include <cuda.h>
 #include <cuda_runtime.h>
@@ -110,7 +111,7 @@ void cudaInit()
 
 void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename)
 {
-    printf("here");
+    printf("here\n");
     start_cuda = std::clock();
     float pt_width = w * 9 / renderW;
     float pt_height = h * 9 / renderH;
@@ -122,7 +123,9 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     for (int i = 0; i < renderH * renderW; i ++) {
         max_weight = max_weight > pixel_weights[i] ? max_weight : pixel_weights[i];
     }
+    printf("here\n");
     writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, renderH * renderW, max_weight, heatmap_cs_default);
+    printf("here\n");
     cudaDeviceSynchronize();
     std::cout << (std::clock() - start_cuda) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
     cudaMemcpy((void *)ppmOutput->data, (void *)pixel_color,
