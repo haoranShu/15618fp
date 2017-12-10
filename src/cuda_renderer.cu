@@ -765,7 +765,7 @@ __global__ void renderNewPointsKernel(float x0, float y0, float w, float h,
         buf[i] = 0;
         float pt_x = x0 + (i%W + 0.5) * x_reso;
         float pt_y = y0 + (i/W + 0.5) * y_reso;
-        Bounding_box region();
+        Bounding_box region;
         region.set(pt_x - pt_width/2, pt_y - pt_height/2,
             pt_x + pt_width/2, pt_y + pt_height/2);
         Parameters params(12, 64);
