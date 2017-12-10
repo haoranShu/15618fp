@@ -6,6 +6,9 @@
 #include <fstream>
 #include <random>
 
+#include <cuda.h>
+#include <cuda_runtime.h>
+
 #include "general.h"
 #include "gl_utility.h"
 #include "cuda_renderer.h"
