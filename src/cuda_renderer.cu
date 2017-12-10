@@ -83,7 +83,7 @@ __global__ void reduceMaxKernel(float* src, float* dst, int n)
 
     if (tid == 0) dst[blockIdx.x] = sdata[0];
 
-    if (tid == 0) printf("returned %d\n", blockIdx.x);
+    if (tid < 32) printf("returned %d\n", blockIdx.x);
     return;
 }
 
