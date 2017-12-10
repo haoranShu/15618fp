@@ -278,11 +278,13 @@ void build_quadtree_kernel(Quadtree_node *nodes, Points *points, Parameters para
 
     // The current node.
     Quadtree_node &node = nodes[blockIdx.x];
-    node.set_id(node.id() + blockIdx.x);
+    /*node.set_id(node.id() + blockIdx.x);*/
 
     // The number of points in the node.
     int num_points = node.num_points();
 
+    if (threadIdx.x == 0)
+        printf ("Node %d entered kernel pts: %d\n", node.id(), num_points);
     //
     // 1- Check the number of points and its depth.
     //
@@ -290,6 +292,7 @@ void build_quadtree_kernel(Quadtree_node *nodes, Points *points, Parameters para
     // Stop the recursion here. Make sure points[0] contains all the points.
     if (params.depth >= params.max_depth || num_points <= params.min_points_per_node)
     {
+        /*printf ("params.depth %d, num_points %d, min points %d\n", params.depth, num_points, params.min_points_per_node);*/
         if (params.point_selector == 1)
         {
             int it = node.points_begin(), end = node.points_end();
@@ -490,16 +493,16 @@ void build_quadtree_kernel(Quadtree_node *nodes, Points *points, Parameters para
     if (threadIdx.x == NUM_THREADS_PER_BLOCK-1)
     {
         // The children.
-        Quadtree_node *children = &nodes[params.num_nodes_at_this_level];
+        Quadtree_node *children = &nodes[params.num_nodes_at_this_level - node.id()];
 
         // The offsets of the children at their level.
         int child_offset = 4*node.id();
 
         // Set IDs.
-        children[child_offset+0].set_id(4*node.id()+ 0);
-        children[child_offset+1].set_id(4*node.id()+ 4);
-        children[child_offset+2].set_id(4*node.id()+ 8);
-        children[child_offset+3].set_id(4*node.id()+12);
+        children[child_offset+0].set_id(4*node.id() + 0);
+        children[child_offset+1].set_id(4*node.id() + 1);
+        children[child_offset+2].set_id(4*node.id() + 2);
+        children[child_offset+3].set_id(4*node.id() + 3);
 
         // Points of the bounding-box.
         const float2 &p_min = bbox.get_min();
@@ -512,13 +515,14 @@ void build_quadtree_kernel(Quadtree_node *nodes, Points *points, Parameters para
         children[child_offset+3].set_bounding_box(center.x, p_min.y , p_max.x , center.y);   // Bottom-right.
 
         // Set the ranges of the children.
+        /*printf("(Node %d) Depth %d: %d %d %d %d\n", node.id(), params.depth, s_num_pts[0][warp_id], s_num_pts[1][warp_id], s_num_pts[2][warp_id], s_num_pts[3][warp_id]);*/
         children[child_offset+0].set_range(node.points_begin(),   s_num_pts[0][warp_id]);
         children[child_offset+1].set_range(s_num_pts[0][warp_id], s_num_pts[1][warp_id]);
         children[child_offset+2].set_range(s_num_pts[1][warp_id], s_num_pts[2][warp_id]);
         children[child_offset+3].set_range(s_num_pts[2][warp_id], s_num_pts[3][warp_id]);
 
         // Launch 4 children.
-        build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<4, NUM_THREADS_PER_BLOCK, 4 *NUM_WARPS_PER_BLOCK *sizeof(int)>>>(children, points, Parameters(params, true));
+        build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<4, NUM_THREADS_PER_BLOCK, 4 *NUM_WARPS_PER_BLOCK *sizeof(int)>>>(&children[child_offset], points, Parameters(params, true));
     }
 }
 
@@ -530,6 +534,14 @@ bool check_quadtree(const Quadtree_node *nodes, int idx, int num_pts, Points *pt
     const Quadtree_node &node = nodes[idx];
     int num_points = node.num_points();
     const Bounding_box &bbox = node.bounding_box();
+
+    int sum = 0;
+    for (int i = 0; i < 4; i++) {
+        sum += nodes[4 * idx + params.num_nodes_at_this_level + i].num_points();
+    }
+
+    if (sum != num_points)
+        printf("wtf\n");
 
     for (int it = node.points_begin() ; it < node.points_end() ; ++it)
     {
@@ -549,6 +561,7 @@ bool check_quadtree(const Quadtree_node *nodes, int idx, int num_pts, Points *pt
                check_quadtree(&nodes[params.num_nodes_at_this_level], 4*idx+2, num_pts, pts, Parameters(params, true)) &&
                check_quadtree(&nodes[params.num_nodes_at_this_level], 4*idx+3, num_pts, pts, Parameters(params, true));
     }
+
     return true;
 }
 
@@ -566,7 +579,7 @@ bool cdpQuadtree(const int warp_size)
 
     // Constants to control the algorithm.
     const int max_depth  = 8;
-    const int min_points_per_node = 16;
+    const int min_points_per_node = 8;
 
     float xs[num_points];
     float ys[num_points];
@@ -584,6 +597,7 @@ bool cdpQuadtree(const int warp_size)
         }
     }
 
+    printf("done reading inputs\n");
     // Allocate memory for points.
     thrust::device_vector<float> x_d0(&xs[0], &xs[num_points]);
     thrust::device_vector<float> x_d1(num_points);
