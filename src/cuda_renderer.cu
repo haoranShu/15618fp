@@ -2,6 +2,9 @@
 #include <ctime>
 #include <iostream>
 
+#include <cuda.h>
+#include <cuda_runtime.h>
+
 #include "cuda_renderer.h"
 #include "cdpQuadtree.h"
 
@@ -94,6 +97,15 @@ __global__ void writeToImageKernel(float* weights, unsigned char* color, int num
         color[4*i+2] = (colorscheme->colors)[color_idx*4+2];
         color[4*i+3] = (colorscheme->colors)[color_idx*4+3];
     }
+}
+
+void cudaInit()
+{
+    cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
+    cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
+
+    cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
+        renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
 }
 
 void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename)

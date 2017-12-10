@@ -6,9 +6,6 @@
 #include <fstream>
 #include <random>
 
-#include <cuda.h>
-#include <cuda_runtime.h>
-
 #include "general.h"
 #include "gl_utility.h"
 #include "cuda_renderer.h"
@@ -190,11 +187,7 @@ int main(int argc, char** argv)
         //fs.close();
 
         //// allocate device buffer to store processed data points for each pixel
-        cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
-        cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
-
-        cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
-            renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
+        cudaInit();
         renderNewPointsCUDA(0, 0, width, height, "cuda.ppm");
 
         //fs.open(traceFile, fstream::in);
