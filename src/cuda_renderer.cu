@@ -31,6 +31,7 @@ __global__ void renderNewPointsKernel(float x0, float y0, float w, float h,
 
 __global__ void reduceMaxKernel(float* src, float* dst, int n)
 {
+    printf("enterned\n");
     extern __shared__ float sdata[];
 
     int blockSize = blockDim.x;
