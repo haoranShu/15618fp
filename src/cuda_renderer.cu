@@ -649,7 +649,7 @@
      build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<1, NUM_THREADS_PER_BLOCK, smem_size>>>(nodes, points, params);
      checkCudaErrors(cudaGetLastError());
  
-     /*
+     
      // Copy points to CPU.
      thrust::host_vector<float> x_h(x_d0);
      thrust::host_vector<float> y_h(y_d0);
@@ -663,7 +663,7 @@
      // Validate the results.
      bool ok = check_quadtree(host_nodes, 0, num_points, &host_points, params);
      std::cout << "Results: " << (ok ? "OK" : "FAILED") << std::endl;
- 
+     /*
      // Free CPU memory.
      delete[] host_nodes;
  
@@ -878,7 +878,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h,
     float pt_height = h * 9 / renderH;
 
     renderNewPointsKernel<<<128, 128>>>(x0, y0, w, h, renderW, renderH,
-        pixel_weights, cuda_nodes, cuda_points, pt_width, pt_height, cuda_stamp);
+        pixel_weights, cuda_nodes, cuda_points, pt_width, pt_height, stamp);
 
     // get the maximum value of all weigths
     float max_weight;
