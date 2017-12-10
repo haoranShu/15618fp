@@ -173,9 +173,9 @@ int main(int argc, char** argv)
         fs >> weighted;
         fs >> width >> height;
 
-        float xs[npoints];
-        float ys[npoints];
-        float wes[npoints];
+        xs = (float *)malloc(npoints * sizeof(float));
+        ys = (float *)malloc(npoints * sizeof(float));
+        wes = (float *)malloc(npoints * sizeof(float));
 
         if (weighted == 0) {
             for (int i = 0; i < npoints; i++)
