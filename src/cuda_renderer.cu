@@ -82,7 +82,9 @@ __global__ void reduceMaxKernel(float* src, float* dst, int n)
     }
 
     if (tid == 0) dst[blockIdx.x] = sdata[0];
-    printf("returned\n");
+
+    if (tid == 0) printf("returned %d\n", blockIdx.x);
+    return;
 }
 
 __global__ void writeToImageKernel(float* weights, unsigned char* color, int num_pixels,
