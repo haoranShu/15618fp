@@ -29,5 +29,6 @@ extern unsigned char* pixel_color;
 extern float* max_buf;
 
 extern float stamp[81];
+extern float* cuda_stamp;
 
 #endif /* GENERAL_H */
