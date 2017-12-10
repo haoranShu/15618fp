@@ -85,7 +85,7 @@ __global__ void reduceMaxKernel(float* src, float* dst, int n)
 }
 
 __global__ void writeToImageKernel(float* weights, unsigned char* color, int num_pixels,
-    int max_weight, heatmap_colorscheme_t* colorscheme)
+    int max_weight, const heatmap_colorscheme_t* colorscheme)
 {
     int idx = threadIdx.x + blockDim.x * blockIdx.x;
 
@@ -119,7 +119,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     // get the maximum value of all weigths
     float max_weight = 0;
     for (int i = 0; i < renderH * renderW; i ++) {
-        max = max > pixel_weights[i] ? max : pixel_weights[i];
+        max_weight = max_weight > pixel_weights[i] ? max_weight : pixel_weights[i];
     }
     writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, renderH * renderW, max_weight, heatmap_cs_default);
     cudaDeviceSynchronize();
