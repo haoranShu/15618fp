@@ -716,12 +716,12 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     float2 p_max = curr_box.get_max();
     if (box.contains(p_max) && box.contains(p_min)) 
     {
-        if ((floor)((curr_box.m_p_min.x - pt_x + x_reso/2) / x_reso) ==
-            (floor)((curr_box.m_p_max.x - pt_x + x_reso/2) / x_reso) &&
-            (floor)((curr_box.m_p_min.y - pt_y + y_reso/2) / y_reso) ==
-            (floor)((curr_box.m_p_max.y - pt_y + y_reso/2) / y_reso)) {
-            x_dist = (int)(floor)(curr_box.m_p_min.x - pt_x + x_reso/2) / x_reso);
-            y_dist = (int)(floor)(curr_box.m_p_min.y - pt_y + y_reso/2) / y_reso);
+        if ((floor)((p_min.x - pt_x + x_reso/2) / x_reso) ==
+            (floor)((p_max.x - pt_x + x_reso/2) / x_reso) &&
+            (floor)((p_min.y - pt_y + y_reso/2) / y_reso) ==
+            (floor)((p_max.y - pt_y + y_reso/2) / y_reso)) {
+            x_dist = (int)(floor)(p_min.x - pt_x + x_reso/2) / x_reso);
+            y_dist = (int)(floor)(p_min.y - pt_y + y_reso/2) / y_reso);
             x_dist = x_dist > 4 ? 4 : x_dist;
             x_dist = x_dist < -4 ? -4 : x_dist;
             y_dist = y_dist > 4 ? 4 : y_dist;
