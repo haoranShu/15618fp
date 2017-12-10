@@ -148,7 +148,12 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     float max_weight;
     //tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
     //cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
-    
+
+    cudaMalloc(&max_buf, 1 * sizeof(float));
+
+    int npixel = renderH * renderW;
+    reduceMaxKernel<<<1, 512, 512 * sizeof(float)>>>(pixel_weights, max_buf, npixel);
+/*    
     printf("here\n");
     sizes[0] = 512;
     sizes[1] = 256;
@@ -169,7 +174,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
             printf("%d %d\n", sizes[0], sizes[1]);
             smemSize = sizes[1] * sizeof(float);
             blockSize = sizes[1];
-            reduceMaxKernel<<<sizes[0], sizes[1], smemSize>>>(ps, pd, sizes[0]);
+            reduceMaxKernel<<<sizes[0], sizes[1], smemSize>>>(ps, pd, npixel);
             float *pt = ps;
             ps = pd;
             pd = pt;
@@ -177,8 +182,8 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
         } while (slen > 1);
     }
     printf("here\n");
-
-    cudaMemcpy((void *)&max_weight, (void *)ps, 1 * sizeof(float), cudaMemcpyDeviceToHost);
+*/
+    cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
 
     cudaDeviceSynchronize();
     start_cuda = std::clock();
