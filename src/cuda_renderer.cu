@@ -707,11 +707,11 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     float* stamp)
 {
     Quadtree_node* current = &nodes[idx];
-    printf("entered\n");
+    printf("entered1\n");
     const Bounding_box &curr_box = current->bounding_box();
-    printf("entered\n");
+    printf("entered2\n");
     if (!box.overlaps(curr_box)) {
-    printf("entered\n");
+    printf("entered3\n");
         return;
     }
 
