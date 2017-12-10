@@ -190,7 +190,7 @@ int main(int argc, char** argv)
         bool ok = cdpQuadtree(width, height, &xs[0], &ys[0], weighted ? &ws[0] : NULL, npoints,
             cuda_nodes, cuda_points);
 
-        renderNewPoints(0, 0, width, height, "benchmark.ppm");
+        //renderNewPoints(0, 0, width, height, "benchmark.ppm");
 
         // parse input from inputFile and construct Quadtree
         //fs.open(inputFile, fstream::in);
