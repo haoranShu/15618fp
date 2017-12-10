@@ -291,5 +291,5 @@ main.o: main.cpp
 	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
 main: main.o libheatmap.a libcudarenderer.a quad_tree.o gl_utility.o ppm.o cdpQuadtree.o
-	$(EXEC) $(NVCC) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDFLAGS) $(LDLIBS)
+	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDFLAGS) $(LDLIBS)
 	#$(CXX) -lGL -lGLU -lglut $^ $(LDFLAGS) -o $@ $(LDFLAGS) $(LDLIBS)
