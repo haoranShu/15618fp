@@ -7,7 +7,7 @@
 #include <cuda_runtime.h>
 
 #include "cuda_renderer.h"
-#include "cdpQuadtree.h"
+//#include "cdpQuadtree.h"
 
 clock_t start_cuda;
 
