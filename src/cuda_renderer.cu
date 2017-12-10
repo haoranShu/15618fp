@@ -97,11 +97,17 @@
          __host__ __device__ bool overlaps(const Bounding_box another_box)
          {
              /*printf("overlap\n");*/
-             float2 p3 = make_float2(another_box.m_p_min.x, another_box.m_p_max.y);
-             float2 p4 = make_float2(another_box.m_p_max.x, another_box.m_p_min.y);
-             return (contains(another_box.m_p_min) ||
-                contains(another_box.m_p_max) ||
-                contains(p3) || contains(p4));
+             /*float2 p3 = make_float2(another_box.m_p_min.x, another_box.m_p_max.y);*/
+             /*float2 p4 = make_float2(another_box.m_p_max.x, another_box.m_p_min.y);*/
+             /*return (contains(another_box.m_p_min) ||*/
+                /*contains(another_box.m_p_max) ||*/
+                /*contains(p3) || contains(p4));*/
+
+             if (m_p_min.x > another_box.m_p_max.x || another_box.m_p_min.x > m_p_max.x)
+                 return false;
+             if (m_p_min.y > another_box.m_p_max.y || another_box.m_p_min.y > m_p_max.y)
+                 return false;
+             return true;
          }
 
          // Does a box contain a point.
@@ -696,24 +702,24 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
 
     /*printf("entered!\n");*/
     int x_dist, y_dist;
-    float2 p_min = curr_box.get_min();
-    float2 p_max = curr_box.get_max();
-    if (box.contains(p_max) && box.contains(p_min)) 
-    {
-        if (floor((p_min.x - pt_x + x_reso/2) / x_reso) ==
-            floor((p_max.x - pt_x + x_reso/2) / x_reso) &&
-            floor((p_min.y - pt_y + y_reso/2) / y_reso) ==
-            floor((p_max.y - pt_y + y_reso/2) / y_reso)) {
-            x_dist = (int)floor((p_min.x - pt_x + x_reso/2) / x_reso);
-            y_dist = (int)floor((p_min.y - pt_y + y_reso/2) / y_reso);
-            x_dist = x_dist > 4 ? 4 : x_dist;
-            x_dist = x_dist < -4 ? -4 : x_dist;
-            y_dist = y_dist > 4 ? 4 : y_dist;
-            y_dist = y_dist < -4 ? -4 : y_dist;
-            *buf = *buf + current->num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];
-        }
-        return;
-    }
+    /*float2 p_min = curr_box.get_min();*/
+    /*float2 p_max = curr_box.get_max();*/
+    /*if (box.contains(p_max) && box.contains(p_min)) */
+    /*{*/
+        /*if (floor((p_min.x - pt_x + x_reso/2) / x_reso) ==*/
+            /*floor((p_max.x - pt_x + x_reso/2) / x_reso) &&*/
+            /*floor((p_min.y - pt_y + y_reso/2) / y_reso) ==*/
+            /*floor((p_max.y - pt_y + y_reso/2) / y_reso)) {*/
+            /*x_dist = (int)floor((p_min.x - pt_x + x_reso/2) / x_reso);*/
+            /*y_dist = (int)floor((p_min.y - pt_y + y_reso/2) / y_reso);*/
+            /*x_dist = x_dist > 4 ? 4 : x_dist;*/
+            /*x_dist = x_dist < -4 ? -4 : x_dist;*/
+            /*y_dist = y_dist > 4 ? 4 : y_dist;*/
+            /*y_dist = y_dist < -4 ? -4 : y_dist;*/
+            /**buf = *buf + current->num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];*/
+        /*}*/
+        /*return;*/
+    /*}*/
 
     if (params.depth == params.max_depth || current->num_points() <= params.min_points_per_node)
     {
@@ -842,9 +848,9 @@ void cudaInit()
     //cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
     //    renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
 
-    cudaMalloc(&cuda_colors, heatmap_cs_default->ncolors * sizeof(unsigned char));
+    cudaMalloc(&cuda_colors, heatmap_cs_default->ncolors * sizeof(unsigned char) * 4);
     cudaMemcpy((void *)cuda_colors, (void *)heatmap_cs_default->colors, 
-            heatmap_cs_default->ncolors * sizeof(unsigned char), cudaMemcpyHostToDevice);
+            heatmap_cs_default->ncolors * sizeof(unsigned char) * 4, cudaMemcpyHostToDevice);
 }
 
 __global__ void tempMax(float* src, float* dst, int n)
@@ -868,6 +874,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h,
     float pt_width = w * 9 / renderW;
     float pt_height = h * 9 / renderH;
 
+    printf("pt width = %f, pt height = %f\n", pt_width, pt_height);
     renderNewPointsKernel<<<128, 128>>>(x0, y0, w, h, renderW, renderH,
         pixel_weights, cuda_nodes, cuda_points, pt_width, pt_height, stamp);
 
@@ -888,6 +895,6 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h,
     cudaDeviceSynchronize();
     std::cout << (std::clock() - start_cuda) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
     cudaMemcpy((void *)ppmOutput->data, (void *)pixel_color,
-        npixel * sizeof(unsigned char), cudaMemcpyDeviceToHost);
+        npixel * sizeof(unsigned char) * 4, cudaMemcpyDeviceToHost);
     writePPMImage(ppmOutput, filename);
 }
