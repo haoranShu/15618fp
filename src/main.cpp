@@ -28,7 +28,8 @@ Quad* leveledPts;
 float* pixel_weights;
 unsigned char* pixel_color;
 float* max_buf;
-int* sizes;
+int* sizes = new int[2]; // on host:w
+
 
 void usage(const char* progname) {
     printf("Usage: %s [options] width height input\n", progname);
