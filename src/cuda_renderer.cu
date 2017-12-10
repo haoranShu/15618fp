@@ -731,7 +731,7 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
         return;
     }
 
-    if (params.depth == params.max_depth || current.num_points() <= params.min_points_per_node)
+    if (params.depth == params.max_depth || current->num_points() <= params.min_points_per_node)
     {
         for (int it = current->points_begin() ; it < current->points_end() ; ++it)
         {
