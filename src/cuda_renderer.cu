@@ -709,8 +709,10 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     printf("entered\n");
     Quadtree_node* current = &nodes[idx];
     const Bounding_box &curr_box = current->bounding_box();
-    if (!box.overlaps(curr_box))
+    if (!box.overlaps(curr_box)) {
+        printf("None\n");
         return;
+    }
 
     int x_dist, y_dist;
     float2 p_min = curr_box.get_min();
