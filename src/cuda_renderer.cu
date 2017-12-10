@@ -11,53 +11,53 @@
 
 clock_t start_cuda;
 
-__device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box &box, 
-    Points *pts, Parameters params, float pt_x, float pt_y, float x_reso, float y_reso,
+__device__ void traverse(Quadtree_node* nodes, int idx, float* buf, Bounding_box* box, 
+    Points* pts, Parameters* params, float pt_x, float pt_y, float x_reso, float y_reso,
     float* stamp)
 {
-    Quadtree_node current = nodes[idx];
-    Bounding_box curr_box = current.bounding_box();
-    if (!box.overlaps(curr_box))
+    Quadtree_node* current = &nodes[idx];
+    Bounding_box* curr_box = &current->bounding_box();
+    if (!box->overlaps(*curr_box))
         return;
 
     int x_dist, y_dist;
-    if (box.contains(curr_box)) 
+    if (box->contains(*curr_box)) 
     {
-        if ((floor)((curr_box.m_p_min.x - pt_x + x_reso/2) / x_reso) ==
-            (floor)((curr_box.m_p_max.x - pt_x + x_reso/2) / x_reso) &&
-            (floor)((curr_box.m_p_min.y - pt_y + y_reso/2) / y_reso) ==
-            (floor)((curr_box.m_p_max.y - pt_y + y_reso/2) / y_reso)) {
-            x_dist = (int)(floor)(curr_box.m_p_min.x - pt_x + x_reso/2) / x_reso);
-            y_dist = (int)(floor)(curr_box.m_p_min.y - pt_y + y_reso/2) / y_reso);
+        if ((floor)((curr_box->m_p_min.x - pt_x + x_reso/2) / x_reso) ==
+            (floor)((curr_box->m_p_max.x - pt_x + x_reso/2) / x_reso) &&
+            (floor)((curr_box->m_p_min.y - pt_y + y_reso/2) / y_reso) ==
+            (floor)((curr_box->m_p_max.y - pt_y + y_reso/2) / y_reso)) {
+            x_dist = (int)(floor)(curr_box->m_p_min.x - pt_x + x_reso/2) / x_reso);
+            y_dist = (int)(floor)(curr_box->m_p_min.y - pt_y + y_reso/2) / y_reso);
             x_dist = x_dist > 4 ? 4 : x_dist;
             x_dist = x_dist < -4 ? -4 : x_dist;
             y_dist = y_dist > 4 ? 4 : y_dist;
             y_dist = y_dist < -4 ? -4 : y_dist;
-            *buf = *buf + current.num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];
+            *buf = *buf + current->num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];
         }
         return;
     }
 
-    if (params.depth == params.max_depth || current.num_points() <= params.min_points_per_node)
+    if (params.depth == params.max_depth || current->num_points() <= params->min_points_per_node)
     {
-        for (int it = node.points_begin() ; it < node.points_end() ; ++it)
+        for (int it = current->points_begin() ; it < current->points_end() ; ++it)
         {
-            float2 p = pts->get_point(it);
-            if (box.contains(p)) {
-                x_dist = (int)(floor)(p.x - pt_x + x_reso/2) / x_reso);
-                y_dist = (int)(floor)(p.y - pt_y + y_reso/2) / y_reso); 
+            float2* p = &pts->get_point(it);
+            if (box->contains(*p)) {
+                x_dist = (int)(floor)(p->x - pt_x + x_reso/2) / x_reso);
+                y_dist = (int)(floor)(p->y - pt_y + y_reso/2) / y_reso); 
                 *buf = *buf + stamp[9*(4 + y_dist) + (4 + x_dist)];
             }
         }
         return;
     }
-    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+0, buf, box, pts, Parameters(params, true),
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+0, buf, box, pts, &Parameters(params, true),
         pt_x, pt_y, x_reso, y_reso, stamp);
-    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+1, buf, box, pts, Parameters(params, true),
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+1, buf, box, pts, &Parameters(params, true),
         pt_x, pt_y, x_reso, y_reso, stamp);
-    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+2, buf, box, pts, Parameters(params, true),
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+2, buf, box, pts, &Parameters(params, true),
         pt_x, pt_y, x_reso, y_reso, stamp);
-    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+3, buf, box, pts, Parameters(params, true),
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+3, buf, box, pts, &Parameters(params, true),
         pt_x, pt_y, x_reso, y_reso, stamp);
 }
 
@@ -72,11 +72,11 @@ __global__ void renderNewPointsKernel(float x0, float y0, float w, float h,
         buf[i] = 0;
         float pt_x = x0 + (i%W + 0.5) * x_reso;
         float pt_y = y0 + (i/W + 0.5) * y_reso;
-        Bounding_box box();
+        Bounding_box region();
         region.set(pt_x - pt_width/2, pt_y - pt_height/2,
             pt_x + pt_width/2, pt_y + pt_height/2);
         Parameters params(12, 64);
-        traverse(nodes, 0, buf+i, box, points, params, pt_x, pt_y, x_reso, y_reso, stamp);
+        traverse(nodes, 0, buf+i, region, points, params, pt_x, pt_y, x_reso, y_reso, stamp);
     }
 }
 
