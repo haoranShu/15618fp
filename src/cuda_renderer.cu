@@ -93,7 +93,16 @@
          {
              return m_p_min;
          }
- 
+
+         __host__ __device__ bool overlaps(Bounding_box another_box)
+         {
+             float2 p3 = make_float2(another_box.m_p_min.x, another_box.m_p_max.y);
+             float2 p4 = make_float2(another_box.m_p_max.x, another_box.m_p_min.y);
+             return (contains(another_box.m_p_min) ||
+                contains(another_box.m_p_max) ||
+                contains(p3) || contains(p4));
+         }
+
          // Does a box contain a point.
          __host__ __device__ bool contains(const float2 &p) const
          {
@@ -722,7 +731,7 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
 
     if (params.depth == params.max_depth || current.num_points() <= params.min_points_per_node)
     {
-        for (int it = node.points_begin() ; it < node.points_end() ; ++it)
+        for (int it = current.points_begin() ; it < current.points_end() ; ++it)
         {
             float2 p = pts->get_point(it);
             if (box.contains(p)) {
