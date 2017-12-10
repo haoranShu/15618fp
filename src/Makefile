@@ -257,7 +257,7 @@ clean:
 cdpQuadtree.o: cdpQuadtree.cu cdpQuadtree.h
 	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
-cuda_renderer.o: cuda_renderer.cu cdpQuadtree.cu
+cuda_renderer.o: cdpQuadtree.o cuda_renderer.cu
 	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
 heatmap.o: heatmap.c heatmap.h
@@ -291,5 +291,5 @@ main.o: main.cpp
 	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
 main: main.o libheatmap.a libcudarenderer.a quad_tree.o gl_utility.o ppm.o cdpQuadtree.o
-	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDFLAGS) $(LDLIBS)
+	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDLIBS)
 	#$(CXX) -lGL -lGLU -lglut $^ $(LDFLAGS) -o $@ $(LDFLAGS) $(LDLIBS)
