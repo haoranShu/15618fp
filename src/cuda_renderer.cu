@@ -65,7 +65,7 @@
  class Bounding_box
  {
          // Extreme points of the bounding box.
-         float2 m_p_min;
+         __host__ __device__ float2 m_p_min;
          float2 m_p_max;
  
      public:
@@ -702,7 +702,7 @@
 
 clock_t start_cuda;
 
-__host__ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box &box, 
+__device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box &box, 
     Points *pts, Parameters params, float pt_x, float pt_y, float x_reso, float y_reso,
     float* stamp)
 {
