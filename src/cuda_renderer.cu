@@ -706,6 +706,7 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     Points *pts, Parameters params, float pt_x, float pt_y, float x_reso, float y_reso,
     float* stamp)
 {
+    printf("entered\n");
     Quadtree_node* current = &nodes[idx];
     const Bounding_box &curr_box = current->bounding_box();
     if (!box.overlaps(curr_box))
@@ -727,6 +728,7 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
             y_dist = y_dist > 4 ? 4 : y_dist;
             y_dist = y_dist < -4 ? -4 : y_dist;
             *buf = *buf + current->num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];
+            printf("added\n");
         }
         return;
     }
@@ -740,6 +742,7 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
                 x_dist = (int)floor((p.x - pt_x + x_reso/2) / x_reso);
                 y_dist = (int)floor((p.y - pt_y + y_reso/2) / y_reso); 
                 *buf = *buf + stamp[9*(4 + y_dist) + (4 + x_dist)];
+                printf("added\n");
             }
         }
         return;
@@ -758,7 +761,6 @@ __global__ void renderNewPointsKernel(float x0, float y0, float w, float h,
     int W, int H, float* buf, Quadtree_node* nodes, Points* points,
     float pt_width, float pt_height, float* stamp)
 {
-    printf("entered\n");
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     float x_reso = w / W;
     float y_reso = h / H;
