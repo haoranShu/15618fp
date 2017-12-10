@@ -148,6 +148,8 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     //tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
     //cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
     
+    sizes[0] = 512;
+    sizes[1] = 256;
     int npixel = renderH * renderW;
     shrink(npixel, sizes);
     cudaMalloc(&max_buf, (sizes[0] + sizes[0] >> 1) * sizeof(float));
