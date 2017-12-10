@@ -171,6 +171,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
             ps = pd;
             pd = pt;
             slen = sizes[0];
+            printf("here\n");
         } while (slen > 1);
     }
 
