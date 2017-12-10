@@ -11,17 +11,31 @@
 
 clock_t start_cuda;
 
-__device__ void traverse(Quadtree_node* nodes, float* weight,
-    float pt_width, float pt_height, float pt_x, float pt_y)
+__device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box &box, 
+    Points *pts, Parameters params, float pt_x, float pt_y, float x_reso, float y_reso,
+    float* stamp)
 {
     Quadtree_node current = nodes[idx];
-    if (!box.overlaps(current.bounding_box()))
+    Bounding_box curr_box = current.bounding_box();
+    if (!box.overlaps(curr_box))
         return;
 
-    if (box.contains(current.bounding_box())) 
+    int x_dist, y_dist;
+    if (box.contains(curr_box)) 
     {
-         *buf = *buf + current.num_points();
-         return;
+        if ((floor)((curr_box.m_p_min.x - pt_x + x_reso/2) / x_reso) ==
+            (floor)((curr_box.m_p_max.x - pt_x + x_reso/2) / x_reso) &&
+            (floor)((curr_box.m_p_min.y - pt_y + y_reso/2) / y_reso) ==
+            (floor)((curr_box.m_p_max.y - pt_y + y_reso/2) / y_reso)) {
+            x_dist = (int)(floor)(curr_box.m_p_min.x - pt_x + x_reso/2) / x_reso);
+            y_dist = (int)(floor)(curr_box.m_p_min.y - pt_y + y_reso/2) / y_reso);
+            x_dist = x_dist > 4 ? 4 : x_dist;
+            x_dist = x_dist < -4 ? -4 : x_dist;
+            y_dist = y_dist > 4 ? 4 : y_dist;
+            y_dist = y_dist < -4 ? -4 : y_dist;
+            *buf = *buf + current.num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];
+        }
+        return;
     }
 
     if (params.depth == params.max_depth || current.num_points() <= params.min_points_per_node)
@@ -29,26 +43,40 @@ __device__ void traverse(Quadtree_node* nodes, float* weight,
         for (int it = node.points_begin() ; it < node.points_end() ; ++it)
         {
             float2 p = pts->get_point(it);
-            if (!box.contains(p))
-                *buf = *buf + 1;
+            if (box.contains(p)) {
+                x_dist = (int)(floor)(p.x - pt_x + x_reso/2) / x_reso);
+                y_dist = (int)(floor)(p.y - pt_y + y_reso/2) / y_reso); 
+                *buf = *buf + stamp[9*(4 + y_dist) + (4 + x_dist)];
+            }
         }
         return;
     }
-    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+0, buf, box, pts, Parameters(params, true));
-    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+1, buf, box, pts, Parameters(params, true));
-    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+2, buf, box, pts, Parameters(params, true));
-    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+3, buf, box, pts, Parameters(params, true));
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+0, buf, box, pts, Parameters(params, true),
+        pt_x, pt_y, x_reso, y_reso, stamp);
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+1, buf, box, pts, Parameters(params, true),
+        pt_x, pt_y, x_reso, y_reso, stamp);
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+2, buf, box, pts, Parameters(params, true),
+        pt_x, pt_y, x_reso, y_reso, stamp);
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+3, buf, box, pts, Parameters(params, true),
+        pt_x, pt_y, x_reso, y_reso, stamp);
 }
 
 __global__ void renderNewPointsKernel(float x0, float y0, float w, float h, 
-    int W, int H, float* buf, Quadtree_node* nodes, float pt_width, float pt_height)
+    int W, int H, float* buf, Quadtree_node* nodes, Points* points,
+    float pt_width, float pt_height, float* stamp)
 {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
+    float x_reso = w / W;
+    float y_reso = h / H;
     for (int i = idx; i < W * H; i += blockDim.x * gridDim.x) {
         buf[i] = 0;
-        float pt_x = x0 + (i%W + 0.5) * w / W;
-        float pt_y = y0 + (i/W + 0.5) * h / H;
-        traverse(nodes, buf+i, pt_width, pt_height, pt_x, pt_y);
+        float pt_x = x0 + (i%W + 0.5) * x_reso;
+        float pt_y = y0 + (i/W + 0.5) * y_reso;
+        Bounding_box box();
+        region.set(pt_x - pt_width/2, pt_y - pt_height/2,
+            pt_x + pt_width/2, pt_y + pt_height/2);
+        Parameters params(12, 64);
+        traverse(nodes, 0, buf+i, box, points, params, pt_x, pt_y, x_reso, y_reso, stamp);
     }
 }
 
@@ -128,11 +156,14 @@ void cudaInit()
 {
     cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
     cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
+    cudaMalloc(&cuda_stamp, 81 * sizeof(float));
     //cudaMalloc(&max_buf, 1 * sizeof(float));
     //cudaMalloc(&sizes, 2 * sizeof(int));
 
-    cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
-        renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
+    cudaMemcpy((void *)cuda_stamp, (void *)stamp,
+        81 * sizeof(float), cudaMemcpyHostToDevice);
+    //cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
+    //    renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
 }
 
 __global__ void tempMax(float* src, float* dst, int n)
@@ -146,13 +177,15 @@ __global__ void tempMax(float* src, float* dst, int n)
     }
 }
 
-void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename)
+void renderNewPointsCUDA(float x0, float y0, float w, float h,
+    std::string filename, float* stamp)
 {
     start_cuda = std::clock();
     float pt_width = w * 9 / renderW;
     float pt_height = h * 9 / renderH;
-    //renderNewPointsKernel<<<128, 128>>>(x0, y0, w, h, renderW, renderH,
-    //    pixel_weights, nodes, pt_width, pt_height);
+
+    renderNewPointsKernel<<<128, 128>>>(x0, y0, w, h, renderW, renderH,
+        pixel_weights, cuda_nodes, cuda_points, pt_width, pt_height, cuda_stamp);
 
     // get the maximum value of all weigths
     float max_weight;

@@ -28,4 +28,6 @@ extern float* pixel_weights;
 extern unsigned char* pixel_color;
 extern float* max_buf;
 
+extern float stamp[81];
+
 #endif /* GENERAL_H */
