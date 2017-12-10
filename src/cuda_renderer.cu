@@ -29,26 +29,31 @@ __global__ void renderNewPointsKernel(float x0, float y0, float w, float h,
     }
 }
 
-template <int blockSize>
 __global__ void reduceMaxKernel(float* src, float* dst, int n)
 {
     extern __shared__ float sdata[];
 
+    int blockSize = blockDim.x;
     int tid = threadIdx.x;
     int i = blockIdx.x * (blockSize * 2) + tid;
     int gridSize = blockSize * 2 * gridDim.x;
     sdata[tid] = 0;
+    float temp = 0;
 
-    while (i < n) {
-        sdata[tid] = src[i] > src[i + blockSize] ? src[i] : src[i + blockSize];
+    while (i < n - blockSize) {
+        temp = src[i] > src[i + blockSize] ? src[i] : src[i + blockSize];
+        sdata[tid] = sdata[tid] > temp ? sdata[tid] : temp;
         i += gridSize;
+    }
+    while (i < n) {
+        sdata[tid] = sdata[tid] > src[i] ? sdata[tid] : src[i]; 
     }
     __syncthreads();
 
     int startSize = 512;
     while (startSize > warpSize) {
         if (blockSize > startSize) {
-            if (tid < startSize/2) { sdata[tid] = src[tid] > src[tid + startSize/2] ? src[tid] : src[tid + startSize/2]; }
+            if (tid < startSize/2) { sdata[tid] = sdata[tid] > sdata[tid + startSize/2] ? sdata[tid] : sdata[tid + startSize/2]; }
             __syncthreads();
         }
         startSize /= 2;
@@ -57,22 +62,22 @@ __global__ void reduceMaxKernel(float* src, float* dst, int n)
     // assuming a warpSize of 32
     if (tid < 32) {
         if (blockSize >= 64) {
-            sdata[tid] = src[tid] > src[tid + 32] ? src[tid] : src[tid + 32];
+            sdata[tid] = sdata[tid] > sdata[tid + 32] ? sdata[tid] : sdata[tid + 32];
         }
         if (blockSize >= 32) {
-            sdata[tid] = src[tid] > src[tid + 16] ? src[tid] : src[tid + 16];
+            sdata[tid] = sdata[tid] > sdata[tid + 16] ? sdata[tid] : sdata[tid + 16];
         }
         if (blockSize >= 16) {
-            sdata[tid] = src[tid] > src[tid + 8] ? src[tid] : src[tid + 8];
+            sdata[tid] = sdata[tid] > sdata[tid + 8] ? sdata[tid] : sdata[tid + 8];
         }
         if (blockSize >= 8) {
-            sdata[tid] = src[tid] > src[tid + 4] ? src[tid] : src[tid + 4];
+            sdata[tid] = sdata[tid] > sdata[tid + 4] ? sdata[tid] : sdata[tid + 4];
         }
         if (blockSize >= 4) {
-            sdata[tid] = src[tid] > src[tid + 2] ? src[tid] : src[tid + 2];
+            sdata[tid] = sdata[tid] > sdata[tid + 2] ? sdata[tid] : sdata[tid + 2];
         }
         if (blockSize >= 2) {
-            sdata[tid] = src[tid] > src[tid + 1] ? src[tid] : src[tid + 1];
+            sdata[tid] = sdata[tid] > sdata[tid + 1] ? sdata[tid] : sdata[tid + 1];
         }
     }
 
@@ -157,7 +162,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
             shrink(slen, sizes);
             smemSize = sizes[1] * sizeof(float);
             blockSize = sizes[1];
-            reduceMaxKernel<blockSize><<<sizes[0], sizes[1], smemSize>>>(ps, pd, sizes[0]);
+            reduceMaxKernel<<<sizes[0], sizes[1], smemSize>>>(ps, pd, sizes[0]);
             float *pt = ps;
             ps = pd;
             pd = pt;
