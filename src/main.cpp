@@ -190,7 +190,7 @@ int main(int argc, char** argv)
 
         //// allocate device buffer to store processed data points for each pixel
         cudaInit();
-        renderNewPointsCUDA(0, 0, width, height, "cuda.ppm");
+        renderNewPointsCUDA(0, 0, width, height, "cuda.ppm", sizes);
 
         //fs.open(traceFile, fstream::in);
         //fs >> ntrace;
