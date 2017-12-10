@@ -96,6 +96,7 @@
 
          __host__ __device__ bool overlaps(Bounding_box another_box)
          {
+             printf("overlap\n");
              float2 p3 = make_float2(another_box.m_p_min.x, another_box.m_p_max.y);
              float2 p4 = make_float2(another_box.m_p_max.x, another_box.m_p_min.y);
              return (contains(another_box.m_p_min) ||
@@ -707,9 +708,7 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     float* stamp)
 {
     Quadtree_node* current = &nodes[idx];
-    printf("entered1\n");
     const Bounding_box &curr_box = current->bounding_box();
-    printf("entered2\n");
     if (!box.overlaps(curr_box)) {
     printf("entered3\n");
         return;
