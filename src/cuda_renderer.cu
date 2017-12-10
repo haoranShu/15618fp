@@ -65,7 +65,7 @@
  class Bounding_box
  {
          // Extreme points of the bounding box.
-         __host__ __device__ float2 m_p_min;
+         float2 m_p_min;
          float2 m_p_max;
  
      public:
@@ -707,12 +707,14 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     float* stamp)
 {
     Quadtree_node* current = &nodes[idx];
-    Bounding_box &curr_box = &(current->m_bounding_box);
+    const Bounding_box &curr_box = current->bounding_box();
     if (!box.overlaps(curr_box))
         return;
 
     int x_dist, y_dist;
-    if (box.contains(curr_box.m_p_max) && box.contains(curr_box.m_p_min)) 
+    float2 p_min = curr_box.get_min();
+    float2 p_max = curr_box.get_max();
+    if (box.contains(p_max) && box.contains(p_min)) 
     {
         if ((floor)((curr_box.m_p_min.x - pt_x + x_reso/2) / x_reso) ==
             (floor)((curr_box.m_p_max.x - pt_x + x_reso/2) / x_reso) &&
