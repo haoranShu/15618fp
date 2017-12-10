@@ -288,7 +288,8 @@ gl_utility.o: gl_utility.cpp
 	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
 main.o: main.cpp
-	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
+	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDFLAGS) $(LDLIBS)
+	#$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
 main: main.o libheatmap.a libcudarenderer.a quad_tree.o gl_utility.o ppm.o cdpQuadtree.o
 	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDFLAGS) $(LDLIBS)
