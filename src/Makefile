@@ -282,13 +282,13 @@ ppm.o: ppm.cpp
 	$(CXX) -c $< $(CXXFLAGS) -o $@
 
 quad_tree.o: quad_tree.cpp
-	$(CXX) $(INCLUDES) -c $< $(CXXFLAGS) -o $@
+	$(CXX) -c $< $(CXXFLAGS) -o $@
 
 gl_utility.o: gl_utility.cpp
-	$(CXX) $(INCLUDES) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
+	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
 main.o: main.cpp
-	$(CXX) $(INCLUDES) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
+	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
 main: main.o libheatmap.a libcudarenderer.a quad_tree.o gl_utility.o ppm.o cdpQuadtree.o
 	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDLIBS)
