@@ -712,7 +712,7 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
         return;
 
     int x_dist, y_dist;
-    if (box.contains(curr_box)) 
+    if (box.contains(curr_box.m_p_max) && box.contains(curr_box.m_p_min)) 
     {
         if ((floor)((curr_box.m_p_min.x - pt_x + x_reso/2) / x_reso) ==
             (floor)((curr_box.m_p_max.x - pt_x + x_reso/2) / x_reso) &&
