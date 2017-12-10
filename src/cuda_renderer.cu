@@ -110,6 +110,7 @@ void cudaInit()
 
 void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename)
 {
+    printf("here");
     start_cuda = std::clock();
     float pt_width = w * 9 / renderW;
     float pt_height = h * 9 / renderH;
