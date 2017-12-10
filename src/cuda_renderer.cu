@@ -702,24 +702,24 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
 
     /*printf("entered!\n");*/
     int x_dist, y_dist;
-    /*float2 p_min = curr_box.get_min();*/
-    /*float2 p_max = curr_box.get_max();*/
-    /*if (box.contains(p_max) && box.contains(p_min)) */
-    /*{*/
-        /*if (floor((p_min.x - pt_x + x_reso/2) / x_reso) ==*/
-            /*floor((p_max.x - pt_x + x_reso/2) / x_reso) &&*/
-            /*floor((p_min.y - pt_y + y_reso/2) / y_reso) ==*/
-            /*floor((p_max.y - pt_y + y_reso/2) / y_reso)) {*/
-            /*x_dist = (int)floor((p_min.x - pt_x + x_reso/2) / x_reso);*/
-            /*y_dist = (int)floor((p_min.y - pt_y + y_reso/2) / y_reso);*/
-            /*x_dist = x_dist > 4 ? 4 : x_dist;*/
-            /*x_dist = x_dist < -4 ? -4 : x_dist;*/
-            /*y_dist = y_dist > 4 ? 4 : y_dist;*/
-            /*y_dist = y_dist < -4 ? -4 : y_dist;*/
-            /**buf = *buf + current->num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];*/
-        /*}*/
-        /*return;*/
-    /*}*/
+    float2 p_min = curr_box.get_min();
+    float2 p_max = curr_box.get_max();
+    if (box.contains(p_max) && box.contains(p_min)) 
+    {
+        if (floor((p_min.x - pt_x + x_reso/2) / x_reso) ==
+            floor((p_max.x - pt_x + x_reso/2) / x_reso) &&
+            floor((p_min.y - pt_y + y_reso/2) / y_reso) ==
+            floor((p_max.y - pt_y + y_reso/2) / y_reso)) {
+            x_dist = (int)floor((p_min.x - pt_x + x_reso/2) / x_reso);
+            y_dist = (int)floor((p_min.y - pt_y + y_reso/2) / y_reso);
+            x_dist = x_dist > 4 ? 4 : x_dist;
+            x_dist = x_dist < -4 ? -4 : x_dist;
+            y_dist = y_dist > 4 ? 4 : y_dist;
+            y_dist = y_dist < -4 ? -4 : y_dist;
+            *buf = *buf + current->num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];
+        }
+        return;
+    }
 
     if (params.depth == params.max_depth || current->num_points() <= params.min_points_per_node)
     {
@@ -779,14 +779,14 @@ __global__ void reduceMaxKernel(float* src, float* dst, int n)
         sdata[tid] = sdata[tid] > temp ? sdata[tid] : temp;
         i += gridSize;
     }
-    while (i < n) {
+    if (i < n) {
         sdata[tid] = sdata[tid] > src[i] ? sdata[tid] : src[i]; 
     }
     __syncthreads();
 
     int startSize = 512;
-    while (startSize > warpSize) {
-        if (blockSize > startSize) {
+    while (startSize > 2 * warpSize) {
+        if (blockSize >= startSize) {
             if (tid < startSize/2) { sdata[tid] = sdata[tid] > sdata[tid + startSize/2] ? sdata[tid] : sdata[tid + startSize/2]; }
             __syncthreads();
         }
@@ -882,12 +882,11 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h,
     //cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
 
     float max_weight;
-    /*printf("Here4\n");*/
     cudaMalloc(&max_buf, 1 * sizeof(float));
 
     int npixel = renderH * renderW;
-    tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
-    /*reduceMaxKernel<<<1, 512, 512 * sizeof(float)>>>(pixel_weights, max_buf, npixel);*/
+    /*tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);*/
+    reduceMaxKernel<<<1, 512, 512 * sizeof(float)>>>(pixel_weights, max_buf, npixel);
     cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
     printf(" max weight %f\n", max_weight);
 
