@@ -99,7 +99,7 @@ void cudaInit()
     cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
     cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
     //cudaMalloc(&max_buf, 1 * sizeof(float));
-    cudaMalloc(&sizes, 2 * sizeof(int))
+    cudaMalloc(&sizes, 2 * sizeof(int));
 
     cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
         renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
@@ -155,7 +155,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
         do {
             shrink(slen, sizes);
             smemSize = sizes[1] * sizeof(float);
-            reduceMaxKernel<<<sizes[0], sizes[1], smemSize>>>(ps, pd, sizes[0]);
+            reduceMaxKernel<sizes[1]><<<sizes[0], sizes[1], smemSize>>>(ps, pd, sizes[0]);
             float *pt = ps;
             ps = pd;
             pd = pt;
