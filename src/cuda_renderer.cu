@@ -116,7 +116,7 @@ __global__ void tempMax(float* src, float* dst, int n)
     float &max_weight = dst[0];
     if (idx == 0) {
         for (int i = 0; i < n; i++) {
-            max_weight = max_weight > pixel_weights[i] ? max_weight : pixel_weights[i];
+            max_weight = max_weight > src[i] ? max_weight : src[i];
         }
     }
 }
