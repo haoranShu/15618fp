@@ -244,7 +244,10 @@ all: libheatmap.a libheatmap.so quad_tree.o gl_utility.o ppm.o cdpQuadtree.o mai
 clean:
 	rm -f libheatmap.a
 	rm -f libheatmap.so
+	rm -f libcudarenderer.a
+	rm -f libcudarenderer.so
 	rm -f quad_tree.o
+	rm -f cuda_renderer.o
 	rm -f cdpQuadtree.o
 	rm -f gl_utility.o
 	rm -f ppm.o
@@ -254,8 +257,8 @@ clean:
 cdpQuadtree.o: cdpQuadtree.cu cdpQuadtree.h
 	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
-cdpQuadtree: cdpQuadtree.o
-	$(EXEC) $(NVCC) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $+ $(LIBRARIES)
+cuda_renderer.o: cuda_renderer.cpp
+    $(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
 heatmap.o: heatmap.c heatmap.h
 	$(CC) -c $< $(CFLAGS) -o $@
@@ -267,6 +270,12 @@ libheatmap.a: heatmap.o $(patsubst %.c,%.o,$(wildcard colorschemes/*.c))
 	$(AR) rs $@ $^
 
 libheatmap.so: heatmap.o $(patsubst %.c,%.o,$(wildcard colorschemes/*.c))
+	$(CC) $(LDFLAGS) -shared -o $@ $^
+
+libcudarenderer.a: cuda_renderer.o $(patsubst %.c,%.o,$(wildcard colorschemes/*.c))
+	$(AR) rs $@ $^
+
+libcudarenderer.so: cuda_renderer.o $(patsubst %.c,%.o,$(wildcard colorschemes/*.c))
 	$(CC) $(LDFLAGS) -shared -o $@ $^
 
 ppm.o: ppm.cpp
@@ -281,6 +290,6 @@ gl_utility.o: gl_utility.cpp
 main.o: main.cpp
 	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
-main: main.o libheatmap.a quad_tree.o gl_utility.o ppm.o cdpQuadtree.o
+main: main.o libheatmap.a libcudarenderer.a quad_tree.o gl_utility.o ppm.o cdpQuadtree.o
 	$(EXEC) $(NVCC) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $^ $(LIBRARIES) -lGL -lGLU -lglut $(LDFLAGS) $(LDFLAGS) $(LDLIBS)
 	#$(CXX) -lGL -lGLU -lglut $^ $(LDFLAGS) -o $@ $(LDFLAGS) $(LDLIBS)
