@@ -101,8 +101,9 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     start = std::clock();
     float pt_width = w * 9 / renderW;
     float pt_height = h * 9 / renderH;
-    renderNewPointsKernel<<<128, 128>>>(x0, y0, w, h, renderW, renderH,
-        pixel_weights, nodes, pt_width, pt_height);
+    //renderNewPointsKernel<<<128, 128>>>(x0, y0, w, h, renderW, renderH,
+    //    pixel_weights, nodes, pt_width, pt_height);
+
     // get the maximum value of all weigths
     int slen = 2;
     if (slen > 1) {

@@ -149,29 +149,35 @@ int main(int argc, char** argv)
             fs.close();
         }
     } else {
-
         fs.open(inputFile, fstream::in);
+
         fs >> npoints;
 
         int weighted;
         fs >> weighted;
         fs >> width >> height;
 
-        float xs[npoints];
-        float ys[npoints];
-        float ws[npoints];
+        leveledPts = new Quad(Point(0, 0), Point(width, height));
+        float x, y, w;
 
         if (weighted == 0) {
-            for (int i = 0; i < npoints; i++)
-                fs >> xs[i] >> ys[i];
+            for (int i = 0; i < npoints; i++) {
+                fs >> x >> y;
+                Point p(x, y, 1.0f);
+                leveledPts->insert(p);
+            }
         } else {
-            for (int i = 0; i < npoints; i++)
-                fs >> xs[i] >> ys[i] >> ws[i];
+            for (int i = 0; i < npoints; i++) {
+                fs >> x >> y >> w;
+                Point p(x, y, w);
+                leveledPts->insert(p);
+            }
         }
 
         fs.close();
 
-        bool ok = cdpQuadtree(width, height, &xs[0], &ys[0], weighted ? &ws[0] : NULL, npoints);
+        renderNewPoints(0, 0, width, height, "benchmark.ppm");
+
         // parse input from inputFile and construct Quadtree
         //fs.open(inputFile, fstream::in);
         //// TODO: declare extern Quadtree_node * in gl_utility.h
@@ -181,8 +187,12 @@ int main(int argc, char** argv)
         //fs.close();
 
         //// allocate device buffer to store processed data points for each pixel
-        //cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
-        //cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
+        cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
+        cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
+
+        cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
+            renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
+        renderNewPointsCUDA(0, 0, width, height, "cuda.ppm");
 
         //fs.open(traceFile, fstream::in);
         //fs >> ntrace;
