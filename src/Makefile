@@ -258,7 +258,7 @@ cdpQuadtree.o: cdpQuadtree.cu cdpQuadtree.h
 	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
 cuda_renderer.o: cuda_renderer.cpp
-    $(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
+	$(EXEC) $(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
 heatmap.o: heatmap.c heatmap.h
 	$(CC) -c $< $(CFLAGS) -o $@

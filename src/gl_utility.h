@@ -21,6 +21,8 @@
 
 #include "general.h"
 
+void renderNewPoints(float x0, float y0, float w, float h, std::string filename);
+
 void setupTexture();
 
 void updateTexture();
