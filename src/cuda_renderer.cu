@@ -104,7 +104,7 @@ void cudaInit()
     cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
     cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
     //cudaMalloc(&max_buf, 1 * sizeof(float));
-    cudaMalloc(&sizes, 2 * sizeof(int));
+    //cudaMalloc(&sizes, 2 * sizeof(int));
 
     cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
         renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
@@ -121,7 +121,7 @@ __global__ void tempMax(float* src, float* dst, int n)
     }
 }
 
-__device__ void shrink(int n, int* sizes)
+void shrink(int n, int* sizes)
 {
     if (n <= 2 * sizes[1]) {
         sizes[0] = 1;
