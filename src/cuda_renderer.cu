@@ -3,11 +3,18 @@
 #include <iostream>
 
 #include "cuda_renderer.h"
+#include "cdpQuadtree.h"
 
 clock_t start;
 
+__device__ void traverse(Quadtree_node* nodes, float* weight,
+    float pt_width, float pt_height, float pt_x, float pt_y)
+{
+
+}
+
 __global__ void renderNewPointsKernel(float x0, float y0, float w, float h, 
-    int W, int H, float* buf, Quadtree_node* nodes, float pt_width, float pt_width)
+    int W, int H, float* buf, Quadtree_node* nodes, float pt_width, float pt_height)
 {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     for (int i = idx; i < W * H; i += blockDim.x * gridDim.x) {
