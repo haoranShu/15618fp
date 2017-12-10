@@ -121,7 +121,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     // get the maximum value of all weigths
     float max_weight = 0;
     for (int i = 0; i < renderH * renderW; i++) {
-        prinft("%d\n", i);
+        printf("%d\n", i);
         max_weight = max_weight > pixel_weights[i] ? max_weight : pixel_weights[i];
     }
     printf("here\n");
