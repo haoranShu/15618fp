@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 
+#include "cdpQuadtree.h"
 #include "heatmap.h"
 #include "quad_tree.h"
 #include "image.h"
@@ -21,6 +22,8 @@ extern float width, height;
 extern Quad* leveledPts;
 
 // cuda objects
+extern Quadtree_node* cuda_nodes;
+extern Points* cuda_points;
 extern float* pixel_weights;
 extern unsigned char* pixel_color;
 extern float* max_buf;

@@ -562,7 +562,8 @@ bool check_quadtree(const Quadtree_node *nodes, int idx, int num_pts, Points *pt
 ////////////////////////////////////////////////////////////////////////////////
 // Allocate GPU structs, launch kernel and clean up
 ////////////////////////////////////////////////////////////////////////////////
-bool cdpQuadtree(float width, float height, float *xs, float *ys, float *ws, int num_points)
+bool cdpQuadtree(float width, float height, float *xs, float *ys, float *ws, int num_points,
+    Quadtree_node* nodes, Points* points)
 {
 
     // Find/set the device.
@@ -598,7 +599,7 @@ bool cdpQuadtree(float width, float height, float *xs, float *ys, float *ws, int
     points_init[1].set(thrust::raw_pointer_cast(&x_d1[0]), thrust::raw_pointer_cast(&y_d1[0]));
 
     // Allocate memory to store points.
-    Points *points;
+    //Points *points;
     checkCudaErrors(cudaMalloc((void **) &points, 2*sizeof(Points)));
     checkCudaErrors(cudaMemcpy(points, points_init, 2*sizeof(Points), cudaMemcpyHostToDevice));
 
@@ -612,7 +613,7 @@ bool cdpQuadtree(float width, float height, float *xs, float *ys, float *ws, int
     Quadtree_node root;
     root.set_range(0, num_points);
     root.set_bounding_box(0, 0, width, height);
-    Quadtree_node *nodes;
+    //Quadtree_node *nodes;
     checkCudaErrors(cudaMalloc((void **) &nodes, max_nodes*sizeof(Quadtree_node)));
     checkCudaErrors(cudaMemcpy(nodes, &root, sizeof(Quadtree_node), cudaMemcpyHostToDevice));
 
@@ -628,6 +629,7 @@ bool cdpQuadtree(float width, float height, float *xs, float *ys, float *ws, int
     build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<1, NUM_THREADS_PER_BLOCK, smem_size>>>(nodes, points, params);
     checkCudaErrors(cudaGetLastError());
 
+    /*
     // Copy points to CPU.
     thrust::host_vector<float> x_h(x_d0);
     thrust::host_vector<float> y_h(y_d0);
@@ -648,8 +650,8 @@ bool cdpQuadtree(float width, float height, float *xs, float *ys, float *ws, int
     // Free memory.
     checkCudaErrors(cudaFree(nodes));
     checkCudaErrors(cudaFree(points));
-
-    return ok;
+    */
+    return true;
 }
 
 ////////////////////////////////////////////////////////////////////////////////

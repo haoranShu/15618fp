@@ -13,4 +13,4 @@ class Bounding_box;
 ////////////////////////////////////////////////////////////////////////////////
 class Quadtree_node;
 
-bool cdpQuadtree(float, float, float *, float *, float *, int);
+bool cdpQuadtree(float, float, float *, float *, float *, int, Quadtree_node*, Points*);

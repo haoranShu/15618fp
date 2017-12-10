@@ -9,7 +9,6 @@
 #include "general.h"
 #include "gl_utility.h"
 #include "cuda_renderer.h"
-#include "cdpQuadtree.h"
 
 using namespace std;
 
@@ -25,6 +24,8 @@ float width, height;
 Quad* leveledPts;
 
 // cuda objects
+Quadtree_node* cuda_nodes;
+Points* cuda_points;
 float* pixel_weights;
 unsigned char* pixel_color;
 float* max_buf;
@@ -150,32 +151,30 @@ int main(int argc, char** argv)
             fs.close();
         }
     } else {
-        fs.open(inputFile, fstream::in);
 
+        fs.open(inputFile, fstream::in);
         fs >> npoints;
 
         int weighted;
         fs >> weighted;
         fs >> width >> height;
 
-        leveledPts = new Quad(Point(0, 0), Point(width, height));
-        float x, y, w;
+        float xs[npoints];
+        float ys[npoints];
+        float ws[npoints];
 
         if (weighted == 0) {
-            for (int i = 0; i < npoints; i++) {
-                fs >> x >> y;
-                Point p(x, y, 1.0f);
-                leveledPts->insert(p);
-            }
+            for (int i = 0; i < npoints; i++)
+                fs >> xs[i] >> ys[i];
         } else {
-            for (int i = 0; i < npoints; i++) {
-                fs >> x >> y >> w;
-                Point p(x, y, w);
-                leveledPts->insert(p);
-            }
+            for (int i = 0; i < npoints; i++)
+                fs >> xs[i] >> ys[i] >> ws[i];
         }
 
         fs.close();
+
+        bool ok = cdpQuadtree(width, height, &xs[0], &ys[0], weighted ? &ws[0] : NULL, npoints,
+            cuda_nodes, cuda_points);
 
         renderNewPoints(0, 0, width, height, "benchmark.ppm");
 

@@ -14,7 +14,30 @@ clock_t start_cuda;
 __device__ void traverse(Quadtree_node* nodes, float* weight,
     float pt_width, float pt_height, float pt_x, float pt_y)
 {
+    Quadtree_node current = nodes[idx];
+    if (!box.overlaps(current.bounding_box()))
+        return;
 
+    if (box.contains(current.bounding_box())) 
+    {
+         *buf = *buf + current.num_points();
+         return;
+    }
+
+    if (params.depth == params.max_depth || current.num_points() <= params.min_points_per_node)
+    {
+        for (int it = node.points_begin() ; it < node.points_end() ; ++it)
+        {
+            float2 p = pts->get_point(it);
+            if (!box.contains(p))
+                *buf = *buf + 1;
+        }
+        return;
+    }
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+0, buf, box, pts, Parameters(params, true));
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+1, buf, box, pts, Parameters(params, true));
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+2, buf, box, pts, Parameters(params, true));
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+3, buf, box, pts, Parameters(params, true));
 }
 
 __global__ void renderNewPointsKernel(float x0, float y0, float w, float h, 
