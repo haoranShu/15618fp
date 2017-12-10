@@ -4,6 +4,7 @@
 #include <string.h>
 #include <ctime>
 
+#include "general.h"
 #include "gl_utility.h"
 
 using namespace std;

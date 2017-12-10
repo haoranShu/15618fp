@@ -5,9 +5,8 @@
 #include <iostream>
 #include <fstream>
 #include <random>
-#include <vector>
-#include <string>
 
+#include "general.h"
 #include "gl_utility.h"
 #include "cdpQuadtree.h"
 
