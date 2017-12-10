@@ -17,7 +17,7 @@ std::vector<unsigned char> image;
 int npoints;
 float* xs;
 float* ys;
-float* ws;
+float* wes;
 heatmap_t* hm;
 int renderW, renderH;
 float width, height;
@@ -175,19 +175,20 @@ int main(int argc, char** argv)
 
         float xs[npoints];
         float ys[npoints];
-        float ws[npoints];
+        float wes[npoints];
 
         if (weighted == 0) {
             for (int i = 0; i < npoints; i++)
                 fs >> xs[i] >> ys[i];
         } else {
             for (int i = 0; i < npoints; i++)
-                fs >> xs[i] >> ys[i] >> ws[i];
+                fs >> xs[i] >> ys[i] >> wes[i];
         }
 
         fs.close();
 
-        bool ok = cdpQuadtree(width, height, &xs[0], &ys[0], weighted ? &ws[0] : NULL, npoints,
+        printf("here\n");
+        bool ok = cdpQuadtree(width, height, &xs[0], &ys[0], weighted ? &wes[0] : NULL, npoints,
             cuda_nodes, cuda_points);
 
         //renderNewPoints(0, 0, width, height, "benchmark.ppm");
