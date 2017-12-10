@@ -278,7 +278,6 @@ void build_quadtree_kernel(Quadtree_node *nodes, Points *points, Parameters para
 
     // The current node.
     Quadtree_node &node = nodes[blockIdx.x];
-    node.set_id(node.id() + blockIdx.x);
 
     // The number of points in the node.
     int num_points = node.num_points();
@@ -490,7 +489,7 @@ void build_quadtree_kernel(Quadtree_node *nodes, Points *points, Parameters para
     if (threadIdx.x == NUM_THREADS_PER_BLOCK-1)
     {
         // The children.
-        Quadtree_node *children = &nodes[params.num_nodes_at_this_level - node.id()];
+        Quadtree_node *children = &nodes[params.num_nodes_at_this_level - (node.id() & ~3)];
 
         // The offsets of the children at their level.
         int child_offset = 4*node.id();
@@ -544,11 +543,20 @@ bool check_quadtree(const Quadtree_node *nodes, int idx, int num_pts, Points *pt
 
     if (!(params.depth == params.max_depth || num_points <= params.min_points_per_node))
     {
+        int sum = 0;
+        for (int i = 0; i < 4; i++) {
+            sum += nodes[4 * idx + params.num_nodes_at_this_level + i].num_points();
+        }
+
+        if (sum != num_points) {
+            printf("[%d] node supposed to have %d points but children have %d\n", params.depth, num_points, sum);
+        }
         return check_quadtree(&nodes[params.num_nodes_at_this_level], 4*idx+0, num_pts, pts, Parameters(params, true)) &&
                check_quadtree(&nodes[params.num_nodes_at_this_level], 4*idx+1, num_pts, pts, Parameters(params, true)) &&
                check_quadtree(&nodes[params.num_nodes_at_this_level], 4*idx+2, num_pts, pts, Parameters(params, true)) &&
                check_quadtree(&nodes[params.num_nodes_at_this_level], 4*idx+3, num_pts, pts, Parameters(params, true));
     }
+
     return true;
 }
 
@@ -576,8 +584,8 @@ bool cdpQuadtree(float width, float height, float *xs, float *ys, float *ws, int
     int warp_size = deviceProps.warpSize;
 
     // Constants to control the algorithm.
-    const int max_depth  = 8;
-    const int min_points_per_node = 16;
+    const int max_depth  = 12;
+    const int min_points_per_node = 64;
 
     // Allocate memory for points.
     thrust::device_vector<float> x_d0(&xs[0], &xs[num_points]);
