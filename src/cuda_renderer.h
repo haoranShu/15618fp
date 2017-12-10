@@ -6,7 +6,6 @@
 
 void cudaInit();
 
-void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename,
-    int* sizes);
+void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename);
 
 #endif /* CUDA_RENDERER_H */

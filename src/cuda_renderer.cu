@@ -124,8 +124,7 @@ __global__ void tempMax(float* src, float* dst, int n)
     }
 }
 
-void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename,
-    int* sizes)
+void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename)
 {
     start_cuda = std::clock();
     float pt_width = w * 9 / renderW;
