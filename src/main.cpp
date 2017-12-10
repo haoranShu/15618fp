@@ -9,7 +9,6 @@
 #include "general.h"
 #include "gl_utility.h"
 #include "cuda_renderer.h"
-#include "cdpQuadtree.h"
 
 using namespace std;
 

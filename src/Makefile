@@ -282,10 +282,10 @@ ppm.o: ppm.cpp
 	$(CXX) -c $< $(CXXFLAGS) -o $@
 
 quad_tree.o: quad_tree.cpp
-	$(CXX) -c $< $(CXXFLAGS) -o $@
+	$(CXX) $(INCLUDES) -c $< $(CXXFLAGS) -o $@
 
 gl_utility.o: gl_utility.cpp
-	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
+	$(CXX) $(INCLUDES) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
 
 main.o: main.cpp
 	$(CXX) -lGL -lGLU -lglut -c $< $(CXXFLAGS) -o $@
