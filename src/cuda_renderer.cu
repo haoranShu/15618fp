@@ -8,7 +8,7 @@
 #include "cuda_renderer.h"
 #include "cdpQuadtree.h"
 
-clock_t start;
+clock_t start_cuda;
 
 __device__ void traverse(Quadtree_node* nodes, float* weight,
     float pt_width, float pt_height, float pt_x, float pt_y)
@@ -110,7 +110,7 @@ void cudaInit()
 
 void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename)
 {
-    start = std::clock();
+    start_cuda = std::clock();
     float pt_width = w * 9 / renderW;
     float pt_height = h * 9 / renderH;
     //renderNewPointsKernel<<<128, 128>>>(x0, y0, w, h, renderW, renderH,
@@ -123,7 +123,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     }
     writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, renderH * renderW, max_weight, heatmap_cs_default);
     cudaDeviceSynchronize();
-    std::cout << (std::clock() - start) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
+    std::cout << (std::clock() - start_cuda) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
     cudaMemcpy((void *)ppmOutput->data, (void *)pixel_color,
         renderH * renderW * sizeof(unsigned char), cudaMemcpyDeviceToHost);
     writePPMImage(ppmOutput, filename);
