@@ -31,7 +31,6 @@ __global__ void renderNewPointsKernel(float x0, float y0, float w, float h,
 
 __global__ void reduceMaxKernel(float* src, float* dst, int n)
 {
-    printf("enterned\n");
     extern __shared__ float sdata[];
 
     int blockSize = blockDim.x;
@@ -83,6 +82,7 @@ __global__ void reduceMaxKernel(float* src, float* dst, int n)
     }
 
     if (tid == 0) dst[blockIdx.x] = sdata[0];
+    printf("returned\n");
 }
 
 __global__ void writeToImageKernel(float* weights, unsigned char* color, int num_pixels,
