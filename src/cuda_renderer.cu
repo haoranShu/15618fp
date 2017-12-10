@@ -133,7 +133,8 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     // get the maximum value of all weigths
     float max_weight;
     tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
-    cudaMemcpy((void *)&max_weight, (void *)maxbuf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
+    float max_weight = 0;
+    cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
     printf("here\n");
     writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, renderH * renderW, max_weight, heatmap_cs_default);
     printf("here\n");
