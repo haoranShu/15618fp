@@ -14,7 +14,7 @@
 #include <helper_cuda.h>
 
 #include "cdpQuadtree.h"
-
+/*
 class Points
 {
         float *m_x;
@@ -200,6 +200,7 @@ struct Parameters
         min_points_per_node(params.min_points_per_node)
     {}
 };
+*/
 
 ////////////////////////////////////////////////////////////////////////////////
 // Build a quadtree on the GPU. Use CUDA Dynamic Parallelism.
