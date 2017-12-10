@@ -94,7 +94,7 @@
              return m_p_min;
          }
 
-         __host__ __device__ bool overlaps(Bounding_box another_box)
+         __host__ __device__ bool overlaps(const Bounding_box another_box)
          {
              printf("overlap\n");
              float2 p3 = make_float2(another_box.m_p_min.x, another_box.m_p_max.y);
