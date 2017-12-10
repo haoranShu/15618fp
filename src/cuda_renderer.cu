@@ -77,12 +77,6 @@ __global__ void reduceMaxKernel(float* src, float* dst, int n)
     }
 
     if (tid == 0) dst[blockIdx.x] = sdata[0];
-    if (tid == 0) {
-        float sum = 0;
-        for (int l = 0; l < n; l++) {
-            sum = sum > src[l] ? sum : src[l];
-        }
-    }
 }
 
 __global__ void writeToImageKernel(float* weights, unsigned char* color, int num_pixels,
@@ -104,7 +98,8 @@ void cudaInit()
 {
     cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
     cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
-    cudaMalloc(&max_buf, 1 * sizeof(float));
+    //cudaMalloc(&max_buf, 1 * sizeof(float));
+    cudaMalloc(&sizes, 2 * sizeof(int))
 
     cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
         renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
@@ -121,7 +116,21 @@ __global__ void tempMax(float* src, float* dst, int n)
     }
 }
 
-void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename)
+void shrink(int n, int* sizes)
+{
+    int &g = sizes[0];
+    int &b = sizes[1];
+    if (n <= 2 * b) {
+        g = 1;
+        while (b > n) b >>= 1;
+    } else {
+        int m = (n + (b - 1)) / b;
+        while (g > m) g >>= 1;
+    }
+}
+
+void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename,
+    int* sizes)
 {
     start_cuda = std::clock();
     float pt_width = w * 9 / renderW;
@@ -131,14 +140,36 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
 
     // get the maximum value of all weigths
     float max_weight;
-    tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
-    cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
+    //tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
+    //cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
+    
+    int npixel = renderH * renderW;
+    shrink(npixel, sizes);
+    cudaMalloc(&max_buf, (sizes[0] + sizes[0] >> 1) * sizeof(float));
+
+    int slen = sizes[0];
+    float* ps = pixel_weights;
+    int smemSize = 0;
+    if (slen > 1) {
+        float* pd = max_buf + sizes[0];
+        do {
+            shrink(slen, sizes);
+            smemSize = sizes[1] * sizeof(float);
+            reduceMaxKernel<<<sizes[0], sizes[1], smemSize>>>(ps, pd, sizes[0]);
+            float *pt = ps;
+            ps = pd;
+            pd = pt;
+        } while (slen > 1);
+    }
+
+    max_weight = ps[0];
+
     cudaDeviceSynchronize();
     start_cuda = std::clock();
-    writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, renderH * renderW, max_weight, heatmap_cs_default);
+    writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, npixel, max_weight, heatmap_cs_default);
     cudaDeviceSynchronize();
     std::cout << (std::clock() - start_cuda) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
     cudaMemcpy((void *)ppmOutput->data, (void *)pixel_color,
-        renderH * renderW * sizeof(unsigned char), cudaMemcpyDeviceToHost);
+        npixel * sizeof(unsigned char), cudaMemcpyDeviceToHost);
     writePPMImage(ppmOutput, filename);
 }

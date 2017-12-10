@@ -24,5 +24,6 @@ extern Quad* leveledPts;
 extern float* pixel_weights;
 extern unsigned char* pixel_color;
 extern float* max_buf;
+extern int* sizes;
 
 #endif /* GENERAL_H */
