@@ -174,7 +174,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
         } while (slen > 1);
     }
 
-    max_weight = ps[0];
+    cudaMemcpy((void *)&max_weight, (void *)ps, 1 * sizeof(float), cudaMemcpyDeviceToHost);
 
     cudaDeviceSynchronize();
     start_cuda = std::clock();
