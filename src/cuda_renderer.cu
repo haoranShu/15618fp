@@ -649,7 +649,7 @@
      build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<1, NUM_THREADS_PER_BLOCK, smem_size>>>(nodes, points, params);
      checkCudaErrors(cudaGetLastError());
  
-     
+     /*
      // Copy points to CPU.
      thrust::host_vector<float> x_h(x_d0);
      thrust::host_vector<float> y_h(y_d0);
@@ -663,7 +663,7 @@
      // Validate the results.
      bool ok = check_quadtree(host_nodes, 0, num_points, &host_points, params);
      std::cout << "Results: " << (ok ? "OK" : "FAILED") << std::endl;
-     /*
+     
      // Free CPU memory.
      delete[] host_nodes;
  
@@ -873,10 +873,12 @@ __global__ void tempMax(float* src, float* dst, int n)
 void renderNewPointsCUDA(float x0, float y0, float w, float h,
     std::string filename, float* stamp)
 {
+    printf("Here3\n");
     start_cuda = std::clock();
     float pt_width = w * 9 / renderW;
     float pt_height = h * 9 / renderH;
 
+    printf("Here3\n");
     renderNewPointsKernel<<<128, 128>>>(x0, y0, w, h, renderW, renderH,
         pixel_weights, cuda_nodes, cuda_points, pt_width, pt_height, stamp);
 
@@ -885,6 +887,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h,
     //tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
     //cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
 
+    printf("Here4\n");
     cudaMalloc(&max_buf, 1 * sizeof(float));
 
     int npixel = renderH * renderW;

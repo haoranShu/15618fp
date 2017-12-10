@@ -201,7 +201,9 @@ int main(int argc, char** argv)
         //fs.close();
 
         //// allocate device buffer to store processed data points for each pixel
+        printf("Here\n");
         cudaInit();
+        printf("Here2\n");
         renderNewPointsCUDA(0, 0, width, height, "cuda.ppm", cuda_stamp);
 
         //fs.open(traceFile, fstream::in);
