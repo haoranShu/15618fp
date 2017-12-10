@@ -43,6 +43,7 @@ float* pixel_weights;
 unsigned char* pixel_color;
 float* max_buf;
 float* cuda_stamp;
+unsigned char* cuda_colors;
 
 void usage(const char* progname) {
     printf("Usage: %s [options] width height input\n", progname);
@@ -187,9 +188,9 @@ int main(int argc, char** argv)
 
         fs.close();
 
-        printf("here\n");
+        printf("here %f %f\n", width, height);
         bool ok = cdpQuadtree(width, height, &xs[0], &ys[0], weighted ? &wes[0] : NULL, npoints,
-            cuda_nodes, cuda_points);
+            &cuda_nodes, &cuda_points);
 
         //renderNewPoints(0, 0, width, height, "benchmark.ppm");
 
@@ -202,10 +203,10 @@ int main(int argc, char** argv)
         //fs.close();
 
         //// allocate device buffer to store processed data points for each pixel
-        printf("Here\n");
-        cudaInit();
-        printf("Here2\n");
-        renderNewPointsCUDA(0, 0, width, height, "cuda.ppm", cuda_stamp);
+        /*printf("Here\n");*/
+        /*cudaInit();*/
+        /*printf("Here2 %f %f\n", width, height);*/
+        /*renderNewPointsCUDA(0, 0, width, height, "cuda.ppm", cuda_stamp);*/
 
         //fs.open(traceFile, fstream::in);
         //fs >> ntrace;

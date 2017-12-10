@@ -30,5 +30,6 @@ extern float* max_buf;
 
 extern float stamp[81];
 extern float* cuda_stamp;
+extern unsigned char *cuda_colors;
 
 #endif /* GENERAL_H */

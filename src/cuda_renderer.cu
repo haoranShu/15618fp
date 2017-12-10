@@ -96,7 +96,7 @@
 
          __host__ __device__ bool overlaps(const Bounding_box another_box)
          {
-             printf("overlap\n");
+             /*printf("overlap\n");*/
              float2 p3 = make_float2(another_box.m_p_min.x, another_box.m_p_max.y);
              float2 p4 = make_float2(another_box.m_p_max.x, another_box.m_p_min.y);
              return (contains(another_box.m_p_min) ||
@@ -584,7 +584,7 @@
  // Allocate GPU structs, launch kernel and clean up
  ////////////////////////////////////////////////////////////////////////////////
  bool cdpQuadtree(float width, float height, float *xs, float *ys, float *ws, int num_points,
-     Quadtree_node* nodes, Points* points)
+     Quadtree_node** nodes, Points** points)
  {
  
      // Find/set the device.
@@ -621,8 +621,8 @@
  
      // Allocate memory to store points.
      //Points *points;
-     checkCudaErrors(cudaMalloc((void **) &points, 2*sizeof(Points)));
-     checkCudaErrors(cudaMemcpy(points, points_init, 2*sizeof(Points), cudaMemcpyHostToDevice));
+     checkCudaErrors(cudaMalloc((void **) points, 2*sizeof(Points)));
+     checkCudaErrors(cudaMemcpy(*points, points_init, 2*sizeof(Points), cudaMemcpyHostToDevice));
  
      // We could use a close form...
      int max_nodes = 0;
@@ -635,8 +635,8 @@
      root.set_range(0, num_points);
      root.set_bounding_box(0, 0, width, height);
      //Quadtree_node *nodes;
-     checkCudaErrors(cudaMalloc((void **) &nodes, max_nodes*sizeof(Quadtree_node)));
-     checkCudaErrors(cudaMemcpy(nodes, &root, sizeof(Quadtree_node), cudaMemcpyHostToDevice));
+     checkCudaErrors(cudaMalloc((void **) nodes, max_nodes*sizeof(Quadtree_node)));
+     checkCudaErrors(cudaMemcpy(*nodes, &root, sizeof(Quadtree_node), cudaMemcpyHostToDevice));
  
      // We set the recursion limit for CDP to max_depth.
      cudaDeviceSetLimit(cudaLimitDevRuntimeSyncDepth, max_depth);
@@ -647,10 +647,9 @@
      const int NUM_THREADS_PER_BLOCK = 128; // Do not use less than 128 threads.
      const int NUM_WARPS_PER_BLOCK = NUM_THREADS_PER_BLOCK / warp_size;
      const size_t smem_size = 4*NUM_WARPS_PER_BLOCK*sizeof(int);
-     build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<1, NUM_THREADS_PER_BLOCK, smem_size>>>(nodes, points, params);
+     build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<1, NUM_THREADS_PER_BLOCK, smem_size>>>(*nodes, *points, params);
      checkCudaErrors(cudaGetLastError());
  
-     /*
      // Copy points to CPU.
      thrust::host_vector<float> x_h(x_d0);
      thrust::host_vector<float> y_h(y_d0);
@@ -659,48 +658,26 @@
  
      // Copy nodes to CPU.
      Quadtree_node *host_nodes = new Quadtree_node[max_nodes];
-     checkCudaErrors(cudaMemcpy(host_nodes, nodes, max_nodes *sizeof(Quadtree_node), cudaMemcpyDeviceToHost));
+     checkCudaErrors(cudaMemcpy(host_nodes, *nodes, max_nodes *sizeof(Quadtree_node), cudaMemcpyDeviceToHost));
  
      // Validate the results.
      bool ok = check_quadtree(host_nodes, 0, num_points, &host_points, params);
      std::cout << "Results: " << (ok ? "OK" : "FAILED") << std::endl;
      
-     // Free CPU memory.
-     delete[] host_nodes;
+     printf("Here\n");
+     cudaInit();
+     printf("Here2 %f %f\n", width, height);
+     renderNewPointsCUDA(0, 0, width, height, "cuda.ppm", cuda_stamp);
+     /*// Free CPU memory.*/
+     /*delete[] host_nodes;*/
  
      // Free memory.
-     checkCudaErrors(cudaFree(nodes));
-     checkCudaErrors(cudaFree(points));
-     */
+     /*checkCudaErrors(cudaFree(nodes));*/
+     /*checkCudaErrors(cudaFree(points));*/
+
      return true;
  }
  
- ////////////////////////////////////////////////////////////////////////////////
- // Main entry point.
- ////////////////////////////////////////////////////////////////////////////////
- /*int main(int argc, char **argv)*/
- /*{*/
-     /*// Find/set the device.*/
-     /*// The test requires an architecture SM35 or greater (CDP capable).*/
-     /*int cuda_device = findCudaDevice(argc, (const char **)argv);*/
-     /*cudaDeviceProp deviceProps;*/
-     /*checkCudaErrors(cudaGetDeviceProperties(&deviceProps, cuda_device));*/
-     /*int cdpCapable = (deviceProps.major == 3 && deviceProps.minor >= 5) || deviceProps.major >=4;*/
- 
-     /*printf("GPU device %s has compute capabilities (SM %d.%d)\n", deviceProps.name, deviceProps.major, deviceProps.minor);*/
- 
-     /*if (!cdpCapable)*/
-     /*{*/
-         /*std::cerr << "cdpQuadTree requires SM 3.5 or higher to use CUDA Dynamic Parallelism.  Exiting...\n" << std::endl;*/
-         /*exit(EXIT_WAIVED);*/
-     /*}*/
- 
-     /*bool ok = cdpQuadtree(deviceProps.warpSize);*/
- 
-     /*return (ok ? EXIT_SUCCESS : EXIT_FAILURE);*/
- /*}*/
-
-
 clock_t start_cuda;
 
 __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box box, 
@@ -708,13 +685,16 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     float* stamp)
 {
     Quadtree_node* current = &nodes[idx];
-    const Bounding_box &curr_box = current->bounding_box();
-    if (!box.overlaps(curr_box)) {
-    printf("entered3\n");
+    Bounding_box curr_box = current->bounding_box();
+    /*printf("traverse: quad box %f, %f - %f, %f\n", curr_box.get_min().x, curr_box.get_min().y, curr_box.get_max().x, curr_box.get_max().y);*/
+    /*printf("traverse: wanted box %f, %f - %f, %f\n", box.get_min().x, box.get_min().y, box.get_max().x, box.get_max().y);*/
+    
+    if (!box.overlaps(curr_box) && !curr_box.overlaps(box)) {
+        /*printf("entered3\n");*/
         return;
     }
 
-    printf("entered\n");
+    /*printf("entered!\n");*/
     int x_dist, y_dist;
     float2 p_min = curr_box.get_min();
     float2 p_max = curr_box.get_max();
@@ -731,12 +711,10 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
             y_dist = y_dist > 4 ? 4 : y_dist;
             y_dist = y_dist < -4 ? -4 : y_dist;
             *buf = *buf + current->num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];
-            printf("added\n");
         }
         return;
     }
 
-    printf("entered2\n");
     if (params.depth == params.max_depth || current->num_points() <= params.min_points_per_node)
     {
         for (int it = current->points_begin() ; it < current->points_end() ; ++it)
@@ -746,7 +724,6 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
                 x_dist = (int)floor((p.x - pt_x + x_reso/2) / x_reso);
                 y_dist = (int)floor((p.y - pt_y + y_reso/2) / y_reso); 
                 *buf = *buf + stamp[9*(4 + y_dist) + (4 + x_dist)];
-                printf("added\n");
             }
         }
         return;
@@ -772,11 +749,11 @@ __global__ void renderNewPointsKernel(float x0, float y0, float w, float h,
         buf[i] = 0;
         float pt_x = x0 + (i%W + 0.5) * x_reso;
         float pt_y = y0 + (i/W + 0.5) * y_reso;
-        Bounding_box region;
-        region.set(pt_x - pt_width/2, pt_y - pt_height/2,
+        Bounding_box box;
+        box.set(pt_x - pt_width/2, pt_y - pt_height/2,
             pt_x + pt_width/2, pt_y + pt_height/2);
         Parameters params(12, 64);
-        traverse(nodes, 0, buf+i, region, points, params, pt_x, pt_y, x_reso, y_reso, stamp);
+        traverse(nodes, 0, buf+i, box, points, params, pt_x, pt_y, x_reso, y_reso, stamp);
     }
 }
 
@@ -838,24 +815,24 @@ __global__ void reduceMaxKernel(float* src, float* dst, int n)
 }
 
 __global__ void writeToImageKernel(float* weights, unsigned char* color, int num_pixels,
-    int max_weight, const heatmap_colorscheme_t* colorscheme)
+    float max_weight, const unsigned char* colors, const size_t ncolors)
 {
     int idx = threadIdx.x + blockDim.x * blockIdx.x;
 
     for (int i = idx; i < num_pixels; i += blockDim.x * gridDim.x) {
-        float val = weights[i] / (float)max_weight;
-        size_t color_idx = (size_t)((float)(colorscheme->ncolors-1)*val + 0.5f);
-        color[4*i] = (colorscheme->colors)[color_idx*4];
-        color[4*i+1] = (colorscheme->colors)[color_idx*4+1];
-        color[4*i+2] = (colorscheme->colors)[color_idx*4+2];
-        color[4*i+3] = (colorscheme->colors)[color_idx*4+3];
+        float val = weights[i] / max_weight;
+        size_t color_idx = (size_t)((float)(ncolors-1)*val + 0.5f);
+        color[4*i] = colors[color_idx*4];
+        color[4*i+1] = colors[color_idx*4+1];
+        color[4*i+2] = colors[color_idx*4+2];
+        color[4*i+3] = colors[color_idx*4+3];
     }
 }
 
 void cudaInit()
 {
     cudaMalloc(&pixel_weights, renderH * renderW * sizeof(float));
-    cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char));
+    cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char) * 4);
     cudaMalloc(&cuda_stamp, 81 * sizeof(float));
     //cudaMalloc(&max_buf, 1 * sizeof(float));
     //cudaMalloc(&sizes, 2 * sizeof(int));
@@ -864,6 +841,10 @@ void cudaInit()
         81 * sizeof(float), cudaMemcpyHostToDevice);
     //cudaMemcpy((void *)pixel_weights, (void *)hm->buf,
     //    renderH * renderW * sizeof(float), cudaMemcpyHostToDevice);
+
+    cudaMalloc(&cuda_colors, heatmap_cs_default->ncolors * sizeof(unsigned char));
+    cudaMemcpy((void *)cuda_colors, (void *)heatmap_cs_default->colors, 
+            heatmap_cs_default->ncolors * sizeof(unsigned char), cudaMemcpyHostToDevice);
 }
 
 __global__ void tempMax(float* src, float* dst, int n)
@@ -874,34 +855,36 @@ __global__ void tempMax(float* src, float* dst, int n)
         for (int i = 0; i < n; i++) {
             max_weight = max_weight > src[i] ? max_weight : src[i];
         }
+        printf(" max buf %f\n", max_weight);
+        printf(" max buf %f\n", dst[0]);
     }
 }
 
 void renderNewPointsCUDA(float x0, float y0, float w, float h,
     std::string filename, float* stamp)
 {
-    printf("Here3\n");
+    /*printf("Here3\n");*/
     start_cuda = std::clock();
     float pt_width = w * 9 / renderW;
     float pt_height = h * 9 / renderH;
 
-    printf("Here3\n");
     renderNewPointsKernel<<<128, 128>>>(x0, y0, w, h, renderW, renderH,
         pixel_weights, cuda_nodes, cuda_points, pt_width, pt_height, stamp);
 
     // get the maximum value of all weigths
-    float max_weight;
-    //tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
     //cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
 
-    printf("Here4\n");
+    float max_weight;
+    /*printf("Here4\n");*/
     cudaMalloc(&max_buf, 1 * sizeof(float));
 
     int npixel = renderH * renderW;
-    reduceMaxKernel<<<1, 512, 512 * sizeof(float)>>>(pixel_weights, max_buf, npixel);
+    tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);
+    /*reduceMaxKernel<<<1, 512, 512 * sizeof(float)>>>(pixel_weights, max_buf, npixel);*/
     cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
+    printf(" max weight %f\n", max_weight);
 
-    writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, npixel, max_weight, heatmap_cs_default);
+    writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, npixel, max_weight, cuda_colors, heatmap_cs_default->ncolors);
     cudaDeviceSynchronize();
     std::cout << (std::clock() - start_cuda) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
     cudaMemcpy((void *)ppmOutput->data, (void *)pixel_color,
