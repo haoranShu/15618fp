@@ -124,17 +124,6 @@ __global__ void tempMax(float* src, float* dst, int n)
     }
 }
 
-void shrink(int n, int* sizes)
-{
-    if (n <= 2 * sizes[1]) {
-        sizes[0] = 1;
-        while (sizes[1] > n) sizes[1] >>= 1;
-    } else {
-        int m = (n + (sizes[1] - 1)) / sizes[1];
-        while (sizes[0] > m) sizes[0] >>= 1;
-    }
-}
-
 void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filename,
     int* sizes)
 {
@@ -153,40 +142,8 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
 
     int npixel = renderH * renderW;
     reduceMaxKernel<<<1, 512, 512 * sizeof(float)>>>(pixel_weights, max_buf, npixel);
-/*    
-    printf("here\n");
-    sizes[0] = 512;
-    sizes[1] = 256;
-    int npixel = renderH * renderW;
-    shrink(npixel, sizes);
-    printf("here\n");
-    cudaMalloc(&max_buf, (sizes[0] + sizes[0] >> 1) * sizeof(float));
-
-    int slen = sizes[0];
-    float* ps = pixel_weights;
-    int smemSize = 0;
-    int blockSize;
-    printf("here\n");
-    if (slen > 1) {
-        float* pd = max_buf + sizes[0];
-        do {
-            shrink(slen, sizes);
-            printf("%d %d\n", sizes[0], sizes[1]);
-            smemSize = sizes[1] * sizeof(float);
-            blockSize = sizes[1];
-            reduceMaxKernel<<<sizes[0], sizes[1], smemSize>>>(ps, pd, npixel);
-            float *pt = ps;
-            ps = pd;
-            pd = pt;
-            slen = sizes[0];
-        } while (slen > 1);
-    }
-    printf("here\n");
-*/
     cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
 
-    cudaDeviceSynchronize();
-    start_cuda = std::clock();
     writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, npixel, max_weight, heatmap_cs_default);
     cudaDeviceSynchronize();
     std::cout << (std::clock() - start_cuda) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
