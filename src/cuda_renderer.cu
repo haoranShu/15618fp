@@ -646,6 +646,7 @@
      const int NUM_THREADS_PER_BLOCK = 128; // Do not use less than 128 threads.
      const int NUM_WARPS_PER_BLOCK = NUM_THREADS_PER_BLOCK / warp_size;
      const size_t smem_size = 4*NUM_WARPS_PER_BLOCK*sizeof(int);
+     printf("here\n");
      build_quadtree_kernel<NUM_THREADS_PER_BLOCK><<<1, NUM_THREADS_PER_BLOCK, smem_size>>>(nodes, points, params);
      checkCudaErrors(cudaGetLastError());
  
