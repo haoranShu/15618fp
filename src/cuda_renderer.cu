@@ -161,6 +161,7 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     if (slen > 1) {
         float* pd = max_buf + sizes[0];
         do {
+            printf("%d %d\n", sizes[0], sizes[1]);
             shrink(slen, sizes);
             smemSize = sizes[1] * sizeof(float);
             blockSize = sizes[1];
