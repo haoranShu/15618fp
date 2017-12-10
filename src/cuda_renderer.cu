@@ -706,8 +706,8 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     Points *pts, Parameters params, float pt_x, float pt_y, float x_reso, float y_reso,
     float* stamp)
 {
-    Quadtree_node current = nodes[idx];
-    Bounding_box curr_box = current.bounding_box();
+    Quadtree_node* current = &nodes[idx];
+    Bounding_box &curr_box = current->bounding_box();
     if (!box.overlaps(curr_box))
         return;
 
@@ -724,14 +724,14 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
             x_dist = x_dist < -4 ? -4 : x_dist;
             y_dist = y_dist > 4 ? 4 : y_dist;
             y_dist = y_dist < -4 ? -4 : y_dist;
-            *buf = *buf + current.num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];
+            *buf = *buf + current->num_points() * stamp[9*(4 + y_dist) + (4 + x_dist)];
         }
         return;
     }
 
     if (params.depth == params.max_depth || current.num_points() <= params.min_points_per_node)
     {
-        for (int it = current.points_begin() ; it < current.points_end() ; ++it)
+        for (int it = current->points_begin() ; it < current->points_end() ; ++it)
         {
             float2 p = pts->get_point(it);
             if (box.contains(p)) {
