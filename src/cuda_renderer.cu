@@ -117,14 +117,11 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h, std::string filen
     //    pixel_weights, nodes, pt_width, pt_height);
 
     // get the maximum value of all weigths
-    int slen = 2;
-    if (slen > 1) {
-        ;
-        do {
-
-        } while (slen > 1;)
+    float max_weight = 0;
+    for (int i = 0; i < renderH * renderW; i ++) {
+        max = max > pixel_weights[i] ? max : pixel_weights[i];
     }
-    writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, renderH * renderW, max_weight[0]);
+    writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, renderH * renderW, max_weight, heatmap_cs_default);
     cudaDeviceSynchronize();
     std::cout << (std::clock() - start) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
     cudaMemcpy((void *)ppmOutput->data, (void *)pixel_color,
