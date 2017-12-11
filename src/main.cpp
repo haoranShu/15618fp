@@ -37,7 +37,7 @@ float stamp[81] = {
 
 
 // cuda objects
-Quadtree_node* cuda_nodes;
+Quadtree_node* cuda_nodes[16];
 Points* cuda_points;
 float* pixel_weights;
 unsigned char* pixel_color;
@@ -191,7 +191,7 @@ int main(int argc, char** argv)
 
         printf("here %f %f\n", width, height);
         bool ok = cdpQuadtree(width, height, &xs[0], &ys[0], weighted ? &wes[0] : NULL, npoints,
-            &cuda_nodes, &cuda_points);
+            cuda_nodes, &cuda_points);
 
         //renderNewPoints(0, 0, width, height, "benchmark.ppm");
 
