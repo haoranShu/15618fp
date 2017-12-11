@@ -42,7 +42,8 @@ To minimize work, we used **QuadTrees** (QuadForests) to store the data points, 
 
 We use each QuadTree node to represent a rectangle on the region we are going to render. Each node of the QuadTree would correspond to a subset of the whole dataset and a node stops splitting when the number of data points within that node is less than a pre-selected threshold or a pre-defined maximum depth of QuadTree is reached. QuadTree is widely used for its **search** operation that outputs the points of a dataset that are within a rectangle in O(logN) time.
 
-> Illustration of QuadTree
+> ![alt text](https://github.com/jyzhe/15618fp/blob/final/selected_quad.png "Logo Title Text 1")
+
 
 Using a QuadTree enables a finer control over the interactions between pixels and data points. Now we do not have to iterate through the whole dataset to gather the accumulated density at a pixel. Instead, we can traverse the QuadTree and consider points in a given small vicinity of the pixel.
 
