@@ -18,11 +18,11 @@ More formally, a heatmap is a continuous representation of discrete point sets. 
 
 ### Program Overview
 
-Our program takes as input a list of 2-dimensional data points with weights together with the desired window position and size, and outputs the corresponding heatmap.
+Our program takes as input a list of weighted 2-dimensional data points together with the desired window position and size, and outputs the corresponding heatmap.
 
-As for the interactive part, it provides a zoom-in/out and drag feature that enables local scrutinization of the dataset, with a suitable level of detail.
+As for the interactive part, it provides a zoom-in/out and drag feature that enables local scrutinization of the dataset, under a suitable level of detail.
 
-We ran all our experiments on the GHC machines but our OpenGL utility can only run on our laptops because of some problems on the GHC machines. Thus, we simulated the zoom-in/out and drag functionality with another input of interaction tracefile, which includes a series of queries to our renderer at different positions of the data with different level of detail requirement.
+We ran all our experiments on the GHC machines but our OpenGL utility can only run on our laptops because of some problems with the X-forwarding on the GHC machines. Thus, we simulated the zoom-in/out and drag functionality with another input of interaction tracefile, which includes a series of queries to our renderer at different positions of the data with different level of detail requirement. An example illustration is posted below.
 
 ![alt text](https://github.com/jyzhe/15618fp/blob/final/ezgif.com-video-to-gif.gif "Logo Title Text 1")
 
@@ -34,6 +34,8 @@ Our workflow involves mainly three steps:
 * Gather Weight of Pixels
 * Reduce Gathered Results and Render to Image
 
+> workflow illustration
+
 ### Key Data Structures
 
 To minimize work, we used **QuadTrees** (QuadForests) to store the data points, both in CPU sequential version and CUDA parallel version. A **heatmap\_t** data structure is used to store the accumulated weights of each pixel for each QuadTree in the forest. A **colorscheme\_t** data structure is used to map weights to proper colors according to its ranking within all the weights on the plot.
@@ -42,17 +44,16 @@ To minimize work, we used **QuadTrees** (QuadForests) to store the data points, 
 
 > (WikiPedia) A quadtree is a tree data structure in which each internal node has exactly four children. 
 
-We use each QuadTree node to represent a rectangle on the region we are going to render. Each node of the QuadTree would correspond to a subset of the whole dataset and a node stops splitting when the number of data points within that node is less than a pre-selected threshold or a pre-defined maximum depth of QuadTree is reached. QuadTree is widely used for its **search** operation that outputs the points of a dataset that are within a rectangle in O(logN) time.
+We use each QuadTree node to represent a rectangle on the region we are going to render. Each node of the QuadTree would correspond to a subset of the whole dataset and a node stops splitting itself when the number of data points within that node is less than a pre-selected threshold or a pre-defined maximum depth of QuadTree is reached. QuadTree is widely used for its **search** operation that outputs the points of a dataset that are within a rectangle in O(logN) time.
 
 ![alt text](https://github.com/jyzhe/15618fp/blob/final/selected_quad.png "Logo Title Text 1")
 (by Mike Bostock https://bl.ocks.org/mbostock/4343214)
 
 Using a QuadTree enables a finer control over the interactions between pixels and data points. Now we do not have to iterate through the whole dataset to gather the accumulated density at a pixel. Instead, we can traverse the QuadTree and consider points in a given small vicinity of the pixel.
 
-In our program, we implemented a linear QuadTree that which is actually a series of re-ordering among the data points. Thus each tree node effectively points to a continuous chunk of data points in the dataset.
+In our program, we implemented a linear QuadTree that which is actually a series of re-ordering among the data points. Thus each tree node effectively points to a continuous chunk of data points in the dataset. Following is a z-order illustration of this re-ordering.
 
-
-> z-order illustration
+![alt text](https://github.com/jyzhe/15618fp/blob/final/z-order.png "Logo Title Text 1")
 
 ##### Main Operations
 * buildQuadTree
@@ -61,7 +62,7 @@ In our program, we implemented a linear QuadTree that which is actually a series
 
 * overlaps
 
-	This function checks if a region overlaps with the region covered by some QuadTree node.
+	Each QuadTree node has a bounding box which corresponds to a rectangle in the data space. This function checks if a region in data space overlaps with the bounding box of the QuadTree node.
 
 * traverse
 
@@ -82,8 +83,14 @@ KDE widely used to calculate a proper weight at a pixel.
 
 We used a discrete approximation of KDE with a stampl].
 
+### QuadTree on GPU
+
+minimization of data communication between CPU and GPU
+
 ### Parallel on Pixels
 Query interesting points for each pixel and do work.
+
+> illustration
 
 1. no race or contention
 
@@ -92,6 +99,8 @@ Query interesting points for each pixel and do work.
 3. problem1: load inbalance, repetitive visit to points
 
 4. problem2: limitation of QuadTree on GPU
+
+5. performance: only as good as CPU version, sometime even slower
 
 ### Parallel on Data Points
 
@@ -109,6 +118,16 @@ Query interesting points for each pixel and do work.
 2. use warp parallelism (SIMD)
 
 ## RESULTS
+
+1. Quality of output
+
+2. Time performance
+
+	- table of 10w, 100w, 1000w, 5000w data point CPU/GPU time
+
+	- Plot of 10w, 100w, 1000w, 5000w speedup
+
+	- Graph of 10w, 100w, 1000w, 5000w time breakdown
 
 ## REFERENCES
 
