@@ -56,8 +56,13 @@ In our program, we implemented a linear QuadTree that which is actually a series
 
 	This function builds a QuadTree at most MAX\_DEPTH deep with the given *points*, and each leaf has at most MIN\_NUM\_PER\_NODE points.
 
-* overlaps
+* overlaps *(Node, Region)*
+
+	This function checks if a region overlaps with the region covered by some QuadTree node.
+
 * traverse
+
+	This function traverses the QuadTree and gathers for a pixel the interesting  weights of nearby data points.
 
 ##### Implementation
 
