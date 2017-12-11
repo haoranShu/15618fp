@@ -65,32 +65,45 @@ In our program, we implemented a linear QuadTree that which is actually a series
 	This function **recursively** traverses the QuadTree and gathers for a pixel the interesting  weights of nearby data points.
 
 ##### Implementation
+
 Parallel QuadTree is an interesting parallel project in its own rights so we did not plan to implement a parallel building algorithm for QuadTree. We are satisfied with a on-GPU QuadTree data structure. Thus we implemented a CPU serial QuadTree data structure. However, to speedup tree building on large datasets, we used a cdqQuadTree implementation **provided by Nvidia**. That, however, is a **buggy** implementation and only concerns with building a QuadTree from data points.
 
 The implementation uses CUDA Dynamic Parallism to build a QuadTree in parallel. It uses two buffers to hold the data points throughout the process of re-ordering, and uses shared memory to keep track of corresponding data points' offset in the buffer for threads in each warp.
-
-#### Heatmap
-
-##### Main operations
-
-
-#### Colorscheme
-
 
 #### Performance Breakdown
 
 ## APPROACH
 
 ### Kernel Density Estimation and Its Approximation
+KDE widely used to calculate a proper weight at a pixel.
+
+We used a discrete approximation of KDE with a stampl].
 
 ### Parallel on Pixels
+Query interesting points for each pixel and do work.
+
+1. no race or contention
+
+2. enough computation to parallel 
+
+3. problem1: load inbalance, repetitive visit to points
+
+4. problem2: limitation of QuadTree on GPU
 
 ### Parallel on Data Points
 
+1. Good for large amount of points only
+
+2. Can build several QuadTrees so that each parallel on pixels can be more effective as well
+
+3. problem: have to further reduce 
+
+
 ### Parallel Reduction
 
-### Mapping of Work
+1. use shared data
 
+2. use warp parallelism (SIMD)
 
 ## RESULTS
 
