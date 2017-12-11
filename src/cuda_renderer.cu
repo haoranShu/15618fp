@@ -29,7 +29,9 @@
 #include "cdpQuadtree.h"
 
 #define NUM_TREES 16
-#define GRID_SIZE 16
+#define GRID_SIZE 32
+#define MAX_DEPTH 8
+#define MIN_NODES 1024
 
 class Points
 {
@@ -612,8 +614,8 @@ bool cdpQuadtree(float width, float height, float *xs, float *ys, float *ws, int
     int warp_size = deviceProps.warpSize;
 
     // Constants to control the algorithm.
-    const int max_depth  = 8;
-    const int min_points_per_node = 1024;
+    const int max_depth  = MAX_DEPTH;
+    const int min_points_per_node = MIN_NODES;
 
     // Allocate memory for points.
     thrust::device_vector<float> x_d0(&xs[0], &xs[num_points]);
@@ -783,28 +785,113 @@ __device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box
     //    pt_x, pt_y, x_reso, y_reso, stamp);
 }
 
+__device__ void traverse(Quadtree_node *nodes, int idx, float *buf, Bounding_box box, 
+        Points *pts, Parameters params, int W, int H)
+{
+    //printf("entered with idx %d\n", idx);
+    Quadtree_node* current = &nodes[idx];
+    Bounding_box curr_box = current->bounding_box();
+
+    /*printf("traverse: quad box %f, %f - %f, %f\n", curr_box.get_min().x, curr_box.get_min().y, curr_box.get_max().x, curr_box.get_max().y);*/
+    /*printf("traverse: wanted box %f, %f - %f, %f\n", box.get_min().x, box.get_min().y, box.get_max().x, box.get_max().y);*/
+
+    if (!box.overlaps(curr_box) && !curr_box.overlaps(box)) {
+        /*printf("entered3\n");*/
+        return;
+    }
+
+    /*printf("entered!\n");*/
+    float2 p_min = curr_box.get_min();
+    float2 p_max = curr_box.get_max();
+    if ((box.contains(p_max) && box.contains(p_min)) || 
+            params.depth == params.max_depth || 
+            current->num_points() <= params.min_points_per_node)
+    {
+        for (int it = current->points_begin() ; it < current->points_end() ; ++it)
+        {
+            float2 p = pts->get_point(it);
+            if (box.contains(p)) {
+                int idx = ((int)p.y) * W + ((int)p.x);
+                buf[idx] = buf[idx] + 1;
+            }
+        }
+        return;
+    }
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+0, buf, box, pts, 
+            Parameters(params, true), W, H);
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+1, buf, box, pts, 
+            Parameters(params, true), W, H);
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+2, buf, box, pts, 
+            Parameters(params, true), W, H);
+    traverse(&nodes[params.num_nodes_at_this_level], 4*idx+3, buf, box, pts, 
+            Parameters(params, true), W, H);
+}
+
+__global__ void reduceWeights(int W, int H, int num_trees, float *buf, int stride)
+{
+    for (int idx = threadIdx.x; idx < W * H; idx += stride) {
+        for (int t = 1; t < num_trees; t++) {
+            int offset = t * W * H;
+            buf[idx] = buf[idx] + buf[offset + idx];
+        }
+    }
+}
+
+__global__ void addStamp(int W, int H, float *buf, float *final, float * stamp, int stride)
+{
+    for (int idx = threadIdx.x; idx < W * H; idx += stride) {
+        int x = idx % W;
+        int y = idx / W;
+        for(int i = x - 4; i <= x + 4; i++) {
+            for (int j = y - 4; j <= y + 4; j++) {
+                if (i < 0 || j < 0 || i >= W || j >= H)
+                    continue;
+
+                int idx2 = j * W + i;
+                if (buf[idx2] > 0) {
+                    int x_dist = x - i + 4;
+                    int y_dist = y - j + 4;
+                    final[idx] = final[idx] + buf[idx2] * stamp[9 * (y_dist) + x_dist];
+                }
+            }
+        }
+    }
+}
+
 __global__ void renderNewPointsKernel(float x0, float y0, float w, float h, 
         int W, int H, float* buf, Quadtree_node** nodes, Points* points,
-        float pt_width, float pt_height, float* stamp, int node_stride)
+        float pt_width, float pt_height, float* stamp, int grid_size)
 {
 
     Quadtree_node *my_nodes = nodes[blockIdx.x];
 
-    int idx = threadIdx.x;
-    float x_reso = w / W;
-    float y_reso = h / H;
+    int block_x = threadIdx.x % grid_size;
+    int block_y = threadIdx.x / grid_size;
+    float grid_length_w = w / grid_size;
+    float grid_length_h = h / grid_size;
+
+    float x_start = x0 + block_x * grid_length_w;
+    float y_start = y0 + block_y * grid_length_h;
     int offset = blockIdx.x * W * H;
-    for (int i = idx; i < W * H; i += blockDim.x) {
-        buf[i + offset] = 0;
-        float pt_x = x0 + (i%W + 0.5) * x_reso;
-        float pt_y = y0 + (i/W + 0.5) * y_reso;
-        Bounding_box box;
-        box.set(pt_x - pt_width/2, pt_y - pt_height/2,
-                pt_x + pt_width/2, pt_y + pt_height/2);
-        Parameters params(8, 1024);
-        //traverse<<<1, 1>>>(nodes, 0, buf+i, box, points, params, pt_x, pt_y, x_reso, y_reso, stamp);
-        traverse(my_nodes, 0, buf+i+offset, box, points, params, pt_x, pt_y, x_reso, y_reso, stamp);
-    }
+    Bounding_box box;
+    box.set(x_start, y_start, x_start + grid_length_w, y_start + grid_length_h);
+    Parameters params(MAX_DEPTH, MIN_NODES);
+    traverse(my_nodes, 0, buf + offset, box, points, params, W, H);
+
+    /*float x_reso = w / W;*/
+    /*float y_reso = h / H;*/
+    /*int offset = blockIdx.x * W * H;*/
+    /*for (int i = idx; i < W * H; i += blockDim.x) {*/
+        /*buf[i + offset] = 0;*/
+        /*float pt_x = x0 + (i%W + 0.5) * x_reso;*/
+        /*float pt_y = y0 + (i/W + 0.5) * y_reso;*/
+        /*Bounding_box box;*/
+        /*box.set(pt_x - pt_width/2, pt_y - pt_height/2,*/
+                /*pt_x + pt_width/2, pt_y + pt_height/2);*/
+        /*Parameters params(8, 1024);*/
+        /*//traverse<<<1, 1>>>(nodes, 0, buf+i, box, points, params, pt_x, pt_y, x_reso, y_reso, stamp);*/
+        /*traverse(my_nodes, 0, buf+i+offset, box, points, params, pt_x, pt_y, x_reso, y_reso, stamp);*/
+    /*}*/
 }
 
 __global__ void reduceMaxKernel(float* src, float* dst, int n)
@@ -925,16 +1012,24 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h,
     cudaMalloc(&raw, NUM_TREES * sizeof(Quadtree_node *));
     cudaMemcpy((void *) raw, (void *) cuda_nodes, NUM_TREES * sizeof(Quadtree_node *), cudaMemcpyHostToDevice);
 
+    float *final_weights;
+    int npixel = renderH * renderW;
+    cudaMalloc(&final_weights, npixel * sizeof(float));
+    cudaMemset(final_weights, 0, npixel * sizeof(float));
+
     double start = get_wall_time();
 
     float pt_width = w * 9 / renderW;
     float pt_height = h * 9 / renderH;
 
-    int node_stride = 21845;
-
-    renderNewPointsKernel<<<NUM_TREES, 512>>>(x0, y0, w, h, renderW, renderH,
-            pixel_weights, raw, cuda_points, pt_width, pt_height, stamp, node_stride);
-
+    renderNewPointsKernel<<<NUM_TREES, GRID_SIZE * GRID_SIZE>>>(x0, y0, w, h, renderW, renderH,
+            pixel_weights, raw, cuda_points, pt_width, pt_height, stamp, GRID_SIZE);
+    cudaDeviceSynchronize();
+    std::cout << get_wall_time() - start << " s\n";
+    reduceWeights<<<1, GRID_SIZE * GRID_SIZE>>>(renderW, renderH, NUM_TREES, pixel_weights, GRID_SIZE * GRID_SIZE);
+    cudaDeviceSynchronize();
+    std::cout << get_wall_time() - start << " s\n";
+    addStamp<<<1, GRID_SIZE * GRID_SIZE>>>(renderW, renderH, pixel_weights, final_weights, stamp, GRID_SIZE * GRID_SIZE);
     cudaDeviceSynchronize();
     std::cout << get_wall_time() - start << " s\n";
     // get the maximum value of all weigths
@@ -942,13 +1037,12 @@ void renderNewPointsCUDA(float x0, float y0, float w, float h,
     float max_weight;
     cudaMalloc(&max_buf, 1 * sizeof(float));
 
-    int npixel = renderH * renderW;
     /*tempMax<<<1, 1>>>(pixel_weights, max_buf, renderH * renderW);*/
-    reduceMaxKernel<<<1, 512, 512 * sizeof(float)>>>(pixel_weights, max_buf, npixel);
+    reduceMaxKernel<<<1, 512, 512 * sizeof(float)>>>(final_weights, max_buf, npixel);
     cudaMemcpy((void *)&max_weight, (void *)max_buf, 1 * sizeof(float), cudaMemcpyDeviceToHost);
 
     printf("%f\n", max_weight);
-    writeToImageKernel<<<128, 128>>>(pixel_weights, pixel_color, npixel, max_weight, cuda_colors, heatmap_cs_default->ncolors);
+    writeToImageKernel<<<128, 128>>>(final_weights, pixel_color, npixel, max_weight, cuda_colors, heatmap_cs_default->ncolors);
     cudaDeviceSynchronize();
     std::cout << get_wall_time() - start << " s\n";
     cudaMemcpy((void *)ppmOutput->data, (void *)pixel_color,
