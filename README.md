@@ -52,7 +52,8 @@ In our program, we implemented a linear QuadTree that which is actually a series
 > z-order illustration
 
 ##### Main Operations
-* buildQuadTree *(MAX\_DEPTH, MIN\_NUM\_PER\_NODE, points)* /newline
+* buildQuadTree *(MAX\_DEPTH, MIN\_NUM\_PER\_NODE, points)*
+
 	This function builds a QuadTree at most MAX\_DEPTH deep with the given *points*, and each leaf has at most MIN\_NUM\_PER\_NODE points.
 
 * overlaps
