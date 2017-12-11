@@ -85,6 +85,10 @@ KDE is widely used to compute the density function of a point set. Using a kerne
 
 ![alt text](https://github.com/jyzhe/15618fp/blob/final/KDE.jpeg "Logo Title Text 1")
 
+Do the exact calculation can be slow because of the floating point mathematical operations it involves. Therefore, we use an discretized approximation of the classical KDE. Instead of weighing a data point with respect to its Euclidean distance to the centered of the pixel (mapped to the data space), we discretize this distance by pixels (by width/height of a pixel in the data spacd) and precompute a finite number of weights for each pixel around the residing pixel of the concerned point. In our program we chose a 9-pixel by 9-pixel stamp simulating a Gaussian Kernel.
+
+![alt text](https://github.com/jyzhe/15618fp/blob/final/KDE_stamp.jpeg "Logo Title Text 1")
+
 ### QuadTree on GPU
 
 One problem about using CUDA is that we need to transfer a huge amount of data between the CPU and GPU. If we are going to do this transfer of data each time the user queries a zoom/drag, it is hard to make our program interactive in realtime, especially with large datasets. Thus, we decided to put the QuadTree on GPU, so that we do not move data back and forth.
