@@ -154,16 +154,17 @@ int main(int argc, char** argv)
             // enter GLUT event processing cycle
             glutMainLoop();
         } else {
-            fs.open(traceFile, fstream::in);
-            fs >> ntrace;
-            string outputPre = "medianoutput/trace";
-            char outputName[30];
-            for (int i = 0; i < ntrace; i++) {
-                fs >> x0 >> y0 >> width >> height;
-                sprintf(outputName, "%s%04d.ppm", outputPre.c_str(), i+1);
-                renderNewPoints(x0, y0, width, height, string(outputName));
-            }
-            fs.close();
+            //fs.open(traceFile, fstream::in);
+            //fs >> ntrace;
+            //string outputPre = "medianoutput/trace";
+            //char outputName[30];
+            //for (int i = 0; i < ntrace; i++) {
+            //    fs >> x0 >> y0 >> width >> height;
+            //    sprintf(outputName, "%s%04d.ppm", outputPre.c_str(), i+1);
+            x0 = 0; y0 = 0;
+	    renderNewPoints(x0, y0, width, height, "benchmark.ppm");
+            //}
+            //fs.close();
         }
     } else {
 
