@@ -85,7 +85,7 @@ We used a discrete approximation of KDE with a stamp].
 
 ### QuadTree on GPU
 
-minimization of data communication between CPU and GPU
+One problem about using CUDA is that we need to transfer a huge amount of data between the CPU and GPU. If we are going to do this transfer of data each time the user queries a zoom/drag, it is hard to make our program interactive in realtime, especially with large datasets. Thus, we decided to put the QuadTree on GPU. Actually, we only need to put the points on 
 
 ### Parallel on Pixels
 First we tried to parallize our algorithm over each pixel. The idea is natural for any rendering problem. Given a fixed stamp, each pixel is affected by points that are mapped to the 9-pixel by 9-pixel window centered at this pixel (note there is a mapping from the data space to the rendering space). Our approach is to build **one** QuadTree on GPU and store all points in it. Then, for each pixel we traverse the QuadTree with the data space region corresponding to 81-pixel window centered at this pixel for points that might weigh in for this pixel. For each point probed, calculate its distance to the center of the calling pixel in data space and add a fraction of its weight to the total weight of the pixel according to the stamp.
@@ -127,7 +127,7 @@ Precisely, we do the following:
 
 2. Allocate a temporary buffer to store local gathered weights on each pixel for each chunk of data points
 
-3. Launch kernel with NUM\_TREES blocks, each block responsible for one chunk of data, within each block, each thread is responsible for work of a number of  pixels independently
+3. Launch kernel with NUM\_TREES blocks, each block responsible for one chunk of data, within each block, each thread is responsible for work of a number of pixels independently
 
 4. Reduce the weights onto one buffer
 
@@ -168,6 +168,8 @@ Two tricks we applied are:
 	- Graph of 10w, 100w, 1000w, 5000w time breakdown
 
 ### Future Work
+
+1. put QuadTree on CPU and send point begin / end to GPU only
 
 ## COOPERATION
 
