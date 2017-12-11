@@ -29,6 +29,7 @@
 #include "cdpQuadtree.h"
 
 #define NUM_TREES 16
+#define GRID_SIZE 16
 
 class Points
 {
@@ -880,7 +881,7 @@ __global__ void writeToImageKernel(float* weights, unsigned char* color, int num
 
 void cudaInit()
 {
-    cudaMalloc(&pixel_weights, 16 * renderH * renderW * sizeof(float));
+    cudaMalloc(&pixel_weights, NUM_TREES * renderH * renderW * sizeof(float));
     cudaMalloc(&pixel_color, renderH * renderW * sizeof(unsigned char) * 4);
     cudaMalloc(&cuda_stamp, 81 * sizeof(float));
     //cudaMalloc(&max_buf, 1 * sizeof(float));

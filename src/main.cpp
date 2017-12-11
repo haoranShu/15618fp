@@ -37,7 +37,7 @@ float stamp[81] = {
 
 
 // cuda objects
-Quadtree_node* cuda_nodes[16];
+Quadtree_node* cuda_nodes[64];
 Points* cuda_points;
 float* pixel_weights;
 unsigned char* pixel_color;
