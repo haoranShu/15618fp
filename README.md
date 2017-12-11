@@ -119,26 +119,42 @@ Thinking about the problems we had with our first try, we decided to work on pro
 
 This time, we add in parallelism on the data points, while we do not abandon the parallelism on points at all. The way we do this is to build multiple QuadTrees, each storing a part of the dataset. This remedies the load inbalance problem because chunks of work are finer-grained now. Less redundancy on points because we parallelize on them (this might be harder to explain, but imagine at the extreme case where each tree has only one point, we are doing no extra work on points). Although we still cannot go any deeper into the recursion, we have reduced the total amount of data in each QuadTree and thus minimized number of points to probe.
 
+Also, we only gather weights of points directly reside in the calling pixel at the first kernel. This proves to reduce running time effectively.
+
 Precisely, we do the following:
 
 1. Divide the data into NUM\_TREES chunks and build NUM\_TREES QuadTrees to hold them
 
 2. Allocate a temporary buffer to store local gathered weights on each pixel for each chunk of data points
 
-3. Reduce the weights onto one buffer
+3. Launch kernel with NUM\_TREES blocks, each block responsible for one chunk of data, within each block, each thread is responsible for work of a number of  pixels independently
 
-4. Calculate the maximum weight on image, scale the weights and render
+4. Reduce the weights onto one buffer
+
+5. Apply stamp on the reduced buffer
+
+6. Calculate the maximum weight on image, scale the weights and render
+
+> illustration
 
 This strategy works well for our problem so its optimized performance will be reported in the next section. Here we also analyze its existing problems.
 
 1. **Requirement on Data Size** This works well on large data sets only. When the data set is small, the overhead may prevail. (By small we mean less than 1 million)
 
-3. **Further Reduction Needed**
-
+3. **Further Reduction Needed** In step 4 we have to reduce the local results to global buffer. This is additional work, but it should be fast on CUDA.
 
 ### Parallel Reduction
 
-1. use shared data
+There are two point in our algorithm that we need to reduce through an array of data. First, before rendering to image, we need to normalize the weights with respect to the maximum weight gathered in the window. Second, we need to add the weights in local results to a global result. We could have used thrust library but we decided to write this part by ourselves. We did take advice from a Nvidia tutorial online (http://developer.download.nvidia.com/compute/cuda/1.1-Beta/x86_website/projects/reduction/doc/reduction.pdf).
+
+For each block, we first let each thread reduce a portion 
+
+![alt text](https://github.com/jyzhe/15618fp/blob/final/reduction.png "Logo Title Text 1")
+
+
+Two tricks we applied are:
+
+1. **Use of Shared Memory** 
 
 2. use warp parallelism (SIMD)
 
