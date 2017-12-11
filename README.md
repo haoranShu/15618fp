@@ -110,7 +110,9 @@ The main problems with this embarassing parallelism are multiple:
 
 2. **Poor SIMD Parallelism** CUDA is good at performing SIMD operations. In our case, however, although the kinds of work each pixel does are similar, calling a recursive traverse function makes it highly probable for threads in the same warp to diverge to different branches in the function. In the worst case, this can even make a warp sequential in its execution.
 
-3. **Limitation of QuadTree on GPU**
+3. **Redundant Work on Points** The avoidance of contention comes at a cost: we are processing each point multiple times (81 times at most, to be precise). This is because each point weighs in for all pixels surrounding it. What is worse, when we traverse the QuadTree, we are not only processing the points that really eventually weight in, but also checking other points in the same node and then the redundancy in work multiplies.
+
+4. **Limitation of QuadTree and Revursive Functional Calls on GPU** The linear QuadTree data structure can take up a lot of space on GPU because it assumes that the tree is complete and thus allocate spaces for each node even if it does not exist. Also, since CUDA does not know the stack size to allocate for a recursive function call (not dynamically nested kernel launch), there is a limit in the depth of recursion. Both factors 
 
 ### Parallel on Data Points
 
