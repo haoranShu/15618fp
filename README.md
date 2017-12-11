@@ -115,12 +115,25 @@ The main **problems** with this embarassing parallelism are multiple:
 4. **Limitation of QuadTree and Revursive Functional Calls on GPU** The linear QuadTree data structure can take up a lot of space on GPU because it assumes that the tree is complete and thus allocate spaces for each node even if it does not exist. Also, since CUDA does not know the stack size to allocate for a recursive function call (not dynamically nested kernel launch), there is a limit in the depth of recursion. Both factors limit the MAX\_DEPTH of the QuadTree we can build. This becomes a huge problem when the dataset grows in size and the data points are skewed: we have to increase the MIN\_NUM\_POINTS\_PER\_NODE to accomodate all the points. This is against the motivation why we use a QuadTree at the first place: we want to minimize the points we probed, but if the QuadTree is too shallow, this minimization results in nothing really minimal.
 
 ### Parallel on Data Points
+Thinking about the problems we had with our first try, we decided to work on problem 1, 3 and 4. We had little idea what we can do to take more advantage of the SIMD nature of CUDA model because our problem is not computation intensive in nature. It is only large in data.
 
-1. Good for large amount of points only
+This time, we add in parallelism on the data points, while we do not abandon the parallelism on points at all. The way we do this is to build multiple QuadTrees, each storing a part of the dataset. This remedies the load inbalance problem because chunks of work are finer-grained now. Less redundancy on points because we parallelize on them (this might be harder to explain, but imagine at the extreme case where each tree has only one point, we are doing no extra work on points). Although we still cannot go any deeper into the recursion, we have reduced the total amount of data in each QuadTree and thus minimized number of points to probe.
 
-2. Can build several QuadTrees so that each parallel on pixels can be more effective as well
+Precisely, we do the following:
 
-3. problem: have to further reduce 
+1. Divide the data into NUM\_TREES chunks and build NUM\_TREES QuadTrees to hold them
+
+2. Allocate a temporary buffer to store local gathered weights on each pixel for each chunk of data points
+
+3. Reduce the weights onto one buffer
+
+4. Calculate the maximum weight on image, scale the weights and render
+
+This strategy works well for our problem so its optimized performance will be reported in the next section. Here we also analyze its existing problems.
+
+1. **Requirement on Data Size** This works well on large data sets only. When the data set is small, the overhead may prevail. (By small we mean less than 1 million)
+
+3. **Further Reduction Needed**
 
 
 ### Parallel Reduction
