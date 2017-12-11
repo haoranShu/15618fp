@@ -96,17 +96,21 @@ A little optimization we make is that, for the common case where a whole node's 
 
 The advantage of this parallelism is obvious:
 
-1. no race or contention
+1. There is no data contention in this model. Although each point may affect several pixels and thus points are not independent, each pixel is independent from other pixels. In the process of QuadTree traversal and weight gathering, only READ is performed on the shared data structure, the QuadTree. WRITEs are only performed to different locations of a shared buffer so there is no contention.
 
-2. enough computation to parallel 
+2. We usually have a large amount of pixels so that we are chopping our work into chunks, supposedly, small enough.
 
-5. performance: only as good as CPU version, sometime even slower
-
+>5. performance: only as good as CPU version, sometime even slower
+>
 > plot?
 
-3. problem1: load inbalance, repetitive visit to points
+The main problems with this embarassing parallelism are multiple:
 
-4. problem2: limitation of QuadTree on GPU
+1. **Inbalance Workload**
+
+2. problem2: poor SIMD 
+
+3. problem3: limitation of QuadTree on GPU
 
 ### Parallel on Data Points
 
