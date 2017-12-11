@@ -24,6 +24,14 @@ We ran all our experiments on the GHC machines but our OpenGL utility can only r
 
 > GIF inserted here
 
+#### Workflow Illustration
+
+> Workflow Illustration
+
+### Kernel Density Estimation and Its Approximation
+
+Here
+
 ### Key Data Structures
 
 To minimize work, we used **QuadTrees** (QuadForests) to store the data points, both in CPU sequential version and CUDA parallel version. A **heatmap\_t** data structure is used to store the accumulated weights of each pixel for each QuadTree in the forest. A **colorscheme\_t** data structure is used to map weights to proper colors according to its ranking within all the weights on the plot.
@@ -32,17 +40,41 @@ To minimize work, we used **QuadTrees** (QuadForests) to store the data points, 
 
 > (WikiPedia) A quadtree is a tree data structure in which each internal node has exactly four children. 
 
-We use each QuadTree node to represent a rectangle on the region we are going to render. Each node of the QuadTree would correspond to a subset of the whole dataset and a node stops splitting when the number of data points within that node is less than a pre-selected threshold or a pre-defined maximum depth of QuadTree is reached.
+We use each QuadTree node to represent a rectangle on the region we are going to render. Each node of the QuadTree would correspond to a subset of the whole dataset and a node stops splitting when the number of data points within that node is less than a pre-selected threshold or a pre-defined maximum depth of QuadTree is reached. QuadTree is widely used for its **search** operation that outputs the points of a dataset that are within a rectangle in O(logN) time.
 
 > Illustration of QuadTree
 
-This
+Using a QuadTree enables a finer control over the interactions between pixels and data points. Now we do not have to iterate through the whole dataset to gather the accumulated density at a pixel. Instead, we can traverse the QuadTree and consider points in a given small vicinity of the pixel.
+
+##### Main Operations
+1. buildQuadTree
+2. overlaps
+3. traverse
+
+##### Implementation
+
+
+
+##### Parallelism
+
+
 
 #### Heatmap
 
+##### Main operations
+
+##### Implementation
+
+##### Parallelism
+reduction (sum & max)
+
+
 #### Colorscheme
 
-#### 
+##### Parallelism
+writeToImage
+
+#### Performance Breakdown
 
 
 
