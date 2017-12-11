@@ -147,28 +147,29 @@ This strategy works well for our problem so its optimized performance will be re
 
 There are two point in our algorithm that we need to reduce through an array of data. First, before rendering to image, we need to normalize the weights with respect to the maximum weight gathered in the window. Second, we need to add the weights in local results to a global result. We could have used thrust library but we decided to write this part by ourselves. We did take advice from a Nvidia tutorial online (http://developer.download.nvidia.com/compute/cuda/1.1-Beta/x86_website/projects/reduction/doc/reduction.pdf).
 
-For each block, we first let each thread reduce a portion 
-
-![alt text](https://github.com/jyzhe/15618fp/blob/final/reduction.png "Logo Title Text 1")
-
-
 Two tricks we applied are:
 
-1. **Use of Shared Memory** 
+1. **Use of Shared Memory** For each block, we first let each thread reduce a portion of the input and store the result in a shared memory. Then we reduce the intermediate results in the shared memory using a sequential addressing manner (shown below) because it does not mess with the shared memory bank.
 
-2. use warp parallelism (SIMD)
+![alt text](https://github.com/jyzhe/15618fp/blob/final/reduction.png "Logo Title Text 1")
+(by Nvidia)
+
+2. **Use of Warp Parallelism (SIMD) and Unrolling** When the reduction comes down to **warpSize**, we drop **__syncthreads** because SIMD ensures that they would complete simultaneuosly. We also unroll the loops so that they can be faster.
 
 ## RESULTS
 
-1. Quality of output
+### Outputs
 
-2. Time performance
-
+### Performance
 	- table of 10w, 100w, 1000w, 5000w data point CPU/GPU time
 
 	- Plot of 10w, 100w, 1000w, 5000w speedup
 
 	- Graph of 10w, 100w, 1000w, 5000w time breakdown
+
+### Future Work
+
+## COOPERATION
 
 ## REFERENCES
 
