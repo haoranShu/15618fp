@@ -8,7 +8,9 @@ We implemented an interactive large dataset visualization pipeline with CUDA and
 
 Recently scientists' ability to collect and process large datasets have been growing rapidly, marking an increasing need for effective and efficient visualization tools on large datasets. Visualization of large datasets differs greatly from traditional visualization in many aspects, apart from their obvious difference in size. For point set visualization, for example, point occlusion makes it hard to generate effective and honest presentation of a million-level dataset in a laptop screen. Also, interactive visualization may require re-computation on each level of detail. Sometimes, it is even hard to load the whole dataset into memory, when we have to resort to distributed clusters. All these factors make visualization on large datasets a topic of interest and a great objective for parallel computing.
 
-> An overplotted figure and a heatmap
+![alt text](https://github.com/jyzhe/15618fp/blob/final/overplotted.png "Logo Title Text 1")
+
+(By Jeffrey Heer and Sean Kandel)
 
 Among various visualization problems on large datasets, we chose to work on the Interactive Visualization of Heatmaps because of both the its popularity, as a method to represent big data, among different kinds of datasets, and its well-definedness to guide our project.
 
@@ -22,7 +24,7 @@ As for the interactive part, it provides a zoom-in/out and drag feature that ena
 
 We ran all our experiments on the GHC machines but our OpenGL utility can only run on our laptops because of some problems on the GHC machines. Thus, we simulated the zoom-in/out and drag functionality with another input of interaction tracefile, which includes a series of queries to our renderer at different positions of the data with different level of detail requirement.
 
-> GIF inserted here
+![alt text](https://github.com/jyzhe/15618fp/blob/final/ezgif.com-video-to-gif.gif "Logo Title Text 1")
 
 #### Workflow
 
@@ -42,8 +44,8 @@ To minimize work, we used **QuadTrees** (QuadForests) to store the data points, 
 
 We use each QuadTree node to represent a rectangle on the region we are going to render. Each node of the QuadTree would correspond to a subset of the whole dataset and a node stops splitting when the number of data points within that node is less than a pre-selected threshold or a pre-defined maximum depth of QuadTree is reached. QuadTree is widely used for its **search** operation that outputs the points of a dataset that are within a rectangle in O(logN) time.
 
-> ![alt text](https://github.com/jyzhe/15618fp/blob/final/selected_quad.png "Logo Title Text 1")
-
+![alt text](https://github.com/jyzhe/15618fp/blob/final/selected_quad.png "Logo Title Text 1")
+(by Mike Bostock https://bl.ocks.org/mbostock/4343214)
 
 Using a QuadTree enables a finer control over the interactions between pixels and data points. Now we do not have to iterate through the whole dataset to gather the accumulated density at a pixel. Instead, we can traverse the QuadTree and consider points in a given small vicinity of the pixel.
 
