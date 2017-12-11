@@ -28,13 +28,9 @@ We ran all our experiments on the GHC machines but our OpenGL utility can only r
 
 Our workflow involves mainly three steps:
 
-1. Read In, Re-order and Store data
-2. Gather Weight of Pixels
-3. Reduce Gathered Results and Render to Image
-
-### Kernel Density Estimation and Its Approximation
-
-Here
+* Read In, Re-order and Store data
+* Gather Weight of Pixels
+* Reduce Gathered Results and Render to Image
 
 ### Key Data Structures
 
@@ -50,10 +46,17 @@ We use each QuadTree node to represent a rectangle on the region we are going to
 
 Using a QuadTree enables a finer control over the interactions between pixels and data points. Now we do not have to iterate through the whole dataset to gather the accumulated density at a pixel. Instead, we can traverse the QuadTree and consider points in a given small vicinity of the pixel.
 
+In our program, we implemented a linear QuadTree that which is actually a series of re-ordering among the data points. Thus each tree node effectively points to a continuous chunk of data points in the dataset.
+
+
+> z-order illustration
+
 ##### Main Operations
-1. buildQuadTree
-2. overlaps
-3. traverse
+* buildQuadTree *(MAX\_DEPTH, MIN\_NUM\_PER\_NODE, points)*
+	This function builds a QuadTree at most MAX\_DEPTH deep with the given *points*, and each leaf has at most MIN\_NUM\_PER\_NODE points.
+
+* overlaps
+* traverse
 
 ##### Implementation
 
@@ -67,20 +70,23 @@ Using a QuadTree enables a finer control over the interactions between pixels an
 
 ##### Main operations
 
-##### Implementation
-
-##### Parallelism
-reduction (sum & max)
-
 
 #### Colorscheme
 
-##### Parallelism
-writeToImage
 
 #### Performance Breakdown
 
 ## APPROACH
+
+### Kernel Density Estimation and Its Approximation
+
+### Parallel on Pixels
+
+### Parallel on Data Points
+
+### Parallel Reduction
+
+### Mapping of Work
 
 
 ## RESULTS
