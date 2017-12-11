@@ -30,10 +30,13 @@ To minimize work, we used **QuadTrees** (QuadForests) to store the data points, 
 
 #### QuadTree
 
-Quoted from Wikipedia:
-> A quadtree is a tree data structure in which each internal node has exactly four children. 
+> (WikiPedia) A quadtree is a tree data structure in which each internal node has exactly four children. 
 
 We use each QuadTree node to represent a rectangle on the region we are going to render. Each node of the QuadTree would correspond to a subset of the whole dataset and a node stops splitting when the number of data points within that node is less than a pre-selected threshold or a pre-defined maximum depth of QuadTree is reached.
+
+> Illustration of QuadTree
+
+This
 
 #### Heatmap
 
