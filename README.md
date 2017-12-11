@@ -55,7 +55,7 @@ In our program, we implemented a linear QuadTree that which is actually a series
 
 ![alt text](https://github.com/jyzhe/15618fp/blob/final/z-order.png "Logo Title Text 1")
 
-##### Main Operations
+1. **Main Operations**
 * buildQuadTree
 
 	This function builds a QuadTree at most MAX\_DEPTH deep with the given points, and each leaf has at most MIN\_NUM\_PER\_NODE points.
@@ -68,24 +68,28 @@ In our program, we implemented a linear QuadTree that which is actually a series
 
 	This function **recursively** traverses the QuadTree and gathers for a pixel the interesting  weights of nearby data points.
 
-##### Implementation
+2. **Implementation**
 
 Parallel QuadTree is an interesting parallel project in its own rights so we did not plan to implement a parallel building algorithm for QuadTree. We are satisfied with a on-GPU QuadTree data structure. Thus we implemented a CPU serial QuadTree data structure. However, to speedup tree building on large datasets, we used a cdqQuadTree implementation **provided by Nvidia**. That, however, is a **buggy** implementation and only concerns with building a QuadTree from data points.
 
 The implementation uses CUDA Dynamic Parallism to build a QuadTree in parallel. It uses two buffers to hold the data points throughout the process of re-ordering, and uses shared memory to keep track of corresponding data points' offset in the buffer for threads in each warp.
 
-#### Performance Breakdown
+#### Colormap
+
+> Credit to Repo
 
 ## APPROACH
 
 ### Kernel Density Estimation and Its Approximation
-KDE widely used to calculate a proper weight at a pixel.
+KDE is widely used to compute the density function of a point set. Using a kernel function, we can generate a continuous function from a discrete point set. The formula of classical KDE is as the following,
 
-We used a discrete approximation of KDE with a stamp].
+![alt text](https://github.com/jyzhe/15618fp/blob/final/KDE.png "Logo Title Text 1")
 
 ### QuadTree on GPU
 
-One problem about using CUDA is that we need to transfer a huge amount of data between the CPU and GPU. If we are going to do this transfer of data each time the user queries a zoom/drag, it is hard to make our program interactive in realtime, especially with large datasets. Thus, we decided to put the QuadTree on GPU. Actually, we only need to put the points on 
+One problem about using CUDA is that we need to transfer a huge amount of data between the CPU and GPU. If we are going to do this transfer of data each time the user queries a zoom/drag, it is hard to make our program interactive in realtime, especially with large datasets. Thus, we decided to put the QuadTree on GPU, so that we do not move data back and forth.
+
+The Nvidia implementation of QuadTree we made use of in our program is a very inspiring implmentation with CUDA. Thanks a lot for the buggy but beautiful implementation.
 
 ### Parallel on Pixels
 First we tried to parallize our algorithm over each pixel. The idea is natural for any rendering problem. Given a fixed stamp, each pixel is affected by points that are mapped to the 9-pixel by 9-pixel window centered at this pixel (note there is a mapping from the data space to the rendering space). Our approach is to build **one** QuadTree on GPU and store all points in it. Then, for each pixel we traverse the QuadTree with the data space region corresponding to 81-pixel window centered at this pixel for points that might weigh in for this pixel. For each point probed, calculate its distance to the center of the calling pixel in data space and add a fraction of its weight to the total weight of the pixel according to the stamp.
