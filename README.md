@@ -81,26 +81,32 @@ The implementation uses CUDA Dynamic Parallism to build a QuadTree in parallel. 
 ### Kernel Density Estimation and Its Approximation
 KDE widely used to calculate a proper weight at a pixel.
 
-We used a discrete approximation of KDE with a stampl].
+We used a discrete approximation of KDE with a stamp].
 
 ### QuadTree on GPU
 
 minimization of data communication between CPU and GPU
 
 ### Parallel on Pixels
-Query interesting points for each pixel and do work.
+First we tried to parallize our algorithm over each pixel. The idea is natural for any rendering problem. Given a fixed stamp, each pixel is affected by points that are mapped to the 9-pixel by 9-pixel window centered at this pixel (note there is a mapping from the data space to the rendering space). Our approach is to build **one** QuadTree on GPU and store all points in it. Then, for each pixel we traverse the QuadTree with the data space region corresponding to 81-pixel window centered at this pixel for points that might weigh in for this pixel. For each point probed, calculate its distance to the center of the calling pixel in data space and add a fraction of its weight to the total weight of the pixel according to the stamp.
+
+A little optimization we make is that, for the common case where a whole node's bounding box is contained in a pixel, we just add a fraction of the sum of weights of points in this node to the calling pixel so that we can stop our traversal early. Note that we already discretized our KDE with a stamp, so this simplification would make no difference on the result.
 
 > illustration
+
+The advantage of this parallelism is obvious:
 
 1. no race or contention
 
 2. enough computation to parallel 
 
+5. performance: only as good as CPU version, sometime even slower
+
+> plot?
+
 3. problem1: load inbalance, repetitive visit to points
 
 4. problem2: limitation of QuadTree on GPU
-
-5. performance: only as good as CPU version, sometime even slower
 
 ### Parallel on Data Points
 
