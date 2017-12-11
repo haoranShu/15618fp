@@ -83,7 +83,7 @@ The implementation uses CUDA Dynamic Parallism to build a QuadTree in parallel. 
 ### Kernel Density Estimation and Its Approximation
 KDE is widely used to compute the density function of a point set. Using a kernel function, we can generate a continuous function from a discrete point set. The formula of classical KDE is as the following,
 
-![alt text](https://github.com/jyzhe/15618fp/blob/final/KDE.png "Logo Title Text 1")
+![alt text](https://github.com/jyzhe/15618fp/blob/final/KDE.jpeg "Logo Title Text 1")
 
 ### QuadTree on GPU
 
