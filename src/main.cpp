@@ -37,7 +37,7 @@ float stamp[81] = {
 
 
 // cuda objects
-Quadtree_node* cuda_nodes;
+Quadtree_node* cuda_nodes[64];
 Points* cuda_points;
 float* pixel_weights;
 unsigned char* pixel_color;
@@ -154,16 +154,17 @@ int main(int argc, char** argv)
             // enter GLUT event processing cycle
             glutMainLoop();
         } else {
-            fs.open(traceFile, fstream::in);
-            fs >> ntrace;
-            string outputPre = "medianoutput/trace";
-            char outputName[30];
-            for (int i = 0; i < ntrace; i++) {
-                fs >> x0 >> y0 >> width >> height;
-                sprintf(outputName, "%s%04d.ppm", outputPre.c_str(), i+1);
-                renderNewPoints(x0, y0, width, height, string(outputName));
-            }
-            fs.close();
+            //fs.open(traceFile, fstream::in);
+            //fs >> ntrace;
+            //string outputPre = "medianoutput/trace";
+            //char outputName[30];
+            //for (int i = 0; i < ntrace; i++) {
+            //    fs >> x0 >> y0 >> width >> height;
+            //    sprintf(outputName, "%s%04d.ppm", outputPre.c_str(), i+1);
+            x0 = 0; y0 = 0;
+	    renderNewPoints(x0, y0, width, height, "benchmark.ppm");
+            //}
+            //fs.close();
         }
     } else {
 
@@ -190,7 +191,7 @@ int main(int argc, char** argv)
 
         printf("here %f %f\n", width, height);
         bool ok = cdpQuadtree(width, height, &xs[0], &ys[0], weighted ? &wes[0] : NULL, npoints,
-            &cuda_nodes, &cuda_points);
+            cuda_nodes, &cuda_points);
 
         //renderNewPoints(0, 0, width, height, "benchmark.ppm");
 

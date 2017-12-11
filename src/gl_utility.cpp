@@ -6,6 +6,7 @@
 
 #include "general.h"
 #include "gl_utility.h"
+#include <sys/time.h>
 
 using namespace std;
 
@@ -17,9 +18,19 @@ float g_y0 = 0;
 
 clock_t start;
 
+double get_wall_time1(){
+    struct timeval time;
+    if (gettimeofday(&time,NULL)){
+        //  Handle error
+        return 0;
+
+    }
+    return (double)time.tv_sec + (double)time.tv_usec * .000001;
+}
+
 void renderNewPoints(float x0, float y0, float w, float h, string filename)
 {
-    start = clock();
+    double start = get_wall_time1();
     memset(hm->buf, 0, hm->w * hm->h * sizeof(float));
     hm->max = 0;
     float x1 = x0 + w;
@@ -32,7 +43,7 @@ void renderNewPoints(float x0, float y0, float w, float h, string filename)
     Point b(x1, y1);
     leveledPts->search(a, b, x_gap, y_gap);
     heatmap_render_default_to(hm, &image[0]);
-    cout << (clock() - start) * 1000  / (double) CLOCKS_PER_SEC << " ms\n";
+    cout << get_wall_time1() - start << " s\n";
     heatmap_render_default_to(hm, ppmOutput->data);
     writePPMImage(ppmOutput, filename);
 }
