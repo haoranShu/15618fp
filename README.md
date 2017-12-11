@@ -106,11 +106,11 @@ The advantage of this parallelism is obvious:
 
 The main problems with this embarassing parallelism are multiple:
 
-1. **Inbalance Workload**
+1. **Inbalance Workload** The data points are very likely to be skewed in the data space. As a matter of fact, the skewedness in distribution is what people are looking for most of the time. Thus, parallelizing on pixels may suffer from this inbalance. A remedy is to assign multiple pixels to one thread with a relatively large stride within these pixels on the same thread (because nearby pixels tend to have similar workload).
 
-2. problem2: poor SIMD 
+2. **Poor SIMD Parallelism** CUDA is good at performing SIMD operations. In our case, however, although the kinds of work each pixel does are similar, calling a recursive traverse function makes it highly probable for threads in the same warp to diverge to different branches in the function. In the worst case, this can even make a warp sequential in its execution.
 
-3. problem3: limitation of QuadTree on GPU
+3. **Limitation of QuadTree on GPU**
 
 ### Parallel on Data Points
 
