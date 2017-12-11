@@ -4,7 +4,7 @@
 
 We implemented an interactive large dataset visualization pipeline with CUDA and compared its performace with optimized CPU sequential version. It is able to render millions of points within milliseconds, and to re-render to different levels of details realtime.
 
-## Background
+## BACKGROUND
 
 Recently scientists' ability to collect and process large datasets have been growing rapidly, marking an increasing need for effective and efficient visualization tools on large datasets. Visualization of large datasets differs greatly from traditional visualization in many aspects, apart from their obvious difference in size. For point set visualization, for example, point occlusion makes it hard to generate effective and honest presentation of a million-level dataset in a laptop screen. Also, interactive visualization may require re-computation on each level of detail. Sometimes, it is even hard to load the whole dataset into memory, when we have to resort to distributed clusters. All these factors make visualization on large datasets a topic of interest and a great objective for parallel computing.
 
@@ -24,9 +24,13 @@ We ran all our experiments on the GHC machines but our OpenGL utility can only r
 
 > GIF inserted here
 
-#### Workflow Illustration
+#### Workflow
 
-> Workflow Illustration
+Our workflow involves mainly three steps:
+
+1. Read In, Re-order and Store data
+2. Gather Weight of Pixels
+3. Reduce Gathered Results and Render to Image
 
 ### Kernel Density Estimation and Its Approximation
 
@@ -75,6 +79,15 @@ reduction (sum & max)
 writeToImage
 
 #### Performance Breakdown
+
+## APPROACH
+
+
+## RESULTS
+
+## REFERENCES
+
+
 
 
 
