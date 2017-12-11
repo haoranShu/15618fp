@@ -52,25 +52,22 @@ In our program, we implemented a linear QuadTree that which is actually a series
 > z-order illustration
 
 ##### Main Operations
-* buildQuadTree *(MAX\_DEPTH, MIN\_NUM\_PER\_NODE, points)*
+* buildQuadTree
 
-	This function builds a QuadTree at most MAX\_DEPTH deep with the given *points*, and each leaf has at most MIN\_NUM\_PER\_NODE points.
+	This function builds a QuadTree at most MAX\_DEPTH deep with the given points, and each leaf has at most MIN\_NUM\_PER\_NODE points.
 
-* overlaps *(Node, Region)*
+* overlaps
 
 	This function checks if a region overlaps with the region covered by some QuadTree node.
 
 * traverse
 
-	This function traverses the QuadTree and gathers for a pixel the interesting  weights of nearby data points.
+	This function **recursively** traverses the QuadTree and gathers for a pixel the interesting  weights of nearby data points.
 
 ##### Implementation
+Parallel QuadTree is an interesting parallel project in its own rights so we did not plan to implement a parallel building algorithm for QuadTree. We are satisfied with a on-GPU QuadTree data structure. Thus we implemented a CPU serial QuadTree data structure. However, to speedup tree building on large datasets, we used a cdqQuadTree implementation **provided by Nvidia**. That, however, is a **buggy** implementation and only concerns with building a QuadTree from data points.
 
-
-
-##### Parallelism
-
-
+The implementation uses CUDA Dynamic Parallism to build a QuadTree in parallel. It uses two buffers to hold the data points throughout the process of re-ordering, and uses shared memory to keep track of corresponding data points' offset in the buffer for threads in each warp.
 
 #### Heatmap
 
