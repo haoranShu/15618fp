@@ -22,7 +22,7 @@ extern float width, height;
 extern Quad* leveledPts;
 
 // cuda objects
-extern Quadtree_node* cuda_nodes;
+extern Quadtree_node* cuda_nodes[16];
 extern Points* cuda_points;
 extern float* pixel_weights;
 extern unsigned char* pixel_color;
