@@ -104,7 +104,7 @@ The advantage of this parallelism is obvious:
 >
 > plot?
 
-The main problems with this embarassing parallelism are multiple:
+The main **problems** with this embarassing parallelism are multiple:
 
 1. **Inbalance Workload** The data points are very likely to be skewed in the data space. As a matter of fact, the skewedness in distribution is what people are looking for most of the time. Thus, parallelizing on pixels may suffer from this inbalance. A remedy is to assign multiple pixels to one thread with a relatively large stride within these pixels on the same thread (because nearby pixels tend to have similar workload).
 
@@ -112,7 +112,7 @@ The main problems with this embarassing parallelism are multiple:
 
 3. **Redundant Work on Points** The avoidance of contention comes at a cost: we are processing each point multiple times (81 times at most, to be precise). This is because each point weighs in for all pixels surrounding it. What is worse, when we traverse the QuadTree, we are not only processing the points that really eventually weight in, but also checking other points in the same node and then the redundancy in work multiplies.
 
-4. **Limitation of QuadTree and Revursive Functional Calls on GPU** The linear QuadTree data structure can take up a lot of space on GPU because it assumes that the tree is complete and thus allocate spaces for each node even if it does not exist. Also, since CUDA does not know the stack size to allocate for a recursive function call (not dynamically nested kernel launch), there is a limit in the depth of recursion. Both factors 
+4. **Limitation of QuadTree and Revursive Functional Calls on GPU** The linear QuadTree data structure can take up a lot of space on GPU because it assumes that the tree is complete and thus allocate spaces for each node even if it does not exist. Also, since CUDA does not know the stack size to allocate for a recursive function call (not dynamically nested kernel launch), there is a limit in the depth of recursion. Both factors limit the MAX\_DEPTH of the QuadTree we can build. This becomes a huge problem when the dataset grows in size and the data points are skewed: we have to increase the MIN\_NUM\_POINTS\_PER\_NODE to accomodate all the points. This is against the motivation why we use a QuadTree at the first place: we want to minimize the points we probed, but if the QuadTree is too shallow, this minimization results in nothing really minimal.
 
 ### Parallel on Data Points
 
