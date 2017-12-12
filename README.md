@@ -30,9 +30,9 @@ We ran all our experiments on the GHC machines but our OpenGL utility can only r
 
 Our workflow involves mainly three steps:
 
-	* Read In, Re-order and Store data
-	* Gather Weight of Pixels
-	* Reduce Gathered Results and Render to Image
+	1. Read In, Re-order and Store data
+	2. Gather Weight of Pixels
+	3. Reduce Gathered Results and Render to Image
 
 > workflow illustration
 
@@ -56,15 +56,15 @@ In our program, we implemented a linear QuadTree that which is actually a series
 ![alt text](https://github.com/jyzhe/15618fp/blob/final/z-order.png "Logo Title Text 1")
 
 1. **Main Operations**
-* buildQuadTree
+	1. buildQuadTree
 
 	This function builds a QuadTree at most MAX\_DEPTH deep with the given points, and each leaf has at most MIN\_NUM\_PER\_NODE points.
 
-* overlaps
+	2. overlaps
 
 	Each QuadTree node has a bounding box which corresponds to a rectangle in the data space. This function checks if a region in data space overlaps with the bounding box of the QuadTree node.
 
-* traverse
+	3. traverse
 
 	This function **recursively** traverses the QuadTree and gathers for a pixel the interesting  weights of nearby data points.
 
