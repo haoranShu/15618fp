@@ -144,7 +144,7 @@ Precisely, we do the following:
 
 * Calculate the maximum weight on image, scale the weights and render
 
-> illustration
+![alt text](https://github.com/jyzhe/15618fp/blob/final/para2.001.jpeg "Logo Title Text 1")
 
 This strategy works well for our problem so its optimized performance will be reported in the next section. Here we also analyze its existing problems.
 
