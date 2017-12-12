@@ -34,8 +34,6 @@ Our workflow involves mainly three steps:
 	2. Gather Weight of Pixels
 	3. Reduce Gathered Results and Render to Image
 
-> workflow illustration
-
 ### Key Data Structures
 
 To minimize work, we used **QuadTrees** (QuadForests) to store the data points, both in CPU sequential version and CUDA parallel version. A **heatmap\_t** data structure is used to store the accumulated weights of each pixel for each QuadTree in the forest. A **colorscheme\_t** data structure is used to map weights to proper colors according to its ranking within all the weights on the plot.
@@ -77,7 +75,7 @@ The implementation uses CUDA Dynamic Parallism to build a QuadTree in parallel. 
 
 #### Colormap
 
-> Credit to Repo
+> We used the colormap library from https://github.com/lucasb-eyer/heatmap (maintained by lucasb-eyer)
 
 ## APPROACH
 
