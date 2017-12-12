@@ -30,9 +30,9 @@ We ran all our experiments on the GHC machines but our OpenGL utility can only r
 
 Our workflow involves mainly three steps:
 
-* Read In, Re-order and Store data
-* Gather Weight of Pixels
-* Reduce Gathered Results and Render to Image
+	* Read In, Re-order and Store data
+	* Gather Weight of Pixels
+	* Reduce Gathered Results and Render to Image
 
 > workflow illustration
 
@@ -131,17 +131,17 @@ Also, we only gather weights of points directly reside in the calling pixel at t
 
 Precisely, we do the following:
 
-1. Divide the data into NUM\_TREES chunks and build NUM\_TREES QuadTrees to hold them
+	1. Divide the data into NUM\_TREES chunks and build NUM\_TREES QuadTrees to hold them
 
-2. Allocate a temporary buffer to store local gathered weights on each pixel for each chunk of data points
+	2. Allocate a temporary buffer to store local gathered weights on each pixel for each chunk of data points
 
-3. Launch kernel with NUM\_TREES blocks, each block responsible for one chunk of data, within each block, each thread is responsible for work of a number of pixels independently
+	3. Launch kernel with NUM\_TREES blocks, each block responsible for one chunk of data, within each block, each thread is responsible for work of a number of pixels independently
 
-4. Reduce the weights onto one buffer
+	4. Reduce the weights onto one buffer
 
-5. Apply stamp on the reduced buffer
+	5. Apply stamp on the reduced buffer
 
-6. Calculate the maximum weight on image, scale the weights and render
+	6. Calculate the maximum weight on image, scale the weights and render
 
 > illustration
 
