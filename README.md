@@ -109,11 +109,9 @@ The advantage of this parallelism is obvious:
 
 2. We usually have a large amount of pixels so that we are chopping our work into chunks, supposedly, small enough.
 
->5. performance: only as good as CPU version, sometime even slower
->
-> plot?
+**However, this strategy does not give us a good speedup. In fact, the performance of our parallel code can even be slower than the sequential CPU code on some datasets.**
 
-The main **problems** with this embarassing parallelism are multiple:
+We looked into the code and found out that the main **problems** with this embarassing parallelism are multiple:
 
 1. **Inbalance Workload** The data points are very likely to be skewed in the data space. As a matter of fact, the skewedness in distribution is what people are looking for most of the time. Thus, parallelizing on pixels may suffer from this inbalance. A remedy is to assign multiple pixels to one thread with a relatively large stride within these pixels on the same thread (because nearby pixels tend to have similar workload).
 
