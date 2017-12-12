@@ -168,6 +168,8 @@ Two tricks we applied are:
 
 ### Outputs
 
+![alt text](https://github.com/jyzhe/15618fp/blob/final/zoomin.jpeg "Logo Title Text 1")
+
 ### Performance
 	- table of 10w, 100w, 1000w, 5000w data point CPU/GPU time
 
