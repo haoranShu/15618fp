@@ -101,7 +101,7 @@ First we tried to parallize our algorithm over each pixel. The idea is natural f
 
 A little optimization we make is that, for the common case where a whole node's bounding box is contained in a pixel, we just add a fraction of the sum of weights of points in this node to the calling pixel so that we can stop our traversal early. Note that we already discretized our KDE with a stamp, so this simplification would make no difference on the result.
 
-> illustration
+![alt text](https://github.com/jyzhe/15618fp/blob/final/para1.jpeg "Logo Title Text 1")
 
 The advantage of this parallelism is obvious:
 
