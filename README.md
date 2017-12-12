@@ -165,15 +165,21 @@ Two tricks we applied are:
 
 ### Outputs
 
+We generated this zoom-in output from a generated dataset of 10 million points. In the red rectangles are the zoomed part and we can clearly see the different levels of details.
+
 ![alt text](https://github.com/jyzhe/15618fp/blob/final/zoomin.jpeg "Logo Title Text 1")
 
 ### Performance
+The following are the time performance of our program, compared to optimized CPU versions.
 
-![alt text](https://github.com/jyzhe/15618fp/blob/final/plot3.png "Logo Title Text 1")
 
-![alt text](https://github.com/jyzhe/15618fp/blob/final/plot2.png "Logo Title Text 1")
+![alt text](https://github.com/jyzhe/15618fp/blob/final/plot33.png "Logo Title Text 1")
 
-![alt text](https://github.com/jyzhe/15618fp/blob/final/plot1.png "Logo Title Text 1")
+![alt text](https://github.com/jyzhe/15618fp/blob/final/plot22.png "Logo Title Text 1")
+
+The time of CUDA version could be broken down into three parts: Render, Reduction and Stamp Applying. We can see that as the size of data input grows the render time prevails.
+
+![alt text](https://github.com/jyzhe/15618fp/blob/final/plot11.png "Logo Title Text 1")
 
 
 ### Future Work
