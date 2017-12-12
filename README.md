@@ -53,7 +53,7 @@ Using a QuadTree enables a finer control over the interactions between pixels an
 
 In our program, we implemented a linear QuadTree that which is actually a series of re-ordering among the data points. Thus each tree node effectively points to a continuous chunk of data points in the dataset. Following is a z-order illustration of this re-ordering.
 
-![alt text](https://github.com/jyzhe/15618fp/blob/final/z-order.png "Logo Title Text 1")
+![alt text](https://github.com/jyzhe/15618fp/blob/final/z-order.001.jpeg "Logo Title Text 1")
 
 1. **Main Operations**
 
