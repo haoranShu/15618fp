@@ -56,9 +56,10 @@ In our program, we implemented a linear QuadTree that which is actually a series
 ![alt text](https://github.com/jyzhe/15618fp/blob/final/z-order.png "Logo Title Text 1")
 
 1. **Main Operations**
+
 	1. buildQuadTree
 
-	This function builds a QuadTree at most MAX\_DEPTH deep with the given points, and each leaf has at most MIN\_NUM\_PER\_NODE points.
+	This function builds a QuadTree at most MAX_DEPTH deep with the given points, and each leaf has at most MIN\_NUM\_PER\_NODE points.
 
 	2. overlaps
 
@@ -131,17 +132,17 @@ Also, we only gather weights of points directly reside in the calling pixel at t
 
 Precisely, we do the following:
 
-	1. Divide the data into NUM\_TREES chunks and build NUM\_TREES QuadTrees to hold them
+* Divide the data into NUM\_TREES chunks and build NUM\_TREES QuadTrees to hold them
 
-	2. Allocate a temporary buffer to store local gathered weights on each pixel for each chunk of data points
+* Allocate a temporary buffer to store local gathered weights on each pixel for each chunk of data points
 
-	3. Launch kernel with NUM\_TREES blocks, each block responsible for one chunk of data, within each block, each thread is responsible for work of a number of pixels independently
+* Launch kernel with NUM\_TREES blocks, each block responsible for one chunk of data, within each block, each thread is responsible for work of a number of pixels independently
 
-	4. Reduce the weights onto one buffer
+* Reduce the weights onto one buffer
 
-	5. Apply stamp on the reduced buffer
+* Apply stamp on the reduced buffer
 
-	6. Calculate the maximum weight on image, scale the weights and render
+* Calculate the maximum weight on image, scale the weights and render
 
 > illustration
 
