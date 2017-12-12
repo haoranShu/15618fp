@@ -168,19 +168,32 @@ Two tricks we applied are:
 ![alt text](https://github.com/jyzhe/15618fp/blob/final/zoomin.jpeg "Logo Title Text 1")
 
 ### Performance
-	- table of 10w, 100w, 1000w, 5000w data point CPU/GPU time
 
-	- Plot of 10w, 100w, 1000w, 5000w speedup
+![alt text](https://github.com/jyzhe/15618fp/blob/final/plot3.png "Logo Title Text 1")
 
-	- Graph of 10w, 100w, 1000w, 5000w time breakdown
+![alt text](https://github.com/jyzhe/15618fp/blob/final/plot2.png "Logo Title Text 1")
+
+![alt text](https://github.com/jyzhe/15618fp/blob/final/plot1.png "Logo Title Text 1")
+
 
 ### Future Work
 
-1. put QuadTree on CPU and send point begin / end to GPU only
+1. There are still ways to optimize our algorithm but we do not have enough time to carry them out. If we got chance, we can play with ideas like putting the QuadTree on CPU and the Points on GPU (QuadTree actually only stores indices). 
+
+2. We are both having problem with the X forwarding functionality of the GHC machines so we did not try out our OpenGL utilities with CUDA. But since we can always bind a device buffer mapped to CUDA with a texture of OpenGL, this should work easily.
 
 ## COOPERATION
 
+Haoran and Jay are both actively involved in this project and the overall ratio of division is 50:50.
+
+Haoran is mainly responsible for setting up the structure of the program, generating test datasets, OpenGL utility implementation and CUDA render and reduce kernels.
+
+Jay (Zhe) is mainly responsible for implementing the QuadTree data structure on both CPU and GPU, and the implementation of CUDA traverse and stamp mapping kernel.
+
 ## REFERENCES
 
-* Large Interactive Visualization of Density Functions on Big Data Infrastructure
+* Large Interactive Visualization of Density Functions on Big Data Infrastructure. Alexandre Perrot, et al. 2015
 
+* Interactive Visualization of High Density Streaming Points with Heat-map. Chenhui Li, et al. 2014
+
+* cdpQuadtree Implementation by Nvidia
